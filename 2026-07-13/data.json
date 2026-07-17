@@ -1,0 +1,436 @@
+{
+  "target_date": "2026-07-13",
+  "period_label": "2026-07-13 00:00 - 2026-07-13 23:59 JST",
+  "generated_at": "2026-07-14 21:09 JST",
+  "site_title": "前日トレンドニュース",
+  "key_points": [
+    "AI: OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch",
+    "IT業界: セキュリティの新指標「日本度」発表",
+    "災害: 南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース",
+    "AI: 選挙時のＳＮＳ偽・誤情報対策強化、改正公選法と改正情プラ法成立…ＡＩ使用の表示義務化 読売新聞",
+    "AI: 第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド"
+  ],
+  "sections": [
+    {
+      "name": "AI",
+      "items": [
+        {
+          "title": "選挙時のＳＮＳ偽・誤情報対策強化、改正公選法と改正情プラ法成立…ＡＩ使用の表示義務化 - 読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1la1l2a3VmTnR5S3o5dGZmNzRZVTVrYkI5MDdZQU1WcEFyeE1wbDFvWHJ2MWVrQXpWS0NaRXZDWFc0R0tza2JNMlNXbWJ0S2pad1NwS0RSTW1EMUprUXBSUUc0NWJqZw?oc=5",
+          "source": "読売新聞",
+          "published_at": "2026-07-13 12:50:00+00:00",
+          "summary": "何が起きたか: 選挙時のＳＮＳ偽・誤情報対策強化、改正公選法と改正情プラ法成立…ＡＩ使用の表示義務化 読売新聞",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「選挙時のＳＮＳ偽・誤情報対策強化、改正公選法と改正情プラ法成立…ＡＩ使用の表示義務化 読売…」と伝えています。出典: 読売新聞",
+          "query": "生成AI 最新 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.yomiuri.co.jp",
+          "brief": "選挙時のＳＮＳ偽・誤情報対策強化、改正公選法と改正情プラ法成立…ＡＩ使用の表示義務化 読売新聞",
+          "importance": 2,
+          "source_label": "大手報道",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        },
+        {
+          "title": "2026年の医療業界トレンド - SDKI Analytics",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmY0NaS2NaalFOc3lzcTRfNmFHYUt3OWNBY016d2R1VTZxRWlrOEpWN1dGQVE5YTlDb21mY0FsS2FKTnJ1TU5OVW9ENm9zcVlxYnZBb3ZjMF83VlkyYUQyMktyY3MwQQ?oc=5",
+          "source": "SDKI Analytics",
+          "published_at": "2026-07-13 11:17:16+00:00",
+          "summary": "何が起きたか: 2026年の医療業界トレンド SDKI Analytics",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「2026年の医療業界トレンド SDKI Analytics」と伝えています。出典: SDKI Analytics",
+          "query": "AI トレンド after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.sdki.jp",
+          "brief": "2026年の医療業界トレンド SDKI Analytics",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        },
+        {
+          "title": "「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vVkJwcy03Q1FxR25Ld1BPa05EcWFnQXQ4TjRRaFotWW9XVUF2ZjZzcXFOWGR5VnkwWlp3TjcweUs4QTNhSXBoX1kxdU9qSGNNNUpz?oc=5",
+          "source": "ビジネス+IT",
+          "published_at": "2026-07-13 10:40:00+00:00",
+          "summary": "何が起きたか: 「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 ビジネス+IT",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 ビジネス+IT」と伝えています。出典: ビジネス+IT",
+          "query": "ChatGPT ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.sbbit.jp",
+          "brief": "「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 ビジネス+IT",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        },
+        {
+          "title": "第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DUTVuSW9RTHhZSG5DRmtkSHpYUHRfRlVERW1IVmx1eVZQQ2Vid2pUMWV1VE8tdUJvY2xiQ2ZZaldFbGJXdjZYWUluTlQ0bWJWNWVxMlhDT3dmdw?oc=5",
+          "source": "radionikkei.jp",
+          "published_at": "2026-07-13 10:04:44+00:00",
+          "summary": "何が起きたか: 第980回「AI即戦力仕事術～本当は怖い生成AI～」",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「第980回「AI即戦力仕事術～本当は怖い生成AI～」」と伝えています。出典: radionikkei.jp",
+          "query": "AI トレンド after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.radionikkei.jp",
+          "brief": "第980回「AI即戦力仕事術～本当は怖い生成AI～」",
+          "importance": 2,
+          "source_label": "大手報道",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        },
+        {
+          "title": "アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Db1FmMHk1QnB5eUVxbDdabHN4ck5zak9RQTl4Ql9MdUhDU0FFc2J1VUx6cFB0T3Nsb0pzTGc1S1hUczZZdVZIdHgwbw?oc=5",
+          "source": "thinkit.co.jp",
+          "published_at": "2026-07-13 09:59:31+00:00",
+          "summary": "何が起きたか: アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ thinkit.co.jp",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ thinkit.c…」と伝えています。出典: thinkit.co.jp",
+          "query": "生成AI 最新 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://thinkit.co.jp",
+          "brief": "アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ thinkit.co.jp",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        },
+        {
+          "title": "OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5",
+          "source": "ケータイ Watch",
+          "published_at": "2026-07-13 08:45:15+00:00",
+          "summary": "何が起きたか: OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch",
+          "trend_reason": "実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケー…」と伝えています。出典: ケータイ Watch",
+          "query": "OpenAI ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://k-tai.watch.impress.co.jp",
+          "brief": "OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch",
+          "importance": 3,
+          "source_label": "専門メディア",
+          "read_level": "RSS説明",
+          "impact": "仕事で使える"
+        }
+      ],
+      "candidate_score": 6
+    },
+    {
+      "name": "IT業界",
+      "items": [
+        {
+          "title": "$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomoo",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2xTT0FQYmM4TjNqdjFCWWJxTENjQW1KWV85eUxKcUQyLUE2TVMya2liMWxBbEFDcjBkXzJsMmFsbjd0Z0RnajBqbG5QaHB6TzZPbjFIWXJFNjdYWVVKbFh4c294WHFQOUVLSnBEckdxclE3N1ZRVG5DTUhVVkl2RjMwcS1PQ3hTRFNhcGx5NXhkR3NPRnZVNFRvVmtzdlowWEVubmNwa080UQ?oc=5",
+          "source": "Moomoo",
+          "published_at": "2026-07-13 13:21:11+00:00",
+          "summary": "何が起きたか: $マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 Moomoo",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう…」と伝えています。出典: Moomoo",
+          "query": "テクノロジー ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.moomoo.com",
+          "brief": "$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せ…",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzZpUFNTaWR2OENtNV9QT1QtUDhRa0JKRTlHd0FSMVZiX1l2QkV5dnJVZkNybnBIYUtCNjBFRm9zamlQWmRoWGsxNnZYczhKNXllTlZhN2EtZWszWEJfdEpOYTVGSVVUVDc1dXFjWlpEc1BQMlFGTXVPZFI1ejBDaWUzUENVNWJIRjNMb3NPaXROcTRPazVWM29B?oc=5",
+          "source": "Moomoo",
+          "published_at": "2026-07-13 12:50:21+00:00",
+          "summary": "何が起きたか: $マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて Moomoo",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて Moomoo」と伝えています。出典: Moomoo",
+          "query": "テクノロジー ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.moomoo.com",
+          "brief": "$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて Moomoo",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfeDR1Z3ZyOFNacXJaZll4UzRsZndhNHN2SHFVRHRGb3dIcHBfX0tpZnhsTFlqMzB0NXNaNzBGM0NpQUFOMEQ0b20zeFJDaElPLXN5dUppOTV4NHRuX3FXV3VZc25MYWp6alZZdC1MWVA1YVk?oc=5",
+          "source": "さくらんぼテレビ",
+          "published_at": "2026-07-13 09:58:00+00:00",
+          "summary": "何が起きたか: 山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験でき…」と伝えています。出典: さくらんぼテレビ",
+          "query": "テクノロジー ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.sakuranbo.co.jp",
+          "brief": "山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "テクノロジーニュース 7月13日：マイクロソフトがWindows 11にAndroidを導入 - Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPLWVsRnRtNi1CUm41MDIwTW9vbVU0UXVwektVZk9uMmpqeXpGNzVHRzE5SlpaVnNTVVFMRU9sd1NDTl8zbUdTYmViSGVrOXFBNVNkZkliRWtzWTZYTFQxNUdxdDktY3c4QnBveXkwS20teFY5WnJqbDJSekxMbFNzVDFUcw?oc=5",
+          "source": "Vietnam.vn",
+          "published_at": "2026-07-13 08:53:11+00:00",
+          "summary": "何が起きたか: テクノロジーニュース 7月13日：マイクロソフトがWindows 11にAndroidを導入 Vietnam.vn",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「テクノロジーニュース 7月13日：マイクロソフトがWindows 11にAndroidを導…」と伝えています。出典: Vietnam.vn",
+          "query": "テクノロジー ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.vietnam.vn",
+          "brief": "テクノロジーニュース 7月13日：マイクロソフトがWindows 11にAndroidを導入 Vietnam.vn",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLVUyTEN2cVJxZVhLWTZrRlFPWXVYTGVLOFJkSFF5NVRwQVZtRmtfUXZuZG8ybG9rWVhXSkw0T1NkNXlnSWFWNUQ4aUdhMWFaWnhxcHVCMG44V0I1cVJobWhqaTBFc2tRNHpZQUp4REk4YTg2UlJvdnBFcFFhZzFCVjhpeDh1SHlBZ3o4?oc=5",
+          "source": "Malwarebytes",
+          "published_at": "2026-07-13 08:20:34+00:00",
+          "summary": "何が起きたか: セキュリティ分野の1週間（7月6日～7月12日） Malwarebytes",
+          "trend_reason": "安全・業務・生活への影響確認が必要な話題です。RSS説明文では「セキュリティ分野の1週間（7月6日～7月12日） Malwarebytes」と伝えています。出典: Malwarebytes",
+          "query": "サイバーセキュリティ after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.malwarebytes.com",
+          "brief": "セキュリティ分野の1週間（7月6日～7月12日） Malwarebytes",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "要注意"
+        },
+        {
+          "title": "セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5",
+          "source": "ZDNET Japan",
+          "published_at": "2026-07-13 08:03:00+00:00",
+          "summary": "何が起きたか: セキュリティの新指標「日本度」発表",
+          "trend_reason": "安全・業務・生活への影響確認が必要な話題です。RSS説明文では「セキュリティの新指標「日本度」発表」と伝えています。出典: ZDNET Japan",
+          "query": "サイバーセキュリティ after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://japan.zdnet.com",
+          "brief": "セキュリティの新指標「日本度」発表",
+          "importance": 3,
+          "source_label": "専門メディア",
+          "read_level": "RSS説明",
+          "impact": "要注意"
+        }
+      ],
+      "candidate_score": 6
+    },
+    {
+      "name": "政治",
+      "items": [
+        {
+          "title": "政府与党連絡会議 - 首相官邸",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5",
+          "source": "首相官邸",
+          "published_at": "2026-07-13 08:34:54+00:00",
+          "summary": "何が起きたか: 政府与党連絡会議 首相官邸",
+          "trend_reason": "制度変更や政策判断につながる可能性がある話題です。RSS説明文では「政府与党連絡会議 首相官邸」と伝えています。出典: 首相官邸",
+          "query": "政府 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.kantei.go.jp",
+          "brief": "政府与党連絡会議 首相官邸",
+          "importance": 2,
+          "source_label": "一次情報",
+          "read_level": "RSS説明",
+          "impact": "制度・政治"
+        },
+        {
+          "title": "ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9GZGMwUW43YURRTU1tclhmVFUtRDRQTFpRbzJ5Qm9XWmpiMHA0OTJHZWZrUWUwS0ktdUdrZWtudDFmVUZRdzc3dktoekxXMkJ5WThxR3puSWJWai1aRm9McHk5TVhsWjZTTXctUXdMeWRZSVho?oc=5",
+          "source": "mofa.go.jp",
+          "published_at": "2026-07-13 08:32:31+00:00",
+          "summary": "何が起きたか: ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬",
+          "trend_reason": "制度変更や政策判断につながる可能性がある話題です。RSS説明文では「ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬」と伝えています。出典: mofa.go.jp",
+          "query": "首相 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.mofa.go.jp",
+          "brief": "ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬",
+          "importance": 2,
+          "source_label": "一次情報",
+          "read_level": "RSS説明",
+          "impact": "制度・政治"
+        }
+      ],
+      "candidate_score": 2
+    },
+    {
+      "name": "社会",
+      "items": [],
+      "candidate_score": 0
+    },
+    {
+      "name": "ゲーム",
+      "items": [
+        {
+          "title": "PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg",
+          "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5",
+          "source": "games.gg",
+          "published_at": "2026-07-13 13:36:39+00:00",
+          "summary": "何が起きたか: PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg」と伝えています。出典: games.gg",
+          "query": "PlayStation after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://games.gg",
+          "brief": "PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp",
+          "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5",
+          "source": "gamereactor.jp",
+          "published_at": "2026-07-13 13:12:24+00:00",
+          "summary": "何が起きたか: 欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています gamereactor.jp",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベ…」と伝えています。出典: gamereactor.jp",
+          "query": "PlayStation after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.gamereactor.jp",
+          "brief": "欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどで…",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        }
+      ],
+      "candidate_score": 5
+    },
+    {
+      "name": "経済",
+      "items": [
+        {
+          "title": "アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5",
+          "source": "PR TIMES",
+          "published_at": "2026-07-13 09:30:01+00:00",
+          "summary": "何が起きたか: アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES",
+          "trend_reason": "企業活動や市場の見方に影響しやすい話題です。RSS説明文では「アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR…」と伝えています。出典: PR TIMES",
+          "query": "企業決算 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://prtimes.jp",
+          "brief": "アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES",
+          "importance": 2,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "市場・企業"
+        },
+        {
+          "title": "６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jcjhjc1hveW9xRkZHQW9oQ3dGanFzNEx4TnVBV0k0YUYyTTZuRVZGUUkxSmtSTDdlOWYyQ19Qa2ppS3hlcWNMckJEbXo0RVZYMndtYW9Yaw?oc=5",
+          "source": "日流ウェブ",
+          "published_at": "2026-07-13 09:02:05+00:00",
+          "summary": "何が起きたか: ６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） 日流ウェブ",
+          "trend_reason": "企業活動や市場の見方に影響しやすい話題です。RSS説明文では「６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） 日流ウェブ」と伝えています。出典: 日流ウェブ",
+          "query": "企業決算 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.bci.co.jp",
+          "brief": "６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） 日流ウェブ",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "市場・企業"
+        }
+      ],
+      "candidate_score": 4
+    },
+    {
+      "name": "金融",
+      "items": [
+        {
+          "title": "偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5",
+          "source": "Malwarebytes",
+          "published_at": "2026-07-13 12:34:38+00:00",
+          "summary": "何が起きたか: 偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebytes",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebyt…」と伝えています。出典: Malwarebytes",
+          "query": "仮想通貨 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.malwarebytes.com",
+          "brief": "偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebytes",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        },
+        {
+          "title": "上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5",
+          "source": "日本経済新聞",
+          "published_at": "2026-07-13 08:04:36+00:00",
+          "summary": "何が起きたか: 上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞」と伝えています。出典: 日本経済新聞",
+          "query": "仮想通貨 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.nikkei.com",
+          "brief": "上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞",
+          "importance": 2,
+          "source_label": "大手報道",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        }
+      ],
+      "candidate_score": 3
+    },
+    {
+      "name": "国際",
+      "items": [
+        {
+          "title": "政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞me",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE01WjFzR2dnVFhuUmpRemVNcTJQUktwY0J2NmNsTmx4VTFhRVdJT0VxcTBMdUVwbmZjTU9oVll3YktEZjJrdS1tS01jaHJqUkFqQkZOMWlDU1VzSUp2OE9BVWhBSTFhcWN4T0J6MHRSVlduWFF1akxZRHBR?oc=5",
+          "source": "西日本新聞me",
+          "published_at": "2026-07-13 14:23:00+00:00",
+          "summary": "何が起きたか: 政治(全国・海外ニュース)写真",
+          "trend_reason": "前日の動向として押さえておきたい話題です。RSS説明文では「政治(全国・海外ニュース)写真」と伝えています。出典: 西日本新聞me",
+          "query": "海外ニュース after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://www.nishinippon.co.jp",
+          "brief": "政治(全国・海外ニュース)写真",
+          "importance": 1,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "動向確認"
+        }
+      ],
+      "candidate_score": 1
+    },
+    {
+      "name": "災害",
+      "items": [
+        {
+          "title": "南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5",
+          "source": "ウェザーニュース",
+          "published_at": "2026-07-13 14:55:00+00:00",
+          "summary": "何が起きたか: 南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース",
+          "trend_reason": "安全・業務・生活への影響確認が必要な話題です。RSS説明文では「南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース」と伝えています。出典: ウェザーニュース",
+          "query": "地震 after:2026-07-13 before:2026-07-14",
+          "image_url": null,
+          "source_url": "https://weathernews.jp",
+          "brief": "南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース",
+          "importance": 2,
+          "source_label": "RSS",
+          "read_level": "RSS説明",
+          "impact": "要注意"
+        }
+      ],
+      "candidate_score": 1
+    }
+  ],
+  "one_minute": [
+    "AI: OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch",
+    "IT業界: セキュリティの新指標「日本度」発表",
+    "災害: 南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース"
+  ],
+  "five_minute": [
+    "AI: OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch",
+    "IT業界: セキュリティの新指標「日本度」発表",
+    "政治: 政府与党連絡会議 首相官邸",
+    "ゲーム: PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg",
+    "経済: アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES",
+    "金融: 上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞",
+    "国際: 政治(全国・海外ニュース)写真",
+    "災害: 南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース"
+  ],
+  "weekly_summary": []
+}

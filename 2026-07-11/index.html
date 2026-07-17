@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>前日トレンドニュース - 2026-07-11</title>
+  <style>
+:root {
+  color-scheme: dark;
+  --bg:#10141b;
+  --bar:#151a23;
+  --panel:#202631;
+  --panel-2:#343c48;
+  --ink:#f7f7fb;
+  --muted:#a3a7b7;
+  --faint:#777d91;
+  --line:#3b3e50;
+  --accent:#4fd1c5;
+  --accent-strong:#9be7de;
+  --shadow:0 18px 42px rgba(0, 0, 0, .24);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: 8px;
+  z-index: 20;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-140%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--bar);
+  border-bottom: 1px solid #202234;
+}
+.brand {
+  color: #e8e8f0;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.brand::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--muted);
+  border-radius: 2px;
+  vertical-align: -1px;
+  box-shadow: inset 4px 0 0 rgba(79, 209, 197, .28);
+}
+.app-date {
+  color: var(--accent);
+  font-weight: 700;
+}
+.app-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.archive, .back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+.page {
+  width: min(1210px, 100%);
+  margin: 0 auto;
+  padding: 18px clamp(14px, 4vw, 32px) 64px;
+}
+.hero {
+  padding: 0 0 16px;
+}
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: #fff;
+  background: #1f6f78;
+  font-size: 12px;
+  font-weight: 700;
+}
+.brief-panel {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  overflow: hidden;
+}
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .04);
+}
+.view-tab {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.analytics-export {
+  margin-top: 10px;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(79, 209, 197, .45);
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.view-tab.is-active,
+.view-tab:hover,
+.view-tab:focus {
+  color: #071316;
+  background: var(--accent);
+}
+.brief-view {
+  display: none;
+  padding: 12px 16px;
+}
+.brief-view.is-active {
+  display: block;
+}
+.brief-view ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.brief-view li {
+  margin: 5px 0;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.sidebar {
+  position: sticky;
+  top: 62px;
+  overflow: hidden;
+  border: 1px solid #5b6071;
+  border-radius: 12px;
+  background: var(--panel-2);
+  box-shadow: var(--shadow);
+}
+.side-title {
+  padding: 8px 12px;
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+  font-weight: 800;
+}
+.side-nav {
+  display: grid;
+  padding: 10px 6px;
+}
+.side-calendar {
+  padding: 10px 8px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.side-calendar .calendar {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.side-calendar .calendar-month {
+  padding: 10px;
+  border-color: rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .05);
+}
+.side-calendar .calendar-month h2 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.side-calendar .calendar-grid {
+  gap: 3px;
+}
+.side-calendar .calendar-weekday,
+.side-calendar .calendar-day {
+  min-height: 24px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.calendar-more {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+.side-archive,
+.side-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.side-archive {
+  display: none;
+  margin: 10px 6px 0;
+  border-color: rgba(79, 209, 197, .45);
+  background: rgba(79, 209, 197, .12);
+}
+.side-nav a:hover,
+.side-nav a:focus,
+.side-archive:hover,
+.side-archive:focus {
+  border-color: var(--accent);
+  background: rgba(169, 147, 255, .14);
+}
+.side-nav small,
+.side-archive small {
+  color: #c0c3d0;
+  font-weight: 500;
+}
+.content {
+  min-width: 0;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.genre-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.genre-head::-webkit-details-marker { display: none; }
+.genre-head::before {
+  content: "▾";
+  color: var(--accent);
+  font-weight: 900;
+}
+.genre:not([open]) .genre-head::before {
+  content: "▸";
+}
+.genre-head span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.thumb {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 88px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(169, 147, 255, .25), rgba(255, 255, 255, .05));
+  object-fit: cover;
+}
+.genre { margin-top: 24px; }
+.genre:first-child { margin-top: 0; }
+.genre-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 9px;
+}
+.grid {
+  display: grid;
+  gap: 7px;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+  padding: 13px 42px 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.card.is-read {
+  opacity: .62;
+}
+.read-state {
+  margin-left: auto;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.labels span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #dbe4ef;
+  background: rgba(255, 255, 255, .08);
+  font-size: 11px;
+  font-weight: 700;
+}
+.card:hover,
+.card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .20);
+  transform: translateY(-1px);
+}
+.card::after {
+  content: "↗";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  color: var(--muted);
+  transform: translateY(-50%);
+}
+.card p { margin: 8px 0 0; font-size: 13px; }
+.card .thumb {
+  width: 100%;
+  height: 74px;
+  margin-top: 2px;
+  padding: 0;
+  border-radius: 8px;
+}
+.card-body {
+  min-width: 0;
+}
+.card h3 {
+  color: #fff;
+}
+.card:hover h3,
+.card:focus-visible h3 {
+  color: var(--accent-strong);
+}
+.summary-text { color: #c7cad6; }
+.meta { color: var(--muted); font-size: 12px; margin: 0; }
+.meta span {
+  color: var(--muted);
+  font-weight: 600;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+dl { margin: 10px 0 0; display: grid; gap: 8px; }
+dl div {
+  border-top: 1px solid #303345;
+  padding-top: 8px;
+}
+dt {
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 700;
+}
+dd {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #c4c7d4;
+}
+.empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.archive-page { max-width: 960px; }
+.archive-search {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.archive-search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.archive-search input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #5b6071;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #121821;
+  font: inherit;
+}
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+.search-result {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .04);
+}
+.search-result span,
+.search-result small {
+  color: var(--muted);
+}
+.weekly-grid {
+  display: grid;
+  gap: 14px;
+}
+.weekly-genre {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.weekly-genre ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.weekly-genre li {
+  margin: 9px 0;
+}
+.weekly-genre li span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+.calendar-month {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.calendar-month h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.calendar-weekday,
+.calendar-day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 34px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.calendar-weekday {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.calendar-day {
+  color: var(--faint);
+  border: 1px solid rgba(255, 255, 255, .06);
+}
+.calendar-day.is-empty {
+  border-color: transparent;
+}
+.calendar-day.is-linked {
+  color: #071316;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+.calendar-day.is-linked:hover,
+.calendar-day.is-linked:focus-visible {
+  background: var(--accent-strong);
+}
+.calendar-day.is-latest {
+  box-shadow: 0 0 0 2px #fff inset;
+}
+@media (max-width: 900px) {
+  .appbar {
+    grid-template-columns: 1fr auto;
+    height: auto;
+    padding: 10px 14px;
+  }
+  .app-date {
+    justify-self: end;
+    font-size: 13px;
+  }
+  .app-actions {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+  }
+  .side-calendar {
+    display: none;
+  }
+  .side-archive {
+    display: flex;
+  }
+  .side-nav {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+  }
+  .side-archive {
+    margin: 8px 8px 0;
+  }
+  .side-nav a {
+    flex: 0 0 auto;
+    gap: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .page { padding: 14px 12px 44px; }
+  .hero h1 { font-size: 34px; }
+  .badges { flex-wrap: wrap; }
+  .card { padding-right: 32px; }
+  .card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .card .thumb {
+    width: 100%;
+    height: 54px;
+    border-radius: 8px;
+  }
+  .verify-row { display: none; }
+  .reason-row {
+    border-top-color: #394352;
+  }
+  .reason-row dt {
+    color: var(--accent-strong);
+  }
+}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="appbar">
+    <a class="brand" href="./" aria-label="Daily Trend News">Daily Trend News</a>
+    <time class="app-date" datetime="2026-07-11">2026-07-11</time>
+    <div class="app-actions">
+      <span>生成: 2026-07-13 22:08 JST</span>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <section class="hero">
+      <p class="eyebrow">Morning Brief · 2026-07-11 00:00 - 2026-07-11 23:59 JST</p>
+      <h1>前日トレンドニュース</h1>
+      <div class="badges">
+        <span>6ジャンル</span>
+        <span>36件の記事</span>
+      </div>
+    </section>
+    <section class="brief-panel" aria-label="読み方">
+      <div class="view-tabs" role="tablist" aria-label="表示モード">
+        <button class="view-tab is-active" type="button" data-view="one">1分版</button>
+        <button class="view-tab" type="button" data-view="five">5分版</button>
+        <button class="view-tab" type="button" data-view="all">全部読む</button>
+      </div>
+      <div class="brief-view is-active" data-panel="one"><ol class="one-minute"><li>AI: Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される - Cryptopolitan</li><li>IT業界: AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoin</li><li>政治: 政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</li></ol></div>
+      <div class="brief-view" data-panel="five"><ol class="five-minute"><li>AI: Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される - Cryptopolitan</li><li>IT業界: AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoin</li><li>政治: 政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</li><li>科学: 画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</li><li>ライフ: 無料の定期健康診断に関する啓発キャンペーンを推進する。 - Vietnam.vn</li></ol></div>
+      <div class="brief-view" data-panel="all"><p>ジャンルごとのカードを開いて、気になる記事だけ元記事で確認できます。クリック済みの記事はこの端末で既読表示になります。</p><button class="analytics-export" type="button">分析JSON</button></div>
+    </section>
+    <div class="layout">
+      <aside class="sidebar" aria-label="ジャンル">
+        <div class="side-title">ジャンル</div>
+        <div class="side-calendar"><div class="calendar" aria-label="過去日付カレンダー"><section class="calendar-month" aria-labelledby="month-2026-07">
+  <h2 id="month-2026-07">2026年7月</h2>
+  <div class="calendar-grid"><span class="calendar-weekday">日</span><span class="calendar-weekday">月</span><span class="calendar-weekday">火</span><span class="calendar-weekday">水</span><span class="calendar-weekday">木</span><span class="calendar-weekday">金</span><span class="calendar-weekday">土</span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day" aria-disabled="true">1</span><span class="calendar-day" aria-disabled="true">2</span><span class="calendar-day" aria-disabled="true">3</span><span class="calendar-day" aria-disabled="true">4</span><span class="calendar-day" aria-disabled="true">5</span><span class="calendar-day" aria-disabled="true">6</span><span class="calendar-day" aria-disabled="true">7</span><span class="calendar-day" aria-disabled="true">8</span><a class="calendar-day is-linked" href="../2026-07-09/" aria-label="2026-07-09の記事">9</a><a class="calendar-day is-linked" href="../2026-07-10/" aria-label="2026-07-10の記事">10</a><a class="calendar-day is-linked" href="../2026-07-11/" aria-label="2026-07-11の記事">11</a><a class="calendar-day is-linked" href="../2026-07-12/" aria-label="2026-07-12の記事">12</a><a class="calendar-day is-linked is-latest" href="../2026-07-13/" aria-label="2026-07-13の記事">13</a><span class="calendar-day" aria-disabled="true">14</span><span class="calendar-day" aria-disabled="true">15</span><span class="calendar-day" aria-disabled="true">16</span><span class="calendar-day" aria-disabled="true">17</span><span class="calendar-day" aria-disabled="true">18</span><span class="calendar-day" aria-disabled="true">19</span><span class="calendar-day" aria-disabled="true">20</span><span class="calendar-day" aria-disabled="true">21</span><span class="calendar-day" aria-disabled="true">22</span><span class="calendar-day" aria-disabled="true">23</span><span class="calendar-day" aria-disabled="true">24</span><span class="calendar-day" aria-disabled="true">25</span><span class="calendar-day" aria-disabled="true">26</span><span class="calendar-day" aria-disabled="true">27</span><span class="calendar-day" aria-disabled="true">28</span><span class="calendar-day" aria-disabled="true">29</span><span class="calendar-day" aria-disabled="true">30</span><span class="calendar-day" aria-disabled="true">31</span></div>
+</section></div><a class="calendar-more" href="../archive.html">すべての日付</a></div><a class="side-archive" href="../archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>6件</small></a>
+<a href="#IT業界"><span>IT業界</span><small>6件</small></a>
+<a href="#政治"><span>政治</span><small>6件</small></a>
+<a href="#科学"><span>科学</span><small>6件</small></a>
+<a href="#ライフ"><span>ライフ</span><small>6件</small></a>
+<a href="#エンタメ"><span>エンタメ</span><small>6件</small></a></nav>
+      </aside>
+      <div class="content">
+        <details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="AI">AI</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-336058d99aba57b1" class="card" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5JTGwzd3g0YTVsM2RmOTdfVnU4NG9TOXJyTmtXQlJDVW9sdnE5Q1Y1cWtDY1Jwek45LWd0REZyb2dzOWtrdVBkT3FManhFVWtlRUtlOWRIM0VBdmxCR0lZZnNVcXNOSFY2TmdqTnB2YUNmTXdSbURyeno5OA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される - Cryptopolitanを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE5JTGwzd3g0YTVsM2RmOTdfVnU4NG9TOXJyTmtXQlJDVW9sdnE5Q1Y1cWtDY1Jwek45LWd0REZyb2dzOWtrdVBkT3FManhFVWtlRUtlOWRIM0VBdmxCR0lZZnNVcXNOSFY2TmdqTnB2YUNmTXdSbURyeno5OA?oc=5" data-title="Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される - Cryptopolitan" data-genre="AI" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/9f939b68e846c755.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Cryptopolitan · 14:59</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>要注意</span> <span>重要度2</span></div>
+    <h3>Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される - Cryptopolitan</h3>
+    <p class="summary-text">Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethereumへ送金される Cry…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>安全・業務・生活への影響確認が必要な話題です。RSS説明文では「Hederaの脆弱性を悪用した攻撃で500万ドルを超える被害、盗まれた資金は Ethere…」と伝えています。出典: Cryptopolitan</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-89f7b499c5f1438a" class="card" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE82MWNwdWtrQWF6Qm9UN0tDVlMwUXNnS015VzE4a0swRHNFSUlXdUZfX1RzZl9HLUw0X3ZyRHdIRkwyNzRhTHhpTE5DVVQ0WUpRaFE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE82MWNwdWtrQWF6Qm9UN0tDVlMwUXNnS015VzE4a0swRHNFSUlXdUZfX1RzZl9HLUw0X3ZyRHdIRkwyNzRhTHhpTE5DVVQ0WUpRaFE?oc=5" data-title="政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル" data-genre="AI" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/b7bf37809399bc63.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>電波新聞デジタル · 14:59</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</h3>
+    <p class="summary-text">政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル」と伝えています。出典: 電波新聞デジタル</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-140e2aef6fed8b51" class="card" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPaFVNNThBaW8zdnAzaHEzMmNqV2JuSFQ5ZEYtTVd3MGJFWkxJa3EtaXRNb3JKRUNUeGVCMG43c3doZERmTWlxU01oRVpCSVF0TENGa2VXRXBxeXZpLVo4RVRkR19HQThRdWc1V29CRzROWXJTMXJGSEdFRVphb3hoVVZ5V2VkeGvSAYwBQVVfeXFMUE5zMXBUNmhpamdlVTRxMkgtOGY1YTVPRWFVa2lobWY3RHA1V21aRk1BN2JxQmJNME5GRVo5YjhWRGoxWHZEQ2JMdUZjSnktQUVaVnNWZFZ2ZDJSbk1kMTRsNVBXWWJxdXR0N1M4Wko5TmtuWnJWMGxvcTRSOTVRY29RVENuUkFhZDFnNTU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に - すまほん!!を読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPaFVNNThBaW8zdnAzaHEzMmNqV2JuSFQ5ZEYtTVd3MGJFWkxJa3EtaXRNb3JKRUNUeGVCMG43c3doZERmTWlxU01oRVpCSVF0TENGa2VXRXBxeXZpLVo4RVRkR19HQThRdWc1V29CRzROWXJTMXJGSEdFRVphb3hoVVZ5V2VkeGvSAYwBQVVfeXFMUE5zMXBUNmhpamdlVTRxMkgtOGY1YTVPRWFVa2lobWY3RHA1V21aRk1BN2JxQmJNME5GRVo5YjhWRGoxWHZEQ2JMdUZjSnktQUVaVnNWZFZ2ZDJSbk1kMTRsNVBXWWJxdXR0N1M4Wko5TmtuWnJWMGxvcTRSOTVRY29RVENuUkFhZDFnNTU?oc=5" data-title="人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に - すまほん!!" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/fe8072dcc91463f3.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>すまほん!! · 14:58</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に - すまほん!!</h3>
+    <p class="summary-text">人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に すまほん…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple…」と伝えています。出典: すまほん!!</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-71253a830d789ff9" class="card" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QZ1FGTzlXYXlOaGttc20xNXh1eXVzOW02V05DTGZpa3NKSWxuUFhEMlM0Uk5ub2JuMldwZzVTVTJZdV83ZkFPR0xucHRNMXViMldBVWZGZE8yYkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ChatGPTはAIのNetscapeになるか - アゴラ 言論プラットフォームを読む" data-url="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9QZ1FGTzlXYXlOaGttc20xNXh1eXVzOW02V05DTGZpa3NKSWxuUFhEMlM0Uk5ub2JuMldwZzVTVTJZdV83ZkFPR0xucHRNMXViMldBVWZGZE8yYkk?oc=5" data-title="ChatGPTはAIのNetscapeになるか - アゴラ 言論プラットフォーム" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/2a8e4fcfd0e0b092.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>アゴラ 言論プラットフォーム · 14:08</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>ChatGPTはAIのNetscapeになるか - アゴラ 言論プラットフォーム</h3>
+    <p class="summary-text">ChatGPTはAIのNetscapeになるか アゴラ 言論プラットフォーム</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「ChatGPTはAIのNetscapeになるか アゴラ 言論プラットフォーム」と伝えています。出典: アゴラ 言論プラットフォーム</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-d39bd092c693fdee" class="card" href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBDZWwteUtreUs0X0N1d01VUXZzMEpJZHBSTEh0ZHpCSnhoek5qc2dyOV9mMm1CNHJoUXpFNXZCYkxDb0ZhbDJQS20wM1l5bFVhdU9paXdPcjk3eVdqQXk4R2k3d0lEaC02b3NtTi1nRFhjbVNRSGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。 これは - KuCoinを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTFBDZWwteUtreUs0X0N1d01VUXZzMEpJZHBSTEh0ZHpCSnhoek5qc2dyOV9mMm1CNHJoUXpFNXZCYkxDb0ZhbDJQS20wM1l5bFVhdU9paXdPcjk3eVdqQXk4R2k3d0lEaC02b3NtTi1nRFhjbVNRSGc?oc=5" data-title="OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。 これは - KuCoin" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/8a2e4cdfe5fa6381.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>KuCoin · 14:05</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。 これは - KuCoin</h3>
+    <p class="summary-text">OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報…」と伝えています。出典: KuCoin</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-794a14870108bd16" class="card" href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPM2hzYWF5a2FSLUJQcVBwM1NJVHpZa2d1cXZmQnplWE1YRG8yY0RQVVZ5dExOSzZ2U1FQOUJoekVNejE3M1EzM05aYUJ6M0t1VWMtVkpjYVZodEdOMDAxSEJfWE9JRXZ3T2pyVzl0Yy1mLVZXUGQzN3lRNFROV3ZicmtWYWxWandPTVFLVm4xeV92UWhOX3p4SUwtNlRONERLOEVCLUxCZzlkVjRudGpxSTY5YmZsNkI3M1dHdXVvaw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; OpenAIのアルトマンCEOが韓国を訪問へ - TradingKeyを読む" data-url="https://news.google.com/rss/articles/CBMivwFBVV95cUxPM2hzYWF5a2FSLUJQcVBwM1NJVHpZa2d1cXZmQnplWE1YRG8yY0RQVVZ5dExOSzZ2U1FQOUJoekVNejE3M1EzM05aYUJ6M0t1VWMtVkpjYVZodEdOMDAxSEJfWE9JRXZ3T2pyVzl0Yy1mLVZXUGQzN3lRNFROV3ZicmtWYWxWandPTVFLVm4xeV92UWhOX3p4SUwtNlRONERLOEVCLUxCZzlkVjRudGpxSTY5YmZsNkI3M1dHdXVvaw?oc=5" data-title="今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; OpenAIのアルトマンCEOが韓国を訪問へ - TradingKey" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/db26ad2005cf294e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TradingKey · 13:53</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; OpenAIのアルトマンCEOが韓国を訪問へ - TradingKey</h3>
+    <p class="summary-text">今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; Op…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへ…」と伝えています。出典: TradingKey</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="IT業界">IT業界</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-89a68a542d97c7e5" class="card" href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBtc29rVThCZldDVlZNaXhSem1lUWZiMzFIZkRuNGd4QnBBeUpKeTZvaEFvNFUtdzI0R25mUkZSYTBITDZIVU1RZjZVaFUzVjJhSmpBSWVnRlVUcHFKeVlpRThUOHhnbzRiaFlyaVFqbEhOaFBGQXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoinを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTFBtc29rVThCZldDVlZNaXhSem1lUWZiMzFIZkRuNGd4QnBBeUpKeTZvaEFvNFUtdzI0R25mUkZSYTBITDZIVU1RZjZVaFUzVjJhSmpBSWVnRlVUcHFKeVlpRThUOHhnbzRiaFlyaVFqbEhOaFBGQXc?oc=5" data-title="AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoin" data-genre="IT業界" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/4dbce25d57bfc7a9.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>KuCoin · 14:56</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoin</h3>
+    <p class="summary-text">AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 KuCoin</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 K…」と伝えています。出典: KuCoin</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-758d12a48b8ff655" class="card" href="https://news.google.com/rss/articles/CBMi0ANBVV95cUxOZHZJMGxqYUt6a3R2ZGk2RTVneTNEbGloMmdtZVIxT0pZX0R6S0x0STl0S0d1LUJrS1Z0ZGNtTVhqcklhbExhRDU2MGRtNTJBeDEzaVFQRGVVNHlZQ3htUHpCQ2xJeWR0Z0JJcWNnVjVORTN4NkwyNWV0M05XeHpGY2YwLVRlbi1tX2dBN2hodzVtMlRKQ0xaNXZuaks4ek1DNEN3OFRnUk1LZXhxZTVPUUxBNFFhTU1LTFNyQUN0dnAySWUzcVRKVWF4VHlzS1VJQ2l0U3VuNEhWUWo2MzZhSEhqMUYxZ3VoOHNPT0RtMk1WSk1EVUNhR1FBYVpCUC1lYVpTSTNiSXh6Ni1uZmxWUGZERGp2dktoNkFnVDRfcExYYlR0NkFZQndmdUlVWjlZb1pTdW1oTlJnQ3dSSnBJU3NJaHFTanFaYW80aGJaSjFaSDhXb2lIa3ZlLWtSMGtDZnRHaUVoUkxKVjROcVpxZmVTOFZHTUlDVjVJSUFNOUE4U01PMmVjUWY4Wi13bFR1Qk5VbFUxWWhwbGwwZnRlXzFVZDdSaWJRTVRGejF1c0VMeVFDWkRzbXFuWHpTdmlvSF9wUVQ5MzJtVF9QbXdhTQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi0ANBVV95cUxOZHZJMGxqYUt6a3R2ZGk2RTVneTNEbGloMmdtZVIxT0pZX0R6S0x0STl0S0d1LUJrS1Z0ZGNtTVhqcklhbExhRDU2MGRtNTJBeDEzaVFQRGVVNHlZQ3htUHpCQ2xJeWR0Z0JJcWNnVjVORTN4NkwyNWV0M05XeHpGY2YwLVRlbi1tX2dBN2hodzVtMlRKQ0xaNXZuaks4ek1DNEN3OFRnUk1LZXhxZTVPUUxBNFFhTU1LTFNyQUN0dnAySWUzcVRKVWF4VHlzS1VJQ2l0U3VuNEhWUWo2MzZhSEhqMUYxZ3VoOHNPT0RtMk1WSk1EVUNhR1FBYVpCUC1lYVpTSTNiSXh6Ni1uZmxWUGZERGp2dktoNkFnVDRfcExYYlR0NkFZQndmdUlVWjlZb1pTdW1oTlJnQ3dSSnBJU3NJaHFTanFaYW80aGJaSjFaSDhXb2lIa3ZlLWtSMGtDZnRHaUVoUkxKVjROcVpxZmVTOFZHTUlDVjVJSUFNOUE4U01PMmVjUWY4Wi13bFR1Qk5VbFUxWWhwbGwwZnRlXzFVZDdSaWJRTVRGejF1c0VMeVFDWkRzbXFuWHpTdmlvSF9wUVQ5MzJtVF9QbXdhTQ?oc=5" data-title="SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート - MSN" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/24342550efd3aa5d.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>MSN · 14:55</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート - MSN</h3>
+    <p class="summary-text">SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート MSN</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタ…」と伝えています。出典: MSN</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-6a673eed0d75b6c9" class="card" href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE50eUFMeE9rQlF3cnRFaVhQeUFiV2RRczN1UjBWRmpkYVhhMnBVY0F4RkdiWXVZV20zQTJONkJxbmdZelNxWkE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 - Dtimesを読む" data-url="https://news.google.com/rss/articles/CBMiRkFVX3lxTE50eUFMeE9rQlF3cnRFaVhQeUFiV2RRczN1UjBWRmpkYVhhMnBVY0F4RkdiWXVZV20zQTJONkJxbmdZelNxWkE?oc=5" data-title="採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 - Dtimes" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/402336f971343548.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Dtimes · 14:24</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 - Dtimes</h3>
+    <p class="summary-text">採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 Dtimes</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 Dtimes」と伝えています。出典: Dtimes</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-c7f2fb4a6cc9ae42" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1QN3ZqVXdIRDBtNFNveExMZTBxM2Jnd1ZHd3hnZUxVU092cmpfZWJYeU04aTVfUy1LX0dUeHNPS19zOTg3cHozS25Bak1oNDRGZlNRLTA2YmxPdzRtTTJINzduMjJFaTJfLVJUYWJPc3BBdGxpZ05wUW1yYjM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1QN3ZqVXdIRDBtNFNveExMZTBxM2Jnd1ZHd3hnZUxVU092cmpfZWJYeU04aTVfUy1LX0dUeHNPS19zOTg3cHozS25Bak1oNDRGZlNRLTA2YmxPdzRtTTJINzduMjJFaTJfLVJUYWJPc3BBdGxpZ05wUW1yYjM?oc=5" data-title="【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 - ライブドアニュース" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/b44b78af3e07aa3b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ライブドアニュース · 14:24</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 - ライブドアニュース</h3>
+    <p class="summary-text">【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 ライブドアニュース</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 ライブド…」と伝えています。出典: ライブドアニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-7a0938ac3d834b04" class="card" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoRHc4bXJkLThJVENfS1psSEsydnRadUhMUDRGUmo5bWZlY1VyYnBGd1hUcWF2ZElWZEtXNTFSd3FJaDZVSGlWcGFkVTNSYjI1QzhiS2wtTk5DLUp1?oc=5" rel="noopener noreferrer" target="_blank" aria-label="&quot;Squid Game is our pride (crying).&quot; ← It all belongs to America (lol). The cruel show where Korea... - YouTubeを読む" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoRHc4bXJkLThJVENfS1psSEsydnRadUhMUDRGUmo5bWZlY1VyYnBGd1hUcWF2ZElWZEtXNTFSd3FJaDZVSGlWcGFkVTNSYjI1QzhiS2wtTk5DLUp1?oc=5" data-title="&quot;Squid Game is our pride (crying).&quot; ← It all belongs to America (lol). The cruel show where Korea... - YouTube" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/08dbe32f83db5425.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>YouTube · 14:15</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>&quot;Squid Game is our pride (crying).&quot; ← It all belongs to America (lol). The cruel show where Korea... - YouTube</h3>
+    <p class="summary-text">&quot;Squid Game is our pride (crying).&quot; ← It all belongs to A…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「&quot;Squid Game is our pride (crying).&quot; ← It all…」と伝えています。出典: YouTube</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-3a03b1d0252afaec" class="card" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE16STFIMjd6VVVvVWwyR0dpNnNVNjVseEROVDdRZGtRZl82SFNaOHJTR1dSTkF2QVNtZkIyVFhxSVZsRlFKaDd5QWdsQ2ZKN0tfNDJR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も - カルチャーメディアNiEWを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE16STFIMjd6VVVvVWwyR0dpNnNVNjVseEROVDdRZGtRZl82SFNaOHJTR1dSTkF2QVNtZkIyVFhxSVZsRlFKaDd5QWdsQ2ZKN0tfNDJR?oc=5" data-title="Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も - カルチャーメディアNiEW" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4ffcfc779756c12b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>カルチャーメディアNiEW · 14:14</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も - カルチャーメディアNiEW</h3>
+    <p class="summary-text">Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も カルチャーメディア…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開…」と伝えています。出典: カルチャーメディアNiEW</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="政治">政治</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-89f7b499c5f1438a" class="card" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE82MWNwdWtrQWF6Qm9UN0tDVlMwUXNnS015VzE4a0swRHNFSUlXdUZfX1RzZl9HLUw0X3ZyRHdIRkwyNzRhTHhpTE5DVVQ0WUpRaFE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE82MWNwdWtrQWF6Qm9UN0tDVlMwUXNnS015VzE4a0swRHNFSUlXdUZfX1RzZl9HLUw0X3ZyRHdIRkwyNzRhTHhpTE5DVVQ0WUpRaFE?oc=5" data-title="政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル" data-genre="政治" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/d0aabc289cb7a25f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>電波新聞デジタル · 14:59</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</h3>
+    <p class="summary-text">政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル」と伝えています。出典: 電波新聞デジタル</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-696a4ba314397297" class="card" href="https://news.google.com/rss/articles/CBMi_wNBVV95cUxNcmxiTlZGLWZfTk1TQXlSVFJ4UHVsQk85bHc2MlNabVZPcUUwOUlfeV9kVjd6c3pfYzNlcU11MlpXMUxMM0NUUzNjZFpNeFoyaWFyQ21jZ3pMYmxZbEYzRmlMMm1sNmxyNHdEcm5NTmF5cUxMRXExMm5zeFhaeXVLNWxiMU85dFJGX1owcDRnYUJPOWxhNThJNGJHdVNGemZQcWl6aTdZNUxENTVhOTlWUk9xbFdVSzlKUHhLYmVUaHFJb3FGSVMxNUFTLVlHdTg5TWphcjV2U2liNE9pSXRhR014TkRPdzN5UTI0aFB5eUpUaXoxbXdlVFFpX3ZwVVFKYWJTTGlySXItMkxYLWItNC1GenhyZXNtWEhQeG42SmNnR3RZVWd0dWtkaVdzaWwzSlM0LXJlNkxsRTFmSzM3X3BtUC1keEttVlZPU240UXlJZThZcGhUcFRrNkN3dHBGSDBucFNKYTBpVUlPamtNeGVfT0NoYVBWY2VHSUwzUm1rTXlSVEpyV3doTHFZRUtIUHdXRm00cGlzV2g5STNaaTN6Q2pCNks0VDVTSDZBZkxicjRVUEplOUFkRVpvSzFxT0JDWlhoOERaeUEtSUR0ekRfWXBPRHYzSzQtclZ2MDktQUpCZ05IOUozYkJwQ1NRTFRaV29oVV9Db0hYMERj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓国政府、 中小企業の製造データを国家戦略資産に - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi_wNBVV95cUxNcmxiTlZGLWZfTk1TQXlSVFJ4UHVsQk85bHc2MlNabVZPcUUwOUlfeV9kVjd6c3pfYzNlcU11MlpXMUxMM0NUUzNjZFpNeFoyaWFyQ21jZ3pMYmxZbEYzRmlMMm1sNmxyNHdEcm5NTmF5cUxMRXExMm5zeFhaeXVLNWxiMU85dFJGX1owcDRnYUJPOWxhNThJNGJHdVNGemZQcWl6aTdZNUxENTVhOTlWUk9xbFdVSzlKUHhLYmVUaHFJb3FGSVMxNUFTLVlHdTg5TWphcjV2U2liNE9pSXRhR014TkRPdzN5UTI0aFB5eUpUaXoxbXdlVFFpX3ZwVVFKYWJTTGlySXItMkxYLWItNC1GenhyZXNtWEhQeG42SmNnR3RZVWd0dWtkaVdzaWwzSlM0LXJlNkxsRTFmSzM3X3BtUC1keEttVlZPU240UXlJZThZcGhUcFRrNkN3dHBGSDBucFNKYTBpVUlPamtNeGVfT0NoYVBWY2VHSUwzUm1rTXlSVEpyV3doTHFZRUtIUHdXRm00cGlzV2g5STNaaTN6Q2pCNks0VDVTSDZBZkxicjRVUEplOUFkRVpvSzFxT0JDWlhoOERaeUEtSUR0ekRfWXBPRHYzSzQtclZ2MDktQUpCZ05IOUozYkJwQ1NRTFRaV29oVV9Db0hYMERj?oc=5" data-title="韓国政府、 中小企業の製造データを国家戦略資産に - MSN" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/775f34ae8acce790.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>MSN · 14:55</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>韓国政府、 中小企業の製造データを国家戦略資産に - MSN</h3>
+    <p class="summary-text">韓国政府、 中小企業の製造データを国家戦略資産に MSN</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「韓国政府、 中小企業の製造データを国家戦略資産に MSN」と伝えています。出典: MSN</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-7fe6a516e5365b8e" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBVVEdGdGR1Wl91alVBOUdfMXdKLXlHcUtUZGo1SFlYN3ROc1YwYVU2X2dvR2NDLVBZTjJ5MjNCeHRjRXo5OU52LTlGSjlvSU9EV09UdElENlBSal9ScEZNeUNyVEpxZ0dzVVNCeHkta2NRMHVMdTFnbnduTXrSAXxBVV95cUxQVVRHRnRkdVpfdWpVQTlHXzF3Si15R3FLVGRqNUhZWDd0TnNWMGFVNl9nb0djQy1QWU4yeTIzQnh0Y0V6OTlOdi05Rko5b0lPRFdPVHRJRDZQUmpfUnBGTXlDclRKcWdHc1VTQnh5LWtjUTB1THUxZ253bk16?oc=5" rel="noopener noreferrer" target="_blank" aria-label="田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTFBVVEdGdGR1Wl91alVBOUdfMXdKLXlHcUtUZGo1SFlYN3ROc1YwYVU2X2dvR2NDLVBZTjJ5MjNCeHRjRXo5OU52LTlGSjlvSU9EV09UdElENlBSal9ScEZNeUNyVEpxZ0dzVVNCeHkta2NRMHVMdTFnbnduTXrSAXxBVV95cUxQVVRHRnRkdVpfdWpVQTlHXzF3Si15R3FLVGRqNUhZWDd0TnNWMGFVNl9nb0djQy1QWU4yeTIzQnh0Y0V6OTlOdi05Rko5b0lPRFdPVHRJRDZQUmpfUnBGTXlDclRKcWdHc1VTQnh5LWtjUTB1THUxZ253bk16?oc=5" data-title="田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4e6875f9a5f106b4.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>四国新聞 · 14:45</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <p class="summary-text">田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟」と伝えています。出典: 四国新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-c6eb72b791606f27" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVUZQR2tLdl83cUNZbFphcGN0akc4NUc2TEltSGMxTmtGYVBYTF8xOWJ4TTlIMWFaV0w3R1czamtjNzB6cjZGNHVYUFd3ejkwV0JFRVRkbjFaS0lUc0E0a2RWRlVRS21UNF9pSjlZLU9BTDFHanQzYW04WVfSAXxBVV95cUxPZ1VGUEdrS3ZfN3FDWWxaYXBjdGpHODVHNkxJbUhjMU5rRmFQWExfMTlieE05SDFhWldMN0dXM2prYzcwenI2RjR1WFBXd3o5MFdCRUVUZG4xWktJVHNBNGtkVkZVUUttVDRfaUo5WS1PQUwxR2p0M2FtOFlX?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVUZQR2tLdl83cUNZbFphcGN0akc4NUc2TEltSGMxTmtGYVBYTF8xOWJ4TTlIMWFaV0w3R1czamtjNzB6cjZGNHVYUFd3ejkwV0JFRVRkbjFaS0lUc0E0a2RWRlVRS21UNF9pSjlZLU9BTDFHanQzYW04WVfSAXxBVV95cUxPZ1VGUEdrS3ZfN3FDWWxaYXBjdGpHODVHNkxJbUhjMU5rRmFQWExfMTlieE05SDFhWldMN0dXM2prYzcwenI2RjR1WFBXd3o5MFdCRUVUZG4xWktJVHNBNGtkVkZVUUttVDRfaUo5WS1PQUwxR2p0M2FtOFlX?oc=5" data-title="「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/2115ebd9a3802f93.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>四国新聞 · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <p class="summary-text">「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意」と伝えています。出典: 四国新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-a19abeb5f287802d" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE92U3owZi00RkN6T0VwY3M5TlBrU2tLb3FtS0JfS2VsNTZtaHFCVldNdFhxR2liTldMT0ZmOXU5US1qSjJEaDUzN05IZTBvWE9DNnhRTUZ5RTd6NjBVeGdVbE1NQ3pXS29ldGI2bU51dWJwS1VHaHpHSGlxSXPSAXxBVV95cUxPdlN6MGYtNEZDek9FcGNzOU5Qa1NrS29xbUtCX0tlbDU2bWhxQlZXTXRYcUdpYk5XTE9GZjl1OVEtakoyRGg1MzdOSGUwb1hPQzZ4UU1GeUU3ejYwVXhnVWxNTUN6V0tvZXRiNm1OdXVicEtVR2h6R0hpcUlz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="県関係国会議員週間予定（１３～１９日）｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE92U3owZi00RkN6T0VwY3M5TlBrU2tLb3FtS0JfS2VsNTZtaHFCVldNdFhxR2liTldMT0ZmOXU5US1qSjJEaDUzN05IZTBvWE9DNnhRTUZ5RTd6NjBVeGdVbE1NQ3pXS29ldGI2bU51dWJwS1VHaHpHSGlxSXPSAXxBVV95cUxPdlN6MGYtNEZDek9FcGNzOU5Qa1NrS29xbUtCX0tlbDU2bWhxQlZXTXRYcUdpYk5XTE9GZjl1OVEtakoyRGg1MzdOSGUwb1hPQzZ4UU1GeUU3ejYwVXhnVWxNTUN6V0tvZXRiNm1OdXVicEtVR2h6R0hpcUlz?oc=5" data-title="県関係国会議員週間予定（１３～１９日）｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/5f7ed87e6feff38e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>四国新聞 · 14:37</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>県関係国会議員週間予定（１３～１９日）｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <p class="summary-text">県関係国会議員週間予定（１３～１９日）</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「県関係国会議員週間予定（１３～１９日）」と伝えています。出典: 四国新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-330605d04ac87d30" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE9XZ2huenRrc3hyZzJydnIzNW1yVkkycE8zMU1aVjJaSG05M3BPYVJ0dUVTcGtlNnRIMU5UVHN4V1hiM09UNVQzVzZteXl5UlNMVGVoWnN0LUlqWW9La3JaWklSLXZ6d0ZlNmxwVU0xRFF0QjJab2stejBtdC3SAXxBVV95cUxPV2dobnp0a3N4cmcycnZyMzVtclZJMnBPMzFNWlYyWkhtOTNwT2FSdHVFU3BrZTZ0SDFOVFRzeFdYYjNPVDVUM1c2bXl5eVJTTFRlaFpzdC1JallvS2tyWlpJUi12endGZTZscFVNMURRdEIyWm9rLXowbXQt?oc=5" rel="noopener noreferrer" target="_blank" aria-label="トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE9XZ2huenRrc3hyZzJydnIzNW1yVkkycE8zMU1aVjJaSG05M3BPYVJ0dUVTcGtlNnRIMU5UVHN4V1hiM09UNVQzVzZteXl5UlNMVGVoWnN0LUlqWW9La3JaWklSLXZ6d0ZlNmxwVU0xRFF0QjJab2stejBtdC3SAXxBVV95cUxPV2dobnp0a3N4cmcycnZyMzVtclZJMnBPMzFNWlYyWkhtOTNwT2FSdHVFU3BrZTZ0SDFOVFRzeFdYYjNPVDVUM1c2bXl5eVJTTFRlaFpzdC1JallvS2tyWlpJUi12endGZTZscFVNMURRdEIyWm9rLXowbXQt?oc=5" data-title="トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/0ec0ab3e4a94aaf7.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>四国新聞 · 14:30</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <p class="summary-text">トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ」と伝えています。出典: 四国新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="科学">科学</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-c9394048ef9acf7c" class="card" href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBKTkVneUptMFdpMVZxdzZsMmdONFRQYU1nRWFZZVZUcWNEaUtlemxXQWxWblNyalhtOUstdzZwdDh1RFdTc2FHdUo2LW9VMVVDOS1jamxNTDhNSTNCN0dRZFdXR3BCQURaRTZrSXRn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラスを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTFBKTkVneUptMFdpMVZxdzZsMmdONFRQYU1nRWFZZVZUcWNEaUtlemxXQWxWblNyalhtOUstdzZwdDh1RFdTc2FHdUo2LW9VMVVDOS1jamxNTDhNSTNCN0dRZFdXR3BCQURaRTZrSXRn?oc=5" data-title="画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス" data-genre="科学" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/9e88bce1dbe3a368.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ウォーカープラス · 14:49</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
+    <p class="summary-text">画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝…」と伝えています。出典: ウォーカープラス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-e20f7ee08f296a39" class="card" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQUzR3SmhlY1ZLSVp4X2ExYWZ5SFJITWVGUU9YbFBqelEweVdUTllIdHR1ZGhiejNEa1p4OGFpNzhPTWp4ODFTLUdBQ3hodjk0aWRWVUdHTVZGMVhuUmJUSms5RFliUkNxelRpYl9GM2dUWms3SjlwTzl0VHM4UDEtMDBDZ1NRS1Aya2p0TDZ3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxQUzR3SmhlY1ZLSVp4X2ExYWZ5SFJITWVGUU9YbFBqelEweVdUTllIdHR1ZGhiejNEa1p4OGFpNzhPTWp4ODFTLUdBQ3hodjk0aWRWVUdHTVZGMVhuUmJUSms5RFliUkNxelRpYl9GM2dUWms3SjlwTzl0VHM4UDEtMDBDZ1NRS1Aya2p0TDZ3?oc=5" data-title="飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュース" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/e0d674d5506adaca.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:33</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュース</h3>
+    <p class="summary-text">飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白く…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメ…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-1b3ed9edd1dd14e0" class="card" href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPQUM2U2NfVmx5UHlDRDRhYjZMVDA1UUlzZlZwcnBBWGZNOTZVLXJxNFV2WmtEV2NwbEx3Z3BaTnJHYWF6Qno4aVlNa3dWVnFBdXpKVUIwd09zZGd4T0x6M2Fpb1JKcDlHZTNUZjdZdVpZLWJ5Y2JoYVlzSDNYdmJZQkVfZG0xUmZObExyQ2tEQ1VoWHh3eWZEVFpYdmxSVGJRbHJrSHF5RGRsdGprWElKXzg4cmFpaWNod1RFQmhMNFpqbTdEall1eWV3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開 - Kids Well-beingを読む" data-url="https://news.google.com/rss/articles/CBMiygFBVV95cUxPQUM2U2NfVmx5UHlDRDRhYjZMVDA1UUlzZlZwcnBBWGZNOTZVLXJxNFV2WmtEV2NwbEx3Z3BaTnJHYWF6Qno4aVlNa3dWVnFBdXpKVUIwd09zZGd4T0x6M2Fpb1JKcDlHZTNUZjdZdVpZLWJ5Y2JoYVlzSDNYdmJZQkVfZG0xUmZObExyQ2tEQ1VoWHh3eWZEVFpYdmxSVGJRbHJrSHF5RGRsdGprWElKXzg4cmFpaWNod1RFQmhMNFpqbTdEall1eWV3?oc=5" data-title="【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開 - Kids Well-being" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/2e3d261528e4209b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Kids Well-being · 14:30</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開 - Kids Well-being</h3>
+    <p class="summary-text">【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開」と伝えています。出典: Kids Well-being</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-24f3439993818b88" class="card" href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBnWEcyVmVHR2pNcjNEN1o4TWo0aFdjTjVWam41V1FRRnFJX1lPSUc4RlFMSHJ0MjhGNDhrNkZlckxxQ3NBVzRWRS1KR1BMbjRhRm9qWlFtRU1nN0w1cGkzb1dNc3diSENmVnZLVDZ3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラスを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTFBnWEcyVmVHR2pNcjNEN1o4TWo0aFdjTjVWam41V1FRRnFJX1lPSUc4RlFMSHJ0MjhGNDhrNkZlckxxQ3NBVzRWRS1KR1BMbjRhRm9qWlFtRU1nN0w1cGkzb1dNc3diSENmVnZLVDZ3?oc=5" data-title="画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/da65b462644df19f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ウォーカープラス · 14:17</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
+    <p class="summary-text">画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝…」と伝えています。出典: ウォーカープラス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-23874079ac513277" class="card" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE00TUxiRDJvOWlNdzFHZ19rRFhNVmVibVNTajlNbmVGRmhXTEtQaTExNHY3dURoR2ltU3VHUGdqS0RJaXJlNFBSYWFjZXphWFpXbHJiaEtqWFJmeGpmem44MlYwREFZVHkzbk9WaU53?oc=5" rel="noopener noreferrer" target="_blank" aria-label="画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラスを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTE00TUxiRDJvOWlNdzFHZ19rRFhNVmVibVNTajlNbmVGRmhXTEtQaTExNHY3dURoR2ltU3VHUGdqS0RJaXJlNFBSYWFjZXphWFpXbHJiaEtqWFJmeGpmem44MlYwREFZVHkzbk9WaU53?oc=5" data-title="画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/bb5915de1fa110e8.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ウォーカープラス · 14:17</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
+    <p class="summary-text">画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝…」と伝えています。出典: ウォーカープラス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-940283e7aa450050" class="card" href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBnZ0xXMTZlbnhqQ215VUI0eU1uS3V3QjRqczd4ZTVyODQtenIybmN0Tkc5bnE4ZnlmellZQ0haam05MU80Mzh6bDJPNTctc0VDMkhHQjRaUThkTk1HbFduNWJHWWNEcWFiSjU5WnBrbWRrUDBXT2k3WHF30gF_QVVfeXFMTU5TYmlfUjgtZmhwcFlHalRVcmpyTi1lSzN0ZUhDTjRHSzV2UFdCMUJ6eHJpb0dMcFBPOXBwRE9RcnZjMDkwaWpyZXo0UUMwR3B6ZnV6MERJVlQ0SFRRLXFYTWtKUm81M1FoVE82eGZwR1RkZjV0Rnd6MWlha05IQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMiekFVX3lxTFBnZ0xXMTZlbnhqQ215VUI0eU1uS3V3QjRqczd4ZTVyODQtenIybmN0Tkc5bnE4ZnlmellZQ0haam05MU80Mzh6bDJPNTctc0VDMkhHQjRaUThkTk1HbFduNWJHWWNEcWFiSjU5WnBrbWRrUDBXT2k3WHF30gF_QVVfeXFMTU5TYmlfUjgtZmhwcFlHalRVcmpyTi1lSzN0ZUhDTjRHSzV2UFdCMUJ6eHJpb0dMcFBPOXBwRE9RcnZjMDkwaWpyZXo0UUMwR3B6ZnV6MERJVlQ0SFRRLXFYTWtKUm81M1FoVE82eGZwR1RkZjV0Rnd6MWlha05IQQ?oc=5" data-title="50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 - ｄメニューニュース" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/86d13da8d901e100.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ｄメニューニュース · 14:17</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 - ｄメニューニュース</h3>
+    <p class="summary-text">50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 ｄメニューニュース</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 ｄ…」と伝えています。出典: ｄメニューニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="ライフ">ライフ</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-36ed8260c0efca19" class="card" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWlFYaXRmRDc0bTJUWWlrVWlfVmdNYkYyRVpQR3dyUzE3TDJ6M0tVNl9nVVZaR2JSVTRtcG1aSElKX0ZwMEFndFVYX2ljZktqM2duSkx6ZlVYaWV3eVhwT2pPTUloUG5Ba0lQX085ckZ2bFdRenR6QnlOSEZoME5VSFVrU1ZpblFVcVBtRkFVcHlKODBFZkxr?oc=5" rel="noopener noreferrer" target="_blank" aria-label="無料の定期健康診断に関する啓発キャンペーンを推進する。 - Vietnam.vnを読む" data-url="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWlFYaXRmRDc0bTJUWWlrVWlfVmdNYkYyRVpQR3dyUzE3TDJ6M0tVNl9nVVZaR2JSVTRtcG1aSElKX0ZwMEFndFVYX2ljZktqM2duSkx6ZlVYaWV3eVhwT2pPTUloUG5Ba0lQX085ckZ2bFdRenR6QnlOSEZoME5VSFVrU1ZpblFVcVBtRkFVcHlKODBFZkxr?oc=5" data-title="無料の定期健康診断に関する啓発キャンペーンを推進する。 - Vietnam.vn" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/fc169d9080cf7927.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Vietnam.vn · 14:28</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>無料の定期健康診断に関する啓発キャンペーンを推進する。 - Vietnam.vn</h3>
+    <p class="summary-text">無料の定期健康診断に関する啓発キャンペーンを推進する。 Vietnam.vn</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「無料の定期健康診断に関する啓発キャンペーンを推進する。 Vietnam.vn」と伝えています。出典: Vietnam.vn</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-9c545550878a02e1" class="card" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNEd0RG91UXhfZ2x1Sl8yd2l2ZnZ1cV9RUG5pZTFVZE5McFBCSk02RkQzN1lKem51ZkhJVjh1YklyZUJUVXk5eGZIOUhyZEVnLTRJMm4wTVlERnpabl96T2llTzExc2daTldUZ3I3MEFCcFZGYXJWX0JPR1I3V0ZuaGRyYjBldEdLUUNtTklOcGp4QQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="美と健康の健やかタイム - tv-tokyo.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNEd0RG91UXhfZ2x1Sl8yd2l2ZnZ1cV9RUG5pZTFVZE5McFBCSk02RkQzN1lKem51ZkhJVjh1YklyZUJUVXk5eGZIOUhyZEVnLTRJMm4wTVlERnpabl96T2llTzExc2daTldUZ3I3MEFCcFZGYXJWX0JPR1I3V0ZuaGRyYjBldEdLUUNtTklOcGp4QQ?oc=5" data-title="美と健康の健やかタイム - tv-tokyo.co.jp" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/65dd4a4417a4da42.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>tv-tokyo.co.jp · 14:15</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>美と健康の健やかタイム - tv-tokyo.co.jp</h3>
+    <p class="summary-text">美と健康の健やかタイム</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「美と健康の健やかタイム」と伝えています。出典: tv-tokyo.co.jp</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-1d499d391ee179eb" class="card" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMZnM0S1R0TW5Ycm5ldkVqUV9iM0lybFJ1aDRmTkpLUFlHSUtlQ2VkZU5OSDNWSUpDMzhaalppclVJRWFwNmNUV3RUOFk0SC05dmRxS0ZhbHFKSjR6?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMZnM0S1R0TW5Ycm5ldkVqUV9iM0lybFJ1aDRmTkpLUFlHSUtlQ2VkZU5OSDNWSUpDMzhaalppclVJRWFwNmNUV3RUOFk0SC05dmRxS0ZhbHFKSjR6?oc=5" data-title="「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIG" data-genre="ライフ" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/4a3bd4dbadaafe0a.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TBS NEWS DIG · 14:12</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度2</span></div>
+    <h3>「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIG</h3>
+    <p class="summary-text">「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題の…」と伝えています。出典: TBS NEWS DIG</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-867e90d49a6196d5" class="card" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GclJkeHBCWk9LN0hSc3ctWkxVd0NTV0pDVFJYeEo2S0RsS1BzeDB5SVlEQlhpUVh5NlhQNlZ5NDFYMFZBNk1DTDJPYkFvc1dOeV96Y2otRmYxZ3EwdVpKY2NIWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 - Gizmodoを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1GclJkeHBCWk9LN0hSc3ctWkxVd0NTV0pDVFJYeEo2S0RsS1BzeDB5SVlEQlhpUVh5NlhQNlZ5NDFYMFZBNk1DTDJPYkFvc1dOeV96Y2otRmYxZ3EwdVpKY2NIWQ?oc=5" data-title="プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 - Gizmodo" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/ece231f3dd081914.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Gizmodo · 13:30</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 - Gizmodo</h3>
+    <p class="summary-text">プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 Gizmodo</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 Gizmodo」と伝えています。出典: Gizmodo</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-81dce04e70786a53" class="card" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE93S1ItNmtyVldIeWlvOGJxRWlmMzRjVFhQcXQxM1BER05NSXZsRFFVMFk4aWREeUdIT3ZBeU83ZWhQb2Z5d09OSVI4MThYTWVSSm1jSWZ3RmFiNU5COWF6QVIzSEpMYWxBR2Zj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 - ライフハッカー・ジャパンを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE93S1ItNmtyVldIeWlvOGJxRWlmMzRjVFhQcXQxM1BER05NSXZsRFFVMFk4aWREeUdIT3ZBeU83ZWhQb2Z5d09OSVI4MThYTWVSSm1jSWZ3RmFiNU5COWF6QVIzSEpMYWxBR2Zj?oc=5" data-title="ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 - ライフハッカー・ジャパン" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4317430c4311515c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ライフハッカー・ジャパン · 13:15</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 - ライフハッカー・ジャパン</h3>
+    <p class="summary-text">ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 ライフハッカー・ジャパン</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 ライフハッカー・ジャパン」と伝えています。出典: ライフハッカー・ジャパン</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-8322b359cbb758d6" class="card" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBZRHVjWFNsOWt4ZnY2NGFucHRCOU1VaC1wNTYtUkxkbWpzWDNyeGRLcDZXZFFfVkhJNEtvczdqTlJPclJZUlJnZXlVQk0wdU85TWI1QXZsZ1hJdUM5dnpYSXpoaV9QZ0ctN3pV?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける - アニメイトタイムズを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTFBZRHVjWFNsOWt4ZnY2NGFucHRCOU1VaC1wNTYtUkxkbWpzWDNyeGRLcDZXZFFfVkhJNEtvczdqTlJPclJZUlJnZXlVQk0wdU85TWI1QXZsZ1hJdUM5dnpYSXpoaV9QZ0ctN3pV?oc=5" data-title="【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける - アニメイトタイムズ" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4cd3c6ca20b00521.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>アニメイトタイムズ · 13:10</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける - アニメイトタイムズ</h3>
+    <p class="summary-text">【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける アニメイト…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain…」と伝えています。出典: アニメイトタイムズ</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="エンタメ">エンタメ</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-c04b4143251c07d7" class="card" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JMVNyeTJUMHh0WUdDb2lUb3AxOXFVbmtUZzNCUGZHb05rQTlpVW5fWWdVd1Y5R25tQ1dnR0poNXV4UzdwZjlBb1BfUU1UR3VwakE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 - シティライフニュースを読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JMVNyeTJUMHh0WUdDb2lUb3AxOXFVbmtUZzNCUGZHb05rQTlpVW5fWWdVd1Y5R25tQ1dnR0poNXV4UzdwZjlBb1BfUU1UR3VwakE?oc=5" data-title="‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 - シティライフニュース" data-genre="エンタメ" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/6e2d7a32cf3807b7.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>シティライフニュース · 14:45</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 - シティライフニュース</h3>
+    <p class="summary-text">‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 シティライフニュース</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 シティライフニュース」と伝えています。出典: シティライフニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-ef58f0e506628ecd" class="card" href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QQjI4ZGx1R2tQbDNwQjRvZEd0MXlwcVNZM1R5ZEpvYjR6QXRtZnFEWVhhT18tb3NWbldON3R3eU55VDdtNzdoSkhoM2t2UQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ジャー・パンファンと音楽の潮流」#27 - FM大阪を読む" data-url="https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QQjI4ZGx1R2tQbDNwQjRvZEd0MXlwcVNZM1R5ZEpvYjR6QXRtZnFEWVhhT18tb3NWbldON3R3eU55VDdtNzdoSkhoM2t2UQ?oc=5" data-title="「ジャー・パンファンと音楽の潮流」#27 - FM大阪" data-genre="エンタメ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/8f2c32962426e94e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>FM大阪 · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>「ジャー・パンファンと音楽の潮流」#27 - FM大阪</h3>
+    <p class="summary-text">「ジャー・パンファンと音楽の潮流」#27 FM大阪</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「ジャー・パンファンと音楽の潮流」#27 FM大阪」と伝えています。出典: FM大阪</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-d98755cb3cfb7108" class="card" href="https://news.google.com/rss/articles/CBMi7ARBVV95cUxNUmpwWEZtSjY1dzhyLWxXOVNSb3hfRmt3ZEZzTjV6VXU3b1pVRUZydWJCQ1JlZ3NCSjJ2aTM1VkNjam1rcnlRQVpYMzR3Y1lpa1gxTkYtY2d4MGpYUk9KZjBSWktDd1pSVVpwb1o3anYyY2lwR3VkUWJsc1dkanJ2ckY5MGpOcV9ybGM4emc3enYzaWxMQ1p3UWc3d08zMTNrT1FRVXQwYTRRS3MtN1dRQTktNWtlU29ZSk55U0M3TFdidThIdERpNTRldUo1Z2V3cXlMYmN2Sm5zclRuWXd2LUdsakxiV2xhZjFBd1ZMV3VtdVAtUFN5WjR0UUMzWTlkRWxXcy01YnFMcGVDa2xVVlZDTkxfUmhKN282UzVSQkFqSlJsb0ZrR3d5Y1hoX0o4QXZWNXlwWnZIQzNQejRDcGEyVXV2c1RROXF1bE9OakY5LUJPTnBLbTBKYW5FeFJaN3A0ekpsR25FeE1pM1RrbnVJeHpEdkUtcVI5TGhvbmN6VXBnbkE4RzcybG50MTkyOHl1bjVmVnpkVHJSQTM2MmFhQ3RVakRKTGRVVUZ2ZV80QlgwNGNzRTlBNk04enppeUx2QUM0SHJSaWcxV1dreEp0WDhOMDFielZtVEgtVkI5ZGYxZ2dpSlFGR054dTB6eDlaYlJ2cHd2SXJmYURRVkY0TXVwaHFoVThZNEpqV0p3b0UtLWhpcl9YT2tEdWNzT2Y4Ykp6YzUtZnpBVWJYN3RYQnBydVZPbW1RX0k5RjNhMkdBWVdJbzVaa1VTNC1jVjFkaGNJZk5qOEk2MmlfN196TjY1amVrUmZlMg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi7ARBVV95cUxNUmpwWEZtSjY1dzhyLWxXOVNSb3hfRmt3ZEZzTjV6VXU3b1pVRUZydWJCQ1JlZ3NCSjJ2aTM1VkNjam1rcnlRQVpYMzR3Y1lpa1gxTkYtY2d4MGpYUk9KZjBSWktDd1pSVVpwb1o3anYyY2lwR3VkUWJsc1dkanJ2ckY5MGpOcV9ybGM4emc3enYzaWxMQ1p3UWc3d08zMTNrT1FRVXQwYTRRS3MtN1dRQTktNWtlU29ZSk55U0M3TFdidThIdERpNTRldUo1Z2V3cXlMYmN2Sm5zclRuWXd2LUdsakxiV2xhZjFBd1ZMV3VtdVAtUFN5WjR0UUMzWTlkRWxXcy01YnFMcGVDa2xVVlZDTkxfUmhKN282UzVSQkFqSlJsb0ZrR3d5Y1hoX0o4QXZWNXlwWnZIQzNQejRDcGEyVXV2c1RROXF1bE9OakY5LUJPTnBLbTBKYW5FeFJaN3A0ekpsR25FeE1pM1RrbnVJeHpEdkUtcVI5TGhvbmN6VXBnbkE4RzcybG50MTkyOHl1bjVmVnpkVHJSQTM2MmFhQ3RVakRKTGRVVUZ2ZV80QlgwNGNzRTlBNk04enppeUx2QUM0SHJSaWcxV1dreEp0WDhOMDFielZtVEgtVkI5ZGYxZ2dpSlFGR054dTB6eDlaYlJ2cHd2SXJmYURRVkY0TXVwaHFoVThZNEpqV0p3b0UtLWhpcl9YT2tEdWNzT2Y4Ykp6YzUtZnpBVWJYN3RYQnBydVZPbW1RX0k5RjNhMkdBWVdJbzVaa1VTNC1jVjFkaGNJZk5qOEk2MmlfN196TjY1amVrUmZlMg?oc=5" data-title="おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 - MSN" data-genre="エンタメ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/5387d7153d9d01ca.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>MSN · 14:39</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 - MSN</h3>
+    <p class="summary-text">おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 MSN</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 MSN」と伝えています。出典: MSN</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-e5fa3421ee2f1736" class="card" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE52UVduZnNnYUpnaGtGUV9iVXN4MHBXYi1ULUVKVnc1WVc2aHRFMHZGYkhFNUtfLWk1RGZoWGpic0JLbkhWeFFHcmJRLTlhNlU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻｜vois ヴォイス - MusicVoiceを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE52UVduZnNnYUpnaGtGUV9iVXN4MHBXYi1ULUVKVnc1WVc2aHRFMHZGYkhFNUtfLWk1RGZoWGpic0JLbkhWeFFHcmJRLTlhNlU?oc=5" data-title="【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻｜vois ヴォイス - MusicVoice" data-genre="エンタメ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/a0acde6894e1709d.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>MusicVoice · 14:29</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻｜vois ヴォイス - MusicVoice</h3>
+    <p class="summary-text">【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月に…」と伝えています。出典: MusicVoice</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-4ce68c4a300bf514" class="card" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oV0xPYy13VTg3MkdZaTh2WTZFVXl2dWVMeUlBaXVlVHB5MjR0R1dCMTcyM29oSHFRX1ZfREVya2dmZC1SbTFtczdPY3lZS0JXMkhCQ0NyeTJGZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） - 映画.comを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oV0xPYy13VTg3MkdZaTh2WTZFVXl2dWVMeUlBaXVlVHB5MjR0R1dCMTcyM29oSHFRX1ZfREVya2dmZC1SbTFtczdPY3lZS0JXMkhCQ0NyeTJGZw?oc=5" data-title="「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） - 映画.com" data-genre="エンタメ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/88605ecb483602c1.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>映画.com · 14:14</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） - 映画.com</h3>
+    <p class="summary-text">「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） 映画.com</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（…」と伝えています。出典: 映画.com</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-f0ec174fd0429654" class="card" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fYlpfb3ZZcDhpeWxPbzhKNXh4eXcxOUZLbE5WOGNpQ1pOcjJCbzZNZnJPcUZKbXFNRlZzZjZtdndkSEF3NWZraTF5M19pcHpvT2sxU0EyNDdsSTA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！ - クラウドファンディング - READYFORを読む" data-url="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fYlpfb3ZZcDhpeWxPbzhKNXh4eXcxOUZLbE5WOGNpQ1pOcjJCbzZNZnJPcUZKbXFNRlZzZjZtdndkSEF3NWZraTF5M19pcHpvT2sxU0EyNDdsSTA?oc=5" data-title="【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！ - クラウドファンディング - READYFOR" data-genre="エンタメ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/9cc4c45e00f9497c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>クラウドファンディング - READYFOR · 13:51</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！ - クラウドファンディング - READYFOR</h3>
+    <p class="summary-text">【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！」と伝えています。出典: クラウドファンディング - READYFOR</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+      </div>
+    </div>
+  </main>
+  <script>
+(() => {
+  const readKey = "daily-trend-news:read";
+  const clickKey = "daily-trend-news:clicks";
+  const parseJson = (value, fallback) => {
+    try { return JSON.parse(value || ""); } catch (_error) { return fallback; }
+  };
+  const read = new Set(parseJson(localStorage.getItem(readKey), []));
+  const clicks = parseJson(localStorage.getItem(clickKey), {});
+  const saveRead = () => localStorage.setItem(readKey, JSON.stringify([...read]));
+  const saveClicks = () => localStorage.setItem(clickKey, JSON.stringify(clicks));
+  const setReadState = (card, isRead) => {
+    card.classList.toggle("is-read", isRead);
+    const state = card.querySelector(".read-state");
+    if (state) state.textContent = isRead ? "既読" : "未読";
+  };
+  const applyView = (view) => {
+    document.querySelectorAll(".card[data-modes]").forEach((card) => {
+      const modes = (card.dataset.modes || "all").split(/\s+/);
+      card.hidden = view !== "all" && !modes.includes(view);
+    });
+    document.querySelectorAll(".genre").forEach((section) => {
+      const visible = section.querySelectorAll(".card:not([hidden])").length;
+      section.hidden = visible === 0;
+    });
+    syncSidebar();
+  };
+  const syncSidebar = () => {
+    document.querySelectorAll(".side-nav a[href^='#']").forEach((link) => {
+      const sectionId = decodeURIComponent((link.getAttribute("href") || "").slice(1));
+      const section = document.getElementById(sectionId)?.closest(".genre");
+      const visible = section ? section.querySelectorAll(".card:not([hidden])").length : 0;
+      link.hidden = visible === 0;
+      const count = link.querySelector("small");
+      if (count) count.textContent = `${visible}件`;
+    });
+  };
+  document.querySelectorAll(".card[data-url]").forEach((card) => {
+    const url = card.dataset.url;
+    setReadState(card, read.has(url));
+    card.addEventListener("click", () => {
+      read.add(url);
+      clicks[url] = {
+        title: card.dataset.title || "",
+        genre: card.dataset.genre || "",
+        count: (clicks[url]?.count || 0) + 1,
+        lastClickedAt: new Date().toISOString()
+      };
+      setReadState(card, true);
+      saveRead();
+      saveClicks();
+    });
+  });
+  document.querySelectorAll(".view-tab").forEach((button) => {
+    button.addEventListener("click", () => {
+      const view = button.dataset.view;
+      document.querySelectorAll(".view-tab").forEach((node) => node.classList.toggle("is-active", node === button));
+      document.querySelectorAll(".brief-view").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === view));
+      document.body.dataset.view = view;
+      applyView(view);
+    });
+  });
+  document.querySelectorAll(".analytics-export").forEach((button) => {
+    button.addEventListener("click", () => {
+      const blob = new Blob([localStorage.getItem(clickKey) || "{}"], {type: "application/json"});
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "daily-trend-news-clicks.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  });
+  applyView("one");
+})();
+</script>
+</body>
+</html>

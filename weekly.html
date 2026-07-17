@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Summary - Daily Trend News</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg:#10141b;
+  --bar:#151a23;
+  --panel:#202631;
+  --panel-2:#343c48;
+  --ink:#f7f7fb;
+  --muted:#a3a7b7;
+  --faint:#777d91;
+  --line:#3b3e50;
+  --accent:#4fd1c5;
+  --accent-strong:#9be7de;
+  --shadow:0 18px 42px rgba(0, 0, 0, .24);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: 8px;
+  z-index: 20;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-140%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--bar);
+  border-bottom: 1px solid #202234;
+}
+.brand {
+  color: #e8e8f0;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.brand::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--muted);
+  border-radius: 2px;
+  vertical-align: -1px;
+  box-shadow: inset 4px 0 0 rgba(79, 209, 197, .28);
+}
+.app-date {
+  color: var(--accent);
+  font-weight: 700;
+}
+.app-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.archive, .back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+.page {
+  width: min(1210px, 100%);
+  margin: 0 auto;
+  padding: 18px clamp(14px, 4vw, 32px) 64px;
+}
+.hero {
+  padding: 0 0 16px;
+}
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: #fff;
+  background: #1f6f78;
+  font-size: 12px;
+  font-weight: 700;
+}
+.brief-panel {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  overflow: hidden;
+}
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .04);
+}
+.view-tab {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.analytics-export {
+  margin-top: 10px;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(79, 209, 197, .45);
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.view-tab.is-active,
+.view-tab:hover,
+.view-tab:focus {
+  color: #071316;
+  background: var(--accent);
+}
+.brief-view {
+  display: none;
+  padding: 12px 16px;
+}
+.brief-view.is-active {
+  display: block;
+}
+.brief-view ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.brief-view li {
+  margin: 5px 0;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.sidebar {
+  position: sticky;
+  top: 62px;
+  overflow: hidden;
+  border: 1px solid #5b6071;
+  border-radius: 12px;
+  background: var(--panel-2);
+  box-shadow: var(--shadow);
+}
+.side-title {
+  padding: 8px 12px;
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+  font-weight: 800;
+}
+.side-nav {
+  display: grid;
+  padding: 10px 6px;
+}
+.side-calendar {
+  padding: 10px 8px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.side-calendar .calendar {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.side-calendar .calendar-month {
+  padding: 10px;
+  border-color: rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .05);
+}
+.side-calendar .calendar-month h2 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.side-calendar .calendar-grid {
+  gap: 3px;
+}
+.side-calendar .calendar-weekday,
+.side-calendar .calendar-day {
+  min-height: 24px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.calendar-more {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+.side-archive,
+.side-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.side-archive {
+  display: none;
+  margin: 10px 6px 0;
+  border-color: rgba(79, 209, 197, .45);
+  background: rgba(79, 209, 197, .12);
+}
+.side-nav a:hover,
+.side-nav a:focus,
+.side-archive:hover,
+.side-archive:focus {
+  border-color: var(--accent);
+  background: rgba(169, 147, 255, .14);
+}
+.side-nav small,
+.side-archive small {
+  color: #c0c3d0;
+  font-weight: 500;
+}
+.content {
+  min-width: 0;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.genre-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.genre-head::-webkit-details-marker { display: none; }
+.genre-head::before {
+  content: "▾";
+  color: var(--accent);
+  font-weight: 900;
+}
+.genre:not([open]) .genre-head::before {
+  content: "▸";
+}
+.genre-head span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.thumb {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 88px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(169, 147, 255, .25), rgba(255, 255, 255, .05));
+  object-fit: cover;
+}
+.genre { margin-top: 24px; }
+.genre:first-child { margin-top: 0; }
+.genre-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 9px;
+}
+.grid {
+  display: grid;
+  gap: 7px;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+  padding: 13px 42px 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.card.is-read {
+  opacity: .62;
+}
+.read-state {
+  margin-left: auto;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.labels span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #dbe4ef;
+  background: rgba(255, 255, 255, .08);
+  font-size: 11px;
+  font-weight: 700;
+}
+.card:hover,
+.card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .20);
+  transform: translateY(-1px);
+}
+.card::after {
+  content: "↗";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  color: var(--muted);
+  transform: translateY(-50%);
+}
+.card p { margin: 8px 0 0; font-size: 13px; }
+.card .thumb {
+  width: 100%;
+  height: 74px;
+  margin-top: 2px;
+  padding: 0;
+  border-radius: 8px;
+}
+.card-body {
+  min-width: 0;
+}
+.card h3 {
+  color: #fff;
+}
+.card:hover h3,
+.card:focus-visible h3 {
+  color: var(--accent-strong);
+}
+.summary-text { color: #c7cad6; }
+.meta { color: var(--muted); font-size: 12px; margin: 0; }
+.meta span {
+  color: var(--muted);
+  font-weight: 600;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+dl { margin: 10px 0 0; display: grid; gap: 8px; }
+dl div {
+  border-top: 1px solid #303345;
+  padding-top: 8px;
+}
+dt {
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 700;
+}
+dd {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #c4c7d4;
+}
+.empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.archive-page { max-width: 960px; }
+.archive-search {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.archive-search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.archive-search input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #5b6071;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #121821;
+  font: inherit;
+}
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+.search-result {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .04);
+}
+.search-result span,
+.search-result small {
+  color: var(--muted);
+}
+.weekly-grid {
+  display: grid;
+  gap: 14px;
+}
+.weekly-genre {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.weekly-genre ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.weekly-genre li {
+  margin: 9px 0;
+}
+.weekly-genre li span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+.calendar-month {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.calendar-month h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.calendar-weekday,
+.calendar-day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 34px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.calendar-weekday {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.calendar-day {
+  color: var(--faint);
+  border: 1px solid rgba(255, 255, 255, .06);
+}
+.calendar-day.is-empty {
+  border-color: transparent;
+}
+.calendar-day.is-linked {
+  color: #071316;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+.calendar-day.is-linked:hover,
+.calendar-day.is-linked:focus-visible {
+  background: var(--accent-strong);
+}
+.calendar-day.is-latest {
+  box-shadow: 0 0 0 2px #fff inset;
+}
+@media (max-width: 900px) {
+  .appbar {
+    grid-template-columns: 1fr auto;
+    height: auto;
+    padding: 10px 14px;
+  }
+  .app-date {
+    justify-self: end;
+    font-size: 13px;
+  }
+  .app-actions {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+  }
+  .side-calendar {
+    display: none;
+  }
+  .side-archive {
+    display: flex;
+  }
+  .side-nav {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+  }
+  .side-archive {
+    margin: 8px 8px 0;
+  }
+  .side-nav a {
+    flex: 0 0 auto;
+    gap: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .page { padding: 14px 12px 44px; }
+  .hero h1 { font-size: 34px; }
+  .badges { flex-wrap: wrap; }
+  .card { padding-right: 32px; }
+  .card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .card .thumb {
+    width: 100%;
+    height: 54px;
+    border-radius: 8px;
+  }
+  .verify-row { display: none; }
+  .reason-row {
+    border-top-color: #394352;
+  }
+  .reason-row dt {
+    color: var(--accent-strong);
+  }
+}
+</style>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="appbar">
+    <a class="brand" href="./">Daily Trend News</a>
+    <span class="app-date">Weekly</span>
+    <div class="app-actions"><a class="archive" href="./archive.html">Archive</a></div>
+  </header>
+  <main id="main" class="page archive-page">
+    <section class="hero">
+      <p class="eyebrow">Weekly summary · latest 2026-07-16</p>
+      <h1>週次サマリー</h1>
+      <div class="badges"><span>7日分</span><span>213件から抽出</span></div>
+    </section>
+    <section class="weekly-genre"><h2>今週の変化</h2><ul><li>今週はAIの記事が38件で目立ちました。</li><li>今週はIT業界の記事が38件で目立ちました。</li><li>今週は政治の記事が34件で目立ちました。</li><li>継続して見るべき論点: 動向確認 117件 / 仕事で使える 42件 / 制度・政治 26件</li></ul></section>
+    <section class="weekly-genre"><h2>来週見る点</h2><p>件数が多いジャンルと「要注意」「制度・政治」「仕事で使える」ラベルの続報を優先して確認。</p></section>
+    <div class="weekly-grid"><section class="weekly-genre"><h2>AI</h2><ul><li><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBtZ2JpYlNjZ210a2pheXMzdkhJUy1KSFNkcFpkQk5pVXBzOG40aUlhTWxPSlczNWE0VlFhOVdWN2REWi1xNW5ONnM1VFVydjUwWHZyT3pid2hGd0Y4MnZDd2Z3eXF6QzcyRlhiT0M3eERNOXdGXzNEeA?oc=5" target="_blank" rel="noopener noreferrer">エヌビディアＣＥＯが訪日、企業と提携発表へ 「日本ＡＩの始まり」 - ロイター</a><span>大手報道 · 仕事で使える · エヌビディアＣＥＯが訪日、企業と提携発表へ 「日本ＡＩの始まり」 ロイター</span></li><li><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE10REsyOEc2U3MxOWtRczZoTXVNQklwQXZ2UXl6OFRBWldRY2ZxNHRKU2RVRk84aGlPaDE1bUhqS202NExMWDkzbnJDRFJ3dV9aU09tU21FMjhXWlFSV3BLUzV2S3I3MDA?oc=5" target="_blank" rel="noopener noreferrer">豪州、AI規制法制化へ 著作権保護など柱 首相「事実上の窃盗」 [AIの時代] - 朝日新聞</a><span>大手報道 · 仕事で使える · 豪州、AI規制法制化へ 著作権保護など柱 首相「事実上の窃盗」 [AIの時代] 朝日新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5" target="_blank" rel="noopener noreferrer">OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch</a><span>専門メディア · 仕事で使える · OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch</span></li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFB2MlhHVHI0dFMwQnFzckJzdWl3c1pVejduVmg3MlQ3amRWQVg2VWY3Mlh4Y0w2OHllLThKNWFlMWlkbE55WE9fVUU4UWRZVmJ0dEtmTHJNcVg1TklYWGRrMGxfQzJGSVJVaVFXdGlibUJxenQyLVhUbVI3ZE9PWWM?oc=5" target="_blank" rel="noopener noreferrer">エヌビディアＣＥＯが訪日、企業と提携発表へ 「日本ＡＩの始まり」（ロイター） - Yahoo!ニュース</a><span>RSS · 仕事で使える · エヌビディアＣＥＯが訪日、企業と提携発表へ 「日本ＡＩの始まり」（ロイター） Yahoo!ニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE94MFVXN29LU2pDLXFlQTlUZlJaU01NU054T0tPOUZLRXV0UnlxU2dreE8tVFp2UmlNTUhpTU9CX1JxajNKT1p3d1ZIREt3ck1CeENsLTdWQ1RwaXB5c1pxOUtCUQ?oc=5" target="_blank" rel="noopener noreferrer">ニュース STOP、ビジネス向け動画生成AIプラットフォーム「OrionNaut」のβ版 - 株式会社インプレス</a><span>専門メディア · 仕事で使える · ニュース STOP、ビジネス向け動画生成AIプラットフォーム「OrionNaut」のβ版 株式会社インプレス</span></li></ul></section><section class="weekly-genre"><h2>IT業界</h2><ul><li><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5oUDlBa3FVeUV1R2NjUXd6RnVUODNxd2VaY1N4NS04LXhncWQ1UDRQTkYwM2IxWnI0eHRKNG1haGpDekJBemFnVXRfd0NWQTJieFdEM0U3Mm1QcGEzaDBGbUpSVVNhb2tCME9iS0ZZeXYxejRQ?oc=5" target="_blank" rel="noopener noreferrer">サムスン「Galaxy Glass」22日発表、Metaの独走に挑む秘密兵器 - BigGo ファイナンス</a><span>一次情報 · 動向確認 · サムスン「Galaxy Glass」22日発表、Metaの独走に挑む秘密兵器 BigGo ファイナンス</span></li><li><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5" target="_blank" rel="noopener noreferrer">セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan</a><span>専門メディア · 要注意 · セキュリティの新指標「日本度」発表</span></li><li><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5fQUNIZlF6THZITTVrTldiZHNicjJvMHhLTGphU24wQ2c0MEl1N0RuRUxSdEhzUk5hQVo1SnhNQ3otVEtrWXNsRnNrSF9TMFJsVEJtczhjUVJmcU9PQ2lhOFZGTEFTVHgxWHc4?oc=5" target="_blank" rel="noopener noreferrer">ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ - 時事ドットコム</a><span>大手報道 · 動向確認 · ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ 時事ドットコム</span></li><li><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" target="_blank" rel="noopener noreferrer">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</a><span>一次情報 · 市場・企業 · 中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</span></li><li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE4zS3ZSTUZUYzhlWmZOeE9tbHRCbkl2QlhmXy01UEFLYmRwX295YXNqTTJCNXpDSUlXSGFrMVNuMWZMamI1Q2NUd2VaUndmVmtzMldFT0dHNWxnX2lTSl9UZXZFb28wN1VUOUE?oc=5" target="_blank" rel="noopener noreferrer">日立がメインフレーム撤退へ、「VOS3」販売終了／キオクシア純利益48倍予想、ソニーGとTSMC提携 など、注目記事を音声化 - 日経クロステック</a><span>大手報道 · 動向確認 · 日立がメインフレーム撤退へ、「VOS3」販売終了／キオクシア純利益48倍予想、ソニーGとTSMC提携 など、注目記…</span></li></ul></section><section class="weekly-genre"><h2>政治</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE0yc2RDR1p1Y2VoSE5jY1Rpb3BZWm5oLUVXQmFPTF9vWU84dVl4Tnp6cnptbnYyRlYyMjMwMXVraDJHRVMydnpfV1VsSHpBeUZYQU9Jd0JwcUlYR2I5LUZIb0hPclN5U0p0?oc=5" target="_blank" rel="noopener noreferrer">読む政治：高市首相、「総意ではない」に反論 皇室典範改正案、論戦の内容 - 毎日新聞</a><span>大手報道 · 制度・政治 · 読む政治：高市首相、「総意ではない」に反論 皇室典範改正案、論戦の内容 毎日新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBhdW10Y1IzOWlPWkYzUHRPMWNyaHVwZUpEYTdlV3U4VlFDOHprcmJYZDd2aldJbUhYMG51OG9LVTVnMm5qbmwtaEJIOVNyX050RkEtRXdYaw?oc=5" target="_blank" rel="noopener noreferrer">【高市総理×参政・神谷宗幣代表】「政治家もしっかり国民の知る権利にこたえて」消費税減税や皇室典範など重要法案残る中で…党首討論で交わされた論戦【全文掲載】 - TBS NEWS DIG</a><span>RSS · 制度・政治 · 【高市総理×参政・神谷宗幣代表】「政治家もしっかり国民の知る権利にこたえて」消費税減税や皇室典範など重要法案残る中…</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1xNUZNZVF2Vmx6ekxZX2FkT2xRNWdNT0ZGTHk1QXFOSWxJNnE1U2VTOC1wSlB5a19UYVo3STBqUmFEYllqdDFyVlROYkZ0UFY1NmtQZFFCdllkaHRSMHpLNDFBY2lHZzl5?oc=5" target="_blank" rel="noopener noreferrer">「なお一層の検討を」 国民投票法改正案、成立見通しに識者は - 毎日新聞</a><span>大手報道 · 動向確認 · 「なお一層の検討を」 国民投票法改正案、成立見通しに識者は 毎日新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9QQk84b1ppc2lhY1o1MzhValJ3QXJZQm42NDlzVXFLVnk0Mk5KeWN5OFV4WVpaVlFTT3oxQVFRTnRrVGd0VTZTcUNBLTUxa3h1TDJZM2J2Szc0b2xTdmVWSjV0WldwOWJ6ZktybA?oc=5" target="_blank" rel="noopener noreferrer">中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 - 日本経済新聞</a><span>大手報道 · 動向確認 · 中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 日本経済新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5" target="_blank" rel="noopener noreferrer">政府与党連絡会議 - 首相官邸</a><span>一次情報 · 制度・政治 · 政府与党連絡会議 首相官邸</span></li></ul></section><section class="weekly-genre"><h2>社会</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YRWZ1WWlTX1NoRWlDOVNRM2xfNEFIanpidDluZlYxb0ZBLUo0Mkt6Qk5SU2IwakNsMVRvVEdWU3FGWFRWUExmODhWbXJzbkVkYXFKS1BjZ1RJUmI0dXp6Smd3ZUY0U00?oc=5" target="_blank" rel="noopener noreferrer">点滴に人間の大便入れて入院患者を殺害か 助産師を逮捕 容疑を否認 [千葉県] - 朝日新聞</a><span>大手報道 · 動向確認 · 点滴に人間の大便入れて入院患者を殺害か 助産師を逮捕 容疑を否認 [千葉県] 朝日新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZN21ybHZiTm9FckRZdk5pWGoxM1d0M3VGVV9TUXZlc3VrYkF4OTlpdHdwLWJybzhzZXJyU3YtUjNpak9kRVNrRHpNX08wcDRkQUZoWkJnM1hpVW9IZ0pNR05MSmdvdGRYY2U2bHlYUkJSQQ?oc=5" target="_blank" rel="noopener noreferrer">女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWS</a><span>大手報道 · 動向確認 · 女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 テレ朝NEWS</span></li><li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFBiVzhycC1jdXRSV1RJNWloQ1dEUWFDa3FCNmVBXzlqTzktUlVvaFVZc1NvQ1liMEt1U0t5YmxwdGdVY2NSMXlNWXlUdmpmVmpGVzJfOGJnRQ?oc=5" target="_blank" rel="noopener noreferrer">副首都法案が衆議院で可決 「国家社会機能」の継続性確保が目的 中道・参政・共産が反対 国民も修正に応じなかったとして反対に回る - TBS NEWS DIG</a><span>RSS · 制度・政治 · 副首都法案が衆議院で可決 「国家社会機能」の継続性確保が目的 中道・参政・共産が反対 国民も修正に応じなかったとし…</span></li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SUm5Yc0dqTkRQUURJZzV6NWhFLW84SXJ2M2FldnJZVk1VbXZTWGFuQzBiQlpmbXNDWVlpT0c1YTc4LTJTTXktM2EwUUVkUzZKN1F5T3N0bG9GUjBoQkFv?oc=5" target="_blank" rel="noopener noreferrer">共同通信 日野町事件再審めぐり誤報 担当デスクら処分 - NHKニュース</a><span>大手報道 · 動向確認 · 共同通信 日野町事件再審めぐり誤報 担当デスクら処分 NHKニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE94MVBoSTZTMkY0XzRDbFpDYnA1ZDJYM3Z5eWhaRmtwbWhwb0pqMFBBeEpKakJvcTZRbmo2Q1B3VE9uUVVOZjBaSWdvTERwUm1DUU1SNDlxbUpqUU8wbEN3b0ozdmZXX1V4?oc=5" target="_blank" rel="noopener noreferrer">日野町事件の再審公判 検察側、追加の証拠開示は「不要」 - 毎日新聞</a><span>大手報道 · 動向確認 · 日野町事件の再審公判 検察側、追加の証拠開示は「不要」 毎日新聞</span></li></ul></section><section class="weekly-genre"><h2>経済</h2><ul><li><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFA1cGJreXhEcnhiMWw0ZWlNMmdhQnY4SG9GcDY4bTB0MDkybUhaeEVtU3ZuYkxGa0p5VUpGWTkyMUJTc0VMMUR2b2RfV3hzTExGREFNTHJVeUd1RHl6SlpVRlJZbml6RU90Rm5zVnotSjE3c1hC?oc=5" target="_blank" rel="noopener noreferrer">米ビッグテック決算控え半導体株、高値論争の試金石に - BigGo ファイナンス</a><span>一次情報 · 市場・企業 · 米ビッグテック決算控え半導体株、高値論争の試金石に BigGo ファイナンス</span></li><li><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE13SHJmVTNUbHRQd1lBTUl2OGktbmo2Yjd5NlkySmljUHh5NW9zTGJDNHFfMjVtTEE4UDRZX18wWS1oS1BkRm9BMW80X2dESEVuenZJZjdvWHp6QW1vTWhkNGpZQ19CUmdxUHRhUVJnSFRPa0lMUnNF?oc=5" target="_blank" rel="noopener noreferrer">米株と国債が上昇、連日の物価統計下振れで利上げ先送り観測 - Bloomberg.com</a><span>大手報道 · 市場・企業 · 米株と国債が上昇、連日の物価統計下振れで利上げ先送り観測 Bloomberg.com</span></li><li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5" target="_blank" rel="noopener noreferrer">アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES</a><span>RSS · 市場・企業 · アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" target="_blank" rel="noopener noreferrer">ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス</a><span>大手報道 · 市場・企業 · ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) Yahoo!ファイナンス</span></li><li><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" target="_blank" rel="noopener noreferrer">来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo</a><span>RSS · 仕事で使える · 来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石…</span></li></ul></section><section class="weekly-genre"><h2>災害</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5" target="_blank" rel="noopener noreferrer">南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース</a><span>RSS · 要注意 · 南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DU1FKV1pWMklBMXdOU1p1VFIybjZfZ0dyMzVJa0dyOEdJUnItcU5DbDFPVjd2N2pTaHprRy1LTnZHelplQ1QzYWJmaV9GanRJRXNBcWR5MHk?oc=5" target="_blank" rel="noopener noreferrer">岩手 １３日明け方にかけ土砂災害・浸水・増水に十分注意 - NHKニュース</a><span>大手報道 · 要注意 · 岩手 １３日明け方にかけ土砂災害・浸水・増水に十分注意 NHKニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNYWkxMmdfODJXZVZrcFJsWE9KOHVkMXhBeWFhemctVVNVcVNoQ25wR1F1c2xPNFEwWVJ3eXpYMVVJT1JnZ29MUk02dkMyUmhSNjlEQmZwMlpBaEVxOE5MOFVnUEZhQ0NMS2d4NXZEejFsd0JBQXdaX3R4S3ZmOVdERk1pQmNRRm8?oc=5" target="_blank" rel="noopener noreferrer">震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細 | 長崎のニュース | 天気 | NBC長崎放送 - TBS NEWS DIG</a><span>RSS · 要注意 · 震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPZFR3b2FySFNMdFNUSDZyVEgwSTdLbHZOQk80YUlPWnhCWEd0MDl2dzU0OFkxcWxwSnRKcElrWjhuTkdSMnB5cjl5RUxoX3lPUXhKdWJPYm9NejBUYjlsNlNPLUhlX0hPQmV4am5RVk1RVVhUcnVCLUZfZzNSTmdIU2xNbGNvdGc?oc=5" target="_blank" rel="noopener noreferrer">震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細 | 山口のニュース・天気・防災｜tys NEWS｜ｔｙｓテレビ山口 - TBS NEWS DIG</a><span>RSS · 要注意 · 震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細</span></li><li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcU5pOXc2bzloZE1YOUVGY2p5VEJ6eUdfcGRGUzJZZUN6WWpIdFA0SFlSbHl2RmVId0J1SnBIXzc0OHd4cHgyRnVfMFYwZjdWYW9Ic3ZRWmxWWEJFbzRtWWlpUmVBM0JXM2pETVlhMVlERjRudWpBQnN6WXlPQW5MdWN2ak40UjlOSjdZaHp3?oc=5" target="_blank" rel="noopener noreferrer">北海道で最大震度1の地震 北海道・美瑛町、鹿追町 (FNNプライムオンライン（フジテレビ系）) - Yahoo!ニュース</a><span>RSS · 要注意 · 北海道で最大震度1の地震 北海道・美瑛町、鹿追町 (FNNプライムオンライン（フジテレビ系）) Yahoo!ニュース</span></li></ul></section><section class="weekly-genre"><h2>国際</h2><ul><li><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE53cGRHQzhCMzRjLXFPcUFCOHlJRDhSWVdYa0QwZ2hFRlplSWdIcFMyeHJfMVZJRmJRQWE4clBWVjBsNS05ZTFQTUNwUDlucE9vaUVqOElPZXkwbWZ4NU81WkJJZFlfRjZoWkhGTkRmWHRXUQ?oc=5" target="_blank" rel="noopener noreferrer">クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 - テレ朝NEWS</a><span>大手報道 · 動向確認 · クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 テレ朝NEWS</span></li><li><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QQm11dGN4SEdPY1hveXlpYWdwcmxidGxDcVlpck1HV0hGMUZ1WFVIa2FodGk1aVRsTHQ0ZzJxbHRoYmFwVDR0MEppcFB1RHB0YmJ5QnVPZFdlbjRaXzVv?oc=5" target="_blank" rel="noopener noreferrer">中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュース</a><span>RSS · 動向確認 · 中国遼寧省でゴムボート爆発 7人死亡 ライブドアニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsSHFzeWdKYWF1b2VlenY3VS01NE1pMTVhcHJJa2s2OGR2MmZNaWpvZWRxUm84UTZtNllRakhBcDgzMloxTGtORERsS2VUT29DbHhhbE5NWEU5TzB1Umc?oc=5" target="_blank" rel="noopener noreferrer">睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース</a><span>RSS · 動向確認 · 睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) ライブドアニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxQSmxwVkJhS1M5dHUyQzh3Ni1Ndlg1RTg1V254UWNvRUVmeEdzbS1acFdEVlpqUmgyOXZiMEtLemxZam85MWpleDhIZVR0Q0VOZGZnY1dFVTRBNTdudE01MkhjREtTNGswa3dObVhQMy04X3AtQ3lpdGhyNFU1Yjd1ZzR2dXo?oc=5" target="_blank" rel="noopener noreferrer">アート・デザイン・クラフトが交わる国際展「Kyōto YouMe Triennale」が10月初開催。京都・東本願寺で - Tokyo Art Beat</a><span>RSS · 動向確認 · アート・デザイン・クラフトが交わる国際展「Kyōto YouMe Triennale」が10月初開催。京都・東本願…</span></li><li><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE13ZDBFMUdqS2dVbmNOMDllMFVNQ0JKOTljZ0hJRXdqM3BuWGR1M3l5LWdKUU9WeDVRN2Q1TFRnTV9qU0dUeERYMVU2dWtkWENDODJhUlU5TE1LQQ?oc=5" target="_blank" rel="noopener noreferrer">GLAY・TERUさん 函館の国際芸術祭、28年開催へ調整 「音楽と飲食の担当を」 - 北海道新聞デジタル</a><span>RSS · 動向確認 · GLAY・TERUさん 函館の国際芸術祭、28年開催へ調整 「音楽と飲食の担当を」 北海道新聞デジタル</span></li></ul></section><section class="weekly-genre"><h2>ライフ</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMZnM0S1R0TW5Ycm5ldkVqUV9iM0lybFJ1aDRmTkpLUFlHSUtlQ2VkZU5OSDNWSUpDMzhaalppclVJRWFwNmNUV3RUOFk0SC05dmRxS0ZhbHFKSjR6?oc=5" target="_blank" rel="noopener noreferrer">「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIG</a><span>RSS · 動向確認 · 「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】</span></li><li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UeE1lNXRiMjE2MF9MV2dTSkE4MlQtUi1JbEJWYWtEU0E5dWdXWEpyc3RYNl8xWHRqcjB2Qi0wa1NZTXpQZXZwdDBUZ2JWQXljdmZ6em1QMA" target="_blank" rel="noopener noreferrer">「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIG</a><span>RSS · 要注意 · 「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半…</span></li><li><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA" target="_blank" rel="noopener noreferrer">【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社</a><span>RSS · 要注意 · 【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス</span></li><li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNWlFYaXRmRDc0bTJUWWlrVWlfVmdNYkYyRVpQR3dyUzE3TDJ6M0tVNl9nVVZaR2JSVTRtcG1aSElKX0ZwMEFndFVYX2ljZktqM2duSkx6ZlVYaWV3eVhwT2pPTUloUG5Ba0lQX085ckZ2bFdRenR6QnlOSEZoME5VSFVrU1ZpblFVcVBtRkFVcHlKODBFZkxr?oc=5" target="_blank" rel="noopener noreferrer">無料の定期健康診断に関する啓発キャンペーンを推進する。 - Vietnam.vn</a><span>RSS · 動向確認 · 無料の定期健康診断に関する啓発キャンペーンを推進する。 Vietnam.vn</span></li><li><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxPNEd0RG91UXhfZ2x1Sl8yd2l2ZnZ1cV9RUG5pZTFVZE5McFBCSk02RkQzN1lKem51ZkhJVjh1YklyZUJUVXk5eGZIOUhyZEVnLTRJMm4wTVlERnpabl96T2llTzExc2daTldUZ3I3MEFCcFZGYXJWX0JPR1I3V0ZuaGRyYjBldEdLUUNtTklOcGp4QQ?oc=5" target="_blank" rel="noopener noreferrer">美と健康の健やかタイム - tv-tokyo.co.jp</a><span>RSS · 動向確認 · 美と健康の健やかタイム</span></li></ul></section><section class="weekly-genre"><h2>ゲーム</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5" target="_blank" rel="noopener noreferrer">江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞</a><span>RSS · 動向確認 · 江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題</span></li><li><a href="https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5" target="_blank" rel="noopener noreferrer">PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg</a><span>RSS · 動向確認 · PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg</span></li><li><a href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5" target="_blank" rel="noopener noreferrer">欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp</a><span>RSS · 動向確認 · 欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどで…</span></li></ul></section><section class="weekly-genre"><h2>エンタメ</h2><ul><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5GbnVYZzhRZkJ0NW1tTnc2N0R1dGFUQlg2bC1pcDFiYmRmVUlqdE8xb0Ixc0RtZGRjXzZOWi1BVUFjMkkzb21HOHRfdkdadmNYMUVsV0ZCakNiY0d4Ykh3c3hfX0EyREthUmRfU1Q1V2hCbTJxNWc?oc=5" target="_blank" rel="noopener noreferrer">「真佑のことおいてかないで」乃木坂46・田村の“甘さと辛さの緩急”が暴露され…！？『乃木坂工事延長中』#571 - Lemino</a><span>RSS · 動向確認 · 「真佑のことおいてかないで」乃木坂46・田村の“甘さと辛さの緩急”が暴露され…！？『乃木坂工事延長中』#571 L…</span></li><li><a href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE15Q1R6SGlKSGgtZkpFX3gxc1UzVXFDTmxvNHNkSFZudW93VFRpdU42QmFBczl2Rk81S1ZyX2Rudk41Y1JxdkZleGNKbmk?oc=5" target="_blank" rel="noopener noreferrer">マキタスポーツとタブレット純、音楽と笑いのエンタメショー開催 - ナタリー</a><span>RSS · 動向確認 · マキタスポーツとタブレット純、音楽と笑いのエンタメショー開催 ナタリー</span></li><li><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBkX0d1RVE2UFNRenN0a3ViMGR6dHFIT0l4R0tLUlpwWmxIVnFRN0xHZTkyYnBxZ3oyaU5nRE0wZndrb3ZkQUxMZEEwOTk0RmlrSzNsaG0zbUxEYkNqUk96R192TEtVZUFHTkwyREhkSXdpZ215VkNOUTVvbw?oc=5" target="_blank" rel="noopener noreferrer">MIXI × REAL AKIBA - ニコニコニュース</a><span>RSS · 動向確認 · MIXI × REAL AKIBA ニコニコニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NRnV3c1B3QnVXZmtQX3R0THZpNW1rWVQzNmJKcE1MVm5wSUFVTEtOeDMxdTEzbzIwbzdid1FnNmx5N2pGTjR4b0tXWDVZX2ZnS0ZtWWdsYw?oc=5" target="_blank" rel="noopener noreferrer">『わがまち散歩』 - BSフジ</a><span>RSS · 動向確認 · 『わがまち散歩』 BSフジ</span></li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE00LW1qSDVEdmRxbjE4aGFMV2U5N2tqOVJQT25lMkQ1VDhpTEVxQ1JKdmoxLUNhd0FmbTF0VUN6X0ZhR3J4U1VFUlBNN0JyZ0c0UVhLY1hZMXJmd1d3RmwwaGZRRFRXVVNzdUwzSU51NXR6RVVEVXYxNHN0Uy1JN2s?oc=5" target="_blank" rel="noopener noreferrer">MATSURI、GMO 渋谷エンタメ祭で躍動「日本中をお祭りのように元気に」 細川たかしがサプライズ出演（サンケイスポーツ） - Yahoo!ニュース</a><span>RSS · 動向確認 · MATSURI、GMO 渋谷エンタメ祭で躍動「日本中をお祭りのように元気に」 細川たかしがサプライズ出演（サンケイ…</span></li></ul></section><section class="weekly-genre"><h2>スポーツ</h2><ul><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFB6ME9EMnNwMGxjZzg4YjZBbUo4SjBEV2Vxdy1UY3Y3V293X092QWpZZkpXMmNPRjFzSDNIazlpUXVERmZSdV90T21yeFdvaWhTNlcwYWlKbUlNQV9ZMlBvZnhGY0RYenZCOUtZZm1RcDUyMkg0R2lNakVuSTlwRk0?oc=5" target="_blank" rel="noopener noreferrer">佐々木麟太郎、マーリンズ入り決断！（サンケイスポーツ） - Yahoo!ニュース</a><span>RSS · 動向確認 · 佐々木麟太郎、マーリンズ入り決断！（サンケイスポーツ） Yahoo!ニュース</span></li><li><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE95TWFhMEU0cWRLcmwwVTU4OVR0b3M5NFg5MmNHNFljaVZ6T2ZvVXNBbFFnLTBuOVFMMkFLLUJCdWFqNFdJZnlhWXZNLUNkQUtlVUR6b2M1Mm1la21COGtGdmc1ZU45MjA0cHc?oc=5" target="_blank" rel="noopener noreferrer">※情報更新※9/2(水)岩手県盛岡市でオリックス戦を開催! - 東北楽天ゴールデンイーグルス</a><span>RSS · 動向確認 · ※情報更新※9/2(水)岩手県盛岡市でオリックス戦を開催! 東北楽天ゴールデンイーグルス</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5RMTQ0c0d0TE1fZjFXLUd6b2lzb2pRQWNlMmVrQmQ2akc5Zjl0azlPSnd1UnZIYXR6UEtMQWpSMXBRRXRKZkVFVHZ6UjN4dERidExWT3kyUmdXVmVxT3MtdjFGQTdFMmpZ?oc=5" target="_blank" rel="noopener noreferrer">【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！ - kansai-u.ac.jp</a><span>RSS · 仕事で使える · 【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！ - kansai-u.ac.jp</span></li><li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9wV2x2ekVzckNxWFRYejdVTGo0enRBbFJ5TDZFM2dVSzlJNVc2czQtdlNfb1ppZ2VDS1VqNi13UUVvMXlvWjB4RkN6elFZNTNMS0M3U3o2emlsaVJNSE9NOHp4Y0lOY3MwQk9OT0d5eWw0OHp3aVE2Q3pnMEs2MmM?oc=5" target="_blank" rel="noopener noreferrer">スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 - Yahoo!ニュース</a><span>RSS · 動向確認 · スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 Y…</span></li></ul></section><section class="weekly-genre"><h2>科学</h2><ul><li><a href="https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9oT2FYUmRER1Rtd2gxamh5Q0EtTUhyeFBIRmlBazAwVFBzeHNYYnNZSkRPYXhqUGVwVjdhWE9mNDd5OG8?oc=5" target="_blank" rel="noopener noreferrer">北海道科学大学と歌手・野口五郎氏が共同研究を開始 - Digital PR Platform</a><span>RSS · 動向確認 · 北海道科学大学と歌手・野口五郎氏が共同研究を開始 Digital PR Platform</span></li><li><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" target="_blank" rel="noopener noreferrer">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</a><span>一次情報 · 市場・企業 · 中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</span></li><li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBLMUFRanJRYmh5RjU3VE1vN0M3WHE2ZktMaTlGUXF5LUg0TG1VTExLS0ZGa2dpYlNLRVgwRFR5eTZpQ19hZy14bkhNallZMEFpYTlpSzhYSy1jZ0VDdm13RWZESTVpR25mQm9uN015cUVHcG9oUHc?oc=5" target="_blank" rel="noopener noreferrer">第14回科学の甲子園ジュニア宮城県予選会「みやぎチャレンジジュニア2026」 - pref.miyagi.jp</a><span>RSS · 動向確認 · 第14回科学の甲子園ジュニア宮城県予選会「みやぎチャレンジジュニア2026」 pref.miyagi.jp</span></li><li><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBKTkVneUptMFdpMVZxdzZsMmdONFRQYU1nRWFZZVZUcWNEaUtlemxXQWxWblNyalhtOUstdzZwdDh1RFdTc2FHdUo2LW9VMVVDOS1jamxNTDhNSTNCN0dRZFdXR3BCQURaRTZrSXRn?oc=5" target="_blank" rel="noopener noreferrer">画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</a><span>RSS · 動向確認 · 画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</span></li><li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQUzR3SmhlY1ZLSVp4X2ExYWZ5SFJITWVGUU9YbFBqelEweVdUTllIdHR1ZGhiejNEa1p4OGFpNzhPTWp4ODFTLUdBQ3hodjk0aWRWVUdHTVZGMVhuUmJUSms5RFliUkNxelRpYl9GM2dUWms3SjlwTzl0VHM4UDEtMDBDZ1NRS1Aya2p0TDZ3?oc=5" target="_blank" rel="noopener noreferrer">飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュース</a><span>RSS · 動向確認 · 飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白く…</span></li></ul></section><section class="weekly-genre"><h2>金融</h2><ul><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5" target="_blank" rel="noopener noreferrer">上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞</a><span>大手報道 · 動向確認 · 上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞</span></li><li><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5" target="_blank" rel="noopener noreferrer">偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes</a><span>RSS · 動向確認 · 偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebytes</span></li></ul></section></div>
+  </main>
+</body>
+</html>

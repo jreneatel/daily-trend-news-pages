@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>前日トレンドニュース - 2026-07-10</title>
+  <style>
+:root {
+  color-scheme: dark;
+  --bg:#10141b;
+  --bar:#151a23;
+  --panel:#202631;
+  --panel-2:#343c48;
+  --ink:#f7f7fb;
+  --muted:#a3a7b7;
+  --faint:#777d91;
+  --line:#3b3e50;
+  --accent:#4fd1c5;
+  --accent-strong:#9be7de;
+  --shadow:0 18px 42px rgba(0, 0, 0, .24);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: 8px;
+  z-index: 20;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-140%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--bar);
+  border-bottom: 1px solid #202234;
+}
+.brand {
+  color: #e8e8f0;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.brand::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--muted);
+  border-radius: 2px;
+  vertical-align: -1px;
+  box-shadow: inset 4px 0 0 rgba(79, 209, 197, .28);
+}
+.app-date {
+  color: var(--accent);
+  font-weight: 700;
+}
+.app-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.archive, .back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+.page {
+  width: min(1210px, 100%);
+  margin: 0 auto;
+  padding: 18px clamp(14px, 4vw, 32px) 64px;
+}
+.hero {
+  padding: 0 0 16px;
+}
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: #fff;
+  background: #1f6f78;
+  font-size: 12px;
+  font-weight: 700;
+}
+.brief-panel {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  overflow: hidden;
+}
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, .04);
+}
+.view-tab {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.analytics-export {
+  margin-top: 10px;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(79, 209, 197, .45);
+  border-radius: 6px;
+  color: #071316;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.view-tab.is-active,
+.view-tab:hover,
+.view-tab:focus {
+  color: #071316;
+  background: var(--accent);
+}
+.brief-view {
+  display: none;
+  padding: 12px 16px;
+}
+.brief-view.is-active {
+  display: block;
+}
+.brief-view ol {
+  margin: 0;
+  padding-left: 22px;
+}
+.brief-view li {
+  margin: 5px 0;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.sidebar {
+  position: sticky;
+  top: 62px;
+  overflow: hidden;
+  border: 1px solid #5b6071;
+  border-radius: 12px;
+  background: var(--panel-2);
+  box-shadow: var(--shadow);
+}
+.side-title {
+  padding: 8px 12px;
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+  font-weight: 800;
+}
+.side-nav {
+  display: grid;
+  padding: 10px 6px;
+}
+.side-calendar {
+  padding: 10px 8px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.side-calendar .calendar {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.side-calendar .calendar-month {
+  padding: 10px;
+  border-color: rgba(255, 255, 255, .14);
+  background: rgba(255, 255, 255, .05);
+}
+.side-calendar .calendar-month h2 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.side-calendar .calendar-grid {
+  gap: 3px;
+}
+.side-calendar .calendar-weekday,
+.side-calendar .calendar-day {
+  min-height: 24px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.calendar-more {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+.side-archive,
+.side-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.side-archive {
+  display: none;
+  margin: 10px 6px 0;
+  border-color: rgba(79, 209, 197, .45);
+  background: rgba(79, 209, 197, .12);
+}
+.side-nav a:hover,
+.side-nav a:focus,
+.side-archive:hover,
+.side-archive:focus {
+  border-color: var(--accent);
+  background: rgba(169, 147, 255, .14);
+}
+.side-nav small,
+.side-archive small {
+  color: #c0c3d0;
+  font-weight: 500;
+}
+.content {
+  min-width: 0;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.genre-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.genre-head::-webkit-details-marker { display: none; }
+.genre-head::before {
+  content: "▾";
+  color: var(--accent);
+  font-weight: 900;
+}
+.genre:not([open]) .genre-head::before {
+  content: "▸";
+}
+.genre-head span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.thumb {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 88px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(169, 147, 255, .25), rgba(255, 255, 255, .05));
+  object-fit: cover;
+}
+.genre { margin-top: 24px; }
+.genre:first-child { margin-top: 0; }
+.genre-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 9px;
+}
+.grid {
+  display: grid;
+  gap: 7px;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+  padding: 13px 42px 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.card.is-read {
+  opacity: .62;
+}
+.read-state {
+  margin-left: auto;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.labels span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #dbe4ef;
+  background: rgba(255, 255, 255, .08);
+  font-size: 11px;
+  font-weight: 700;
+}
+.card:hover,
+.card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .20);
+  transform: translateY(-1px);
+}
+.card::after {
+  content: "↗";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  color: var(--muted);
+  transform: translateY(-50%);
+}
+.card p { margin: 8px 0 0; font-size: 13px; }
+.card .thumb {
+  width: 100%;
+  height: 74px;
+  margin-top: 2px;
+  padding: 0;
+  border-radius: 8px;
+}
+.card-body {
+  min-width: 0;
+}
+.card h3 {
+  color: #fff;
+}
+.card:hover h3,
+.card:focus-visible h3 {
+  color: var(--accent-strong);
+}
+.summary-text { color: #c7cad6; }
+.meta { color: var(--muted); font-size: 12px; margin: 0; }
+.meta span {
+  color: var(--muted);
+  font-weight: 600;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+dl { margin: 10px 0 0; display: grid; gap: 8px; }
+dl div {
+  border-top: 1px solid #303345;
+  padding-top: 8px;
+}
+dt {
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 700;
+}
+dd {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #c4c7d4;
+}
+.empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.archive-page { max-width: 960px; }
+.archive-search {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.archive-search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.archive-search input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #5b6071;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #121821;
+  font: inherit;
+}
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+.search-result {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .04);
+}
+.search-result span,
+.search-result small {
+  color: var(--muted);
+}
+.weekly-grid {
+  display: grid;
+  gap: 14px;
+}
+.weekly-genre {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.weekly-genre ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.weekly-genre li {
+  margin: 9px 0;
+}
+.weekly-genre li span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+.calendar-month {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.calendar-month h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.calendar-weekday,
+.calendar-day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 34px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.calendar-weekday {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.calendar-day {
+  color: var(--faint);
+  border: 1px solid rgba(255, 255, 255, .06);
+}
+.calendar-day.is-empty {
+  border-color: transparent;
+}
+.calendar-day.is-linked {
+  color: #071316;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+.calendar-day.is-linked:hover,
+.calendar-day.is-linked:focus-visible {
+  background: var(--accent-strong);
+}
+.calendar-day.is-latest {
+  box-shadow: 0 0 0 2px #fff inset;
+}
+@media (max-width: 900px) {
+  .appbar {
+    grid-template-columns: 1fr auto;
+    height: auto;
+    padding: 10px 14px;
+  }
+  .app-date {
+    justify-self: end;
+    font-size: 13px;
+  }
+  .app-actions {
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+  }
+  .side-calendar {
+    display: none;
+  }
+  .side-archive {
+    display: flex;
+  }
+  .side-nav {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+  }
+  .side-archive {
+    margin: 8px 8px 0;
+  }
+  .side-nav a {
+    flex: 0 0 auto;
+    gap: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .page { padding: 14px 12px 44px; }
+  .hero h1 { font-size: 34px; }
+  .badges { flex-wrap: wrap; }
+  .card { padding-right: 32px; }
+  .card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .card .thumb {
+    width: 100%;
+    height: 54px;
+    border-radius: 8px;
+  }
+  .verify-row { display: none; }
+  .reason-row {
+    border-top-color: #394352;
+  }
+  .reason-row dt {
+    color: var(--accent-strong);
+  }
+}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="appbar">
+    <a class="brand" href="./" aria-label="Daily Trend News">Daily Trend News</a>
+    <time class="app-date" datetime="2026-07-10">2026-07-10</time>
+    <div class="app-actions">
+      <span>生成: 2026-07-13 22:23 JST</span>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <section class="hero">
+      <p class="eyebrow">Morning Brief · 2026-07-10 00:00 - 2026-07-10 23:59 JST</p>
+      <h1>前日トレンドニュース</h1>
+      <div class="badges">
+        <span>6ジャンル</span>
+        <span>36件の記事</span>
+      </div>
+    </section>
+    <section class="brief-panel" aria-label="読み方">
+      <div class="view-tabs" role="tablist" aria-label="表示モード">
+        <button class="view-tab is-active" type="button" data-view="one">1分版</button>
+        <button class="view-tab" type="button" data-view="five">5分版</button>
+        <button class="view-tab" type="button" data-view="all">全部読む</button>
+      </div>
+      <div class="brief-view is-active" data-panel="one"><ol class="one-minute"><li>AI: PRESS | CLASSY.[クラッシィ] - CLASSY.[クラッシィ]</li><li>IT業界: KILL IT #2 - ABEMA</li><li>政治: 英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK</li></ol></div>
+      <div class="brief-view" data-panel="five"><ol class="five-minute"><li>AI: PRESS | CLASSY.[クラッシィ] - CLASSY.[クラッシィ]</li><li>IT業界: KILL IT #2 - ABEMA</li><li>政治: 英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK</li><li>経済: ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス</li><li>ライフ: 味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</li></ol></div>
+      <div class="brief-view" data-panel="all"><p>ジャンルごとのカードを開いて、気になる記事だけ元記事で確認できます。クリック済みの記事はこの端末で既読表示になります。</p><button class="analytics-export" type="button">分析JSON</button></div>
+    </section>
+    <div class="layout">
+      <aside class="sidebar" aria-label="ジャンル">
+        <div class="side-title">ジャンル</div>
+        <div class="side-calendar"><div class="calendar" aria-label="過去日付カレンダー"><section class="calendar-month" aria-labelledby="month-2026-07">
+  <h2 id="month-2026-07">2026年7月</h2>
+  <div class="calendar-grid"><span class="calendar-weekday">日</span><span class="calendar-weekday">月</span><span class="calendar-weekday">火</span><span class="calendar-weekday">水</span><span class="calendar-weekday">木</span><span class="calendar-weekday">金</span><span class="calendar-weekday">土</span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day" aria-disabled="true">1</span><span class="calendar-day" aria-disabled="true">2</span><span class="calendar-day" aria-disabled="true">3</span><span class="calendar-day" aria-disabled="true">4</span><span class="calendar-day" aria-disabled="true">5</span><span class="calendar-day" aria-disabled="true">6</span><span class="calendar-day" aria-disabled="true">7</span><span class="calendar-day" aria-disabled="true">8</span><a class="calendar-day is-linked" href="../2026-07-09/" aria-label="2026-07-09の記事">9</a><a class="calendar-day is-linked" href="../2026-07-10/" aria-label="2026-07-10の記事">10</a><a class="calendar-day is-linked" href="../2026-07-11/" aria-label="2026-07-11の記事">11</a><a class="calendar-day is-linked" href="../2026-07-12/" aria-label="2026-07-12の記事">12</a><a class="calendar-day is-linked is-latest" href="../2026-07-13/" aria-label="2026-07-13の記事">13</a><span class="calendar-day" aria-disabled="true">14</span><span class="calendar-day" aria-disabled="true">15</span><span class="calendar-day" aria-disabled="true">16</span><span class="calendar-day" aria-disabled="true">17</span><span class="calendar-day" aria-disabled="true">18</span><span class="calendar-day" aria-disabled="true">19</span><span class="calendar-day" aria-disabled="true">20</span><span class="calendar-day" aria-disabled="true">21</span><span class="calendar-day" aria-disabled="true">22</span><span class="calendar-day" aria-disabled="true">23</span><span class="calendar-day" aria-disabled="true">24</span><span class="calendar-day" aria-disabled="true">25</span><span class="calendar-day" aria-disabled="true">26</span><span class="calendar-day" aria-disabled="true">27</span><span class="calendar-day" aria-disabled="true">28</span><span class="calendar-day" aria-disabled="true">29</span><span class="calendar-day" aria-disabled="true">30</span><span class="calendar-day" aria-disabled="true">31</span></div>
+</section></div><a class="calendar-more" href="../archive.html">すべての日付</a></div><a class="side-archive" href="../archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>6件</small></a>
+<a href="#IT業界"><span>IT業界</span><small>6件</small></a>
+<a href="#政治"><span>政治</span><small>6件</small></a>
+<a href="#経済"><span>経済</span><small>6件</small></a>
+<a href="#ライフ"><span>ライフ</span><small>6件</small></a>
+<a href="#科学"><span>科学</span><small>6件</small></a></nav>
+      </aside>
+      <div class="content">
+        <details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="AI">AI</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-0bf280da535c9e5f" class="card" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9SNTU2YzIta1VuM2puUDJnRDl6MEwwaGl4R2djR3AyZVV4YS1vTzNEODA0QUFFWmhSUkFEbG4zdy1vS0hxVXgzdHdRd1FDRHdpU3RPa1NuZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="PRESS | CLASSY.[クラッシィ] - CLASSY.[クラッシィ]を読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9SNTU2YzIta1VuM2puUDJnRDl6MEwwaGl4R2djR3AyZVV4YS1vTzNEODA0QUFFWmhSUkFEbG4zdy1vS0hxVXgzdHdRd1FDRHdpU3RPa1NuZw?oc=5" data-title="PRESS | CLASSY.[クラッシィ] - CLASSY.[クラッシィ]" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/8ce96aab5761e3d7.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>CLASSY.[クラッシィ] · 14:56</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>PRESS | CLASSY.[クラッシィ] - CLASSY.[クラッシィ]</h3>
+    <p class="summary-text">PRESS</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「PRESS」と伝えています。出典: CLASSY.[クラッシィ]</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-d2ac44853754ebce" class="card" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" data-title="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/6dba8c7c569af736.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ニコニコニュース · 14:48</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース</h3>
+    <p class="summary-text">「Third AI 生成AIソリューション」、最新のGPT</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「「Third AI 生成AIソリューション」、最新のGPT」と伝えています。出典: ニコニコニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-5df5483e563b302b" class="card" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/f0ea983ce8068bee.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース</h3>
+    <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋I…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-584ef7376b6a1ac1" class="card" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/86bdbb514e69762b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース</h3>
+    <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-259dd1a49ec072ed" class="card" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" data-title="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース" data-genre="AI" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4f8c05db25e3c1ef.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ニコニコニュース · 14:30</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース</h3>
+    <p class="summary-text">ナレコムAI Chatbot、OpenAIの最新モデル「GPT</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「ナレコムAI Chatbot、OpenAIの最新モデル「GPT」と伝えています。出典: ニコニコニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-621aca2039c7eb9d" class="card" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" data-title="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース" data-genre="AI" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/bab721dc29c51699.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:05</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>要注意</span> <span>重要度2</span></div>
+    <h3>「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース</h3>
+    <p class="summary-text">「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） Yahoo!…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>安全・業務・生活への影響確認が必要な話題です。RSS説明文では「「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="IT業界">IT業界</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-86ea29b572d9c4d8" class="card" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KILL IT #2 - ABEMAを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" data-title="KILL IT #2 - ABEMA" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/6c28511877765af5.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ABEMA · 14:55</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>KILL IT #2 - ABEMA</h3>
+    <p class="summary-text">KILL IT #2 ABEMA</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「KILL IT #2 ABEMA」と伝えています。出典: ABEMA</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-bb546d2b0fadecb1" class="card" href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQd2QyRjJzZVMyT2s3NEQ5cy1INEp0NFMtaEM1a1laUVpxZjlBNG1LVnc2R1JaQ2RmdVItWEpGdkFUeFNFOUNHZnNCV2NGOWRyYjA0MnNBWko5dldJUlRoTEZVal9Xb01wTTc4VHZJV3NLV1FTNk04NVhSdzNWMlc5M09n?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企業の上位6％にランクイン - PR Newswireを読む" data-url="https://news.google.com/rss/articles/CBMiggFBVV95cUxQd2QyRjJzZVMyT2s3NEQ5cy1INEp0NFMtaEM1a1laUVpxZjlBNG1LVnc2R1JaQ2RmdVItWEpGdkFUeFNFOUNHZnNCV2NGOWRyYjA0MnNBWko5dldJUlRoTEZVal9Xb01wTTc4VHZJV3NLV1FTNk04NVhSdzNWMlc5M09n?oc=5" data-title="Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企業の上位6％にランクイン - PR Newswire" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4893d784eed8e407.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PR Newswire · 14:44</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企業の上位6％にランクイン - PR Newswire</h3>
+    <p class="summary-text">Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企業の上位6％にランクイン…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企…」と伝えています。出典: PR Newswire</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-f3c92b313f1119e3" class="card" href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPZHNnWUJ4MThuU0RoYW01TWFIOWZzRUZsc2NsTkUwSkd3UngxMEhEZ0o4ZUpmaFZ1VEV2NTRpZk5ra2ZGWDJuelpzRVROeTVENjRTUnRpQjh6SmthOFJNWlZOY1hwbGlNTXJLUWVGTzVYX0tKcWtlcnZuUjdsb0F4dE5lOFNSMUtTb21PWnFzODRXanJZ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Drake International、創業者Bill Pollock氏の逝去を悼む - PR Newswireを読む" data-url="https://news.google.com/rss/articles/CBMilAFBVV95cUxPZHNnWUJ4MThuU0RoYW01TWFIOWZzRUZsc2NsTkUwSkd3UngxMEhEZ0o4ZUpmaFZ1VEV2NTRpZk5ra2ZGWDJuelpzRVROeTVENjRTUnRpQjh6SmthOFJNWlZOY1hwbGlNTXJLUWVGTzVYX0tKcWtlcnZuUjdsb0F4dE5lOFNSMUtTb21PWnFzODRXanJZ?oc=5" data-title="Drake International、創業者Bill Pollock氏の逝去を悼む - PR Newswire" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/eb766a140a14e783.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PR Newswire · 14:41</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>Drake International、創業者Bill Pollock氏の逝去を悼む - PR Newswire</h3>
+    <p class="summary-text">Drake International、創業者Bill Pollock氏の逝去を悼む PR Newswire</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「Drake International、創業者Bill Pollock氏の逝去を悼む PR…」と伝えています。出典: PR Newswire</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-5df5483e563b302b" class="card" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/de88203c23e646bf.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度1</span></div>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース</h3>
+    <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋I…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-90735c6599ee8b98" class="card" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmTnhtWUhIZUdnd2duMFByTkdQWldmOGU5TGxROE5aNUM3NkwxZ3hiYk9za2JOOXFRTzFXU05sZy1Kc0FPam9NRHh1TWVzQnJRV0xMVjVfZE52SlQzM2tqVg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【キャプテンからのお使い】」を公開！ - 乃木坂46公式サイトを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmTnhtWUhIZUdnd2duMFByTkdQWldmOGU5TGxROE5aNUM3NkwxZ3hiYk9za2JOOXFRTzFXU05sZy1Kc0FPam9NRHh1TWVzQnJRV0xMVjVfZE52SlQzM2tqVg?oc=5" data-title="「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【キャプテンからのお使い】」を公開！ - 乃木坂46公式サイト" data-genre="IT業界" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/afad3ed181211c69.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>乃木坂46公式サイト · 14:38</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【キャプテンからのお使い】」を公開！ - 乃木坂46公式サイト</h3>
+    <p class="summary-text">「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【キャプテンからのお使い】…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【…」と伝えています。出典: 乃木坂46公式サイト</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-ecedd02ac66ad404" class="card" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="IT業界" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/70736b9c85687caa.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>BigGo ファイナンス · 14:37</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>一次情報</span> <span>RSS説明</span> <span>市場・企業</span> <span>重要度2</span></div>
+    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</h3>
+    <p class="summary-text">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に…」と伝えています。出典: BigGo ファイナンス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="政治">政治</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-1103f602b6889a33" class="card" href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHKを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" data-title="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK" data-genre="政治" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/42f1b8c54acded27.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>NHK · 14:56</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>大手報道</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度2</span></div>
+    <h3>英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK</h3>
+    <p class="summary-text">英 スターマー首相が辞意表明</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「英 スターマー首相が辞意表明」と伝えています。出典: NHK</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-24e3da10286147cc" class="card" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" data-title="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/94c9666e1710184f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>四国新聞 · 14:37</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <p class="summary-text">韓鶴子総裁に懲役１３年求刑 政治資金事件</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「韓鶴子総裁に懲役１３年求刑 政治資金事件」と伝えています。出典: 四国新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-ca0c32828bc00af2" class="card" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 豊田経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" data-title="皇室典範改正案、今国会成立へ - 豊田経済新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/18ee90aceceda1a4.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>豊田経済新聞 · 14:37</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>皇室典範改正案、今国会成立へ - 豊田経済新聞</h3>
+    <p class="summary-text">皇室典範改正案、今国会成立へ 豊田経済新聞</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「皇室典範改正案、今国会成立へ 豊田経済新聞」と伝えています。出典: 豊田経済新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-d8b9f32d25305e77" class="card" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" rel="noopener noreferrer" target="_blank" aria-label="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" data-title="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/41a545bbeb41bf47.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>北海道新聞デジタル · 14:25</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル</h3>
+    <p class="summary-text">洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 北海道新聞デジタル</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 北海道新聞デジタル」と伝えています。出典: 北海道新聞デジタル</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-0035f1c52f7f4b05" class="card" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 和歌山経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" data-title="皇室典範改正案、今国会成立へ - 和歌山経済新聞" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/ed43ff63aa6638a9.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>和歌山経済新聞 · 14:24</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>皇室典範改正案、今国会成立へ - 和歌山経済新聞</h3>
+    <p class="summary-text">皇室典範改正案、今国会成立へ 和歌山経済新聞</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「皇室典範改正案、今国会成立へ 和歌山経済新聞」と伝えています。出典: 和歌山経済新聞</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-f9f5e96d838c6d24" class="card" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" data-title="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG" data-genre="政治" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/0037ed688084bd16.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TBS NEWS DIG · 14:17</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>制度・政治</span> <span>重要度1</span></div>
+    <h3>中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG</h3>
+    <p class="summary-text">中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え TBS NEWS DIG</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>制度変更や政策判断につながる可能性がある話題です。RSS説明文では「中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え TBS NEW…」と伝えています。出典: TBS NEWS DIG</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="経済">経済</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-b7302c338f232c13" class="card" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" data-title="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス" data-genre="経済" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/c70202e2d42d6f52.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ファイナンス · 14:55</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>大手報道</span> <span>RSS説明</span> <span>市場・企業</span> <span>重要度2</span></div>
+    <h3>ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス</h3>
+    <p class="summary-text">ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) Yahoo!ファイナンス</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) Yahoo!…」と伝えています。出典: Yahoo!ファイナンス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-3b745aa1eb4465e4" class="card" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" data-title="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo" data-genre="経済" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/39cf7c112e55ac1f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Moomoo · 13:48</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>仕事で使える</span> <span>重要度2</span></div>
+    <h3>来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo</h3>
+    <p class="summary-text">来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシ…」と伝えています。出典: Moomoo</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-6a3d704c911abab6" class="card" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" rel="noopener noreferrer" target="_blank" aria-label="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" data-title="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス" data-genre="経済" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/d01269b915590577.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>BigGo ファイナンス · 12:36</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>一次情報</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度2</span></div>
+    <h3>日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス</h3>
+    <p class="summary-text">日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか BigGo ファイナンス</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか BigGo ファイナンス」と伝えています。出典: BigGo ファイナンス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-1c1aba046b923066" class="card" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【住宅建設許可】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" data-title="加経済指標【住宅建設許可】 - みんかぶ FX/為替" data-genre="経済" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/4b56916a23c7aba8.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>みんかぶ FX/為替 · 12:31</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>市場・企業</span> <span>重要度1</span></div>
+    <h3>加経済指標【住宅建設許可】 - みんかぶ FX/為替</h3>
+    <p class="summary-text">加経済指標【住宅建設許可】 みんかぶ FX/為替</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「加経済指標【住宅建設許可】 みんかぶ FX/為替」と伝えています。出典: みんかぶ FX/為替</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-86c018ccb0146963" class="card" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【雇用統計】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" data-title="加経済指標【雇用統計】 - みんかぶ FX/為替" data-genre="経済" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/0d6e4f209e5ab96e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>みんかぶ FX/為替 · 12:30</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>市場・企業</span> <span>重要度1</span></div>
+    <h3>加経済指標【雇用統計】 - みんかぶ FX/為替</h3>
+    <p class="summary-text">加経済指標【雇用統計】 みんかぶ FX/為替</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「加経済指標【雇用統計】 みんかぶ FX/為替」と伝えています。出典: みんかぶ FX/為替</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-2f6bddc780e44657" class="card" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.comを読む" data-url="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" data-title="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com" data-genre="経済" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/de68e6bf8e96788a.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>seikyoonline.com · 12:27</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com</h3>
+    <p class="summary-text">マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 seikyoonline.com</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 seikyoonline…」と伝えています。出典: seikyoonline.com</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="ライフ">ライフ</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-955c16a19ffab21b" class="card" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/6e68a18943827239.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>simplywall.st · 14:52</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつ…」と伝えています。出典: simplywall.st</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-955c16a19ffab21b" class="card" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/6e68a18943827239.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>simplywall.st · 14:51</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつ…」と伝えています。出典: simplywall.st</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-39a68018b30f3caa" class="card" href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!を読む" data-url="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" data-title="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/c9e0a6710f81ba06.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>carview! · 14:48</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!</h3>
+    <p class="summary-text">『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー carview!</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー carview!」と伝えています。出典: carview!</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-b54abc141ea5705c" class="card" href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" data-title="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/5f81ef25c3cd52ed.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ニコニコニュース · 14:48</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース</h3>
+    <p class="summary-text">横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ ニコニコニュース</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ ニコニコニュース」と伝えています。出典: ニコニコニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-af36061e80042dc9" class="card" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社を読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" data-title="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/9ca168aa36eb24ae.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>いわき民報社 · 14:47</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社</h3>
+    <p class="summary-text">いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に いわき民報社</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に いわき民報社」と伝えています。出典: いわき民報社</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-01c7b6117caa855b" class="card" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.netを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" data-title="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net" data-genre="ライフ" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/06554f472bf3ad46.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>nakamura-hiroshi.net · 14:19</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net</h3>
+    <p class="summary-text">「地域あんしん健康フェア」を見学しました。</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「地域あんしん健康フェア」を見学しました。」と伝えています。出典: nakamura-hiroshi.net</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+<details class="genre" open>
+  <summary class="genre-head">
+    <h2 id="科学">科学</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-955c16a19ffab21b" class="card" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学" data-modes="all five">
+  <img class="thumb" src="../assets/thumbs/95f1ea40aa537483.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>simplywall.st · 14:52</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつ…」と伝えています。出典: simplywall.st</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-42f867215cd618de" class="card" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報を読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" data-title="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/e822be79f6eb075d.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>美術館・アート情報 · 14:51</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報</h3>
+    <p class="summary-text">KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 美術館・ア…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！…」と伝えています。出典: 美術館・アート情報</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-955c16a19ffab21b" class="card" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/95f1ea40aa537483.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>simplywall.st · 14:51</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつ…」と伝えています。出典: simplywall.st</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-ecedd02ac66ad404" class="card" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="科学" data-modes="all one five">
+  <img class="thumb" src="../assets/thumbs/3c707d49d92f6e5c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>BigGo ファイナンス · 14:37</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>一次情報</span> <span>RSS説明</span> <span>市場・企業</span> <span>重要度2</span></div>
+    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</h3>
+    <p class="summary-text">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に…」と伝えています。出典: BigGo ファイナンス</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-2c2103245009f2d6" class="card" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" data-title="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/420e56858c79ebb4.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>アニメイトタイムズ · 14:34</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ</h3>
+    <p class="summary-text">【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGE…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS…」と伝えています。出典: アニメイトタイムズ</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a>
+<a id="article-1687e308d8d69cf2" class="card" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" data-title="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース" data-genre="科学" data-modes="all">
+  <img class="thumb" src="../assets/thumbs/1271ec3278f98e53.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 14:21</span><span class="read-state">未読</span></div>
+    <div class="labels"><span>RSS</span> <span>RSS説明</span> <span>動向確認</span> <span>重要度1</span></div>
+    <h3>「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース</h3>
+    <p class="summary-text">「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS N…</p>
+    <dl>
+      <div class="reason-row"><dt>なぜ話題か</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="verify-row"><dt>見るべきポイント</dt><dd>元記事で一次情報、発表主体、更新時刻を確認。</dd></div>
+    </dl>
+  </div>
+</a></div>
+</details>
+      </div>
+    </div>
+  </main>
+  <script>
+(() => {
+  const readKey = "daily-trend-news:read";
+  const clickKey = "daily-trend-news:clicks";
+  const parseJson = (value, fallback) => {
+    try { return JSON.parse(value || ""); } catch (_error) { return fallback; }
+  };
+  const read = new Set(parseJson(localStorage.getItem(readKey), []));
+  const clicks = parseJson(localStorage.getItem(clickKey), {});
+  const saveRead = () => localStorage.setItem(readKey, JSON.stringify([...read]));
+  const saveClicks = () => localStorage.setItem(clickKey, JSON.stringify(clicks));
+  const setReadState = (card, isRead) => {
+    card.classList.toggle("is-read", isRead);
+    const state = card.querySelector(".read-state");
+    if (state) state.textContent = isRead ? "既読" : "未読";
+  };
+  const applyView = (view) => {
+    document.querySelectorAll(".card[data-modes]").forEach((card) => {
+      const modes = (card.dataset.modes || "all").split(/\s+/);
+      card.hidden = view !== "all" && !modes.includes(view);
+    });
+    document.querySelectorAll(".genre").forEach((section) => {
+      const visible = section.querySelectorAll(".card:not([hidden])").length;
+      section.hidden = visible === 0;
+    });
+    syncSidebar();
+  };
+  const syncSidebar = () => {
+    document.querySelectorAll(".side-nav a[href^='#']").forEach((link) => {
+      const sectionId = decodeURIComponent((link.getAttribute("href") || "").slice(1));
+      const section = document.getElementById(sectionId)?.closest(".genre");
+      const visible = section ? section.querySelectorAll(".card:not([hidden])").length : 0;
+      link.hidden = visible === 0;
+      const count = link.querySelector("small");
+      if (count) count.textContent = `${visible}件`;
+    });
+  };
+  document.querySelectorAll(".card[data-url]").forEach((card) => {
+    const url = card.dataset.url;
+    setReadState(card, read.has(url));
+    card.addEventListener("click", () => {
+      read.add(url);
+      clicks[url] = {
+        title: card.dataset.title || "",
+        genre: card.dataset.genre || "",
+        count: (clicks[url]?.count || 0) + 1,
+        lastClickedAt: new Date().toISOString()
+      };
+      setReadState(card, true);
+      saveRead();
+      saveClicks();
+    });
+  });
+  document.querySelectorAll(".view-tab").forEach((button) => {
+    button.addEventListener("click", () => {
+      const view = button.dataset.view;
+      document.querySelectorAll(".view-tab").forEach((node) => node.classList.toggle("is-active", node === button));
+      document.querySelectorAll(".brief-view").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === view));
+      document.body.dataset.view = view;
+      applyView(view);
+    });
+  });
+  document.querySelectorAll(".analytics-export").forEach((button) => {
+    button.addEventListener("click", () => {
+      const blob = new Blob([localStorage.getItem(clickKey) || "{}"], {type: "application/json"});
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "daily-trend-news-clicks.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  });
+  applyView("one");
+})();
+</script>
+</body>
+</html>
