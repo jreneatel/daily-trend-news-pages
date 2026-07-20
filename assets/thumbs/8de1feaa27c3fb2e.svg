@@ -13,15 +13,19 @@
     </filter>
   </defs>
   <rect width="720" height="405" fill="url(#bg)"/>
-  <circle cx="539" cy="64" r="190" fill="url(#glow)"/>
+  <circle cx="575" cy="126" r="190" fill="url(#glow)"/>
   <g opacity=".22">
-  <circle cx="54" cy="310" r="80" fill="#22c55e"/>
+  <circle cx="69" cy="310" r="80" fill="#22c55e"/>
   <path d="M0 318C88 268 142 338 224 284s146-38 220 12 156 44 276-24v133H0z" fill="#eff6ff" opacity=".08"/>
   <path d="M121 54h520" stroke="#eff6ff" stroke-width="2" opacity=".18"/>
   <path d="M121 354h520" stroke="#eff6ff" stroke-width="2" opacity=".14"/>
 </g>
-  <g filter="url(#shadow)"><g transform="translate(180 78)">
-  <path d="M174 0l160 84H14zM52 116h256M78 116v156M142 116v156M206 116v156M270 116v156M34 272h292" fill="none" stroke="#eff6ff" stroke-width="24" stroke-linejoin="round"/>
-  <rect x="48" y="292" width="252" height="28" fill="#22c55e" opacity=".72"/>
+  <g filter="url(#shadow)"><g>
+  <circle cx="330" cy="210" r="124" fill="none" stroke="#4285f4" stroke-width="34" stroke-dasharray="205 575"/>
+  <circle cx="330" cy="210" r="124" fill="none" stroke="#34a853" stroke-width="34" stroke-dasharray="150 630" stroke-dashoffset="-205"/>
+  <circle cx="330" cy="210" r="124" fill="none" stroke="#fbbc05" stroke-width="34" stroke-dasharray="112 668" stroke-dashoffset="-355"/>
+  <circle cx="330" cy="210" r="124" fill="none" stroke="#ea4335" stroke-width="34" stroke-dasharray="180 600" stroke-dashoffset="-467"/>
+  <path d="M330 210h132" stroke="#eff6ff" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="330" cy="210" r="54" fill="#22c55e" opacity=".18"/>
 </g></g>
 </svg>
