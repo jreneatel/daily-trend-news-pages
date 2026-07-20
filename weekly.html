@@ -51,8 +51,8 @@ body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 16px;
-  height: 44px;
-  padding: 0 14px;
+  min-height: 56px;
+  padding: 7px 14px;
   background: var(--bar);
   border-bottom: 1px solid #202234;
 }
@@ -85,6 +85,33 @@ body {
   color: var(--muted);
   font-size: 12px;
 }
+.global-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-end;
+}
+.global-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: #d8dbe7;
+  font-size: 12px;
+  font-weight: 750;
+  text-decoration: none;
+}
+.global-nav a:hover,
+.global-nav a:focus-visible,
+.global-nav a[aria-current="page"] {
+  border-color: rgba(255, 255, 255, .2);
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+}
+.global-nav .logout-link { color: #ffc9c2; }
+.generated-at { white-space: nowrap; }
 .archive, .back-link {
   color: var(--muted);
   text-decoration: none;
@@ -562,10 +589,14 @@ dd {
   }
   .app-actions {
     grid-column: 1 / -1;
-    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: 10px;
     font-size: 12px;
   }
+  .global-nav { grid-column: 1 / -1; justify-content: flex-start; }
+  .generated-at { display: none; }
   .layout { grid-template-columns: 1fr; }
   .sidebar {
     position: static;
@@ -617,7 +648,9 @@ dd {
   <header class="appbar">
     <a class="brand" href="./">Daily Trend News</a>
     <span class="app-date">Weekly</span>
-    <div class="app-actions"><a class="archive" href="./archive.html">Archive</a></div>
+    <nav class="global-nav" aria-label="共通メニュー">
+      <a href="./">最新</a><a href="./archive.html">Archive</a><a href="./my/">マイニュース</a><a href="./settings/topics/">ジャンル設定</a><a href="./settings/plan/">プラン</a><a href="./account/">アカウント</a><a class="logout-link" href="./logout/">ログアウト</a>
+    </nav>
   </header>
   <main id="main" class="page archive-page">
     <section class="hero">
