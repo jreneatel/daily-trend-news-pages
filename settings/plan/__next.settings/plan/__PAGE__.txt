@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[36201,["/daily-trend-news-pages/_next/static/chunks/0btvs32mxsg_t.js","/daily-trend-news-pages/_next/static/chunks/2nsst6ybhipvx.js"],"default"]
+3:I[50129,["/daily-trend-news-pages/_next/static/chunks/1ivr6blg-9j_p.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/daily-trend-news-pages/_next/static/chunks/1u8aau3we-l19.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/1u8aau3we-l19.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/0btvs32mxsg_t.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/2nsst6ybhipvx.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"NQIlzUoMcqZbM9FTas7zo"}
+5:null
