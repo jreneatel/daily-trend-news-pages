@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
-2:I[13485,["/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","/daily-trend-news-pages/_next/static/chunks/2nsst6ybhipvx.js"],"default"]
-3:I[94891,["/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","/daily-trend-news-pages/_next/static/chunks/2nsst6ybhipvx.js"],"default"]
+2:I[13485,["/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js"],"default"]
+3:I[94891,["/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js"],"default"]
 5:I[50129,["/daily-trend-news-pages/_next/static/chunks/1ivr6blg-9j_p.js"],"OutletBoundary"]
 6:"$Sreact.suspense"
-:HL["/daily-trend-news-pages/_next/static/chunks/3s2yp5cmjb44y.css","style"]
+:HL["/daily-trend-news-pages/_next/static/chunks/3ko61b3519i_x.css","style"]
 4:Ta32,
         :root { color-scheme: dark; --bg:#10141b; --panel:#202631; --line:#3b4352; --ink:#f7f7fb; --muted:#b5bbc8; --accent:#4fd1c5; --danger:#ffb4ab; }
         * { box-sizing: border-box; }
@@ -30,5 +30,5 @@
         .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
         .actions a { min-height:44px; display:inline-flex; align-items:center; }
         @media (max-width:360px) { .auth-card { padding:20px 16px; } }
-      0:{"rsc":["$","$1","c",{"children":[[["$","a",null,{"className":"skip-link","href":"#main","children":"本文へ移動"}],["$","$L2",null,{"current":"account"}],["$","main",null,{"id":"main","className":"auth-page","children":["$","section",null,{"className":"auth-card","aria-labelledby":"page-title","children":[["$","p",null,{"className":"eyebrow","children":"Personal news"}],["$","h1",null,{"id":"page-title","children":"ログアウト"}],["$","$L3",null,{}]]}]}],["$","style",null,{"children":"$4"}]],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/3s2yp5cmjb44y.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/2nsst6ybhipvx.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"u3Ilu5ht8XzqQ9nNSH4Pn"}
+      0:{"rsc":["$","$1","c",{"children":[[["$","a",null,{"className":"skip-link","href":"#main","children":"本文へ移動"}],["$","$L2",null,{"current":"account"}],["$","main",null,{"id":"main","className":"auth-page","children":["$","section",null,{"className":"auth-card","aria-labelledby":"page-title","children":[["$","p",null,{"className":"eyebrow","children":"Personal news"}],["$","h1",null,{"id":"page-title","children":"ログアウト"}],["$","$L3",null,{}]]}]}],["$","style",null,{"children":"$4"}]],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/3ko61b3519i_x.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/0pz1jwo045o2x.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"xcqA8As-BpdwypIxagBKd"}
 7:null
