@@ -28,7 +28,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "GeminiのGem機能とは？AI Market編集部の実使用レビュー、できること、特徴・料金・使い方解説！ - ai-market.jp",
@@ -44,7 +48,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Genspark AIシートとは？料金プラン・使い方・実例を完全解説【実際に使って検証】 - ai-market.jp",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Stella AI、SpaceXAI社の「Grok 4.5」に対応 - ニコニコニュース",
@@ -76,7 +88,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ChatGPTでサイバー攻撃か 高校1年の男子生徒逮捕 「バンダイチャンネル」運営会社に（テレビ朝日系（ANN）） - Yahoo!ニュース",
@@ -92,7 +108,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Claude Codeの開発者、ボリス・チェルニー： 「もう私はClaudeにプロンプトを入力しない。ループが動いていて - KuCoin",
@@ -108,7 +128,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 95
@@ -130,7 +154,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "$マイクロン・テクノロジー (MU.US)$ スペースXで失った資金は全てMUで取り戻せそうだ。これが良い方向であってほしい。 - Moomoo",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "マイクロソフト株、集団訴訟と2026年度第4四半期決算発表を控え約2％下落 - Traders Union",
@@ -162,7 +194,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "$マイクロン・テクノロジー (MU.US)$ スペースXよりも、ここには期待が持てそうだ - Moomoo",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ゴールドマン・サックスはマイクロソフト(MSFT.US)のレーティングを強気に据え置き、目標株価を610ドルに据え置いた - Moomoo",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "$マイクロン・テクノロジー (MU.US)$ 全員無事に利益確定して退場しました。私は一旦様子見します。外は危険です。。。 - Moomoo",
@@ -210,7 +254,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 187
@@ -232,7 +280,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "統一地方選 第４次公認を決定 : ブログ : ❤さかい妙子 練馬区議会議員❤ - 公明党",
@@ -248,7 +300,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 - 47NEWS",
@@ -264,7 +320,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "『Return to My Blue』国会インクルーシブ試写会 - cinema-factory.jp",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 - 新潟日報",
@@ -296,7 +360,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "オーストラリア、インドに発電用ウラン供給へ 両国首相が合意 原発拡大へ安定確保 - 産経ニュース",
@@ -312,7 +380,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 124
@@ -334,7 +406,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "熱中症対策は“組織”の時代へ…生活にも変化 “警戒アラート”最多 真夏日544地点 (テレビ朝日系（ANN）) - Yahoo!ニュース",
@@ -350,7 +426,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 99
@@ -372,7 +452,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "和歌山県南方沖で地震 香南市で震度２【高知】（2026年7月9日掲載）｜RKC NEWS NNN - 日テレNEWS NNN",
@@ -388,7 +472,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 98
@@ -410,7 +498,11 @@
           "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "車４台が絡む事故 高知県安芸市の大山道路 - kochinews.co.jp",
@@ -426,7 +518,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 97
@@ -448,7 +544,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "骨太方針で「日銀の独立性」に言及で調整 政府、「圧力」否定ねらう [高市早苗首相 自民党総裁] - 朝日新聞",
@@ -464,7 +564,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 75
@@ -486,7 +590,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 70

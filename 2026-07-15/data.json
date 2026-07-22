@@ -28,7 +28,11 @@
           "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "エヌビディアＣＥＯが訪日、企業と提携発表へ 「日本ＡＩの始まり」（ロイター） - Yahoo!ニュース",
@@ -44,7 +48,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "豪州、AI規制法制化へ 著作権保護など柱 首相「事実上の窃盗」 [AIの時代] - 朝日新聞",
@@ -60,7 +68,11 @@
           "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ニュース STOP、ビジネス向け動画生成AIプラットフォーム「OrionNaut」のβ版 - 株式会社インプレス",
@@ -76,7 +88,11 @@
           "importance": 2,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "エヌビディアCEO､｢ジャパンAI｣の幕開けを予告－神田の居酒屋も訪問（Bloomberg） - Yahoo!ニュース",
@@ -92,7 +108,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【2026年最新】Gemini（ジェミニ）とは？最新モデル「Gemini 3.5 Flash」の特徴・使い方をわかりやすく解説！ - NTTドコモビジネス",
@@ -108,7 +128,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ルビナソフトウエア、創立22周年を迎えました - ニコニコニュース",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ニューヨーク州、データセンター建設に1年間のモラトリアム発動 - 米国初 - マイナビニュース",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "福島県産もも「あかつき」を味わって 青果売場の販売促進を県が強力に支援 - ダイヤモンド・チェーンストアオンライン",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "独立試験で明らかになった、いざという時に本当に頼れる法人向けセキュリティ製品 - PR Newswire",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "サムスン「Galaxy Glass」22日発表、Metaの独走に挑む秘密兵器 - BigGo ファイナンス",
@@ -210,7 +254,11 @@
           "importance": 3,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -232,7 +280,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "読む政治：高市首相、「総意ではない」に反論 皇室典範改正案、論戦の内容 - 毎日新聞",
@@ -248,7 +300,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "皇室典範改正、麻生太郎氏の妹信子さまも養親の対象「政治的思惑を排除できるのか」 問われた政府側は - 東京新聞デジタル",
@@ -264,7 +320,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "どうなる？静岡県内の最低賃金上昇幅 改定議論スタート 政治関与の動向も注目点 - 静岡新聞DIGITAL",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【高市総理×参政・神谷宗幣代表】「政治家もしっかり国民の知る権利にこたえて」消費税減税や皇室典範など重要法案残る中で…党首討論で交わされた論戦【全文掲載】 - TBS NEWS DIG",
@@ -296,7 +360,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ブーム再燃「プロフ帳」で長野県の政治を語ってみませんか 信毎オリジナル用紙を作成 - 信濃毎日新聞デジタル",
@@ -312,7 +380,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -334,7 +406,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "動画配信者殺害・多摩川スーツケース死体遺棄事件 女の交際相手の男（41）の上告棄却 懲役15年実刑判決が確定へ 横浜地裁 - Yahoo!ニュース",
@@ -350,7 +426,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "社会とアートの橋渡し役──ギャラリーの役割とは - bunkamura.co.jp",
@@ -366,7 +446,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "被害の男性（63）語る「目はもう いっていた」 大分・佐伯市での4人刺傷事件 緊迫した事件当時の様子 野下博司容疑者を殺人未遂容疑視野に捜査 - TBS NEWS DIG",
@@ -382,7 +466,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "点滴に人間の大便入れて入院患者を殺害か 助産師を逮捕 容疑を否認 [千葉県] - 朝日新聞",
@@ -398,7 +486,11 @@
           "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「社会を明るくする運動メッセージ伝達式」が行われました - city-nakatsu.jp",
@@ -414,7 +506,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS確認",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -436,7 +532,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "米ビッグテック決算控え半導体株、高値論争の試金石に - BigGo ファイナンス",
@@ -452,7 +552,11 @@
           "importance": 3,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -474,7 +578,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "GLAY・TERUさん 函館の国際芸術祭、28年開催へ調整 「音楽と飲食の担当を」 - 北海道新聞デジタル",
@@ -490,7 +598,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -512,7 +624,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "マキタスポーツとタブレット純、音楽と笑いのエンタメショー開催 - ナタリー",
@@ -528,7 +644,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -550,7 +670,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "※情報更新※9/2(水)岩手県盛岡市でオリックス戦を開催! - 東北楽天ゴールデンイーグルス",
@@ -566,7 +690,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -588,7 +716,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6

@@ -28,7 +28,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 - Bloomberg.com",
@@ -44,7 +48,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "京都銀行、AIで不正取引検知（時事通信） - Yahoo!ニュース",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【PR】生成AIの価格破壊、アリババクラウドの戦略 - 日経クロステック",
@@ -76,7 +88,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "高性能AI「クロード・ミュトス」 証言からその正体に迫る | NHKニュース | 生成AI・人工知能、IT・ネット、深掘りコンテンツ - NHKニュース",
@@ -92,7 +108,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "富士通、最新AIと実践知でレガシーシステムの刷新加速 - 日刊工業新聞",
@@ -108,7 +128,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ - 時事ドットコム",
@@ -146,7 +174,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強まる IT業界出社回帰加速 - coki.jp",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」 - IT業界を中心に働き方の議論が活発化 - Yahoo!ニュース",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "共同通信ＰＲワイヤー - 山形新聞",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がITトレンド上半期ランキング2026で1位を獲得しました - ニコニコニュース",
@@ -210,7 +254,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -232,7 +280,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "帰国報告会開催：日米次世代政治交流プログラム（26年度） - 公益財団法人日本国際交流センター JCIE",
@@ -248,7 +300,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【取材メモ】後藤斎参院議員 - sannichi.co.jp",
@@ -264,7 +320,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 - TBS NEWS DIG",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 - 日本経済新聞",
@@ -296,7 +360,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「キラリ☆とっとり育星塾」開講・第1回講座開催 - jimin.jp",
@@ -312,7 +380,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -334,7 +406,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "共同通信 日野町事件再審めぐり誤報 担当デスクら処分 - NHKニュース",
@@ -350,7 +426,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学副学長小野太一先生による特別講義を実施 - chuo-u.ac.jp",
@@ -366,7 +446,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS確認",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "日野町事件の再審公判 検察側、追加の証拠開示は「不要」 - 毎日新聞",
@@ -382,7 +466,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について - pref.chiba.lg.jp",
@@ -398,7 +486,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗傷害事件にも関与か 合同捜査本部 - TBS NEWS DIG",
@@ -414,7 +506,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -436,7 +532,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよびSaaSベンダーが直面する要求事項と実務戦略｜弁護士、弁理士、情報処理技術者、CFE吉澤尚 - note",
@@ -452,7 +552,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -474,7 +578,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 - テレ朝NEWS",
@@ -490,7 +598,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -512,7 +624,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "『わがまち散歩』 - BSフジ",
@@ -528,7 +644,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -550,7 +670,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS確認",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 - Yahoo!ニュース",
@@ -566,7 +690,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -588,7 +716,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6

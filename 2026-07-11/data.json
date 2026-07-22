@@ -28,7 +28,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル",
@@ -44,7 +48,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に - すまほん!!",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ChatGPTはAIのNetscapeになるか - アゴラ 言論プラットフォーム",
@@ -76,7 +88,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。 これは - KuCoin",
@@ -92,7 +108,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; OpenAIのアルトマンCEOが韓国を訪問へ - TradingKey",
@@ -108,7 +128,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 96
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート - MSN",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 - Dtimes",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【画像】採用費ゼロで始められる！ オウエン「スタートアップキャンペーン」 1/3 - ライブドアニュース",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "\"Squid Game is our pride (crying).\" ← It all belongs to America (lol). The cruel show where Korea... - YouTube",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も - カルチャーメディアNiEW",
@@ -210,7 +254,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 133
@@ -232,7 +280,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "韓国政府、 中小企業の製造データを国家戦略資産に - MSN",
@@ -248,7 +300,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟｜四国新聞WEB朝刊 - 四国新聞",
@@ -264,7 +320,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意｜四国新聞WEB朝刊 - 四国新聞",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "県関係国会議員週間予定（１３～１９日）｜四国新聞WEB朝刊 - 四国新聞",
@@ -296,7 +360,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ｜四国新聞WEB朝刊 - 四国新聞",
@@ -312,7 +380,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 212
@@ -334,7 +406,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュース",
@@ -350,7 +426,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開 - Kids Well-being",
@@ -366,7 +446,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス",
@@ -382,7 +466,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス",
@@ -398,7 +486,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 - ｄメニューニュース",
@@ -414,7 +506,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 95
@@ -436,7 +532,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "美と健康の健やかタイム - tv-tokyo.co.jp",
@@ -452,7 +552,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIG",
@@ -468,7 +572,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 - Gizmodo",
@@ -484,7 +592,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 - ライフハッカー・ジャパン",
@@ -500,7 +612,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける - アニメイトタイムズ",
@@ -516,7 +632,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 92
@@ -538,7 +658,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「ジャー・パンファンと音楽の潮流」#27 - FM大阪",
@@ -554,7 +678,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 - MSN",
@@ -570,7 +698,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻｜vois ヴォイス - MusicVoice",
@@ -586,7 +718,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） - 映画.com",
@@ -602,7 +738,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！ - クラウドファンディング - READYFOR",
@@ -618,7 +758,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 90

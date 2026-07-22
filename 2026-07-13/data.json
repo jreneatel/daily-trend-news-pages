@@ -28,7 +28,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "2026年の医療業界トレンド - SDKI Analytics",
@@ -44,7 +48,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp",
@@ -76,7 +88,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp",
@@ -92,7 +108,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch",
@@ -108,7 +128,11 @@
           "importance": 3,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "テクノロジーニュース 7月13日：マイクロソフトがWindows 11にAndroidを導入 - Vietnam.vn",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan",
@@ -210,7 +254,11 @@
           "importance": 3,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 6
@@ -232,7 +280,11 @@
           "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp",
@@ -248,7 +300,11 @@
           "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 2
@@ -275,7 +331,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp",
@@ -291,7 +351,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 5
@@ -313,7 +377,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ",
@@ -329,7 +397,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 4
@@ -351,7 +423,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞",
@@ -367,7 +443,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 3
@@ -389,7 +469,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 1
@@ -411,7 +495,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 1

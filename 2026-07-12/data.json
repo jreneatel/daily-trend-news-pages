@@ -28,7 +28,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "多くの職業が人工知能に取って代わられる危険性がある。 - Vietnam.vn",
@@ -44,7 +48,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Coinbaseは、OpenAIのGPT-5.5やAnthropicのClaude Opus 4.7から、智谱AIのGL - KuCoin",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "アクセンチュア×OpenAI、国内協業を拡充 部門横断のAIエージェント活用を支援 - EnterpriseZine",
@@ -76,7 +88,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ChatGPTは商用利用OK？注意点を解説！利用規約から読み解いた活用例も紹介！ - ai-market.jp",
@@ -92,7 +108,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "筧美和子「おっぱいの仕組みって難しい」子育ての赤裸々事情を告白、出産時はAIに相談「ChatGPTが第2の母」 - smart-flash.jp",
@@ -108,7 +128,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 38
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "｢Google Pixel Watch 5｣、SoCやディスプレイなどの内部仕様は｢Pixel Watch 4｣から変更無しか - 気になる、記になる…",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Google Gemini | パーソナライズ 篇 John Cena (kKsGy3Ju8Q) - Mshale",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［後編］ ～ ソフトウェア／サービス系、SI／システム開発系、クラウド／通信キャリア系企業 - Publickey",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "IT系上場企業の平均年収を業種別にみてみた 2026年版［前編］ ～ ネットベンチャー、ゲーム、メディア系 - Publickey",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「FAMIMA PARK AZABUDAI」オープン / 冷房・除湿・送風の1台3役「simplus スポットクーラー」【まとめ記事】 : ITライフハック - ITライフハック",
@@ -210,7 +254,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 68
@@ -232,7 +280,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "越前市議会議員選挙、22人の顔ぶれ決まる 前田利隆氏がトップ当選 現職2人と新人2人が涙 - 福井新聞社",
@@ -248,7 +300,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【速報】埼玉の選挙…東松山市長選、新人松坂氏が2氏退け初当選 支援者と喜び分かち「市民のためにスタートラインに立てた」 - 47NEWS",
@@ -264,7 +320,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "共産小池議員国会質問 皇室典範改定案撤回を #高市早苗 #自民党 #皇室典範改正 #女系天皇 #麻生太郎 - YouTube",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "越前市議会議員選挙2026開票速報 当選22人決まる 投票率と立候補者一覧 - 福井新聞社",
@@ -296,7 +360,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "福岡県田川市長選挙、浦野仁氏が初当選 - 日本経済新聞",
@@ -312,7 +380,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 67
@@ -334,7 +406,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細 | 長崎のニュース | 天気 | NBC長崎放送 - TBS NEWS DIG",
@@ -350,7 +426,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "震度1 十勝地方北部 2026年07月12日23:13ごろ 地震詳細 | 山口のニュース・天気・防災｜tys NEWS｜ｔｙｓテレビ山口 - TBS NEWS DIG",
@@ -366,7 +446,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "北海道で最大震度1の地震 北海道・美瑛町、鹿追町 (FNNプライムオンライン（フジテレビ系）) - Yahoo!ニュース",
@@ -382,7 +466,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "北海道で最大震度1の地震 北海道・美瑛町、鹿追町 (TBS NEWS DIG Powered by JNN) - Yahoo!ニュース",
@@ -398,7 +486,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "震度＝気象庁発表（１２日２３時１５分）震度順・市区町村別 ：地震 - 沖縄タイムス社",
@@ -414,7 +506,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 48
@@ -436,7 +532,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ホルムズ海峡は「開放」とトランプ米大統領 - ライブドアニュース",
@@ -452,7 +552,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "トランプ氏の盟友グラム議員死去 外交・安保の重鎮、対イラン強硬のタカ派 - スマートニュース",
@@ -468,7 +572,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ウクライナ内閣改造、首相交代へ ゼレンスキー大統領が表明 - ライブドアニュース",
@@ -484,7 +592,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "外務省は、2026年から2030年までの期間における外交分野における人工知能の活用に関するプロジェクトについて協議し、最終決定を進めている。 - Vietnam.vn",
@@ -500,7 +612,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国外交部、一部諸国による「南海仲裁裁定」10年をめぐる動きを受け声明 - CGTN Japanese",
@@ -516,7 +632,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 29
@@ -538,7 +658,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "MATSURI、GMO 渋谷エンタメ祭で躍動「日本中をお祭りのように元気に」 細川たかしがサプライズ出演 (サンケイスポーツ) - Yahoo!ニュース",
@@ -554,7 +678,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "渋谷エンタメ祭音楽イベントの締めは細川たかし「北酒場」合唱で“たかしコール” - ライブドアニュース",
@@ -570,7 +698,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "MATSURI、GMO 渋谷エンタメ祭で躍動「日本中をお祭りのように元気に」 細川たかしがサプライズ出演（写真・画像 1/1） - サンスポ",
@@ -586,7 +718,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "渋谷エンタメ祭音楽イベントの締めは細川たかし「北酒場」合唱で“たかしコール”（日刊スポーツ） - Yahoo!ニュース",
@@ -602,7 +738,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "渋谷エンタメ祭音楽イベントの締めは細川たかし「北酒場」合唱で“たかしコール” (日刊スポーツ) - Yahoo!ニュース",
@@ -618,7 +758,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 29

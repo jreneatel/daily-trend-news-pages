@@ -160,33 +160,12 @@ body {
   font-size: 12px;
   font-weight: 700;
 }
-.brief-panel {
-  margin: 0 0 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
-  overflow: hidden;
-}
-.view-tabs {
+.page-actions {
   display: flex;
-  gap: 4px;
-  padding: 8px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, .04);
-}
-.view-tab {
-  min-height: 34px;
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  color: var(--muted);
-  background: transparent;
-  font: inherit;
-  font-weight: 800;
-  cursor: pointer;
+  justify-content: flex-end;
+  margin-top: 18px;
 }
 .analytics-export {
-  margin-top: 10px;
   min-height: 34px;
   padding: 6px 12px;
   border: 1px solid rgba(79, 209, 197, .45);
@@ -196,26 +175,6 @@ body {
   font: inherit;
   font-weight: 800;
   cursor: pointer;
-}
-.view-tab.is-active,
-.view-tab:hover,
-.view-tab:focus {
-  color: #071316;
-  background: var(--accent);
-}
-.brief-view {
-  display: none;
-  padding: 12px 16px;
-}
-.brief-view.is-active {
-  display: block;
-}
-.brief-view ol {
-  margin: 0;
-  padding-left: 22px;
-}
-.brief-view li {
-  margin: 5px 0;
 }
 .layout {
   display: grid;
@@ -686,16 +645,6 @@ dd {
         <span>32件の記事</span>
       </div>
     </section>
-    <section class="brief-panel" aria-label="読み方">
-      <div class="view-tabs" role="tablist" aria-label="表示モード">
-        <button class="view-tab is-active" type="button" data-view="one">1分版</button>
-        <button class="view-tab" type="button" data-view="five">5分版</button>
-        <button class="view-tab" type="button" data-view="all">全部読む</button>
-      </div>
-      <div class="brief-view is-active" data-panel="one"><ol class="one-minute"><li>AI: 中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) Yahoo!ファイナンス</li><li>政治: 【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載…</li><li>事件・事故: 警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 日テレNEWS NNN</li></ol></div>
-      <div class="brief-view" data-panel="five"><ol class="five-minute"><li>AI: 中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) Yahoo!ファイナンス</li><li>IT業界: Halo: safeguard your meetings - Windows に無料でダウンロードしてインストー…</li><li>政治: 【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載…</li><li>社会: 大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 北海道新聞デジタル</li><li>事件・事故: 警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 日テレNEWS NNN</li><li>芸能人の結婚・離婚・交際: 居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン ｄメ…</li><li>経済: 経済財政諮問会議・日本成長戦略会議合同会議 首相官邸</li><li>金融: 国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 毎日新聞</li></ol></div>
-      <div class="brief-view" data-panel="all"><p>ジャンルごとのカードを開いて、気になる記事だけ元記事で確認できます。クリック済みの記事はこの端末で既読表示になります。</p><button class="analytics-export" type="button">分析JSON</button></div>
-    </section>
     <div class="layout">
       <aside class="sidebar" aria-label="ジャンル">
         <div class="side-title">ジャンル</div>
@@ -719,7 +668,7 @@ dd {
     <h2 id="AI">AI</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-f94cf4655ea687af" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQal9KTkU3LV9qZmNYYUMtSlY2RGJYV082NW5tak0yVXVzQjQ4ZmdBVnQ4Y05LWnUzY1JkT3BoTVRsc2hIRjlUM1lVMHIzMHhFUnY4ZVBfQ1ktVkZ6eEtzVHBvajVaS0lUTEFsVHd2WVQxLWJ2Tm9xZTRCZEdCU0hmY08yazZDZW8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxQal9KTkU3LV9qZmNYYUMtSlY2RGJYV082NW5tak0yVXVzQjQ4ZmdBVnQ4Y05LWnUzY1JkT3BoTVRsc2hIRjlUM1lVMHIzMHhFUnY4ZVBfQ1ktVkZ6eEtzVHBvajVaS0lUTEFsVHd2WVQxLWJ2Tm9xZTRCZEdCU0hmY08yazZDZW8?oc=5" data-title="中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) - Yahoo!ファイナンス" data-genre="AI" data-modes="all one five">
+  <div class="grid"><a id="article-f94cf4655ea687af" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQal9KTkU3LV9qZmNYYUMtSlY2RGJYV082NW5tak0yVXVzQjQ4ZmdBVnQ4Y05LWnUzY1JkT3BoTVRsc2hIRjlUM1lVMHIzMHhFUnY4ZVBfQ1ktVkZ6eEtzVHBvajVaS0lUTEFsVHd2WVQxLWJ2Tm9xZTRCZEdCU0hmY08yazZDZW8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxQal9KTkU3LV9qZmNYYUMtSlY2RGJYV082NW5tak0yVXVzQjQ4ZmdBVnQ4Y05LWnUzY1JkT3BoTVRsc2hIRjlUM1lVMHIzMHhFUnY4ZVBfQ1ktVkZ6eEtzVHBvajVaS0lUTEFsVHd2WVQxLWJ2Tm9xZTRCZEdCU0hmY08yazZDZW8?oc=5" data-title="中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) - Yahoo!ファイナンス" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/57d27910cb3e554f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 10:04</span><span class="read-state">未読</span></div>
@@ -732,7 +681,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-2a26897168ed2edb" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9rd2pGaHM0T3FfUTQ4SmdFbV9uTDljOFFIU2FkcktvenVsNkJ3ZDRfZ3V0ZTNvVEF5ajMxeldkTDdtQ08wVEdlYWVvREk1UUI4bGVPRzdKVTY4blY0UjFJX29xZHRaRW9hRjhNd2xsT24zQUhYamc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国ＡＩ輸出規制強化か - OANDA証券を読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE9rd2pGaHM0T3FfUTQ4SmdFbV9uTDljOFFIU2FkcktvenVsNkJ3ZDRfZ3V0ZTNvVEF5ajMxeldkTDdtQ08wVEdlYWVvREk1UUI4bGVPRzdKVTY4blY0UjFJX29xZHRaRW9hRjhNd2xsT24zQUhYamc?oc=5" data-title="中国ＡＩ輸出規制強化か - OANDA証券" data-genre="AI" data-modes="all five">
+<a id="article-2a26897168ed2edb" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9rd2pGaHM0T3FfUTQ4SmdFbV9uTDljOFFIU2FkcktvenVsNkJ3ZDRfZ3V0ZTNvVEF5ajMxeldkTDdtQ08wVEdlYWVvREk1UUI4bGVPRzdKVTY4blY0UjFJX29xZHRaRW9hRjhNd2xsT24zQUhYamc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国ＡＩ輸出規制強化か - OANDA証券を読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE9rd2pGaHM0T3FfUTQ4SmdFbV9uTDljOFFIU2FkcktvenVsNkJ3ZDRfZ3V0ZTNvVEF5ajMxeldkTDdtQ08wVEdlYWVvREk1UUI4bGVPRzdKVTY4blY0UjFJX29xZHRaRW9hRjhNd2xsT24zQUhYamc?oc=5" data-title="中国ＡＩ輸出規制強化か - OANDA証券" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/a2fc751afad2f279.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>OANDA証券 · 09:23</span><span class="read-state">未読</span></div>
@@ -745,7 +694,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-f83c86f4a710c3c1" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9xQWhUUVJNY0IzZnY3TnNRQVN1ZUc3TFdfMmV4UkRPSmZRUThsNi1sRXRxd2YzaTduMk1ZZmtHbnpzcWhKWWNJTHIteWJJVXItYXByUjBEVFFpc01ZVmtMTjhjLS1OU0VsQU90dG5vNTJvWkZ5Z0VFT2k5VjJyNVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9xQWhUUVJNY0IzZnY3TnNRQVN1ZUc3TFdfMmV4UkRPSmZRUThsNi1sRXRxd2YzaTduMk1ZZmtHbnpzcWhKWWNJTHIteWJJVXItYXByUjBEVFFpc01ZVmtMTjhjLS1OU0VsQU90dG5vNTJvWkZ5Z0VFT2k5VjJyNVE?oc=5" data-title="こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） - Yahoo!ニュース" data-genre="AI" data-modes="all five">
+<a id="article-f83c86f4a710c3c1" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9xQWhUUVJNY0IzZnY3TnNRQVN1ZUc3TFdfMmV4UkRPSmZRUThsNi1sRXRxd2YzaTduMk1ZZmtHbnpzcWhKWWNJTHIteWJJVXItYXByUjBEVFFpc01ZVmtMTjhjLS1OU0VsQU90dG5vNTJvWkZ5Z0VFT2k5VjJyNVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9xQWhUUVJNY0IzZnY3TnNRQVN1ZUc3TFdfMmV4UkRPSmZRUThsNi1sRXRxd2YzaTduMk1ZZmtHbnpzcWhKWWNJTHIteWJJVXItYXByUjBEVFFpc01ZVmtMTjhjLS1OU0VsQU90dG5vNTJvWkZ5Z0VFT2k5VjJyNVE?oc=5" data-title="こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/1879f27d8b9f7989.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:30</span><span class="read-state">未読</span></div>
@@ -758,7 +707,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-b4b936a0e85431dc" class="card tone-tech" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNNWVrcnBEQWVhRDBmMDlLX2Y2WVFINHZodDlfVUJULURxX1hJWDlBVkNSYTl0NVc0Rk43N2tqRTBWZEliYVlDWllCckhOQlU3UFdGTEdROURyOEJCR2tDb0ZJZ09OWFhtcGNpWjRBTE1KNVpTallqNDVyYTI1bGtQT1N1S3lSdDEtMlZEUEU0eXpLNURIN1lJ0gGXAUFVX3lxTE01ZWtycERBZWFEMGYwOUtfZjZZUUg0dmh0OV9VQlQtRHFfWElYOUFWQ1JhOXQ1VzRGTjc3a2pFMFZkSWJhWUNaWUJySE5CVTdQV0ZMR1E5RHI4QkJHa0NvRklnT05YWG1wY2laNEFMTUo1WlNqWWo0NXJhMjVsa1BPU3VLeVJ0MS0yVkRQRTR5eks1REg3WUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間を比較、ICT総研調べ - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMilwFBVV95cUxNNWVrcnBEQWVhRDBmMDlLX2Y2WVFINHZodDlfVUJULURxX1hJWDlBVkNSYTl0NVc0Rk43N2tqRTBWZEliYVlDWllCckhOQlU3UFdGTEdROURyOEJCR2tDb0ZJZ09OWFhtcGNpWjRBTE1KNVpTallqNDVyYTI1bGtQT1N1S3lSdDEtMlZEUEU0eXpLNURIN1lJ0gGXAUFVX3lxTE01ZWtycERBZWFEMGYwOUtfZjZZUUg0dmh0OV9VQlQtRHFfWElYOUFWQ1JhOXQ1VzRGTjc3a2pFMFZkSWJhWUNaWUJySE5CVTdQV0ZMR1E5RHI4QkJHa0NvRklnT05YWG1wY2laNEFMTUo1WlNqWWo0NXJhMjVsa1BPU3VLeVJ0MS0yVkRQRTR5eks1REg3WUk?oc=5" data-title="ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間を比較、ICT総研調べ - ｄメニューニュース" data-genre="AI" data-modes="all five">
+<a id="article-b4b936a0e85431dc" class="card tone-tech" href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNNWVrcnBEQWVhRDBmMDlLX2Y2WVFINHZodDlfVUJULURxX1hJWDlBVkNSYTl0NVc0Rk43N2tqRTBWZEliYVlDWllCckhOQlU3UFdGTEdROURyOEJCR2tDb0ZJZ09OWFhtcGNpWjRBTE1KNVpTallqNDVyYTI1bGtQT1N1S3lSdDEtMlZEUEU0eXpLNURIN1lJ0gGXAUFVX3lxTE01ZWtycERBZWFEMGYwOUtfZjZZUUg0dmh0OV9VQlQtRHFfWElYOUFWQ1JhOXQ1VzRGTjc3a2pFMFZkSWJhWUNaWUJySE5CVTdQV0ZMR1E5RHI4QkJHa0NvRklnT05YWG1wY2laNEFMTUo1WlNqWWo0NXJhMjVsa1BPU3VLeVJ0MS0yVkRQRTR5eks1REg3WUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間を比較、ICT総研調べ - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMilwFBVV95cUxNNWVrcnBEQWVhRDBmMDlLX2Y2WVFINHZodDlfVUJULURxX1hJWDlBVkNSYTl0NVc0Rk43N2tqRTBWZEliYVlDWllCckhOQlU3UFdGTEdROURyOEJCR2tDb0ZJZ09OWFhtcGNpWjRBTE1KNVpTallqNDVyYTI1bGtQT1N1S3lSdDEtMlZEUEU0eXpLNURIN1lJ0gGXAUFVX3lxTE01ZWtycERBZWFEMGYwOUtfZjZZUUg0dmh0OV9VQlQtRHFfWElYOUFWQ1JhOXQ1VzRGTjc3a2pFMFZkSWJhWUNaWUJySE5CVTdQV0ZMR1E5RHI4QkJHa0NvRklnT05YWG1wY2laNEFMTUo1WlNqWWo0NXJhMjVsa1BPU3VLeVJ0MS0yVkRQRTR5eks1REg3WUk?oc=5" data-title="ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間を比較、ICT総研調べ - ｄメニューニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/e24e03b8b98e3cf4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 13:29</span><span class="read-state">未読</span></div>
@@ -771,7 +720,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-67004c99510b76f2" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOSnJ6aU4teHZXZUpWZGJnamZkTS1EaWtEbHNfM3NUR2pWcC1JZHNQTW9EUjY4bk9FcFM3UlV3RmVGRTFSYThiMUdEMnZuYTF1bTZCRkhXTG9kdTlnNWs4b0RoSXJHSFVDc3I5M0NhSzdCZHFtQW1qS241TTFPTFJ0U3VwUEFrczA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 - Unite.AIを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxOSnJ6aU4teHZXZUpWZGJnamZkTS1EaWtEbHNfM3NUR2pWcC1JZHNQTW9EUjY4bk9FcFM3UlV3RmVGRTFSYThiMUdEMnZuYTF1bTZCRkhXTG9kdTlnNWs4b0RoSXJHSFVDc3I5M0NhSzdCZHFtQW1qS241TTFPTFJ0U3VwUEFrczA?oc=5" data-title="オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 - Unite.AI" data-genre="AI" data-modes="all five">
+<a id="article-67004c99510b76f2" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOSnJ6aU4teHZXZUpWZGJnamZkTS1EaWtEbHNfM3NUR2pWcC1JZHNQTW9EUjY4bk9FcFM3UlV3RmVGRTFSYThiMUdEMnZuYTF1bTZCRkhXTG9kdTlnNWs4b0RoSXJHSFVDc3I5M0NhSzdCZHFtQW1qS241TTFPTFJ0U3VwUEFrczA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 - Unite.AIを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxOSnJ6aU4teHZXZUpWZGJnamZkTS1EaWtEbHNfM3NUR2pWcC1JZHNQTW9EUjY4bk9FcFM3UlV3RmVGRTFSYThiMUdEMnZuYTF1bTZCRkhXTG9kdTlnNWs4b0RoSXJHSFVDc3I5M0NhSzdCZHFtQW1qS241TTFPTFJ0U3VwUEFrczA?oc=5" data-title="オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 - Unite.AI" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/01212c8363630ea5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Unite.AI · 13:28</span><span class="read-state">未読</span></div>
@@ -784,7 +733,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-17dbe38ff1781776" class="card tone-tech" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdlpVTm1RWmlvREQ3Wm11R253TGlGbFBHR1Z3X09LOVVDbTUySGE0QU9MN2ZURnVtQWxTaU1semF6dkFDOVl1d2hOajJobGNtQm5sYVpydTYxTk5zOWNfQ3d0ZEVETnVSODJBalRWaU9nemZzamZlaUZaUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdlpVTm1RWmlvREQ3Wm11R253TGlGbFBHR1Z3X09LOVVDbTUySGE0QU9MN2ZURnVtQWxTaU1semF6dkFDOVl1d2hOajJobGNtQm5sYVpydTYxTk5zOWNfQ3d0ZEVETnVSODJBalRWaU9nemZzamZlaUZaUQ?oc=5" data-title="キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュース" data-genre="AI" data-modes="all five">
+<a id="article-17dbe38ff1781776" class="card tone-tech" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdlpVTm1RWmlvREQ3Wm11R253TGlGbFBHR1Z3X09LOVVDbTUySGE0QU9MN2ZURnVtQWxTaU1semF6dkFDOVl1d2hOajJobGNtQm5sYVpydTYxTk5zOWNfQ3d0ZEVETnVSODJBalRWaU9nemZzamZlaUZaUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE9vdlpVTm1RWmlvREQ3Wm11R253TGlGbFBHR1Z3X09LOVVDbTUySGE0QU9MN2ZURnVtQWxTaU1semF6dkFDOVl1d2hOajJobGNtQm5sYVpydTYxTk5zOWNfQ3d0ZEVETnVSODJBalRWaU9nemZzamZlaUZaUQ?oc=5" data-title="キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/ffae6578d31f9bff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 08:48</span><span class="read-state">未読</span></div>
@@ -803,7 +752,7 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-15be6eaf29396e5a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoftを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw?oc=5" data-title="Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoft" data-genre="IT業界" data-modes="all five">
+  <div class="grid"><a id="article-15be6eaf29396e5a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoftを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw?oc=5" data-title="Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoft" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/468a78705889010c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Microsoft · 10:53</span><span class="read-state">未読</span></div>
@@ -816,7 +765,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-9083a35b56a2d51b" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzeEdfNXdGUTJZRWwzc2lzWWlRc3htY3MzNXF5TVZCZC1FeFVrYnJPSDVYMUJPVTRFUTdJTXZ3WXIyS0I1TmZmVk9TUEhZOVgteUZhR1Y0NDBoZFc1TUFqOEQyVQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 - PC Watchを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzeEdfNXdGUTJZRWwzc2lzWWlRc3htY3MzNXF5TVZCZC1FeFVrYnJPSDVYMUJPVTRFUTdJTXZ3WXIyS0I1TmZmVk9TUEhZOVgteUZhR1Y0NDBoZFc1TUFqOEQyVQ?oc=5" data-title="AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 - PC Watch" data-genre="IT業界" data-modes="all five">
+<a id="article-9083a35b56a2d51b" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzeEdfNXdGUTJZRWwzc2lzWWlRc3htY3MzNXF5TVZCZC1FeFVrYnJPSDVYMUJPVTRFUTdJTXZ3WXIyS0I1TmZmVk9TUEhZOVgteUZhR1Y0NDBoZFc1TUFqOEQyVQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 - PC Watchを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAzeEdfNXdGUTJZRWwzc2lzWWlRc3htY3MzNXF5TVZCZC1FeFVrYnJPSDVYMUJPVTRFUTdJTXZ3WXIyS0I1TmZmVk9TUEhZOVgteUZhR1Y0NDBoZFc1TUFqOEQyVQ?oc=5" data-title="AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 - PC Watch" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/f9f7b572cd47deb9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PC Watch · 09:16</span><span class="read-state">未読</span></div>
@@ -829,7 +778,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-c233782e6f9a58b5" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyeURXUFFHZkVaVVZhUVRoMmZsYmxNNlRVX2l0MmVjendUeUJCc25nbFh1NXdpS0RBMUMwMTk0cHFrdVNyWmxRUjk1WjJjaWNmeDh0RFQyOHNveTlIc2dwdWNHWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 - 株式会社インプレスを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyeURXUFFHZkVaVVZhUVRoMmZsYmxNNlRVX2l0MmVjendUeUJCc25nbFh1NXdpS0RBMUMwMTk0cHFrdVNyWmxRUjk1WjJjaWNmeDh0RFQyOHNveTlIc2dwdWNHWQ?oc=5" data-title="ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 - 株式会社インプレス" data-genre="IT業界" data-modes="all five">
+<a id="article-c233782e6f9a58b5" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyeURXUFFHZkVaVVZhUVRoMmZsYmxNNlRVX2l0MmVjendUeUJCc25nbFh1NXdpS0RBMUMwMTk0cHFrdVNyWmxRUjk1WjJjaWNmeDh0RFQyOHNveTlIc2dwdWNHWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 - 株式会社インプレスを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyeURXUFFHZkVaVVZhUVRoMmZsYmxNNlRVX2l0MmVjendUeUJCc25nbFh1NXdpS0RBMUMwMTk0cHFrdVNyWmxRUjk1WjJjaWNmeDh0RFQyOHNveTlIc2dwdWNHWQ?oc=5" data-title="ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 - 株式会社インプレス" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/7f476cbe854230ea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>株式会社インプレス · 08:50</span><span class="read-state">未読</span></div>
@@ -842,7 +791,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-3f95e0cc37c2caf8" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yLTZvYy1yTGhzNS15R1FlYUhENGdnRUoyX3p6UUtWNk1rSWdtSnZEX0JGQXZLQk8xU0lpUVBmcmZJQ3UzM2pISWZmNVYzNUNlR1JjWWZWR0FFM3Vzd3JhNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 - XenoSpectrumを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yLTZvYy1yTGhzNS15R1FlYUhENGdnRUoyX3p6UUtWNk1rSWdtSnZEX0JGQXZLQk8xU0lpUVBmcmZJQ3UzM2pISWZmNVYzNUNlR1JjWWZWR0FFM3Vzd3JhNA?oc=5" data-title="Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 - XenoSpectrum" data-genre="IT業界" data-modes="all five">
+<a id="article-3f95e0cc37c2caf8" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yLTZvYy1yTGhzNS15R1FlYUhENGdnRUoyX3p6UUtWNk1rSWdtSnZEX0JGQXZLQk8xU0lpUVBmcmZJQ3UzM2pISWZmNVYzNUNlR1JjWWZWR0FFM3Vzd3JhNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 - XenoSpectrumを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yLTZvYy1yTGhzNS15R1FlYUhENGdnRUoyX3p6UUtWNk1rSWdtSnZEX0JGQXZLQk8xU0lpUVBmcmZJQ3UzM2pISWZmNVYzNUNlR1JjWWZWR0FFM3Vzd3JhNA?oc=5" data-title="Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 - XenoSpectrum" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/6e1f98ba819ca96b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>XenoSpectrum · 09:00</span><span class="read-state">未読</span></div>
@@ -855,7 +804,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-f78fdd26b95257a0" class="card tone-tech" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNc01BNUFaYTRuVjdnMHY5Q19DRWdlRkhnUTVXeUdwaG9feXBVdS1aTGI3V0F1MEV0Q2dBbVVHUGxuV1pLeWVPVF90QkhYdXlCVGtuZnAtSFZWcFBoLTFBdmtJT1Nsb1lWZ3NGMklGNWoyVG1oNEEyRFhaVjZzTVBHU1QxNENYME5sVkJ2SVJR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Watch） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxNc01BNUFaYTRuVjdnMHY5Q19DRWdlRkhnUTVXeUdwaG9feXBVdS1aTGI3V0F1MEV0Q2dBbVVHUGxuV1pLeWVPVF90QkhYdXlCVGtuZnAtSFZWcFBoLTFBdmtJT1Nsb1lWZ3NGMklGNWoyVG1oNEEyRFhaVjZzTVBHU1QxNENYME5sVkJ2SVJR?oc=5" data-title="ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Watch） - Yahoo!ニュース" data-genre="IT業界" data-modes="all five">
+<a id="article-f78fdd26b95257a0" class="card tone-tech" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNc01BNUFaYTRuVjdnMHY5Q19DRWdlRkhnUTVXeUdwaG9feXBVdS1aTGI3V0F1MEV0Q2dBbVVHUGxuV1pLeWVPVF90QkhYdXlCVGtuZnAtSFZWcFBoLTFBdmtJT1Nsb1lWZ3NGMklGNWoyVG1oNEEyRFhaVjZzTVBHU1QxNENYME5sVkJ2SVJR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Watch） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxNc01BNUFaYTRuVjdnMHY5Q19DRWdlRkhnUTVXeUdwaG9feXBVdS1aTGI3V0F1MEV0Q2dBbVVHUGxuV1pLeWVPVF90QkhYdXlCVGtuZnAtSFZWcFBoLTFBdmtJT1Nsb1lWZ3NGMklGNWoyVG1oNEEyRFhaVjZzTVBHU1QxNENYME5sVkJ2SVJR?oc=5" data-title="ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Watch） - Yahoo!ニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/f8d148c4c6b31bb5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:35</span><span class="read-state">未読</span></div>
@@ -868,7 +817,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-475ce74321973115" class="card tone-tech" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1HMWhFeXFNWXVrVndqeElrMG5HR0c2dFZSRmhzOW1JU0tTZ1I0WEpIR2hGQUpfcDdLZXlHU1dsVU94TkZaSFhWb1RvM1FuXzQtOE5YTjY2cnFrNFhYTzVtZFVjZS1rSjI1SlhYY0xhX0pDdGgta1800gF8QVVfeXFMT0VSX2xSa1BvUGhMRnhwTWpnQ1p5Y2h5SnI0ZTU2T2xDczZDTVRqb0UzLW5qdmdCSTVwZm1MOVMzY3VSbWc0N1JsUnFzYkd1Q0V2N29GaF9RSE9lNWFWRHVxYkxwZmdYWUFHcDJhTnVDaWtZb210MEtITHY0Zg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE1HMWhFeXFNWXVrVndqeElrMG5HR0c2dFZSRmhzOW1JU0tTZ1I0WEpIR2hGQUpfcDdLZXlHU1dsVU94TkZaSFhWb1RvM1FuXzQtOE5YTjY2cnFrNFhYTzVtZFVjZS1rSjI1SlhYY0xhX0pDdGgta1800gF8QVVfeXFMT0VSX2xSa1BvUGhMRnhwTWpnQ1p5Y2h5SnI0ZTU2T2xDczZDTVRqb0UzLW5qdmdCSTVwZm1MOVMzY3VSbWc0N1JsUnFzYkd1Q0V2N29GaF9RSE9lNWFWRHVxYkxwZmdYWUFHcDJhTnVDaWtZb210MEtITHY0Zg?oc=5" data-title="自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 - ｄメニューニュース" data-genre="IT業界" data-modes="all five">
+<a id="article-475ce74321973115" class="card tone-tech" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1HMWhFeXFNWXVrVndqeElrMG5HR0c2dFZSRmhzOW1JU0tTZ1I0WEpIR2hGQUpfcDdLZXlHU1dsVU94TkZaSFhWb1RvM1FuXzQtOE5YTjY2cnFrNFhYTzVtZFVjZS1rSjI1SlhYY0xhX0pDdGgta1800gF8QVVfeXFMT0VSX2xSa1BvUGhMRnhwTWpnQ1p5Y2h5SnI0ZTU2T2xDczZDTVRqb0UzLW5qdmdCSTVwZm1MOVMzY3VSbWc0N1JsUnFzYkd1Q0V2N29GaF9RSE9lNWFWRHVxYkxwZmdYWUFHcDJhTnVDaWtZb210MEtITHY0Zg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE1HMWhFeXFNWXVrVndqeElrMG5HR0c2dFZSRmhzOW1JU0tTZ1I0WEpIR2hGQUpfcDdLZXlHU1dsVU94TkZaSFhWb1RvM1FuXzQtOE5YTjY2cnFrNFhYTzVtZFVjZS1rSjI1SlhYY0xhX0pDdGgta1800gF8QVVfeXFMT0VSX2xSa1BvUGhMRnhwTWpnQ1p5Y2h5SnI0ZTU2T2xDczZDTVRqb0UzLW5qdmdCSTVwZm1MOVMzY3VSbWc0N1JsUnFzYkd1Q0V2N29GaF9RSE9lNWFWRHVxYkxwZmdYWUFHcDJhTnVDaWtZb210MEtITHY0Zg?oc=5" data-title="自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 - ｄメニューニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/85d437797f7d83df.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 07:11</span><span class="read-state">未読</span></div>
@@ -887,7 +836,7 @@ dd {
     <h2 id="政治">政治</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-8485da8f8403c8eb" class="card tone-civic" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5sU21PV056QVNEUENCUjFqbi0zNzltaTJxSlliV3hZc1c5RnQ3dDhIWHRrcXBrUnFCd1F0S3A3Q3lzMlFOQ2VRS18zcmlNMFFpYVpWTE1HQ2g2aTFEaVgyaGRBTHFZaHlROV9UcEZWUDkwck9xZ2tMbTVVTnpZQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載） - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMifkFVX3lxTE5sU21PV056QVNEUENCUjFqbi0zNzltaTJxSlliV3hZc1c5RnQ3dDhIWHRrcXBrUnFCd1F0S3A3Q3lzMlFOQ2VRS18zcmlNMFFpYVpWTE1HQ2g2aTFEaVgyaGRBTHFZaHlROV9UcEZWUDkwck9xZ2tMbTVVTnpZQQ?oc=5" data-title="【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載） - 日テレNEWS NNN" data-genre="政治" data-modes="all one five">
+  <div class="grid"><a id="article-8485da8f8403c8eb" class="card tone-civic" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5sU21PV056QVNEUENCUjFqbi0zNzltaTJxSlliV3hZc1c5RnQ3dDhIWHRrcXBrUnFCd1F0S3A3Q3lzMlFOQ2VRS18zcmlNMFFpYVpWTE1HQ2g2aTFEaVgyaGRBTHFZaHlROV9UcEZWUDkwck9xZ2tMbTVVTnpZQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載） - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMifkFVX3lxTE5sU21PV056QVNEUENCUjFqbi0zNzltaTJxSlliV3hZc1c5RnQ3dDhIWHRrcXBrUnFCd1F0S3A3Q3lzMlFOQ2VRS18zcmlNMFFpYVpWTE1HQ2g2aTFEaVgyaGRBTHFZaHlROV9UcEZWUDkwck9xZ2tMbTVVTnpZQQ?oc=5" data-title="【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載） - 日テレNEWS NNN" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/869a4073eb248303.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 11:18</span><span class="read-state">未読</span></div>
@@ -900,7 +849,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-8e72937d0e270509" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBwMzlWSTFTV2VNamkwb21DTV95R204bHJzdUFCVzA3UUxsWTd2MHZack1wWTJSOWg2XzNySE5nTW9JMmJXVmhIX3JMZWF6enJEdnJSdzhXYzZfVWx3LVZWU0VseDNrR2M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBwMzlWSTFTV2VNamkwb21DTV95R204bHJzdUFCVzA3UUxsWTd2MHZack1wWTJSOWg2XzNySE5nTW9JMmJXVmhIX3JMZWF6enJEdnJSdzhXYzZfVWx3LVZWU0VseDNrR2M?oc=5" data-title="高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] - 朝日新聞" data-genre="政治" data-modes="all five">
+<a id="article-8e72937d0e270509" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBwMzlWSTFTV2VNamkwb21DTV95R204bHJzdUFCVzA3UUxsWTd2MHZack1wWTJSOWg2XzNySE5nTW9JMmJXVmhIX3JMZWF6enJEdnJSdzhXYzZfVWx3LVZWU0VseDNrR2M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBwMzlWSTFTV2VNamkwb21DTV95R204bHJzdUFCVzA3UUxsWTd2MHZack1wWTJSOWg2XzNySE5nTW9JMmJXVmhIX3JMZWF6enJEdnJSdzhXYzZfVWx3LVZWU0VseDNrR2M?oc=5" data-title="高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] - 朝日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/327a4f7e30e11239.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 11:32</span><span class="read-state">未読</span></div>
@@ -919,7 +868,7 @@ dd {
     <h2 id="社会">社会</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-c92a2c58abbbdf04" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BTnUtc1JVTEhsSldpaEtUNU5iancwS1RKWVI2V2E4RXBDOG96RU1kQjBNOTh3Y3VmMXF6b0o5eWJDeGpXTUszbERiYTljYlJCZXcxS2QtZWdkQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BTnUtc1JVTEhsSldpaEtUNU5iancwS1RKWVI2V2E4RXBDOG96RU1kQjBNOTh3Y3VmMXF6b0o5eWJDeGpXTUszbERiYTljYlJCZXcxS2QtZWdkQQ?oc=5" data-title="大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタル" data-genre="社会" data-modes="all five">
+  <div class="grid"><a id="article-c92a2c58abbbdf04" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BTnUtc1JVTEhsSldpaEtUNU5iancwS1RKWVI2V2E4RXBDOG96RU1kQjBNOTh3Y3VmMXF6b0o5eWJDeGpXTUszbERiYTljYlJCZXcxS2QtZWdkQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BTnUtc1JVTEhsSldpaEtUNU5iancwS1RKWVI2V2E4RXBDOG96RU1kQjBNOTh3Y3VmMXF6b0o5eWJDeGpXTUszbERiYTljYlJCZXcxS2QtZWdkQQ?oc=5" data-title="大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタル" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/ade0fadc2b832113.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>北海道新聞デジタル · 12:54</span><span class="read-state">未読</span></div>
@@ -932,7 +881,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-8deb1f1a0dfd866a" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fLWItR0plRF9sanY3RGdBaGxwOEFlYnFYd1J0M2dJNFJMMzRJMlpSaXltUmJHbjZkOTRla2pNdWNQeTVtQlFEcndxYUtxSmgwb3c1Ql9FZUxyQmlpRE5TSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 - ryukoku.ac.jpを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fLWItR0plRF9sanY3RGdBaGxwOEFlYnFYd1J0M2dJNFJMMzRJMlpSaXltUmJHbjZkOTRla2pNdWNQeTVtQlFEcndxYUtxSmgwb3c1Ql9FZUxyQmlpRE5TSQ?oc=5" data-title="【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 - ryukoku.ac.jp" data-genre="社会" data-modes="all five">
+<a id="article-8deb1f1a0dfd866a" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fLWItR0plRF9sanY3RGdBaGxwOEFlYnFYd1J0M2dJNFJMMzRJMlpSaXltUmJHbjZkOTRla2pNdWNQeTVtQlFEcndxYUtxSmgwb3c1Ql9FZUxyQmlpRE5TSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 - ryukoku.ac.jpを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fLWItR0plRF9sanY3RGdBaGxwOEFlYnFYd1J0M2dJNFJMMzRJMlpSaXltUmJHbjZkOTRla2pNdWNQeTVtQlFEcndxYUtxSmgwb3c1Ql9FZUxyQmlpRE5TSQ?oc=5" data-title="【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 - ryukoku.ac.jp" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/2f7a5311858dbb3c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ryukoku.ac.jp · 07:02</span><span class="read-state">未読</span></div>
@@ -951,7 +900,7 @@ dd {
     <h2 id="事件・事故">事件・事故</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-5a6a002487babc40" class="card tone-safety" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjBSNXJHdGkyUWZ2UDVld3l2SE9nVEpMSW4tUzd1dGlLUmZfQnhBanhKOVdJdWhDSWlsWmFNNm5jTXMxcmtHbjM2Z2xSM1dSTFQxWnhCa2NZZlR2Znl5OHhSV0pkUkdfZVZDZHMxaW50NF8tdzFKVTBlcXhBQnR5cWZWRmhCQWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjBSNXJHdGkyUWZ2UDVld3l2SE9nVEpMSW4tUzd1dGlLUmZfQnhBanhKOVdJdWhDSWlsWmFNNm5jTXMxcmtHbjM2Z2xSM1dSTFQxWnhCa2NZZlR2Znl5OHhSV0pkUkdfZVZDZHMxaW50NF8tdzFKVTBlcXhBQnR5cWZWRmhCQWc?oc=5" data-title="警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 - 日テレNEWS NNN" data-genre="事件・事故" data-modes="all one five">
+  <div class="grid"><a id="article-5a6a002487babc40" class="card tone-safety" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjBSNXJHdGkyUWZ2UDVld3l2SE9nVEpMSW4tUzd1dGlLUmZfQnhBanhKOVdJdWhDSWlsWmFNNm5jTXMxcmtHbjM2Z2xSM1dSTFQxWnhCa2NZZlR2Znl5OHhSV0pkUkdfZVZDZHMxaW50NF8tdzFKVTBlcXhBQnR5cWZWRmhCQWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjBSNXJHdGkyUWZ2UDVld3l2SE9nVEpMSW4tUzd1dGlLUmZfQnhBanhKOVdJdWhDSWlsWmFNNm5jTXMxcmtHbjM2Z2xSM1dSTFQxWnhCa2NZZlR2Znl5OHhSV0pkUkdfZVZDZHMxaW50NF8tdzFKVTBlcXhBQnR5cWZWRmhCQWc?oc=5" data-title="警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 - 日テレNEWS NNN" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/7a2a8d654714f696.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 08:46</span><span class="read-state">未読</span></div>
@@ -964,7 +913,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-725029f4b51c0483" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE45elpSTzRTWHk1U0d0SFlqOGVRb2h1VXNEajRlcVU3SXJQMGJhaFFKNGJGU3NuOHlDZTR1Vzl2S3REMGJ2WFA5cW9SZ2tiUEExQ1FyQTZja1dTNmc0UkR1WDY5RW5YX0ZjMlUwb19VRjVKc3JhYm9DWmdXeC1jTGs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE45elpSTzRTWHk1U0d0SFlqOGVRb2h1VXNEajRlcVU3SXJQMGJhaFFKNGJGU3NuOHlDZTR1Vzl2S3REMGJ2WFA5cW9SZ2tiUEExQ1FyQTZja1dTNmc0UkR1WDY5RW5YX0ZjMlUwb19VRjVKc3JhYm9DWmdXeC1jTGs?oc=5" data-title="相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） - Yahoo!ニュース" data-genre="事件・事故" data-modes="all five">
+<a id="article-725029f4b51c0483" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE45elpSTzRTWHk1U0d0SFlqOGVRb2h1VXNEajRlcVU3SXJQMGJhaFFKNGJGU3NuOHlDZTR1Vzl2S3REMGJ2WFA5cW9SZ2tiUEExQ1FyQTZja1dTNmc0UkR1WDY5RW5YX0ZjMlUwb19VRjVKc3JhYm9DWmdXeC1jTGs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE45elpSTzRTWHk1U0d0SFlqOGVRb2h1VXNEajRlcVU3SXJQMGJhaFFKNGJGU3NuOHlDZTR1Vzl2S3REMGJ2WFA5cW9SZ2tiUEExQ1FyQTZja1dTNmc0UkR1WDY5RW5YX0ZjMlUwb19VRjVKc3JhYm9DWmdXeC1jTGs?oc=5" data-title="相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） - Yahoo!ニュース" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/de143e933bcaf4c8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:54</span><span class="read-state">未読</span></div>
@@ -983,7 +932,7 @@ dd {
     <h2 id="芸能人の結婚・離婚・交際">芸能人の結婚・離婚・交際</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-a4f296f316dbc05d" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZ9IBhgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZ9IBhgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZw?oc=5" data-title="居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン - ｄメニューニュース" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+  <div class="grid"><a id="article-a4f296f316dbc05d" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZ9IBhgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZ9IBhgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZw?oc=5" data-title="居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン - ｄメニューニュース" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/ac94e8cbd9d2e7ca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 12:25</span><span class="read-state">未読</span></div>
@@ -996,7 +945,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-2702f76bef9874fe" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE44MlhxWC0wRVY1OTZONmFra0ZwT2llOFNQX3RkODNMX05Zd0dib01mcTAxQWxSTklKV2Y5VXhlVGFGYmFvS1RUNWlwWjJ5NDRlMm5NUFpIOHMtUzNqc1FFSkgtYXNqd0lWV0Z5djR5czhQNWI2TEln?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 - starnewskorea.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE44MlhxWC0wRVY1OTZONmFra0ZwT2llOFNQX3RkODNMX05Zd0dib01mcTAxQWxSTklKV2Y5VXhlVGFGYmFvS1RUNWlwWjJ5NDRlMm5NUFpIOHMtUzNqc1FFSkgtYXNqd0lWV0Z5djR5czhQNWI2TEln?oc=5" data-title="「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 - starnewskorea.com" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+<a id="article-2702f76bef9874fe" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE44MlhxWC0wRVY1OTZONmFra0ZwT2llOFNQX3RkODNMX05Zd0dib01mcTAxQWxSTklKV2Y5VXhlVGFGYmFvS1RUNWlwWjJ5NDRlMm5NUFpIOHMtUzNqc1FFSkgtYXNqd0lWV0Z5djR5czhQNWI2TEln?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 - starnewskorea.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE44MlhxWC0wRVY1OTZONmFra0ZwT2llOFNQX3RkODNMX05Zd0dib01mcTAxQWxSTklKV2Y5VXhlVGFGYmFvS1RUNWlwWjJ5NDRlMm5NUFpIOHMtUzNqc1FFSkgtYXNqd0lWV0Z5djR5czhQNWI2TEln?oc=5" data-title="「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 - starnewskorea.com" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/7d2f006c088034a9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>starnewskorea.com · 11:54</span><span class="read-state">未読</span></div>
@@ -1009,7 +958,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-d12a38db11d12137" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw" rel="noopener noreferrer" target="_blank" aria-label="速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.weddingを読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw" data-title="速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+<a id="article-d12a38db11d12137" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw" rel="noopener noreferrer" target="_blank" aria-label="速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.weddingを読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw" data-title="速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/762c5b2a223497b4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>dressy.pla-cole.wedding · 11:42</span><span class="read-state">未読</span></div>
@@ -1022,7 +971,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-5ecc7eeb1d7480ce" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMizARBVV95cUxOdkItQkd3MV91Z2tyTkdFZkR3Mllta1paYjBjX1BfM0kyVWNpVm5sM21NWnpGeHlxMmxuelVYbkNwQ0gyNG9rRmtJSllwUm9yRXBybWRqZ1VhVUtqSDMyNU9TaDczQlZrM2xrWEUzM3p3VnBfRUhFYnBFM3lZSktFZGVBZ0xhQnVObVZoVlZSTFdLQ0YzNjI0XzVZR2RvTEwxbk56SWVmN2xTTmE0am0yN3J5ZTBVZXlUdlRmSFVaNzFqWlF5RWwxc0NjX0xhU3dZSllLaTlIX1V1aDNjeGhsZkF3SHNwRFdka2M2VDVZTVpLUW14UmlCajB5OHNBanExYmllekFWVGVEMnNWVFJlMUIwTE1kYXBZMExFQ19iamJuZ3FQQnlEV2JVOF92X2pKSUY5Rlc4Q3V2SDgwUWJ1dmVLV1kxejVmU2tlRTRndDBfeVhzdmNqSzZGNGtlUFYzZ3h4MU9GMDFBRE1rZmROSjV1MWU2cE9IelFTaFRXeS16YTZJQ1d2SC1rX3J6VjgyWTZvbktJbFdsNnZSbkhmMHpGT0JmalJ5cnBmVjI0YkZOQUU3dWNkbDViWW9SdVkyQ3JfZjZ5UDlQNjlScDUxdm1FOGlaUVNZVWxrOENpdE8xM2ExSjlBZ0VJUERlcWFYRU14MGFYT1hwdzl1Z19QcVFxaWxIUDBveGJhR2U0Zm14em9FX1VxNlhHNldwbDdPRUtaWVpLMldZX0FlNUFCOEY3dmJEd0xTRUNlMVdnYlNZRE5HXzVKN1lSMEo?oc=5" rel="noopener noreferrer" target="_blank" aria-label="小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 - MSNを読む" data-url="https://news.google.com/rss/articles/CBMizARBVV95cUxOdkItQkd3MV91Z2tyTkdFZkR3Mllta1paYjBjX1BfM0kyVWNpVm5sM21NWnpGeHlxMmxuelVYbkNwQ0gyNG9rRmtJSllwUm9yRXBybWRqZ1VhVUtqSDMyNU9TaDczQlZrM2xrWEUzM3p3VnBfRUhFYnBFM3lZSktFZGVBZ0xhQnVObVZoVlZSTFdLQ0YzNjI0XzVZR2RvTEwxbk56SWVmN2xTTmE0am0yN3J5ZTBVZXlUdlRmSFVaNzFqWlF5RWwxc0NjX0xhU3dZSllLaTlIX1V1aDNjeGhsZkF3SHNwRFdka2M2VDVZTVpLUW14UmlCajB5OHNBanExYmllekFWVGVEMnNWVFJlMUIwTE1kYXBZMExFQ19iamJuZ3FQQnlEV2JVOF92X2pKSUY5Rlc4Q3V2SDgwUWJ1dmVLV1kxejVmU2tlRTRndDBfeVhzdmNqSzZGNGtlUFYzZ3h4MU9GMDFBRE1rZmROSjV1MWU2cE9IelFTaFRXeS16YTZJQ1d2SC1rX3J6VjgyWTZvbktJbFdsNnZSbkhmMHpGT0JmalJ5cnBmVjI0YkZOQUU3dWNkbDViWW9SdVkyQ3JfZjZ5UDlQNjlScDUxdm1FOGlaUVNZVWxrOENpdE8xM2ExSjlBZ0VJUERlcWFYRU14MGFYT1hwdzl1Z19QcVFxaWxIUDBveGJhR2U0Zm14em9FX1VxNlhHNldwbDdPRUtaWVpLMldZX0FlNUFCOEY3dmJEd0xTRUNlMVdnYlNZRE5HXzVKN1lSMEo?oc=5" data-title="小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 - MSN" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+<a id="article-5ecc7eeb1d7480ce" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMizARBVV95cUxOdkItQkd3MV91Z2tyTkdFZkR3Mllta1paYjBjX1BfM0kyVWNpVm5sM21NWnpGeHlxMmxuelVYbkNwQ0gyNG9rRmtJSllwUm9yRXBybWRqZ1VhVUtqSDMyNU9TaDczQlZrM2xrWEUzM3p3VnBfRUhFYnBFM3lZSktFZGVBZ0xhQnVObVZoVlZSTFdLQ0YzNjI0XzVZR2RvTEwxbk56SWVmN2xTTmE0am0yN3J5ZTBVZXlUdlRmSFVaNzFqWlF5RWwxc0NjX0xhU3dZSllLaTlIX1V1aDNjeGhsZkF3SHNwRFdka2M2VDVZTVpLUW14UmlCajB5OHNBanExYmllekFWVGVEMnNWVFJlMUIwTE1kYXBZMExFQ19iamJuZ3FQQnlEV2JVOF92X2pKSUY5Rlc4Q3V2SDgwUWJ1dmVLV1kxejVmU2tlRTRndDBfeVhzdmNqSzZGNGtlUFYzZ3h4MU9GMDFBRE1rZmROSjV1MWU2cE9IelFTaFRXeS16YTZJQ1d2SC1rX3J6VjgyWTZvbktJbFdsNnZSbkhmMHpGT0JmalJ5cnBmVjI0YkZOQUU3dWNkbDViWW9SdVkyQ3JfZjZ5UDlQNjlScDUxdm1FOGlaUVNZVWxrOENpdE8xM2ExSjlBZ0VJUERlcWFYRU14MGFYT1hwdzl1Z19QcVFxaWxIUDBveGJhR2U0Zm14em9FX1VxNlhHNldwbDdPRUtaWVpLMldZX0FlNUFCOEY3dmJEd0xTRUNlMVdnYlNZRE5HXzVKN1lSMEo?oc=5" rel="noopener noreferrer" target="_blank" aria-label="小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 - MSNを読む" data-url="https://news.google.com/rss/articles/CBMizARBVV95cUxOdkItQkd3MV91Z2tyTkdFZkR3Mllta1paYjBjX1BfM0kyVWNpVm5sM21NWnpGeHlxMmxuelVYbkNwQ0gyNG9rRmtJSllwUm9yRXBybWRqZ1VhVUtqSDMyNU9TaDczQlZrM2xrWEUzM3p3VnBfRUhFYnBFM3lZSktFZGVBZ0xhQnVObVZoVlZSTFdLQ0YzNjI0XzVZR2RvTEwxbk56SWVmN2xTTmE0am0yN3J5ZTBVZXlUdlRmSFVaNzFqWlF5RWwxc0NjX0xhU3dZSllLaTlIX1V1aDNjeGhsZkF3SHNwRFdka2M2VDVZTVpLUW14UmlCajB5OHNBanExYmllekFWVGVEMnNWVFJlMUIwTE1kYXBZMExFQ19iamJuZ3FQQnlEV2JVOF92X2pKSUY5Rlc4Q3V2SDgwUWJ1dmVLV1kxejVmU2tlRTRndDBfeVhzdmNqSzZGNGtlUFYzZ3h4MU9GMDFBRE1rZmROSjV1MWU2cE9IelFTaFRXeS16YTZJQ1d2SC1rX3J6VjgyWTZvbktJbFdsNnZSbkhmMHpGT0JmalJ5cnBmVjI0YkZOQUU3dWNkbDViWW9SdVkyQ3JfZjZ5UDlQNjlScDUxdm1FOGlaUVNZVWxrOENpdE8xM2ExSjlBZ0VJUERlcWFYRU14MGFYT1hwdzl1Z19QcVFxaWxIUDBveGJhR2U0Zm14em9FX1VxNlhHNldwbDdPRUtaWVpLMldZX0FlNUFCOEY3dmJEd0xTRUNlMVdnYlNZRE5HXzVKN1lSMEo?oc=5" data-title="小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 - MSN" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/b3d46b7d45acc8ff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 09:58</span><span class="read-state">未読</span></div>
@@ -1035,7 +984,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-f5dbacb036ef196a" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzFKY1dMYmtNNFA2V2xXRXRqV3ctMkV5c2E5NHBRUVRENjE0bWJFempBREp6b3NtNFNvMHJnbUhNMEx5akcxN25WOUtLZEJXMG5SeUpvMlhmallhREFWNE5taXRnQzdvMGsxU1JibHpNT0duMDU4UkdzY3lvcURnbi1hTHpLQlEx?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の&quot;ビッグカップル誕生&quot;に日本中が熱狂！ - lasisa.netを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzFKY1dMYmtNNFA2V2xXRXRqV3ctMkV5c2E5NHBRUVRENjE0bWJFempBREp6b3NtNFNvMHJnbUhNMEx5akcxN25WOUtLZEJXMG5SeUpvMlhmallhREFWNE5taXRnQzdvMGsxU1JibHpNT0duMDU4UkdzY3lvcURnbi1hTHpLQlEx?oc=5" data-title="【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の&quot;ビッグカップル誕生&quot;に日本中が熱狂！ - lasisa.net" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+<a id="article-f5dbacb036ef196a" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzFKY1dMYmtNNFA2V2xXRXRqV3ctMkV5c2E5NHBRUVRENjE0bWJFempBREp6b3NtNFNvMHJnbUhNMEx5akcxN25WOUtLZEJXMG5SeUpvMlhmallhREFWNE5taXRnQzdvMGsxU1JibHpNT0duMDU4UkdzY3lvcURnbi1hTHpLQlEx?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の&quot;ビッグカップル誕生&quot;に日本中が熱狂！ - lasisa.netを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzFKY1dMYmtNNFA2V2xXRXRqV3ctMkV5c2E5NHBRUVRENjE0bWJFempBREp6b3NtNFNvMHJnbUhNMEx5akcxN25WOUtLZEJXMG5SeUpvMlhmallhREFWNE5taXRnQzdvMGsxU1JibHpNT0duMDU4UkdzY3lvcURnbi1hTHpLQlEx?oc=5" data-title="【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の&quot;ビッグカップル誕生&quot;に日本中が熱狂！ - lasisa.net" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/0807179339759d59.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>lasisa.net · 09:13</span><span class="read-state">未読</span></div>
@@ -1048,7 +997,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-0d97f448998ae3d9" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRHRYYVUxelRLMVJpelN6OU1BRzVXOU42N01jdUVuVW5RNW1GdjNvcUVzX084Vy1XUk9oNFE3cW9hSC1MTFRZLUk4NXFBVVJ2SzdCcGprRnU5SHd6RTlOdkh4RmRJaWlhb3NEYTJtemFNVE9YVGdJRzlfYmxkWUF1S0xZNExqMmhkVWVSYjJhNElOT240eUQ0Um9UblZmNHBHbTNLa2FVYlk1Zm1ZOF9Bdy0xRzk0cEstTW9VblJybHFIRGdFVkhpNjdBVTZnNEtkT2pVMDBVTDZ6R0VqeEFCd3NxMFNpc0xvUHRGd2dB0gGcAUFVX3lxTE5YRl84X2JFaHpwN016aGpET2ttTXBMMFlsX2loU0lRdDJ1aGE3Q3drcFVKUHU2SFBqTUdwT2NJUnhOVkd3Y3VWNi10N21weGhKZ2tRSVY2c3R6VGlTOWhKREl6dHVxcWVuZ2E4eTFveUJOVW14cVlwYVBURmZ2UmlhYXkxUnJla3M3cTlDZFdDS3MwVU1LYUdoVmx4NQ" rel="noopener noreferrer" target="_blank" aria-label="ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRHRYYVUxelRLMVJpelN6OU1BRzVXOU42N01jdUVuVW5RNW1GdjNvcUVzX084Vy1XUk9oNFE3cW9hSC1MTFRZLUk4NXFBVVJ2SzdCcGprRnU5SHd6RTlOdkh4RmRJaWlhb3NEYTJtemFNVE9YVGdJRzlfYmxkWUF1S0xZNExqMmhkVWVSYjJhNElOT240eUQ0Um9UblZmNHBHbTNLa2FVYlk1Zm1ZOF9Bdy0xRzk0cEstTW9VblJybHFIRGdFVkhpNjdBVTZnNEtkT2pVMDBVTDZ6R0VqeEFCd3NxMFNpc0xvUHRGd2dB0gGcAUFVX3lxTE5YRl84X2JFaHpwN016aGpET2ttTXBMMFlsX2loU0lRdDJ1aGE3Q3drcFVKUHU2SFBqTUdwT2NJUnhOVkd3Y3VWNi10N21weGhKZ2tRSVY2c3R6VGlTOWhKREl6dHVxcWVuZ2E4eTFveUJOVW14cVlwYVBURmZ2UmlhYXkxUnJla3M3cTlDZFdDS3MwVU1LYUdoVmx4NQ" data-title="ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 - ｄメニューニュース" data-genre="芸能人の結婚・離婚・交際" data-modes="all five">
+<a id="article-0d97f448998ae3d9" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRHRYYVUxelRLMVJpelN6OU1BRzVXOU42N01jdUVuVW5RNW1GdjNvcUVzX084Vy1XUk9oNFE3cW9hSC1MTFRZLUk4NXFBVVJ2SzdCcGprRnU5SHd6RTlOdkh4RmRJaWlhb3NEYTJtemFNVE9YVGdJRzlfYmxkWUF1S0xZNExqMmhkVWVSYjJhNElOT240eUQ0Um9UblZmNHBHbTNLa2FVYlk1Zm1ZOF9Bdy0xRzk0cEstTW9VblJybHFIRGdFVkhpNjdBVTZnNEtkT2pVMDBVTDZ6R0VqeEFCd3NxMFNpc0xvUHRGd2dB0gGcAUFVX3lxTE5YRl84X2JFaHpwN016aGpET2ttTXBMMFlsX2loU0lRdDJ1aGE3Q3drcFVKUHU2SFBqTUdwT2NJUnhOVkd3Y3VWNi10N21weGhKZ2tRSVY2c3R6VGlTOWhKREl6dHVxcWVuZ2E4eTFveUJOVW14cVlwYVBURmZ2UmlhYXkxUnJla3M3cTlDZFdDS3MwVU1LYUdoVmx4NQ" rel="noopener noreferrer" target="_blank" aria-label="ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRHRYYVUxelRLMVJpelN6OU1BRzVXOU42N01jdUVuVW5RNW1GdjNvcUVzX084Vy1XUk9oNFE3cW9hSC1MTFRZLUk4NXFBVVJ2SzdCcGprRnU5SHd6RTlOdkh4RmRJaWlhb3NEYTJtemFNVE9YVGdJRzlfYmxkWUF1S0xZNExqMmhkVWVSYjJhNElOT240eUQ0Um9UblZmNHBHbTNLa2FVYlk1Zm1ZOF9Bdy0xRzk0cEstTW9VblJybHFIRGdFVkhpNjdBVTZnNEtkT2pVMDBVTDZ6R0VqeEFCd3NxMFNpc0xvUHRGd2dB0gGcAUFVX3lxTE5YRl84X2JFaHpwN016aGpET2ttTXBMMFlsX2loU0lRdDJ1aGE3Q3drcFVKUHU2SFBqTUdwT2NJUnhOVkd3Y3VWNi10N21weGhKZ2tRSVY2c3R6VGlTOWhKREl6dHVxcWVuZ2E4eTFveUJOVW14cVlwYVBURmZ2UmlhYXkxUnJla3M3cTlDZFdDS3MwVU1LYUdoVmx4NQ" data-title="ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 - ｄメニューニュース" data-genre="芸能人の結婚・離婚・交際">
   <img class="thumb" src="../assets/thumbs/931da5f4a2ac4a08.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 08:50</span><span class="read-state">未読</span></div>
@@ -1067,7 +1016,7 @@ dd {
     <h2 id="経済">経済</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-95b2d618f05c3648" class="card tone-money" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE0zRnRfdUh6MHg5M3BGLVkyYjlVeklEQ3hNRUJiSWt1WnpKVGc0dnpJUFh2blFGY1N3bVV6aVpMZHRhendPMUc3R21kSkFfbHdWNjU1WUljOURVaDRxZExDMVJObl90cjdCaU9qTXF2Y1NnR2IxM09xdg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="経済財政諮問会議・日本成長戦略会議合同会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMieEFVX3lxTE0zRnRfdUh6MHg5M3BGLVkyYjlVeklEQ3hNRUJiSWt1WnpKVGc0dnpJUFh2blFGY1N3bVV6aVpMZHRhendPMUc3R21kSkFfbHdWNjU1WUljOURVaDRxZExDMVJObl90cjdCaU9qTXF2Y1NnR2IxM09xdg?oc=5" data-title="経済財政諮問会議・日本成長戦略会議合同会議 - 首相官邸" data-genre="経済" data-modes="all five">
+  <div class="grid"><a id="article-95b2d618f05c3648" class="card tone-money" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE0zRnRfdUh6MHg5M3BGLVkyYjlVeklEQ3hNRUJiSWt1WnpKVGc0dnpJUFh2blFGY1N3bVV6aVpMZHRhendPMUc3R21kSkFfbHdWNjU1WUljOURVaDRxZExDMVJObl90cjdCaU9qTXF2Y1NnR2IxM09xdg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="経済財政諮問会議・日本成長戦略会議合同会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMieEFVX3lxTE0zRnRfdUh6MHg5M3BGLVkyYjlVeklEQ3hNRUJiSWt1WnpKVGc0dnpJUFh2blFGY1N3bVV6aVpMZHRhendPMUc3R21kSkFfbHdWNjU1WUljOURVaDRxZExDMVJObl90cjdCaU9qTXF2Y1NnR2IxM09xdg?oc=5" data-title="経済財政諮問会議・日本成長戦略会議合同会議 - 首相官邸" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/25f9ca356f5597a0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 09:22</span><span class="read-state">未読</span></div>
@@ -1080,7 +1029,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-b04866c8f46dd1b7" class="card tone-money" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNTjJXQVcyaDNxVzZORXpKSUl3VDFDb0tFNFV3anhPQTRqb19zNlNJV3ZKQU4wM1V6LWlLY0lqblZCRWFGMDNWUzNHNlBoWUt5YkVRTS1rdUlXWEJfTm9OODVOckg5NlBNcjFsRW9SZ0tkQ1phbXFDbHlnc0M0dG0yelNjdmo3LUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxNTjJXQVcyaDNxVzZORXpKSUl3VDFDb0tFNFV3anhPQTRqb19zNlNJV3ZKQU4wM1V6LWlLY0lqblZCRWFGMDNWUzNHNlBoWUt5YkVRTS1rdUlXWEJfTm9OODVOckg5NlBNcjFsRW9SZ0tkQ1phbXFDbHlnc0M0dG0yelNjdmo3LUk?oc=5" data-title="NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) - Yahoo!ファイナンス" data-genre="経済" data-modes="all five">
+<a id="article-b04866c8f46dd1b7" class="card tone-money" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNTjJXQVcyaDNxVzZORXpKSUl3VDFDb0tFNFV3anhPQTRqb19zNlNJV3ZKQU4wM1V6LWlLY0lqblZCRWFGMDNWUzNHNlBoWUt5YkVRTS1rdUlXWEJfTm9OODVOckg5NlBNcjFsRW9SZ0tkQ1phbXFDbHlnc0M0dG0yelNjdmo3LUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxNTjJXQVcyaDNxVzZORXpKSUl3VDFDb0tFNFV3anhPQTRqb19zNlNJV3ZKQU4wM1V6LWlLY0lqblZCRWFGMDNWUzNHNlBoWUt5YkVRTS1rdUlXWEJfTm9OODVOckg5NlBNcjFsRW9SZ0tkQ1phbXFDbHlnc0M0dG0yelNjdmo3LUk?oc=5" data-title="NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) - Yahoo!ファイナンス" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/a45f6d2271d40f03.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 11:59</span><span class="read-state">未読</span></div>
@@ -1093,7 +1042,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-6d5df97d4efdc772" class="card tone-money" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xTEVMLXRoVmNQU3RmQ0c0aTFrNXdVSUpFSmVsd3ZKT1VUX3h4Qm9vTm9VUDBVcTNnWUItd1RJS0hHYlphRG9aOHQ3SHZUdWRLcEE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xTEVMLXRoVmNQU3RmQ0c0aTFrNXdVSUpFSmVsd3ZKT1VUX3h4Qm9vTm9VUDBVcTNnWUItd1RJS0hHYlphRG9aOHQ3SHZUdWRLcEE?oc=5" data-title="【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 - 山陽新聞" data-genre="経済" data-modes="all five">
+<a id="article-6d5df97d4efdc772" class="card tone-money" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xTEVMLXRoVmNQU3RmQ0c0aTFrNXdVSUpFSmVsd3ZKT1VUX3h4Qm9vTm9VUDBVcTNnWUItd1RJS0hHYlphRG9aOHQ3SHZUdWRLcEE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9xTEVMLXRoVmNQU3RmQ0c0aTFrNXdVSUpFSmVsd3ZKT1VUX3h4Qm9vTm9VUDBVcTNnWUItd1RJS0hHYlphRG9aOHQ3SHZUdWRLcEE?oc=5" data-title="【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 - 山陽新聞" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/039ce792e990d5e3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 09:17</span><span class="read-state">未読</span></div>
@@ -1112,7 +1061,7 @@ dd {
     <h2 id="金融">金融</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-d0adebed0d48f772" class="card tone-money" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1Zck1HUE1Ra19INVY3V01Ic1BmWlB0OFBrVV9hU1NHN0txV1lKTmttZW1vV1p6Smp1UVByMGQxblNTemZJSFlSTmpqMjhsYmp4NGtFeVkxQ09IZUUwSVJWbWVVWXVYemRG?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1Zck1HUE1Ra19INVY3V01Ic1BmWlB0OFBrVV9hU1NHN0txV1lKTmttZW1vV1p6Smp1UVByMGQxblNTemZJSFlSTmpqMjhsYmp4NGtFeVkxQ09IZUUwSVJWbWVVWXVYemRG?oc=5" data-title="国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 - 毎日新聞" data-genre="金融" data-modes="all five">
+  <div class="grid"><a id="article-d0adebed0d48f772" class="card tone-money" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1Zck1HUE1Ra19INVY3V01Ic1BmWlB0OFBrVV9hU1NHN0txV1lKTmttZW1vV1p6Smp1UVByMGQxblNTemZJSFlSTmpqMjhsYmp4NGtFeVkxQ09IZUUwSVJWbWVVWXVYemRG?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1Zck1HUE1Ra19INVY3V01Ic1BmWlB0OFBrVV9hU1NHN0txV1lKTmttZW1vV1p6Smp1UVByMGQxblNTemZJSFlSTmpqMjhsYmp4NGtFeVkxQ09IZUUwSVJWbWVVWXVYemRG?oc=5" data-title="国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 - 毎日新聞" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/29ee686e6a6e4559.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 11:48</span><span class="read-state">未読</span></div>
@@ -1125,7 +1074,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-9ff9f51bc5e7f5f7" class="card tone-money" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQYnJMeng3YzN6UVhvYy1sZk9rTGk4cnVxanFyRlVyOENzMk42WTlwcVFiNTIzUGpUSTRoYjZHX3QyM1dCNUUzTGtpc0JoSHFpaXc1LTBIVFNGc3p6NmZzemNGQ0ttbjBXS0I5ZkVPSC11TlQ2cVpXZC1sTXROSC1xVA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 - ロイターを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxQYnJMeng3YzN6UVhvYy1sZk9rTGk4cnVxanFyRlVyOENzMk42WTlwcVFiNTIzUGpUSTRoYjZHX3QyM1dCNUUzTGtpc0JoSHFpaXc1LTBIVFNGc3p6NmZzemNGQ0ttbjBXS0I5ZkVPSC11TlQ2cVpXZC1sTXROSC1xVA?oc=5" data-title="政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 - ロイター" data-genre="金融" data-modes="all five">
+<a id="article-9ff9f51bc5e7f5f7" class="card tone-money" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQYnJMeng3YzN6UVhvYy1sZk9rTGk4cnVxanFyRlVyOENzMk42WTlwcVFiNTIzUGpUSTRoYjZHX3QyM1dCNUUzTGtpc0JoSHFpaXc1LTBIVFNGc3p6NmZzemNGQ0ttbjBXS0I5ZkVPSC11TlQ2cVpXZC1sTXROSC1xVA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 - ロイターを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxQYnJMeng3YzN6UVhvYy1sZk9rTGk4cnVxanFyRlVyOENzMk42WTlwcVFiNTIzUGpUSTRoYjZHX3QyM1dCNUUzTGtpc0JoSHFpaXc1LTBIVFNGc3p6NmZzemNGQ0ttbjBXS0I5ZkVPSC11TlQ2cVpXZC1sTXROSC1xVA?oc=5" data-title="政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 - ロイター" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/3ea5fe641fdb83d9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ロイター · 07:21</span><span class="read-state">未読</span></div>
@@ -1144,7 +1093,7 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-c4a022b7e1b28223" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oM0UwRGRfbXRwLVByb3lpS2xIRDhTeUtQR0FqeHNlMnBhWUw4UFllVDdLTDdQV3pCckVIdUlsaFJONEZEaXc4bHZrNUluQzYwaldZcEdqeWEzUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Switch2版のデジタルプレオーダーが開始！ - GameWithを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oM0UwRGRfbXRwLVByb3lpS2xIRDhTeUtQR0FqeHNlMnBhWUw4UFllVDdLTDdQV3pCckVIdUlsaFJONEZEaXc4bHZrNUluQzYwaldZcEdqeWEzUQ?oc=5" data-title="ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Switch2版のデジタルプレオーダーが開始！ - GameWith" data-genre="ゲーム" data-modes="all five">
+  <div class="grid"><a id="article-c4a022b7e1b28223" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oM0UwRGRfbXRwLVByb3lpS2xIRDhTeUtQR0FqeHNlMnBhWUw4UFllVDdLTDdQV3pCckVIdUlsaFJONEZEaXc4bHZrNUluQzYwaldZcEdqeWEzUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Switch2版のデジタルプレオーダーが開始！ - GameWithを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oM0UwRGRfbXRwLVByb3lpS2xIRDhTeUtQR0FqeHNlMnBhWUw4UFllVDdLTDdQV3pCckVIdUlsaFJONEZEaXc4bHZrNUluQzYwaldZcEdqeWEzUQ?oc=5" data-title="ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Switch2版のデジタルプレオーダーが開始！ - GameWith" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/78984736080871c9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GameWith · 07:36</span><span class="read-state">未読</span></div>
@@ -1157,7 +1106,7 @@ dd {
     </dl>
   </div>
 </a>
-<a id="article-3bc545fd60e860ac" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tdVFxa0doX1p3NmhkMm1lQ3hicXZyYkRRd2dOTHRCTUs0TDhlMUZRaF90Mm1CNWR2YkF5WTRRc3pNSVF1bC1YOTVfUm5aQ2RLVU04Qk1vWVEyN2x2T0FXM1c0N1I" rel="noopener noreferrer" target="_blank" aria-label="開発者に訊きました : スプラトゥーン レイダース｜任天堂 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tdVFxa0doX1p3NmhkMm1lQ3hicXZyYkRRd2dOTHRCTUs0TDhlMUZRaF90Mm1CNWR2YkF5WTRRc3pNSVF1bC1YOTVfUm5aQ2RLVU04Qk1vWVEyN2x2T0FXM1c0N1I" data-title="開発者に訊きました : スプラトゥーン レイダース｜任天堂 - nintendo.com" data-genre="ゲーム" data-modes="all five">
+<a id="article-3bc545fd60e860ac" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tdVFxa0doX1p3NmhkMm1lQ3hicXZyYkRRd2dOTHRCTUs0TDhlMUZRaF90Mm1CNWR2YkF5WTRRc3pNSVF1bC1YOTVfUm5aQ2RLVU04Qk1vWVEyN2x2T0FXM1c0N1I" rel="noopener noreferrer" target="_blank" aria-label="開発者に訊きました : スプラトゥーン レイダース｜任天堂 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tdVFxa0doX1p3NmhkMm1lQ3hicXZyYkRRd2dOTHRCTUs0TDhlMUZRaF90Mm1CNWR2YkF5WTRRc3pNSVF1bC1YOTVfUm5aQ2RLVU04Qk1vWVEyN2x2T0FXM1c0N1I" data-title="開発者に訊きました : スプラトゥーン レイダース｜任天堂 - nintendo.com" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/1265e829766adb67.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 13:20</span><span class="read-state">未読</span></div>
@@ -1176,7 +1125,7 @@ dd {
     <h2 id="災害">災害</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-04146b45e97ecc27" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jS0pFRl9ZWDhELXZ1NG5GUWZFem5CelJ1SENoUUNOWkdoZnJZOXVqTnh5cndhMExsTTZiaHFZN0RpdDJpazNwRncwUXNMZV82UFoxQkQ1WQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「今後の台風情報に注意」気象庁 予想天気図 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jS0pFRl9ZWDhELXZ1NG5GUWZFem5CelJ1SENoUUNOWkdoZnJZOXVqTnh5cndhMExsTTZiaHFZN0RpdDJpazNwRncwUXNMZV82UFoxQkQ1WQ?oc=5" data-title="新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「今後の台風情報に注意」気象庁 予想天気図 - TBS NEWS DIG" data-genre="災害" data-modes="all five">
+  <div class="grid"><a id="article-04146b45e97ecc27" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jS0pFRl9ZWDhELXZ1NG5GUWZFem5CelJ1SENoUUNOWkdoZnJZOXVqTnh5cndhMExsTTZiaHFZN0RpdDJpazNwRncwUXNMZV82UFoxQkQ1WQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「今後の台風情報に注意」気象庁 予想天気図 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jS0pFRl9ZWDhELXZ1NG5GUWZFem5CelJ1SENoUUNOWkdoZnJZOXVqTnh5cndhMExsTTZiaHFZN0RpdDJpazNwRncwUXNMZV82UFoxQkQ1WQ?oc=5" data-title="新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「今後の台風情報に注意」気象庁 予想天気図 - TBS NEWS DIG" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/4b3b84e07ae9b6c1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:10</span><span class="read-state">未読</span></div>
@@ -1192,6 +1141,7 @@ dd {
 </details>
       </div>
     </div>
+    <div class="page-actions"><button class="analytics-export" type="button">閲覧データをJSON保存</button></div>
   </main>
   <script>
 (() => {
@@ -1209,27 +1159,6 @@ dd {
     const state = card.querySelector(".read-state");
     if (state) state.textContent = isRead ? "既読" : "未読";
   };
-  const applyView = (view) => {
-    document.querySelectorAll(".card[data-modes]").forEach((card) => {
-      const modes = (card.dataset.modes || "all").split(/\s+/);
-      card.hidden = view !== "all" && !modes.includes(view);
-    });
-    document.querySelectorAll(".genre").forEach((section) => {
-      const visible = section.querySelectorAll(".card:not([hidden])").length;
-      section.hidden = visible === 0;
-    });
-    syncSidebar();
-  };
-  const syncSidebar = () => {
-    document.querySelectorAll(".side-nav a[href^='#']").forEach((link) => {
-      const sectionId = decodeURIComponent((link.getAttribute("href") || "").slice(1));
-      const section = document.getElementById(sectionId)?.closest(".genre");
-      const visible = section ? section.querySelectorAll(".card:not([hidden])").length : 0;
-      link.hidden = visible === 0;
-      const count = link.querySelector("small");
-      if (count) count.textContent = `${visible}件`;
-    });
-  };
   document.querySelectorAll(".card[data-url]").forEach((card) => {
     const url = card.dataset.url;
     setReadState(card, read.has(url));
@@ -1246,15 +1175,6 @@ dd {
       saveClicks();
     });
   });
-  document.querySelectorAll(".view-tab").forEach((button) => {
-    button.addEventListener("click", () => {
-      const view = button.dataset.view;
-      document.querySelectorAll(".view-tab").forEach((node) => node.classList.toggle("is-active", node === button));
-      document.querySelectorAll(".brief-view").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === view));
-      document.body.dataset.view = view;
-      applyView(view);
-    });
-  });
   document.querySelectorAll(".analytics-export").forEach((button) => {
     button.addEventListener("click", () => {
       const blob = new Blob([localStorage.getItem(clickKey) || "{}"], {type: "application/json"});
@@ -1265,7 +1185,6 @@ dd {
       URL.revokeObjectURL(link.href);
     });
   });
-  applyView("one");
 })();
 </script>
 </body>

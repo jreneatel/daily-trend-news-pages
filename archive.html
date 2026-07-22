@@ -159,33 +159,12 @@ body {
   font-size: 12px;
   font-weight: 700;
 }
-.brief-panel {
-  margin: 0 0 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
-  overflow: hidden;
-}
-.view-tabs {
+.page-actions {
   display: flex;
-  gap: 4px;
-  padding: 8px;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, .04);
-}
-.view-tab {
-  min-height: 34px;
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  color: var(--muted);
-  background: transparent;
-  font: inherit;
-  font-weight: 800;
-  cursor: pointer;
+  justify-content: flex-end;
+  margin-top: 18px;
 }
 .analytics-export {
-  margin-top: 10px;
   min-height: 34px;
   padding: 6px 12px;
   border: 1px solid rgba(79, 209, 197, .45);
@@ -195,26 +174,6 @@ body {
   font: inherit;
   font-weight: 800;
   cursor: pointer;
-}
-.view-tab.is-active,
-.view-tab:hover,
-.view-tab:focus {
-  color: #071316;
-  background: var(--accent);
-}
-.brief-view {
-  display: none;
-  padding: 12px 16px;
-}
-.brief-view.is-active {
-  display: block;
-}
-.brief-view ol {
-  margin: 0;
-  padding-left: 22px;
-}
-.brief-view li {
-  margin: 5px 0;
 }
 .layout {
   display: grid;

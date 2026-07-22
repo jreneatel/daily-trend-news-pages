@@ -28,7 +28,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース",
@@ -44,7 +48,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース",
@@ -60,7 +68,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース",
@@ -76,7 +88,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース",
@@ -92,7 +108,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース",
@@ -108,7 +128,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "要注意"
+          "impact": "要注意",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 147
@@ -130,7 +154,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Unilumin、EcoVadisのシルバーメダルを受賞、サステナビリティの実績で世界の企業の上位6％にランクイン - PR Newswire",
@@ -146,7 +174,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Drake International、創業者Bill Pollock氏の逝去を悼む - PR Newswire",
@@ -162,7 +194,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース",
@@ -178,7 +214,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「乃木坂配信中」にて「【全ツ連動第3弾】乃木坂46最年少ひなちゃんのはじめてのおつかい！【キャプテンからのお使い】」を公開！ - 乃木坂46公式サイト",
@@ -194,7 +234,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス",
@@ -210,7 +254,11 @@
           "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 224
@@ -232,7 +280,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞",
@@ -248,7 +300,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "皇室典範改正案、今国会成立へ - 豊田経済新聞",
@@ -264,7 +320,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル",
@@ -280,7 +340,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "皇室典範改正案、今国会成立へ - 和歌山経済新聞",
@@ -296,7 +360,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG",
@@ -312,7 +380,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "制度・政治"
+          "impact": "制度・政治",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 248
@@ -334,7 +406,11 @@
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo",
@@ -350,7 +426,11 @@
           "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "仕事で使える"
+          "impact": "仕事で使える",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス",
@@ -366,7 +446,11 @@
           "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "加経済指標【住宅建設許可】 - みんかぶ FX/為替",
@@ -382,7 +466,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "加経済指標【雇用統計】 - みんかぶ FX/為替",
@@ -398,7 +486,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com",
@@ -414,7 +506,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 151
@@ -436,7 +532,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st",
@@ -452,7 +552,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!",
@@ -468,7 +572,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース",
@@ -484,7 +592,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社",
@@ -500,7 +612,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net",
@@ -516,7 +632,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 139
@@ -538,7 +658,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報",
@@ -554,7 +678,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st",
@@ -570,7 +698,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス",
@@ -586,7 +718,11 @@
           "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
-          "impact": "市場・企業"
+          "impact": "市場・企業",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【アニサマ2026】May'n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ",
@@ -602,7 +738,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース",
@@ -618,7 +758,11 @@
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
-          "impact": "動向確認"
+          "impact": "動向確認",
+          "bookmark_count": 0,
+          "comment_count": 0,
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 138
