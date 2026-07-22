@@ -46,17 +46,6 @@
   {
     "date": "2026-07-21",
     "genre": "AI",
-    "title": "オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 - Unite.AI",
-    "summary": "オープンAIはCodexとChatGPT Workが1000万ユーザーに達したと発表 Unite.AI",
-    "source": "Unite.AI",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSnJ6aU4teHZXZUpWZGJnamZkTS1EaWtEbHNfM3NUR2pWcC1JZHNQTW9EUjY4bk9FcFM3UlV3RmVGRTFSYThiMUdEMnZuYTF1bTZCRkhXTG9kdTlnNWs4b0RoSXJHSFVDc3I5M0NhSzdCZHFtQW1qS241TTFPTFJ0U3VwUEFrczA?oc=5",
-    "href": "./2026-07-21/#article-67004c99510b76f2",
-    "path": "/2026-07-21/#article-67004c99510b76f2",
-    "tone": "tech"
-  },
-  {
-    "date": "2026-07-21",
-    "genre": "AI",
     "title": "キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュース",
     "summary": "キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービス…",
     "source": "ニコニコニュース",
@@ -67,11 +56,22 @@
   },
   {
     "date": "2026-07-21",
+    "genre": "AI",
+    "title": "係争中の音楽生成AI「Suno」、iMessageで「テキストから曲生成」機能を提供開始 TikTokのトレンドに乗る - 音楽業界総合情報サイト",
+    "summary": "係争中の音楽生成AI「Suno」、iMessageで「テキストから曲生成」機能を提供開始 TikTokのトレンドに…",
+    "source": "音楽業界総合情報サイト",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE02WVVvZ3F2UU5uVXhVbHJ3UXM3aE93VVlqSTk2RV9QT0FNaHBUbC00bXA3VktvRlM4UnhjMmY5T1ZYZm9Ec096eGJtRUY5VFFpNmF2YQ?oc=5",
+    "href": "./2026-07-21/#article-3b78c68403b7bc21",
+    "path": "/2026-07-21/#article-3b78c68403b7bc21",
+    "tone": "tech"
+  },
+  {
+    "date": "2026-07-21",
     "genre": "IT業界",
     "title": "Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoft",
     "summary": "Halo: safeguard your meetings - Windows に無料でダウンロードしてインストー…",
     "source": "Microsoft",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblROV2UxLWFTbHBvOTVXXzhMUnVXYzhTLUNIVmlfbENEenVuLXBoVWdZLTJKVDFtZXpsNWxnUWZFd2w4OHJkWUduV3BWSzFfeVcyeXhlNE1UWVBLQ1RHOVVnRTVINjBZQWtsMFhOT0w0czZac01IOTN3b3BacDN6cw",
     "href": "./2026-07-21/#article-15be6eaf29396e5a",
     "path": "/2026-07-21/#article-15be6eaf29396e5a",
     "tone": "tech"
@@ -155,6 +155,28 @@
   },
   {
     "date": "2026-07-21",
+    "genre": "政治",
+    "title": "永平寺町議選告示、定数割れ回避 定数14に14人届け出 立候補締め切り無投票当選 福井県 - 福井新聞社",
+    "summary": "永平寺町議選告示、定数割れ回避 定数14に14人届け出 立候補締め切り無投票当選 福井県 福井新聞社",
+    "source": "福井新聞社",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE03SUFtaEZlN25YNTRYX0o5NE1BRW92WnRwekRyd05fRFdqT3Z3bHlxOFRNWGVVb1FJUVhJN2VJSHJJaVFleVVST2o2SkVVd0JfLVdnNXMtNU14VTRpdFE?oc=5",
+    "href": "./2026-07-21/#article-54175bf454ed095a",
+    "path": "/2026-07-21/#article-54175bf454ed095a",
+    "tone": "civic"
+  },
+  {
+    "date": "2026-07-21",
+    "genre": "政治",
+    "title": "【代表会見】延長国会「与党の国会運営の稚拙さがあらわに」水岡代表 - 立憲民主党",
+    "summary": "【代表会見】延長国会「与党の国会運営の稚拙さがあらわに」水岡代表 立憲民主党",
+    "source": "立憲民主党",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5oaFFPMmM5d1NxcXJqcUJoaTZlSktVcGUyQV96UUItT0pjX3U2MC1BQ1lDeThmenJWd29kQzdmZ3czcVJNSzgwSW1Ia1NYc1pD?oc=5",
+    "href": "./2026-07-21/#article-4fea7ca53fed5aed",
+    "path": "/2026-07-21/#article-4fea7ca53fed5aed",
+    "tone": "civic"
+  },
+  {
+    "date": "2026-07-21",
     "genre": "社会",
     "title": "大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタル",
     "summary": "大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 北海道新聞デジタル",
@@ -200,23 +222,12 @@
   {
     "date": "2026-07-21",
     "genre": "芸能人の結婚・離婚・交際",
-    "title": "居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン - ｄメニューニュース",
-    "summary": "居酒屋でキスして出禁！？“ネタを書かずに芸能人と結婚したい”芸人にウエストランド井口｢無理だよ｣：ゴッドタン ｄメ…",
-    "source": "ｄメニューニュース",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZ9IBhgFBVV95cUxNX3VOYmNfYnJ3VjRmdkhyMHRuZXdvNnZELVZtR2JxbDBWNnhhcFJPM19oWDItMWZJNWNZRVlIRUFfR0FmWVhkU09ZYWFJMk9jaTNBalpCZEhrNl9BZEVidmx5TTkySjVNOXIxaTNmdGJGOHBQc1dWS21iTWRzU0x6cVhKLThQZw?oc=5",
-    "href": "./2026-07-21/#article-a4f296f316dbc05d",
-    "path": "/2026-07-21/#article-a4f296f316dbc05d",
-    "tone": "entertainment"
-  },
-  {
-    "date": "2026-07-21",
-    "genre": "芸能人の結婚・離婚・交際",
-    "title": "「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 - starnewskorea.com",
-    "summary": "「財産はすべて元妻に」オ・ジョンホン、12年前の離婚を告白『衝撃』 starnewskorea.com",
-    "source": "starnewskorea.com",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE44MlhxWC0wRVY1OTZONmFra0ZwT2llOFNQX3RkODNMX05Zd0dib01mcTAxQWxSTklKV2Y5VXhlVGFGYmFvS1RUNWlwWjJ5NDRlMm5NUFpIOHMtUzNqc1FFSkgtYXNqd0lWV0Z5djR5czhQNWI2TEln?oc=5",
-    "href": "./2026-07-21/#article-2702f76bef9874fe",
-    "path": "/2026-07-21/#article-2702f76bef9874fe",
+    "title": "川口春奈、サッカーW杯日本代表・板倉滉と熱愛結婚報道、元カレ格闘家とのオープン交際から一転「匂わせ封印」に見る31歳の覚悟（2ページ目） - 週刊女性PRIME",
+    "summary": "川口春奈、サッカーW杯日本代表・板倉滉と熱愛結婚報道、元カレ格闘家とのオープン交際から一転「匂わせ封印」に見る31…",
+    "source": "週刊女性PRIME",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAzQUdoS2dFamVydTVvNjE3QUtzS3Z0aEhYb296ZElxTU5RTG9pNGpIQXBaSk1tb19EVHJGU2pFSHNGQTZCcFROamRZTmUwTzBqWWtWTEZrNDU",
+    "href": "./2026-07-21/#article-0029bd3727c64a2d",
+    "path": "/2026-07-21/#article-0029bd3727c64a2d",
     "tone": "entertainment"
   },
   {
@@ -225,53 +236,20 @@
     "title": "速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding",
     "summary": "速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding",
     "source": "dressy.pla-cole.wedding",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6MjlWbnJkWEFWT1FkcGFDTmhCNU5kVzRvaDJqektRbzFwemluSE1ibjZaV1ZEU3hVd0oxSzQ5X2QyOExRcWdlc3ZGaFlpV2h6UXR4Y2Z3Y2tBc21WcnItOFo5V19mSFpXU2dBNjFjUmRiUQ?oc=5",
     "href": "./2026-07-21/#article-d12a38db11d12137",
     "path": "/2026-07-21/#article-d12a38db11d12137",
     "tone": "entertainment"
   },
   {
     "date": "2026-07-21",
-    "genre": "芸能人の結婚・離婚・交際",
-    "title": "小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 - MSN",
-    "summary": "小籔千豊、熱愛スクープを暴露? “世紀のカップルの密会”ショットに「お似合い」「行っちゃいなよ」 MSN",
-    "source": "MSN",
-    "url": "https://news.google.com/rss/articles/CBMizARBVV95cUxOdkItQkd3MV91Z2tyTkdFZkR3Mllta1paYjBjX1BfM0kyVWNpVm5sM21NWnpGeHlxMmxuelVYbkNwQ0gyNG9rRmtJSllwUm9yRXBybWRqZ1VhVUtqSDMyNU9TaDczQlZrM2xrWEUzM3p3VnBfRUhFYnBFM3lZSktFZGVBZ0xhQnVObVZoVlZSTFdLQ0YzNjI0XzVZR2RvTEwxbk56SWVmN2xTTmE0am0yN3J5ZTBVZXlUdlRmSFVaNzFqWlF5RWwxc0NjX0xhU3dZSllLaTlIX1V1aDNjeGhsZkF3SHNwRFdka2M2VDVZTVpLUW14UmlCajB5OHNBanExYmllekFWVGVEMnNWVFJlMUIwTE1kYXBZMExFQ19iamJuZ3FQQnlEV2JVOF92X2pKSUY5Rlc4Q3V2SDgwUWJ1dmVLV1kxejVmU2tlRTRndDBfeVhzdmNqSzZGNGtlUFYzZ3h4MU9GMDFBRE1rZmROSjV1MWU2cE9IelFTaFRXeS16YTZJQ1d2SC1rX3J6VjgyWTZvbktJbFdsNnZSbkhmMHpGT0JmalJ5cnBmVjI0YkZOQUU3dWNkbDViWW9SdVkyQ3JfZjZ5UDlQNjlScDUxdm1FOGlaUVNZVWxrOENpdE8xM2ExSjlBZ0VJUERlcWFYRU14MGFYT1hwdzl1Z19QcVFxaWxIUDBveGJhR2U0Zm14em9FX1VxNlhHNldwbDdPRUtaWVpLMldZX0FlNUFCOEY3dmJEd0xTRUNlMVdnYlNZRE5HXzVKN1lSMEo?oc=5",
-    "href": "./2026-07-21/#article-5ecc7eeb1d7480ce",
-    "path": "/2026-07-21/#article-5ecc7eeb1d7480ce",
-    "tone": "entertainment"
-  },
-  {
-    "date": "2026-07-21",
-    "genre": "芸能人の結婚・離婚・交際",
-    "title": "【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の\"ビッグカップル誕生\"に日本中が熱狂！ - lasisa.net",
-    "summary": "【熱愛】川口春奈（31）＆板倉滉（29）「結婚して欲しい」サッカーW杯直後の\"ビッグカップル誕生\"に日本中が熱狂！…",
-    "source": "lasisa.net",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQXzFKY1dMYmtNNFA2V2xXRXRqV3ctMkV5c2E5NHBRUVRENjE0bWJFempBREp6b3NtNFNvMHJnbUhNMEx5akcxN25WOUtLZEJXMG5SeUpvMlhmallhREFWNE5taXRnQzdvMGsxU1JibHpNT0duMDU4UkdzY3lvcURnbi1hTHpLQlEx?oc=5",
-    "href": "./2026-07-21/#article-f5dbacb036ef196a",
-    "path": "/2026-07-21/#article-f5dbacb036ef196a",
-    "tone": "entertainment"
-  },
-  {
-    "date": "2026-07-21",
-    "genre": "芸能人の結婚・離婚・交際",
-    "title": "ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 - ｄメニューニュース",
-    "summary": "ラランド・ニシダ 6年交際の彼女との結婚への本音に共演者もドン引き 川島明「いよいよ笑えなくなる」 ｄメニューニュ…",
-    "source": "ｄメニューニュース",
-    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRHRYYVUxelRLMVJpelN6OU1BRzVXOU42N01jdUVuVW5RNW1GdjNvcUVzX084Vy1XUk9oNFE3cW9hSC1MTFRZLUk4NXFBVVJ2SzdCcGprRnU5SHd6RTlOdkh4RmRJaWlhb3NEYTJtemFNVE9YVGdJRzlfYmxkWUF1S0xZNExqMmhkVWVSYjJhNElOT240eUQ0Um9UblZmNHBHbTNLa2FVYlk1Zm1ZOF9Bdy0xRzk0cEstTW9VblJybHFIRGdFVkhpNjdBVTZnNEtkT2pVMDBVTDZ6R0VqeEFCd3NxMFNpc0xvUHRGd2dB0gGcAUFVX3lxTE5YRl84X2JFaHpwN016aGpET2ttTXBMMFlsX2loU0lRdDJ1aGE3Q3drcFVKUHU2SFBqTUdwT2NJUnhOVkd3Y3VWNi10N21weGhKZ2tRSVY2c3R6VGlTOWhKREl6dHVxcWVuZ2E4eTFveUJOVW14cVlwYVBURmZ2UmlhYXkxUnJla3M3cTlDZFdDS3MwVU1LYUdoVmx4NQ",
-    "href": "./2026-07-21/#article-0d97f448998ae3d9",
-    "path": "/2026-07-21/#article-0d97f448998ae3d9",
-    "tone": "entertainment"
-  },
-  {
-    "date": "2026-07-21",
     "genre": "経済",
-    "title": "経済財政諮問会議・日本成長戦略会議合同会議 - 首相官邸",
-    "summary": "経済財政諮問会議・日本成長戦略会議合同会議 首相官邸",
+    "title": "経済財政諮問会議・日本成長戦略会議合同会議 | 総理の一日 - 首相官邸",
+    "summary": "経済財政諮問会議・日本成長戦略会議合同会議",
     "source": "首相官邸",
     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zRnRfdUh6MHg5M3BGLVkyYjlVeklEQ3hNRUJiSWt1WnpKVGc0dnpJUFh2blFGY1N3bVV6aVpMZHRhendPMUc3R21kSkFfbHdWNjU1WUljOURVaDRxZExDMVJObl90cjdCaU9qTXF2Y1NnR2IxM09xdg?oc=5",
-    "href": "./2026-07-21/#article-95b2d618f05c3648",
-    "path": "/2026-07-21/#article-95b2d618f05c3648",
+    "href": "./2026-07-21/#article-8f2fa575e4d6b249",
+    "path": "/2026-07-21/#article-8f2fa575e4d6b249",
     "tone": "money"
   },
   {
@@ -343,12 +321,23 @@
   {
     "date": "2026-07-21",
     "genre": "災害",
-    "title": "新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「今後の台風情報に注意」気象庁 予想天気図 - TBS NEWS DIG",
-    "summary": "新たな【台風のたまご＝熱帯低気圧】発生へ 次の「台風」になるのか？【雨風シミュレーション／全国各都市の週間予報】「…",
-    "source": "TBS NEWS DIG",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jS0pFRl9ZWDhELXZ1NG5GUWZFem5CelJ1SENoUUNOWkdoZnJZOXVqTnh5cndhMExsTTZiaHFZN0RpdDJpazNwRncwUXNMZV82UFoxQkQ1WQ?oc=5",
-    "href": "./2026-07-21/#article-04146b45e97ecc27",
-    "path": "/2026-07-21/#article-04146b45e97ecc27",
+    "title": "「北海道・三陸沖後発地震注意情報」の発表 これまでより前倒しへ 気象庁 - Yahoo!ニュース",
+    "summary": "「北海道・三陸沖後発地震注意情報」の発表 これまでより前倒しへ 気象庁 Yahoo!ニュース",
+    "source": "Yahoo!ニュース",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB3dWhvN0VUblBod0xDS3pmS1AyNV9wRmUzbk10a3RQVDBGbHJCQ1hOamdMcWV0RlpDanhZYkppZFoxc1lBN0psMDBFRjRIQXp1?oc=5",
+    "href": "./2026-07-21/#article-a5d6976b164100ba",
+    "path": "/2026-07-21/#article-a5d6976b164100ba",
+    "tone": "safety"
+  },
+  {
+    "date": "2026-07-21",
+    "genre": "災害",
+    "title": "8月は厳しい暑さ にわか雨や台風の影響に注意 秋の訪れはゆっくり 3か月予報(気象予報士 堂本 幸代 2026年07月21日) - tenki.jp",
+    "summary": "8月は厳しい暑さ にわか雨や台風の影響に注意 秋の訪れはゆっくり 3か月予報(気象予報士 堂本 幸代 2026年0…",
+    "source": "tenki.jp",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51T3lVT1JoM3BwdmROMm9laGdGV0lMMGlCS1EyNURCR200aTltOWZsdGpqOG92ckxhcHp0SmJtWHJ6LTUxTjF0ei1CX01jTXN2QW53cndwZHczNGh6ZDJobDZ3ZkVocXdnamU1WGlXUkLSAXZBVV95cUxPUzNpTE5fU0ZPSVhoODhFZklDdGdidjE3QmJiUGloVWRiZHZCblExQlNpb0ZnUndYbjlxbUluNENjQVhnOGJ4d2JzOG9lcVNZOTJURWJCWUxnaFdVSzl1bFh2X0dwZEp5Q3ZRZ2ZjenhTZW9LSTRn?oc=5",
+    "href": "./2026-07-21/#article-21bcd7e0c9bbee47",
+    "path": "/2026-07-21/#article-21bcd7e0c9bbee47",
     "tone": "safety"
   },
   {
