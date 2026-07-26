@@ -20,7 +20,7 @@
           "source": "リアルサウンド",
           "published_at": "2026-07-25 10:27:33+00:00",
           "summary": "何が起きたか: Anthropic「Claude Opus 5」発表 Fable 5に迫る性能、API料金は半額に リアルサウンド",
-          "trend_reason": "Claude・発表｜独立2媒体｜注目度 66点｜出典: リアルサウンド",
+          "trend_reason": "Claude・発表｜出典: リアルサウンド",
           "query": "Claude ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://realsound.jp",
@@ -31,8 +31,8 @@
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 66
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "OpenAIのChatGPTとCodex、世界規模の障害で数時間停止 利用制限をリセット - x.com",
@@ -40,7 +40,7 @@
           "source": "x.com",
           "published_at": "2026-07-25 09:16:52+00:00",
           "summary": "何が起きたか: OpenAIのChatGPTとCodex、世界規模の障害で数時間停止 利用制限をリセット x.com",
-          "trend_reason": "障害・OpenAI・停止｜独立2媒体｜注目度 66点｜出典: x.com",
+          "trend_reason": "障害・OpenAI・停止｜出典: x.com",
           "query": "OpenAI ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://x.com",
@@ -51,8 +51,8 @@
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 66
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Gemini本命でも使い分けが正解、ChatGPTとCopilotの得意技 - 日経クロステック",
@@ -60,19 +60,19 @@
           "source": "日経クロステック",
           "published_at": "2026-07-25 08:32:49+00:00",
           "summary": "何が起きたか: Gemini本命でも使い分けが正解、ChatGPTとCopilotの得意技 日経クロステック",
-          "trend_reason": "ChatGPT｜注目度 64点｜出典: 日経クロステック",
+          "trend_reason": "ChatGPT｜出典: 日経クロステック",
           "query": "生成AI 最新 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://xtech.nikkei.com",
           "brief": "Gemini本命でも使い分けが正解、ChatGPTとCopilotの得意技 日経クロステック",
-          "importance": 1,
+          "importance": 2,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "無料版Claudeもこれで快適。強力な設定「インストラクション」、“書き方のコツ”を紹介 - Gizmodo",
@@ -80,7 +80,7 @@
           "source": "Gizmodo",
           "published_at": "2026-07-25 13:30:00+00:00",
           "summary": "何が起きたか: 無料版Claudeもこれで快適。強力な設定「インストラクション」、“書き方のコツ”を紹介 Gizmodo",
-          "trend_reason": "Claude｜注目度 61点｜出典: Gizmodo",
+          "trend_reason": "Claude｜出典: Gizmodo",
           "query": "Claude ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.gizmodo.jp",
@@ -92,7 +92,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "ChatGPT、OpenAIの人工知能プラットフォームは、大規模な中断に直面しています。 - Informat.ro",
@@ -100,7 +100,7 @@
           "source": "Informat.ro",
           "published_at": "2026-07-25 11:38:34+00:00",
           "summary": "何が起きたか: ChatGPT、OpenAIの人工知能プラットフォームは、大規模な中断に直面しています。 Informat.ro",
-          "trend_reason": "OpenAI｜注目度 61点｜出典: Informat.ro",
+          "trend_reason": "OpenAI｜出典: Informat.ro",
           "query": "OpenAI ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://informat.ro",
@@ -112,7 +112,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "AIに数時間の仕事を任せやすく Anthropic「Claude Opus 5」が長時間業務を強化 - DXマガジン",
@@ -120,7 +120,7 @@
           "source": "DXマガジン",
           "published_at": "2026-07-25 11:14:48+00:00",
           "summary": "何が起きたか: AIに数時間の仕事を任せやすく Anthropic「Claude Opus 5」が長時間業務を強化 DXマガジン",
-          "trend_reason": "Claude｜注目度 61点｜出典: DXマガジン",
+          "trend_reason": "Claude｜出典: DXマガジン",
           "query": "Claude ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://dxmagazine.jp",
@@ -132,7 +132,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 196
@@ -146,19 +146,19 @@
           "source": "매일경제",
           "published_at": "2026-07-25 13:19:25+00:00",
           "summary": "何が起きたか: 韓国の外交官全体の個人情報が流出したものと推定されるハッキング事態で、政府のサイバーセキュリティ力量が俎上に載せられた。 サイバー攻撃が国家安保を脅かす水準に高度化されているが、国家次元の対応体系確立.. 매일경제",
-          "trend_reason": "サイバー攻撃・政府｜注目度 67点｜出典: 매일경제",
+          "trend_reason": "サイバー攻撃・政府｜出典: 매일경제",
           "query": "サイバーセキュリティ after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.mk.co.kr",
           "brief": "韓国の外交官全体の個人情報が流出したものと推定されるハッキング事態で、政府のサイバーセキュリティ力量が俎上に載せら…",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "Google Cloudが脆弱性修正のAIエージェント「CodeMender」の提供を開始（ビジネス＋IT） - Yahoo!ニュース",
@@ -166,7 +166,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-25 10:50:10+00:00",
           "summary": "何が起きたか: Google Cloudが脆弱性修正のAIエージェント「CodeMender」の提供を開始（ビジネス＋IT） Yahoo!ニュース",
-          "trend_reason": "脆弱性・AI・Google｜注目度 67点｜出典: Yahoo!ニュース",
+          "trend_reason": "脆弱性・AI・Google｜出典: Yahoo!ニュース",
           "query": "Google ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -178,7 +178,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "Appleはトランプ政権に中国製メモリの利用許可を求めるもMicronが反発 - gigazine.net",
@@ -186,19 +186,19 @@
           "source": "gigazine.net",
           "published_at": "2026-07-25 07:00:00+00:00",
           "summary": "何が起きたか: Appleはトランプ政権に中国製メモリの利用許可を求めるもMicronが反発 gigazine.net",
-          "trend_reason": "Apple｜注目度 64点｜出典: gigazine.net",
+          "trend_reason": "Apple｜出典: gigazine.net",
           "query": "Apple ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://gigazine.net",
           "brief": "Appleはトランプ政権に中国製メモリの利用許可を求めるもMicronが反発 gigazine.net",
-          "importance": 1,
+          "importance": 2,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "Mrs. GREEN APPLE presents『CEREMONY』、世代やジャンル超えて共有する「音楽」への思い 1日目レポート【写真複数】 - 佐賀新聞",
@@ -206,7 +206,7 @@
           "source": "佐賀新聞",
           "published_at": "2026-07-25 13:52:30+00:00",
           "summary": "何が起きたか: Mrs. GREEN APPLE presents『CEREMONY』、世代やジャンル超えて共有する「音楽」への思い 1日目レポート【写真複数】 佐賀新聞",
-          "trend_reason": "Apple｜注目度 61点｜出典: 佐賀新聞",
+          "trend_reason": "Apple｜出典: 佐賀新聞",
           "query": "Apple ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.saga-s.co.jp",
@@ -218,7 +218,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "Mrs. GREEN APPLE「超最高だった」「本当に光栄」大好きな『スパイダーマン』主題歌、トム・ホランド＆ゼンデイヤと対談実現に歓喜（TOKYO FM＋） - Yahoo!ニュース",
@@ -226,7 +226,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-25 12:10:29+00:00",
           "summary": "何が起きたか: Mrs. GREEN APPLE「超最高だった」「本当に光栄」大好きな『スパイダーマン』主題歌、トム・ホランド＆ゼンデイヤと対談実現に歓喜（TOKYO FM＋） Yahoo!ニュース",
-          "trend_reason": "Apple｜注目度 61点｜出典: Yahoo!ニュース",
+          "trend_reason": "Apple｜出典: Yahoo!ニュース",
           "query": "Apple ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -238,7 +238,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "最新情報：NVIDIA、MICROSOFT、META、IBMを含む20社以上のテクノロジー企業がオープンソースのAI - KuCoin",
@@ -246,7 +246,7 @@
           "source": "KuCoin",
           "published_at": "2026-07-25 10:45:13+00:00",
           "summary": "何が起きたか: 最新情報：NVIDIA、MICROSOFT、META、IBMを含む20社以上のテクノロジー企業がオープンソースのAI KuCoin",
-          "trend_reason": "AI・Microsoft｜注目度 61点｜出典: KuCoin",
+          "trend_reason": "AI・Microsoft｜出典: KuCoin",
           "query": "Microsoft ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.kucoin.com",
@@ -258,7 +258,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 198
@@ -272,7 +272,7 @@
           "source": "朝日新聞",
           "published_at": "2026-07-25 11:58:44+00:00",
           "summary": "何が起きたか: 国会前デモを若者らが緊急開催 「国会軽視」「数の横暴」などと訴え [高市早苗首相] 朝日新聞",
-          "trend_reason": "国会前デモを若者らが緊急開催・「国会軽視」「数の横暴」などと訴え・[高市早苗首相]｜注目度 70点｜出典: 朝日新聞",
+          "trend_reason": "国会前デモを若者らが緊急開催・「国会軽視」「数の横暴」などと訴え・[高市早苗首相]｜出典: 朝日新聞",
           "query": "国会 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.asahi.com",
@@ -284,7 +284,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "混迷国会で”高市離れ”の兆候か?「期待と違う」市民が求める政策は?【報道特集】（TBS NEWS DIG Powered by JNN） - Yahoo!ニュース",
@@ -292,7 +292,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-25 12:11:14+00:00",
           "summary": "何が起きたか: 混迷国会で”高市離れ”の兆候か?「期待と違う」市民が求める政策は?【報道特集】（TBS NEWS DIG Powered by JNN） Yahoo!ニュース",
-          "trend_reason": "混迷国会で”高市離れ”の兆候か?「期待と違う」市民が求める政策は?【報道特集】（TBS・NEWS・DIG｜注目度 61点｜出典: Yahoo!ニュース",
+          "trend_reason": "混迷国会で”高市離れ”の兆候か?「期待と違う」市民が求める政策は?【報道特集】（TBS・NEWS・DIG｜出典: Yahoo!ニュース",
           "query": "国会 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -304,7 +304,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 131
@@ -318,19 +318,19 @@
           "source": "au Webポータル",
           "published_at": "2026-07-25 07:52:00+00:00",
           "summary": "何が起きたか: 電動丸ノコギリから死亡男性のＤＮＡ型、遺体切断後にフリマサイト出品か…利根川河川敷で遺体発見 au Webポータル",
-          "trend_reason": "死亡｜注目度 67点｜出典: au Webポータル",
+          "trend_reason": "死亡｜出典: au Webポータル",
           "query": "国内ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://article.auone.jp",
           "brief": "電動丸ノコギリから死亡男性のＤＮＡ型、遺体切断後にフリマサイト出品か…利根川河川敷で遺体発見 au Webポータル",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "生活保護「再減額」取り消しを 府内の利用者27人が集団審査請求／最高裁判決を無視「怒りの意思表示を」 - 京都民報Web",
@@ -338,7 +338,7 @@
           "source": "京都民報Web",
           "published_at": "2026-07-25 12:00:16+00:00",
           "summary": "何が起きたか: 生活保護「再減額」取り消しを 府内の利用者27人が集団審査請求／最高裁判決を無視「怒りの意思表示を」 京都民報Web",
-          "trend_reason": "裁判｜注目度 61点｜出典: 京都民報Web",
+          "trend_reason": "裁判｜出典: 京都民報Web",
           "query": "裁判 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.kyoto-minpo.net",
@@ -350,7 +350,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 184
@@ -364,19 +364,19 @@
           "source": "日テレNEWS NNN",
           "published_at": "2026-07-25 10:51:01+00:00",
           "summary": "何が起きたか: 北海道稚内市の海域でナマコ密漁 8人目の逮捕者 容疑者の役割などを捜査（2026年7月25日掲載）",
-          "trend_reason": "逮捕｜独立2媒体｜注目度 76点｜出典: 日テレNEWS NNN",
+          "trend_reason": "逮捕｜出典: 日テレNEWS NNN",
           "query": "逮捕 捜査 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.ntv.co.jp",
           "brief": "北海道稚内市の海域でナマコ密漁 8人目の逮捕者 容疑者の役割などを捜査（2026年7月25日掲載）",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明かさない」事件発覚前には5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - FNNプライムオンライン",
@@ -384,19 +384,19 @@
           "source": "FNNプライムオンライン",
           "published_at": "2026-07-25 11:40:00+00:00",
           "summary": "何が起きたか: 【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明かさない」事件発覚前には5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 FNNプライムオンライン",
-          "trend_reason": "逮捕｜注目度 70点｜出典: FNNプライムオンライン",
+          "trend_reason": "逮捕｜出典: FNNプライムオンライン",
           "query": "逮捕 捜査 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.fnn.jp",
           "brief": "【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明…",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "車に追突したバイクの男性が死亡 群馬・安中市 - 上毛新聞電子版",
@@ -404,19 +404,19 @@
           "source": "上毛新聞電子版",
           "published_at": "2026-07-25 08:32:00+00:00",
           "summary": "何が起きたか: 車に追突したバイクの男性が死亡 群馬・安中市 上毛新聞電子版",
-          "trend_reason": "死亡｜注目度 67点｜出典: 上毛新聞電子版",
+          "trend_reason": "死亡｜出典: 上毛新聞電子版",
           "query": "事件 事故 ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.jomo-news.co.jp",
           "brief": "車に追突したバイクの男性が死亡 群馬・安中市 上毛新聞電子版",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "［道路情報］新潟市の新新バイパスが事故で一時通行規制、黒埼方面に向かう車線（7月25日） - 新潟日報",
@@ -424,7 +424,7 @@
           "source": "新潟日報",
           "published_at": "2026-07-25 08:15:00+00:00",
           "summary": "何が起きたか: ［道路情報］新潟市の新新バイパスが事故で一時通行規制、黒埼方面に向かう車線（7月25日） 新潟日報",
-          "trend_reason": "規制・事故｜注目度 67点｜出典: 新潟日報",
+          "trend_reason": "規制・事故｜出典: 新潟日報",
           "query": "交通事故 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.niigata-nippo.co.jp",
@@ -436,7 +436,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "小学生が検察官の仕事を体験 特殊詐欺事件を題材に捜査 – Quebee キュエビー - QAB 琉球朝日放送",
@@ -444,7 +444,7 @@
           "source": "QAB 琉球朝日放送",
           "published_at": "2026-07-25 14:47:34+00:00",
           "summary": "何が起きたか: 小学生が検察官の仕事を体験 特殊詐欺事件を題材に捜査 – Quebee キュエビー QAB 琉球朝日放送",
-          "trend_reason": "小学生が検察官の仕事を体験・特殊詐欺事件を題材に捜査・Quebee｜独立2媒体｜注目度 61点｜出典: QAB 琉球朝日放送",
+          "trend_reason": "小学生が検察官の仕事を体験・特殊詐欺事件を題材に捜査・Quebee｜出典: QAB 琉球朝日放送",
           "query": "詐欺 事件 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.qab.co.jp",
@@ -455,8 +455,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 213
@@ -470,7 +470,7 @@
           "source": "Межа. Новини України.",
           "published_at": "2026-07-25 07:19:28+00:00",
           "summary": "何が起きたか: 米株市場が軟調に推移、FRBの利上げ観測とAI大手決算が重荷に Межа. Новини України.",
-          "trend_reason": "決算・AI｜注目度 67点｜出典: Межа. Новини України.",
+          "trend_reason": "決算・AI｜出典: Межа. Новини України.",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://mezha.net",
@@ -482,7 +482,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC(フィスコ) - Yahoo!ファイナンス",
@@ -490,19 +490,19 @@
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-07-25 08:13:00+00:00",
           "summary": "何が起きたか: 来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC(フィスコ) Yahoo!ファイナンス",
-          "trend_reason": "決算｜注目度 61点｜出典: Yahoo!ファイナンス",
+          "trend_reason": "決算｜出典: Yahoo!ファイナンス",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://finance.yahoo.co.jp",
           "brief": "来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC(フィスコ) Yaho…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 - 山陽新聞",
@@ -510,19 +510,19 @@
           "source": "山陽新聞",
           "published_at": "2026-07-25 08:02:55+00:00",
           "summary": "何が起きたか: 岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 山陽新聞",
-          "trend_reason": "決算｜注目度 61点｜出典: 山陽新聞",
+          "trend_reason": "決算｜出典: 山陽新聞",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.sanyonews.jp",
           "brief": "岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 山陽新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "米国株式市場見通し：AI関連株の決算集中、FOMCなど重要イベント目白押し - ｄメニューニュース",
@@ -530,19 +530,19 @@
           "source": "ｄメニューニュース",
           "published_at": "2026-07-25 07:00:00+00:00",
           "summary": "何が起きたか: 米国株式市場見通し：AI関連株の決算集中、FOMCなど重要イベント目白押し ｄメニューニュース",
-          "trend_reason": "決算・AI｜注目度 61点｜出典: ｄメニューニュース",
+          "trend_reason": "決算・AI｜出典: ｄメニューニュース",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://topics.smt.docomo.ne.jp",
           "brief": "米国株式市場見通し：AI関連株の決算集中、FOMCなど重要イベント目白押し ｄメニューニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 189
@@ -556,19 +556,19 @@
           "source": "西日本新聞me",
           "published_at": "2026-07-25 07:59:13+00:00",
           "summary": "何が起きたか: 政府、ホルムズは「国際海峡」 評価回避転換、通航料反対根拠に 西日本新聞me",
-          "trend_reason": "政府｜注目度 64点｜出典: 西日本新聞me",
+          "trend_reason": "政府｜出典: 西日本新聞me",
           "query": "海外ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.nishinippon.co.jp",
           "brief": "政府、ホルムズは「国際海峡」 評価回避転換、通航料反対根拠に 西日本新聞me",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         }
       ],
       "candidate_score": 182
@@ -582,7 +582,7 @@
           "source": "bittimes.net",
           "published_at": "2026-07-25 14:55:55+00:00",
           "summary": "何が起きたか: 仮想通貨ニュース週間まとめ「スイス州立銀行・クラリティ・日本政府」などの注目記事 bittimes.net",
-          "trend_reason": "政府｜注目度 61点｜出典: bittimes.net",
+          "trend_reason": "政府｜出典: bittimes.net",
           "query": "仮想通貨 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://bittimes.net",
@@ -594,7 +594,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 173
