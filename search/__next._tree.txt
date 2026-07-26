@@ -1,2 +1,2 @@
-:HL["/daily-trend-news-pages/_next/static/chunks/0cffk0xvexbxf.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"search","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Y2TFcpljUYIXTKwSDtLn6"}
+:HL["/daily-trend-news-pages/_next/static/chunks/1s7fgaqx0h8ah.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"search","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"QV-TEJhZaVkHMeQ5_Lsyp"}
