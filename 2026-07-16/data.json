@@ -20,19 +20,19 @@
           "source": "Excite エキサイト",
           "published_at": "2026-07-16 10:11:00+00:00",
           "summary": "何が起きたか: OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT",
-          "trend_reason": "脆弱性・OpenAI｜注目度 34点｜出典: Excite エキサイト",
+          "trend_reason": "脆弱性・OpenAI｜出典: Excite エキサイト",
           "query": "OpenAI ニュース after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://www.excite.co.jp",
           "brief": "OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         },
         {
           "title": "OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュース",
@@ -40,19 +40,19 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-16 09:59:29+00:00",
           "summary": "何が起きたか: OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT",
-          "trend_reason": "脆弱性・OpenAI｜注目度 34点｜出典: Yahoo!ニュース",
+          "trend_reason": "脆弱性・OpenAI｜出典: Yahoo!ニュース",
           "query": "OpenAI ニュース after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
           "brief": "OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         }
       ],
       "candidate_score": 34
@@ -61,32 +61,12 @@
       "name": "IT業界",
       "items": [
         {
-          "title": "日立がメインフレーム撤退へ、「VOS3」販売終了／キオクシア純利益48倍予想、ソニーGとTSMC提携 など、注目記事を音声化 - 日経クロステック",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zS3ZSTUZUYzhlWmZOeE9tbHRCbkl2QlhmXy01UEFLYmRwX295YXNqTTJCNXpDSUlXSGFrMVNuMWZMamI1Q2NUd2VaUndmVmtzMldFT0dHNWxnX2lTSl9UZXZFb28wN1VUOUE?oc=5",
-          "source": "日経クロステック",
-          "published_at": "2026-07-16 09:50:53+00:00",
-          "summary": "何が起きたか: 日立がメインフレーム撤退へ、「VOS3」販売終了／キオクシア純利益48倍予想、ソニーGとTSMC提携 など、注目記事を音声化 日経クロステック",
-          "trend_reason": "終了｜注目度 30点｜出典: 日経クロステック",
-          "query": "テクノロジー ニュース after:2026-07-16 before:2026-07-17",
-          "image_url": null,
-          "source_url": "https://xtech.nikkei.com",
-          "brief": "日立がメインフレーム撤退へ、「VOS3」販売終了／キオクシア純利益48倍予想、ソニーGとTSMC提携 など、注目記…",
-          "importance": 1,
-          "source_label": "大手報道",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 30
-        },
-        {
           "title": "介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43WkM3dU05MlpLTHZVR1E5TWJtSXI1S0VDVWMxQlhzcXVjTC1oYTRrMHVjOGVNU3ZaUWhOWmk1aXQySjFCTktnSlZtNXE1d2dTV3kwMUdVbXRMUmVhY2phekJWNjl6clJKWUVkWEJPdmZXa1lON2NzZ19NMTVQYm8?oc=5",
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-16 10:30:34+00:00",
           "summary": "何が起きたか: 介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） Yahoo!ニュース",
-          "trend_reason": "介護従事者の負担を軽減するテクノロジーを紹介する展示会・車いすへの移動を助けるロボットなど【香川】（RSK山陽放送）｜独立2媒体｜注目度 25点｜出典: Yahoo!ニュース",
+          "trend_reason": "介護従事者の負担を軽減するテクノロジーを紹介する展示会・車いすへの移動を助けるロボットなど【香川】（RSK山陽放送）｜出典: Yahoo!ニュース",
           "query": "テクノロジー ニュース after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -97,8 +77,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 25
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 30
@@ -112,19 +92,19 @@
           "source": "毎日新聞",
           "published_at": "2026-07-16 12:15:39+00:00",
           "summary": "何が起きたか: 皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 毎日新聞",
-          "trend_reason": "法案｜注目度 39点｜出典: 毎日新聞",
+          "trend_reason": "法案｜出典: 毎日新聞",
           "query": "国会 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://mainichi.jp",
           "brief": "皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 毎日新聞",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         },
         {
           "title": "7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版",
@@ -132,19 +112,19 @@
           "source": "日経ビジネス電子版",
           "published_at": "2026-07-16 08:00:00+00:00",
           "summary": "何が起きたか: 7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 日経ビジネス電子版",
-          "trend_reason": "政府｜注目度 39点｜出典: 日経ビジネス電子版",
+          "trend_reason": "政府｜出典: 日経ビジネス電子版",
           "query": "政府 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://business.nikkei.com",
           "brief": "7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 日経ビジネス電子版",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         }
       ],
       "candidate_score": 39
@@ -158,19 +138,19 @@
           "source": "テレ朝NEWS",
           "published_at": "2026-07-16 12:42:38+00:00",
           "summary": "何が起きたか: 女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 テレ朝NEWS",
-          "trend_reason": "逮捕｜独立2媒体｜注目度 47点｜出典: テレ朝NEWS",
+          "trend_reason": "逮捕｜出典: テレ朝NEWS",
           "query": "事件 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.tv-asahi.co.jp",
           "brief": "女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 テレ朝NEWS",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 47
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞",
@@ -178,19 +158,19 @@
           "source": "朝日新聞",
           "published_at": "2026-07-16 12:41:16+00:00",
           "summary": "何が起きたか: 元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] 朝日新聞",
-          "trend_reason": "逮捕｜注目度 39点｜出典: 朝日新聞",
+          "trend_reason": "逮捕｜出典: 朝日新聞",
           "query": "逮捕 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://www.asahi.com",
           "brief": "元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] 朝日新聞",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         }
       ],
       "candidate_score": 47
@@ -204,19 +184,19 @@
           "source": "ロイター",
           "published_at": "2026-07-16 09:21:43+00:00",
           "summary": "何が起きたか: 英経済は軟調、利上げの必要性低い＝英中銀副総裁 ロイター",
-          "trend_reason": "利上げ｜注目度 39点｜出典: ロイター",
+          "trend_reason": "利上げ｜出典: ロイター",
           "query": "経済 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://jp.reuters.com",
           "brief": "英経済は軟調、利上げの必要性低い＝英中銀副総裁 ロイター",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         },
         {
           "title": "NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンス",
@@ -224,19 +204,19 @@
           "source": "BigGo ファイナンス",
           "published_at": "2026-07-16 12:56:00+00:00",
           "summary": "何が起きたか: NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ BigGo ファイナンス",
-          "trend_reason": "決算｜注目度 31点｜出典: BigGo ファイナンス",
+          "trend_reason": "決算｜出典: BigGo ファイナンス",
           "query": "企業決算 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://finance.biggo.jp",
           "brief": "NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ BigGo ファイナンス",
-          "importance": 1,
-          "source_label": "一次情報",
+          "importance": 2,
+          "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 31
+          "selection_score": 0
         }
       ],
       "candidate_score": 39
@@ -250,19 +230,19 @@
           "source": "NHKニュース",
           "published_at": "2026-07-16 11:47:18+00:00",
           "summary": "何が起きたか: 埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え NHKニュース",
-          "trend_reason": "災害｜注目度 39点｜出典: NHKニュース",
+          "trend_reason": "災害｜出典: NHKニュース",
           "query": "災害 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.web.nhk",
           "brief": "埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え NHKニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         },
         {
           "title": "最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNN",
@@ -270,19 +250,19 @@
           "source": "日テレNEWS NNN",
           "published_at": "2026-07-16 12:25:00+00:00",
           "summary": "何が起きたか: 最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 日テレNEWS NNN",
-          "trend_reason": "地震｜注目度 34点｜出典: 日テレNEWS NNN",
+          "trend_reason": "地震｜出典: 日テレNEWS NNN",
           "query": "地震 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.ntv.co.jp",
           "brief": "最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 日テレNEWS NNN",
-          "importance": 1,
-          "source_label": "RSS",
+          "importance": 3,
+          "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         }
       ],
       "candidate_score": 39
@@ -296,7 +276,7 @@
           "source": "ライブドアニュース",
           "published_at": "2026-07-16 14:14:31+00:00",
           "summary": "何が起きたか: 中国遼寧省でゴムボート爆発 7人死亡 ライブドアニュース",
-          "trend_reason": "死亡｜注目度 34点｜出典: ライブドアニュース",
+          "trend_reason": "死亡｜出典: ライブドアニュース",
           "query": "海外ニュース after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.livedoor.com",
@@ -308,7 +288,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         },
         {
           "title": "睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース",
@@ -316,7 +296,7 @@
           "source": "ライブドアニュース",
           "published_at": "2026-07-16 13:00:00+00:00",
           "summary": "何が起きたか: 睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) ライブドアニュース",
-          "trend_reason": "死亡｜注目度 34点｜出典: ライブドアニュース",
+          "trend_reason": "死亡｜出典: ライブドアニュース",
           "query": "海外ニュース after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://news.livedoor.com",
@@ -328,7 +308,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         }
       ],
       "candidate_score": 34
@@ -342,39 +322,39 @@
           "source": "TBS NEWS DIG",
           "published_at": "2026-07-16 12:45:00+00:00",
           "summary": "何が起きたか: 「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 TBS NEWS DIG",
-          "trend_reason": "地震｜注目度 34点｜出典: TBS NEWS DIG",
+          "trend_reason": "地震｜出典: TBS NEWS DIG",
           "query": "生活 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://newsdig.tbs.co.jp",
           "brief": "「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半…",
-          "importance": 1,
-          "source_label": "RSS",
+          "importance": 3,
+          "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         },
         {
           "title": "【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA",
           "source": "日本赤十字社",
           "published_at": "2026-07-16 11:36:51+00:00",
-          "summary": "何が起きたか: 【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス",
-          "trend_reason": "地震｜注目度 34点｜出典: 日本赤十字社",
+          "summary": "何が起きたか: 【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続",
+          "trend_reason": "地震｜出典: 日本赤十字社",
           "query": "生活 after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://www.jrc.or.jp",
-          "brief": "【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス",
-          "importance": 1,
+          "brief": "【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続",
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         }
       ],
       "candidate_score": 34
@@ -387,12 +367,12 @@
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5",
           "source": "佐賀新聞",
           "published_at": "2026-07-16 09:30:00+00:00",
-          "summary": "何が起きたか: 江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題",
-          "trend_reason": "避難｜注目度 34点｜出典: 佐賀新聞",
+          "summary": "何が起きたか: 江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ",
+          "trend_reason": "避難｜出典: 佐賀新聞",
           "query": "ゲーム after:2026-07-16 before:2026-07-17",
           "image_url": null,
           "source_url": "https://www.saga-s.co.jp",
-          "brief": "江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題",
+          "brief": "江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ",
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
@@ -400,7 +380,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         }
       ],
       "candidate_score": 34

@@ -20,19 +20,19 @@
           "source": "Yellow.com",
           "published_at": "2026-07-25 13:53:32+00:00",
           "summary": "何が起きたか: OpenAI、デスクトップ版ChatGPTに音声対話を実装 まず5つの有料ティアに提供開始 Yellow.com",
-          "trend_reason": "OpenAI・開始｜注目度 61点｜出典: Yellow.com",
+          "trend_reason": "OpenAI・開始｜出典: Yellow.com",
           "query": "OpenAI ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://yellow.com",
           "brief": "OpenAI、デスクトップ版ChatGPTに音声対話を実装 まず5つの有料ティアに提供開始 Yellow.com",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "OpenAI、オープンウエイトAI推進で35社の連合に参加、Anthropicが孤立 - BigGo ファイナンス",
@@ -40,7 +40,7 @@
           "source": "BigGo ファイナンス",
           "published_at": "2026-07-25 12:25:00+00:00",
           "summary": "何が起きたか: OpenAI、オープンウエイトAI推進で35社の連合に参加、Anthropicが孤立 BigGo ファイナンス",
-          "trend_reason": "OpenAI｜注目度 61点｜出典: BigGo ファイナンス",
+          "trend_reason": "OpenAI｜出典: BigGo ファイナンス",
           "query": "OpenAI ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://finance.biggo.jp",
@@ -52,7 +52,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "AIに数時間の仕事を任せやすく Anthropic「Claude Opus 5」が長時間業務を強化 - DXマガジン",
@@ -60,7 +60,7 @@
           "source": "DXマガジン",
           "published_at": "2026-07-25 11:14:48+00:00",
           "summary": "何が起きたか: AIに数時間の仕事を任せやすく Anthropic「Claude Opus 5」が長時間業務を強化 DXマガジン",
-          "trend_reason": "Claude｜注目度 61点｜出典: DXマガジン",
+          "trend_reason": "Claude｜出典: DXマガジン",
           "query": "生成AI 最新 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://dxmagazine.jp",
@@ -72,7 +72,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "独立検証で評価割れる「Claude Opus 5」 最新モデルの実力をどう見るか - Yellow.com",
@@ -80,7 +80,7 @@
           "source": "Yellow.com",
           "published_at": "2026-07-25 09:59:55+00:00",
           "summary": "何が起きたか: 独立検証で評価割れる「Claude Opus 5」 最新モデルの実力をどう見るか Yellow.com",
-          "trend_reason": "Claude｜注目度 61点｜出典: Yellow.com",
+          "trend_reason": "Claude｜出典: Yellow.com",
           "query": "生成AI 最新 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://yellow.com",
@@ -92,47 +92,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
-        },
-        {
-          "title": "高放射線量で働くＡＩロボ開発へ ベンチャーなど技術確立目指す - 岩手日報",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9yUG1IOXhJUlczUUJVU2Vtb21wYkdlYVA0bGdUczk3MkVlY2dRRkl2ZlJDT0JNdlYtQjg5RkJyX2oyRkRPTUhQNERxbHZIa1NfeVdtVmFTYThrTHZObUhLWmNvdjZFd3ZySlMzY0o5a0szOXBV?oc=5",
-          "source": "岩手日報",
-          "published_at": "2026-07-25 09:52:03+00:00",
-          "summary": "何が起きたか: 高放射線量で働くＡＩロボ開発へ ベンチャーなど技術確立目指す 岩手日報",
-          "trend_reason": "高放射線量で働くＡＩロボ開発へ・ベンチャーなど技術確立目指す｜独立2媒体｜注目度 61点｜出典: 岩手日報",
-          "query": "AI ニュース after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://www.iwate-np.co.jp",
-          "brief": "高放射線量で働くＡＩロボ開発へ ベンチャーなど技術確立目指す 岩手日報",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "仕事で使える",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
-        },
-        {
-          "title": "Claude Fable 5登場──最強AIなのに開発者が「信用できない」理由 Cruzeiro X Goiás (FTzi0zGdsW) - Mshale",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nNE5TcHQtQkFzNC1nLVBvU3ZLSWs3TjF3LXdtSGcyZzFLRWdxb0xTci03dUQyOEpzX2hZQm9aczVxakh2Vy1tVzBuWXpMQ0MwVnBRbHJzSV94QXNMOS15cw?oc=5",
-          "source": "Mshale",
-          "published_at": "2026-07-25 09:21:24+00:00",
-          "summary": "何が起きたか: Claude Fable 5登場──最強AIなのに開発者が「信用できない」理由 Cruzeiro X Goiás (FTzi0zGdsW) Mshale",
-          "trend_reason": "Claude｜注目度 61点｜出典: Mshale",
-          "query": "生成AI 最新 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://mshale.com",
-          "brief": "Claude Fable 5登場──最強AIなのに開発者が「信用できない」理由 Cruzeiro X Goiás…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "仕事で使える",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 183
@@ -146,19 +106,19 @@
           "source": "매일경제",
           "published_at": "2026-07-25 13:19:25+00:00",
           "summary": "何が起きたか: 韓国の外交官全体の個人情報が流出したものと推定されるハッキング事態で、政府のサイバーセキュリティ力量が俎上に載せられた。 サイバー攻撃が国家安保を脅かす水準に高度化されているが、国家次元の対応体系確立.. 매일경제",
-          "trend_reason": "サイバー攻撃・政府｜注目度 67点｜出典: 매일경제",
+          "trend_reason": "サイバー攻撃・政府｜出典: 매일경제",
           "query": "サイバーセキュリティ after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.mk.co.kr",
           "brief": "韓国の外交官全体の個人情報が流出したものと推定されるハッキング事態で、政府のサイバーセキュリティ力量が俎上に載せら…",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "Rubrik、Anthropic「Claude Code」向けにAIエージェントのセキュリティ基盤「Rubrik Agent Cloud」を発表 - thinkit.co.jp",
@@ -166,79 +126,19 @@
           "source": "thinkit.co.jp",
           "published_at": "2026-07-25 10:17:21+00:00",
           "summary": "何が起きたか: Rubrik、Anthropic「Claude Code」向けにAIエージェントのセキュリティ基盤「Rubrik Agent Cloud」を発表 thinkit.co.jp",
-          "trend_reason": "セキュリティ・Claude・発表｜注目度 61点｜出典: thinkit.co.jp",
+          "trend_reason": "セキュリティ・Claude・発表｜出典: thinkit.co.jp",
           "query": "IT業界 ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://thinkit.co.jp",
           "brief": "Rubrik、Anthropic「Claude Code」向けにAIエージェントのセキュリティ基盤「Rubrik…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
-        },
-        {
-          "title": "Moonshot AIが新規申込みを一時停止すると発表、Kimi K3への需要が急増 - Межа. Новини України.",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4yM2JLTVF0aWFXczhFZWRWNDhSenk2R3pvTmxXbThrREhtWWFNMVlKR0hTOHk1UEcwRWh0RG5SMm40bzhrOWg4WFNhMlZHaDVCTjZsTnZjMGpSS0otdmpKTEplSUpQUQ?oc=5",
-          "source": "Межа. Новини України.",
-          "published_at": "2026-07-25 08:01:55+00:00",
-          "summary": "何が起きたか: Moonshot AIが新規申込みを一時停止すると発表、Kimi K3への需要が急増 Межа. Новини України.",
-          "trend_reason": "AI・発表｜注目度 61点｜出典: Межа. Новини України.",
-          "query": "スタートアップ 資金調達 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://mezha.net",
-          "brief": "Moonshot AIが新規申込みを一時停止すると発表、Kimi K3への需要が急増 Межа. Новини У…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "仕事で使える",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 61
-        },
-        {
-          "title": "taliki、社会課題特化型ショートトラック出資「#共に夜明けへ」開始 - ネットベンチャーニュース",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zTFYyTzhtRGlSTHBUSlhXMnJtblo5TC05UFVOR1ZjTTMtR1RreWhnRHFBOWc2SlpzMDlfMzdUUGxvUjRvWWZkOU43eHdsMDJlTklmdGtxRmY5ejdkQWU2NmdLZWFnalk?oc=5",
-          "source": "ネットベンチャーニュース",
-          "published_at": "2026-07-25 08:00:00+00:00",
-          "summary": "何が起きたか: taliki、社会課題特化型ショートトラック出資「#共に夜明けへ」開始 ネットベンチャーニュース",
-          "trend_reason": "開始｜注目度 61点｜出典: ネットベンチャーニュース",
-          "query": "スタートアップ 資金調達 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://www.netventure-news.com",
-          "brief": "taliki、社会課題特化型ショートトラック出資「#共に夜明けへ」開始 ネットベンチャーニュース",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "市場・企業",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 61
-        },
-        {
-          "title": "Anthropicの「Claude Cowork」、サンドボックスを突破しMacの機密情報にアクセス可能 - マイナビニュース",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtTkpaLVVkRmZydkJRcHVJeW1wZ0lGbUt4RXFyQjU0MmVQSjFIaGhzMWs1VFVhV2RMdTk4QXJzcU9sbDhlWElCdmVOZGJRbnpDYnE1V0w0bWpSVnNJY3JQN1dkcHhjdWNP",
-          "source": "マイナビニュース",
-          "published_at": "2026-07-25 07:35:50+00:00",
-          "summary": "何が起きたか: Anthropicの「Claude Cowork」、サンドボックスを突破しMacの機密情報にアクセス可能 マイナビニュース",
-          "trend_reason": "Claude｜注目度 61点｜出典: マイナビニュース",
-          "query": "サイバーセキュリティ after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://news.mynavi.jp",
-          "brief": "Anthropicの「Claude Cowork」、サンドボックスを突破しMacの機密情報にアクセス可能 マイナビ…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "要注意",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 189
@@ -251,20 +151,20 @@
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTVG1RNXFWSWVNbkhpU2JDTk00QlllNEh0azM5V25hdkl0OTN0ODhiRk56SmtEUGp6U2RMN2tSb0tFYzA5WmliR0YzekdFY3Z2UTRMT1Juaw?oc=5",
           "source": "西日本新聞me",
           "published_at": "2026-07-25 08:12:00+00:00",
-          "summary": "何が起きたか: イラン・テヘラン、ホルムズ海峡、オマーン - 政府、ホルムズは「国際海峡」 評価回避転換、通航料反対根拠に",
-          "trend_reason": "政府｜独立4媒体｜注目度 77点｜出典: 西日本新聞me",
+          "summary": "何が起きたか: イラン・テヘラン、ホルムズ海峡、オマーン",
+          "trend_reason": "政府｜出典: 西日本新聞me",
           "query": "政府 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.nishinippon.co.jp",
-          "brief": "イラン・テヘラン、ホルムズ海峡、オマーン - 政府、ホルムズは「国際海峡」 評価回避転換、通航料反対根拠に",
+          "brief": "イラン・テヘラン、ホルムズ海峡、オマーン",
           "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 4,
-          "selection_score": 77
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "サンデー・ジャポン 延長国会閉幕…議員直撃！▽堺雅人が緊急生出演！スタジオ生考察 - tbs.co.jp",
@@ -272,7 +172,7 @@
           "source": "tbs.co.jp",
           "published_at": "2026-07-25 14:54:01+00:00",
           "summary": "何が起きたか: サンデー・ジャポン 延長国会閉幕…議員直撃！▽堺雅人が緊急生出演！スタジオ生考察 tbs.co.jp",
-          "trend_reason": "サンデー・ジャポン・延長国会閉幕…議員直撃！▽堺雅人が緊急生出演！スタジオ生考察｜注目度 70点｜出典: tbs.co.jp",
+          "trend_reason": "サンデー・ジャポン・延長国会閉幕…議員直撃！▽堺雅人が緊急生出演！スタジオ生考察｜出典: tbs.co.jp",
           "query": "国会 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.tbs.co.jp",
@@ -284,7 +184,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "維新・藤田共同代表 吉村氏の“同日選目指す”発言を擁護「国会軽視ではない」 - テレ朝NEWS",
@@ -292,7 +192,7 @@
           "source": "テレ朝NEWS",
           "published_at": "2026-07-25 13:27:37+00:00",
           "summary": "何が起きたか: 維新・藤田共同代表 吉村氏の“同日選目指す”発言を擁護「国会軽視ではない」 テレ朝NEWS",
-          "trend_reason": "維新・藤田共同代表・吉村氏の“同日選目指す”発言を擁護「国会軽視ではない」｜独立2媒体｜注目度 70点｜出典: テレ朝NEWS",
+          "trend_reason": "維新・藤田共同代表・吉村氏の“同日選目指す”発言を擁護「国会軽視ではない」｜出典: テレ朝NEWS",
           "query": "国会 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.tv-asahi.co.jp",
@@ -303,8 +203,8 @@
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 70
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "「欠陥だらけ」副首都関連法、災害リスクや財政コストを野党追及 透明性確保を政府に注文 - 産経ニュース",
@@ -312,7 +212,7 @@
           "source": "産経ニュース",
           "published_at": "2026-07-25 12:44:03+00:00",
           "summary": "何が起きたか: 「欠陥だらけ」副首都関連法、災害リスクや財政コストを野党追及 透明性確保を政府に注文 産経ニュース",
-          "trend_reason": "災害・政府｜注目度 70点｜出典: 産経ニュース",
+          "trend_reason": "災害・政府｜出典: 産経ニュース",
           "query": "政府 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.sankei.com",
@@ -324,7 +224,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "国会前デモを若者らが緊急開催 「国会軽視」「数の横暴」などと訴え [高市早苗首相] - 朝日新聞",
@@ -332,7 +232,7 @@
           "source": "朝日新聞",
           "published_at": "2026-07-25 11:58:44+00:00",
           "summary": "何が起きたか: 国会前デモを若者らが緊急開催 「国会軽視」「数の横暴」などと訴え [高市早苗首相] 朝日新聞",
-          "trend_reason": "国会前デモを若者らが緊急開催・「国会軽視」「数の横暴」などと訴え・[高市早苗首相]｜注目度 70点｜出典: 朝日新聞",
+          "trend_reason": "国会前デモを若者らが緊急開催・「国会軽視」「数の横暴」などと訴え・[高市早苗首相]｜出典: 朝日新聞",
           "query": "政治 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.asahi.com",
@@ -344,7 +244,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "政府提出64法案は全て成立 高市1強「強引運営国会」が閉会へ - 毎日新聞",
@@ -352,19 +252,19 @@
           "source": "毎日新聞",
           "published_at": "2026-07-25 08:51:39+00:00",
           "summary": "何が起きたか: 政府提出64法案は全て成立 高市1強「強引運営国会」が閉会へ 毎日新聞",
-          "trend_reason": "法案｜注目度 70点｜出典: 毎日新聞",
+          "trend_reason": "法案｜出典: 毎日新聞",
           "query": "政府 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://mainichi.jp",
           "brief": "政府提出64法案は全て成立 高市1強「強引運営国会」が閉会へ 毎日新聞",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         }
       ],
       "candidate_score": 217
@@ -378,7 +278,7 @@
           "source": "テレ朝NEWS",
           "published_at": "2026-07-25 09:21:57+00:00",
           "summary": "何が起きたか: 福島・東北自動車道 車2台絡む事故 1人死亡 テレ朝NEWS",
-          "trend_reason": "事故｜独立2媒体｜注目度 76点｜出典: テレ朝NEWS",
+          "trend_reason": "事故｜出典: テレ朝NEWS",
           "query": "事故 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.tv-asahi.co.jp",
@@ -389,8 +289,8 @@
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "新名神高速6人死亡事故 5人家族の遺族「理不尽に命奪われた」 - NHKニュース",
@@ -398,7 +298,7 @@
           "source": "NHKニュース",
           "published_at": "2026-07-25 11:11:06+00:00",
           "summary": "何が起きたか: 新名神高速6人死亡事故 5人家族の遺族「理不尽に命奪われた」 NHKニュース",
-          "trend_reason": "事故｜注目度 70点｜出典: NHKニュース",
+          "trend_reason": "事故｜出典: NHKニュース",
           "query": "事故 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.web.nhk",
@@ -410,7 +310,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "［道路情報］新潟市の新新バイパスが事故で一時通行規制、黒埼方面に向かう車線（7月25日） - 新潟日報",
@@ -418,7 +318,7 @@
           "source": "新潟日報",
           "published_at": "2026-07-25 08:15:00+00:00",
           "summary": "何が起きたか: ［道路情報］新潟市の新新バイパスが事故で一時通行規制、黒埼方面に向かう車線（7月25日） 新潟日報",
-          "trend_reason": "規制・事故｜注目度 67点｜出典: 新潟日報",
+          "trend_reason": "規制・事故｜出典: 新潟日報",
           "query": "事故 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.niigata-nippo.co.jp",
@@ -430,7 +330,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         }
       ],
       "candidate_score": 213
@@ -444,19 +344,19 @@
           "source": "日テレNEWS NNN",
           "published_at": "2026-07-25 10:51:01+00:00",
           "summary": "何が起きたか: 北海道稚内市の海域でナマコ密漁 8人目の逮捕者 容疑者の役割などを捜査（2026年7月25日掲載）",
-          "trend_reason": "逮捕｜独立2媒体｜注目度 76点｜出典: 日テレNEWS NNN",
+          "trend_reason": "逮捕｜出典: 日テレNEWS NNN",
           "query": "逮捕 捜査 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.ntv.co.jp",
           "brief": "北海道稚内市の海域でナマコ密漁 8人目の逮捕者 容疑者の役割などを捜査（2026年7月25日掲載）",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明かさない」事件発覚前には5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - FNNプライムオンライン",
@@ -464,19 +364,19 @@
           "source": "FNNプライムオンライン",
           "published_at": "2026-07-25 11:40:00+00:00",
           "summary": "何が起きたか: 【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明かさない」事件発覚前には5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 FNNプライムオンライン",
-          "trend_reason": "逮捕｜注目度 70点｜出典: FNNプライムオンライン",
+          "trend_reason": "逮捕｜出典: FNNプライムオンライン",
           "query": "事件 事故 ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.fnn.jp",
           "brief": "【8人目】稚内ナマコ密漁事件で新たな逮捕者…漁業法違反容疑で無職の42歳男”逮捕”役割分担を捜査…警察は「認否は明…",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "ＮＡＴＯインターンの女逮捕＝中国系カナダ人、スパイ容疑 - 時事通信ニュース",
@@ -484,19 +384,19 @@
           "source": "時事通信ニュース",
           "published_at": "2026-07-25 11:24:00+00:00",
           "summary": "何が起きたか: ＮＡＴＯインターンの女逮捕＝中国系カナダ人、スパイ容疑 時事通信ニュース",
-          "trend_reason": "逮捕｜注目度 70点｜出典: 時事通信ニュース",
+          "trend_reason": "逮捕｜出典: 時事通信ニュース",
           "query": "逮捕 捜査 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://sp.m.jiji.com",
           "brief": "ＮＡＴＯインターンの女逮捕＝中国系カナダ人、スパイ容疑 時事通信ニュース",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "現金輸送中に落ちた2200万円を持ち去る 窃盗の疑いで男を逮捕 [宮城県] - 朝日新聞",
@@ -504,19 +404,19 @@
           "source": "朝日新聞",
           "published_at": "2026-07-25 08:28:44+00:00",
           "summary": "何が起きたか: 現金輸送中に落ちた2200万円を持ち去る 窃盗の疑いで男を逮捕 [宮城県] 朝日新聞",
-          "trend_reason": "逮捕｜注目度 70点｜出典: 朝日新聞",
+          "trend_reason": "逮捕｜出典: 朝日新聞",
           "query": "事件 事故 ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.asahi.com",
           "brief": "現金輸送中に落ちた2200万円を持ち去る 窃盗の疑いで男を逮捕 [宮城県] 朝日新聞",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "稚内沖でナマコ密漁疑い 8人目を逮捕 ゴムボート転覆事故巡り - 北海道新聞デジタル",
@@ -524,7 +424,7 @@
           "source": "北海道新聞デジタル",
           "published_at": "2026-07-25 14:34:21+00:00",
           "summary": "何が起きたか: 稚内沖でナマコ密漁疑い 8人目を逮捕 ゴムボート転覆事故巡り 北海道新聞デジタル",
-          "trend_reason": "逮捕｜注目度 67点｜出典: 北海道新聞デジタル",
+          "trend_reason": "逮捕｜出典: 北海道新聞デジタル",
           "query": "事件 事故 ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.hokkaido-np.co.jp",
@@ -536,7 +436,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "80代女性から現金100万円をだまし取ったか 31歳男を逮捕 息子を装い「妊娠させた女性の夫とケンカに…」とウソ 男は特殊詐欺グループのリクルーター役も担っていたか 三重県警鈴鹿署 - au Webポータル",
@@ -544,7 +444,7 @@
           "source": "au Webポータル",
           "published_at": "2026-07-25 14:26:00+00:00",
           "summary": "何が起きたか: 80代女性から現金100万円をだまし取ったか 31歳男を逮捕 息子を装い「妊娠させた女性の夫とケンカに…」とウソ 男は特殊詐欺グループのリクルーター役も担っていたか 三重県警鈴鹿署 au Webポータル",
-          "trend_reason": "逮捕｜注目度 67点｜出典: au Webポータル",
+          "trend_reason": "逮捕｜出典: au Webポータル",
           "query": "逮捕 捜査 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://article.auone.jp",
@@ -556,7 +456,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         }
       ],
       "candidate_score": 216
@@ -570,39 +470,39 @@
           "source": "TBS NEWS DIG",
           "published_at": "2026-07-25 14:57:00+00:00",
           "summary": "何が起きたか: 福島県で最大震度1の地震 福島県・檜枝岐村 TBS NEWS DIG",
-          "trend_reason": "地震｜独立2媒体｜注目度 76点｜出典: TBS NEWS DIG",
+          "trend_reason": "地震｜出典: TBS NEWS DIG",
           "query": "地震 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://newsdig.tbs.co.jp",
           "brief": "福島県で最大震度1の地震 福島県・檜枝岐村 TBS NEWS DIG",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "震度＝気象庁発表（２５日２２時５５分）震度順・市区町村別 ：地震 - oita-press.co.jp",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WV2NHR0ZqaGRxQlIyRVRoSlk2eGxUT3JQZmpBbldNY29CbkxMM1R5dUZvdFRBVWgwMFpjcDIwTHlxWWFkRGRkY09oYThGM05PeTVWTC1IbGMydEpYQ25keFdBaUVjTzZpWDd3VmFUaUtGbGZ2a1hEWNIBhAFBVV95cUxNS1BRX19EaW1FdkxRT0hidDAwNGtib0pWdjlFdDJlSFpKUVJ3aHVyV2dSRnNkOHZiejBNYVFFbHpiSGhXN05ZREVWYTl6eDNCY1hMLXA1ZTlFN3hwQjdGTDEzVlRZRm1GRm1zTExmaEszdEJDZ3lLbVNrMzVPbmtZZHFCMUo?oc=5",
           "source": "oita-press.co.jp",
           "published_at": "2026-07-25 13:58:00+00:00",
-          "summary": "何が起きたか: 震度＝気象庁発表（２５日２２時５５分）震度順・市区町村別 ：地震 - oita-press.co.jp",
-          "trend_reason": "地震・発表｜独立3媒体｜注目度 76点｜出典: oita-press.co.jp",
+          "summary": "何が起きたか: 震度＝気象庁発表（２５日２２時５５分）震度順・市区町村別 ：地震",
+          "trend_reason": "地震・発表｜出典: oita-press.co.jp",
           "query": "地震 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.oita-press.co.jp",
-          "brief": "震度＝気象庁発表（２５日２２時５５分）震度順・市区町村別 ：地震 - oita-press.co.jp",
+          "brief": "震度＝気象庁発表（２５日２２時５５分）震度順・市区町村別 ：地震",
           "importance": 2,
           "source_label": "RSS",
-          "read_level": "RSS確認",
+          "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 3,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【レベル４土砂災害危険警報】山梨県・笛吹市に発表 18:01時点 - TBS NEWS DIG",
@@ -610,19 +510,19 @@
           "source": "TBS NEWS DIG",
           "published_at": "2026-07-25 09:01:00+00:00",
           "summary": "何が起きたか: 【レベル４土砂災害危険警報】山梨県・笛吹市に発表 18:01時点 TBS NEWS DIG",
-          "trend_reason": "災害・発表｜独立2媒体｜注目度 76点｜出典: TBS NEWS DIG",
+          "trend_reason": "災害・発表｜出典: TBS NEWS DIG",
           "query": "災害 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://newsdig.tbs.co.jp",
           "brief": "【レベル４土砂災害危険警報】山梨県・笛吹市に発表 18:01時点 TBS NEWS DIG",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 76
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "【地震】福島県内で震度1 福島県会津を震源とする最大震度1の地震が発生 津波の心配なし - FNNプライムオンライン",
@@ -630,19 +530,19 @@
           "source": "FNNプライムオンライン",
           "published_at": "2026-07-25 14:57:00+00:00",
           "summary": "何が起きたか: 【地震】福島県内で震度1 福島県会津を震源とする最大震度1の地震が発生 津波の心配なし FNNプライムオンライン",
-          "trend_reason": "地震｜注目度 70点｜出典: FNNプライムオンライン",
+          "trend_reason": "地震｜出典: FNNプライムオンライン",
           "query": "地震 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.fnn.jp",
           "brief": "【地震】福島県内で震度1 福島県会津を震源とする最大震度1の地震が発生 津波の心配なし FNNプライムオンライン",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "北海道で最大震度1の地震 北海道・幌加内町 - TBS NEWS DIG",
@@ -650,19 +550,19 @@
           "source": "TBS NEWS DIG",
           "published_at": "2026-07-25 13:55:00+00:00",
           "summary": "何が起きたか: 北海道で最大震度1の地震 北海道・幌加内町 TBS NEWS DIG",
-          "trend_reason": "地震｜注目度 70点｜出典: TBS NEWS DIG",
+          "trend_reason": "地震｜出典: TBS NEWS DIG",
           "query": "地震 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://newsdig.tbs.co.jp",
           "brief": "北海道で最大震度1の地震 北海道・幌加内町 TBS NEWS DIG",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "復興の歩み表現の「ふくりん音頭」を披露 台風19号被災地の長野市長沼地区で「ながぬま夏祭り」初開催 - 信濃毎日新聞デジタル",
@@ -670,19 +570,19 @@
           "source": "信濃毎日新聞デジタル",
           "published_at": "2026-07-25 12:09:00+00:00",
           "summary": "何が起きたか: 復興の歩み表現の「ふくりん音頭」を披露 台風19号被災地の長野市長沼地区で「ながぬま夏祭り」初開催 信濃毎日新聞デジタル",
-          "trend_reason": "台風｜注目度 70点｜出典: 信濃毎日新聞デジタル",
+          "trend_reason": "台風｜出典: 信濃毎日新聞デジタル",
           "query": "台風 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.shinmai.co.jp",
           "brief": "復興の歩み表現の「ふくりん音頭」を披露 台風19号被災地の長野市長沼地区で「ながぬま夏祭り」初開催 信濃毎日新聞デ…",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         }
       ],
       "candidate_score": 228
@@ -696,7 +596,7 @@
           "source": "GAME Watch",
           "published_at": "2026-07-25 10:39:20+00:00",
           "summary": "何が起きたか: 「ファイナルファンタジーXIV」Nintendo Switch 2版は8月4日発売、1カ月間無料 GAME Watch",
-          "trend_reason": "「ファイナルファンタジーXIV」Nintendo・Switch・2版は8月4日発売｜独立2媒体｜注目度 69点｜出典: GAME Watch",
+          "trend_reason": "「ファイナルファンタジーXIV」Nintendo・Switch・2版は8月4日発売｜出典: GAME Watch",
           "query": "任天堂 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://game.watch.impress.co.jp",
@@ -707,8 +607,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 69
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "『ゴッド・オブ・ウォー: ラウフェイ』PS5の発売日が明らかになり、新作『クレイトス』ゲームも決定 - Mix Vale",
@@ -716,71 +616,11 @@
           "source": "Mix Vale",
           "published_at": "2026-07-25 10:57:30+00:00",
           "summary": "何が起きたか: 『ゴッド・オブ・ウォー: ラウフェイ』PS5の発売日が明らかになり、新作『クレイトス』ゲームも決定 Mix Vale",
-          "trend_reason": "『ゴッド・オブ・ウォー・ラウフェイ』PS5の発売日が明らかになり・新作『クレイトス』ゲームも決定｜独立2媒体｜注目度 66点｜出典: Mix Vale",
+          "trend_reason": "『ゴッド・オブ・ウォー・ラウフェイ』PS5の発売日が明らかになり・新作『クレイトス』ゲームも決定｜出典: Mix Vale",
           "query": "PlayStation after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.mixvale.com.br",
           "brief": "『ゴッド・オブ・ウォー: ラウフェイ』PS5の発売日が明らかになり、新作『クレイトス』ゲームも決定 Mix Vale",
-          "importance": 2,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 66
-        },
-        {
-          "title": "『スプラトゥーン3』は本日発売。スマートフォン向け専用サービス「イカリング3」も本日より開始。 - nintendo.com",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVkxNbVJkUzhTTUxFR1lKVnlhWWtPR2xRMFJxdHhsVUozaWZFZ3BpSGh6blo3M0lUNDZuMzNqWm1KNVkyTFpqYndaMmJBTVVtMWFNVzFTZk9HTGM1UTVVak9ETDY2SW50Z1Y3MW9Zd2EzcnNjWDJhWGRfUE9jV2R2UlB6a0xvdw?oc=5",
-          "source": "nintendo.com",
-          "published_at": "2026-07-25 09:30:25+00:00",
-          "summary": "何が起きたか: 『スプラトゥーン3』は本日発売。スマートフォン向け専用サービス「イカリング3」も本日より開始。 nintendo.com",
-          "trend_reason": "開始｜注目度 65点｜出典: nintendo.com",
-          "query": "任天堂 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://www.nintendo.com",
-          "brief": "『スプラトゥーン3』は本日発売。スマートフォン向け専用サービス「イカリング3」も本日より開始。 nintendo.…",
-          "importance": 2,
-          "source_label": "一次情報",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 65
-        },
-        {
-          "title": "『スプラトゥーン3』の有料追加コンテンツ『スプラトゥーン3 エキスパンション・パス』の発売が決定。 - nintendo.com",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMnFLTmlhejhLcjVzLTdodHRnMFl2QXlsaVcxV0prMzU1VEI2LUhOcTFxb0lhZEJkd1IwVHYwb3pHUldUemxJMHN2TWpsWTFjcXFQOFQ4X0tHeDNULVIyV2ZCeFlZdHpsaVNZWl83SGh4and5SVc5RlI4LUtXSDhSeDJxWEdvUQ",
-          "source": "nintendo.com",
-          "published_at": "2026-07-25 09:27:58+00:00",
-          "summary": "何が起きたか: 『スプラトゥーン3』の有料追加コンテンツ『スプラトゥーン3 エキスパンション・パス』の発売が決定。 nintendo.com",
-          "trend_reason": "『スプラトゥーン3』の有料追加コンテンツ『スプラトゥーン3・エキスパンション・パス』の発売が決定。｜注目度 65点｜出典: nintendo.com",
-          "query": "任天堂 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://www.nintendo.com",
-          "brief": "『スプラトゥーン3』の有料追加コンテンツ『スプラトゥーン3 エキスパンション・パス』の発売が決定。 nintend…",
-          "importance": 2,
-          "source_label": "一次情報",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 65
-        },
-        {
-          "title": "【衝撃】スイッチ2新モデル制作公式発表！ 何が変わる？ 現行のSwitch2を長持ちさせる方法も解説！ 任天堂 ニンテンドースイッチ2 Nintendo Switch2 New Model Lincoln (zDOLjBD6Cv) - Mshale",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xWXFudzdvMnF2ZXBlNi1sdk9SQVR2N2M3dnpPcThiSXQtTkFJNmhQOUtzRW1RZzVqWmxmc2dNOGNGNGJkNkxRMFp6WTBHRG1fZWJCN3FyNVl5dzd5czg3Ng?oc=5",
-          "source": "Mshale",
-          "published_at": "2026-07-25 11:59:31+00:00",
-          "summary": "何が起きたか: 【衝撃】スイッチ2新モデル制作公式発表！ 何が変わる？ 現行のSwitch2を長持ちさせる方法も解説！ 任天堂 ニンテンドースイッチ2 Nintendo Switch2 New Model Lincoln (zDOLjBD6Cv) Msh…",
-          "trend_reason": "発表｜注目度 61点｜出典: Mshale",
-          "query": "任天堂 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://mshale.com",
-          "brief": "【衝撃】スイッチ2新モデル制作公式発表！ 何が変わる？ 現行のSwitch2を長持ちさせる方法も解説！ 任天堂 ニ…",
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
@@ -788,7 +628,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "ソニー、デジタル専用PlayStation 5の日本市場での販売を終了 - Mix Vale",
@@ -796,7 +636,7 @@
           "source": "Mix Vale",
           "published_at": "2026-07-25 10:57:27+00:00",
           "summary": "何が起きたか: ソニー、デジタル専用PlayStation 5の日本市場での販売を終了 Mix Vale",
-          "trend_reason": "終了｜注目度 61点｜出典: Mix Vale",
+          "trend_reason": "終了｜出典: Mix Vale",
           "query": "PlayStation after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.mixvale.com.br",
@@ -808,7 +648,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 200
@@ -822,19 +662,19 @@
           "source": "ライブドアニュース",
           "published_at": "2026-07-25 11:50:07+00:00",
           "summary": "何が起きたか: ロシア軍がキーウ近郊をミサイル攻撃、10人死亡・約100人が負傷 (2026年7月25日掲載) ライブドアニュース",
-          "trend_reason": "死亡｜注目度 67点｜出典: ライブドアニュース",
+          "trend_reason": "死亡｜出典: ライブドアニュース",
           "query": "海外ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.livedoor.com",
           "brief": "ロシア軍がキーウ近郊をミサイル攻撃、10人死亡・約100人が負傷 (2026年7月25日掲載) ライブドアニュース",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "「違法で差別的な慣行だ」トランプ大統領がEUに高い関税を課すと警告 Googleに対する約1650億円の制裁金に報復 - ライブドアニュース",
@@ -842,19 +682,19 @@
           "source": "ライブドアニュース",
           "published_at": "2026-07-25 11:45:16+00:00",
           "summary": "何が起きたか: 「違法で差別的な慣行だ」トランプ大統領がEUに高い関税を課すと警告 Googleに対する約1650億円の制裁金に報復 ライブドアニュース",
-          "trend_reason": "Google｜注目度 67点｜出典: ライブドアニュース",
+          "trend_reason": "Google｜出典: ライブドアニュース",
           "query": "海外ニュース after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.livedoor.com",
           "brief": "「違法で差別的な慣行だ」トランプ大統領がEUに高い関税を課すと警告 Googleに対する約1650億円の制裁金に報…",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         }
       ],
       "candidate_score": 193
@@ -868,7 +708,7 @@
           "source": "Межа. Новини України.",
           "published_at": "2026-07-25 07:19:28+00:00",
           "summary": "何が起きたか: 米株市場が軟調に推移、FRBの利上げ観測とAI大手決算が重荷に Межа. Новини України.",
-          "trend_reason": "決算・AI｜注目度 67点｜出典: Межа. Новини України.",
+          "trend_reason": "決算・AI｜出典: Межа. Новини України.",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://mezha.net",
@@ -880,7 +720,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "25日の高市首相の動静 - 日本経済新聞",
@@ -888,19 +728,19 @@
           "source": "日本経済新聞",
           "published_at": "2026-07-25 13:05:00+00:00",
           "summary": "何が起きたか: 25日の高市首相の動静 日本経済新聞",
-          "trend_reason": "25日の高市首相の動静｜注目度 64点｜出典: 日本経済新聞",
+          "trend_reason": "25日の高市首相の動静｜出典: 日本経済新聞",
           "query": "経済 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.nikkei.com",
           "brief": "25日の高市首相の動静 日本経済新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "決算プラス・インパクト銘柄 【東証プライム】 … ＫＯＡ、ＯＢＣ、インソース (7月17日～23日発表分) - 株探",
@@ -908,19 +748,19 @@
           "source": "株探",
           "published_at": "2026-07-25 12:30:06+00:00",
           "summary": "何が起きたか: 決算プラス・インパクト銘柄 【東証プライム】 … ＫＯＡ、ＯＢＣ、インソース (7月17日～23日発表分) 株探",
-          "trend_reason": "決算・発表｜注目度 61点｜出典: 株探",
+          "trend_reason": "決算・発表｜出典: 株探",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://s.kabutan.jp",
           "brief": "決算プラス・インパクト銘柄 【東証プライム】 … ＫＯＡ、ＯＢＣ、インソース (7月17日～23日発表分) 株探",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "来週の東京市場、日米韓テック決算と金融政策に三重の注目――日経平均は6万3000～6万7000円を想定 - BigGo ファイナンス",
@@ -928,19 +768,19 @@
           "source": "BigGo ファイナンス",
           "published_at": "2026-07-25 10:05:00+00:00",
           "summary": "何が起きたか: 来週の東京市場、日米韓テック決算と金融政策に三重の注目――日経平均は6万3000～6万7000円を想定 BigGo ファイナンス",
-          "trend_reason": "決算｜注目度 61点｜出典: BigGo ファイナンス",
+          "trend_reason": "決算｜出典: BigGo ファイナンス",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://finance.biggo.jp",
           "brief": "来週の東京市場、日米韓テック決算と金融政策に三重の注目――日経平均は6万3000～6万7000円を想定 BigGo…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC - ｄメニューニュース",
@@ -948,19 +788,19 @@
           "source": "ｄメニューニュース",
           "published_at": "2026-07-25 08:13:00+00:00",
           "summary": "何が起きたか: 来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC ｄメニューニュース",
-          "trend_reason": "決算｜注目度 61点｜出典: ｄメニューニュース",
+          "trend_reason": "決算｜出典: ｄメニューニュース",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://topics.smt.docomo.ne.jp",
           "brief": "来週の相場で注目すべき3つのポイント：日米韓テック大手決算、日銀金融政策決定会合、米FOMC ｄメニューニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 - 山陽新聞",
@@ -968,19 +808,19 @@
           "source": "山陽新聞",
           "published_at": "2026-07-25 08:02:55+00:00",
           "summary": "何が起きたか: 岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 山陽新聞",
-          "trend_reason": "決算｜注目度 61点｜出典: 山陽新聞",
+          "trend_reason": "決算｜出典: 山陽新聞",
           "query": "企業決算 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.sanyonews.jp",
           "brief": "岡山県税収入過去最高２８７４億円 ２５年度決算見込み、個人税が全体けん引 山陽新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 192
@@ -994,7 +834,7 @@
           "source": "tbs.co.jp",
           "published_at": "2026-07-25 11:02:19+00:00",
           "summary": "何が起きたか: サタプラ [字] 試して！絹ごし豆腐★飛行機で緊急事態!?ＡＮＡ訓練施設★大行列！南極の氷 tbs.co.jp",
-          "trend_reason": "サタプラ・[字]・試して！絹ごし豆腐★飛行機で緊急事態!?ＡＮＡ訓練施設★大行列！南極の氷｜注目度 70点｜出典: tbs.co.jp",
+          "trend_reason": "サタプラ・[字]・試して！絹ごし豆腐★飛行機で緊急事態!?ＡＮＡ訓練施設★大行列！南極の氷｜出典: tbs.co.jp",
           "query": "科学 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.tbs.co.jp",
@@ -1006,7 +846,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "宇宙飛行士・油井亀美也さん、宇宙で目にした「地球の美しさ」語る (2026年7月25日掲載) - ライブドアニュース",
@@ -1014,7 +854,7 @@
           "source": "ライブドアニュース",
           "published_at": "2026-07-25 12:18:01+00:00",
           "summary": "何が起きたか: 宇宙飛行士・油井亀美也さん、宇宙で目にした「地球の美しさ」語る (2026年7月25日掲載) ライブドアニュース",
-          "trend_reason": "宇宙飛行士・油井亀美也さん・宇宙で目にした「地球の美しさ」語る・(2026年7月25日掲載)｜独立2媒体｜注目度 61点｜出典: ライブドアニュース",
+          "trend_reason": "宇宙飛行士・油井亀美也さん・宇宙で目にした「地球の美しさ」語る・(2026年7月25日掲載)｜出典: ライブドアニュース",
           "query": "宇宙 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.livedoor.com",
@@ -1025,8 +865,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "スペースX 宇宙船改良版「スターシップ」再打ち上げ 衛星20基放出し通信機能を確認 - 日刊スポーツ",
@@ -1034,7 +874,7 @@
           "source": "日刊スポーツ",
           "published_at": "2026-07-25 08:25:20+00:00",
           "summary": "何が起きたか: スペースX 宇宙船改良版「スターシップ」再打ち上げ 衛星20基放出し通信機能を確認 日刊スポーツ",
-          "trend_reason": "スペースX・宇宙船改良版「スターシップ」再打ち上げ・衛星20基放出し通信機能を確認｜独立2媒体｜注目度 61点｜出典: 日刊スポーツ",
+          "trend_reason": "スペースX・宇宙船改良版「スターシップ」再打ち上げ・衛星20基放出し通信機能を確認｜出典: 日刊スポーツ",
           "query": "宇宙 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.nikkansports.com",
@@ -1045,8 +885,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 192
@@ -1060,19 +900,19 @@
           "source": "日テレNEWS NNN",
           "published_at": "2026-07-25 08:42:00+00:00",
           "summary": "何が起きたか: 北海道根室市の断水 生活用水が全域で通水開始 ２６日昼までに飲料水も…“全面復旧”へ 日テレNEWS NNN",
-          "trend_reason": "復旧・開始｜注目度 64点｜出典: 日テレNEWS NNN",
+          "trend_reason": "復旧・開始｜出典: 日テレNEWS NNN",
           "query": "生活 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://news.ntv.co.jp",
           "brief": "北海道根室市の断水 生活用水が全域で通水開始 ２６日昼までに飲料水も…“全面復旧”へ 日テレNEWS NNN",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "本田望結＆紗来、同居生活を開始「1つのベッドで寝ている」 - ｄメニューニュース",
@@ -1080,19 +920,19 @@
           "source": "ｄメニューニュース",
           "published_at": "2026-07-25 12:54:00+00:00",
           "summary": "何が起きたか: 本田望結＆紗来、同居生活を開始「1つのベッドで寝ている」 ｄメニューニュース",
-          "trend_reason": "開始｜注目度 61点｜出典: ｄメニューニュース",
+          "trend_reason": "開始｜出典: ｄメニューニュース",
           "query": "生活 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://topics.smt.docomo.ne.jp",
           "brief": "本田望結＆紗来、同居生活を開始「1つのベッドで寝ている」 ｄメニューニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "生活保護「再減額」取り消しを 府内の利用者27人が集団審査請求／最高裁判決を無視「怒りの意思表示を」 - 京都民報Web",
@@ -1100,7 +940,7 @@
           "source": "京都民報Web",
           "published_at": "2026-07-25 12:00:16+00:00",
           "summary": "何が起きたか: 生活保護「再減額」取り消しを 府内の利用者27人が集団審査請求／最高裁判決を無視「怒りの意思表示を」 京都民報Web",
-          "trend_reason": "裁判｜注目度 61点｜出典: 京都民報Web",
+          "trend_reason": "裁判｜出典: 京都民報Web",
           "query": "生活 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.kyoto-minpo.net",
@@ -1112,7 +952,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 186
@@ -1125,32 +965,12 @@
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNVC1KUXloNURJUVR1Z1dRQkxKc1MyQjlhdFdFdDVCRl96LWppOEVtTlRpQ1I2T0dKYWxvOS1HMXhVSmw1SU1xN08xd3liRy1xRmNuUHRn",
           "source": "佐賀新聞",
           "published_at": "2026-07-25 08:20:00+00:00",
-          "summary": "何が起きたか: 龍谷中学・高校で教職員対象に金融教育セミナー 資産形成の重要性を再確認 | まちの話題",
-          "trend_reason": "龍谷中学・高校で教職員対象に金融教育セミナー・資産形成の重要性を再確認・まちの話題｜独立2媒体｜注目度 61点｜出典: 佐賀新聞",
+          "summary": "何が起きたか: 龍谷中学・高校で教職員対象に金融教育セミナー 資産形成の重要性を再確認",
+          "trend_reason": "龍谷中学・高校で教職員対象に金融教育セミナー・資産形成の重要性を再確認・まちの話題｜出典: 佐賀新聞",
           "query": "金融 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://www.saga-s.co.jp",
-          "brief": "龍谷中学・高校で教職員対象に金融教育セミナー 資産形成の重要性を再確認 | まちの話題",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "市場・企業",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
-        },
-        {
-          "title": "ハノイは一連の質の高い芸術プログラムを開始する。 - Vietnam.vn",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb3FEdWtZUzZfVTVKcGxfNzMyT2d2MUhNWkV3OGhnTW1MZmszVzU3QWhUQzJ2M1J0MWQ1MWpDUXdLeDlkQ1lyYVA4aVpaT2xSWGJ4RElxM1BtYkNEYVVVZFR1TlBjYjRqMlBNNmlaV29ZSTNwVnQ3dEdjckVCc2UwS25Kd3JDREx0QjBaRg?oc=5",
-          "source": "Vietnam.vn",
-          "published_at": "2026-07-25 07:45:03+00:00",
-          "summary": "何が起きたか: ハノイは一連の質の高い芸術プログラムを開始する。 Vietnam.vn",
-          "trend_reason": "開始｜注目度 61点｜出典: Vietnam.vn",
-          "query": "為替 after:2026-07-25 before:2026-07-26",
-          "image_url": null,
-          "source_url": "https://www.vietnam.vn",
-          "brief": "ハノイは一連の質の高い芸術プログラムを開始する。 Vietnam.vn",
+          "brief": "龍谷中学・高校で教職員対象に金融教育セミナー 資産形成の重要性を再確認",
           "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
@@ -1158,7 +978,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "ダイワ･US-REIT･オープン(毎月決算型)Bコース(為替ヘッジなし)【04312047】：基準価格・投資信託情報 - Yahoo!ファイナンス",
@@ -1166,19 +986,19 @@
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-07-25 07:44:33+00:00",
           "summary": "何が起きたか: ダイワ･US-REIT･オープン(毎月決算型)Bコース(為替ヘッジなし)【04312047】：基準価格・投資信託情報 Yahoo!ファイナンス",
-          "trend_reason": "決算｜注目度 61点｜出典: Yahoo!ファイナンス",
+          "trend_reason": "決算｜出典: Yahoo!ファイナンス",
           "query": "為替 after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://finance.yahoo.co.jp",
           "brief": "ダイワ･US-REIT･オープン(毎月決算型)Bコース(為替ヘッジなし)【04312047】：基準価格・投資信託情…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 183
@@ -1192,19 +1012,19 @@
           "source": "毎日キレイ",
           "published_at": "2026-07-25 10:26:21+00:00",
           "summary": "何が起きたか: イード、「エンタメプリント」の新コンテンツとして、『ペケペケ！ペケッツくん』のペーパークラフト「切って貼って作ろう！立体ペケッツ！」を7月25日（土）より販売開始 毎日キレイ",
-          "trend_reason": "開始｜注目度 61点｜出典: 毎日キレイ",
+          "trend_reason": "開始｜出典: 毎日キレイ",
           "query": "エンタメ after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://mainichikirei.jp",
           "brief": "イード、「エンタメプリント」の新コンテンツとして、『ペケペケ！ペケッツくん』のペーパークラフト「切って貼って作ろう…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 179
@@ -1218,7 +1038,7 @@
           "source": "アルビレックス新潟レディース",
           "published_at": "2026-07-25 12:02:14+00:00",
           "summary": "何が起きたか: JFA U-15女子サッカーリーグ2026北信越 第11節 試合結果 アルビレックス新潟レディース",
-          "trend_reason": "JFA・U-15女子サッカーリーグ2026北信越・第11節｜独立2媒体｜注目度 61点｜出典: アルビレックス新潟レディース",
+          "trend_reason": "JFA・U-15女子サッカーリーグ2026北信越・第11節｜出典: アルビレックス新潟レディース",
           "query": "サッカー after:2026-07-25 before:2026-07-26",
           "image_url": null,
           "source_url": "https://albirex-niigata-ladies.com",
@@ -1229,8 +1049,8 @@
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
+          "coverage_count": 1,
+          "selection_score": 0
         }
       ],
       "candidate_score": 179

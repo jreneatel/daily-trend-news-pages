@@ -20,19 +20,19 @@
           "source": "GIGAZINE",
           "published_at": "2026-07-19 12:00:00+00:00",
           "summary": "何が起きたか: Claude Fable 5が一部のサブスクプランで使用可能に GIGAZINE",
-          "trend_reason": "Claude｜注目度 29点｜出典: GIGAZINE",
+          "trend_reason": "Claude｜出典: GIGAZINE",
           "query": "Claude ニュース after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://gigazine.net",
           "brief": "Claude Fable 5が一部のサブスクプランで使用可能に GIGAZINE",
-          "importance": 1,
+          "importance": 2,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 29
+          "selection_score": 0
         },
         {
           "title": "「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN",
@@ -40,7 +40,7 @@
           "source": "MSN",
           "published_at": "2026-07-19 14:28:58+00:00",
           "summary": "何が起きたか: 「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に MSN",
-          "trend_reason": "Claude｜注目度 25点｜出典: MSN",
+          "trend_reason": "Claude｜出典: MSN",
           "query": "Claude ニュース after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.msn.com",
@@ -52,7 +52,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         },
         {
           "title": "「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese",
@@ -60,19 +60,19 @@
           "source": "CGTN Japanese",
           "published_at": "2026-07-19 13:08:48+00:00",
           "summary": "何が起きたか: 「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 CGTN Japanese",
-          "trend_reason": "AI・発表｜注目度 25点｜出典: CGTN Japanese",
+          "trend_reason": "AI・発表｜出典: CGTN Japanese",
           "query": "AI 規制 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://japanese.cri.cn",
           "brief": "「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 CGTN Japanese",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         }
       ],
       "candidate_score": 79
@@ -81,52 +81,12 @@
       "name": "IT業界",
       "items": [
         {
-          "title": "Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 - GAZLOG",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hdU5KNko5ZVBNZF9sUDZBd1RTQXMwa0tPekNmVnMyUXR1ZlQxa2VOeGMwV0R0YVZaYkg5a3BibTEyZVBhM2tJQlFfZ213T1kxUXJidXRIX19nMnRoTkNSTQ?oc=5",
-          "source": "GAZLOG",
-          "published_at": "2026-07-19 07:15:25+00:00",
-          "summary": "何が起きたか: Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 GAZLOG",
-          "trend_reason": "Windows・11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信｜注目度 34点｜出典: GAZLOG",
-          "query": "Microsoft ニュース after:2026-07-19 before:2026-07-20",
-          "image_url": null,
-          "source_url": "https://gazlog.jp",
-          "brief": "Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 GAZLOG",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "要注意",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 34
-        },
-        {
-          "title": "過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必要性も - MSN",
-          "url": "https://news.google.com/rss/articles/CBMi8AVBVV95cUxOaG8tUjM5UVd0MlF2MlYtLXdoMGdrNDRqVnkwN1RFWTdXb0VPMWJ4czF2X3ozWHpMN2lnYzVUMVcySnFLSDFva0pyT1l5aHBNT0xlS3lIVTg3S1FfeHZwUmNFc1FaaXJNM19IZUpVTHVfR3BJbTd0MVNjSi1mVHBnQXFUdlJaQjFjcTVOQlBSaDAtbzVFX1Byb3hydDVYUlVTaUg1NW5hOWpoZjRhQUxOdVNCV3lCbjdOZVBlaDVDZTdtcThFOFBjYnBtcUYwaFpHWlJ5Q0hGVHR3YXZFeXJzejdZTFRRd2NVRlViUnN4N002QmRaaFk5QzlFWEUwUmVHV3ZtOW5wazdiQTE5TzZtVm5pZy16MlY5c2dkYU9vT2daT0xXcmJjdnNfNklMTkRYeXRhRXZXajlSN0p5TWVxc1l3VmsySlE3LUpZN0hBRzlaOS1FYndjODNBVUpKSGR6aDNVbzc4Y2VldFEzRlhEbWlUdlVVeklkOGdTeHc3VTNoUm85VnVxUmxvWHdjbEJPcEZiSWlaTEtENF9LLWlWWmtLWm9qYmI0MmlOUnhoMzdnd09VVXVrYUpRTlNtWmE0aTcxVlZZRUVyU2VwZTNXMFc3d1VNTk9MbUZ2M05rWjBRN0J0b1EtM1NRWXpHZ3YwNkZTbTQtdGhoYWJNT3o3emdJd0NBSHZtY3IxZ1drSm9FWGg1X3lVZGNrcHNBU3ZpSWpKRngzcjlQZHFGYXEtYUJzbDVnSFUzNDQtdnl3SXNjTHdQbnNQbklPaFMzbXBySF9rdWlZM1MxMF9oRUMwM05jaUEzX1hVYkhhRUxOVlNqcXBGZGw4dXpiMzdEN1lvWG5oYVRoNTdoYnJmcDcwc1J2dXp4bldWYkVNazNNeUdXWGlxMEg4WDBLdkkzRW5iNmRsdFlMcFpiTVJTUnJsOElqT1ZzMHF0MjFfVHowVDhvTFVvVzViVFhfZzgwU0ppUXQ5bWxLZkk3SFNJZy02Zg?oc=5",
-          "source": "MSN",
-          "published_at": "2026-07-19 14:23:37+00:00",
-          "summary": "何が起きたか: 過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必要性も MSN",
-          "trend_reason": "値上げ｜注目度 25点｜出典: MSN",
-          "query": "Microsoft ニュース after:2026-07-19 before:2026-07-20",
-          "image_url": null,
-          "source_url": "https://www.msn.com",
-          "brief": "過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 25
-        },
-        {
           "title": "Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5",
           "source": "Moomoo",
           "published_at": "2026-07-19 11:59:58+00:00",
           "summary": "何が起きたか: Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 Moomoo",
-          "trend_reason": "Google｜注目度 25点｜出典: Moomoo",
+          "trend_reason": "Google｜出典: Moomoo",
           "query": "Google ニュース after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.moomoo.com",
@@ -138,7 +98,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         }
       ],
       "candidate_score": 84
@@ -152,19 +112,19 @@
           "source": "朝日新聞",
           "published_at": "2026-07-19 12:55:00+00:00",
           "summary": "何が起きたか: 副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] 朝日新聞",
-          "trend_reason": "法案｜注目度 39点｜出典: 朝日新聞",
+          "trend_reason": "法案｜出典: 朝日新聞",
           "query": "国会 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.asahi.com",
           "brief": "副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] 朝日新聞",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 39
+          "selection_score": 0
         },
         {
           "title": "東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞",
@@ -172,19 +132,19 @@
           "source": "朝日新聞",
           "published_at": "2026-07-19 13:37:00+00:00",
           "summary": "何が起きたか: 東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] 朝日新聞",
-          "trend_reason": "東京・あきる野市長に臼井氏・市政継承訴え初当選・自民・公明が推薦｜注目度 30点｜出典: 朝日新聞",
+          "trend_reason": "東京・あきる野市長に臼井氏・市政継承訴え初当選・自民・公明が推薦｜出典: 朝日新聞",
           "query": "選挙 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.asahi.com",
           "brief": "東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] 朝日新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 30
+          "selection_score": 0
         },
         {
           "title": "国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞",
@@ -192,19 +152,19 @@
           "source": "毎日新聞",
           "published_at": "2026-07-19 09:31:50+00:00",
           "summary": "何が起きたか: 国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] 毎日新聞",
-          "trend_reason": "国会前でデモ・改憲の動きなどに抗議の声・[写真特集1｜注目度 30点｜出典: 毎日新聞",
+          "trend_reason": "国会前でデモ・改憲の動きなどに抗議の声・[写真特集1｜出典: 毎日新聞",
           "query": "国会 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://mainichi.jp",
           "brief": "国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] 毎日新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 30
+          "selection_score": 0
         }
       ],
       "candidate_score": 99
@@ -218,19 +178,19 @@
           "source": "au Webポータル",
           "published_at": "2026-07-19 12:16:00+00:00",
           "summary": "何が起きたか: 栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 au Webポータル",
-          "trend_reason": "停止・死亡｜注目度 34点｜出典: au Webポータル",
+          "trend_reason": "停止・死亡｜出典: au Webポータル",
           "query": "国内ニュース after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://article.auone.jp",
           "brief": "栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 au Webポータル",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 34
+          "selection_score": 0
         },
         {
           "title": "【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE",
@@ -238,7 +198,7 @@
           "source": "SODANE",
           "published_at": "2026-07-19 13:00:36+00:00",
           "summary": "何が起きたか: 【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 SODANE",
-          "trend_reason": "裁判｜注目度 25点｜出典: SODANE",
+          "trend_reason": "裁判｜出典: SODANE",
           "query": "裁判 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://sodane.hokkaido.jp",
@@ -250,7 +210,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         },
         {
           "title": "「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル",
@@ -258,7 +218,7 @@
           "source": "au Webポータル",
           "published_at": "2026-07-19 07:00:00+00:00",
           "summary": "何が起きたか: 「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か au Webポータル",
-          "trend_reason": "「海の日」は広い範囲で厳しい暑さ・東京都心は今年初の猛暑日か｜注目度 25点｜出典: au Webポータル",
+          "trend_reason": "「海の日」は広い範囲で厳しい暑さ・東京都心は今年初の猛暑日か｜出典: au Webポータル",
           "query": "国内ニュース after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://article.auone.jp",
@@ -270,7 +230,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         }
       ],
       "candidate_score": 84
@@ -284,19 +244,19 @@
           "source": "nintendo.com",
           "published_at": "2026-07-19 12:16:54+00:00",
           "summary": "何が起きたか: スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 nintendo.com",
-          "trend_reason": "スマートフォンアプリ『My・Nintendo』がアップデート。Nintendo・Switchで最近遊んだ記録が見られるようになりました。｜注目度 31点｜出典: nintendo.com",
+          "trend_reason": "スマートフォンアプリ『My・Nintendo』がアップデート。Nintendo・Switchで最近遊んだ記録が見られるようになりました。｜出典: nintendo.com",
           "query": "任天堂 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.nintendo.com",
           "brief": "スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見ら…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 31
+          "selection_score": 0
         },
         {
           "title": "シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com",
@@ -304,19 +264,19 @@
           "source": "nintendo.com",
           "published_at": "2026-07-19 09:16:18+00:00",
           "summary": "何が起きたか: シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 nintendo.com",
-          "trend_reason": "公開｜注目度 31点｜出典: nintendo.com",
+          "trend_reason": "公開｜出典: nintendo.com",
           "query": "任天堂 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.nintendo.com",
           "brief": "シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 ninte…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 31
+          "selection_score": 0
         },
         {
           "title": "マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE",
@@ -324,7 +284,7 @@
           "source": "玩具人 TOY PEOPLE",
           "published_at": "2026-07-19 12:46:53+00:00",
           "summary": "何が起きたか: マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 玩具人 TOY PEOPLE",
-          "trend_reason": "マーベル格闘ゲーム『MARVEL・Tōkon・Fighting｜注目度 25点｜出典: 玩具人 TOY PEOPLE",
+          "trend_reason": "マーベル格闘ゲーム『MARVEL・Tōkon・Fighting｜出典: 玩具人 TOY PEOPLE",
           "query": "PlayStation after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.toy-people.com",
@@ -336,7 +296,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         }
       ],
       "candidate_score": 87
@@ -350,19 +310,19 @@
           "source": "山陽新聞",
           "published_at": "2026-07-19 09:23:54+00:00",
           "summary": "何が起きたか: 【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 山陽新聞",
-          "trend_reason": "決算・発表｜注目度 25点｜出典: 山陽新聞",
+          "trend_reason": "決算・発表｜出典: 山陽新聞",
           "query": "企業決算 after:2026-07-19 before:2026-07-20",
           "image_url": null,
           "source_url": "https://www.sanyonews.jp",
           "brief": "【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 山陽新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 25
+          "selection_score": 0
         }
       ],
       "candidate_score": 25

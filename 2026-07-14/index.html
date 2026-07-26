@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>前日トレンドニュース - 2026-07-14</title>
+  <link rel="stylesheet" href="../design-tokens.css">
   <style>
 :root {
   color-scheme: dark;
@@ -23,12 +24,15 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--dtn-font, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.55;
 }
 .skip-link {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
   position: fixed;
   left: 12px;
   top: 8px;
@@ -58,9 +62,12 @@ body {
   border-bottom: 1px solid #202234;
 }
 .brand {
+  align-items: center;
   color: #e8e8f0;
+  display: inline-flex;
   font-size: 18px;
   font-weight: 800;
+  min-height: 44px;
   text-decoration: none;
 }
 .brand::before {
@@ -92,10 +99,11 @@ body {
   gap: 4px;
   justify-content: flex-end;
 }
-.global-nav a {
+.global-nav a,
+.mobile-more summary {
   display: inline-flex;
   align-items: center;
-  min-height: 38px;
+  min-height: 44px;
   padding: 7px 9px;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -104,8 +112,24 @@ body {
   font-weight: 750;
   text-decoration: none;
 }
+.mobile-more { display: none; position: relative; }
+.mobile-more summary { cursor: pointer; list-style: none; }
+.mobile-more summary::-webkit-details-marker { display: none; }
+.mobile-more > div {
+  background: var(--bar);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  min-width: 160px;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+}
 .global-nav a:hover,
 .global-nav a:focus-visible,
+.mobile-more summary:hover,
+.mobile-more summary:focus-visible,
 .global-nav a[aria-current="page"] {
   border-color: rgba(255, 255, 255, .2);
   background: rgba(255, 255, 255, .1);
@@ -240,7 +264,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 32px;
+  min-height: 44px;
   padding: 7px 9px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -442,13 +466,18 @@ dd {
 }
 .empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
 .archive-page { max-width: 960px; }
-.archive-search {
+.archive-search,
+.search-cta {
   margin: 0 0 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
   padding: 14px;
 }
+.search-cta { align-items:center; display:flex; gap:18px; justify-content:space-between; }
+.search-cta div { display:grid; gap:3px; }
+.search-cta span { color:var(--muted); font-size:13px; }
+.search-cta a { background:var(--accent); border-radius:8px; color:#071316; flex:none; font-weight:850; min-height:44px; padding:11px 14px; }
 .archive-search label {
   display: block;
   margin-bottom: 8px;
@@ -485,6 +514,15 @@ dd {
   display: grid;
   gap: 14px;
 }
+.weekly-topics { display:grid; gap:10px; margin-bottom:20px; }
+.weekly-topics > h2 { margin-bottom:2px; }
+.weekly-topic { border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:8px; background:var(--panel); padding:14px; }
+.weekly-topic h2 { font-size:16px; margin:7px 0; }
+.weekly-topic p { color:#c7cad6; margin:0; }
+.topic-status { border-radius:999px; display:inline-flex; font-size:12px; font-weight:850; padding:3px 8px; }
+.status-新規 { background:#164e63; color:#cffafe; }.status-続報 { background:#3b3a14; color:#fef3c7; }.status-決着 { background:#14532d; color:#dcfce7; }
+.topic-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+.topic-links a { color:var(--accent-strong); font-size:13px; font-weight:800; text-decoration:underline; }
 .weekly-genre {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -577,6 +615,8 @@ dd {
     font-size: 12px;
   }
   .global-nav { grid-column: 1 / -1; justify-content: flex-start; }
+  .global-nav .desktop-extra { display: none; }
+  .mobile-more { display: block; }
   .generated-at { display: none; }
   .layout { grid-template-columns: 1fr; }
   .sidebar {
@@ -621,6 +661,8 @@ dd {
   .reason-row dt {
     color: var(--accent-strong);
   }
+  .search-cta { align-items:stretch; flex-direction:column; }
+  .search-cta a { justify-content:center; text-align:center; }
 }
 </style>
 </head>
@@ -631,9 +673,7 @@ dd {
     <time class="app-date" datetime="2026-07-14">2026-07-14</time>
     <div class="app-actions">
       <span class="generated-at">生成: 2026-07-15 06:00 JST</span>
-      <nav class="global-nav" aria-label="共通メニュー">
-        <a aria-current="page" href="../">共通ニュース</a><a href="../my/">マイニュース</a><a href="../search/">ジャンル検索</a><a href="../settings/topics/">ジャンル設定</a><a href="../settings/plan/">プラン</a><a class="login-link" href="../login/">ログイン</a>
-      </nav>
+      <nav class="global-nav" aria-label="共通メニュー"><a aria-current="page" href="../">共通ニュース</a><a href="../search/">ニュース検索</a><a href="../archive.html">アーカイブ</a><a href="../weekly.html">週次まとめ</a><a class="desktop-extra" href="../my/">マイニュース</a><details class="mobile-more"><summary>その他</summary><div><a href="../my/">マイニュース</a></div></details></nav>
     </div>
   </header>
   <main id="main" class="page">
@@ -642,7 +682,7 @@ dd {
       <h1>前日トレンドニュース</h1>
       <div class="badges">
         <span>9ジャンル</span>
-        <span>33件の記事</span>
+        <span>32件の記事</span>
       </div>
     </section>
     <div class="layout">
@@ -652,7 +692,7 @@ dd {
   <h2 id="month-2026-07">2026年7月</h2>
   <div class="calendar-grid"><span class="calendar-weekday">日</span><span class="calendar-weekday">月</span><span class="calendar-weekday">火</span><span class="calendar-weekday">水</span><span class="calendar-weekday">木</span><span class="calendar-weekday">金</span><span class="calendar-weekday">土</span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day" aria-disabled="true">1</span><span class="calendar-day" aria-disabled="true">2</span><span class="calendar-day" aria-disabled="true">3</span><span class="calendar-day" aria-disabled="true">4</span><span class="calendar-day" aria-disabled="true">5</span><span class="calendar-day" aria-disabled="true">6</span><span class="calendar-day" aria-disabled="true">7</span><span class="calendar-day" aria-disabled="true">8</span><a class="calendar-day is-linked" href="../2026-07-09/" aria-label="2026-07-09の記事">9</a><a class="calendar-day is-linked" href="../2026-07-10/" aria-label="2026-07-10の記事">10</a><a class="calendar-day is-linked" href="../2026-07-11/" aria-label="2026-07-11の記事">11</a><a class="calendar-day is-linked" href="../2026-07-12/" aria-label="2026-07-12の記事">12</a><a class="calendar-day is-linked" href="../2026-07-13/" aria-label="2026-07-13の記事">13</a><a class="calendar-day is-linked" href="../2026-07-14/" aria-label="2026-07-14の記事">14</a><a class="calendar-day is-linked" href="../2026-07-15/" aria-label="2026-07-15の記事">15</a><a class="calendar-day is-linked" href="../2026-07-16/" aria-label="2026-07-16の記事">16</a><a class="calendar-day is-linked" href="../2026-07-17/" aria-label="2026-07-17の記事">17</a><a class="calendar-day is-linked" href="../2026-07-18/" aria-label="2026-07-18の記事">18</a><a class="calendar-day is-linked" href="../2026-07-19/" aria-label="2026-07-19の記事">19</a><a class="calendar-day is-linked" href="../2026-07-20/" aria-label="2026-07-20の記事">20</a><a class="calendar-day is-linked" href="../2026-07-21/" aria-label="2026-07-21の記事">21</a><a class="calendar-day is-linked" href="../2026-07-22/" aria-label="2026-07-22の記事">22</a><a class="calendar-day is-linked" href="../2026-07-23/" aria-label="2026-07-23の記事">23</a><a class="calendar-day is-linked" href="../2026-07-24/" aria-label="2026-07-24の記事">24</a><a class="calendar-day is-linked is-latest" href="../2026-07-25/" aria-label="2026-07-25の記事">25</a><span class="calendar-day" aria-disabled="true">26</span><span class="calendar-day" aria-disabled="true">27</span><span class="calendar-day" aria-disabled="true">28</span><span class="calendar-day" aria-disabled="true">29</span><span class="calendar-day" aria-disabled="true">30</span><span class="calendar-day" aria-disabled="true">31</span></div>
 </section></div><a class="calendar-more" href="../archive.html">すべての日付</a></div><a class="side-archive" href="../archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>6件</small></a>
-<a href="#IT業界"><span>IT業界</span><small>6件</small></a>
+<a href="#IT業界"><span>IT業界</span><small>5件</small></a>
 <a href="#政治"><span>政治</span><small>6件</small></a>
 <a href="#社会"><span>社会</span><small>6件</small></a>
 <a href="#経済"><span>経済</span><small>2件</small></a>
@@ -675,7 +715,7 @@ dd {
     <h3>ソフトバンク孫会長、AIの自己進化により人類が頂点に立つ時代は終焉、超人類へと進化（ビジネス＋IT） - Yahoo!ニュース</h3>
     <p class="summary-text">ソフトバンク孫会長、AIの自己進化により人類が頂点に立つ時代は終焉、超人類へと進化（ビジネス＋IT） Yahoo!…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「ソフトバンク孫会長、AIの自己進化により人類が頂点に立つ時代は終焉、超人類へと進化（ビジネ…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: Yahoo!ニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -688,7 +728,7 @@ dd {
     <h3>ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 - Bloomberg.com</h3>
     <p class="summary-text">ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 Bloomberg.com</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 Bloomberg.…」と伝えています。出典: Bloomberg.com</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: Bloomberg.com</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -701,7 +741,7 @@ dd {
     <h3>京都銀行、AIで不正取引検知（時事通信） - Yahoo!ニュース</h3>
     <p class="summary-text">京都銀行、AIで不正取引検知（時事通信） Yahoo!ニュース</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「京都銀行、AIで不正取引検知（時事通信） Yahoo!ニュース」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: Yahoo!ニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -710,11 +750,11 @@ dd {
   <img class="thumb" src="../assets/thumbs/7bda8b30454508de.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経クロステック · 09:27</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>【PR】生成AIの価格破壊、アリババクラウドの戦略 - 日経クロステック</h3>
     <p class="summary-text">【PR】生成AIの価格破壊、アリババクラウドの戦略 日経クロステック</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「【PR】生成AIの価格破壊、アリババクラウドの戦略 日経クロステック」と伝えています。出典: 日経クロステック</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜出典: 日経クロステック</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -725,9 +765,9 @@ dd {
     <div class="meta"><span>NHKニュース · 08:47</span><span class="read-state">未読</span></div>
     <div class="labels"><span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>高性能AI「クロード・ミュトス」 証言からその正体に迫る | NHKニュース | 生成AI・人工知能、IT・ネット、深掘りコンテンツ - NHKニュース</h3>
-    <p class="summary-text">高性能AI「クロード・ミュトス」 証言からその正体に迫る | NHKニュース</p>
+    <p class="summary-text">高性能AI「クロード・ミュトス」 証言からその正体に迫る</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「高性能AI「クロード・ミュトス」 証言からその正体に迫る | NHKニュース」と伝えています。出典: NHKニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜出典: NHKニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -740,7 +780,7 @@ dd {
     <h3>富士通、最新AIと実践知でレガシーシステムの刷新加速 - 日刊工業新聞</h3>
     <p class="summary-text">富士通、最新AIと実践知でレガシーシステムの刷新加速 日刊工業新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。RSS説明文では「富士通、最新AIと実践知でレガシーシステムの刷新加速 日刊工業新聞」と伝えています。出典: 日刊工業新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: 日刊工業新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -749,7 +789,7 @@ dd {
 <details class="genre tone-tech" open>
   <summary class="genre-head">
     <h2 id="IT業界">IT業界</h2>
-    <span>6 topics</span>
+    <span>5 topics</span>
   </summary>
   <div class="grid"><a id="article-005fa4c4c91db955" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNajlYOUZZaVlhbHdRZmxKLWpMUlFtb1JzZFFsWDdKbkRlTWYya3ByY2daNDk3TGkwcVVQbHg1T1p4ZFVrLTVqeXNyd09MWmFfZ2JRVzRXMUxVYXVySGF4TVEyS3I0VlJraUxrU0hCODJETDJuTVI4WEIwZUFubm8tWWlacG1rZ21FLXNfUkxPY043Q0tqVzhJR1pYSTRNZy1FYlphdU1IWGFwUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNajlYOUZZaVlhbHdRZmxKLWpMUlFtb1JzZFFsWDdKbkRlTWYya3ByY2daNDk3TGkwcVVQbHg1T1p4ZFVrLTVqeXNyd09MWmFfZ2JRVzRXMUxVYXVySGF4TVEyS3I0VlJraUxrU0hCODJETDJuTVI4WEIwZUFubm8tWWlacG1rZ21FLXNfUkxPY043Q0tqVzhJR1pYSTRNZy1FYlphdU1IWGFwUQ?oc=5" data-title="$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 - Moomoo" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/2eb26082e0c0ae12.svg" alt="" loading="lazy">
@@ -759,7 +799,7 @@ dd {
     <h3>$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 Moomoo</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 Moomoo」と伝えています。出典: Moomoo</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>$マイクロン・テクノロジー・(MU.US)$・ケビン・ウォッシュ氏スピーチ要約｜出典: Moomoo</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -772,7 +812,7 @@ dd {
     <h3>ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ - 時事ドットコム</h3>
     <p class="summary-text">ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ 時事ドットコム</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展…」と伝えています。出典: 時事ドットコム</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>ロジザード・業界最大級のオンライン展示会『ITトレンドEXPO2026・Summer』出展のお知らせ｜出典: 時事ドットコム</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -785,7 +825,7 @@ dd {
     <h3>GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強まる IT業界出社回帰加速 - coki.jp</h3>
     <p class="summary-text">GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強まる IT業界出社回帰加…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強…」と伝えています。出典: coki.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>GMO・在宅勤務を完全に廃止・熊谷代表「トータルではマイナス」｜出典: coki.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -798,20 +838,7 @@ dd {
     <h3>【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」 - IT業界を中心に働き方の議論が活発化 - Yahoo!ニュース</h3>
     <p class="summary-text">【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」」と伝えています。出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-49a5a586630b6838" class="card tone-tech" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1DWkN2LXdkZjBUMEdHM0N1R3BMa1ZTb3JkbzRLQ3NRUzhiSkNyVG1HUlhFd05oNDhnRUdQTHhnaDQwQjZqRUJwdDlkN0JPZTNFem9vbnNKRmxkemxlOEtIa09FM204VjNvZHk4?oc=5" rel="noopener noreferrer" target="_blank" aria-label="共同通信ＰＲワイヤー - 山形新聞を読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE1DWkN2LXdkZjBUMEdHM0N1R3BMa1ZTb3JkbzRLQ3NRUzhiSkNyVG1HUlhFd05oNDhnRUdQTHhnaDQwQjZqRUJwdDlkN0JPZTNFem9vbnNKRmxkemxlOEtIa09FM204VjNvZHk4?oc=5" data-title="共同通信ＰＲワイヤー - 山形新聞" data-genre="IT業界">
-  <img class="thumb" src="../assets/thumbs/d49250736b08da39.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>山形新聞 · 07:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>共同通信ＰＲワイヤー - 山形新聞</h3>
-    <p class="summary-text">共同通信ＰＲワイヤー 山形新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「共同通信ＰＲワイヤー 山形新聞」と伝えています。出典: 山形新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」・IT業界を中心に働き方の議論が活発化｜出典: Yahoo!ニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -824,7 +851,7 @@ dd {
     <h3>「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がITトレンド上半期ランキング2026で1位を獲得しました - ニコニコニュース</h3>
     <p class="summary-text">「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がITトレンド上半期ランキン…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がI…」と伝えています。出典: ニコニコニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>「FLESPEEQ・Web・Access」および「FLESPEEQ｜出典: ニコニコニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -843,7 +870,7 @@ dd {
     <h3>「なお一層の検討を」 国民投票法改正案、成立見通しに識者は - 毎日新聞</h3>
     <p class="summary-text">「なお一層の検討を」 国民投票法改正案、成立見通しに識者は 毎日新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「なお一層の検討を」 国民投票法改正案、成立見通しに識者は 毎日新聞」と伝えています。出典: 毎日新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>「なお一層の検討を」・国民投票法改正案・成立見通しに識者は｜出典: 毎日新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -856,7 +883,7 @@ dd {
     <h3>帰国報告会開催：日米次世代政治交流プログラム（26年度） - 公益財団法人日本国際交流センター JCIE</h3>
     <p class="summary-text">帰国報告会開催：日米次世代政治交流プログラム（26年度） 公益財団法人日本国際交流センター JCIE</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「帰国報告会開催：日米次世代政治交流プログラム（26年度） 公益財団法人日本国際交流センター…」と伝えています。出典: 公益財団法人日本国際交流センター JCIE</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>帰国報告会開催・日米次世代政治交流プログラム（26年度）｜出典: 公益財団法人日本国際交流センター JCIE</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -869,7 +896,7 @@ dd {
     <h3>【取材メモ】後藤斎参院議員 - sannichi.co.jp</h3>
     <p class="summary-text">【取材メモ】後藤斎参院議員 sannichi.co.jp</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「【取材メモ】後藤斎参院議員 sannichi.co.jp」と伝えています。出典: sannichi.co.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>【取材メモ】後藤斎参院議員｜出典: sannichi.co.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -878,11 +905,11 @@ dd {
   <img class="thumb" src="../assets/thumbs/6655c3569de57df6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 - TBS NEWS DIG</h3>
     <p class="summary-text">中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 TBS NEWS DIG</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 TBS NEWS DIG」と伝えています。出典: TBS NEWS DIG</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定｜出典: TBS NEWS DIG</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -895,7 +922,7 @@ dd {
     <h3>中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 - 日本経済新聞</h3>
     <p class="summary-text">中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 日本経済新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 日本経済新聞」と伝えています。出典: 日本経済新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>中国共産党・馬興瑞政治局員の党籍剝奪・党大会にらみ「反腐敗」徹底｜出典: 日本経済新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -908,7 +935,7 @@ dd {
     <h3>「キラリ☆とっとり育星塾」開講・第1回講座開催 - jimin.jp</h3>
     <p class="summary-text">「キラリ☆とっとり育星塾」開講・第1回講座開催 jimin.jp</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「「キラリ☆とっとり育星塾」開講・第1回講座開催 jimin.jp」と伝えています。出典: jimin.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>「キラリ☆とっとり育星塾」開講・第1回講座開催｜出典: jimin.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -927,7 +954,7 @@ dd {
     <h3>生ゴミ、ゼロ社会の実現 | 一家に一台コンポストの普及を！ - キャンプファイヤー</h3>
     <p class="summary-text">生ゴミ、ゼロ社会の実現</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「生ゴミ、ゼロ社会の実現」と伝えています。出典: キャンプファイヤー</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>生ゴミ・ゼロ社会の実現・一家に一台コンポストの普及を！｜出典: キャンプファイヤー</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -940,7 +967,7 @@ dd {
     <h3>共同通信 日野町事件再審めぐり誤報 担当デスクら処分 - NHKニュース</h3>
     <p class="summary-text">共同通信 日野町事件再審めぐり誤報 担当デスクら処分 NHKニュース</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「共同通信 日野町事件再審めぐり誤報 担当デスクら処分 NHKニュース」と伝えています。出典: NHKニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>共同通信・日野町事件再審めぐり誤報・担当デスクら処分｜出典: NHKニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
     </dl>
   </div>
@@ -951,9 +978,9 @@ dd {
     <div class="meta"><span>chuo-u.ac.jp · 13:51</span><span class="read-state">未読</span></div>
     <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学副学長小野太一先生による特別講義を実施 - chuo-u.ac.jp</h3>
-    <p class="summary-text">フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学副学長小野太一先生による特別講義を実施 - chuo-u.ac.jp</p>
+    <p class="summary-text">フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。本文候補を取得できないため、詳細は元記事で確認してください。出典: chuo-u.ac.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>フィールドラーニング（戦略1・2）にて・社会保障・人口構造の専門家・元厚生労働省社会保障調査官・政策研究大学院大学副学長小野太一先生による特別講義を実施｜出典: chuo-u.ac.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -966,7 +993,7 @@ dd {
     <h3>日野町事件の再審公判 検察側、追加の証拠開示は「不要」 - 毎日新聞</h3>
     <p class="summary-text">日野町事件の再審公判 検察側、追加の証拠開示は「不要」 毎日新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「日野町事件の再審公判 検察側、追加の証拠開示は「不要」 毎日新聞」と伝えています。出典: 毎日新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>日野町事件の再審公判・検察側・追加の証拠開示は「不要」｜出典: 毎日新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
     </dl>
   </div>
@@ -979,7 +1006,7 @@ dd {
     <h3>令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について - pref.chiba.lg.jp</h3>
     <p class="summary-text">令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について pref.chiba.lg.…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について pr…」と伝えています。出典: pref.chiba.lg.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>令和7年度千葉県男女共同参画・多様性社会推進事業所表彰・受賞事業所及び表彰式について｜出典: pref.chiba.lg.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -988,11 +1015,11 @@ dd {
   <img class="thumb" src="../assets/thumbs/3402708cce71715a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗傷害事件にも関与か 合同捜査本部 - TBS NEWS DIG</h3>
     <p class="summary-text">おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗傷害事件にも関与か 合同…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗…」と伝えています。出典: TBS NEWS DIG</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: TBS NEWS DIG</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
     </dl>
   </div>
@@ -1011,7 +1038,7 @@ dd {
     <h3>田中精密工業(株)【7218】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス</h3>
     <p class="summary-text">田中精密工業(株)【7218】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>企業活動や市場の見方に影響しやすい話題です。RSS説明文では「田中精密工業(株)【7218】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス」と伝えています。出典: Yahoo!ファイナンス</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>株価｜出典: Yahoo!ファイナンス</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
     </dl>
   </div>
@@ -1024,7 +1051,7 @@ dd {
     <h3>経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよびSaaSベンダーが直面する要求事項と実務戦略｜弁護士、弁理士、情報処理技術者、CFE吉澤尚 - note</h3>
     <p class="summary-text">経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよびSaaSベンダーが直面…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよ…」と伝えています。出典: note</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容・SIerおよびSaaSベンダーが直面する要求事項と実務戦略｜弁護士・弁理士｜出典: note</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
     </dl>
   </div>
@@ -1039,11 +1066,11 @@ dd {
   <img class="thumb" src="../assets/thumbs/b2335a9fc75949fd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>西日本新聞me · 14:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"><span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>スポーツ(全国・海外ニュース)写真｜1265ページ目 - 西日本新聞me</h3>
     <p class="summary-text">スポーツ(全国・海外ニュース)写真</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「スポーツ(全国・海外ニュース)写真」と伝えています。出典: 西日本新聞me</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>スポーツ(全国・海外ニュース)写真｜1265ページ目｜出典: 西日本新聞me</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1056,7 +1083,7 @@ dd {
     <h3>クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 - テレ朝NEWS</h3>
     <p class="summary-text">クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 テレ朝NEWS</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 テレ朝N…」と伝えています。出典: テレ朝NEWS</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>クロマグロ国際会議・メキシコ反発で漁獲枠増ならず・今後協議継続も「極めて難しい」｜出典: テレ朝NEWS</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1075,7 +1102,7 @@ dd {
     <h3>MIXI × REAL AKIBA - ニコニコニュース</h3>
     <p class="summary-text">MIXI × REAL AKIBA ニコニコニュース</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「MIXI × REAL AKIBA ニコニコニュース」と伝えています。出典: ニコニコニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>MIXI・REAL・AKIBA｜出典: ニコニコニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1088,7 +1115,7 @@ dd {
     <h3>『わがまち散歩』 - BSフジ</h3>
     <p class="summary-text">『わがまち散歩』 BSフジ</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「『わがまち散歩』 BSフジ」と伝えています。出典: BSフジ</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>『わがまち散歩』｜出典: BSフジ</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1105,9 +1132,9 @@ dd {
     <div class="meta"><span>kansai-u.ac.jp · 14:54</span><span class="read-state">未読</span></div>
     <div class="labels"><span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！ - kansai-u.ac.jp</h3>
-    <p class="summary-text">【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！ - kansai-u.ac.jp</p>
+    <p class="summary-text">【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>実務利用や企業導入の判断材料になりやすい話題です。本文候補を取得できないため、詳細は元記事で確認してください。出典: kansai-u.ac.jp</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: kansai-u.ac.jp</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1120,7 +1147,7 @@ dd {
     <h3>スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 - Yahoo!ニュース</h3>
     <p class="summary-text">スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 Y…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来て…」と伝えています。出典: Yahoo!ニュース</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏・ナインとの3カ月を振り返り「来てよかった」・兵庫大会｜出典: Yahoo!ニュース</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1139,7 +1166,7 @@ dd {
     <h3>北海道科学大学と歌手・野口五郎氏が共同研究を開始 - Digital PR Platform</h3>
     <p class="summary-text">北海道科学大学と歌手・野口五郎氏が共同研究を開始 Digital PR Platform</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>前日の動向として押さえておきたい話題です。RSS説明文では「北海道科学大学と歌手・野口五郎氏が共同研究を開始 Digital PR Platform」と伝えています。出典: Digital PR Platform</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>開始｜出典: Digital PR Platform</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -1147,7 +1174,6 @@ dd {
 </details>
       </div>
     </div>
-    <div class="page-actions"><button class="analytics-export" type="button">閲覧データをJSON保存</button></div>
   </main>
   <script>
 (() => {
@@ -1179,16 +1205,6 @@ dd {
       setReadState(card, true);
       saveRead();
       saveClicks();
-    });
-  });
-  document.querySelectorAll(".analytics-export").forEach((button) => {
-    button.addEventListener("click", () => {
-      const blob = new Blob([localStorage.getItem(clickKey) || "{}"], {type: "application/json"});
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "daily-trend-news-clicks.json";
-      link.click();
-      URL.revokeObjectURL(link.href);
     });
   });
 })();

@@ -20,7 +20,7 @@
           "source": "thinkit.co.jp",
           "published_at": "2026-07-24 12:40:26+00:00",
           "summary": "何が起きたか: 【AIが“穴”を探し出す】脆弱性発見AI「Mythos」が企業に問うもの thinkit.co.jp",
-          "trend_reason": "脆弱性・AI｜注目度 67点｜出典: thinkit.co.jp",
+          "trend_reason": "脆弱性・AI｜出典: thinkit.co.jp",
           "query": "企業 生成AI 導入 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://thinkit.co.jp",
@@ -32,7 +32,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "AIに仕事を奪われた私が、ChatGPTを「頼もしい相棒」に変えて転職に成功した話 (ライフハッカー・ジャパン) - Yahoo!ニュース",
@@ -40,19 +40,19 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-24 12:41:01+00:00",
           "summary": "何が起きたか: AIに仕事を奪われた私が、ChatGPTを「頼もしい相棒」に変えて転職に成功した話 (ライフハッカー・ジャパン) Yahoo!ニュース",
-          "trend_reason": "ChatGPT｜独立2媒体｜注目度 66点｜出典: Yahoo!ニュース",
+          "trend_reason": "ChatGPT｜出典: Yahoo!ニュース",
           "query": "ChatGPT ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
           "brief": "AIに仕事を奪われた私が、ChatGPTを「頼もしい相棒」に変えて転職に成功した話 (ライフハッカー・ジャパン)…",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 66
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "ChatGPT iPhoneユーザー向けに大きなアップデートが行われます。 Apple ズドラヴィ - Letem světem Applem",
@@ -60,7 +60,7 @@
           "source": "Letem světem Applem",
           "published_at": "2026-07-24 14:11:57+00:00",
           "summary": "何が起きたか: ChatGPT iPhoneユーザー向けに大きなアップデートが行われます。 Apple ズドラヴィ Letem světem Applem",
-          "trend_reason": "ChatGPT・Apple｜注目度 61点｜出典: Letem světem Applem",
+          "trend_reason": "ChatGPT・Apple｜出典: Letem světem Applem",
           "query": "ChatGPT ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.letemsvetemapplem.eu",
@@ -72,7 +72,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "脳科学×AIで「伸びる人」を発掘「AI活用適性診断」正式リリース・提供開始 - ニコニコニュース",
@@ -80,19 +80,19 @@
           "source": "ニコニコニュース",
           "published_at": "2026-07-24 12:30:26+00:00",
           "summary": "何が起きたか: 脳科学×AIで「伸びる人」を発掘「AI活用適性診断」正式リリース・提供開始 ニコニコニュース",
-          "trend_reason": "AI・開始｜注目度 61点｜出典: ニコニコニュース",
+          "trend_reason": "AI・開始｜出典: ニコニコニュース",
           "query": "企業 生成AI 導入 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.nicovideo.jp",
           "brief": "脳科学×AIで「伸びる人」を発掘「AI活用適性診断」正式リリース・提供開始 ニコニコニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "OpenAIが最新AIエージェントを発表！ 1回頼めば自動でパソコン画面を操作し仕事が一瞬で終わる - DXマガジン",
@@ -100,19 +100,19 @@
           "source": "DXマガジン",
           "published_at": "2026-07-24 11:33:32+00:00",
           "summary": "何が起きたか: OpenAIが最新AIエージェントを発表！ 1回頼めば自動でパソコン画面を操作し仕事が一瞬で終わる DXマガジン",
-          "trend_reason": "OpenAI・発表｜注目度 61点｜出典: DXマガジン",
+          "trend_reason": "OpenAI・発表｜出典: DXマガジン",
           "query": "生成AI 最新 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://dxmagazine.jp",
           "brief": "OpenAIが最新AIエージェントを発表！ 1回頼めば自動でパソコン画面を操作し仕事が一瞬で終わる DXマガジン",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "01.AIは「中国版OpenAI」を捨てて上場できるのか 李開復が選んだ中国AIの現実路線｜吉川真人＠中国テックトレンドニュース - note",
@@ -120,7 +120,7 @@
           "source": "note",
           "published_at": "2026-07-24 11:05:39+00:00",
           "summary": "何が起きたか: 01.AIは「中国版OpenAI」を捨てて上場できるのか 李開復が選んだ中国AIの現実路線",
-          "trend_reason": "OpenAI｜注目度 61点｜出典: note",
+          "trend_reason": "OpenAI｜出典: note",
           "query": "AI トレンド after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://note.com",
@@ -132,7 +132,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 194
@@ -146,7 +146,7 @@
           "source": "オートメーション新聞",
           "published_at": "2026-07-24 09:13:22+00:00",
           "summary": "何が起きたか: 福西電機、7/24にグランフロント大阪で製造業のサイバーセキュリティ規制対応セミナー オートメーション新聞",
-          "trend_reason": "セキュリティ・規制｜注目度 67点｜出典: オートメーション新聞",
+          "trend_reason": "セキュリティ・規制｜出典: オートメーション新聞",
           "query": "サイバーセキュリティ after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.automation-news.jp",
@@ -158,7 +158,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック",
@@ -166,19 +166,19 @@
           "source": "日経クロステック",
           "published_at": "2026-07-24 12:48:49+00:00",
           "summary": "何が起きたか: MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う 日経クロステック",
-          "trend_reason": "AI・Google｜注目度 64点｜出典: 日経クロステック",
+          "trend_reason": "AI・Google｜出典: 日経クロステック",
           "query": "Google ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://xtech.nikkei.com",
           "brief": "MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う 日経クロステック",
-          "importance": 1,
+          "importance": 2,
           "source_label": "専門メディア",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "◎サイバーセキュリティアンバサダー任命 - 時事通信ニュース",
@@ -186,19 +186,19 @@
           "source": "時事通信ニュース",
           "published_at": "2026-07-24 08:06:00+00:00",
           "summary": "何が起きたか: ◎サイバーセキュリティアンバサダー任命 時事通信ニュース",
-          "trend_reason": "セキュリティ｜独立2媒体｜注目度 64点｜出典: 時事通信ニュース",
+          "trend_reason": "セキュリティ｜出典: 時事通信ニュース",
           "query": "サイバーセキュリティ after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://sp.m.jiji.com",
           "brief": "◎サイバーセキュリティアンバサダー任命 時事通信ニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 64
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "Google、アカウントログイン方法に「自撮り動画」を追加 ロックアウト時の復旧を容易に - 産経ニュース",
@@ -206,19 +206,19 @@
           "source": "産経ニュース",
           "published_at": "2026-07-24 08:00:00+00:00",
           "summary": "何が起きたか: Google、アカウントログイン方法に「自撮り動画」を追加 ロックアウト時の復旧を容易に 産経ニュース",
-          "trend_reason": "復旧・Google｜注目度 64点｜出典: 産経ニュース",
+          "trend_reason": "復旧・Google｜出典: 産経ニュース",
           "query": "Google ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.sankei.com",
           "brief": "Google、アカウントログイン方法に「自撮り動画」を追加 ロックアウト時の復旧を容易に 産経ニュース",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース) - Yahoo!ファイナンス",
@@ -226,7 +226,7 @@
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-07-24 13:09:00+00:00",
           "summary": "何が起きたか: アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース) Yahoo!ファイナンス",
-          "trend_reason": "アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース)｜独立2媒体｜注目度 61点｜出典: Yahoo!ファイナンス",
+          "trend_reason": "アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース)｜出典: Yahoo!ファイナンス",
           "query": "テクノロジー ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://finance.yahoo.co.jp",
@@ -237,28 +237,8 @@
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
-        },
-        {
-          "title": "ケップル、日本経済新聞社が発表する「2026年上期の国内スタートアップ調達額ランキング」の制作に協力 - ニコニコニュース",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Ub3F6UmsxNFpRd0UtQ1E4QmJzSFdnTFA0bXVvd1FwdHd6enR3RnFvRnJxdEZVMjYtTGpqTm10ZUtueF9yY2VhUkJaNlE0cHFrYVNpMk9tc0RQOFdwY3dueUUycWRwRmdEV1NNcUc1OHJ5T284LUh5NlY4WQ?oc=5",
-          "source": "ニコニコニュース",
-          "published_at": "2026-07-24 09:00:31+00:00",
-          "summary": "何が起きたか: ケップル、日本経済新聞社が発表する「2026年上期の国内スタートアップ調達額ランキング」の制作に協力 ニコニコニュース",
-          "trend_reason": "発表｜注目度 61点｜出典: ニコニコニュース",
-          "query": "スタートアップ 資金調達 after:2026-07-24 before:2026-07-25",
-          "image_url": null,
-          "source_url": "https://news.nicovideo.jp",
-          "brief": "ケップル、日本経済新聞社が発表する「2026年上期の国内スタートアップ調達額ランキング」の制作に協力 ニコニコニュ…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "市場・企業",
-          "bookmark_count": 0,
-          "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 195
@@ -272,7 +252,7 @@
           "source": "立憲民主党",
           "published_at": "2026-07-24 12:32:00+00:00",
           "summary": "何が起きたか: 【参院沖北特委】副首都法案、付帯決議に住民投票と通常選挙の同日選「重複しないように調整する」盛り込む 立憲民主党",
-          "trend_reason": "法案｜注目度 67点｜出典: 立憲民主党",
+          "trend_reason": "法案｜出典: 立憲民主党",
           "query": "選挙 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://cdp-japan.jp",
@@ -284,7 +264,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "副首都法が成立 与党提出、野党は反対―特別国会、事実上閉幕 - 時事ドットコム",
@@ -292,19 +272,19 @@
           "source": "時事ドットコム",
           "published_at": "2026-07-24 13:56:00+00:00",
           "summary": "何が起きたか: 副首都法が成立 与党提出、野党は反対―特別国会、事実上閉幕 時事ドットコム",
-          "trend_reason": "副首都法が成立・与党提出・野党は反対―特別国会｜注目度 64点｜出典: 時事ドットコム",
+          "trend_reason": "副首都法が成立・与党提出・野党は反対―特別国会｜出典: 時事ドットコム",
           "query": "国会 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.jiji.com",
           "brief": "副首都法が成立 与党提出、野党は反対―特別国会、事実上閉幕 時事ドットコム",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "「異例の国会」が事実上閉会 高市首相出席の集中審議は近年の半分 [高市早苗首相] - 朝日新聞",
@@ -312,19 +292,19 @@
           "source": "朝日新聞",
           "published_at": "2026-07-24 13:30:00+00:00",
           "summary": "何が起きたか: 「異例の国会」が事実上閉会 高市首相出席の集中審議は近年の半分 [高市早苗首相] 朝日新聞",
-          "trend_reason": "「異例の国会」が事実上閉会・高市首相出席の集中審議は近年の半分・[高市早苗首相]｜注目度 64点｜出典: 朝日新聞",
+          "trend_reason": "「異例の国会」が事実上閉会・高市首相出席の集中審議は近年の半分・[高市早苗首相]｜出典: 朝日新聞",
           "query": "国会 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.asahi.com",
           "brief": "「異例の国会」が事実上閉会 高市首相出席の集中審議は近年の半分 [高市早苗首相] 朝日新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "副首都法が成立 国会閉会へ 高市首相、強硬な国会運営に終始 - 毎日新聞",
@@ -332,19 +312,19 @@
           "source": "毎日新聞",
           "published_at": "2026-07-24 12:52:16+00:00",
           "summary": "何が起きたか: 副首都法が成立 国会閉会へ 高市首相、強硬な国会運営に終始 毎日新聞",
-          "trend_reason": "副首都法が成立・国会閉会へ・高市首相｜注目度 64点｜出典: 毎日新聞",
+          "trend_reason": "副首都法が成立・国会閉会へ・高市首相｜出典: 毎日新聞",
           "query": "国会 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://mainichi.jp",
           "brief": "副首都法が成立 国会閉会へ 高市首相、強硬な国会運営に終始 毎日新聞",
-          "importance": 1,
+          "importance": 2,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "制度・政治",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         }
       ],
       "candidate_score": 195
@@ -358,7 +338,7 @@
           "source": "TBS NEWS DIG",
           "published_at": "2026-07-24 09:29:00+00:00",
           "summary": "何が起きたか: ため池小1男児死亡の損害賠償裁判 市側は一部責任を認めるも原告の過失を主張 宮城・栗原市 TBS NEWS DIG",
-          "trend_reason": "裁判｜注目度 70点｜出典: TBS NEWS DIG",
+          "trend_reason": "裁判｜出典: TBS NEWS DIG",
           "query": "裁判 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://newsdig.tbs.co.jp",
@@ -370,7 +350,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "宮古島市贈収賄事件 逮捕の市職員ら2人送検 - QAB 琉球朝日放送",
@@ -378,7 +358,7 @@
           "source": "QAB 琉球朝日放送",
           "published_at": "2026-07-24 13:03:01+00:00",
           "summary": "何が起きたか: 宮古島市贈収賄事件 逮捕の市職員ら2人送検 QAB 琉球朝日放送",
-          "trend_reason": "逮捕｜注目度 67点｜出典: QAB 琉球朝日放送",
+          "trend_reason": "逮捕｜出典: QAB 琉球朝日放送",
           "query": "逮捕 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.qab.co.jp",
@@ -390,7 +370,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "国会あす会期末 駆け引きは夜まで続くか 「副首都法案」めぐり与野党の攻防が最終局面 - au Webポータル",
@@ -398,7 +378,7 @@
           "source": "au Webポータル",
           "published_at": "2026-07-24 07:11:00+00:00",
           "summary": "何が起きたか: 国会あす会期末 駆け引きは夜まで続くか 「副首都法案」めぐり与野党の攻防が最終局面 au Webポータル",
-          "trend_reason": "法案｜注目度 67点｜出典: au Webポータル",
+          "trend_reason": "法案｜出典: au Webポータル",
           "query": "国内ニュース after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://article.auone.jp",
@@ -410,7 +390,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "最高裁判決を踏まえた生活保護費等の追加給付について - city.gosen.lg.jp",
@@ -418,7 +398,7 @@
           "source": "city.gosen.lg.jp",
           "published_at": "2026-07-24 08:33:38+00:00",
           "summary": "何が起きたか: 最高裁判決を踏まえた生活保護費等の追加給付について city.gosen.lg.jp",
-          "trend_reason": "裁判｜注目度 61点｜出典: city.gosen.lg.jp",
+          "trend_reason": "裁判｜出典: city.gosen.lg.jp",
           "query": "裁判 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.city.gosen.lg.jp",
@@ -430,7 +410,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 204
@@ -444,19 +424,19 @@
           "source": "産経ニュース",
           "published_at": "2026-07-24 10:09:00+00:00",
           "summary": "何が起きたか: 「これから強盗に行く」 職務質問で闇バイト発覚 男ら3人を現行犯逮捕 トクリュウか 産経ニュース",
-          "trend_reason": "逮捕｜注目度 70点｜出典: 産経ニュース",
+          "trend_reason": "逮捕｜出典: 産経ニュース",
           "query": "逮捕 捜査 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.sankei.com",
           "brief": "「これから強盗に行く」 職務質問で闇バイト発覚 男ら3人を現行犯逮捕 トクリュウか 産経ニュース",
-          "importance": 2,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 70
+          "selection_score": 0
         },
         {
           "title": "詐欺など疑いで逮捕の司法書士男性、不起訴 京都地検「捜査尽くした結果」 - 京都新聞デジタル",
@@ -464,7 +444,7 @@
           "source": "京都新聞デジタル",
           "published_at": "2026-07-24 09:40:00+00:00",
           "summary": "何が起きたか: 詐欺など疑いで逮捕の司法書士男性、不起訴 京都地検「捜査尽くした結果」 京都新聞デジタル",
-          "trend_reason": "逮捕｜注目度 67点｜出典: 京都新聞デジタル",
+          "trend_reason": "逮捕｜出典: 京都新聞デジタル",
           "query": "逮捕 捜査 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.kyoto-np.co.jp",
@@ -476,7 +456,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "【キャッシュカードを袋に】台湾籍の男（35歳）逮捕、ニセ警察官詐欺 - にいがた経済新聞",
@@ -484,7 +464,7 @@
           "source": "にいがた経済新聞",
           "published_at": "2026-07-24 09:09:35+00:00",
           "summary": "何が起きたか: 【キャッシュカードを袋に】台湾籍の男（35歳）逮捕、ニセ警察官詐欺 にいがた経済新聞",
-          "trend_reason": "逮捕｜注目度 67点｜出典: にいがた経済新聞",
+          "trend_reason": "逮捕｜出典: にいがた経済新聞",
           "query": "逮捕 捜査 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.niikei.jp",
@@ -496,7 +476,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "北陸先端科学技術大学院大学の入試で“替え玉受験”に関与か 日本人と中国籍の女2人を逮捕 実行役も捜査（石川テレビ） - Yahoo!ニュース",
@@ -504,7 +484,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-24 08:10:01+00:00",
           "summary": "何が起きたか: 北陸先端科学技術大学院大学の入試で“替え玉受験”に関与か 日本人と中国籍の女2人を逮捕 実行役も捜査（石川テレビ） Yahoo!ニュース",
-          "trend_reason": "逮捕｜注目度 67点｜出典: Yahoo!ニュース",
+          "trend_reason": "逮捕｜出典: Yahoo!ニュース",
           "query": "逮捕 捜査 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -516,7 +496,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         }
       ],
       "candidate_score": 204
@@ -529,20 +509,20 @@
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1FRlMtMzI4b2tJUmc1SXFHbEZYdkg3VFk0QjdPajVPQy13OHNTdFB6UkstRU9vdk9tQlZManlmWUYwY3lXZ2VRZ01uTjg1ZV9OWl9iTTlmVFFPelR2bUVzWVR0bUxGQVBBY2J2UjFkbw",
           "source": "dressy.pla-cole.wedding",
           "published_at": "2026-07-24 13:32:08+00:00",
-          "summary": "何が起きたか: 速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding",
-          "trend_reason": "発表｜注目度 61点｜出典: dressy.pla-cole.wedding",
+          "summary": "何が起きたか: 速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！",
+          "trend_reason": "発表｜出典: dressy.pla-cole.wedding",
           "query": "日本 芸能人 結婚 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://dressy.pla-cole.wedding",
-          "brief": "速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding",
-          "importance": 1,
+          "brief": "速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡…",
+          "importance": 2,
           "source_label": "RSS",
-          "read_level": "RSS確認",
+          "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」 3時間限定デート→キスから国際結婚 - ｄメニューニュース",
@@ -550,7 +530,7 @@
           "source": "ｄメニューニュース",
           "published_at": "2026-07-24 08:22:00+00:00",
           "summary": "何が起きたか: 『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」 3時間限定デート→キスから国際結婚 ｄメニューニュース",
-          "trend_reason": "『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」・3時間限定デート→キスから国際結婚｜注目度 61点｜出典: ｄメニューニュース",
+          "trend_reason": "『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」・3時間限定デート→キスから国際結婚｜出典: ｄメニューニュース",
           "query": "日本 芸能人 結婚 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://topics.smt.docomo.ne.jp",
@@ -562,7 +542,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "見取り図リリー 女子アナとの結婚はコンプラ違反？ 強烈ツッコミ「だから、ダメなんです」 - ｄメニューニュース",
@@ -570,7 +550,7 @@
           "source": "ｄメニューニュース",
           "published_at": "2026-07-24 07:40:00+00:00",
           "summary": "何が起きたか: 見取り図リリー 女子アナとの結婚はコンプラ違反？ 強烈ツッコミ「だから、ダメなんです」 ｄメニューニュース",
-          "trend_reason": "見取り図リリー・女子アナとの結婚はコンプラ違反？・強烈ツッコミ「だから｜注目度 61点｜出典: ｄメニューニュース",
+          "trend_reason": "見取り図リリー・女子アナとの結婚はコンプラ違反？・強烈ツッコミ「だから｜出典: ｄメニューニュース",
           "query": "日本 芸能人 結婚 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://topics.smt.docomo.ne.jp",
@@ -582,27 +562,27 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました - dressy.pla-cole.wedding",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE13Vm1hVGI3NWJnQnQ5NkpNVm1vUnhyRjJ3SFNkZkZqakxnbTA5WWViLWh1d1VuSTZRRi02LXR4NEs3S1JjVGllbHZDUWstTTg?oc=5",
           "source": "dressy.pla-cole.wedding",
           "published_at": "2026-07-24 07:00:00+00:00",
-          "summary": "何が起きたか: 【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました - dressy.pla-cole.wedding",
-          "trend_reason": "【AKB48・結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました・dressy.pla｜注目度 61点｜出典: dressy.pla-cole.wedding",
+          "summary": "何が起きたか: 【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました",
+          "trend_reason": "【AKB48・結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました・dressy.pla｜出典: dressy.pla-cole.wedding",
           "query": "日本 芸能人 結婚 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://dressy.pla-cole.wedding",
-          "brief": "【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました - dressy.pla-cole.wedding",
+          "brief": "【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別…",
           "importance": 1,
           "source_label": "RSS",
-          "read_level": "RSS確認",
+          "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 183
@@ -616,7 +596,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-24 11:39:35+00:00",
           "summary": "何が起きたか: ベネズエラ地震1カ月 死者5300人 Yahoo!ニュース",
-          "trend_reason": "地震｜注目度 67点｜出典: Yahoo!ニュース",
+          "trend_reason": "地震｜出典: Yahoo!ニュース",
           "query": "地震 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -628,7 +608,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "【台風情報】台風12号「ノウル」発生 気象庁発表 さらに「気がかりな渦」も 今後の進路は ※24日午後6時現在（RCC中国放送） - Yahoo!ニュース",
@@ -636,7 +616,7 @@
           "source": "Yahoo!ニュース",
           "published_at": "2026-07-24 09:11:13+00:00",
           "summary": "何が起きたか: 【台風情報】台風12号「ノウル」発生 気象庁発表 さらに「気がかりな渦」も 今後の進路は ※24日午後6時現在（RCC中国放送） Yahoo!ニュース",
-          "trend_reason": "台風・発表｜注目度 67点｜出典: Yahoo!ニュース",
+          "trend_reason": "台風・発表｜出典: Yahoo!ニュース",
           "query": "台風 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.yahoo.co.jp",
@@ -648,7 +628,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         },
         {
           "title": "「災害時におけるキッチンカーによる炊き出しの実施等に関する協定」の締結について - town.togitsu.nagasaki.jp",
@@ -656,19 +636,19 @@
           "source": "town.togitsu.nagasaki.jp",
           "published_at": "2026-07-24 09:05:23+00:00",
           "summary": "何が起きたか: 「災害時におけるキッチンカーによる炊き出しの実施等に関する協定」の締結について town.togitsu.nagasaki.jp",
-          "trend_reason": "災害｜注目度 67点｜出典: town.togitsu.nagasaki.jp",
+          "trend_reason": "災害｜出典: town.togitsu.nagasaki.jp",
           "query": "災害 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.town.togitsu.nagasaki.jp",
           "brief": "「災害時におけるキッチンカーによる炊き出しの実施等に関する協定」の締結について town.togitsu.naga…",
-          "importance": 2,
+          "importance": 1,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 67
+          "selection_score": 0
         }
       ],
       "candidate_score": 201
@@ -682,19 +662,19 @@
           "source": "Bloomberg.com",
           "published_at": "2026-07-24 14:29:39+00:00",
           "summary": "何が起きたか: 米企業、好決算相次ぐも株価の反応鈍く－高過ぎる期待が重し Bloomberg.com",
-          "trend_reason": "決算｜注目度 64点｜出典: Bloomberg.com",
+          "trend_reason": "決算｜出典: Bloomberg.com",
           "query": "企業決算 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.bloomberg.com",
           "brief": "米企業、好決算相次ぐも株価の反応鈍く－高過ぎる期待が重し Bloomberg.com",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "軟調、日米韓のハイテク企業決算や中銀イベント見極め＝来週の東京株式市場 - ロイター",
@@ -702,19 +682,19 @@
           "source": "ロイター",
           "published_at": "2026-07-24 07:15:44+00:00",
           "summary": "何が起きたか: 軟調、日米韓のハイテク企業決算や中銀イベント見極め＝来週の東京株式市場 ロイター",
-          "trend_reason": "決算｜注目度 64点｜出典: ロイター",
+          "trend_reason": "決算｜出典: ロイター",
           "query": "企業決算 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://jp.reuters.com",
           "brief": "軟調、日米韓のハイテク企業決算や中銀イベント見極め＝来週の東京株式市場 ロイター",
-          "importance": 1,
+          "importance": 3,
           "source_label": "大手報道",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 64
+          "selection_score": 0
         },
         {
           "title": "【米国株】ハイテク・AI関連の調整は一時的か？アルファベットやテスラの決算が焦点の週に - マネクリ",
@@ -722,19 +702,19 @@
           "source": "マネクリ",
           "published_at": "2026-07-24 13:14:05+00:00",
           "summary": "何が起きたか: 【米国株】ハイテク・AI関連の調整は一時的か？アルファベットやテスラの決算が焦点の週に マネクリ",
-          "trend_reason": "決算・AI｜注目度 61点｜出典: マネクリ",
+          "trend_reason": "決算・AI｜出典: マネクリ",
           "query": "企業決算 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://media.monex.co.jp",
           "brief": "【米国株】ハイテク・AI関連の調整は一時的か？アルファベットやテスラの決算が焦点の週に マネクリ",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "AIインフラ株が急落。大手ハイテク企業の決算発表でトレードは復活するか？ - Moomoo",
@@ -742,19 +722,19 @@
           "source": "Moomoo",
           "published_at": "2026-07-24 11:53:02+00:00",
           "summary": "何が起きたか: AIインフラ株が急落。大手ハイテク企業の決算発表でトレードは復活するか？ Moomoo",
-          "trend_reason": "決算・AI・発表｜注目度 61点｜出典: Moomoo",
+          "trend_reason": "決算・AI・発表｜出典: Moomoo",
           "query": "企業決算 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.moomoo.com",
           "brief": "AIインフラ株が急落。大手ハイテク企業の決算発表でトレードは復活するか？ Moomoo",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "仕事で使える",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "日経平均は380円高、引き続き米企業決算などに関心(フィスコ) - Yahoo!ファイナンス",
@@ -762,19 +742,19 @@
           "source": "Yahoo!ファイナンス",
           "published_at": "2026-07-24 09:49:52+00:00",
           "summary": "何が起きたか: 日経平均は380円高、引き続き米企業決算などに関心(フィスコ) Yahoo!ファイナンス",
-          "trend_reason": "決算｜注目度 61点｜出典: Yahoo!ファイナンス",
+          "trend_reason": "決算｜出典: Yahoo!ファイナンス",
           "query": "企業決算 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://finance.yahoo.co.jp",
           "brief": "日経平均は380円高、引き続き米企業決算などに関心(フィスコ) Yahoo!ファイナンス",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "市場・企業",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 189
@@ -788,19 +768,19 @@
           "source": "ニコニコニュース",
           "published_at": "2026-07-24 14:54:13+00:00",
           "summary": "何が起きたか: プレイステーションネットワークで7月24日20時ごろより障害発生中。サインインやゲーム起動などネットワークサービスが利 ニコニコニュース",
-          "trend_reason": "障害｜独立2媒体｜注目度 61点｜出典: ニコニコニュース",
+          "trend_reason": "障害｜出典: ニコニコニュース",
           "query": "PlayStation after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://news.nicovideo.jp",
           "brief": "プレイステーションネットワークで7月24日20時ごろより障害発生中。サインインやゲーム起動などネットワークサービス…",
-          "importance": 1,
+          "importance": 2,
           "source_label": "RSS",
           "read_level": "RSS説明",
           "impact": "要注意",
           "bookmark_count": 0,
           "comment_count": 0,
-          "coverage_count": 2,
-          "selection_score": 61
+          "coverage_count": 1,
+          "selection_score": 0
         },
         {
           "title": "PlayStationの物理ディスク生産終了後には、“1兆円規模”中古ゲーム市場がいずれ消滅するとアナリストが警鐘。一方Ubisoftは「大きな混乱なし」と予測、割れる見立て - AUTOMATON",
@@ -808,7 +788,7 @@
           "source": "AUTOMATON",
           "published_at": "2026-07-24 10:48:26+00:00",
           "summary": "何が起きたか: PlayStationの物理ディスク生産終了後には、“1兆円規模”中古ゲーム市場がいずれ消滅するとアナリストが警鐘。一方Ubisoftは「大きな混乱なし」と予測、割れる見立て AUTOMATON",
-          "trend_reason": "終了｜注目度 61点｜出典: AUTOMATON",
+          "trend_reason": "終了｜出典: AUTOMATON",
           "query": "PlayStation after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://automaton-media.com",
@@ -820,7 +800,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "クロックス、任天堂とタッグを組んだ「スーパーマリオ コレクション」を発売！「キノコ王国」の世界観を表現 - gamebiz【ゲームビズ】",
@@ -828,7 +808,7 @@
           "source": "gamebiz【ゲームビズ】",
           "published_at": "2026-07-24 08:20:00+00:00",
           "summary": "何が起きたか: クロックス、任天堂とタッグを組んだ「スーパーマリオ コレクション」を発売！「キノコ王国」の世界観を表現 gamebiz【ゲームビズ】",
-          "trend_reason": "クロックス・任天堂とタッグを組んだ「スーパーマリオ・コレクション」を発売！「キノコ王国」の世界観を表現｜注目度 61点｜出典: gamebiz【ゲームビズ】",
+          "trend_reason": "クロックス・任天堂とタッグを組んだ「スーパーマリオ・コレクション」を発売！「キノコ王国」の世界観を表現｜出典: gamebiz【ゲームビズ】",
           "query": "任天堂 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://gamebiz.jp",
@@ -840,7 +820,7 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         },
         {
           "title": "「ガンダムカードゲーム」1周年記念ブースターパック「Freedom Ascension [GD05]」ほか関連アイテム全4点が7月25日発売！ - GUNDAM Official Website",
@@ -848,7 +828,7 @@
           "source": "GUNDAM Official Website",
           "published_at": "2026-07-24 08:00:26+00:00",
           "summary": "何が起きたか: 「ガンダムカードゲーム」1周年記念ブースターパック「Freedom Ascension [GD05]」ほか関連アイテム全4点が7月25日発売！ GUNDAM Official Website",
-          "trend_reason": "「ガンダムカードゲーム」1周年記念ブースターパック「Freedom・Ascension・[GD05]」ほか関連アイテム全4点が7月25日発売！｜注目度 61点｜出典: GUNDAM Official Website",
+          "trend_reason": "「ガンダムカードゲーム」1周年記念ブースターパック「Freedom・Ascension・[GD05]」ほか関連アイテム全4点が7月25日発売！｜出典: GUNDAM Official Website",
           "query": "ゲーム after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://gundam-official.com",
@@ -860,35 +840,14 @@
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 61
+          "selection_score": 0
         }
       ],
       "candidate_score": 183
     },
     {
       "name": "金融",
-      "items": [
-        {
-          "title": "【7/24話題】ブラックロックやコインベースらが「Bitcoin Security Consortium」設立、BitMEXがサービス終了へなど（音声ニュース） - あたらしい経済",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAwRUlqR2tJQzlHOWU5MzlRZFdhNWN1OXdCZjlEYXo0M0hkMUVmNFpCZTk4U1Q1OXlQTFBCbnFCWXRCYllFMXdPLS01eFZ6Nms?oc=5",
-          "source": "あたらしい経済",
-          "published_at": "2026-07-24 14:42:25+00:00",
-          "summary": "何が起きたか: 【7/24話題】ブラックロックやコインベースらが「Bitcoin Security Consortium」設立、BitMEXがサービス終了へなど（音声ニュース） あたらしい経済",
-          "trend_reason": "終了｜注目度 61点｜出典: あたらしい経済",
-          "query": "仮想通貨 after:2026-07-24 before:2026-07-25",
-          "image_url": null,
-          "source_url": "https://www.neweconomy.jp",
-          "brief": "【7/24話題】ブラックロックやコインベースらが「Bitcoin Security Consortium」設立、B…",
-          "importance": 1,
-          "source_label": "RSS",
-          "read_level": "RSS説明",
-          "impact": "動向確認",
-          "bookmark_count": 0,
-          "comment_count": 0,
-          "coverage_count": 1,
-          "selection_score": 61
-        }
-      ],
+      "items": [],
       "candidate_score": 179
     },
     {
@@ -900,19 +859,19 @@
           "source": "mext.go.jp",
           "published_at": "2026-07-24 09:02:26+00:00",
           "summary": "何が起きたか: 松本洋平文部科学大臣記者会見録（令和8年7月24日） mext.go.jp",
-          "trend_reason": "松本洋平文部科学大臣記者会見録（令和8年7月24日）｜注目度 60点｜出典: mext.go.jp",
+          "trend_reason": "松本洋平文部科学大臣記者会見録（令和8年7月24日）｜出典: mext.go.jp",
           "query": "科学 after:2026-07-24 before:2026-07-25",
           "image_url": null,
           "source_url": "https://www.mext.go.jp",
           "brief": "松本洋平文部科学大臣記者会見録（令和8年7月24日） mext.go.jp",
-          "importance": 1,
+          "importance": 2,
           "source_label": "一次情報",
           "read_level": "RSS説明",
           "impact": "動向確認",
           "bookmark_count": 0,
           "comment_count": 0,
           "coverage_count": 1,
-          "selection_score": 60
+          "selection_score": 0
         }
       ],
       "candidate_score": 116

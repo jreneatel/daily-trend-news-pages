@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>前日トレンドニュース - 2026-07-19</title>
+  <link rel="stylesheet" href="../design-tokens.css">
   <style>
 :root {
   color-scheme: dark;
@@ -23,12 +24,15 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--dtn-font, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.55;
 }
 .skip-link {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
   position: fixed;
   left: 12px;
   top: 8px;
@@ -58,9 +62,12 @@ body {
   border-bottom: 1px solid #202234;
 }
 .brand {
+  align-items: center;
   color: #e8e8f0;
+  display: inline-flex;
   font-size: 18px;
   font-weight: 800;
+  min-height: 44px;
   text-decoration: none;
 }
 .brand::before {
@@ -92,10 +99,11 @@ body {
   gap: 4px;
   justify-content: flex-end;
 }
-.global-nav a {
+.global-nav a,
+.mobile-more summary {
   display: inline-flex;
   align-items: center;
-  min-height: 38px;
+  min-height: 44px;
   padding: 7px 9px;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -104,8 +112,24 @@ body {
   font-weight: 750;
   text-decoration: none;
 }
+.mobile-more { display: none; position: relative; }
+.mobile-more summary { cursor: pointer; list-style: none; }
+.mobile-more summary::-webkit-details-marker { display: none; }
+.mobile-more > div {
+  background: var(--bar);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  min-width: 160px;
+  padding: 6px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+}
 .global-nav a:hover,
 .global-nav a:focus-visible,
+.mobile-more summary:hover,
+.mobile-more summary:focus-visible,
 .global-nav a[aria-current="page"] {
   border-color: rgba(255, 255, 255, .2);
   background: rgba(255, 255, 255, .1);
@@ -240,7 +264,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 32px;
+  min-height: 44px;
   padding: 7px 9px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -442,13 +466,18 @@ dd {
 }
 .empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
 .archive-page { max-width: 960px; }
-.archive-search {
+.archive-search,
+.search-cta {
   margin: 0 0 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
   padding: 14px;
 }
+.search-cta { align-items:center; display:flex; gap:18px; justify-content:space-between; }
+.search-cta div { display:grid; gap:3px; }
+.search-cta span { color:var(--muted); font-size:13px; }
+.search-cta a { background:var(--accent); border-radius:8px; color:#071316; flex:none; font-weight:850; min-height:44px; padding:11px 14px; }
 .archive-search label {
   display: block;
   margin-bottom: 8px;
@@ -485,6 +514,15 @@ dd {
   display: grid;
   gap: 14px;
 }
+.weekly-topics { display:grid; gap:10px; margin-bottom:20px; }
+.weekly-topics > h2 { margin-bottom:2px; }
+.weekly-topic { border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:8px; background:var(--panel); padding:14px; }
+.weekly-topic h2 { font-size:16px; margin:7px 0; }
+.weekly-topic p { color:#c7cad6; margin:0; }
+.topic-status { border-radius:999px; display:inline-flex; font-size:12px; font-weight:850; padding:3px 8px; }
+.status-新規 { background:#164e63; color:#cffafe; }.status-続報 { background:#3b3a14; color:#fef3c7; }.status-決着 { background:#14532d; color:#dcfce7; }
+.topic-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+.topic-links a { color:var(--accent-strong); font-size:13px; font-weight:800; text-decoration:underline; }
 .weekly-genre {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -577,6 +615,8 @@ dd {
     font-size: 12px;
   }
   .global-nav { grid-column: 1 / -1; justify-content: flex-start; }
+  .global-nav .desktop-extra { display: none; }
+  .mobile-more { display: block; }
   .generated-at { display: none; }
   .layout { grid-template-columns: 1fr; }
   .sidebar {
@@ -621,6 +661,8 @@ dd {
   .reason-row dt {
     color: var(--accent-strong);
   }
+  .search-cta { align-items:stretch; flex-direction:column; }
+  .search-cta a { justify-content:center; text-align:center; }
 }
 </style>
 </head>
@@ -631,9 +673,7 @@ dd {
     <time class="app-date" datetime="2026-07-19">2026-07-19</time>
     <div class="app-actions">
       <span class="generated-at">生成: 2026-07-20 22:38 JST</span>
-      <nav class="global-nav" aria-label="共通メニュー">
-        <a aria-current="page" href="../">共通ニュース</a><a href="../my/">マイニュース</a><a href="../search/">ジャンル検索</a><a href="../settings/topics/">ジャンル設定</a><a href="../settings/plan/">プラン</a><a class="login-link" href="../login/">ログイン</a>
-      </nav>
+      <nav class="global-nav" aria-label="共通メニュー"><a aria-current="page" href="../">共通ニュース</a><a href="../search/">ニュース検索</a><a href="../archive.html">アーカイブ</a><a href="../weekly.html">週次まとめ</a><a class="desktop-extra" href="../my/">マイニュース</a><details class="mobile-more"><summary>その他</summary><div><a href="../my/">マイニュース</a></div></details></nav>
     </div>
   </header>
   <main id="main" class="page">
@@ -642,7 +682,7 @@ dd {
       <h1>前日トレンドニュース</h1>
       <div class="badges">
         <span>6ジャンル</span>
-        <span>16件の記事</span>
+        <span>14件の記事</span>
       </div>
     </section>
     <div class="layout">
@@ -652,7 +692,7 @@ dd {
   <h2 id="month-2026-07">2026年7月</h2>
   <div class="calendar-grid"><span class="calendar-weekday">日</span><span class="calendar-weekday">月</span><span class="calendar-weekday">火</span><span class="calendar-weekday">水</span><span class="calendar-weekday">木</span><span class="calendar-weekday">金</span><span class="calendar-weekday">土</span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day" aria-disabled="true">1</span><span class="calendar-day" aria-disabled="true">2</span><span class="calendar-day" aria-disabled="true">3</span><span class="calendar-day" aria-disabled="true">4</span><span class="calendar-day" aria-disabled="true">5</span><span class="calendar-day" aria-disabled="true">6</span><span class="calendar-day" aria-disabled="true">7</span><span class="calendar-day" aria-disabled="true">8</span><a class="calendar-day is-linked" href="../2026-07-09/" aria-label="2026-07-09の記事">9</a><a class="calendar-day is-linked" href="../2026-07-10/" aria-label="2026-07-10の記事">10</a><a class="calendar-day is-linked" href="../2026-07-11/" aria-label="2026-07-11の記事">11</a><a class="calendar-day is-linked" href="../2026-07-12/" aria-label="2026-07-12の記事">12</a><a class="calendar-day is-linked" href="../2026-07-13/" aria-label="2026-07-13の記事">13</a><a class="calendar-day is-linked" href="../2026-07-14/" aria-label="2026-07-14の記事">14</a><a class="calendar-day is-linked" href="../2026-07-15/" aria-label="2026-07-15の記事">15</a><a class="calendar-day is-linked" href="../2026-07-16/" aria-label="2026-07-16の記事">16</a><a class="calendar-day is-linked" href="../2026-07-17/" aria-label="2026-07-17の記事">17</a><a class="calendar-day is-linked" href="../2026-07-18/" aria-label="2026-07-18の記事">18</a><a class="calendar-day is-linked" href="../2026-07-19/" aria-label="2026-07-19の記事">19</a><a class="calendar-day is-linked" href="../2026-07-20/" aria-label="2026-07-20の記事">20</a><a class="calendar-day is-linked" href="../2026-07-21/" aria-label="2026-07-21の記事">21</a><a class="calendar-day is-linked" href="../2026-07-22/" aria-label="2026-07-22の記事">22</a><a class="calendar-day is-linked" href="../2026-07-23/" aria-label="2026-07-23の記事">23</a><a class="calendar-day is-linked" href="../2026-07-24/" aria-label="2026-07-24の記事">24</a><a class="calendar-day is-linked is-latest" href="../2026-07-25/" aria-label="2026-07-25の記事">25</a><span class="calendar-day" aria-disabled="true">26</span><span class="calendar-day" aria-disabled="true">27</span><span class="calendar-day" aria-disabled="true">28</span><span class="calendar-day" aria-disabled="true">29</span><span class="calendar-day" aria-disabled="true">30</span><span class="calendar-day" aria-disabled="true">31</span></div>
 </section></div><a class="calendar-more" href="../archive.html">すべての日付</a></div><a class="side-archive" href="../archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>3件</small></a>
-<a href="#IT業界"><span>IT業界</span><small>3件</small></a>
+<a href="#IT業界"><span>IT業界</span><small>1件</small></a>
 <a href="#政治"><span>政治</span><small>3件</small></a>
 <a href="#社会"><span>社会</span><small>3件</small></a>
 <a href="#ゲーム"><span>ゲーム</span><small>3件</small></a>
@@ -672,7 +712,7 @@ dd {
     <h3>Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINE</h3>
     <p class="summary-text">Claude Fable 5が一部のサブスクプランで使用可能に GIGAZINE</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜注目度 29点｜出典: GIGAZINE</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜出典: GIGAZINE</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -685,7 +725,7 @@ dd {
     <h3>「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN</h3>
     <p class="summary-text">「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に MSN</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜注目度 25点｜出典: MSN</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜出典: MSN</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -698,7 +738,7 @@ dd {
     <h3>「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese</h3>
     <p class="summary-text">「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 CGTN Japanese</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・発表｜注目度 25点｜出典: CGTN Japanese</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・発表｜出典: CGTN Japanese</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -707,35 +747,9 @@ dd {
 <details class="genre tone-tech" open>
   <summary class="genre-head">
     <h2 id="IT業界">IT業界</h2>
-    <span>3 topics</span>
+    <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-47718b0028fdd1f7" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hdU5KNko5ZVBNZF9sUDZBd1RTQXMwa0tPekNmVnMyUXR1ZlQxa2VOeGMwV0R0YVZaYkg5a3BibTEyZVBhM2tJQlFfZ213T1kxUXJidXRIX19nMnRoTkNSTQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 - GAZLOGを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hdU5KNko5ZVBNZF9sUDZBd1RTQXMwa0tPekNmVnMyUXR1ZlQxa2VOeGMwV0R0YVZaYkg5a3BibTEyZVBhM2tJQlFfZ213T1kxUXJidXRIX19nMnRoTkNSTQ?oc=5" data-title="Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 - GAZLOG" data-genre="IT業界">
-  <img class="thumb" src="../assets/thumbs/ed643bb0cfc4a64e.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>GAZLOG · 07:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 - GAZLOG</h3>
-    <p class="summary-text">Windows 11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信 GAZLOG</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Windows・11の一部Dell製PC向け不具合を修正する緊急更新KB5121767が配信｜注目度 34点｜出典: GAZLOG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-6c6505cb90469d2a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMi8AVBVV95cUxOaG8tUjM5UVd0MlF2MlYtLXdoMGdrNDRqVnkwN1RFWTdXb0VPMWJ4czF2X3ozWHpMN2lnYzVUMVcySnFLSDFva0pyT1l5aHBNT0xlS3lIVTg3S1FfeHZwUmNFc1FaaXJNM19IZUpVTHVfR3BJbTd0MVNjSi1mVHBnQXFUdlJaQjFjcTVOQlBSaDAtbzVFX1Byb3hydDVYUlVTaUg1NW5hOWpoZjRhQUxOdVNCV3lCbjdOZVBlaDVDZTdtcThFOFBjYnBtcUYwaFpHWlJ5Q0hGVHR3YXZFeXJzejdZTFRRd2NVRlViUnN4N002QmRaaFk5QzlFWEUwUmVHV3ZtOW5wazdiQTE5TzZtVm5pZy16MlY5c2dkYU9vT2daT0xXcmJjdnNfNklMTkRYeXRhRXZXajlSN0p5TWVxc1l3VmsySlE3LUpZN0hBRzlaOS1FYndjODNBVUpKSGR6aDNVbzc4Y2VldFEzRlhEbWlUdlVVeklkOGdTeHc3VTNoUm85VnVxUmxvWHdjbEJPcEZiSWlaTEtENF9LLWlWWmtLWm9qYmI0MmlOUnhoMzdnd09VVXVrYUpRTlNtWmE0aTcxVlZZRUVyU2VwZTNXMFc3d1VNTk9MbUZ2M05rWjBRN0J0b1EtM1NRWXpHZ3YwNkZTbTQtdGhoYWJNT3o3emdJd0NBSHZtY3IxZ1drSm9FWGg1X3lVZGNrcHNBU3ZpSWpKRngzcjlQZHFGYXEtYUJzbDVnSFUzNDQtdnl3SXNjTHdQbnNQbklPaFMzbXBySF9rdWlZM1MxMF9oRUMwM05jaUEzX1hVYkhhRUxOVlNqcXBGZGw4dXpiMzdEN1lvWG5oYVRoNTdoYnJmcDcwc1J2dXp4bldWYkVNazNNeUdXWGlxMEg4WDBLdkkzRW5iNmRsdFlMcFpiTVJTUnJsOElqT1ZzMHF0MjFfVHowVDhvTFVvVzViVFhfZzgwU0ppUXQ5bWxLZkk3SFNJZy02Zg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必要性も - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi8AVBVV95cUxOaG8tUjM5UVd0MlF2MlYtLXdoMGdrNDRqVnkwN1RFWTdXb0VPMWJ4czF2X3ozWHpMN2lnYzVUMVcySnFLSDFva0pyT1l5aHBNT0xlS3lIVTg3S1FfeHZwUmNFc1FaaXJNM19IZUpVTHVfR3BJbTd0MVNjSi1mVHBnQXFUdlJaQjFjcTVOQlBSaDAtbzVFX1Byb3hydDVYUlVTaUg1NW5hOWpoZjRhQUxOdVNCV3lCbjdOZVBlaDVDZTdtcThFOFBjYnBtcUYwaFpHWlJ5Q0hGVHR3YXZFeXJzejdZTFRRd2NVRlViUnN4N002QmRaaFk5QzlFWEUwUmVHV3ZtOW5wazdiQTE5TzZtVm5pZy16MlY5c2dkYU9vT2daT0xXcmJjdnNfNklMTkRYeXRhRXZXajlSN0p5TWVxc1l3VmsySlE3LUpZN0hBRzlaOS1FYndjODNBVUpKSGR6aDNVbzc4Y2VldFEzRlhEbWlUdlVVeklkOGdTeHc3VTNoUm85VnVxUmxvWHdjbEJPcEZiSWlaTEtENF9LLWlWWmtLWm9qYmI0MmlOUnhoMzdnd09VVXVrYUpRTlNtWmE0aTcxVlZZRUVyU2VwZTNXMFc3d1VNTk9MbUZ2M05rWjBRN0J0b1EtM1NRWXpHZ3YwNkZTbTQtdGhoYWJNT3o3emdJd0NBSHZtY3IxZ1drSm9FWGg1X3lVZGNrcHNBU3ZpSWpKRngzcjlQZHFGYXEtYUJzbDVnSFUzNDQtdnl3SXNjTHdQbnNQbklPaFMzbXBySF9rdWlZM1MxMF9oRUMwM05jaUEzX1hVYkhhRUxOVlNqcXBGZGw4dXpiMzdEN1lvWG5oYVRoNTdoYnJmcDcwc1J2dXp4bldWYkVNazNNeUdXWGlxMEg4WDBLdkkzRW5iNmRsdFlMcFpiTVJTUnJsOElqT1ZzMHF0MjFfVHowVDhvTFVvVzViVFhfZzgwU0ppUXQ5bWxLZkk3SFNJZy02Zg?oc=5" data-title="過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必要性も - MSN" data-genre="IT業界">
-  <img class="thumb" src="../assets/thumbs/af25fa5d715b6691.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>MSN · 14:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必要性も - MSN</h3>
-    <p class="summary-text">過去最多の飲食倒産…「値上げ無理」は幻想? 居酒屋店主「常連さんもいるので、なるべく抑えたい」独立前に経営を学ぶ必…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>値上げ｜注目度 25点｜出典: MSN</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-1931805892baf5cb" class="card tone-tech" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" data-title="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo" data-genre="IT業界">
+  <div class="grid"><a id="article-1931805892baf5cb" class="card tone-tech" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" data-title="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/8de1feaa27c3fb2e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 11:59</span><span class="read-state">未読</span></div>
@@ -743,7 +757,7 @@ dd {
     <h3>Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo</h3>
     <p class="summary-text">Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 Moomoo</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Google｜注目度 25点｜出典: Moomoo</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>Google｜出典: Moomoo</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -762,7 +776,7 @@ dd {
     <h3>副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞</h3>
     <p class="summary-text">副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] 朝日新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜注目度 39点｜出典: 朝日新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 朝日新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
     </dl>
   </div>
@@ -775,7 +789,7 @@ dd {
     <h3>東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞</h3>
     <p class="summary-text">東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] 朝日新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>東京・あきる野市長に臼井氏・市政継承訴え初当選・自民・公明が推薦｜注目度 30点｜出典: 朝日新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>東京・あきる野市長に臼井氏・市政継承訴え初当選・自民・公明が推薦｜出典: 朝日新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -788,7 +802,7 @@ dd {
     <h3>国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞</h3>
     <p class="summary-text">国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] 毎日新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>国会前でデモ・改憲の動きなどに抗議の声・[写真特集1｜注目度 30点｜出典: 毎日新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>国会前でデモ・改憲の動きなどに抗議の声・[写真特集1｜出典: 毎日新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -807,7 +821,7 @@ dd {
     <h3>栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータル</h3>
     <p class="summary-text">栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 au Webポータル</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>停止・死亡｜注目度 34点｜出典: au Webポータル</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>停止・死亡｜出典: au Webポータル</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
     </dl>
   </div>
@@ -820,7 +834,7 @@ dd {
     <h3>【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE</h3>
     <p class="summary-text">【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>裁判｜注目度 25点｜出典: SODANE</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>裁判｜出典: SODANE</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -833,7 +847,7 @@ dd {
     <h3>「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル</h3>
     <p class="summary-text">「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か au Webポータル</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>「海の日」は広い範囲で厳しい暑さ・東京都心は今年初の猛暑日か｜注目度 25点｜出典: au Webポータル</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>「海の日」は広い範囲で厳しい暑さ・東京都心は今年初の猛暑日か｜出典: au Webポータル</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
     </dl>
   </div>
@@ -852,7 +866,7 @@ dd {
     <h3>スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.com</h3>
     <p class="summary-text">スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見ら…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>スマートフォンアプリ『My・Nintendo』がアップデート。Nintendo・Switchで最近遊んだ記録が見られるようになりました。｜注目度 31点｜出典: nintendo.com</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>スマートフォンアプリ『My・Nintendo』がアップデート。Nintendo・Switchで最近遊んだ記録が見られるようになりました。｜出典: nintendo.com</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
     </dl>
   </div>
@@ -865,7 +879,7 @@ dd {
     <h3>シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com</h3>
     <p class="summary-text">シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 ninte…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>公開｜注目度 31点｜出典: nintendo.com</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>公開｜出典: nintendo.com</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
     </dl>
   </div>
@@ -878,7 +892,7 @@ dd {
     <h3>マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE</h3>
     <p class="summary-text">マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワ…</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>マーベル格闘ゲーム『MARVEL・Tōkon・Fighting｜注目度 25点｜出典: 玩具人 TOY PEOPLE</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>マーベル格闘ゲーム『MARVEL・Tōkon・Fighting｜出典: 玩具人 TOY PEOPLE</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
     </dl>
   </div>
@@ -897,7 +911,7 @@ dd {
     <h3>【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞</h3>
     <p class="summary-text">【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 山陽新聞</p>
     <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・発表｜注目度 25点｜出典: 山陽新聞</dd></div>
+      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・発表｜出典: 山陽新聞</dd></div>
       <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
     </dl>
   </div>
@@ -905,7 +919,6 @@ dd {
 </details>
       </div>
     </div>
-    <div class="page-actions"><button class="analytics-export" type="button">閲覧データをJSON保存</button></div>
   </main>
   <script>
 (() => {
@@ -937,16 +950,6 @@ dd {
       setReadState(card, true);
       saveRead();
       saveClicks();
-    });
-  });
-  document.querySelectorAll(".analytics-export").forEach((button) => {
-    button.addEventListener("click", () => {
-      const blob = new Blob([localStorage.getItem(clickKey) || "{}"], {type: "application/json"});
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "daily-trend-news-clicks.json";
-      link.click();
-      URL.revokeObjectURL(link.href);
     });
   });
 })();

@@ -1,10 +1,10 @@
 1:"$Sreact.fragment"
-2:I[13485,["/daily-trend-news-pages/_next/static/chunks/436k8mc0d2cqz.js","/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js"],"default"]
-3:I[94130,["/daily-trend-news-pages/_next/static/chunks/436k8mc0d2cqz.js","/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js"],"default"]
-5:I[50129,["/daily-trend-news-pages/_next/static/chunks/1ivr6blg-9j_p.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-:HL["/daily-trend-news-pages/_next/static/chunks/2bbk5n15b1cuw.css","style"]
-4:Ta32,
+2:I[13485,["/daily-trend-news-pages/_next/static/chunks/3m1pqpc2jfao1.js","/daily-trend-news-pages/_next/static/chunks/06dpt7gtk2qn9.js"],"default"]
+3:I[94130,["/daily-trend-news-pages/_next/static/chunks/3m1pqpc2jfao1.js","/daily-trend-news-pages/_next/static/chunks/06dpt7gtk2qn9.js"],"default"]
+9:I[50129,["/daily-trend-news-pages/_next/static/chunks/1ivr6blg-9j_p.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+:HL["/daily-trend-news-pages/_next/static/chunks/3fevt-3z-thb1.css","style"]
+4:Tf03,
         :root { color-scheme: dark; --bg:#10141b; --panel:#202631; --line:#3b4352; --ink:#f7f7fb; --muted:#b5bbc8; --accent:#4fd1c5; --danger:#ffb4ab; }
         * { box-sizing: border-box; }
         body { margin:0; color:var(--ink); background:var(--bg); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.55; }
@@ -29,6 +29,24 @@
         .error { color:var(--danger); }
         .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
         .actions a { min-height:44px; display:inline-flex; align-items:center; }
+        fieldset { border:1px solid var(--line); border-radius:10px; margin:0; padding:14px; }
+        legend { font-weight:800; padding:0 6px; }
+        .theme-radio-grid { display:grid; gap:9px; grid-template-columns:1fr 1fr; }
+        .theme-radio { align-items:center; border:2px solid transparent; border-radius:9px; color:#17222b; cursor:pointer; display:flex; gap:9px; min-height:64px; padding:9px; }
+        .theme-radio:has(input:checked) { border-color:var(--accent); }
+        .theme-radio input { flex:none; min-height:24px; width:24px; }
+        .theme-radio span { display:grid; }
+        .theme-radio small { font-size:11px; }
+        .theme-radio-paper { background:#f5eddd; }.theme-radio-sky { background:#dff3ff; }.theme-radio-forest { background:#dcecdf; }.theme-radio-midnight { background:#17283c; color:#fff; }
+        .history-controls { border-top:1px solid var(--line); display:grid; gap:9px; padding-top:16px; }
+        .history-controls h2 { font-size:18px; margin:0; }
+        .danger-button { border-color:#d97777 !important; color:#ffd4d4 !important; }
+        .notice-line { color:var(--accent); min-height:1.5em; }
         @media (max-width:360px) { .auth-card { padding:20px 16px; } }
-      0:{"rsc":["$","$1","c",{"children":[[["$","a",null,{"className":"skip-link","href":"#main","children":"本文へ移動"}],["$","$L2",null,{"current":"account"}],["$","main",null,{"id":"main","className":"auth-page","children":["$","section",null,{"className":"auth-card","aria-labelledby":"page-title","children":[["$","p",null,{"className":"eyebrow","children":"Personal news"}],["$","h1",null,{"id":"page-title","children":"アカウント"}],["$","$L3",null,{}]]}]}],["$","style",null,{"children":"$4"}]],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/2bbk5n15b1cuw.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/436k8mc0d2cqz.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/0ewpghbbrn0tj.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"DgvPoawb1ixh4QXgIuaob"}
-7:null
+        @media (max-width:420px) { .theme-radio-grid { grid-template-columns:1fr; } }
+      0:{"rsc":["$","$1","c",{"children":[[["$","a",null,{"className":"skip-link","href":"#main","children":"本文へ移動"}],["$","$L2",null,{"current":"account"}],["$","main",null,{"id":"main","className":"auth-page","children":["$","section",null,{"className":"auth-card","aria-labelledby":"page-title","children":[["$","p",null,{"className":"eyebrow","children":"Personal news"}],["$","h1",null,{"id":"page-title","children":"アカウント"}],["$","$L3",null,{}]]}]}],["$","style",null,{"children":"$4"}]],["$L5","$L6","$L7"],"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"dopkSn7tfrImyx0wzceQe"}
+5:["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/3fevt-3z-thb1.css","precedence":"next"}]
+6:["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/3m1pqpc2jfao1.js","async":true}]
+7:["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/06dpt7gtk2qn9.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null
