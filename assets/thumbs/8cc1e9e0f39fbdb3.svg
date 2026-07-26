@@ -13,15 +13,16 @@
     </filter>
   </defs>
   <rect width="720" height="405" fill="url(#bg)"/>
-  <circle cx="487" cy="74" r="190" fill="url(#glow)"/>
+  <circle cx="543" cy="105" r="190" fill="url(#glow)"/>
   <g opacity=".22">
-  <circle cx="58" cy="310" r="80" fill="#fb7185"/>
+  <circle cx="78" cy="310" r="80" fill="#fb7185"/>
   <path d="M0 318C88 268 142 338 224 284s146-38 220 12 156 44 276-24v133H0z" fill="#fff7ed" opacity=".08"/>
-  <path d="M149 54h520" stroke="#fff7ed" stroke-width="2" opacity=".18"/>
-  <path d="M149 354h520" stroke="#fff7ed" stroke-width="2" opacity=".14"/>
+  <path d="M145 54h520" stroke="#fff7ed" stroke-width="2" opacity=".18"/>
+  <path d="M145 354h520" stroke="#fff7ed" stroke-width="2" opacity=".14"/>
 </g>
-  <g filter="url(#shadow)"><g transform="translate(180 78)">
-  <path d="M174 0l160 84H14zM52 116h256M78 116v156M142 116v156M206 116v156M270 116v156M34 272h292" fill="none" stroke="#fff7ed" stroke-width="24" stroke-linejoin="round"/>
-  <rect x="48" y="292" width="252" height="28" fill="#fb7185" opacity=".72"/>
+  <g filter="url(#shadow)"><g transform="translate(230 64)">
+  <path d="M106 18v92L30 246c-18 34 6 72 44 72h156c38 0 62-38 44-72L198 110V18" fill="none" stroke="#fff7ed" stroke-width="22" stroke-linecap="round"/>
+  <path d="M68 236h166" stroke="#fb7185" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="210" cy="178" r="20" fill="#fb7185"/><circle cx="126" cy="270" r="16" fill="#fb7185"/>
 </g></g>
 </svg>
