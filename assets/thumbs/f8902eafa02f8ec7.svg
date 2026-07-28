@@ -13,12 +13,12 @@
     </filter>
   </defs>
   <rect width="720" height="405" fill="url(#bg)"/>
-  <circle cx="497" cy="108" r="190" fill="url(#glow)"/>
+  <circle cx="494" cy="88" r="190" fill="url(#glow)"/>
   <g opacity=".22">
-  <circle cx="37" cy="310" r="80" fill="#fb7185"/>
+  <circle cx="74" cy="310" r="80" fill="#fb7185"/>
   <path d="M0 318C88 268 142 338 224 284s146-38 220 12 156 44 276-24v133H0z" fill="#fff7ed" opacity=".08"/>
-  <path d="M143 54h520" stroke="#fff7ed" stroke-width="2" opacity=".18"/>
-  <path d="M143 354h520" stroke="#fff7ed" stroke-width="2" opacity=".14"/>
+  <path d="M152 54h520" stroke="#fff7ed" stroke-width="2" opacity=".18"/>
+  <path d="M152 354h520" stroke="#fff7ed" stroke-width="2" opacity=".14"/>
 </g>
   <g filter="url(#shadow)"><g transform="translate(150 54)">
   <defs><clipPath id="japan-map-clip"><rect x="0" y="0" width="420" height="300" rx="34"/></clipPath></defs>
