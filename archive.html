@@ -366,6 +366,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -389,6 +395,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {

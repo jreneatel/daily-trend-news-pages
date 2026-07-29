@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -690,7 +701,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7e4ac122233c3cea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>매일경제 · 08:19</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제</h3>
     <p class="summary-text">米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオー…</p>
     <dl>
@@ -703,7 +714,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/81be60b6a4c143e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュース</h3>
     <p class="summary-text">Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） Yahoo!…</p>
     <dl>
@@ -716,7 +727,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7f900a1113ff4aab.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>DXマガジン · 08:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジン</h3>
     <p class="summary-text">【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の…</p>
     <dl>
@@ -735,7 +746,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/56ddfd30c96f3812.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Microsoft · 07:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
     <h3>音频去AI化工具 - Microsoft</h3>
     <p class="summary-text">音频去AI化工具 Microsoft</p>
     <dl>
@@ -748,7 +759,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e46f7872dc76c81f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ゴリミー · 14:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミー</h3>
     <p class="summary-text">横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか ゴリミー</p>
     <dl>
@@ -761,7 +772,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1730689b7bf65d91.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 14:12</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞</h3>
     <p class="summary-text">出張者が標的に：ホテルWi</p>
     <dl>
@@ -774,7 +785,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d11342d00616abc5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:51</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュース</h3>
     <p class="summary-text">Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「B…</p>
     <dl>
@@ -793,7 +804,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6752abe59fcf5d13.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 13:18</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞</h3>
     <p class="summary-text">山形県尾花沢市長選挙、若林吾朗氏が初当選 日本経済新聞</p>
     <dl>
@@ -806,7 +817,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d08b380ba8fd4cf3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 11:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞</h3>
     <p class="summary-text">玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] 朝日新聞</p>
     <dl>
@@ -819,7 +830,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bc2eb10abb630a30.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 11:18</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIG</h3>
     <p class="summary-text">【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ T…</p>
     <dl>
@@ -832,7 +843,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/33da00806ca228cd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 07:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュース</h3>
     <p class="summary-text">自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 NHKニュース</p>
     <dl>
@@ -845,7 +856,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0ebd6c0f7675e2bb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>公明党 · 14:02</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党</h3>
     <p class="summary-text">立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 公明党</p>
     <dl>
@@ -858,7 +869,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f8902eafa02f8ec7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュース</h3>
     <p class="summary-text">「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介）</p>
     <dl>
@@ -877,7 +888,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/42705f0f94c2470a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:08</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュース</h3>
     <p class="summary-text">裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件</p>
     <dl>
@@ -890,7 +901,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e328c7b1acaff558.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 12:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュース</h3>
     <p class="summary-text">GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ）…</p>
     <dl>
@@ -909,7 +920,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d0b16950960ccdd7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 08:58</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュース</h3>
     <p class="summary-text">茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 NHKニュース</p>
     <dl>
@@ -922,7 +933,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a3d33a1107c2e5dd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 08:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞</h3>
     <p class="summary-text">死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] 朝日新聞</p>
     <dl>
@@ -935,7 +946,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bf419c57482bad5c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 07:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞</h3>
     <p class="summary-text">フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る 朝日新聞</p>
     <dl>
@@ -948,7 +959,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f69beb356e419083.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>KSBニュース · 14:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュース</h3>
     <p class="summary-text">国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 KSBニュース</p>
     <dl>
@@ -961,7 +972,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/47437938c1347bd9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>福岡TNCニュース · 11:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュース</h3>
     <p class="summary-text">“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 福岡TNCニュース</p>
     <dl>
@@ -974,7 +985,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/999ec79273df0c5f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>kfb.co.jp · 07:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span> <span>独立2媒体</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span> <span>独立2媒体</span></div>
     <h3>【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jp</h3>
     <p class="summary-text">【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル</p>
     <dl>
@@ -993,7 +1004,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7e29de5fd95d70fb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 13:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュース</h3>
     <p class="summary-text">台湾北中部でM5.6地震 台北など震度3観測 産経ニュース</p>
     <dl>
@@ -1006,7 +1017,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8682d29ca7f9ea94.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>tenki.jp · 13:07</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jp</h3>
     <p class="summary-text">【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) tenki.jp</p>
     <dl>
@@ -1019,7 +1030,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/194fbea9830961b1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュース</h3>
     <p class="summary-text">山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） Yahoo!ニ…</p>
     <dl>
@@ -1032,7 +1043,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b04d85b064dc2487.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 07:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュース</h3>
     <p class="summary-text">レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） Yahoo!ニュース</p>
     <dl>
@@ -1051,7 +1062,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f6755bc44dada56e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 08:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.com</h3>
     <p class="summary-text">本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo…</p>
     <dl>
@@ -1064,7 +1075,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0f733e4ceb51f13f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>玩具人 TOY PEOPLE · 10:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLE</h3>
     <p class="summary-text">ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 玩具人 TO…</p>
     <dl>
@@ -1077,7 +1088,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e3f2751235abec96.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GUNDAM Official Website · 09:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Website</h3>
     <p class="summary-text">「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョ…</p>
     <dl>
@@ -1090,7 +1101,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a9d05f742333c5f3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 08:46</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.com</h3>
     <p class="summary-text">【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タ…</p>
     <dl>
@@ -1109,7 +1120,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/67bffb943381f4d9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四季報オンライン · 09:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>7月27～31日に決算発表を予定している企業リスト - 四季報オンライン</h3>
     <p class="summary-text">7月27～31日に決算発表を予定している企業リスト 四季報オンライン</p>
     <dl>

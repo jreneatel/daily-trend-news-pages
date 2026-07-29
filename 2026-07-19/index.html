@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -688,7 +699,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/330e3352fa2b4549.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GIGAZINE · 12:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINE</h3>
     <p class="summary-text">Claude Fable 5が一部のサブスクプランで使用可能に GIGAZINE</p>
     <dl>
@@ -701,7 +712,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4ab306f0bb6d779c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 14:28</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN</h3>
     <p class="summary-text">「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に MSN</p>
     <dl>
@@ -714,7 +725,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/71ce5c2408e96914.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>CGTN Japanese · 13:08</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese</h3>
     <p class="summary-text">「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 CGTN Japanese</p>
     <dl>
@@ -733,7 +744,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8de1feaa27c3fb2e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 11:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo</h3>
     <p class="summary-text">Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 Moomoo</p>
     <dl>
@@ -752,7 +763,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/26a7f5a04918e3b1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞</h3>
     <p class="summary-text">副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] 朝日新聞</p>
     <dl>
@@ -765,7 +776,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cc96b8c4b1f32d28.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 13:37</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞</h3>
     <p class="summary-text">東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] 朝日新聞</p>
     <dl>
@@ -778,7 +789,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/57c7411a9dbdca9b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 09:31</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞</h3>
     <p class="summary-text">国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] 毎日新聞</p>
     <dl>
@@ -797,7 +808,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/36349f3c61eff125.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 12:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータル</h3>
     <p class="summary-text">栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 au Webポータル</p>
     <dl>
@@ -810,7 +821,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/dfa4e166c9ba1672.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>SODANE · 13:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE</h3>
     <p class="summary-text">【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯…</p>
     <dl>
@@ -823,7 +834,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a6942812c5144b45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 07:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル</h3>
     <p class="summary-text">「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か au Webポータル</p>
     <dl>
@@ -842,7 +853,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a4b7e4c4976b4d71.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 12:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.com</h3>
     <p class="summary-text">スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見ら…</p>
     <dl>
@@ -855,7 +866,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/121f514ef75a571a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 09:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com</h3>
     <p class="summary-text">シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 ninte…</p>
     <dl>
@@ -868,7 +879,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9f93a6d201cafc21.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>玩具人 TOY PEOPLE · 12:46</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE</h3>
     <p class="summary-text">マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワ…</p>
     <dl>
@@ -887,7 +898,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/21df65ad42a59156.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 09:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞</h3>
     <p class="summary-text">【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 山陽新聞</p>
     <dl>

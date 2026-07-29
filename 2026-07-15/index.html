@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ccbff371225d0ffb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>豪州、AI規制法制化へ 著作権保護など柱 首相「事実上の窃盗」 [AIの時代] - 朝日新聞</h3>
     <p class="summary-text">豪州、AI規制法制化へ 著作権保護など柱 首相「事実上の窃盗」 [AIの時代] 朝日新聞</p>
     <dl>
@@ -704,7 +715,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5912a2bda8616627.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>株式会社インプレス · 10:57</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>ニュース STOP、ビジネス向け動画生成AIプラットフォーム「OrionNaut」のβ版 - 株式会社インプレス</h3>
     <p class="summary-text">ニュース STOP、ビジネス向け動画生成AIプラットフォーム「OrionNaut」のβ版 株式会社インプレス</p>
     <dl>
@@ -717,7 +728,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/da4e3b9737d46e5a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:09</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>エヌビディアCEO､｢ジャパンAI｣の幕開けを予告－神田の居酒屋も訪問（Bloomberg） - Yahoo!ニュース</h3>
     <p class="summary-text">エヌビディアCEO､｢ジャパンAI｣の幕開けを予告－神田の居酒屋も訪問（Bloomberg） Yahoo!ニュース</p>
     <dl>
@@ -736,7 +747,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0a77b57ffef92ec9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PR Newswire · 09:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>独立試験で明らかになった、いざという時に本当に頼れる法人向けセキュリティ製品 - PR Newswire</h3>
     <p class="summary-text">独立試験で明らかになった、いざという時に本当に頼れる法人向けセキュリティ製品 PR Newswire</p>
     <dl>
@@ -755,7 +766,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/343957bd99b7c671.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>公明党 · 11:52</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>全国82議会から意見書が政府へ：断じて「非核三原則」の堅持を - 公明党</h3>
     <p class="summary-text">全国82議会から意見書が政府へ：断じて「非核三原則」の堅持を 公明党</p>
     <dl>
@@ -768,7 +779,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/55680d25d09b7470.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 11:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>読む政治：高市首相、「総意ではない」に反論 皇室典範改正案、論戦の内容 - 毎日新聞</h3>
     <p class="summary-text">読む政治：高市首相、「総意ではない」に反論 皇室典範改正案、論戦の内容 毎日新聞</p>
     <dl>
@@ -781,7 +792,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/02583c9f09971471.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>東京新聞デジタル · 11:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>皇室典範改正、麻生太郎氏の妹信子さまも養親の対象「政治的思惑を排除できるのか」 問われた政府側は - 東京新聞デジタル</h3>
     <p class="summary-text">皇室典範改正、麻生太郎氏の妹信子さまも養親の対象「政治的思惑を排除できるのか」 問われた政府側は 東京新聞デジタル</p>
     <dl>
@@ -794,7 +805,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/edda7cf4f35ac783.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>静岡新聞DIGITAL · 10:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>どうなる？静岡県内の最低賃金上昇幅 改定議論スタート 政治関与の動向も注目点 - 静岡新聞DIGITAL</h3>
     <p class="summary-text">どうなる？静岡県内の最低賃金上昇幅 改定議論スタート 政治関与の動向も注目点 静岡新聞DIGITAL</p>
     <dl>
@@ -807,7 +818,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f3b05fde2e66a983.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:27</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>【高市総理×参政・神谷宗幣代表】「政治家もしっかり国民の知る権利にこたえて」消費税減税や皇室典範など重要法案残る中で…党首討論で交わされた論戦【全文掲載】 - TBS NEWS DIG</h3>
     <p class="summary-text">【高市総理×参政・神谷宗幣代表】「政治家もしっかり国民の知る権利にこたえて」消費税減税や皇室典範など重要法案残る中…</p>
     <dl>
@@ -820,7 +831,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3dc593be5293a948.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>信濃毎日新聞デジタル · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>ブーム再燃「プロフ帳」で長野県の政治を語ってみませんか 信毎オリジナル用紙を作成 - 信濃毎日新聞デジタル</h3>
     <p class="summary-text">ブーム再燃「プロフ帳」で長野県の政治を語ってみませんか 信毎オリジナル用紙を作成 信濃毎日新聞デジタル</p>
     <dl>
@@ -839,7 +850,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1b2606f4e98fab92.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 14:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>副首都法案が衆議院で可決 「国家社会機能」の継続性確保が目的 中道・参政・共産が反対 国民も修正に応じなかったとして反対に回る - TBS NEWS DIG</h3>
     <p class="summary-text">副首都法案が衆議院で可決 「国家社会機能」の継続性確保が目的 中道・参政・共産が反対 国民も修正に応じなかったとし…</p>
     <dl>
@@ -852,7 +863,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7d8ccec4ad0c89d7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>動画配信者殺害・多摩川スーツケース死体遺棄事件 女の交際相手の男（41）の上告棄却 懲役15年実刑判決が確定へ 横浜地裁 - Yahoo!ニュース</h3>
     <p class="summary-text">動画配信者殺害・多摩川スーツケース死体遺棄事件 女の交際相手の男（41）の上告棄却 懲役15年実刑判決が確定へ 横…</p>
     <dl>
@@ -865,7 +876,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/011ad1b6fe9c1070.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>bunkamura.co.jp · 10:19</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>社会とアートの橋渡し役──ギャラリーの役割とは - bunkamura.co.jp</h3>
     <p class="summary-text">社会とアートの橋渡し役──ギャラリーの役割とは bunkamura.co.jp</p>
     <dl>
@@ -878,7 +889,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2c91c00fe558cb49.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:41</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>被害の男性（63）語る「目はもう いっていた」 大分・佐伯市での4人刺傷事件 緊迫した事件当時の様子 野下博司容疑者を殺人未遂容疑視野に捜査 - TBS NEWS DIG</h3>
     <p class="summary-text">被害の男性（63）語る「目はもう いっていた」 大分・佐伯市での4人刺傷事件 緊迫した事件当時の様子 野下博司容疑…</p>
     <dl>
@@ -891,7 +902,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/aabcfa490c277d4d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 08:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>点滴に人間の大便入れて入院患者を殺害か 助産師を逮捕 容疑を否認 [千葉県] - 朝日新聞</h3>
     <p class="summary-text">点滴に人間の大便入れて入院患者を殺害か 助産師を逮捕 容疑を否認 [千葉県] 朝日新聞</p>
     <dl>
@@ -904,7 +915,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/183092df78894e66.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>city-nakatsu.jp · 07:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「社会を明るくする運動メッセージ伝達式」が行われました - city-nakatsu.jp</h3>
     <p class="summary-text">「社会を明るくする運動メッセージ伝達式」が行われました</p>
     <dl>
@@ -923,7 +934,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d3c5ceb62d044dba.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 14:28</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>米株と国債が上昇、連日の物価統計下振れで利上げ先送り観測 - Bloomberg.com</h3>
     <p class="summary-text">米株と国債が上昇、連日の物価統計下振れで利上げ先送り観測 Bloomberg.com</p>
     <dl>
@@ -936,7 +947,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cf7fbc45044e0541.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 13:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>米ビッグテック決算控え半導体株、高値論争の試金石に - BigGo ファイナンス</h3>
     <p class="summary-text">米ビッグテック決算控え半導体株、高値論争の試金石に BigGo ファイナンス</p>
     <dl>
@@ -955,7 +966,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4d654739a3009e45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Tokyo Art Beat · 13:28</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>アート・デザイン・クラフトが交わる国際展「Kyōto YouMe Triennale」が10月初開催。京都・東本願寺で - Tokyo Art Beat</h3>
     <p class="summary-text">アート・デザイン・クラフトが交わる国際展「Kyōto YouMe Triennale」が10月初開催。京都・東本願…</p>
     <dl>
@@ -968,7 +979,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ba45bb16cd876310.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>北海道新聞デジタル · 12:57</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>GLAY・TERUさん 函館の国際芸術祭、28年開催へ調整 「音楽と飲食の担当を」 - 北海道新聞デジタル</h3>
     <p class="summary-text">GLAY・TERUさん 函館の国際芸術祭、28年開催へ調整 「音楽と飲食の担当を」 北海道新聞デジタル</p>
     <dl>
@@ -987,7 +998,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/758f25ac34be28b7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Lemino · 10:49</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「真佑のことおいてかないで」乃木坂46・田村の“甘さと辛さの緩急”が暴露され…！？『乃木坂工事延長中』#571 - Lemino</h3>
     <p class="summary-text">「真佑のことおいてかないで」乃木坂46・田村の“甘さと辛さの緩急”が暴露され…！？『乃木坂工事延長中』#571 L…</p>
     <dl>
@@ -1000,7 +1011,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0a6a3010c9edb1bb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ナタリー · 09:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>マキタスポーツとタブレット純、音楽と笑いのエンタメショー開催 - ナタリー</h3>
     <p class="summary-text">マキタスポーツとタブレット純、音楽と笑いのエンタメショー開催 ナタリー</p>
     <dl>
@@ -1019,7 +1030,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/44cc81277ef13146.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>佐々木麟太郎、マーリンズ入り決断！（サンケイスポーツ） - Yahoo!ニュース</h3>
     <p class="summary-text">佐々木麟太郎、マーリンズ入り決断！（サンケイスポーツ） Yahoo!ニュース</p>
     <dl>
@@ -1038,7 +1049,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7995e986ef98770e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>pref.miyagi.jp · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>第14回科学の甲子園ジュニア宮城県予選会「みやぎチャレンジジュニア2026」 - pref.miyagi.jp</h3>
     <p class="summary-text">第14回科学の甲子園ジュニア宮城県予選会「みやぎチャレンジジュニア2026」 pref.miyagi.jp</p>
     <dl>

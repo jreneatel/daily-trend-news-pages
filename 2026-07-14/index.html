@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/237a25b4d8d9151f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ソフトバンク孫会長、AIの自己進化により人類が頂点に立つ時代は終焉、超人類へと進化（ビジネス＋IT） - Yahoo!ニュース</h3>
     <p class="summary-text">ソフトバンク孫会長、AIの自己進化により人類が頂点に立つ時代は終焉、超人類へと進化（ビジネス＋IT） Yahoo!…</p>
     <dl>
@@ -704,7 +715,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/15bb7a3b0d9ec0a6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 13:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 - Bloomberg.com</h3>
     <p class="summary-text">ソフトウエア銘柄が総崩れ、さえないIBM業績を嫌気－AI脅威論が再燃 Bloomberg.com</p>
     <dl>
@@ -717,7 +728,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/396e641e2e89f1c2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>京都銀行、AIで不正取引検知（時事通信） - Yahoo!ニュース</h3>
     <p class="summary-text">京都銀行、AIで不正取引検知（時事通信） Yahoo!ニュース</p>
     <dl>
@@ -730,7 +741,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7bda8b30454508de.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経クロステック · 09:27</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>【PR】生成AIの価格破壊、アリババクラウドの戦略 - 日経クロステック</h3>
     <p class="summary-text">【PR】生成AIの価格破壊、アリババクラウドの戦略 日経クロステック</p>
     <dl>
@@ -743,7 +754,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a1c0dcb952b7adb7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 08:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>高性能AI「クロード・ミュトス」 証言からその正体に迫る | NHKニュース | 生成AI・人工知能、IT・ネット、深掘りコンテンツ - NHKニュース</h3>
     <p class="summary-text">高性能AI「クロード・ミュトス」 証言からその正体に迫る</p>
     <dl>
@@ -756,7 +767,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9ac33410fcdbcd28.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日刊工業新聞 · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>富士通、最新AIと実践知でレガシーシステムの刷新加速 - 日刊工業新聞</h3>
     <p class="summary-text">富士通、最新AIと実践知でレガシーシステムの刷新加速 日刊工業新聞</p>
     <dl>
@@ -775,7 +786,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2eb26082e0c0ae12.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ ケビン・ウォッシュ氏スピーチ要約 Moomoo</p>
     <dl>
@@ -788,7 +799,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1993591f98367016.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 14:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ - 時事ドットコム</h3>
     <p class="summary-text">ロジザード、業界最大級のオンライン展示会『ITトレンドEXPO2026 Summer』出展のお知らせ 時事ドットコム</p>
     <dl>
@@ -801,7 +812,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7dea250238410e0b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>coki.jp · 12:12</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強まる IT業界出社回帰加速 - coki.jp</h3>
     <p class="summary-text">GMO 在宅勤務を完全に廃止 熊谷代表「トータルではマイナス」 通勤負担・人材流出の懸念強まる IT業界出社回帰加…</p>
     <dl>
@@ -814,7 +825,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ff7d596f3ce085e8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:18</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」 - IT業界を中心に働き方の議論が活発化 - Yahoo!ニュース</h3>
     <p class="summary-text">【ヤフコメで話題】「リモートワークの是非と職種ごとの適性」「出社回帰の動きに賛否」</p>
     <dl>
@@ -827,7 +838,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/285a14b98f05684e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 07:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がITトレンド上半期ランキング2026で1位を獲得しました - ニコニコニュース</h3>
     <p class="summary-text">「FLESPEEQ Web Access」および「FLESPEEQ UTM Lite」がITトレンド上半期ランキン…</p>
     <dl>
@@ -846,7 +857,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0dba4865d739844b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 10:36</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>「なお一層の検討を」 国民投票法改正案、成立見通しに識者は - 毎日新聞</h3>
     <p class="summary-text">「なお一層の検討を」 国民投票法改正案、成立見通しに識者は 毎日新聞</p>
     <dl>
@@ -859,7 +870,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2daf6852b299be7d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>公益財団法人日本国際交流センター JCIE · 09:46</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>帰国報告会開催：日米次世代政治交流プログラム（26年度） - 公益財団法人日本国際交流センター JCIE</h3>
     <p class="summary-text">帰国報告会開催：日米次世代政治交流プログラム（26年度） 公益財団法人日本国際交流センター JCIE</p>
     <dl>
@@ -872,7 +883,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6ce78bc97956942e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>sannichi.co.jp · 09:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【取材メモ】後藤斎参院議員 - sannichi.co.jp</h3>
     <p class="summary-text">【取材メモ】後藤斎参院議員 sannichi.co.jp</p>
     <dl>
@@ -885,7 +896,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6655c3569de57df6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 - TBS NEWS DIG</h3>
     <p class="summary-text">中国共産党指導部の政治局員「収賄の疑い」で党籍はく奪処分決定 TBS NEWS DIG</p>
     <dl>
@@ -898,7 +909,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1cf617bb178c4730.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 08:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 - 日本経済新聞</h3>
     <p class="summary-text">中国共産党、馬興瑞政治局員の党籍剝奪 党大会にらみ「反腐敗」徹底 日本経済新聞</p>
     <dl>
@@ -911,7 +922,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bb4bf4cbf466ee08.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>jimin.jp · 07:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「キラリ☆とっとり育星塾」開講・第1回講座開催 - jimin.jp</h3>
     <p class="summary-text">「キラリ☆とっとり育星塾」開講・第1回講座開催 jimin.jp</p>
     <dl>
@@ -930,7 +941,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c89aa6adc81df65d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>キャンプファイヤー · 14:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>生ゴミ、ゼロ社会の実現 | 一家に一台コンポストの普及を！ - キャンプファイヤー</h3>
     <p class="summary-text">生ゴミ、ゼロ社会の実現</p>
     <dl>
@@ -943,7 +954,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3b9a26425c9b025e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>共同通信 日野町事件再審めぐり誤報 担当デスクら処分 - NHKニュース</h3>
     <p class="summary-text">共同通信 日野町事件再審めぐり誤報 担当デスクら処分 NHKニュース</p>
     <dl>
@@ -956,7 +967,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9a88b827e293b38e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>chuo-u.ac.jp · 13:51</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学副学長小野太一先生による特別講義を実施 - chuo-u.ac.jp</h3>
     <p class="summary-text">フィールドラーニング（戦略1・2）にて 社会保障・人口構造の専門家 元厚生労働省社会保障調査官・政策研究大学院大学…</p>
     <dl>
@@ -969,7 +980,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/506ca132fd2fcf91.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 13:38</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>日野町事件の再審公判 検察側、追加の証拠開示は「不要」 - 毎日新聞</h3>
     <p class="summary-text">日野町事件の再審公判 検察側、追加の証拠開示は「不要」 毎日新聞</p>
     <dl>
@@ -982,7 +993,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b71cfe8088d11157.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>pref.chiba.lg.jp · 10:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について - pref.chiba.lg.jp</h3>
     <p class="summary-text">令和7年度千葉県男女共同参画・多様性社会推進事業所表彰 受賞事業所及び表彰式について pref.chiba.lg.…</p>
     <dl>
@@ -995,7 +1006,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3402708cce71715a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗傷害事件にも関与か 合同捜査本部 - TBS NEWS DIG</h3>
     <p class="summary-text">おととし首都圏で相次いだ闇バイト強盗事件 “首謀者”5人を再逮捕 埼玉県所沢市で起きた強盗傷害事件にも関与か 合同…</p>
     <dl>
@@ -1014,7 +1025,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/db3970267094755b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 14:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>田中精密工業(株)【7218】：株価・株式情報（夜間PTS含む） - Yahoo!ファイナンス</h3>
     <p class="summary-text">田中精密工業(株)【7218】：株価・株式情報（夜間PTS含む） Yahoo!ファイナンス</p>
     <dl>
@@ -1027,7 +1038,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c764f157936db98f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>note · 14:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよびSaaSベンダーが直面する要求事項と実務戦略｜弁護士、弁理士、情報処理技術者、CFE吉澤尚 - note</h3>
     <p class="summary-text">経済安全保障推進法における基幹インフラ制度とITサプライチェーンの構造的変容：SIerおよびSaaSベンダーが直面…</p>
     <dl>
@@ -1046,7 +1057,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b2335a9fc75949fd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>西日本新聞me · 14:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>スポーツ(全国・海外ニュース)写真｜1265ページ目 - 西日本新聞me</h3>
     <p class="summary-text">スポーツ(全国・海外ニュース)写真</p>
     <dl>
@@ -1059,7 +1070,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/dedcd7746e449a85.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 12:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 - テレ朝NEWS</h3>
     <p class="summary-text">クロマグロ国際会議 メキシコ反発で漁獲枠増ならず 今後協議継続も「極めて難しい」 テレ朝NEWS</p>
     <dl>
@@ -1078,7 +1089,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ce73cd72b4b7ef07.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 13:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>MIXI × REAL AKIBA - ニコニコニュース</h3>
     <p class="summary-text">MIXI × REAL AKIBA ニコニコニュース</p>
     <dl>
@@ -1091,7 +1102,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/25eed72e6c41bd6b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BSフジ · 11:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>『わがまち散歩』 - BSフジ</h3>
     <p class="summary-text">『わがまち散歩』 BSフジ</p>
     <dl>
@@ -1110,7 +1121,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9ddec2d026ce6858.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>kansai-u.ac.jp · 14:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！ - kansai-u.ac.jp</h3>
     <p class="summary-text">【関大スポーツ編集局】テレビ朝日／BS朝日「部活 on Campus」で関大スポーツ編集局が紹介されました！</p>
     <dl>
@@ -1123,7 +1134,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d8ef8f438e74834b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 - Yahoo!ニュース</h3>
     <p class="summary-text">スポーツ新聞記者から宝塚東のコーチに転身した波部俊之介氏、ナインとの3カ月を振り返り「来てよかった」／兵庫大会 Y…</p>
     <dl>
@@ -1142,7 +1153,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/23fd9dcbf37f7571.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Digital PR Platform · 12:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>北海道科学大学と歌手・野口五郎氏が共同研究を開始 - Digital PR Platform</h3>
     <p class="summary-text">北海道科学大学と歌手・野口五郎氏が共同研究を開始 Digital PR Platform</p>
     <dl>

@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -690,7 +701,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b8e80601b63d971d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ai-market.jp · 14:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>GPT-5.3 Instantとは？実際に利用した使用感や料金・従来モデルとの違い・使い方も解説！ - ai-market.jp</h3>
     <p class="summary-text">GPT-5.3 Instantとは？実際に利用した使用感や料金・従来モデルとの違い・使い方も解説！</p>
     <dl>
@@ -703,7 +714,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c4115bafa281cb4f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ai-market.jp · 14:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>GeminiのGem機能とは？AI Market編集部の実使用レビュー、できること、特徴・料金・使い方解説！ - ai-market.jp</h3>
     <p class="summary-text">GeminiのGem機能とは？AI Market編集部の実使用レビュー、できること、特徴・料金・使い方解説！</p>
     <dl>
@@ -716,7 +727,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/102f455d5030c7f0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ai-market.jp · 14:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Genspark AIシートとは？料金プラン・使い方・実例を完全解説【実際に使って検証】 - ai-market.jp</h3>
     <p class="summary-text">Genspark AIシートとは？料金プラン・使い方・実例を完全解説【実際に使って検証】</p>
     <dl>
@@ -729,7 +740,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b248f81b4ca5bedf.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Stella AI、SpaceXAI社の「Grok 4.5」に対応 - ニコニコニュース</h3>
     <p class="summary-text">Stella AI、SpaceXAI社の「Grok 4.5」に対応 ニコニコニュース</p>
     <dl>
@@ -742,7 +753,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/118657185432516e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:44</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>ChatGPTでサイバー攻撃か 高校1年の男子生徒逮捕 「バンダイチャンネル」運営会社に（テレビ朝日系（ANN）） - Yahoo!ニュース</h3>
     <p class="summary-text">ChatGPTでサイバー攻撃か 高校1年の男子生徒逮捕 「バンダイチャンネル」運営会社に（テレビ朝日系（ANN））…</p>
     <dl>
@@ -755,7 +766,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1f87c234b3693cff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>KuCoin · 14:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Claude Codeの開発者、ボリス・チェルニー： 「もう私はClaudeにプロンプトを入力しない。ループが動いていて - KuCoin</h3>
     <p class="summary-text">Claude Codeの開発者、ボリス・チェルニー： 「もう私はClaudeにプロンプトを入力しない。ループが動い…</p>
     <dl>
@@ -774,7 +785,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e8f936ea0ca9d4d9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ スペースXで失った資金は全てMUで取り戻せそうだ。これが良い方向であってほしい。 - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ スペースXで失った資金は全てMUで取り戻せそうだ。これが良い方向であ…</p>
     <dl>
@@ -787,7 +798,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cdf334d11ec467e5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 14:37</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ スペースXよりも、ここには期待が持てそうだ - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ スペースXよりも、ここには期待が持てそうだ Moomoo</p>
     <dl>
@@ -800,7 +811,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2b728ccf56a304e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 14:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ 全員無事に利益確定して退場しました。私は一旦様子見します。外は危険です。。。 - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ 全員無事に利益確定して退場しました。私は一旦様子見します。外は危険で…</p>
     <dl>
@@ -819,7 +830,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5e4fa4437265e687.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>radiko news · 14:51</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「安倍晋三 回顧展」で見ることができる「人間・安倍晋三」が遺したもの - radiko news</h3>
     <p class="summary-text">「安倍晋三 回顧展」で見ることができる「人間・安倍晋三」が遺したもの radiko news</p>
     <dl>
@@ -832,7 +843,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f39626a676d8aaeb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>公明党 · 14:49</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>統一地方選 第４次公認を決定 : ブログ : ❤さかい妙子 練馬区議会議員❤ - 公明党</h3>
     <p class="summary-text">統一地方選 第４次公認を決定 : ブログ : ❤さかい妙子 練馬区議会議員❤ 公明党</p>
     <dl>
@@ -845,7 +856,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/65e7514b756ff762.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>47NEWS · 14:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 - 47NEWS</h3>
     <p class="summary-text">水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 47NEWS</p>
     <dl>
@@ -858,7 +869,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0f1a909ff612c734.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>cinema-factory.jp · 14:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>『Return to My Blue』国会インクルーシブ試写会 - cinema-factory.jp</h3>
     <p class="summary-text">『Return to My Blue』国会インクルーシブ試写会</p>
     <dl>
@@ -871,7 +882,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6f33904665a1495b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>新潟日報 · 14:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 - 新潟日報</h3>
     <p class="summary-text">水俣病救済法案を国会へ再提出、野党5会派が参議院に 賛同拡大が課題 新潟日報</p>
     <dl>
@@ -884,7 +895,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/20aba8e7c6bac317.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 14:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>オーストラリア、インドに発電用ウラン供給へ 両国首相が合意 原発拡大へ安定確保 - 産経ニュース</h3>
     <p class="summary-text">オーストラリア、インドに発電用ウラン供給へ 両国首相が合意 原発拡大へ安定確保 産経ニュース</p>
     <dl>
@@ -903,7 +914,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5b8c49a9001c0d54.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>熱中症対策は“組織”の時代へ…生活にも変化 “警戒アラート”最多 真夏日544地点（テレビ朝日系（ANN）） - Yahoo!ニュース</h3>
     <p class="summary-text">熱中症対策は“組織”の時代へ…生活にも変化 “警戒アラート”最多 真夏日544地点（テレビ朝日系（ANN）） Ya…</p>
     <dl>
@@ -916,7 +927,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/71af97bc48822c3c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>熱中症対策は“組織”の時代へ…生活にも変化 “警戒アラート”最多 真夏日544地点 (テレビ朝日系（ANN）) - Yahoo!ニュース</h3>
     <p class="summary-text">熱中症対策は“組織”の時代へ…生活にも変化 “警戒アラート”最多 真夏日544地点 (テレビ朝日系（ANN）) Y…</p>
     <dl>
@@ -935,7 +946,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/be5eefd6a69df1b9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>「親しみのある特別な国」山本由伸が大地震で被害のベネズエラへビデオメッセージ オリックス・マチャドが感謝（デイリースポーツ） - Yahoo!ニュース</h3>
     <p class="summary-text">「親しみのある特別な国」山本由伸が大地震で被害のベネズエラへビデオメッセージ オリックス・マチャドが感謝（デイリー…</p>
     <dl>
@@ -948,7 +959,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2dc415881e08dbb8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 13:58</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>和歌山県南方沖で地震 香南市で震度２【高知】（2026年7月9日掲載）｜RKC NEWS NNN - 日テレNEWS NNN</h3>
     <p class="summary-text">和歌山県南方沖で地震 香南市で震度２【高知】（2026年7月9日掲載）</p>
     <dl>
@@ -967,7 +978,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/56b685eac8e862a0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>読売新聞 · 14:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>父親を殺害して現金１２００万円奪った疑い、４６歳男を再逮捕…周囲に「父親は無事」と話し借金返済 - 読売新聞</h3>
     <p class="summary-text">父親を殺害して現金１２００万円奪った疑い、４６歳男を再逮捕…周囲に「父親は無事」と話し借金返済 読売新聞</p>
     <dl>
@@ -980,7 +991,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/39715691a0bf3f1a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>kochinews.co.jp · 13:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>車４台が絡む事故 高知県安芸市の大山道路 - kochinews.co.jp</h3>
     <p class="summary-text">車４台が絡む事故 高知県安芸市の大山道路 kochinews.co.jp</p>
     <dl>
@@ -1006,7 +1017,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/48199a194ff4ad65.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Teamfight Tactics · 14:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>宇宙の神々：Tactician’s Crown 事前情報 - Teamfight Tactics</h3>
     <p class="summary-text">宇宙の神々：Tactician’s Crown 事前情報 Teamfight Tactics</p>
     <dl>

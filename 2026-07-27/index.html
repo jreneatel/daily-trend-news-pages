@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/decb3688a2d0117c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PC Watch · 12:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>Claude Codeで複数AIを束ねる「Fugu」が使えるように - PC Watch</h3>
     <p class="summary-text">Claude Codeで複数AIを束ねる「Fugu」が使えるように PC Watch</p>
     <dl>
@@ -704,7 +715,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e620eadb3edd069a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>株式会社インプレス · 08:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>ニュース OpenAI、「ChatGPT」にHealth機能を導入、米国のユーザーが利用可能 - 株式会社インプレス</h3>
     <p class="summary-text">ニュース OpenAI、「ChatGPT」にHealth機能を導入、米国のユーザーが利用可能 株式会社インプレス</p>
     <dl>
@@ -717,7 +728,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/93c22f89a0041fc7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 14:01</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>令和8年版情報通信白書が公開に 生成AI、企業導入は進むも“活用の壁”は依然高め - ｄメニューニュース</h3>
     <p class="summary-text">令和8年版情報通信白書が公開に 生成AI、企業導入は進むも“活用の壁”は依然高め ｄメニューニュース</p>
     <dl>
@@ -730,7 +741,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b4f8ee84b0e95dd8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 13:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ChatGPT Workは「仕事」の枠を超えた──サム・アルトマンCEOのひと言で9人分の旅行サイトが完成 - BigGo ファイナンス</h3>
     <p class="summary-text">ChatGPT Workは「仕事」の枠を超えた──サム・アルトマンCEOのひと言で9人分の旅行サイトが完成 Big…</p>
     <dl>
@@ -743,7 +754,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0677e57f64c82631.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PR TIMES · 10:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【Claude Opus 5】自治体AI zevoに新たなClaude系LLMが2026年7月27日に追加！ - PR TIMES</h3>
     <p class="summary-text">【Claude Opus 5】自治体AI zevoに新たなClaude系LLMが2026年7月27日に追加！ PR…</p>
     <dl>
@@ -756,7 +767,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6d197fa523828228.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>techno-edge.net · 09:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ChatGPT Voiceがデスクトップ対応、Codex や Work も音声モードで指示が可能に GPT-Liveで相槌も打てる自然な会話実現 - techno-edge.net</h3>
     <p class="summary-text">ChatGPT Voiceがデスクトップ対応、Codex や Work も音声モードで指示が可能に GPT-Liv…</p>
     <dl>
@@ -775,7 +786,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7d420b88acc1bcf2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>Microsoft Edgeに複数の脆弱性 すぐ更新を（アスキー） - Yahoo!ニュース</h3>
     <p class="summary-text">Microsoft Edgeに複数の脆弱性 すぐ更新を（アスキー） Yahoo!ニュース</p>
     <dl>
@@ -788,7 +799,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f6e6d55d1b3dbc39.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 12:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>「Microsoft 365 Copilot 初級研修」が好評 - ニコニコニュース</h3>
     <p class="summary-text">「Microsoft 365 Copilot 初級研修」が好評 ニコニコニュース</p>
     <dl>
@@ -807,7 +818,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e177496eb1a48899.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:19</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>首相 国会運営に「反省点ない」 - Yahoo!ニュース</h3>
     <p class="summary-text">首相 国会運営に「反省点ない」 Yahoo!ニュース</p>
     <dl>
@@ -820,7 +831,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/235173f65c9f37dd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>jimin.jp · 09:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>「日本列島を、強く豊かに。」公約実現へ着実な成果 特別国会閉会 全閣法が成立 | お知らせ | ニュース - jimin.jp</h3>
     <p class="summary-text">「日本列島を、強く豊かに。」公約実現へ着実な成果 特別国会閉会 全閣法が成立 | お知らせ</p>
     <dl>
@@ -839,7 +850,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/015fdfb9366b05d6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 10:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>高市首相「公約実現を加速」政権公約を着実に達成した成果強調 消費減税については「速やかに法案を提出したい」 - au Webポータル</h3>
     <p class="summary-text">高市首相「公約実現を加速」政権公約を着実に達成した成果強調 消費減税については「速やかに法案を提出したい」 au…</p>
     <dl>
@@ -852,7 +863,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/48c735041c72ceca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 12:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>不適切関係疑いの元特捜部検事を裁判の証人として出廷求める - NHKニュース</h3>
     <p class="summary-text">不適切関係疑いの元特捜部検事を裁判の証人として出廷求める NHKニュース</p>
     <dl>
@@ -865,7 +876,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0b48385091859a1f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>city.miyako.iwate.jp · 07:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>最高裁判決を踏まえた保護費の追加給付について - city.miyako.iwate.jp</h3>
     <p class="summary-text">最高裁判決を踏まえた保護費の追加給付について city.miyako.iwate.jp</p>
     <dl>
@@ -884,7 +895,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3f8261a809af635d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 12:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>放火容疑で逮捕の会社役員の女性を起訴猶予で不起訴処分 仙台地検 - TBS NEWS DIG</h3>
     <p class="summary-text">放火容疑で逮捕の会社役員の女性を起訴猶予で不起訴処分 仙台地検 TBS NEWS DIG</p>
     <dl>
@@ -897,7 +908,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/920d41675d45878b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 08:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>6.9億円相当窃盗容疑、2人逮捕 「高級な家があるから一緒に」 [大阪府] - 朝日新聞</h3>
     <p class="summary-text">6.9億円相当窃盗容疑、2人逮捕 「高級な家があるから一緒に」 [大阪府] 朝日新聞</p>
     <dl>
@@ -910,7 +921,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a128880243a38c7d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 07:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>「女性が困惑する反応に楽しみ覚えた」社用車内で下半身露出 容疑で男逮捕 余罪も捜査 - 産経ニュース</h3>
     <p class="summary-text">「女性が困惑する反応に楽しみ覚えた」社用車内で下半身露出 容疑で男逮捕 余罪も捜査 産経ニュース</p>
     <dl>
@@ -923,7 +934,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/58dd38539ef29981.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>HTB北海道テレビ · 13:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>旭川中心部で乗用車同士の交通事故 運転していた９８歳の男性が死亡 - HTB北海道テレビ</h3>
     <p class="summary-text">旭川中心部で乗用車同士の交通事故 運転していた９８歳の男性が死亡 HTB北海道テレビ</p>
     <dl>
@@ -936,7 +947,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/12d9e808eab043ae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>沖縄タイムス社 · 10:26</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>バイク死亡事故、沖縄で相次ぐ 浦添市で18歳男子専門学校生、本部町で60歳男性が亡くなる - 沖縄タイムス社</h3>
     <p class="summary-text">バイク死亡事故、沖縄で相次ぐ 浦添市で18歳男子専門学校生、本部町で60歳男性が亡くなる 沖縄タイムス社</p>
     <dl>
@@ -949,7 +960,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6369c4f56b7f651d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nnn.co.jp · 09:51</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span> <span>独立2媒体</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span> <span>独立2媒体</span></div>
     <h3>ロ事件５０年、国民後押しで捜査結実 - nnn.co.jp</h3>
     <p class="summary-text">ロ事件５０年、国民後押しで捜査結実 nnn.co.jp</p>
     <dl>
@@ -968,7 +979,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bb0ba3f277ca5ba4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>「タトゥー入ってる？」“紅白出場”朝ドラヒロインの近影が波紋…結婚直後に“意味深投稿”→事務所退所→離婚を経て“自分らしさ”全開（女性自身） - Yahoo!ニュース</h3>
     <p class="summary-text">「タトゥー入ってる？」“紅白出場”朝ドラヒロインの近影が波紋…結婚直後に“意味深投稿”→事務所退所→離婚を経て“自…</p>
     <dl>
@@ -981,7 +992,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e2e50db58ea25b50.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 08:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>【プロ野球順位予想】前半戦終了 野球大好き芸能人の予想と現在の順位一覧【パリーグ編】 - ｄメニューニュース</h3>
     <p class="summary-text">【プロ野球順位予想】前半戦終了 野球大好き芸能人の予想と現在の順位一覧【パリーグ編】 ｄメニューニュース</p>
     <dl>
@@ -1000,7 +1011,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/63053d6e8cc32a09.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 11:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>NY株見通しー今週は大手ハイテク決算やFOMCに注目(トレーダーズ・ウェブ) - Yahoo!ファイナンス</h3>
     <p class="summary-text">NY株見通しー今週は大手ハイテク決算やFOMCに注目(トレーダーズ・ウェブ) Yahoo!ファイナンス</p>
     <dl>
@@ -1013,7 +1024,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7aa06ccd70abdd35.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>SBI証券 · 09:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>指数は方向感欠く、外部環境に関係なく決算銘柄には短期資金の売買が活発化へ - SBI証券</h3>
     <p class="summary-text">指数は方向感欠く、外部環境に関係なく決算銘柄には短期資金の売買が活発化へ SBI証券</p>
     <dl>
@@ -1026,7 +1037,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1ccd99a0c0fd5e6e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>トウシル · 07:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>決算ウイークは「AI株急落」に警戒？…いまの株式市場では「好材料」が「下落要因」となるかもしれない - トウシル</h3>
     <p class="summary-text">決算ウイークは「AI株急落」に警戒？…いまの株式市場では「好材料」が「下落要因」となるかもしれない トウシル</p>
     <dl>
@@ -1045,7 +1056,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6266575505c83e27.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウォーカープラス · 08:22</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>画像1 / 5＞発売前にPlayStation(R)4を無料で体験！ 「Try!PlayStation(R)4！ -2.22-」 大阪なんばCITY ガレリアコートで開催 - ウォーカープラス</h3>
     <p class="summary-text">画像1 / 5＞発売前にPlayStation(R)4を無料で体験！ 「Try!PlayStation(R)4！…</p>
     <dl>
@@ -1064,7 +1075,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/06a21e41e3f42588.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 13:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>仮想通貨取引所BitMEX、9月23日に取引サービス終了へ 2億ドル超の罰金と売却不成立を経て - 財経新聞</h3>
     <p class="summary-text">仮想通貨取引所BitMEX、9月23日に取引サービス終了へ 2億ドル超の罰金と売却不成立を経て 財経新聞</p>
     <dl>

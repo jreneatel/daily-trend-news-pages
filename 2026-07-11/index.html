@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -688,7 +699,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b7bf37809399bc63.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>電波新聞デジタル · 14:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</h3>
     <p class="summary-text">政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル</p>
     <dl>
@@ -701,7 +712,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/fe8072dcc91463f3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>すまほん!! · 14:58</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に - すまほん!!</h3>
     <p class="summary-text">人材大量引き抜きの確執。Appleが企業秘密の不正取得でOpenAIらを提訴、元Apple社員2人被告に すまほん…</p>
     <dl>
@@ -714,7 +725,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2a8e4fcfd0e0b092.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>アゴラ 言論プラットフォーム · 14:08</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ChatGPTはAIのNetscapeになるか - アゴラ 言論プラットフォーム</h3>
     <p class="summary-text">ChatGPTはAIのNetscapeになるか アゴラ 言論プラットフォーム</p>
     <dl>
@@ -727,7 +738,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8a2e4cdfe5fa6381.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>KuCoin · 14:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。 これは - KuCoin</h3>
     <p class="summary-text">OpenAIは、GPT-5.6のバイオセーフティ保護を普遍的に回避できる人物に5万ドルの報奨金を提供しています。…</p>
     <dl>
@@ -740,7 +751,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/db26ad2005cf294e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TradingKey · 13:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; OpenAIのアルトマンCEOが韓国を訪問へ - TradingKey</h3>
     <p class="summary-text">今週の展望: 米イラン和平合意は早ければ日曜日に署名へ; ウォルシュ氏のFOMCデビューへのカウントダウン; Op…</p>
     <dl>
@@ -759,7 +770,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4dbce25d57bfc7a9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>KuCoin · 14:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 - KuCoin</h3>
     <p class="summary-text">AIが大手テクノロジー企業の現金を消費する一方で、半導体メーカーが恩恵を受けています。 KuCoin</p>
     <dl>
@@ -772,7 +783,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/24342550efd3aa5d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 14:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート - MSN</h3>
     <p class="summary-text">SUPER EIGHT、ORANGE RANGE楽曲提供の最新曲「Do it!」 配信スタート MSN</p>
     <dl>
@@ -785,7 +796,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/08dbe32f83db5425.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>YouTube · 14:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>&quot;Squid Game is our pride (crying).&quot; ← It all belongs to America (lol). The cruel show where Korea... - YouTube</h3>
     <p class="summary-text">&quot;Squid Game is our pride (crying).&quot; ← It all belongs to A…</p>
     <dl>
@@ -798,7 +809,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4ffcfc779756c12b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>カルチャーメディアNiEW · 14:14</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も - カルチャーメディアNiEW</h3>
     <p class="summary-text">Dos Monosの荘子itが初ソロアルバムを8月にリリース、先行リスニングパーティーの開催も カルチャーメディア…</p>
     <dl>
@@ -817,7 +828,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d0aabc289cb7a25f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>電波新聞デジタル · 14:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 - 電波新聞デジタル</h3>
     <p class="summary-text">政府、「AI基本計画」改定案を決定 領域特化型の開発を推進 電波新聞デジタル</p>
     <dl>
@@ -830,7 +841,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/775f34ae8acce790.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 14:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>韓国政府、 中小企業の製造データを国家戦略資産に - MSN</h3>
     <p class="summary-text">韓国政府、 中小企業の製造データを国家戦略資産に MSN</p>
     <dl>
@@ -843,7 +854,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4e6875f9a5f106b4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四国新聞 · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟｜四国新聞WEB朝刊 - 四国新聞</h3>
     <p class="summary-text">田崎史郎 政治の「ツボ」＝定数削減、延長戦に 維新が首相に助け舟</p>
     <dl>
@@ -856,7 +867,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2115ebd9a3802f93.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四国新聞 · 14:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意｜四国新聞WEB朝刊 - 四国新聞</h3>
     <p class="summary-text">「安倍氏の志継承へ批判あっても挑戦」 首相、集いで決意</p>
     <dl>
@@ -869,7 +880,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5f7ed87e6feff38e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四国新聞 · 14:37</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>県関係国会議員週間予定（１３～１９日）｜四国新聞WEB朝刊 - 四国新聞</h3>
     <p class="summary-text">県関係国会議員週間予定（１３～１９日）</p>
     <dl>
@@ -882,7 +893,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0ec0ab3e4a94aaf7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四国新聞 · 14:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ｜四国新聞WEB朝刊 - 四国新聞</h3>
     <p class="summary-text">トランプ氏、選挙支援委２人解任 中間選挙控え、干渉強化へ</p>
     <dl>
@@ -901,7 +912,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9e88bce1dbe3a368.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウォーカープラス · 14:49</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
     <p class="summary-text">画像13 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
     <dl>
@@ -914,7 +925,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e0d674d5506adaca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白くなりませんか？」 (プロレスTODAY) - Yahoo!ニュース</h3>
     <p class="summary-text">飯伏幸太率いる飯伏プロレス研究所がJTOとの全面対抗戦に勝利！高橋幸光「8・11のトーナメント、俺が入ったら面白く…</p>
     <dl>
@@ -927,7 +938,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2e3d261528e4209b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Kids Well-being · 14:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開 - Kids Well-being</h3>
     <p class="summary-text">【夏休みの自由研究】AIがテーマ探しをお手伝い！東京都「東京こども自由研究ラボ」が公開</p>
     <dl>
@@ -940,7 +951,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/da65b462644df19f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウォーカープラス · 14:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
     <p class="summary-text">画像10 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
     <dl>
@@ -953,7 +964,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bb5915de1fa110e8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウォーカープラス · 14:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者に聞く】 - ウォーカープラス</h3>
     <p class="summary-text">画像12 / 32＞『空想科学読本』の柳田理科雄が手がける“学習マンガ” 怖い幽霊や都市伝説をまじめに分析【担当者…</p>
     <dl>
@@ -966,7 +977,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/86d13da8d901e100.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 14:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 - ｄメニューニュース</h3>
     <p class="summary-text">50万の星々が輝く巨大な星団 ハッブル宇宙望遠鏡が観測した球状星団「M3（メシエ3）」 ｄメニューニュース</p>
     <dl>
@@ -985,7 +996,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/65dd4a4417a4da42.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>tv-tokyo.co.jp · 14:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>美と健康の健やかタイム - tv-tokyo.co.jp</h3>
     <p class="summary-text">美と健康の健やかタイム</p>
     <dl>
@@ -998,7 +1009,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4a3bd4dbadaafe0a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 14:12</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】 | TBS NEWS DIG - TBS NEWS DIG</h3>
     <p class="summary-text">「女性の健康コンソーシアム」設立発表会 今後は「月経痛や産後うつ」など女性特有の健康課題のセミナーも【岡山】</p>
     <dl>
@@ -1011,7 +1022,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ece231f3dd081914.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Gizmodo · 13:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 - Gizmodo</h3>
     <p class="summary-text">プーマの新作シューズに死角なし。ランナーから健康維持まで万能さが魅力 Gizmodo</p>
     <dl>
@@ -1024,7 +1035,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4317430c4311515c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライフハッカー・ジャパン · 13:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 - ライフハッカー・ジャパン</h3>
     <p class="summary-text">ニッチなコンセント不足を救う。ユニークすぎる「特化型タップ」3種 ライフハッカー・ジャパン</p>
     <dl>
@@ -1037,7 +1048,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4cd3c6ca20b00521.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>アニメイトタイムズ · 13:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける - アニメイトタイムズ</h3>
     <p class="summary-text">【アニサマ2026】『リゼロ』高橋李依（エミリア）が「Stay Alive 〜Regain〜」を届ける アニメイト…</p>
     <dl>
@@ -1056,7 +1067,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6e2d7a32cf3807b7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>シティライフニュース · 14:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 - シティライフニュース</h3>
     <p class="summary-text">‐茨木市‐ 7月12日に「クッキーハウスの音楽ライブ♪」開催 シティライフニュース</p>
     <dl>
@@ -1069,7 +1080,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8f2c32962426e94e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>FM大阪 · 14:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「ジャー・パンファンと音楽の潮流」#27 - FM大阪</h3>
     <p class="summary-text">「ジャー・パンファンと音楽の潮流」#27 FM大阪</p>
     <dl>
@@ -1082,7 +1093,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5387d7153d9d01ca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 14:39</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 - MSN</h3>
     <p class="summary-text">おぎやはぎ 渋谷エンタメ祭「渋笑」出演のスピードワゴンに「会いたいわ～!」 MSN</p>
     <dl>
@@ -1095,7 +1106,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a0acde6894e1709d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MusicVoice · 14:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻｜vois ヴォイス - MusicVoice</h3>
     <p class="summary-text">【エンタメ】ルセラ×ILLIT×KATSEYE、コラボ曲がグローバル主要チャートで1カ月にわたり上位圏を席巻</p>
     <dl>
@@ -1108,7 +1119,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/88605ecb483602c1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>映画.com · 14:14</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） - 映画.com</h3>
     <p class="summary-text">「トイストーリー2が好きな人のための映画」 トイ・ストーリー5 のぞみさんの映画レビュー（感想・評価） 映画.com</p>
     <dl>
@@ -1121,7 +1132,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9cc4c45e00f9497c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>クラウドファンディング - READYFOR · 13:51</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！ - クラウドファンディング - READYFOR</h3>
     <p class="summary-text">【東大×ソウル大】両国の明日を担う若者が音楽でつながるコンサート！</p>
     <dl>

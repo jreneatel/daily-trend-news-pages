@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -695,7 +706,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3297826c98b5ca2f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Science Portal Asia Pacific · 07:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
     <h3>中国AI輸出規制強化か 重要技術流出防ぐ - Science Portal Asia Pacific</h3>
     <p class="summary-text">中国AI輸出規制強化か 重要技術流出防ぐ Science Portal Asia Pacific</p>
     <dl>
@@ -708,7 +719,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8c87efce14712f0e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>株式会社インプレス · 08:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>ニュース OpenAIとHugging Face、モデル評価中にセキュリティインシデントが発生し対応 - 株式会社インプレス</h3>
     <p class="summary-text">ニュース OpenAIとHugging Face、モデル評価中にセキュリティインシデントが発生し対応 株式会社イン…</p>
     <dl>
@@ -721,7 +732,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3f8a2e1486bff762.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライフハッカー · 12:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>AIアシスタントの無料版を使い倒して判明した、ClaudeとGeminiの決定的な違い - ライフハッカー</h3>
     <p class="summary-text">AIアシスタントの無料版を使い倒して判明した、ClaudeとGeminiの決定的な違い ライフハッカー</p>
     <dl>
@@ -734,7 +745,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8c07df8c9d488b70.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>thinkit.co.jp · 10:39</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【生成AI活用の次段階】「導入した」だけでは成果が出ない、企業に問われる実装力 - thinkit.co.jp</h3>
     <p class="summary-text">【生成AI活用の次段階】「導入した」だけでは成果が出ない、企業に問われる実装力 thinkit.co.jp</p>
     <dl>
@@ -747,7 +758,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f8cc61a0d46b8eae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 10:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Anthropicの「Claude Opus 5」、24日公開間近…GPT・中国AIと三つ巴の戦い - BigGo ファイナンス</h3>
     <p class="summary-text">Anthropicの「Claude Opus 5」、24日公開間近…GPT・中国AIと三つ巴の戦い BigGo フ…</p>
     <dl>
@@ -766,7 +777,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/801d0ad2f4015ff2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Korben · 09:44</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>Mage-Flow — MacでもローカルKで動くMicrosoftの拡散モデル - Korben</h3>
     <p class="summary-text">Mage-Flow — MacでもローカルKで動くMicrosoftの拡散モデル Korben</p>
     <dl>
@@ -779,7 +790,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5b4cff6588515184.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 09:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>Apple、Mac刷新とiPad拡充へ同時攻勢—M6搭載MacBook Proや有機EL搭載iPad miniが浮上 - BigGo ファイナンス</h3>
     <p class="summary-text">Apple、Mac刷新とiPad拡充へ同時攻勢—M6搭載MacBook Proや有機EL搭載iPad miniが浮…</p>
     <dl>
@@ -792,7 +803,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/441fcb36a1881ebb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>DXマガジン · 08:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【Appleの最新ニュース】月額＆サブスク対応でより身近に！「新保証プラン」が拓く安心のデバイスライフ - DXマガジン</h3>
     <p class="summary-text">【Appleの最新ニュース】月額＆サブスク対応でより身近に！「新保証プラン」が拓く安心のデバイスライフ DXマガジン</p>
     <dl>
@@ -805,7 +816,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/24d5dec6ac3ec66d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>newspicks.com · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>【世界のニュース７選】「Google」クラウド絶好調も、株価下落 - newspicks.com</h3>
     <p class="summary-text">【世界のニュース７選】「Google」クラウド絶好調も、株価下落 newspicks.com</p>
     <dl>
@@ -824,7 +835,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/88b196c913ab8679.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 09:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>政府、外国人規制の有識者会議設置へ 議論基に「人口戦略」策定 - 毎日新聞</h3>
     <p class="summary-text">政府、外国人規制の有識者会議設置へ 議論基に「人口戦略」策定 毎日新聞</p>
     <dl>
@@ -837,7 +848,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/517f19d10c7cbe96.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 09:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>「AI担当部署の拡充を」自民が政府に緊急提言 高性能AI公開受け [自由民主党（自民党）][高市早苗首相 自民党総裁][AIの時代] - 朝日新聞</h3>
     <p class="summary-text">「AI担当部署の拡充を」自民が政府に緊急提言 高性能AI公開受け [自由民主党（自民党）][高市早苗首相 自民党総…</p>
     <dl>
@@ -850,7 +861,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b4a52a5ab0fca7a1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 12:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>日・ソロモン首脳会談 - 首相官邸</h3>
     <p class="summary-text">日・ソロモン首脳会談 首相官邸</p>
     <dl>
@@ -863,7 +874,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/07aaae1055d2cf27.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>カレントアウェアネス・ポータル · 08:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>米国政府出版局（GPO）、1895年から1976年までに刊行された連邦政府刊行物の書誌レコード約120万件を公開 - カレントアウェアネス・ポータル</h3>
     <p class="summary-text">米国政府出版局（GPO）、1895年から1976年までに刊行された連邦政府刊行物の書誌レコード約120万件を公開…</p>
     <dl>
@@ -876,7 +887,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/56b614a7e923003a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 13:31</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>＜独自＞衛星情報分析、24時間体制へ 政府人員拡充、AI活用に着手 自民提言 - 産経ニュース</h3>
     <p class="summary-text">＜独自＞衛星情報分析、24時間体制へ 政府人員拡充、AI活用に着手 自民提言 産経ニュース</p>
     <dl>
@@ -889,7 +900,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/16906bf76046b520.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 10:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>「副首都」採決折り合わず 野党「同時選禁止」要求―延長国会、大詰め攻防激化 - 時事ドットコム</h3>
     <p class="summary-text">「副首都」採決折り合わず 野党「同時選禁止」要求―延長国会、大詰め攻防激化 時事ドットコム</p>
     <dl>
@@ -908,7 +919,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/70db966f85f4c769.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 10:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>日本公庫の元職員の男を収賄容疑で逮捕 融資めぐり便宜か 愛知 [愛知県] - 朝日新聞</h3>
     <p class="summary-text">日本公庫の元職員の男を収賄容疑で逮捕 融資めぐり便宜か 愛知 [愛知県] 朝日新聞</p>
     <dl>
@@ -921,7 +932,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/94e1e7537bbe4c81.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 10:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>騒音で近隣住民うつに 傷害容疑で６１歳男逮捕―京都府警：時事ドットコム - 時事ドットコム</h3>
     <p class="summary-text">騒音で近隣住民うつに 傷害容疑で６１歳男逮捕―京都府警：時事ドットコム 時事ドットコム</p>
     <dl>
@@ -934,7 +945,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ca3120e8a8b129e2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 10:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>朝日新聞販売所の従業員を逮捕 女性へのわいせつ容疑 - 朝日新聞</h3>
     <p class="summary-text">朝日新聞販売所の従業員を逮捕 女性へのわいせつ容疑 朝日新聞</p>
     <dl>
@@ -947,7 +958,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8a1b85b3ecfe614b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 07:13</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>焼き肉チェーン元社長逮捕 「エンジェル税制」悪用か―所得税３．６億円脱税容疑・横浜地検 - 時事ドットコム</h3>
     <p class="summary-text">焼き肉チェーン元社長逮捕 「エンジェル税制」悪用か―所得税３．６億円脱税容疑・横浜地検 時事ドットコム</p>
     <dl>
@@ -960,7 +971,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3a5c2ed926b5ac61.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 07:07</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>「生きて帰ってきます」 死亡した大学生がSNS投稿 「なんで精神ぼろぼろに…」とも 江別暴行死裁判 - 日テレNEWS NNN</h3>
     <p class="summary-text">「生きて帰ってきます」 死亡した大学生がSNS投稿 「なんで精神ぼろぼろに…」とも 江別暴行死裁判 日テレNEWS…</p>
     <dl>
@@ -973,7 +984,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/06c799704e821320.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>神戸新聞 · 14:42</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>公然わいせつ容疑で男逮捕 車で事故起こし、逃走中に服脱ぐ「身軽になりたかった」|事件・事故 - 神戸新聞</h3>
     <p class="summary-text">公然わいせつ容疑で男逮捕 車で事故起こし、逃走中に服脱ぐ「身軽になりたかった」</p>
     <dl>
@@ -992,7 +1003,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6364f88253f61fa0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ABEMA · 11:19</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>89歳妻死亡 88歳夫を逮捕 “熱中症”視野に捜査も… 最新の社会ニュース【随時更新】 - ABEMA</h3>
     <p class="summary-text">89歳妻死亡 88歳夫を逮捕 “熱中症”視野に捜査も… 最新の社会ニュース【随時更新】 ABEMA</p>
     <dl>
@@ -1005,7 +1016,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cddef0b98e405111.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 11:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>800万円収賄容疑、大阪・大東市の元主査再逮捕 随意契約で便宜か [大阪府] - 朝日新聞</h3>
     <p class="summary-text">800万円収賄容疑、大阪・大東市の元主査再逮捕 随意契約で便宜か [大阪府] 朝日新聞</p>
     <dl>
@@ -1018,7 +1029,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ad8700e434c63e9a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>FNNプライムオンライン · 10:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>全仏オープン優勝から29年…何が？ 元プロテニス選手の平木理化容疑者（54）を逮捕 ロマンス詐欺事件に関与し30万円詐取か - FNNプライムオンライン</h3>
     <p class="summary-text">全仏オープン優勝から29年…何が？ 元プロテニス選手の平木理化容疑者（54）を逮捕 ロマンス詐欺事件に関与し30万…</p>
     <dl>
@@ -1031,7 +1042,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6e160fe7e9ed8c10.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 07:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>全仏混合ダブルス優勝の元テニス選手、特殊詐欺に関与した疑いで逮捕 - 朝日新聞</h3>
     <p class="summary-text">全仏混合ダブルス優勝の元テニス選手、特殊詐欺に関与した疑いで逮捕 朝日新聞</p>
     <dl>
@@ -1044,7 +1055,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b9e4277afccd111f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>“白トラ営業”疑いで男4人逮捕 運送業の許可受けずにカンパチなど運送か 常態化も視野に捜査（ＫＹＴ鹿児島読売テレビ） - Yahoo!ニュース</h3>
     <p class="summary-text">“白トラ営業”疑いで男4人逮捕 運送業の許可受けずにカンパチなど運送か 常態化も視野に捜査（ＫＹＴ鹿児島読売テレビ…</p>
     <dl>
@@ -1057,7 +1068,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/8c350bb6cf446241.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>下野新聞社 · 07:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>住宅から現金や貴金属を盗んだ疑い、19～20歳の男4人逮捕 栃木・群馬県警捜査班 - 下野新聞社</h3>
     <p class="summary-text">住宅から現金や貴金属を盗んだ疑い、19～20歳の男4人逮捕 栃木・群馬県警捜査班 下野新聞社</p>
     <dl>
@@ -1076,7 +1087,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f2dc382516db5d95.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 08:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>元妻と再婚宣言の75歳芸能人 膀胱がん手術、咽頭がん治療へて退院 うの、元NHK看板アナらが祝う「結婚式みたい」と出席者の声 - au Webポータル</h3>
     <p class="summary-text">元妻と再婚宣言の75歳芸能人 膀胱がん手術、咽頭がん治療へて退院 うの、元NHK看板アナらが祝う「結婚式みたい」と…</p>
     <dl>
@@ -1089,7 +1100,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1f5bd53455d74b07.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>デイリースポーツ · 08:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>元妻と再婚宣言の７５歳芸能人 膀胱がん手術、咽頭がん治療へて退院 うの、元ＮＨＫ看板アナらが祝う「結婚式みたい」と出席者の声 - デイリースポーツ</h3>
     <p class="summary-text">元妻と再婚宣言の７５歳芸能人 膀胱がん手術、咽頭がん治療へて退院 うの、元ＮＨＫ看板アナらが祝う「結婚式みたい」と…</p>
     <dl>
@@ -1102,7 +1113,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/aacdc7d370b3a4c8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>文春オンライン · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>「都内でもドライブデート。結婚は…」川口春奈（31）＆板倉滉（29）が真剣交際 「川口さんはオランダまで会いに」 - 文春オンライン</h3>
     <p class="summary-text">「都内でもドライブデート。結婚は…」川口春奈（31）＆板倉滉（29）が真剣交際 「川口さんはオランダまで会いに」…</p>
     <dl>
@@ -1121,7 +1132,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/679280c8d847b7d4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>FNNプライムオンライン · 09:26</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>災害情報：地震 - FNNプライムオンライン</h3>
     <p class="summary-text">災害情報：地震 FNNプライムオンライン</p>
     <dl>
@@ -1134,7 +1145,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c257347af957f839.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:26</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>鹿児島県で最大震度3の地震 鹿児島県・喜界町 - TBS NEWS DIG</h3>
     <p class="summary-text">鹿児島県で最大震度3の地震 鹿児島県・喜界町 TBS NEWS DIG</p>
     <dl>
@@ -1147,7 +1158,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cc075a7803c4158e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 09:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>【地震速報】鹿児島 喜界島で震度3 津波の心配なし - NHKニュース</h3>
     <p class="summary-text">【地震速報】鹿児島 喜界島で震度3 津波の心配なし NHKニュース</p>
     <dl>
@@ -1160,7 +1171,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/18a46110c528ff54.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>UAゼンセン · 11:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>熊本地震から１０年、震災の教訓を学ぶ国内視察を実施 - UAゼンセン</h3>
     <p class="summary-text">熊本地震から１０年、震災の教訓を学ぶ国内視察を実施 UAゼンセン</p>
     <dl>
@@ -1173,7 +1184,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d07c638f2e3d5198.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウェザーニュース · 09:26</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>奄美大島近海でM4.7の地震 最大震度3 津波の心配なし - ウェザーニュース</h3>
     <p class="summary-text">奄美大島近海でM4.7の地震 最大震度3 津波の心配なし ウェザーニュース</p>
     <dl>
@@ -1192,7 +1203,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/933fe6fc22c4881c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 07:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>900万相当の高級腕時計受け取る 日本政策金融公庫元職員を逮捕 融資で便宜、収賄疑い - 産経ニュース</h3>
     <p class="summary-text">900万相当の高級腕時計受け取る 日本政策金融公庫元職員を逮捕 融資で便宜、収賄疑い 産経ニュース</p>
     <dl>
@@ -1205,7 +1216,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b422fcf27d793ca5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TradingView · 13:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>仮想通貨取引所BitMEXがサービス終了へ - TradingView</h3>
     <p class="summary-text">仮想通貨取引所BitMEXがサービス終了へ TradingView</p>
     <dl>
@@ -1224,7 +1235,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/46f8831aba85cf3e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 09:07</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>京都 大音量で住民に健康被害か 傷害の疑いで61歳住人を逮捕 | NHKニュース | 事件・事故、京都府 - NHKニュース</h3>
     <p class="summary-text">京都 大音量で住民に健康被害か 傷害の疑いで61歳住人を逮捕</p>
     <dl>
@@ -1237,7 +1248,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/58d7bda2d7969f5e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:08</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>｢サンライフ焼津｣温浴施設でレジオネラ属菌検出…安全確認できるまで当面 男女露天風呂を利用停止(静岡･焼津市) - Yahoo!ニュース</h3>
     <p class="summary-text">｢サンライフ焼津｣温浴施設でレジオネラ属菌検出…安全確認できるまで当面 男女露天風呂を利用停止(静岡･焼津市) Y…</p>
     <dl>
@@ -1256,7 +1267,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d310ccccd7cb9b2b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 10:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>スポーツ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>スポーツ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>サッカー日本代表、大岩剛氏の監督就任決定 森保一監督が半年間続投 - 時事ドットコム</h3>
     <p class="summary-text">サッカー日本代表、大岩剛氏の監督就任決定 森保一監督が半年間続投 時事ドットコム</p>
     <dl>
@@ -1269,7 +1280,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/069f0bb38a868a0e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>olympics.com · 08:04</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>スポーツ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【アジア競技大会】サッカーの組み合わせ発表 なでしこジャパン狩野監督「一戦一戦タフに戦い、泥臭く1点を取りにいく」 - olympics.com</h3>
     <p class="summary-text">【アジア競技大会】サッカーの組み合わせ発表 なでしこジャパン狩野監督「一戦一戦タフに戦い、泥臭く1点を取りにいく」…</p>
     <dl>
@@ -1288,7 +1299,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/39606ece2de472b7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 09:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>決算:監査法人の業界再編、担い手不足が背中押す 会計士の６割が所属せず - 日本経済新聞</h3>
     <p class="summary-text">決算:監査法人の業界再編、担い手不足が背中押す 会計士の６割が所属せず 日本経済新聞</p>
     <dl>
@@ -1301,7 +1312,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2beeaf34e62971ef.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 07:37</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>米アルファベットの決算を受けてAI関連株に見直し買いも上値は重い【クロージング】 - ｄメニューニュース</h3>
     <p class="summary-text">米アルファベットの決算を受けてAI関連株に見直し買いも上値は重い【クロージング】 ｄメニューニュース</p>
     <dl>
@@ -1314,7 +1325,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f3ae928ca3d958f7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 07:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>日経平均が307円反発、アルファベット決算で半導体に買いも商いは低調 - BigGo ファイナンス</h3>
     <p class="summary-text">日経平均が307円反発、アルファベット決算で半導体に買いも商いは低調 BigGo ファイナンス</p>
     <dl>
@@ -1327,7 +1338,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/745d0c38aeae37b2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nedo.go.jp · 09:28</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
     <h3>経済産業省と「我が国のフィジカルAI政策に関する対外発信イベント」を開催しました - nedo.go.jp</h3>
     <p class="summary-text">経済産業省と「我が国のフィジカルAI政策に関する対外発信イベント」を開催しました nedo.go.jp</p>
     <dl>
@@ -1353,7 +1364,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4c259c3067d82936.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Esquire · 13:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【速報】第83回ヴェネツィア国際映画祭（2026）のラインナップ発表！ 金獅子賞を争う注目の全20作品を一挙紹介 - Esquire</h3>
     <p class="summary-text">【速報】第83回ヴェネツィア国際映画祭（2026）のラインナップ発表！ 金獅子賞を争う注目の全20作品を一挙紹介…</p>
     <dl>

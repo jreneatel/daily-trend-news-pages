@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -693,7 +704,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ba9ead4276542074.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>thinkit.co.jp · 12:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>【AIが“穴”を探し出す】脆弱性発見AI「Mythos」が企業に問うもの - thinkit.co.jp</h3>
     <p class="summary-text">【AIが“穴”を探し出す】脆弱性発見AI「Mythos」が企業に問うもの thinkit.co.jp</p>
     <dl>
@@ -706,7 +717,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0a0c036b94c36880.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:41</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>AIに仕事を奪われた私が、ChatGPTを「頼もしい相棒」に変えて転職に成功した話 (ライフハッカー・ジャパン) - Yahoo!ニュース</h3>
     <p class="summary-text">AIに仕事を奪われた私が、ChatGPTを「頼もしい相棒」に変えて転職に成功した話 (ライフハッカー・ジャパン)…</p>
     <dl>
@@ -719,7 +730,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a70d0b5d3fafa4cf.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Letem světem Applem · 14:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ChatGPT iPhoneユーザー向けに大きなアップデートが行われます。 Apple ズドラヴィ - Letem světem Applem</h3>
     <p class="summary-text">ChatGPT iPhoneユーザー向けに大きなアップデートが行われます。 Apple ズドラヴィ Letem s…</p>
     <dl>
@@ -732,7 +743,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1e72fa26d92a1985.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 12:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>脳科学×AIで「伸びる人」を発掘「AI活用適性診断」正式リリース・提供開始 - ニコニコニュース</h3>
     <p class="summary-text">脳科学×AIで「伸びる人」を発掘「AI活用適性診断」正式リリース・提供開始 ニコニコニュース</p>
     <dl>
@@ -745,7 +756,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c0aa6e4d06ad6dea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>DXマガジン · 11:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>OpenAIが最新AIエージェントを発表！ 1回頼めば自動でパソコン画面を操作し仕事が一瞬で終わる - DXマガジン</h3>
     <p class="summary-text">OpenAIが最新AIエージェントを発表！ 1回頼めば自動でパソコン画面を操作し仕事が一瞬で終わる DXマガジン</p>
     <dl>
@@ -758,7 +769,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/dab8c45a830f54f4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>note · 11:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>01.AIは「中国版OpenAI」を捨てて上場できるのか 李開復が選んだ中国AIの現実路線｜吉川真人＠中国テックトレンドニュース - note</h3>
     <p class="summary-text">01.AIは「中国版OpenAI」を捨てて上場できるのか 李開復が選んだ中国AIの現実路線</p>
     <dl>
@@ -777,7 +788,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2a941386d95e8aab.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>オートメーション新聞 · 09:13</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>福西電機、7/24にグランフロント大阪で製造業のサイバーセキュリティ規制対応セミナー - オートメーション新聞</h3>
     <p class="summary-text">福西電機、7/24にグランフロント大阪で製造業のサイバーセキュリティ規制対応セミナー オートメーション新聞</p>
     <dl>
@@ -790,7 +801,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f399e9d9feb659ff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経クロステック · 12:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック</h3>
     <p class="summary-text">MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う 日経クロステック</p>
     <dl>
@@ -803,7 +814,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/537e789941a143e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事通信ニュース · 08:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>◎サイバーセキュリティアンバサダー任命 - 時事通信ニュース</h3>
     <p class="summary-text">◎サイバーセキュリティアンバサダー任命 時事通信ニュース</p>
     <dl>
@@ -816,7 +827,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/91ad054ccfc8843f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>Google、アカウントログイン方法に「自撮り動画」を追加 ロックアウト時の復旧を容易に - 産経ニュース</h3>
     <p class="summary-text">Google、アカウントログイン方法に「自撮り動画」を追加 ロックアウト時の復旧を容易に 産経ニュース</p>
     <dl>
@@ -829,7 +840,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/866ac93e99450b9e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 13:09</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース) - Yahoo!ファイナンス</h3>
     <p class="summary-text">アムコー・テクノロジーは時間外で大幅高推移＝米国株個別(株探ニュース) Yahoo!ファイナンス</p>
     <dl>
@@ -848,7 +859,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9d2894ef04c9b55c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>立憲民主党 · 12:32</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>【参院沖北特委】副首都法案、付帯決議に住民投票と通常選挙の同日選「重複しないように調整する」盛り込む - 立憲民主党</h3>
     <p class="summary-text">【参院沖北特委】副首都法案、付帯決議に住民投票と通常選挙の同日選「重複しないように調整する」盛り込む 立憲民主党</p>
     <dl>
@@ -861,7 +872,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c36a3876ae9ff00e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 13:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>副首都法が成立 与党提出、野党は反対―特別国会、事実上閉幕 - 時事ドットコム</h3>
     <p class="summary-text">副首都法が成立 与党提出、野党は反対―特別国会、事実上閉幕 時事ドットコム</p>
     <dl>
@@ -874,7 +885,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/50bc6c37cd92486a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 13:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>「異例の国会」が事実上閉会 高市首相出席の集中審議は近年の半分 [高市早苗首相] - 朝日新聞</h3>
     <p class="summary-text">「異例の国会」が事実上閉会 高市首相出席の集中審議は近年の半分 [高市早苗首相] 朝日新聞</p>
     <dl>
@@ -887,7 +898,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/fda2480d46ba5c6c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 12:52</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>副首都法が成立 国会閉会へ 高市首相、強硬な国会運営に終始 - 毎日新聞</h3>
     <p class="summary-text">副首都法が成立 国会閉会へ 高市首相、強硬な国会運営に終始 毎日新聞</p>
     <dl>
@@ -906,7 +917,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e36f51ce53d35472.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>ため池小1男児死亡の損害賠償裁判 市側は一部責任を認めるも原告の過失を主張 宮城・栗原市 - TBS NEWS DIG</h3>
     <p class="summary-text">ため池小1男児死亡の損害賠償裁判 市側は一部責任を認めるも原告の過失を主張 宮城・栗原市 TBS NEWS DIG</p>
     <dl>
@@ -919,7 +930,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3b8e992becb5133c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>QAB 琉球朝日放送 · 13:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>宮古島市贈収賄事件 逮捕の市職員ら2人送検 - QAB 琉球朝日放送</h3>
     <p class="summary-text">宮古島市贈収賄事件 逮捕の市職員ら2人送検 QAB 琉球朝日放送</p>
     <dl>
@@ -932,7 +943,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a06be6b27ac6a49e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 07:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>国会あす会期末 駆け引きは夜まで続くか 「副首都法案」めぐり与野党の攻防が最終局面 - au Webポータル</h3>
     <p class="summary-text">国会あす会期末 駆け引きは夜まで続くか 「副首都法案」めぐり与野党の攻防が最終局面 au Webポータル</p>
     <dl>
@@ -945,7 +956,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1374d4f592f0246c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>city.gosen.lg.jp · 08:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>最高裁判決を踏まえた生活保護費等の追加給付について - city.gosen.lg.jp</h3>
     <p class="summary-text">最高裁判決を踏まえた生活保護費等の追加給付について city.gosen.lg.jp</p>
     <dl>
@@ -964,7 +975,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a72bcfed24cb4750.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 10:09</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>「これから強盗に行く」 職務質問で闇バイト発覚 男ら3人を現行犯逮捕 トクリュウか - 産経ニュース</h3>
     <p class="summary-text">「これから強盗に行く」 職務質問で闇バイト発覚 男ら3人を現行犯逮捕 トクリュウか 産経ニュース</p>
     <dl>
@@ -977,7 +988,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ede3031c27fa0321.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>京都新聞デジタル · 09:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>詐欺など疑いで逮捕の司法書士男性、不起訴 京都地検「捜査尽くした結果」 - 京都新聞デジタル</h3>
     <p class="summary-text">詐欺など疑いで逮捕の司法書士男性、不起訴 京都地検「捜査尽くした結果」 京都新聞デジタル</p>
     <dl>
@@ -990,7 +1001,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e9442247df4afaa4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>にいがた経済新聞 · 09:09</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【キャッシュカードを袋に】台湾籍の男（35歳）逮捕、ニセ警察官詐欺 - にいがた経済新聞</h3>
     <p class="summary-text">【キャッシュカードを袋に】台湾籍の男（35歳）逮捕、ニセ警察官詐欺 にいがた経済新聞</p>
     <dl>
@@ -1003,7 +1014,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a6d0dc41730d52d2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>北陸先端科学技術大学院大学の入試で“替え玉受験”に関与か 日本人と中国籍の女2人を逮捕 実行役も捜査（石川テレビ） - Yahoo!ニュース</h3>
     <p class="summary-text">北陸先端科学技術大学院大学の入試で“替え玉受験”に関与か 日本人と中国籍の女2人を逮捕 実行役も捜査（石川テレビ）…</p>
     <dl>
@@ -1022,7 +1033,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/762c5b2a223497b4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>dressy.pla-cole.wedding · 13:32</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
     <h3>速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding</h3>
     <p class="summary-text">速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡…</p>
     <dl>
@@ -1035,7 +1046,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/86e70619d5bcb365.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 08:22</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」 3時間限定デート→キスから国際結婚 - ｄメニューニュース</h3>
     <p class="summary-text">『新婚さん』イケメン夫のプロフィールに妻「まるで芸能人」 3時間限定デート→キスから国際結婚 ｄメニューニュース</p>
     <dl>
@@ -1048,7 +1059,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f0d6813c75c0e8ec.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 07:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>見取り図リリー 女子アナとの結婚はコンプラ違反？ 強烈ツッコミ「だから、ダメなんです」 - ｄメニューニュース</h3>
     <p class="summary-text">見取り図リリー 女子アナとの結婚はコンプラ違反？ 強烈ツッコミ「だから、ダメなんです」 ｄメニューニュース</p>
     <dl>
@@ -1061,7 +1072,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6b8c3b0240f62255.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>dressy.pla-cole.wedding · 07:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能報道</span> <span>動向確認</span></div>
     <h3>【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別にまとめました - dressy.pla-cole.wedding</h3>
     <p class="summary-text">【AKB48 結婚一覧】AKB48グループで結婚したのは誰？神7は？人気メンバーから最新速報まで既婚者一覧を年代別…</p>
     <dl>
@@ -1080,7 +1091,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3041005300fcd339.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:39</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>ベネズエラ地震1カ月 死者5300人 - Yahoo!ニュース</h3>
     <p class="summary-text">ベネズエラ地震1カ月 死者5300人 Yahoo!ニュース</p>
     <dl>
@@ -1093,7 +1104,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/55bb0b1e4569fcea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>【台風情報】台風12号「ノウル」発生 気象庁発表 さらに「気がかりな渦」も 今後の進路は ※24日午後6時現在（RCC中国放送） - Yahoo!ニュース</h3>
     <p class="summary-text">【台風情報】台風12号「ノウル」発生 気象庁発表 さらに「気がかりな渦」も 今後の進路は ※24日午後6時現在（R…</p>
     <dl>
@@ -1106,7 +1117,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c9493a796e85fbd9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>town.togitsu.nagasaki.jp · 09:05</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>「災害時におけるキッチンカーによる炊き出しの実施等に関する協定」の締結について - town.togitsu.nagasaki.jp</h3>
     <p class="summary-text">「災害時におけるキッチンカーによる炊き出しの実施等に関する協定」の締結について town.togitsu.naga…</p>
     <dl>
@@ -1125,7 +1136,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a35547f32ec22e45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 14:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>米企業、好決算相次ぐも株価の反応鈍く－高過ぎる期待が重し - Bloomberg.com</h3>
     <p class="summary-text">米企業、好決算相次ぐも株価の反応鈍く－高過ぎる期待が重し Bloomberg.com</p>
     <dl>
@@ -1138,7 +1149,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a5d900034e1b5a99.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ロイター · 07:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>軟調、日米韓のハイテク企業決算や中銀イベント見極め＝来週の東京株式市場 - ロイター</h3>
     <p class="summary-text">軟調、日米韓のハイテク企業決算や中銀イベント見極め＝来週の東京株式市場 ロイター</p>
     <dl>
@@ -1151,7 +1162,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3347f8eee582c8d6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>マネクリ · 13:14</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>【米国株】ハイテク・AI関連の調整は一時的か？アルファベットやテスラの決算が焦点の週に - マネクリ</h3>
     <p class="summary-text">【米国株】ハイテク・AI関連の調整は一時的か？アルファベットやテスラの決算が焦点の週に マネクリ</p>
     <dl>
@@ -1164,7 +1175,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a730ccaca0c2d4a4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 11:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>AIインフラ株が急落。大手ハイテク企業の決算発表でトレードは復活するか？ - Moomoo</h3>
     <p class="summary-text">AIインフラ株が急落。大手ハイテク企業の決算発表でトレードは復活するか？ Moomoo</p>
     <dl>
@@ -1177,7 +1188,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/739115630d3becff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 09:49</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>日経平均は380円高、引き続き米企業決算などに関心(フィスコ) - Yahoo!ファイナンス</h3>
     <p class="summary-text">日経平均は380円高、引き続き米企業決算などに関心(フィスコ) Yahoo!ファイナンス</p>
     <dl>
@@ -1196,7 +1207,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/aeee521b0a19d878.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 14:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>プレイステーションネットワークで7月24日20時ごろより障害発生中。サインインやゲーム起動などネットワークサービスが利 - ニコニコニュース</h3>
     <p class="summary-text">プレイステーションネットワークで7月24日20時ごろより障害発生中。サインインやゲーム起動などネットワークサービス…</p>
     <dl>
@@ -1209,7 +1220,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/75f1ca8716ea8485.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>AUTOMATON · 10:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>PlayStationの物理ディスク生産終了後には、“1兆円規模”中古ゲーム市場がいずれ消滅するとアナリストが警鐘。一方Ubisoftは「大きな混乱なし」と予測、割れる見立て - AUTOMATON</h3>
     <p class="summary-text">PlayStationの物理ディスク生産終了後には、“1兆円規模”中古ゲーム市場がいずれ消滅するとアナリストが警鐘…</p>
     <dl>
@@ -1222,7 +1233,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7061fa0061f75d8a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>gamebiz【ゲームビズ】 · 08:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>クロックス、任天堂とタッグを組んだ「スーパーマリオ コレクション」を発売！「キノコ王国」の世界観を表現 - gamebiz【ゲームビズ】</h3>
     <p class="summary-text">クロックス、任天堂とタッグを組んだ「スーパーマリオ コレクション」を発売！「キノコ王国」の世界観を表現 gameb…</p>
     <dl>
@@ -1235,7 +1246,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/164a3d70929378ea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GUNDAM Official Website · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>「ガンダムカードゲーム」1周年記念ブースターパック「Freedom Ascension [GD05]」ほか関連アイテム全4点が7月25日発売！ - GUNDAM Official Website</h3>
     <p class="summary-text">「ガンダムカードゲーム」1周年記念ブースターパック「Freedom Ascension [GD05]」ほか関連アイ…</p>
     <dl>
@@ -1261,7 +1272,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b73cf7c46932d64e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>mext.go.jp · 09:02</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>科学</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>科学</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>松本洋平文部科学大臣記者会見録（令和8年7月24日） - mext.go.jp</h3>
     <p class="summary-text">松本洋平文部科学大臣記者会見録（令和8年7月24日） mext.go.jp</p>
     <dl>

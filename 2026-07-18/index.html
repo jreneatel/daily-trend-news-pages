@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -698,7 +709,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/849e3e086441f2fd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>@DIME アットダイム · 09:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>アドバンスデザインテクノロジーがいすゞの大型ピックアップ「D-MAX VCROSS」の並行輸入を開始 - @DIME アットダイム</h3>
     <p class="summary-text">アドバンスデザインテクノロジーがいすゞの大型ピックアップ「D</p>
     <dl>
@@ -717,7 +728,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e6cc10680935dd57.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ABEMA · 12:09</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>25日まで国会延長で調整 維新と約束の「定数削減」「副首都」2法案が足かせに - ABEMA</h3>
     <p class="summary-text">25日まで国会延長で調整 維新と約束の「定数削減」「副首都」2法案が足かせに ABEMA</p>
     <dl>
@@ -730,7 +741,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2b1b31a3a7cd63df.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日放送 · 14:52</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>英首相にバーナム氏就任へ下院議員9割の推薦獲得 - 朝日放送</h3>
     <p class="summary-text">英首相にバーナム氏就任へ下院議員9割の推薦獲得 朝日放送</p>
     <dl>
@@ -749,7 +760,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e006390285d7e088.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 10:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>3歳女の子が乗用車にはねられ重体 運転手を逮捕 新潟 燕市 - NHKニュース</h3>
     <p class="summary-text">3歳女の子が乗用車にはねられ重体 運転手を逮捕 新潟 燕市 NHKニュース</p>
     <dl>
@@ -762,7 +773,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9052616ea3f66a0f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 09:31</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>奈良で女性2人の遺体 男逮捕 遺体は不明の交際女性と判明 - テレ朝NEWS</h3>
     <p class="summary-text">奈良で女性2人の遺体 男逮捕 遺体は不明の交際女性と判明 テレ朝NEWS</p>
     <dl>
@@ -781,7 +792,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ab55952281200738.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 10:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>マクヘンリー元米下院金融委員長、クラリティ法の成立を強く要求——「通信法級の規制革新で米国のデジタル主導権を守れ」 - BigGo ファイナンス</h3>
     <p class="summary-text">マクヘンリー元米下院金融委員長、クラリティ法の成立を強く要求——「通信法級の規制革新で米国のデジタル主導権を守れ」…</p>
     <dl>
@@ -800,7 +811,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0d395e5851f43680.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 09:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>石川 珠洲 鉢ヶ崎海水浴場 地震の前以来３年ぶりに海開き - NHKニュース</h3>
     <p class="summary-text">石川 珠洲 鉢ヶ崎海水浴場 地震の前以来３年ぶりに海開き NHKニュース</p>
     <dl>
@@ -813,7 +824,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9eb48c5fd82c8c12.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>rti.org.tw · 14:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>台風9号の陸上警報地域拡大 台湾の東側および台中・南投以北の全域で警戒を - rti.org.tw</h3>
     <p class="summary-text">台風9号の陸上警報地域拡大 台湾の東側および台中・南投以北の全域で警戒を rti.org.tw</p>
     <dl>
@@ -832,7 +843,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/fe4ad3a9d6c208c0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>読売新聞 · 11:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>じゃんけんで出国できず、間違えれば泥んこに エンタメ性とクイズの実力を兼ね備えた伝説番組…復活発表の「アメリカ横断ウルトラクイズ」とは？ - 読売新聞</h3>
     <p class="summary-text">じゃんけんで出国できず、間違えれば泥んこに エンタメ性とクイズの実力を兼ね備えた伝説番組…復活発表の「アメリカ横断…</p>
     <dl>
@@ -845,7 +856,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e78938a54f20fb75.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>『音楽の日2026』タイムテーブル公開 「DREAMダンス」OPメンバー＆10分間長尺ライブ参加アーティストなど企画詳細も発表 - Yahoo!ニュース</h3>
     <p class="summary-text">『音楽の日2026』タイムテーブル公開 「DREAMダンス」OPメンバー＆10分間長尺ライブ参加アーティストなど企…</p>
     <dl>
@@ -864,7 +875,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9d18c03d366cc31d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 13:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>来週の注目ポイント：全国CPI、米AI半導体決算、ECB理事会の3つ - BigGo ファイナンス</h3>
     <p class="summary-text">来週の注目ポイント：全国CPI、米AI半導体決算、ECB理事会の3つ BigGo ファイナンス</p>
     <dl>
@@ -877,7 +888,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/017664a3823fc19d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経バイオテクONLINE · 09:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>専門メディア</span> <span>報道確認</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>専門メディア</span> <span>報道確認</span> <span>市場・企業</span></div>
     <h3>米Merck社、売上高トップのキイトルーダが4.7兆円超──2025年度決算は増収増益 - 日経バイオテクONLINE</h3>
     <p class="summary-text">米Merck社、売上高トップのキイトルーダが4.7兆円超──2025年度決算は増収増益 日経バイオテクONLINE</p>
     <dl>
@@ -896,7 +907,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/24ca1f66c4ce6e38.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>スマホダイジェスト · 11:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>元ソニー幹部が語るデジタル時代のPlayStation、ディスク廃止やPS Stars終了にも言及 - スマホダイジェスト</h3>
     <p class="summary-text">元ソニー幹部が語るデジタル時代のPlayStation、ディスク廃止やPS Stars終了にも言及 スマホダイジェ…</p>
     <dl>

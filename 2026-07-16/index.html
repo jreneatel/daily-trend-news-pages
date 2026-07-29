@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/cc9f71df7d497c1b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Excite エキサイト · 10:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイト</h3>
     <p class="summary-text">OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT</p>
     <dl>
@@ -704,7 +715,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7f1d5bff40d638e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュース</h3>
     <p class="summary-text">OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT</p>
     <dl>
@@ -723,7 +734,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/851f16696e3909f3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 10:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュース</h3>
     <p class="summary-text">介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送…</p>
     <dl>
@@ -742,7 +753,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c3514a88947f27d5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 12:15</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞</h3>
     <p class="summary-text">皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 毎日新聞</p>
     <dl>
@@ -755,7 +766,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c24f78fe2b73c010.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経ビジネス電子版 · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版</h3>
     <p class="summary-text">7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 日経ビジネス電子版</p>
     <dl>
@@ -774,7 +785,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c8e70c9bce69cc3c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 12:42</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWS</h3>
     <p class="summary-text">女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 テレ朝NEWS</p>
     <dl>
@@ -787,7 +798,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b5131762f441b0ca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:41</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞</h3>
     <p class="summary-text">元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] 朝日新聞</p>
     <dl>
@@ -806,7 +817,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b94db32b5e0537a0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ロイター · 09:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイター</h3>
     <p class="summary-text">英経済は軟調、利上げの必要性低い＝英中銀副総裁 ロイター</p>
     <dl>
@@ -819,7 +830,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/82b3acf9b9e06eed.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンス</h3>
     <p class="summary-text">NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ BigGo ファイナンス</p>
     <dl>
@@ -838,7 +849,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/45d521054c7ead60.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 11:47</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュース</h3>
     <p class="summary-text">埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え NHKニュース</p>
     <dl>
@@ -851,7 +862,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0918bb37106ddc85.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 12:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNN</h3>
     <p class="summary-text">最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 日テレNEWS NNN</p>
     <dl>
@@ -870,7 +881,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a01f4faca41032da.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライブドアニュース · 14:14</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュース</h3>
     <p class="summary-text">中国遼寧省でゴムボート爆発 7人死亡 ライブドアニュース</p>
     <dl>
@@ -883,7 +894,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a294cfcde6fb3c8c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライブドアニュース · 13:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース</h3>
     <p class="summary-text">睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) ライブドアニュース</p>
     <dl>
@@ -902,7 +913,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5e26ca6b72c087ad.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 12:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIG</h3>
     <p class="summary-text">「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半…</p>
     <dl>
@@ -915,7 +926,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/37ae46f3e30c8c2e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本赤十字社 · 11:36</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社</h3>
     <p class="summary-text">【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続</p>
     <dl>
@@ -934,7 +945,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3d3adb069faa865e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>佐賀新聞 · 09:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞</h3>
     <p class="summary-text">江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ</p>
     <dl>

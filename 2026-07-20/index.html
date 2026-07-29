@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -690,7 +701,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7f12486da9185793.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 12:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞</h3>
     <p class="summary-text">GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に O…</p>
     <dl>
@@ -703,7 +714,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b335670727f65b6e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 12:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞</h3>
     <p class="summary-text">[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた 財経新聞</p>
     <dl>
@@ -722,7 +733,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b7ea977ebb832d7f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Unite.AI · 09:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AI</h3>
     <p class="summary-text">GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると Unite.AI</p>
     <dl>
@@ -741,7 +752,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/807e10c1c4602c7b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:52</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIG</h3>
     <p class="summary-text">【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感…</p>
     <dl>
@@ -754,7 +765,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f64ba4752a478054.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 08:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞</h3>
     <p class="summary-text">国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 山陽新聞</p>
     <dl>
@@ -773,7 +784,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3adc4d9c50d31325.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 08:41</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュース</h3>
     <p class="summary-text">兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か 産経ニュース</p>
     <dl>
@@ -786,7 +797,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b513ce2fb9d6b59d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 11:14</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコム</h3>
     <p class="summary-text">「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 時事ドットコム</p>
     <dl>
@@ -799,7 +810,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7e2d6ce866b14562.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 09:36</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュース</h3>
     <p class="summary-text">新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 NHKニュース</p>
     <dl>
@@ -818,7 +829,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e33d3cab86d524e6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:56</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIG</h3>
     <p class="summary-text">【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも TBS…</p>
     <dl>
@@ -831,7 +842,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2c799edd06d93498.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIG</h3>
     <p class="summary-text">【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影…</p>
     <dl>
@@ -844,7 +855,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3637ee13ceb7b479.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:13</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIG</h3>
     <p class="summary-text">【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 TBS NEWS DIG</p>
     <dl>
@@ -863,7 +874,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1b5b3b7d230c2a1f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GIGAZINE · 14:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINE</h3>
     <p class="summary-text">フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 GIGAZINE</p>
     <dl>
@@ -876,7 +887,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e09c74a6254e561c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 10:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンス</h3>
     <p class="summary-text">仮想通貨市場、ECB金利決定と米規制日程に注目集まる BigGo ファイナンス</p>
     <dl>
@@ -895,7 +906,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/91b414f22086ebe0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 12:43</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.com</h3>
     <p class="summary-text">英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 Bloomberg.com</p>
     <dl>
@@ -908,7 +919,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/070f9bdce1578bc9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 12:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomoo</h3>
     <p class="summary-text">NY株見通し－今週はメガキャップ決算や原油相場に注目 Moomoo</p>
     <dl>
@@ -921,7 +932,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/92681a50f2b955c0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:25</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンス</h3>
     <p class="summary-text">アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 BigGo ファイナンス</p>
     <dl>
@@ -940,7 +951,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5247700cc85f3666.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:37</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュース</h3>
     <p class="summary-text">韓国海洋警察 7月22日に竹島で音楽会開催と発表 NHKニュース</p>
     <dl>
@@ -953,7 +964,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/92306153be6ed232.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>skream.jp · 09:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jp</h3>
     <p class="summary-text">鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベ…</p>
     <dl>
@@ -966,7 +977,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/facdfa482d7e55f7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>オリコンニュース · 09:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュース</h3>
     <p class="summary-text">画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ…</p>
     <dl>

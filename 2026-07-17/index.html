@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9a48459acc54abfa.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 08:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンス</h3>
     <p class="summary-text">Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に Bi…</p>
     <dl>
@@ -710,7 +721,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b11404b16ee19542.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 13:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュース</h3>
     <p class="summary-text">プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 ニコニコニュース</p>
     <dl>
@@ -723,7 +734,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/416fb5fbe6c1361d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 14:10</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコム</h3>
     <p class="summary-text">NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 時事ドットコム</p>
     <dl>
@@ -742,7 +753,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e48fdfdadbe2e538.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 14:06</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>皇室典範改正の法案成立等についての会見 - 首相官邸</h3>
     <p class="summary-text">皇室典範改正の法案成立等についての会見 首相官邸</p>
     <dl>
@@ -755,7 +766,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3e072d254cd36437.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 10:41</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコム</h3>
     <p class="summary-text">国会、２５日まで延長 副首都法案で攻防へ 時事ドットコム</p>
     <dl>
@@ -774,7 +785,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/860cb12921e3ee68.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 14:19</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞</h3>
     <p class="summary-text">広島の放火殺人、元従業員の男を再逮捕 容疑を否認 日本経済新聞</p>
     <dl>
@@ -787,7 +798,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5cd467f96063ee61.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:04</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞</h3>
     <p class="summary-text">女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 朝日新聞</p>
     <dl>
@@ -806,7 +817,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/81c58a40eb1a05ce.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:44</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュース</h3>
     <p class="summary-text">【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション…</p>
     <dl>
@@ -819,7 +830,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7043d3ce637b1180.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュース</h3>
     <p class="summary-text">群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を NHKニュース</p>
     <dl>
@@ -838,7 +849,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ec9d55b2b0d2a6f8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 07:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.com</h3>
     <p class="summary-text">高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 Bloomberg.com</p>
     <dl>
@@ -851,7 +862,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d6f9337f4f7476d6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経クロステック · 09:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック</h3>
     <p class="summary-text">MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う 日経クロステック</p>
     <dl>
@@ -870,7 +881,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/22fa6cc5e706bc12.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 10:58</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIG</h3>
     <p class="summary-text">韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩…</p>
     <dl>
@@ -883,7 +894,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0317f0a1752d7f97.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>data.jma.go.jp · 08:07</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ライフ</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ライフ</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jp</h3>
     <p class="summary-text">海洋の健康診断表 北西太平洋の海面水温 data.jma.go.jp</p>
     <dl>
@@ -902,7 +913,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4bb57824db98bdc4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 09:52</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNN</h3>
     <p class="summary-text">粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）</p>
     <dl>
@@ -915,7 +926,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0eeae4e9c0ff104c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 09:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWS</h3>
     <p class="summary-text">AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める テレ朝NEWS</p>
     <dl>
@@ -934,7 +945,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b4d34fe264910260.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 07:49</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュース</h3>
     <p class="summary-text">フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） Yahoo!ニュース</p>
     <dl>

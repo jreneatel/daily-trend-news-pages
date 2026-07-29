@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -691,7 +702,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/edc60cdf49a49f45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ビジネス+IT · 10:40</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT</h3>
     <p class="summary-text">「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 ビジネス+IT</p>
     <dl>
@@ -704,7 +715,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/d1721fb73884f8cc.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>radionikkei.jp · 10:04</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp</h3>
     <p class="summary-text">第980回「AI即戦力仕事術～本当は怖い生成AI～」</p>
     <dl>
@@ -717,7 +728,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5eecec11ee6a0570.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>thinkit.co.jp · 09:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp</h3>
     <p class="summary-text">アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ thinkit.co.jp</p>
     <dl>
@@ -730,7 +741,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/507140bc941fd11b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ケータイ Watch · 08:45</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch</h3>
     <p class="summary-text">OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch</p>
     <dl>
@@ -749,7 +760,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6c8e798f44e505f5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 13:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せ…</p>
     <dl>
@@ -762,7 +773,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ec9c8751d3660ddb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 12:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて Moomoo</p>
     <dl>
@@ -775,7 +786,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/9b44ea1807888f91.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>さくらんぼテレビ · 09:58</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ</h3>
     <p class="summary-text">山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形</p>
     <dl>
@@ -788,7 +799,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/bccfd1c2296aca31.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Malwarebytes · 08:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes</h3>
     <p class="summary-text">セキュリティ分野の1週間（7月6日～7月12日） Malwarebytes</p>
     <dl>
@@ -801,7 +812,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/580ed6e185dd90ae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ZDNET Japan · 08:03</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>要注意</span></div>
+    <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>要注意</span></div>
     <h3>セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan</h3>
     <p class="summary-text">セキュリティの新指標「日本度」発表</p>
     <dl>
@@ -820,7 +831,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a73db70eb98b3930.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 08:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>政府与党連絡会議 - 首相官邸</h3>
     <p class="summary-text">政府与党連絡会議 首相官邸</p>
     <dl>
@@ -833,7 +844,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/89e421ba4455182b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>mofa.go.jp · 08:32</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp</h3>
     <p class="summary-text">ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬</p>
     <dl>
@@ -859,7 +870,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f8a1d5f4abbb33d2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>games.gg · 13:36</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg</h3>
     <p class="summary-text">PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg</p>
     <dl>
@@ -872,7 +883,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/c5a1f23b9eba746f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>gamereactor.jp · 13:12</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp</h3>
     <p class="summary-text">欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどで…</p>
     <dl>
@@ -891,7 +902,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/0c49c2909b4316d8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PR TIMES · 09:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES</h3>
     <p class="summary-text">アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES</p>
     <dl>
@@ -904,7 +915,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a56016f6edb8aa09.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日流ウェブ · 09:02</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ</h3>
     <p class="summary-text">６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） 日流ウェブ</p>
     <dl>
@@ -923,7 +934,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/596c03cdf7546254.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Malwarebytes · 12:34</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes</h3>
     <p class="summary-text">偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebytes</p>
     <dl>
@@ -936,7 +947,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/627a929c36fb4964.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 08:04</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞</h3>
     <p class="summary-text">上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞</p>
     <dl>
@@ -955,7 +966,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4929f2f87210e326.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>西日本新聞me · 14:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞me</h3>
     <p class="summary-text">政治(全国・海外ニュース)写真</p>
     <dl>
@@ -974,7 +985,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/5d0c3e74508481f9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウェザーニュース · 14:55</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース</h3>
     <p class="summary-text">南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース</p>
     <dl>

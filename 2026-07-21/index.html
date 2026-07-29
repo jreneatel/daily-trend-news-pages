@@ -367,6 +367,12 @@ a:focus-visible {
   text-decoration: none;
   transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -390,6 +396,11 @@ a:focus-visible {
   background: #eef2f6;
   font-size: 12px;
   font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
 }
 .card:hover,
 .card:focus-visible {
@@ -692,7 +703,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/57d27910cb3e554f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 10:04</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) - Yahoo!ファイナンス</h3>
     <p class="summary-text">中国、AI輸出規制強化を検討＝米欧による買収阻止(時事通信) Yahoo!ファイナンス</p>
     <dl>
@@ -705,7 +716,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1879f27d8b9f7989.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 13:30</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） - Yahoo!ニュース</h3>
     <p class="summary-text">こんなはずじゃなかった「ChatGPT」 AI導入で“仕事が消えない”理由（TechTargetジャパン） Yah…</p>
     <dl>
@@ -718,7 +729,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/e24e03b8b98e3cf4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 13:29</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間を比較、ICT総研調べ - ｄメニューニュース</h3>
     <p class="summary-text">ChatGPT、Gemini、Claude Sonnet 5の応答が速いのは？ 初回トークン到達時間や完全応答時間…</p>
     <dl>
@@ -731,7 +742,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ffae6578d31f9bff.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 08:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービスの提供を開始 - ニコニコニュース</h3>
     <p class="summary-text">キーワードマーケティング、OpenAIが提供する「ChatGPT広告（ChatGPT Ads）」の運用代行サービス…</p>
     <dl>
@@ -744,7 +755,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b56f90d3ae3c18f4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>音楽業界総合情報サイト · 08:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>係争中の音楽生成AI「Suno」、iMessageで「テキストから曲生成」機能を提供開始 TikTokのトレンドに乗る - 音楽業界総合情報サイト</h3>
     <p class="summary-text">係争中の音楽生成AI「Suno」、iMessageで「テキストから曲生成」機能を提供開始 TikTokのトレンドに…</p>
     <dl>
@@ -763,7 +774,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/468a78705889010c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Microsoft · 10:53</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>Halo: safeguard your meetings - Windows に無料でダウンロードしてインストールする | Microsoft Store - Microsoft</h3>
     <p class="summary-text">Halo: safeguard your meetings</p>
     <dl>
@@ -776,7 +787,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f9f7b572cd47deb9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PC Watch · 09:16</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 - PC Watch</h3>
     <p class="summary-text">AMDとMicrosoft、AIインフラで提携拡大。Heliosや第6世代EPYCなど投入 PC Watch</p>
     <dl>
@@ -789,7 +800,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7f476cbe854230ea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>株式会社インプレス · 08:50</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
     <h3>ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 - 株式会社インプレス</h3>
     <p class="summary-text">ニュース AMD、AIインフラに向けたMicrosoftとのパートナーシップを拡大 株式会社インプレス</p>
     <dl>
@@ -802,7 +813,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/6e1f98ba819ca96b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>XenoSpectrum · 09:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
     <h3>Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 - XenoSpectrum</h3>
     <p class="summary-text">Copilotに中国Kimi K3採用案、Microsoftが狙う推論費6億ドル削減 XenoSpectrum</p>
     <dl>
@@ -815,7 +826,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f8d148c4c6b31bb5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:35</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Watch） - Yahoo!ニュース</h3>
     <p class="summary-text">ラック、Microsoft 365のセキュリティ機能を短期間・低コストで導入する支援サービスを提供（クラウド Wa…</p>
     <dl>
@@ -828,7 +839,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/85d437797f7d83df.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 07:11</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 - ｄメニューニュース</h3>
     <p class="summary-text">自動的にチャットが漫画になる！OSS化されたMicrosoft Comic Chatが新鮮 ｄメニューニュース</p>
     <dl>
@@ -847,7 +858,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/869a4073eb248303.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 11:18</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載） - 日テレNEWS NNN</h3>
     <p class="summary-text">【解説】 延長国会…副首都法案成立は 「久々に5時間も睡眠」高市総理のSNSに厳しい声も（2026年7月21日掲載…</p>
     <dl>
@@ -860,7 +871,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/327a4f7e30e11239.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 11:32</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] - 朝日新聞</h3>
     <p class="summary-text">高市首相「0～3時間睡眠が常態化」 Xに投稿、「明け方まで資料」 [高市早苗首相 自民党総裁] 朝日新聞</p>
     <dl>
@@ -873,7 +884,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/34a5e21a671aac37.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>福井新聞社 · 09:13</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>永平寺町議選告示、定数割れ回避 定数14に14人届け出 立候補締め切り無投票当選 福井県 - 福井新聞社</h3>
     <p class="summary-text">永平寺町議選告示、定数割れ回避 定数14に14人届け出 立候補締め切り無投票当選 福井県 福井新聞社</p>
     <dl>
@@ -886,7 +897,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/b7db4730fccf0825.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>立憲民主党 · 07:33</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
     <h3>【代表会見】延長国会「与党の国会運営の稚拙さがあらわに」水岡代表 - 立憲民主党</h3>
     <p class="summary-text">【代表会見】延長国会「与党の国会運営の稚拙さがあらわに」水岡代表 立憲民主党</p>
     <dl>
@@ -905,7 +916,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/ade0fadc2b832113.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>北海道新聞デジタル · 12:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 - 北海道新聞デジタル</h3>
     <p class="summary-text">大間原発訴訟控訴審 原告、審理再開に同意 裁判体への問題提起維持 北海道新聞デジタル</p>
     <dl>
@@ -918,7 +929,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/2f7a5311858dbb3c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ryukoku.ac.jp · 07:02</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 - ryukoku.ac.jp</h3>
     <p class="summary-text">【傍聴人募集】第6回夏のオンライン高校生 文学模擬裁判交流大会 ryukoku.ac.jp</p>
     <dl>
@@ -937,7 +948,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/7a2a8d654714f696.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 08:46</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
     <h3>警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 - 日テレNEWS NNN</h3>
     <p class="summary-text">警察官装い80代女性の通帳を盗んだ疑い 特殊詐欺事件で当時17歳の少年を再逮捕 山形県警 日テレNEWS NNN</p>
     <dl>
@@ -950,7 +961,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/de143e933bcaf4c8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:54</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） - Yahoo!ニュース</h3>
     <p class="summary-text">相次ぐ不審火との関連捜査 新居浜の自宅に放火 ６５歳男逮捕「火をつけたが失火」と否認【愛媛】（テレビ愛媛） Yah…</p>
     <dl>
@@ -969,7 +980,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/994bed9a6b085d8b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>週刊女性PRIME · 08:00</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>芸能速報・続報待ち</span> <span>動向確認</span></div>
     <h3>川口春奈、サッカーW杯日本代表・板倉滉と熱愛結婚報道、元カレ格闘家とのオープン交際から一転「匂わせ封印」に見る31歳の覚悟（2ページ目） - 週刊女性PRIME</h3>
     <p class="summary-text">川口春奈、サッカーW杯日本代表・板倉滉と熱愛結婚報道、元カレ格闘家とのオープン交際から一転「匂わせ封印」に見る31…</p>
     <dl>
@@ -982,7 +993,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/762c5b2a223497b4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>dressy.pla-cole.wedding · 09:32</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
     <h3>速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡妊娠出産情報もチェック！ - dressy.pla-cole.wedding</h3>
     <p class="summary-text">速報！最近結婚した芸能人・有名人は？【2026年 芸能人結婚入籍】結婚を発表した芸能人、有名人を総まとめしました♡…</p>
     <dl>
@@ -1001,7 +1012,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/f001af44aa3a2f58.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 09:22</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>経済</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
     <h3>経済財政諮問会議・日本成長戦略会議合同会議 | 総理の一日 - 首相官邸</h3>
     <p class="summary-text">経済財政諮問会議・日本成長戦略会議合同会議</p>
     <dl>
@@ -1014,7 +1025,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/a45f6d2271d40f03.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 11:59</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) - Yahoo!ファイナンス</h3>
     <p class="summary-text">NY株見通し－堅調な展開か 本格化する企業決算に注目(トレーダーズ・ウェブ) Yahoo!ファイナンス</p>
     <dl>
@@ -1027,7 +1038,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/039ce792e990d5e3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 09:17</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
     <h3>【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 - 山陽新聞</h3>
     <p class="summary-text">【企業決算】資金利益伸び過去最高益 ちゅうぎんフィナンシャルグループ（５月１日発表）＝２０２６年３月期、連結 山陽…</p>
     <dl>
@@ -1046,7 +1057,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/29ee686e6a6e4559.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 11:48</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 - 毎日新聞</h3>
     <p class="summary-text">国会議員の資産公開 普通預貯金や仮想通貨、家族分は対象外 毎日新聞</p>
     <dl>
@@ -1059,7 +1070,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/3ea5fe641fdb83d9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ロイター · 07:21</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
     <h3>政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 - ロイター</h3>
     <p class="summary-text">政府の金融戦略、ＧＰＩＦなど年金運用を高度化 個人向け国債の商品性検証 ロイター</p>
     <dl>
@@ -1078,7 +1089,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/78984736080871c9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GameWith · 07:36</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
     <h3>ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Switch2版のデジタルプレオーダーが開始！ - GameWith</h3>
     <p class="summary-text">ダーク三國アクションRPG『Wo Long: Fallen Dynasty Complete Edition』Sw…</p>
     <dl>
@@ -1091,7 +1102,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/1265e829766adb67.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 13:20</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
     <h3>開発者に訊きました : スプラトゥーン レイダース｜任天堂 - nintendo.com</h3>
     <p class="summary-text">開発者に訊きました : スプラトゥーン レイダース</p>
     <dl>
@@ -1110,7 +1121,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/fefae91e1bb7865d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:22</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>「北海道・三陸沖後発地震注意情報」の発表 これまでより前倒しへ 気象庁 - Yahoo!ニュース</h3>
     <p class="summary-text">「北海道・三陸沖後発地震注意情報」の発表 これまでより前倒しへ 気象庁 Yahoo!ニュース</p>
     <dl>
@@ -1123,7 +1134,7 @@ dd {
   <img class="thumb" src="../assets/thumbs/4474f278b6abbf8f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>tenki.jp · 07:23</span><span class="read-state">未読</span></div>
-    <div class="labels"><span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
     <h3>8月は厳しい暑さ にわか雨や台風の影響に注意 秋の訪れはゆっくり 3か月予報(気象予報士 堂本 幸代 2026年07月21日) - tenki.jp</h3>
     <p class="summary-text">8月は厳しい暑さ にわか雨や台風の影響に注意 秋の訪れはゆっくり 3か月予報(気象予報士 堂本 幸代 2026年0…</p>
     <dl>
