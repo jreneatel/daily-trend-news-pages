@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[36201,["/daily-trend-news-pages/_next/static/chunks/347ege4px3uia.js","/daily-trend-news-pages/_next/static/chunks/0rjcnwka6f34f.js"],"default"]
+2:I[36201,["/daily-trend-news-pages/_next/static/chunks/2f0zxdpyed9cq.js","/daily-trend-news-pages/_next/static/chunks/0rjcnwka6f34f.js"],"default"]
 3:I[50129,["/daily-trend-news-pages/_next/static/chunks/1ivr6blg-9j_p.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-:HL["/daily-trend-news-pages/_next/static/chunks/3qldli_v10z9f.css","style"]
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/3qldli_v10z9f.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/347ege4px3uia.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/0rjcnwka6f34f.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"yztpVDwRCUlYvaqpPcz92"}
+:HL["/daily-trend-news-pages/_next/static/chunks/3rqr3pru4ided.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/daily-trend-news-pages/_next/static/chunks/3rqr3pru4ided.css","precedence":"next"}],["$","script","script-0",{"src":"/daily-trend-news-pages/_next/static/chunks/2f0zxdpyed9cq.js","async":true}],["$","script","script-1",{"src":"/daily-trend-news-pages/_next/static/chunks/0rjcnwka6f34f.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FgUazm6VAmMm3abpkBqF8"}
 5:null
