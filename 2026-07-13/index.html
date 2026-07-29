@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -745,56 +796,44 @@ dd {
     <h2 id="AI">AI</h2>
     <span>4 topics</span>
   </summary>
-  <div class="grid"><a id="article-70cfbbe534de25ac" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vVkJwcy03Q1FxR25Ld1BPa05EcWFnQXQ4TjRRaFotWW9XVUF2ZjZzcXFOWGR5VnkwWlp3TjcweUs4QTNhSXBoX1kxdU9qSGNNNUpz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+ITを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vVkJwcy03Q1FxR25Ld1BPa05EcWFnQXQ4TjRRaFotWW9XVUF2ZjZzcXFOWGR5VnkwWlp3TjcweUs4QTNhSXBoX1kxdU9qSGNNNUpz?oc=5" data-title="「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT" data-genre="AI">
+  <div class="grid"><a id="article-70cfbbe534de25ac" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vVkJwcy03Q1FxR25Ld1BPa05EcWFnQXQ4TjRRaFotWW9XVUF2ZjZzcXFOWGR5VnkwWlp3TjcweUs4QTNhSXBoX1kxdU9qSGNNNUpz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+ITを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vVkJwcy03Q1FxR25Ld1BPa05EcWFnQXQ4TjRRaFotWW9XVUF2ZjZzcXFOWGR5VnkwWlp3TjcweUs4QTNhSXBoX1kxdU9qSGNNNUpz?oc=5" data-title="「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/edc60cdf49a49f45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ビジネス+IT · 10:40</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 - ビジネス+IT</h3>
+    <h3>「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除</h3>
     <p class="summary-text">「ChatGPT Work」と「Codex」の5時間利用制限が一時的に解除 ビジネス+IT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ChatGPT｜出典: ビジネス+IT</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-1ce0659522b80836" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DUTVuSW9RTHhZSG5DRmtkSHpYUHRfRlVERW1IVmx1eVZQQ2Vid2pUMWV1VE8tdUJvY2xiQ2ZZaldFbGJXdjZYWUluTlQ0bWJWNWVxMlhDT3dmdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jpを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DUTVuSW9RTHhZSG5DRmtkSHpYUHRfRlVERW1IVmx1eVZQQ2Vid2pUMWV1VE8tdUJvY2xiQ2ZZaldFbGJXdjZYWUluTlQ0bWJWNWVxMlhDT3dmdw?oc=5" data-title="第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp" data-genre="AI">
+<a id="article-1ce0659522b80836" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DUTVuSW9RTHhZSG5DRmtkSHpYUHRfRlVERW1IVmx1eVZQQ2Vid2pUMWV1VE8tdUJvY2xiQ2ZZaldFbGJXdjZYWUluTlQ0bWJWNWVxMlhDT3dmdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jpを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DUTVuSW9RTHhZSG5DRmtkSHpYUHRfRlVERW1IVmx1eVZQQ2Vid2pUMWV1VE8tdUJvY2xiQ2ZZaldFbGJXdjZYWUluTlQ0bWJWNWVxMlhDT3dmdw?oc=5" data-title="第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/d1721fb73884f8cc.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>radionikkei.jp · 10:04</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス - radionikkei.jp</h3>
+    <h3>第980回「AI即戦力仕事術～本当は怖い生成AI～」｜週刊 日経トレンディ＆クロストレンド｜ビジネス</h3>
     <p class="summary-text">第980回「AI即戦力仕事術～本当は怖い生成AI～」</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜出典: radionikkei.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-294cc7e1b0dfb585" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Db1FmMHk1QnB5eUVxbDdabHN4ck5zak9RQTl4Ql9MdUhDU0FFc2J1VUx6cFB0T3Nsb0pzTGc1S1hUczZZdVZIdHgwbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Db1FmMHk1QnB5eUVxbDdabHN4ck5zak9RQTl4Ql9MdUhDU0FFc2J1VUx6cFB0T3Nsb0pzTGc1S1hUczZZdVZIdHgwbw?oc=5" data-title="アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp" data-genre="AI">
+<a id="article-294cc7e1b0dfb585" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Db1FmMHk1QnB5eUVxbDdabHN4ck5zak9RQTl4Ql9MdUhDU0FFc2J1VUx6cFB0T3Nsb0pzTGc1S1hUczZZdVZIdHgwbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Db1FmMHk1QnB5eUVxbDdabHN4ck5zak9RQTl4Ql9MdUhDU0FFc2J1VUx6cFB0T3Nsb0pzTGc1S1hUczZZdVZIdHgwbw?oc=5" data-title="アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/5eecec11ee6a0570.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>thinkit.co.jp · 09:59</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ - thinkit.co.jp</h3>
+    <h3>アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？</h3>
     <p class="summary-text">アニメ×AIに「フルスタック」で挑む—AiHUBが目指す制作基盤とは？ thinkit.co.jp</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI｜出典: thinkit.co.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-7ea5df1a553435f5" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watchを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5" data-title="OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch" data-genre="AI">
+<a id="article-7ea5df1a553435f5" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watchを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YeldITkJLNjN1Qkd0NFE0aTdqYnY1eDgtc2Jray1KRXNPd21KdHNjbUlTdmhXMkNIMVktaTdxN2YtLXNhbkt4UXpxc1RCdDB1QnJydVpVV1R1Zk13dHROS0xkZmxBbXM?oc=5" data-title="OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/507140bc941fd11b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ケータイ Watch · 08:45</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 - ケータイ Watch</h3>
+    <h3>OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表</h3>
     <p class="summary-text">OpenAI、ChatGPTを組み込んだWebブラウザ「Atlas」の提供終了を発表 ケータイ Watch</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・発表｜出典: ケータイ Watch</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -803,69 +842,54 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>5 topics</span>
   </summary>
-  <div class="grid"><a id="article-00101b1e26232d2a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2xTT0FQYmM4TjNqdjFCWWJxTENjQW1KWV85eUxKcUQyLUE2TVMya2liMWxBbEFDcjBkXzJsMmFsbjd0Z0RnajBqbG5QaHB6TzZPbjFIWXJFNjdYWVVKbFh4c294WHFQOUVLSnBEckdxclE3N1ZRVG5DTUhVVkl2RjMwcS1PQ3hTRFNhcGx5NXhkR3NPRnZVNFRvVmtzdlowWEVubmNwa080UQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2xTT0FQYmM4TjNqdjFCWWJxTENjQW1KWV85eUxKcUQyLUE2TVMya2liMWxBbEFDcjBkXzJsMmFsbjd0Z0RnajBqbG5QaHB6TzZPbjFIWXJFNjdYWVVKbFh4c294WHFQOUVLSnBEckdxclE3N1ZRVG5DTUhVVkl2RjMwcS1PQ3hTRFNhcGx5NXhkR3NPRnZVNFRvVmtzdlowWEVubmNwa080UQ?oc=5" data-title="$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomoo" data-genre="IT業界">
+  <div class="grid"><a id="article-00101b1e26232d2a" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2xTT0FQYmM4TjNqdjFCWWJxTENjQW1KWV85eUxKcUQyLUE2TVMya2liMWxBbEFDcjBkXzJsMmFsbjd0Z0RnajBqbG5QaHB6TzZPbjFIWXJFNjdYWVVKbFh4c294WHFQOUVLSnBEckdxclE3N1ZRVG5DTUhVVkl2RjMwcS1PQ3hTRFNhcGx5NXhkR3NPRnZVNFRvVmtzdlowWEVubmNwa080UQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc2xTT0FQYmM4TjNqdjFCWWJxTENjQW1KWV85eUxKcUQyLUE2TVMya2liMWxBbEFDcjBkXzJsMmFsbjd0Z0RnajBqbG5QaHB6TzZPbjFIWXJFNjdYWVVKbFh4c294WHFQOUVLSnBEckdxclE3N1ZRVG5DTUhVVkl2RjMwcS1PQ3hTRFNhcGx5NXhkR3NPRnZVNFRvVmtzdlowWEVubmNwa080UQ?oc=5" data-title="$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomoo" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/6c8e798f44e505f5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 13:21</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇 - Moomoo</h3>
+    <h3>$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せーの、今日︎も👇👇👇</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ 相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り] せ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>$マイクロン・テクノロジー・(MU.US)$・相場の夏休みだと思って良い子は早く寝ましょう[おやすみ][眠り]｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-ca0e3c4cdafd49c6" class="card tone-tech" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzZpUFNTaWR2OENtNV9QT1QtUDhRa0JKRTlHd0FSMVZiX1l2QkV5dnJVZkNybnBIYUtCNjBFRm9zamlQWmRoWGsxNnZYczhKNXllTlZhN2EtZWszWEJfdEpOYTVGSVVUVDc1dXFjWlpEc1BQMlFGTXVPZFI1ejBDaWUzUENVNWJIRjNMb3NPaXROcTRPazVWM29B?oc=5" rel="noopener noreferrer" target="_blank" aria-label="$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzZpUFNTaWR2OENtNV9QT1QtUDhRa0JKRTlHd0FSMVZiX1l2QkV5dnJVZkNybnBIYUtCNjBFRm9zamlQWmRoWGsxNnZYczhKNXllTlZhN2EtZWszWEJfdEpOYTVGSVVUVDc1dXFjWlpEc1BQMlFGTXVPZFI1ejBDaWUzUENVNWJIRjNMb3NPaXROcTRPazVWM29B?oc=5" data-title="$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo" data-genre="IT業界">
+<a id="article-ca0e3c4cdafd49c6" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzZpUFNTaWR2OENtNV9QT1QtUDhRa0JKRTlHd0FSMVZiX1l2QkV5dnJVZkNybnBIYUtCNjBFRm9zamlQWmRoWGsxNnZYczhKNXllTlZhN2EtZWszWEJfdEpOYTVGSVVUVDc1dXFjWlpEc1BQMlFGTXVPZFI1ejBDaWUzUENVNWJIRjNMb3NPaXROcTRPazVWM29B?oc=5" rel="noopener noreferrer" target="_blank" aria-label="$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzZpUFNTaWR2OENtNV9QT1QtUDhRa0JKRTlHd0FSMVZiX1l2QkV5dnJVZkNybnBIYUtCNjBFRm9zamlQWmRoWGsxNnZYczhKNXllTlZhN2EtZWszWEJfdEpOYTVGSVVUVDc1dXFjWlpEc1BQMlFGTXVPZFI1ejBDaWUzUENVNWJIRjNMb3NPaXROcTRPazVWM29B?oc=5" data-title="$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/ec9c8751d3660ddb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 12:50</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて - Moomoo</h3>
+    <h3>$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて</h3>
     <p class="summary-text">$マイクロン・テクノロジー (MU.US)$ トランプさん、 助けて Moomoo</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>$マイクロン・テクノロジー・(MU.US)$・トランプさん｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-60a392e7b5870f60" class="card tone-tech" href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBfeDR1Z3ZyOFNacXJaZll4UzRsZndhNHN2SHFVRHRGb3dIcHBfX0tpZnhsTFlqMzB0NXNaNzBGM0NpQUFOMEQ0b20zeFJDaElPLXN5dUppOTV4NHRuX3FXV3VZc25MYWp6alZZdC1MWVA1YVk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビを読む" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTFBfeDR1Z3ZyOFNacXJaZll4UzRsZndhNHN2SHFVRHRGb3dIcHBfX0tpZnhsTFlqMzB0NXNaNzBGM0NpQUFOMEQ0b20zeFJDaElPLXN5dUppOTV4NHRuX3FXV3VZc25MYWp6alZZdC1MWVA1YVk?oc=5" data-title="山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ" data-genre="IT業界">
+<a id="article-60a392e7b5870f60" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBfeDR1Z3ZyOFNacXJaZll4UzRsZndhNHN2SHFVRHRGb3dIcHBfX0tpZnhsTFlqMzB0NXNaNzBGM0NpQUFOMEQ0b20zeFJDaElPLXN5dUppOTV4NHRuX3FXV3VZc25MYWp6alZZdC1MWVA1YVk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビを読む" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTFBfeDR1Z3ZyOFNacXJaZll4UzRsZndhNHN2SHFVRHRGb3dIcHBfX0tpZnhsTFlqMzB0NXNaNzBGM0NpQUFOMEQ0b20zeFJDaElPLXN5dUppOTV4NHRuX3FXV3VZc25MYWp6alZZdC1MWVA1YVk?oc=5" data-title="山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/9b44ea1807888f91.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>さくらんぼテレビ · 09:58</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース - さくらんぼテレビ</h3>
+    <h3>山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形｜ニュース</h3>
     <p class="summary-text">山寺にユニバーサルな新名所「山寺ギャラリア」 精神文化を現代アート・テクノロジーで体験できる 山形</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>山寺にユニバーサルな新名所「山寺ギャラリア」・精神文化を現代アート・テクノロジーで体験できる・山形｜ニュース｜出典: さくらんぼテレビ</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>ニュース</span></p>
   </div>
 </a>
-<a id="article-3aff86d67d79bc2c" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLVUyTEN2cVJxZVhLWTZrRlFPWXVYTGVLOFJkSFF5NVRwQVZtRmtfUXZuZG8ybG9rWVhXSkw0T1NkNXlnSWFWNUQ4aUdhMWFaWnhxcHVCMG44V0I1cVJobWhqaTBFc2tRNHpZQUp4REk4YTg2UlJvdnBFcFFhZzFCVjhpeDh1SHlBZ3o4?oc=5" rel="noopener noreferrer" target="_blank" aria-label="セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytesを読む" data-url="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLVUyTEN2cVJxZVhLWTZrRlFPWXVYTGVLOFJkSFF5NVRwQVZtRmtfUXZuZG8ybG9rWVhXSkw0T1NkNXlnSWFWNUQ4aUdhMWFaWnhxcHVCMG44V0I1cVJobWhqaTBFc2tRNHpZQUp4REk4YTg2UlJvdnBFcFFhZzFCVjhpeDh1SHlBZ3o4?oc=5" data-title="セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes" data-genre="IT業界">
+<a id="article-3aff86d67d79bc2c" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLVUyTEN2cVJxZVhLWTZrRlFPWXVYTGVLOFJkSFF5NVRwQVZtRmtfUXZuZG8ybG9rWVhXSkw0T1NkNXlnSWFWNUQ4aUdhMWFaWnhxcHVCMG44V0I1cVJobWhqaTBFc2tRNHpZQUp4REk4YTg2UlJvdnBFcFFhZzFCVjhpeDh1SHlBZ3o4?oc=5" rel="noopener noreferrer" target="_blank" aria-label="セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytesを読む" data-url="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLVUyTEN2cVJxZVhLWTZrRlFPWXVYTGVLOFJkSFF5NVRwQVZtRmtfUXZuZG8ybG9rWVhXSkw0T1NkNXlnSWFWNUQ4aUdhMWFaWnhxcHVCMG44V0I1cVJobWhqaTBFc2tRNHpZQUp4REk4YTg2UlJvdnBFcFFhZzFCVjhpeDh1SHlBZ3o4?oc=5" data-title="セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/bccfd1c2296aca31.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Malwarebytes · 08:20</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>セキュリティ分野の1週間（7月6日～7月12日） - Malwarebytes</h3>
+    <h3>セキュリティ分野の1週間（7月6日～7月12日）</h3>
     <p class="summary-text">セキュリティ分野の1週間（7月6日～7月12日） Malwarebytes</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>セキュリティ｜出典: Malwarebytes</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-aae2c5a0e6336d91" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5" rel="noopener noreferrer" target="_blank" aria-label="セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japanを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5" data-title="セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan" data-genre="IT業界">
+<a id="article-aae2c5a0e6336d91" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5" rel="noopener noreferrer" target="_blank" aria-label="セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japanを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTFByc3hoNUxyMFY3Wlh4NnpudEhPYnZkQ3pIUjRCbDRjM01GTFY3eWRLLTd2ZFZiRDNJQTBTTHlXYVF3TldOeXliRlhFY3o0cTZOWEhN?oc=5" data-title="セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/580ed6e185dd90ae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ZDNET Japan · 08:03</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化 - ZDNET Japan</h3>
+    <h3>セキュリティの新指標「日本度」発表--実質的な国内統制とコミットを可視化</h3>
     <p class="summary-text">セキュリティの新指標「日本度」発表</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>セキュリティ・発表｜出典: ZDNET Japan</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -874,30 +898,24 @@ dd {
     <h2 id="政治">政治</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-1ca5b151be69ed19" class="card tone-civic" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府与党連絡会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5" data-title="政府与党連絡会議 - 首相官邸" data-genre="政治">
+  <div class="grid"><a id="article-1ca5b151be69ed19" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政府与党連絡会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMicEFVX3lxTFBteGRiZnNkdFg4ZTI3aG1wZlNjcndjZDhubmpsdmtxai1qZm5vU3VULXRVUEhRM2Q2Y0RWUzdQRzlncUsxdTEyTkIzZ0FZR1VPVXZtLUVSdGs3cVRESERHUkZZNHRtUE9XeFRrSDVZZGE?oc=5" data-title="政府与党連絡会議 - 首相官邸" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/a73db70eb98b3930.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 08:34</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
-    <h3>政府与党連絡会議 - 首相官邸</h3>
+    <h3>政府与党連絡会議</h3>
     <p class="summary-text">政府与党連絡会議 首相官邸</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政府｜出典: 首相官邸</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-8c7505d2a62f19eb" class="card tone-civic" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9GZGMwUW43YURRTU1tclhmVFUtRDRQTFpRbzJ5Qm9XWmpiMHA0OTJHZWZrUWUwS0ktdUdrZWtudDFmVUZRdzc3dktoekxXMkJ5WThxR3puSWJWai1aRm9McHk5TVhsWjZTTXctUXdMeWRZSVho?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jpを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9GZGMwUW43YURRTU1tclhmVFUtRDRQTFpRbzJ5Qm9XWmpiMHA0OTJHZWZrUWUwS0ktdUdrZWtudDFmVUZRdzc3dktoekxXMkJ5WThxR3puSWJWai1aRm9McHk5TVhsWjZTTXctUXdMeWRZSVho?oc=5" data-title="ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp" data-genre="政治">
+<a id="article-8c7505d2a62f19eb" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9GZGMwUW43YURRTU1tclhmVFUtRDRQTFpRbzJ5Qm9XWmpiMHA0OTJHZWZrUWUwS0ktdUdrZWtudDFmVUZRdzc3dktoekxXMkJ5WThxR3puSWJWai1aRm9McHk5TVhsWjZTTXctUXdMeWRZSVho?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jpを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9GZGMwUW43YURRTU1tclhmVFUtRDRQTFpRbzJ5Qm9XWmpiMHA0OTJHZWZrUWUwS0ktdUdrZWtudDFmVUZRdzc3dktoekxXMkJ5WThxR3puSWJWai1aRm9McHk5TVhsWjZTTXctUXdMeWRZSVho?oc=5" data-title="ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/89e421ba4455182b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>mofa.go.jp · 08:32</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
-    <h3>ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省 - mofa.go.jp</h3>
+    <h3>ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省</h3>
     <p class="summary-text">ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ザン・ベトナム副首相兼国防大臣による木原内閣官房長官表敬｜外務省｜出典: mofa.go.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>外務省</span></p>
   </div>
 </a></div>
 </details>
@@ -913,30 +931,24 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-8423452afe1262ee" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.ggを読む" data-url="https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5" data-title="PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg" data-genre="ゲーム">
+  <div class="grid"><a id="article-8423452afe1262ee" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.ggを読む" data-url="https://news.google.com/rss/articles/CBMiygJBVV95cUxQQXZYd1IyclB0elU3V21EMzFVeXFMVWxNUFhLNXh0NF9kNlVyNWlTUFZLZUVDck1yVTRoSnNrN09OM3hkN3RZMzBtaVUwdzlKeFg5S3FYbXlrUnB6NVFrOXk3NmIyZzVJM3V4S1psZkNQQWktaU12UmI3d3duS09uOUxsSUNEeVZjczRjcVozSzlrZDVXXzZKLUs4TW5kTGUwdUExRW55OFMtNlVqUzk1ekJKdzBpdXY2ZG9HVDlXXy1xbUdXU3IweXVzb0ZXT0Fxd3g4cUFoVkV2R3IyMHR6Z0hZYzJ3aXd6Vnd4cVFoTjFCZWQ1Ym1ndVZ2Wlp1b2JwWkJEcm9OWUY4a3F5V1Y3SXFJeHFsd1dZMTVWajBpUVRVY3NDR1loMjdnTEZyTDlUQ3JkYi1lOHlHYk9mQXhNa2h0eDdSV1RPNXc?oc=5" data-title="PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/f8a1d5f4abbb33d2.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>games.gg · 13:36</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>PlayStationのディスク販売終了決定、英小売業界団体が非難 - games.gg</h3>
+    <h3>PlayStationのディスク販売終了決定、英小売業界団体が非難</h3>
     <p class="summary-text">PlayStationのディスク販売終了決定、英小売業界団体が非難 games.gg</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>終了｜出典: games.gg</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-43fe26a8dd20e6c9" class="card tone-tech" href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jpを読む" data-url="https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5" data-title="欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp" data-genre="ゲーム">
+<a id="article-43fe26a8dd20e6c9" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jpを読む" data-url="https://news.google.com/rss/articles/CBMipAJBVV95cUxOTkJ2TjNDWGhZc1RqU2sxbko4djRMNDBYY1BDazNISXI4NVpEaUNoZmJ6NFdCamphdU1WMnFuVDFRSkRVMUVreWNFUDh1RzFKazdXaEtKZF9tQldtRDhKc2J5R09uRVRySkNTeVJzX3RlaEFxSU5vWlZoaWRzNHQ3ZVRpLU1rNWhaa2hFSkRqT2JOZFhfa25GWEFNNTYwRS1oZ01Fd2EycmNUMHl5VnRSbDR4TTFPUVg3THVkM0RCcXQ4Yy1haURWSDNJUG8yZ3FLanNwbW1fb2YwMWQ5VXVRSVRSQnBQUmlEdDEyNkh0U3U4U0w4Tm9nWU1mV3JKRF9UQzJkZEF1T2w0dlVZNzM3UVp5RHJMSjB1VnpwQkVhdV9JRmU3?oc=5" data-title="欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/c5a1f23b9eba746f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>gamereactor.jp · 13:12</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています - gamereactor.jp</h3>
+    <h3>欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています</h3>
     <p class="summary-text">欧州委員会は、ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどで…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>欧州委員会は・ソニーがPlayStationで物理ディスクを段階的に廃止する決定を制度レベルで防ぐことはほとんどできないと認めています｜出典: gamereactor.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -945,30 +957,24 @@ dd {
     <h2 id="経済">経済</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-ba71afecaa021342" class="card tone-money" href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMESを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5" data-title="アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES" data-genre="経済">
+  <div class="grid"><a id="article-ba71afecaa021342" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMESを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTFA1OWZOYlNfY1A5TXRzaTNiVVhoeHh3S0FzWHdxS0FwTW9TRWFoZ0dPNktPWWl3VWh2MTBQVWdZd3dVQkUzcjlQOEtVclQwNUlzdWdoamN5ZndIMm9ZWnhPMm9IMzJQaWVDWWc?oc=5" data-title="アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/0c49c2909b4316d8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PR TIMES · 09:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ - PR TIMES</h3>
+    <h3>アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ</h3>
     <p class="summary-text">アステナホールディングス株式会社、2026年11月期 第2四半期決算発表のお知らせ PR TIMES</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・発表｜出典: PR TIMES</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-79ead36de165211c" class="card tone-money" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jcjhjc1hveW9xRkZHQW9oQ3dGanFzNEx4TnVBV0k0YUYyTTZuRVZGUUkxSmtSTDdlOWYyQ19Qa2ppS3hlcWNMckJEbXo0RVZYMndtYW9Yaw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jcjhjc1hveW9xRkZHQW9oQ3dGanFzNEx4TnVBV0k0YUYyTTZuRVZGUUkxSmtSTDdlOWYyQ19Qa2ppS3hlcWNMckJEbXo0RVZYMndtYW9Yaw?oc=5" data-title="６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ" data-genre="経済">
+<a id="article-79ead36de165211c" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jcjhjc1hveW9xRkZHQW9oQ3dGanFzNEx4TnVBV0k0YUYyTTZuRVZGUUkxSmtSTDdlOWYyQ19Qa2ppS3hlcWNMckJEbXo0RVZYMndtYW9Yaw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jcjhjc1hveW9xRkZHQW9oQ3dGanFzNEx4TnVBV0k0YUYyTTZuRVZGUUkxSmtSTDdlOWYyQ19Qa2ppS3hlcWNMckJEbXo0RVZYMndtYW9Yaw?oc=5" data-title="６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/a56016f6edb8aa09.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日流ウェブ · 09:02</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） - 日流ウェブ</h3>
+    <h3>６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号）</h3>
     <p class="summary-text">６社中３社が増収／物価高の影響も各社堅調（2026年7月9日号） 日流ウェブ</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>６社中３社が増収・物価高の影響も各社堅調（2026年7月9日号）｜出典: 日流ウェブ</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -977,30 +983,24 @@ dd {
     <h2 id="金融">金融</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-6bf800b385451a19" class="card tone-money" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5" rel="noopener noreferrer" target="_blank" aria-label="偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytesを読む" data-url="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5" data-title="偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes" data-genre="金融">
+  <div class="grid"><a id="article-6bf800b385451a19" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5" rel="noopener noreferrer" target="_blank" aria-label="偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytesを読む" data-url="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZS01bFY5bVZCbmdYSkt2YjM0TVFJVGMyb180cWVVeDNMR09NQTJfNUhaQ3M3Q1pEa01RRmhDWXJ4OHhBSXNLNUZEQmNrWHprY0llSHAtcnFPcExEcHN4RUE3d3h0Z2hxdzhrZHRveHBKWVFqWm5ubk8yRGg3cElfU0J6dTVCcEsyeXZiOTZWYUk2Z1VvUnpQd0htcldvWURWc0doUks4Q3JjbkFkWWp2dW1n?oc=5" data-title="偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/596c03cdf7546254.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Malwarebytes · 12:34</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている - Malwarebytes</h3>
+    <h3>偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている</h3>
     <p class="summary-text">偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている Malwarebytes</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>偽の仮想通貨ギフトカードサイトを見分けるのがますます難しくなっている｜出典: Malwarebytes</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-0b523b5f8f141ba2" class="card tone-money" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5" data-title="上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞" data-genre="金融">
+<a id="article-0b523b5f8f141ba2" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE5scmNUOFVmS3pjTFRZY2xRMzFybmxjNkFKbE1OblpZUUVuOWI2QVJSTGtCTmFaUTB3UVh4MGswMEp2akhzOWVFR3dwNVZ0MFNhVHZlaW44dHBsWEFaNzB4TUl1TlFWb1MtT3dPYQ?oc=5" data-title="上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/627a929c36fb4964.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 08:04</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 - 日本経済新聞</h3>
+    <h3>上場企業はなぜ仮想通貨を買うのか 企業価値の新常識</h3>
     <p class="summary-text">上場企業はなぜ仮想通貨を買うのか 企業価値の新常識 日本経済新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>上場企業はなぜ仮想通貨を買うのか・企業価値の新常識｜出典: 日本経済新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -1009,17 +1009,14 @@ dd {
     <h2 id="国際">国際</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-6ecf58ba06df01ce" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiekFVX3lxTE01WjFzR2dnVFhuUmpRemVNcTJQUktwY0J2NmNsTmx4VTFhRVdJT0VxcTBMdUVwbmZjTU9oVll3YktEZjJrdS1tS01jaHJqUkFqQkZOMWlDU1VzSUp2OE9BVWhBSTFhcWN4T0J6MHRSVlduWFF1akxZRHBR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞meを読む" data-url="https://news.google.com/rss/articles/CBMiekFVX3lxTE01WjFzR2dnVFhuUmpRemVNcTJQUktwY0J2NmNsTmx4VTFhRVdJT0VxcTBMdUVwbmZjTU9oVll3YktEZjJrdS1tS01jaHJqUkFqQkZOMWlDU1VzSUp2OE9BVWhBSTFhcWN4T0J6MHRSVlduWFF1akxZRHBR?oc=5" data-title="政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞me" data-genre="国際">
+  <div class="grid"><a id="article-6ecf58ba06df01ce" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiekFVX3lxTE01WjFzR2dnVFhuUmpRemVNcTJQUktwY0J2NmNsTmx4VTFhRVdJT0VxcTBMdUVwbmZjTU9oVll3YktEZjJrdS1tS01jaHJqUkFqQkZOMWlDU1VzSUp2OE9BVWhBSTFhcWN4T0J6MHRSVlduWFF1akxZRHBR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞meを読む" data-url="https://news.google.com/rss/articles/CBMiekFVX3lxTE01WjFzR2dnVFhuUmpRemVNcTJQUktwY0J2NmNsTmx4VTFhRVdJT0VxcTBMdUVwbmZjTU9oVll3YktEZjJrdS1tS01jaHJqUkFqQkZOMWlDU1VzSUp2OE9BVWhBSTFhcWN4T0J6MHRSVlduWFF1akxZRHBR?oc=5" data-title="政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞me" data-genre="国際">
   <img class="thumb" src="../assets/thumbs/4929f2f87210e326.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>西日本新聞me · 14:23</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>政治(全国・海外ニュース)写真｜971ページ目 - 西日本新聞me</h3>
+    <h3>政治(全国・海外ニュース)写真｜971ページ目</h3>
     <p class="summary-text">政治(全国・海外ニュース)写真</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政治(全国・海外ニュース)写真｜971ページ目｜出典: 西日本新聞me</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>971ページ目</span></p>
   </div>
 </a></div>
 </details>
@@ -1028,17 +1025,14 @@ dd {
     <h2 id="災害">災害</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-fca35f96e2f6c9bc" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5" data-title="南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース" data-genre="災害">
+  <div class="grid"><a id="article-fca35f96e2f6c9bc" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eE02WE1zYjBFeEVnQ1k5OGlTaWl5UVJoVm1Nd0xYam9RbEgzWlBJejViaVVXQ1RtRDI1VllBVjlWSy1WU0lYODhTZ3RiV3g3VkpQRQ?oc=5" data-title="南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/5d0c3e74508481f9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ウェザーニュース · 14:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>南太平洋でM6.7の地震 津波被害の心配なし - ウェザーニュース</h3>
+    <h3>南太平洋でM6.7の地震 津波被害の心配なし</h3>
     <p class="summary-text">南太平洋でM6.7の地震 津波被害の心配なし ウェザーニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜出典: ウェザーニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>

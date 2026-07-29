@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -744,43 +795,34 @@ dd {
     <h2 id="AI">AI</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-6e049cf2a7a944af" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE0wTVl0MVhkbFNtek9aWU4zdGhwQUlJelFxSzhMeENpSUt3eVFwQ0lremE1OWNXb3FCd0xfUVNYaVFOaE9sYV82LVpqbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제を読む" data-url="https://news.google.com/rss/articles/CBMiS0FVX3lxTE0wTVl0MVhkbFNtek9aWU4zdGhwQUlJelFxSzhMeENpSUt3eVFwQ0lremE1OWNXb3FCd0xfUVNYaVFOaE9sYV82LVpqbw?oc=5" data-title="米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제" data-genre="AI">
+  <div class="grid"><a id="article-6e049cf2a7a944af" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE0wTVl0MVhkbFNtek9aWU4zdGhwQUlJelFxSzhMeENpSUt3eVFwQ0lremE1OWNXb3FCd0xfUVNYaVFOaE9sYV82LVpqbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제を読む" data-url="https://news.google.com/rss/articles/CBMiS0FVX3lxTE0wTVl0MVhkbFNtek9aWU4zdGhwQUlJelFxSzhMeENpSUt3eVFwQ0lremE1OWNXb3FCd0xfUVNYaVFOaE9sYV82LVpqbw?oc=5" data-title="米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/7e4ac122233c3cea.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>매일경제 · 08:19</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した.. - 매일경제</h3>
+    <h3>米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオープンモデル「キミK3」をはじめ、Z.ai など中国企業AIが米国最上位モデルに近接した..</h3>
     <p class="summary-text">米国の対中国人工知能(AI)規制をめぐってシリコンバレーが二つに分かれた。 最近、ムーンショットAIが公開したオー…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>規制・AI・公開｜注目度 67点｜出典: 매일경제</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-6a46e5b588e3658c" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBGd2lUa1hwVEgzUlBqUU9DVEwzOUNEbmFYWDhIVE1BUjZtZGVoSG5OUHB5aXlWUVNuNjU5a1liQjNvQnNRUV93ek0wUW5rZDBPeS1RdmVTeHBEZ1NDc0pQWXhjYjVsenBjQ3NfLWtTeVlLeGtXZk5teWQ5Q3U5dE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBGd2lUa1hwVEgzUlBqUU9DVEwzOUNEbmFYWDhIVE1BUjZtZGVoSG5OUHB5aXlWUVNuNjU5a1liQjNvQnNRUV93ek0wUW5rZDBPeS1RdmVTeHBEZ1NDc0pQWXhjYjVsenBjQ3NfLWtTeVlLeGtXZk5teWQ5Q3U5dE0?oc=5" data-title="Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュース" data-genre="AI">
+<a id="article-6a46e5b588e3658c" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBGd2lUa1hwVEgzUlBqUU9DVEwzOUNEbmFYWDhIVE1BUjZtZGVoSG5OUHB5aXlWUVNuNjU5a1liQjNvQnNRUV93ek0wUW5rZDBPeS1RdmVTeHBEZ1NDc0pQWXhjYjVsenBjQ3NfLWtTeVlLeGtXZk5teWQ5Q3U5dE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBGd2lUa1hwVEgzUlBqUU9DVEwzOUNEbmFYWDhIVE1BUjZtZGVoSG5OUHB5aXlWUVNuNjU5a1liQjNvQnNRUV93ek0wUW5rZDBPeS1RdmVTeHBEZ1NDc0pQWXhjYjVsenBjQ3NfLWtTeVlLeGtXZk5teWQ5Q3U5dE0?oc=5" data-title="Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/81be60b6a4c143e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） - Yahoo!ニュース</h3>
+    <h3>Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ）</h3>
     <p class="summary-text">Hugging Face不正侵入事件、OpenAIのエージェントが事前に脱出を計画？（テクノエッジ） Yahoo!…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-803ddd1f3cb08809" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VU1phdzFGWnNGTG9iSVY4cFA4QVM2Y3Vta1E1VlVRVlpiTjdVUUpzY2RPSk1XRjBVRzk1dWQycDdZNjB0TG9UMTF0UnZLRUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジンを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VU1phdzFGWnNGTG9iSVY4cFA4QVM2Y3Vta1E1VlVRVlpiTjdVUUpzY2RPSk1XRjBVRzk1dWQycDdZNjB0TG9UMTF0UnZLRUk?oc=5" data-title="【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジン" data-genre="AI">
+<a id="article-803ddd1f3cb08809" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VU1phdzFGWnNGTG9iSVY4cFA4QVM2Y3Vta1E1VlVRVlpiTjdVUUpzY2RPSk1XRjBVRzk1dWQycDdZNjB0TG9UMTF0UnZLRUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジンを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VU1phdzFGWnNGTG9iSVY4cFA4QVM2Y3Vta1E1VlVRVlpiTjdVUUpzY2RPSk1XRjBVRzk1dWQycDdZNjB0TG9UMTF0UnZLRUk?oc=5" data-title="【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジン" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/7f900a1113ff4aab.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>DXマガジン · 08:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上 - DXマガジン</h3>
+    <h3>【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の性能が大幅向上</h3>
     <p class="summary-text">【Anthropic】最新モデル「Claude Opus 5」が公開！価格は据え置きでソフトウェア開発や知識労働の…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude・公開｜注目度 61点｜出典: DXマガジン</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -789,56 +831,44 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>4 topics</span>
   </summary>
-  <div class="grid"><a id="article-99cbb1fad67e7091" class="card tone-tech" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxObncwVFRGeGRLNHNkb3hSalIweDJjcWF3R0tiUWNkV2tRbWp3WFo4LUtObnVnVHZDbmZIMVQ3TkRQZG5mVGZFVEhTeUthV3FWWkwzWG4wVEdqczhSSGVnUk5ZSWtTa0ZrV2g5LURnZXVaQzk3dktBOGtBcmFkZDIybnotQ0I5MFYzXzRHMTNZSzBCMFprQTYtZlhNS0p3SW1HMjd1Y2Nn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="音频去AI化工具 - Microsoftを読む" data-url="https://news.google.com/rss/articles/CBMipgFBVV95cUxObncwVFRGeGRLNHNkb3hSalIweDJjcWF3R0tiUWNkV2tRbWp3WFo4LUtObnVnVHZDbmZIMVQ3TkRQZG5mVGZFVEhTeUthV3FWWkwzWG4wVEdqczhSSGVnUk5ZSWtTa0ZrV2g5LURnZXVaQzk3dktBOGtBcmFkZDIybnotQ0I5MFYzXzRHMTNZSzBCMFprQTYtZlhNS0p3SW1HMjd1Y2Nn?oc=5" data-title="音频去AI化工具 - Microsoft" data-genre="IT業界">
+  <div class="grid"><a id="article-99cbb1fad67e7091" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMipgFBVV95cUxObncwVFRGeGRLNHNkb3hSalIweDJjcWF3R0tiUWNkV2tRbWp3WFo4LUtObnVnVHZDbmZIMVQ3TkRQZG5mVGZFVEhTeUthV3FWWkwzWG4wVEdqczhSSGVnUk5ZSWtTa0ZrV2g5LURnZXVaQzk3dktBOGtBcmFkZDIybnotQ0I5MFYzXzRHMTNZSzBCMFprQTYtZlhNS0p3SW1HMjd1Y2Nn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="音频去AI化工具 - Microsoftを読む" data-url="https://news.google.com/rss/articles/CBMipgFBVV95cUxObncwVFRGeGRLNHNkb3hSalIweDJjcWF3R0tiUWNkV2tRbWp3WFo4LUtObnVnVHZDbmZIMVQ3TkRQZG5mVGZFVEhTeUthV3FWWkwzWG4wVEdqczhSSGVnUk5ZSWtTa0ZrV2g5LURnZXVaQzk3dktBOGtBcmFkZDIybnotQ0I5MFYzXzRHMTNZSzBCMFprQTYtZlhNS0p3SW1HMjd1Y2Nn?oc=5" data-title="音频去AI化工具 - Microsoft" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/56ddfd30c96f3812.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Microsoft · 07:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>一次情報</span> <span>公式発表</span> <span>仕事で使える</span></div>
-    <h3>音频去AI化工具 - Microsoft</h3>
+    <h3>音频去AI化工具</h3>
     <p class="summary-text">音频去AI化工具 Microsoft</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・Microsoft｜注目度 65点｜出典: Microsoft</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>AI・Microsoft｜注目度 65点</span></p>
   </div>
 </a>
-<a id="article-db2574b09e415352" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sVnBDVUFNTWNCdVhYb3IzdWkzdEdLbXZ2RTJyZGRhZGdLa3ZOWmZOeFhHLWczV0ZlQ3AyUFZaVTdnUHRGX0pUcWwyV2R2b04y?oc=5" rel="noopener noreferrer" target="_blank" aria-label="横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミーを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sVnBDVUFNTWNCdVhYb3IzdWkzdEdLbXZ2RTJyZGRhZGdLa3ZOWmZOeFhHLWczV0ZlQ3AyUFZaVTdnUHRGX0pUcWwyV2R2b04y?oc=5" data-title="横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミー" data-genre="IT業界">
+<a id="article-db2574b09e415352" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sVnBDVUFNTWNCdVhYb3IzdWkzdEdLbXZ2RTJyZGRhZGdLa3ZOWmZOeFhHLWczV0ZlQ3AyUFZaVTdnUHRGX0pUcWwyV2R2b04y?oc=5" rel="noopener noreferrer" target="_blank" aria-label="横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミーを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sVnBDVUFNTWNCdVhYb3IzdWkzdEdLbXZ2RTJyZGRhZGdLa3ZOWmZOeFhHLWczV0ZlQ3AyUFZaVTdnUHRGX0pUcWwyV2R2b04y?oc=5" data-title="横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミー" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/e46f7872dc76c81f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ゴリミー · 14:33</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか - ゴリミー</h3>
+    <h3>横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか</h3>
     <p class="summary-text">横浜エリアの新Apple Store、横浜駅直結のスカイビルにオープンか ゴリミー</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Apple｜注目度 61点｜出典: ゴリミー</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-9a0bcd3c5a56cb24" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NM1EtRGNUSUl2amRvMUozdUp5WTBuZ0V2UnJNWHhETlNfbElEWk43UU9hRmlaWVVvMjB6WTV4UkZlQVNodV9JQjZMNGRCTlcxVTdXVndpeW9YRzQyYVZ1c3o1VdIBaEFVX3lxTFA4aGZyQms0MVRNUFNZc0JvWlVoOGl4ZWMwOEdfR2JOUE1CTnAzc0c1Nl9Yb0FDdE1aQXJrdm51LTdyNjNTbGQ5MHFjOF9OUEtsRjdWSXZVSG5CUG5pM1drdU5QSVNmS0Ft?oc=5" rel="noopener noreferrer" target="_blank" aria-label="出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NM1EtRGNUSUl2amRvMUozdUp5WTBuZ0V2UnJNWHhETlNfbElEWk43UU9hRmlaWVVvMjB6WTV4UkZlQVNodV9JQjZMNGRCTlcxVTdXVndpeW9YRzQyYVZ1c3o1VdIBaEFVX3lxTFA4aGZyQms0MVRNUFNZc0JvWlVoOGl4ZWMwOEdfR2JOUE1CTnAzc0c1Nl9Yb0FDdE1aQXJrdm51LTdyNjNTbGQ5MHFjOF9OUEtsRjdWSXZVSG5CUG5pM1drdU5QSVNmS0Ft?oc=5" data-title="出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞" data-genre="IT業界">
+<a id="article-9a0bcd3c5a56cb24" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NM1EtRGNUSUl2amRvMUozdUp5WTBuZ0V2UnJNWHhETlNfbElEWk43UU9hRmlaWVVvMjB6WTV4UkZlQVNodV9JQjZMNGRCTlcxVTdXVndpeW9YRzQyYVZ1c3o1VdIBaEFVX3lxTFA4aGZyQms0MVRNUFNZc0JvWlVoOGl4ZWMwOEdfR2JOUE1CTnAzc0c1Nl9Yb0FDdE1aQXJrdm51LTdyNjNTbGQ5MHFjOF9OUEtsRjdWSXZVSG5CUG5pM1drdU5QSVNmS0Ft?oc=5" rel="noopener noreferrer" target="_blank" aria-label="出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE1NM1EtRGNUSUl2amRvMUozdUp5WTBuZ0V2UnJNWHhETlNfbElEWk43UU9hRmlaWVVvMjB6WTV4UkZlQVNodV9JQjZMNGRCTlcxVTdXVndpeW9YRzQyYVZ1c3o1VdIBaEFVX3lxTFA4aGZyQms0MVRNUFNZc0JvWlVoOGl4ZWMwOEdfR2JOUE1CTnAzc0c1Nl9Yb0FDdE1aQXJrdm51LTdyNjNTbGQ5MHFjOF9OUEtsRjdWSXZVSG5CUG5pM1drdU5QSVNmS0Ft?oc=5" data-title="出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/1730689b7bf65d91.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 14:12</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け - 財経新聞</h3>
+    <h3>出張者が標的に：ホテルWi-Fi経由でMicrosoft 365認証情報を窃取、MFAもすり抜け</h3>
     <p class="summary-text">出張者が標的に：ホテルWi</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Microsoft｜注目度 61点｜出典: 財経新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-3105a77029797b49" class="card tone-tech" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxORGI4b0Z6X0NnU051amRBYVp0aE9tanhiNU94eXZTdDNNY1k3NW0yRThTaTJHazdfZVdNejhYLXFnT1JBckdSRVkwc29za2ZOcTFySHRjSGlBQUNrMmRDU2VoV1dDb2UyNURyTXFrNWdYRWF5OXRERVJWWUhVbHAtdnliWnE5ZEh6Uzl5RHZB" rel="noopener noreferrer" target="_blank" aria-label="Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxORGI4b0Z6X0NnU051amRBYVp0aE9tanhiNU94eXZTdDNNY1k3NW0yRThTaTJHazdfZVdNejhYLXFnT1JBckdSRVkwc29za2ZOcTFySHRjSGlBQUNrMmRDU2VoV1dDb2UyNURyTXFrNWdYRWF5OXRERVJWWUhVbHAtdnliWnE5ZEh6Uzl5RHZB" data-title="Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュース" data-genre="IT業界">
+<a id="article-3105a77029797b49" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxORGI4b0Z6X0NnU051amRBYVp0aE9tanhiNU94eXZTdDNNY1k3NW0yRThTaTJHazdfZVdNejhYLXFnT1JBckdSRVkwc29za2ZOcTFySHRjSGlBQUNrMmRDU2VoV1dDb2UyNURyTXFrNWdYRWF5OXRERVJWWUhVbHAtdnliWnE5ZEh6Uzl5RHZB" rel="noopener noreferrer" target="_blank" aria-label="Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxORGI4b0Z6X0NnU051amRBYVp0aE9tanhiNU94eXZTdDNNY1k3NW0yRThTaTJHazdfZVdNejhYLXFnT1JBckdSRVkwc29za2ZOcTFySHRjSGlBQUNrMmRDU2VoV1dDb2UyNURyTXFrNWdYRWF5OXRERVJWWUhVbHAtdnliWnE5ZEh6Uzl5RHZB" data-title="Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/d11342d00616abc5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:51</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話 - Yahoo!ニュース</h3>
+    <h3>Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「Brand New」制作秘話</h3>
     <p class="summary-text">Mrs. GREEN APPLE大森元貴 メンバーからの“珍しい反応”を明かす！ 映画『スパイダーマン』主題歌「B…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Apple｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -847,82 +877,64 @@ dd {
     <h2 id="政治">政治</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-82fc62aad462a4dc" class="card tone-civic" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE0xZDk0VmpkNWRCbFdYallRcUc3ck9kakpNMXlDc1N3R0hzbDRZMllwbm1qZjc0SkJ2TUdFemM3bV8zQi1jdE92eDdxZy05V3FRelhMRjRVdy1yZnJZeHNYbFh0WWtBdjgxNHI3WQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE0xZDk0VmpkNWRCbFdYallRcUc3ck9kakpNMXlDc1N3R0hzbDRZMllwbm1qZjc0SkJ2TUdFemM3bV8zQi1jdE92eDdxZy05V3FRelhMRjRVdy1yZnJZeHNYbFh0WWtBdjgxNHI3WQ?oc=5" data-title="山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞" data-genre="政治">
+  <div class="grid"><a id="article-82fc62aad462a4dc" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE0xZDk0VmpkNWRCbFdYallRcUc3ck9kakpNMXlDc1N3R0hzbDRZMllwbm1qZjc0SkJ2TUdFemM3bV8zQi1jdE92eDdxZy05V3FRelhMRjRVdy1yZnJZeHNYbFh0WWtBdjgxNHI3WQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE0xZDk0VmpkNWRCbFdYallRcUc3ck9kakpNMXlDc1N3R0hzbDRZMllwbm1qZjc0SkJ2TUdFemM3bV8zQi1jdE92eDdxZy05V3FRelhMRjRVdy1yZnJZeHNYbFh0WWtBdjgxNHI3WQ?oc=5" data-title="山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/6752abe59fcf5d13.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 13:18</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>山形県尾花沢市長選挙、若林吾朗氏が初当選 - 日本経済新聞</h3>
+    <h3>山形県尾花沢市長選挙、若林吾朗氏が初当選</h3>
     <p class="summary-text">山形県尾花沢市長選挙、若林吾朗氏が初当選 日本経済新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>選挙｜注目度 64点｜出典: 日本経済新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-d821d266706661ab" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLTlNHdkhIZ0JBdDBOby1rU1ZvdDJkbTVBYUotNjNwZEVjZGZyQTJMNExUUjZiYXZrT3dFNnpweDVkWVNubXhpd3YyWTBRUGFBeFVQSEVXZlNfc2F2Q3MySGtyVUxUdG8" rel="noopener noreferrer" target="_blank" aria-label="玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLTlNHdkhIZ0JBdDBOby1rU1ZvdDJkbTVBYUotNjNwZEVjZGZyQTJMNExUUjZiYXZrT3dFNnpweDVkWVNubXhpd3YyWTBRUGFBeFVQSEVXZlNfc2F2Q3MySGtyVUxUdG8" data-title="玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞" data-genre="政治">
+<a id="article-d821d266706661ab" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLTlNHdkhIZ0JBdDBOby1rU1ZvdDJkbTVBYUotNjNwZEVjZGZyQTJMNExUUjZiYXZrT3dFNnpweDVkWVNubXhpd3YyWTBRUGFBeFVQSEVXZlNfc2F2Q3MySGtyVUxUdG8" rel="noopener noreferrer" target="_blank" aria-label="玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLTlNHdkhIZ0JBdDBOby1rU1ZvdDJkbTVBYUotNjNwZEVjZGZyQTJMNExUUjZiYXZrT3dFNnpweDVkWVNubXhpd3YyWTBRUGFBeFVQSEVXZlNfc2F2Q3MySGtyVUxUdG8" data-title="玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/d08b380ba8fd4cf3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 11:23</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] - 朝日新聞</h3>
+    <h3>玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県]</h3>
     <p class="summary-text">玄海町長選は元課長が初当選 「核ごみ」調査、次の段階への対応焦点 [佐賀県] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>玄海町長選は元課長が初当選・「核ごみ」調査・次の段階への対応焦点｜注目度 64点｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-ae52924ae1c38ab2" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9scFlEWVBDellVa0hhYWhKWXJZbVpFem9XQmJuLTBxQjNiOWVLMUVPQlZoSEJYR25TZzFkbEpUSHhtVjBJOHZ6UGJFUHFnbjVGRGR6TEdYSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9scFlEWVBDellVa0hhYWhKWXJZbVpFem9XQmJuLTBxQjNiOWVLMUVPQlZoSEJYR25TZzFkbEpUSHhtVjBJOHZ6UGJFUHFnbjVGRGR6TEdYSQ?oc=5" data-title="【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIG" data-genre="政治">
+<a id="article-ae52924ae1c38ab2" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9scFlEWVBDellVa0hhYWhKWXJZbVpFem9XQmJuLTBxQjNiOWVLMUVPQlZoSEJYR25TZzFkbEpUSHhtVjBJOHZ6UGJFUHFnbjVGRGR6TEdYSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9scFlEWVBDellVa0hhYWhKWXJZbVpFem9XQmJuLTBxQjNiOWVLMUVPQlZoSEJYR25TZzFkbEpUSHhtVjBJOHZ6UGJFUHFnbjVGRGR6TEdYSQ?oc=5" data-title="【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIG" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/bc2eb10abb630a30.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 11:18</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ - TBS NEWS DIG</h3>
+    <h3>【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ</h3>
     <p class="summary-text">【速報】佐賀・玄海町長選挙 新人の日高大助氏(55)が現職破り初当選 「核のごみ」最終処分場選定について判断へ T…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>選挙｜注目度 64点｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-0acf10ff0f3e1302" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE92eWJBMnFubjVMWGxONW1tc1ZDdDlXMFV0OUJfaXVObU9nZWdXdmg2amlGZWZFNk0zWW1UOFV0ZUppQklnN0dlaVNfUGRDWExjaE1mbWlScGZtOVE4UDVB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE92eWJBMnFubjVMWGxONW1tc1ZDdDlXMFV0OUJfaXVObU9nZWdXdmg2amlGZWZFNk0zWW1UOFV0ZUppQklnN0dlaVNfUGRDWExjaE1mbWlScGZtOVE4UDVB?oc=5" data-title="自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュース" data-genre="政治">
+<a id="article-0acf10ff0f3e1302" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE92eWJBMnFubjVMWGxONW1tc1ZDdDlXMFV0OUJfaXVObU9nZWdXdmg2amlGZWZFNk0zWW1UOFV0ZUppQklnN0dlaVNfUGRDWExjaE1mbWlScGZtOVE4UDVB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE92eWJBMnFubjVMWGxONW1tc1ZDdDlXMFV0OUJfaXVObU9nZWdXdmg2amlGZWZFNk0zWW1UOFV0ZUppQklnN0dlaVNfUGRDWExjaE1mbWlScGZtOVE4UDVB?oc=5" data-title="自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュース" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/33da00806ca228cd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 07:25</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 - NHKニュース</h3>
+    <h3>自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約</h3>
     <p class="summary-text">自民 小林政調会長 政府の日程踏まえ消費税減税の意見集約 NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政府｜注目度 64点｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-6616d88ece484303" class="card tone-civic" href="https://news.google.com/rss/articles/CBMi8gJBVV95cUxQQWwxdFV3ZndDTFdtS1BsbGUwTkpybFAwbUttREJQVjNRYnRrUUk2TzdqV0JuamR4NW5Tb2RleFJhb0VCaDRibm1yREtpWTh1aHhHMW5LOEFuMUZlY0xnbVZhVXBneVR3MDFSZjJOVmRDVHhLNy1ucnNCd3paWkhiYlpmc0g5U3pHRXNzRll5andHWlVRNzV2YXNPd1ZwQS1xYzh0WmNXS092OFJIVkFIOVMwdnFFN2pDRElRNmt0Y0p5R1dNUXM3VURVTDAxRlNrX2Q3ZlVTZlNPVGRnSk1tTGhSQ3pleG5VYlYzWjVPb1I1N05jc3lBMGEzRnhxOG9IWC1qLUZ0Uk4wMnEtLUthRE5ldWpfNVZGa2dFVDh3Q3lKTVdnbU9VR2NNenJZVkdaR2xFek5jcjF2SGV1cEdDMThUaWRhMmxhYWtDUXNsYmtXT1dXa0ZCT3hMMlctcjRORkRXX29leTJfZDNpTEo0ajR3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党を読む" data-url="https://news.google.com/rss/articles/CBMi8gJBVV95cUxQQWwxdFV3ZndDTFdtS1BsbGUwTkpybFAwbUttREJQVjNRYnRrUUk2TzdqV0JuamR4NW5Tb2RleFJhb0VCaDRibm1yREtpWTh1aHhHMW5LOEFuMUZlY0xnbVZhVXBneVR3MDFSZjJOVmRDVHhLNy1ucnNCd3paWkhiYlpmc0g5U3pHRXNzRll5andHWlVRNzV2YXNPd1ZwQS1xYzh0WmNXS092OFJIVkFIOVMwdnFFN2pDRElRNmt0Y0p5R1dNUXM3VURVTDAxRlNrX2Q3ZlVTZlNPVGRnSk1tTGhSQ3pleG5VYlYzWjVPb1I1N05jc3lBMGEzRnhxOG9IWC1qLUZ0Uk4wMnEtLUthRE5ldWpfNVZGa2dFVDh3Q3lKTVdnbU9VR2NNenJZVkdaR2xFek5jcjF2SGV1cEdDMThUaWRhMmxhYWtDUXNsYmtXT1dXa0ZCT3hMMlctcjRORkRXX29leTJfZDNpTEo0ajR3?oc=5" data-title="立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党" data-genre="政治">
+<a id="article-6616d88ece484303" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMi8gJBVV95cUxQQWwxdFV3ZndDTFdtS1BsbGUwTkpybFAwbUttREJQVjNRYnRrUUk2TzdqV0JuamR4NW5Tb2RleFJhb0VCaDRibm1yREtpWTh1aHhHMW5LOEFuMUZlY0xnbVZhVXBneVR3MDFSZjJOVmRDVHhLNy1ucnNCd3paWkhiYlpmc0g5U3pHRXNzRll5andHWlVRNzV2YXNPd1ZwQS1xYzh0WmNXS092OFJIVkFIOVMwdnFFN2pDRElRNmt0Y0p5R1dNUXM3VURVTDAxRlNrX2Q3ZlVTZlNPVGRnSk1tTGhSQ3pleG5VYlYzWjVPb1I1N05jc3lBMGEzRnhxOG9IWC1qLUZ0Uk4wMnEtLUthRE5ldWpfNVZGa2dFVDh3Q3lKTVdnbU9VR2NNenJZVkdaR2xFek5jcjF2SGV1cEdDMThUaWRhMmxhYWtDUXNsYmtXT1dXa0ZCT3hMMlctcjRORkRXX29leTJfZDNpTEo0ajR3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党を読む" data-url="https://news.google.com/rss/articles/CBMi8gJBVV95cUxQQWwxdFV3ZndDTFdtS1BsbGUwTkpybFAwbUttREJQVjNRYnRrUUk2TzdqV0JuamR4NW5Tb2RleFJhb0VCaDRibm1yREtpWTh1aHhHMW5LOEFuMUZlY0xnbVZhVXBneVR3MDFSZjJOVmRDVHhLNy1ucnNCd3paWkhiYlpmc0g5U3pHRXNzRll5andHWlVRNzV2YXNPd1ZwQS1xYzh0WmNXS092OFJIVkFIOVMwdnFFN2pDRElRNmt0Y0p5R1dNUXM3VURVTDAxRlNrX2Q3ZlVTZlNPVGRnSk1tTGhSQ3pleG5VYlYzWjVPb1I1N05jc3lBMGEzRnhxOG9IWC1qLUZ0Uk4wMnEtLUthRE5ldWpfNVZGa2dFVDh3Q3lKTVdnbU9VR2NNenJZVkdaR2xFek5jcjF2SGV1cEdDMThUaWRhMmxhYWtDUXNsYmtXT1dXa0ZCT3hMMlctcjRORkRXX29leTJfZDNpTEo0ajR3?oc=5" data-title="立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/0ebd6c0f7675e2bb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>公明党 · 14:02</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 - 公明党</h3>
+    <h3>立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎</h3>
     <p class="summary-text">立法府を軽視、国民を置き去りにした国会が閉幕 : ブログ : 羽村市議会議員 いしい尚郎 公明党</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>立法府を軽視・国民を置き去りにした国会が閉幕・ブログ｜注目度 61点｜出典: 公明党</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-be64bf8a375aa123" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkRSLTRDYy1WTzhGbTRJbFdVYjQ1RHd0RlBISHNtcEhMclZMOVVLWTNhOUR5aGtHZUNfNzZRSmU1QUJOOUlqbzRyNHdyc0FSWDlEOTk5bDU0VWFQc1MtV0pwRWNuMzlsUFo4S1djWHl6X0dRVE1lMGJMQ3U3YjJCOXp4YXdDVkpw" rel="noopener noreferrer" target="_blank" aria-label="「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkRSLTRDYy1WTzhGbTRJbFdVYjQ1RHd0RlBISHNtcEhMclZMOVVLWTNhOUR5aGtHZUNfNzZRSmU1QUJOOUlqbzRyNHdyc0FSWDlEOTk5bDU0VWFQc1MtV0pwRWNuMzlsUFo4S1djWHl6X0dRVE1lMGJMQ3U3YjJCOXp4YXdDVkpw" data-title="「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュース" data-genre="政治">
+<a id="article-be64bf8a375aa123" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkRSLTRDYy1WTzhGbTRJbFdVYjQ1RHd0RlBISHNtcEhMclZMOVVLWTNhOUR5aGtHZUNfNzZRSmU1QUJOOUlqbzRyNHdyc0FSWDlEOTk5bDU0VWFQc1MtV0pwRWNuMzlsUFo4S1djWHl6X0dRVE1lMGJMQ3U3YjJCOXp4YXdDVkpw" rel="noopener noreferrer" target="_blank" aria-label="「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkRSLTRDYy1WTzhGbTRJbFdVYjQ1RHd0RlBISHNtcEhMclZMOVVLWTNhOUR5aGtHZUNfNzZRSmU1QUJOOUlqbzRyNHdyc0FSWDlEOTk5bDU0VWFQc1MtV0pwRWNuMzlsUFo4S1djWHl6X0dRVE1lMGJMQ3U3YjJCOXp4YXdDVkpw" data-title="「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュース" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/f8902eafa02f8ec7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:56</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート - Yahoo!ニュース</h3>
+    <h3>「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介） - エキスパート</h3>
     <p class="summary-text">「いまの日本はインフレか」問題を政府はどう考えているのかーー政府公表資料中心の標準的ミカタ（西田亮介）</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政府｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -931,30 +943,24 @@ dd {
     <h2 id="社会">社会</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-97556ade9e4e0019" class="card tone-civic" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5aZW90VmpWT0JwaF9zVWJmSnVOQ0daTGtFUGNucHNZUDU5V18waEs0RmdlYUpuQTFsczVEUHlkWEhzcF9oLTdMTV9sUE1RMHlrWTVOUUxxUmsyRkdJeVBDSm84b3pfa2lNeXNlNHByNjJVY3IwZktGc0tqaXdRZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMifkFVX3lxTE5aZW90VmpWT0JwaF9zVWJmSnVOQ0daTGtFUGNucHNZUDU5V18waEs0RmdlYUpuQTFsczVEUHlkWEhzcF9oLTdMTV9sUE1RMHlrWTVOUUxxUmsyRkdJeVBDSm84b3pfa2lNeXNlNHByNjJVY3IwZktGc0tqaXdRZw?oc=5" data-title="裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュース" data-genre="社会">
+  <div class="grid"><a id="article-97556ade9e4e0019" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5aZW90VmpWT0JwaF9zVWJmSnVOQ0daTGtFUGNucHNZUDU5V18waEs0RmdlYUpuQTFsczVEUHlkWEhzcF9oLTdMTV9sUE1RMHlrWTVOUUxxUmsyRkdJeVBDSm84b3pfa2lNeXNlNHByNjJVY3IwZktGc0tqaXdRZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMifkFVX3lxTE5aZW90VmpWT0JwaF9zVWJmSnVOQ0daTGtFUGNucHNZUDU5V18waEs0RmdlYUpuQTFsczVEUHlkWEhzcF9oLTdMTV9sUE1RMHlrWTVOUUxxUmsyRkdJeVBDSm84b3pfa2lNeXNlNHByNjJVY3IwZktGc0tqaXdRZw?oc=5" data-title="裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュース" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/42705f0f94c2470a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:08</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK - NHKニュース</h3>
+    <h3>裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件｜NHK</h3>
     <p class="summary-text">裁判の記録 ｜ 相模原 「津久井やまゆり園」 障害者施設殺傷事件</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>障害・裁判｜注目度 64点｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-9a718c14ab016f9b" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9Fb2ZJMWxJLUVMM3Y5Tm96UThyRU9RTXVGX1lsTlZabFBCTXNmTjFwV2dTMGFvckhRM1kwRm5aT2hFZDVTUUV2Rl9XbEN1d1lXcHJXaDFDVVJDc2lPQ3Awb19aN0IyZ1dDTDFPRFJESDY5Z1gwUlEwSUdoR1pUd1B3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9Fb2ZJMWxJLUVMM3Y5Tm96UThyRU9RTXVGX1lsTlZabFBCTXNmTjFwV2dTMGFvckhRM1kwRm5aT2hFZDVTUUV2Rl9XbEN1d1lXcHJXaDFDVVJDc2lPQ3Awb19aN0IyZ1dDTDFPRFJESDY5Z1gwUlEwSUdoR1pUd1B3?oc=5" data-title="GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュース" data-genre="社会">
+<a id="article-9a718c14ab016f9b" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9Fb2ZJMWxJLUVMM3Y5Tm96UThyRU9RTXVGX1lsTlZabFBCTXNmTjFwV2dTMGFvckhRM1kwRm5aT2hFZDVTUUV2Rl9XbEN1d1lXcHJXaDFDVVJDc2lPQ3Awb19aN0IyZ1dDTDFPRFJESDY5Z1gwUlEwSUdoR1pUd1B3?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9Fb2ZJMWxJLUVMM3Y5Tm96UThyRU9RTXVGX1lsTlZabFBCTXNmTjFwV2dTMGFvckhRM1kwRm5aT2hFZDVTUUV2Rl9XbEN1d1lXcHJXaDFDVVJDc2lPQ3Awb19aN0IyZ1dDTDFPRFJESDY5Z1gwUlEwSUdoR1pUd1B3?oc=5" data-title="GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュース" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/e328c7b1acaff558.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 12:05</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ） - ｄメニューニュース</h3>
+    <h3>GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ）</h3>
     <p class="summary-text">GPS追跡やスマホ覗き見はNG？離婚調停や裁判で“逆に不利になる”証拠集めのワナ【弁護士に聞く】（レタスクラブ）…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>裁判｜注目度 61点｜出典: ｄメニューニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>本人・所属事務所の発表有無、報道元、報道時刻と続報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -963,82 +969,64 @@ dd {
     <h2 id="事件・事故">事件・事故</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-b7b0e97c8ed6340a" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE44U2lROENNSFlKNmVrc2k4bWIwQXVDMUxGeWZEZmxReTYwQ3BsLUFpOWgxQnBPcUlYMnFldjVwb1NudEduTGcxUDRUdXVaUkg1OXZMUE9JT3VWdEJGWTk0" rel="noopener noreferrer" target="_blank" aria-label="茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE44U2lROENNSFlKNmVrc2k4bWIwQXVDMUxGeWZEZmxReTYwQ3BsLUFpOWgxQnBPcUlYMnFldjVwb1NudEduTGcxUDRUdXVaUkg1OXZMUE9JT3VWdEJGWTk0" data-title="茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュース" data-genre="事件・事故">
+  <div class="grid"><a id="article-b7b0e97c8ed6340a" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE44U2lROENNSFlKNmVrc2k4bWIwQXVDMUxGeWZEZmxReTYwQ3BsLUFpOWgxQnBPcUlYMnFldjVwb1NudEduTGcxUDRUdXVaUkg1OXZMUE9JT3VWdEJGWTk0" rel="noopener noreferrer" target="_blank" aria-label="茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE44U2lROENNSFlKNmVrc2k4bWIwQXVDMUxGeWZEZmxReTYwQ3BsLUFpOWgxQnBPcUlYMnFldjVwb1NudEduTGcxUDRUdXVaUkg1OXZMUE9JT3VWdEJGWTk0" data-title="茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュース" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/d0b16950960ccdd7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 08:58</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 - NHKニュース</h3>
+    <h3>茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡</h3>
     <p class="summary-text">茨城 鹿嶋 海水浴中の親子ら3人流される 56歳の父親死亡 NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>死亡｜注目度 70点｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-9cbfe1a535256141" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83Nlo4OWVSSHBNd3RIMmtvR3JuRUYxYmYyT04zRUlnRHVYSlQ4eGNlSmo4SzRIdFYyeUVrOWh1dTAwWlVuZzdOSTdreVVJU3RPU1JnYmpqaEZWY3VYZXE3ckctMWNGZTg" rel="noopener noreferrer" target="_blank" aria-label="死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83Nlo4OWVSSHBNd3RIMmtvR3JuRUYxYmYyT04zRUlnRHVYSlQ4eGNlSmo4SzRIdFYyeUVrOWh1dTAwWlVuZzdOSTdreVVJU3RPU1JnYmpqaEZWY3VYZXE3ckctMWNGZTg" data-title="死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞" data-genre="事件・事故">
+<a id="article-9cbfe1a535256141" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83Nlo4OWVSSHBNd3RIMmtvR3JuRUYxYmYyT04zRUlnRHVYSlQ4eGNlSmo4SzRIdFYyeUVrOWh1dTAwWlVuZzdOSTdreVVJU3RPU1JnYmpqaEZWY3VYZXE3ckctMWNGZTg" rel="noopener noreferrer" target="_blank" aria-label="死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83Nlo4OWVSSHBNd3RIMmtvR3JuRUYxYmYyT04zRUlnRHVYSlQ4eGNlSmo4SzRIdFYyeUVrOWh1dTAwWlVuZzdOSTdreVVJU3RPU1JnYmpqaEZWY3VYZXE3ckctMWNGZTg" data-title="死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/a3d33a1107c2e5dd.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 08:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] - 朝日新聞</h3>
+    <h3>死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県]</h3>
     <p class="summary-text">死亡したのは22歳女性と判明 福岡市のひき逃げ事件、容疑者は否認 [福岡県] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>死亡｜注目度 70点｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-b46cee2d2bd7fa42" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzYl9neVhQQVFyNGVMeFRPY3ZVUWtscnhwVWlqZ3pKTU9EZkJfSXhNdXNNVXAwWlBYXzJvZTZmYVpFaWhqdjF1RlMtLUs0RkV4YmFMcG5sVC1yajB5RnlfRC1pNkp4QXM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzYl9neVhQQVFyNGVMeFRPY3ZVUWtscnhwVWlqZ3pKTU9EZkJfSXhNdXNNVXAwWlBYXzJvZTZmYVpFaWhqdjF1RlMtLUs0RkV4YmFMcG5sVC1yajB5RnlfRC1pNkp4QXM?oc=5" data-title="フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞" data-genre="事件・事故">
+<a id="article-b46cee2d2bd7fa42" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzYl9neVhQQVFyNGVMeFRPY3ZVUWtscnhwVWlqZ3pKTU9EZkJfSXhNdXNNVXAwWlBYXzJvZTZmYVpFaWhqdjF1RlMtLUs0RkV4YmFMcG5sVC1yajB5RnlfRC1pNkp4QXM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzYl9neVhQQVFyNGVMeFRPY3ZVUWtscnhwVWlqZ3pKTU9EZkJfSXhNdXNNVXAwWlBYXzJvZTZmYVpFaWhqdjF1RlMtLUs0RkV4YmFMcG5sVC1yajB5RnlfRC1pNkp4QXM?oc=5" data-title="フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/bf419c57482bad5c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 07:29</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る - 朝日新聞</h3>
+    <h3>フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る</h3>
     <p class="summary-text">フランスの森林火災、22万人超が避難 拡大続けボルドーに迫る 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>避難｜注目度 70点｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-e363085e38e7dcbf" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UZ0xJdHBkLURxOXZwMkdXQ3pNVVg1MVBjUWhNUlh2N3Y5b0RrRmlnMlluYm9hSW9hOTRzMWctdWV5cmxOUlFSd1g1LUt2eGpf?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュースを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UZ0xJdHBkLURxOXZwMkdXQ3pNVVg1MVBjUWhNUlh2N3Y5b0RrRmlnMlluYm9hSW9hOTRzMWctdWV5cmxOUlFSd1g1LUt2eGpf?oc=5" data-title="国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュース" data-genre="事件・事故">
+<a id="article-e363085e38e7dcbf" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UZ0xJdHBkLURxOXZwMkdXQ3pNVVg1MVBjUWhNUlh2N3Y5b0RrRmlnMlluYm9hSW9hOTRzMWctdWV5cmxOUlFSd1g1LUt2eGpf?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュースを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UZ0xJdHBkLURxOXZwMkdXQ3pNVVg1MVBjUWhNUlh2N3Y5b0RrRmlnMlluYm9hSW9hOTRzMWctdWV5cmxOUlFSd1g1LUt2eGpf?oc=5" data-title="国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュース" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/f69beb356e419083.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>KSBニュース · 14:20</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 - KSBニュース</h3>
+    <h3>国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市</h3>
     <p class="summary-text">国道交差点で車同士の衝突事故 73歳男性が死亡 女性2人けが 香川・丸亀市 KSBニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>事故｜注目度 67点｜出典: KSBニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-fc1b149236f9f397" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XanYyVVNGdGJldEhnODZTaDhxY1h5bms5N3hzMEFaeXVZRW4xOXpvd0pSWHlaa0dtcGwyczJJYlhxNHNhVXlWRHZoLU52blMycEF2NTM3UE9oTnJIOWZMZXd0QQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュースを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XanYyVVNGdGJldEhnODZTaDhxY1h5bms5N3hzMEFaeXVZRW4xOXpvd0pSWHlaa0dtcGwyczJJYlhxNHNhVXlWRHZoLU52blMycEF2NTM3UE9oTnJIOWZMZXd0QQ?oc=5" data-title="“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュース" data-genre="事件・事故">
+<a id="article-fc1b149236f9f397" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XanYyVVNGdGJldEhnODZTaDhxY1h5bms5N3hzMEFaeXVZRW4xOXpvd0pSWHlaa0dtcGwyczJJYlhxNHNhVXlWRHZoLU52blMycEF2NTM3UE9oTnJIOWZMZXd0QQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュースを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XanYyVVNGdGJldEhnODZTaDhxY1h5bms5N3hzMEFaeXVZRW4xOXpvd0pSWHlaa0dtcGwyczJJYlhxNHNhVXlWRHZoLU52blMycEF2NTM3UE9oTnJIOWZMZXd0QQ?oc=5" data-title="“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュース" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/47437938c1347bd9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>福岡TNCニュース · 11:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 - 福岡TNCニュース</h3>
+    <h3>“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区</h3>
     <p class="summary-text">“ひき逃げ”事件 トラックにはねられ死亡の女性は派遣社員(22)と判明 福岡市中央区 福岡TNCニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>死亡｜注目度 67点｜出典: 福岡TNCニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-a201c36eb44c5ece" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1od3F0ZTljWExaR05PN2ctTWgtVGhUX2cza2RlNFhTMkJsUWw0bUJpMURjdzU0LXRfSm1Tei15QmNzT1pHOHJfZkZOODZFR0VoOTRFZWhn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1od3F0ZTljWExaR05PN2ctTWgtVGhUX2cza2RlNFhTMkJsUWw0bUJpMURjdzU0LXRfSm1Tei15QmNzT1pHOHJfZkZOODZFR0VoOTRFZWhn?oc=5" data-title="【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jp" data-genre="事件・事故">
+<a id="article-a201c36eb44c5ece" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1od3F0ZTljWExaR05PN2ctTWgtVGhUX2cza2RlNFhTMkJsUWw0bUJpMURjdzU0LXRfSm1Tei15QmNzT1pHOHJfZkZOODZFR0VoOTRFZWhn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1od3F0ZTljWExaR05PN2ctTWgtVGhUX2cza2RlNFhTMkJsUWw0bUJpMURjdzU0LXRfSm1Tei15QmNzT1pHOHJfZkZOODZFR0VoOTRFZWhn?oc=5" data-title="【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jp" data-genre="事件・事故">
   <img class="thumb" src="../assets/thumbs/999ec79273df0c5f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>kfb.co.jp · 07:29</span><span class="read-state">未読</span></div>
-    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span> <span>独立2媒体</span></div>
-    <h3>【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル - - kfb.co.jp</h3>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル -</h3>
     <p class="summary-text">【白河市】オレオレ詐欺で100万円だまし取られる | ふくしまNEWS - KFBデジタル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>【白河市】オレオレ詐欺で100万円だまし取られる・ふくしまNEWS・KFBデジタル｜独立2媒体｜注目度 61点｜出典: kfb.co.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -1047,56 +1035,44 @@ dd {
     <h2 id="災害">災害</h2>
     <span>4 topics</span>
   </summary>
-  <div class="grid"><a id="article-ef10751d21166580" class="card tone-safety" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5nUWl3UlFxSGdxcGQ0dHJWZXlPUE1LM0s5WWRiaGxKNkJXZ0pKdXRSMmpUbVRHMk1meXhacjhXby1XVldfX0YyR0hNX1REbmlTV2s2QnNXTmNkZ1l2UGFPaVdWN3dQaTRrOWJ4a2pFWW9Sc2dfWHc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE5nUWl3UlFxSGdxcGQ0dHJWZXlPUE1LM0s5WWRiaGxKNkJXZ0pKdXRSMmpUbVRHMk1meXhacjhXby1XVldfX0YyR0hNX1REbmlTV2s2QnNXTmNkZ1l2UGFPaVdWN3dQaTRrOWJ4a2pFWW9Sc2dfWHc?oc=5" data-title="台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュース" data-genre="災害">
+  <div class="grid"><a id="article-ef10751d21166580" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE5nUWl3UlFxSGdxcGQ0dHJWZXlPUE1LM0s5WWRiaGxKNkJXZ0pKdXRSMmpUbVRHMk1meXhacjhXby1XVldfX0YyR0hNX1REbmlTV2s2QnNXTmNkZ1l2UGFPaVdWN3dQaTRrOWJ4a2pFWW9Sc2dfWHc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE5nUWl3UlFxSGdxcGQ0dHJWZXlPUE1LM0s5WWRiaGxKNkJXZ0pKdXRSMmpUbVRHMk1meXhacjhXby1XVldfX0YyR0hNX1REbmlTV2s2QnNXTmNkZ1l2UGFPaVdWN3dQaTRrOWJ4a2pFWW9Sc2dfWHc?oc=5" data-title="台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/7e29de5fd95d70fb.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 13:47</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>台湾北中部でM5.6地震 台北など震度3観測 - 産経ニュース</h3>
+    <h3>台湾北中部でM5.6地震 台北など震度3観測</h3>
     <p class="summary-text">台湾北中部でM5.6地震 台北など震度3観測 産経ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜注目度 70点｜出典: 産経ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-623a3d202d88f4fe" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9xa3lHSzNENTdla2YwLUt6X3J1N2pCemI5SjZvenBESjRPcUNYRTVRdXQyclM2MmZXbHZsalZBbEZ0TnBlSFdfbjhST1doVW1xR0tsZ1BGdG8xQWZic3lnTXVWZFRER0JuQkHSAW9BVV95cUxPeHRsa3c3WFEySFkxdWozNXNhWklleVVVU0dPQUV0Sm42bk5zUzZTUlRfblBfaGh1amdZNUR6dUh0YmJIN3NHNDQ1cW5JdWJ5cThoalJyY3lKT3IzVjBNa1FkV3ZiRmNqbS01WGNxcE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jpを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE9xa3lHSzNENTdla2YwLUt6X3J1N2pCemI5SjZvenBESjRPcUNYRTVRdXQyclM2MmZXbHZsalZBbEZ0TnBlSFdfbjhST1doVW1xR0tsZ1BGdG8xQWZic3lnTXVWZFRER0JuQkHSAW9BVV95cUxPeHRsa3c3WFEySFkxdWozNXNhWklleVVVU0dPQUV0Sm42bk5zUzZTUlRfblBfaGh1amdZNUR6dUh0YmJIN3NHNDQ1cW5JdWJ5cThoalJyY3lKT3IzVjBNa1FkV3ZiRmNqbS01WGNxcE0?oc=5" data-title="【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jp" data-genre="災害">
+<a id="article-623a3d202d88f4fe" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9xa3lHSzNENTdla2YwLUt6X3J1N2pCemI5SjZvenBESjRPcUNYRTVRdXQyclM2MmZXbHZsalZBbEZ0TnBlSFdfbjhST1doVW1xR0tsZ1BGdG8xQWZic3lnTXVWZFRER0JuQkHSAW9BVV95cUxPeHRsa3c3WFEySFkxdWozNXNhWklleVVVU0dPQUV0Sm42bk5zUzZTUlRfblBfaGh1amdZNUR6dUh0YmJIN3NHNDQ1cW5JdWJ5cThoalJyY3lKT3IzVjBNa1FkV3ZiRmNqbS01WGNxcE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jpを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE9xa3lHSzNENTdla2YwLUt6X3J1N2pCemI5SjZvenBESjRPcUNYRTVRdXQyclM2MmZXbHZsalZBbEZ0TnBlSFdfbjhST1doVW1xR0tsZ1BGdG8xQWZic3lnTXVWZFRER0JuQkHSAW9BVV95cUxPeHRsa3c3WFEySFkxdWozNXNhWklleVVVU0dPQUV0Sm42bk5zUzZTUlRfblBfaGh1amdZNUR6dUh0YmJIN3NHNDQ1cW5JdWJ5cThoalJyY3lKT3IzVjBNa1FkV3ZiRmNqbS01WGNxcE0?oc=5" data-title="【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jp" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/8682d29ca7f9ea94.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>tenki.jp · 13:07</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) - tenki.jp</h3>
+    <h3>【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日)</h3>
     <p class="summary-text">【速報】台風12号は熱帯低気圧に変わりました(気象予報士 日直主任 2026年07月26日) tenki.jp</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>台風｜注目度 67点｜出典: tenki.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-152134bef41d521f" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5NOWU1akphY1U4MVg1U250SUdVSnl5bWJEamlyU0Y2R25mTTJST3VWdmlSblJRMHJIU3RVRjk2QkRPN3JQRkJzWUN0ZUJrQXlDV21BM3JPMU1mZGR2QXk0LVM4Q1hpMmZ6aXNmSHRTaDRWcFgwLUExWmplRm1uWTg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5NOWU1akphY1U4MVg1U250SUdVSnl5bWJEamlyU0Y2R25mTTJST3VWdmlSblJRMHJIU3RVRjk2QkRPN3JQRkJzWUN0ZUJrQXlDV21BM3JPMU1mZGR2QXk0LVM4Q1hpMmZ6aXNmSHRTaDRWcFgwLUExWmplRm1uWTg?oc=5" data-title="山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュース" data-genre="災害">
+<a id="article-152134bef41d521f" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5NOWU1akphY1U4MVg1U250SUdVSnl5bWJEamlyU0Y2R25mTTJST3VWdmlSblJRMHJIU3RVRjk2QkRPN3JQRkJzWUN0ZUJrQXlDV21BM3JPMU1mZGR2QXk0LVM4Q1hpMmZ6aXNmSHRTaDRWcFgwLUExWmplRm1uWTg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5NOWU1akphY1U4MVg1U250SUdVSnl5bWJEamlyU0Y2R25mTTJST3VWdmlSblJRMHJIU3RVRjk2QkRPN3JQRkJzWUN0ZUJrQXlDV21BM3JPMU1mZGR2QXk0LVM4Q1hpMmZ6aXNmSHRTaDRWcFgwLUExWmplRm1uWTg?oc=5" data-title="山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/194fbea9830961b1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:20</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） - Yahoo!ニュース</h3>
+    <h3>山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形）</h3>
     <p class="summary-text">山形県の置賜地域7市町に「レベル4土砂災害危険警報」土砂災害や河川の氾濫に警戒を（テレビユー山形） Yahoo!ニ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>災害｜注目度 67点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-4bc232f4852eb72f" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1BSTBIVlRZNlBRT0NzRG03ZGYtT3dneDVDNE5aczl4cXU2SVZJaTYwMkpabVhKR1l5dlZkT0tzV1JGWGc0ZTczU2VLc1Q5cF9mUUtwMjZCcERMaVR6bnJTeWVWMEVQLWNwQVR0anA5aXFpalNydVhEWmUtUm80RGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1BSTBIVlRZNlBRT0NzRG03ZGYtT3dneDVDNE5aczl4cXU2SVZJaTYwMkpabVhKR1l5dlZkT0tzV1JGWGc0ZTczU2VLc1Q5cF9mUUtwMjZCcERMaVR6bnJTeWVWMEVQLWNwQVR0anA5aXFpalNydVhEWmUtUm80RGc?oc=5" data-title="レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュース" data-genre="災害">
+<a id="article-4bc232f4852eb72f" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1BSTBIVlRZNlBRT0NzRG03ZGYtT3dneDVDNE5aczl4cXU2SVZJaTYwMkpabVhKR1l5dlZkT0tzV1JGWGc0ZTczU2VLc1Q5cF9mUUtwMjZCcERMaVR6bnJTeWVWMEVQLWNwQVR0anA5aXFpalNydVhEWmUtUm80RGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1BSTBIVlRZNlBRT0NzRG03ZGYtT3dneDVDNE5aczl4cXU2SVZJaTYwMkpabVhKR1l5dlZkT0tzV1JGWGc0ZTczU2VLc1Q5cF9mUUtwMjZCcERMaVR6bnJTeWVWMEVQLWNwQVR0anA5aXFpalNydVhEWmUtUm80RGc?oc=5" data-title="レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/b04d85b064dc2487.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 07:06</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） - Yahoo!ニュース</h3>
+    <h3>レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES）</h3>
     <p class="summary-text">レベル4土砂災害危険警報 福島・喜多方市と西会津町（ABEMA TIMES） Yahoo!ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>災害｜注目度 67点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a></div>
 </details>
@@ -1105,56 +1081,44 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>4 topics</span>
   </summary>
-  <div class="grid"><a id="article-a2103ff75ddb563a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjZYRTVsYVkzUjBzUTVSQWwtbXJEeTdwQUFXWnFrNGJrQVkzMEtJM3hiN1pFUTc5NUt6TDh2ZEVZbGYzV3dCWlNRMkdiZnVybnk4dG8zWkZDNHlSdGdUOEM3ZnNKUWh6WGZNQnFjTjNnZFpNVnlCVnY1WGhsTzZIU25MdE54Zw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjZYRTVsYVkzUjBzUTVSQWwtbXJEeTdwQUFXWnFrNGJrQVkzMEtJM3hiN1pFUTc5NUt6TDh2ZEVZbGYzV3dCWlNRMkdiZnVybnk4dG8zWkZDNHlSdGdUOEM3ZnNKUWh6WGZNQnFjTjNnZFpNVnlCVnY1WGhsTzZIU25MdE54Zw?oc=5" data-title="本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.com" data-genre="ゲーム">
+  <div class="grid"><a id="article-a2103ff75ddb563a" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjZYRTVsYVkzUjBzUTVSQWwtbXJEeTdwQUFXWnFrNGJrQVkzMEtJM3hiN1pFUTc5NUt6TDh2ZEVZbGYzV3dCWlNRMkdiZnVybnk4dG8zWkZDNHlSdGdUOEM3ZnNKUWh6WGZNQnFjTjNnZFpNVnlCVnY1WGhsTzZIU25MdE54Zw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjZYRTVsYVkzUjBzUTVSQWwtbXJEeTdwQUFXWnFrNGJrQVkzMEtJM3hiN1pFUTc5NUt6TDh2ZEVZbGYzV3dCWlNRMkdiZnVybnk4dG8zWkZDNHlSdGdUOEM3ZnNKUWh6WGZNQnFjTjNnZFpNVnlCVnY1WGhsTzZIU25MdE54Zw?oc=5" data-title="本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.com" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/f6755bc44dada56e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 08:29</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
-    <h3>本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。 - nintendo.com</h3>
+    <h3>本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo Switchで本日発売。</h3>
     <p class="summary-text">本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX 目覚めし五つの種族 オフライン』がNintendo…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>本作だけのオリジナルストーリーも楽しめる『ドラゴンクエストX・目覚めし五つの種族・オフライン』がNintendo｜注目度 65点｜出典: nintendo.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 65点</span></p>
   </div>
 </a>
-<a id="article-81af6378ec78ec9c" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zcFBuVzN5X2swNy1XcXpBT3U3VnRManI3MEtkNHpXaHFkclZrWEJuZDNYVlczZXBZc1lBQnd6ZUJiMzNTVGFlR3RELThERExt?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLEを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zcFBuVzN5X2swNy1XcXpBT3U3VnRManI3MEtkNHpXaHFkclZrWEJuZDNYVlczZXBZc1lBQnd6ZUJiMzNTVGFlR3RELThERExt?oc=5" data-title="ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLE" data-genre="ゲーム">
+<a id="article-81af6378ec78ec9c" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zcFBuVzN5X2swNy1XcXpBT3U3VnRManI3MEtkNHpXaHFkclZrWEJuZDNYVlczZXBZc1lBQnd6ZUJiMzNTVGFlR3RELThERExt?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLEを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zcFBuVzN5X2swNy1XcXpBT3U3VnRManI3MEtkNHpXaHFkclZrWEJuZDNYVlczZXBZc1lBQnd6ZUJiMzNTVGFlR3RELThERExt?oc=5" data-title="ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLE" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/0f733e4ceb51f13f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>玩具人 TOY PEOPLE · 10:43</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 - 玩具人 TOY PEOPLE</h3>
+    <h3>ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調</h3>
     <p class="summary-text">ソニー、PS6発売時期の噂に公式回答！Xbox次世代機に左右されず、技術・価格・市場要因で決定と強調 玩具人 TO…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ソニー・PS6発売時期の噂に公式回答！Xbox次世代機に左右されず・技術・価格・市場要因で決定と強調｜注目度 61点｜出典: 玩具人 TOY PEOPLE</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-9d8c753ca7d03d51" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUcVl4aUJzNXd6OVhUbkNlSlE0UGY4eGhiR1BnZmxHUU5XOEVTQWZOR1gxLThjZ1BMQ0dSYjRZanJYenRFbUdUdnhjVEl6cmdQa0xSUGxjakd5Z1ZmME02dW9JZ3luVnN0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Websiteを読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUcVl4aUJzNXd6OVhUbkNlSlE0UGY4eGhiR1BnZmxHUU5XOEVTQWZOR1gxLThjZ1BMQ0dSYjRZanJYenRFbUdUdnhjVEl6cmdQa0xSUGxjakd5Z1ZmME02dW9JZ3luVnN0?oc=5" data-title="「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Website" data-genre="ゲーム">
+<a id="article-9d8c753ca7d03d51" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUcVl4aUJzNXd6OVhUbkNlSlE0UGY4eGhiR1BnZmxHUU5XOEVTQWZOR1gxLThjZ1BMQ0dSYjRZanJYenRFbUdUdnhjVEl6cmdQa0xSUGxjakd5Z1ZmME02dW9JZ3luVnN0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Websiteを読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUcVl4aUJzNXd6OVhUbkNlSlE0UGY4eGhiR1BnZmxHUU5XOEVTQWZOR1gxLThjZ1BMQ0dSYjRZanJYenRFbUdUdnhjVEl6cmdQa0xSUGxjakd5Z1ZmME02dW9JZ3luVnN0?oc=5" data-title="「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Website" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/e3f2751235abec96.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GUNDAM Official Website · 09:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！ - GUNDAM Official Website</h3>
+    <h3>「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョンを1枚同梱！</h3>
     <p class="summary-text">「ガンダムカードゲーム 1stアニバーサリー アーカイブ」本日発売！紙版限定で「リソースカード 」イラストバージョ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>「ガンダムカードゲーム・1stアニバーサリー・アーカイブ」本日発売！紙版限定で「リソースカード｜注目度 61点｜出典: GUNDAM Official Website</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-f3c509ec5309f54f" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPSnBrNk4tZXQyQ3F6aTRTc1doWEJhdTZjcm01RzFJNVpJVEVlSWhQc0ZKekM1RHFZaTNHTXJ2N0xqUTZmSFZwVXdDMl92ZWFGRzJMZE40WFY2ekEtTml4TDBmSE5MSzRQUlUxbUYySW9GS29zaXdlSUZ2LTNnSGU0U2NCS3NhQQ" rel="noopener noreferrer" target="_blank" aria-label="【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxPSnBrNk4tZXQyQ3F6aTRTc1doWEJhdTZjcm01RzFJNVpJVEVlSWhQc0ZKekM1RHFZaTNHTXJ2N0xqUTZmSFZwVXdDMl92ZWFGRzJMZE40WFY2ekEtTml4TDBmSE5MSzRQUlUxbUYySW9GS29zaXdlSUZ2LTNnSGU0U2NCS3NhQQ" data-title="【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.com" data-genre="ゲーム">
+<a id="article-f3c509ec5309f54f" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPSnBrNk4tZXQyQ3F6aTRTc1doWEJhdTZjcm01RzFJNVpJVEVlSWhQc0ZKekM1RHFZaTNHTXJ2N0xqUTZmSFZwVXdDMl92ZWFGRzJMZE40WFY2ekEtTml4TDBmSE5MSzRQUlUxbUYySW9GS29zaXdlSUZ2LTNnSGU0U2NCS3NhQQ" rel="noopener noreferrer" target="_blank" aria-label="【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxPSnBrNk4tZXQyQ3F6aTRTc1doWEJhdTZjcm01RzFJNVpJVEVlSWhQc0ZKekM1RHFZaTNHTXJ2N0xqUTZmSFZwVXdDMl92ZWFGRzJMZE40WFY2ekEtTml4TDBmSE5MSzRQUlUxbUYySW9GS29zaXdlSUZ2LTNnSGU0U2NCS3NhQQ" data-title="【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.com" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/a9d05f742333c5f3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 08:46</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
-    <h3>【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！ - nintendo.com</h3>
+    <h3>【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タイトル公開！</h3>
     <p class="summary-text">【2月19日追加】『ファミリーコンピュータ＆スーパーファミコンNintendo Switch Online』追加タ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>公開｜注目度 60点｜出典: nintendo.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 60点</span></p>
   </div>
 </a></div>
 </details>
@@ -1163,17 +1127,14 @@ dd {
     <h2 id="経済">経済</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-c5a3777575a2e51d" class="card tone-money" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xV1FaeXJqbVVVeE4wVE9OdFZRRloxWXBiX3plQjhSWDVjcnZZOUFmbVJwdDF1enlBZF9wYWRseHI1MmFrTWZyeVBBT3A4THNUY3ByN2tKbw" rel="noopener noreferrer" target="_blank" aria-label="7月27～31日に決算発表を予定している企業リスト - 四季報オンラインを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xV1FaeXJqbVVVeE4wVE9OdFZRRloxWXBiX3plQjhSWDVjcnZZOUFmbVJwdDF1enlBZF9wYWRseHI1MmFrTWZyeVBBT3A4THNUY3ByN2tKbw" data-title="7月27～31日に決算発表を予定している企業リスト - 四季報オンライン" data-genre="経済">
+  <div class="grid"><a id="article-c5a3777575a2e51d" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xV1FaeXJqbVVVeE4wVE9OdFZRRloxWXBiX3plQjhSWDVjcnZZOUFmbVJwdDF1enlBZF9wYWRseHI1MmFrTWZyeVBBT3A4THNUY3ByN2tKbw" rel="noopener noreferrer" target="_blank" aria-label="7月27～31日に決算発表を予定している企業リスト - 四季報オンラインを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xV1FaeXJqbVVVeE4wVE9OdFZRRloxWXBiX3plQjhSWDVjcnZZOUFmbVJwdDF1enlBZF9wYWRseHI1MmFrTWZyeVBBT3A4THNUY3ByN2tKbw" data-title="7月27～31日に決算発表を予定している企業リスト - 四季報オンライン" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/67bffb943381f4d9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四季報オンライン · 09:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>7月27～31日に決算発表を予定している企業リスト - 四季報オンライン</h3>
+    <h3>7月27～31日に決算発表を予定している企業リスト</h3>
     <p class="summary-text">7月27～31日に決算発表を予定している企業リスト 四季報オンライン</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・発表｜注目度 61点｜出典: 四季報オンライン</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>

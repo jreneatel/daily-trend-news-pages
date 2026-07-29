@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -744,30 +795,24 @@ dd {
     <h2 id="AI">AI</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-26f04a44eca0e486" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VZzU4ekFOa2pORnlGbnMyRUxHQTdaZjB5eFc2TzJidU1VRGpMa051dkFlVXJOSHZJOURLam9kWkV3c1lyaFJ3Qkd2NFpHak4xZXI1NlhBcGRUdkZvTWNmWTVEc9IBaEFVX3lxTE9qb3JDV1FqTmxRbFU5eFlDZU9ITHpkRjVYTWlJVjV2Rm5NYmZxaXVqVDg3QWNhaVlxazVGemJjS3l3d25teG9PWnFkZDlTcnVCamtPbHl0UjFPaXlVbGlrMm1uWXNXazI1?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VZzU4ekFOa2pORnlGbnMyRUxHQTdaZjB5eFc2TzJidU1VRGpMa051dkFlVXJOSHZJOURLam9kWkV3c1lyaFJ3Qkd2NFpHak4xZXI1NlhBcGRUdkZvTWNmWTVEc9IBaEFVX3lxTE9qb3JDV1FqTmxRbFU5eFlDZU9ITHpkRjVYTWlJVjV2Rm5NYmZxaXVqVDg3QWNhaVlxazVGemJjS3l3d25teG9PWnFkZDlTcnVCamtPbHl0UjFPaXlVbGlrMm1uWXNXazI1?oc=5" data-title="GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞" data-genre="AI">
+  <div class="grid"><a id="article-26f04a44eca0e486" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VZzU4ekFOa2pORnlGbnMyRUxHQTdaZjB5eFc2TzJidU1VRGpMa051dkFlVXJOSHZJOURLam9kWkV3c1lyaFJ3Qkd2NFpHak4xZXI1NlhBcGRUdkZvTWNmWTVEc9IBaEFVX3lxTE9qb3JDV1FqTmxRbFU5eFlDZU9ITHpkRjVYTWlJVjV2Rm5NYmZxaXVqVDg3QWNhaVlxazVGemJjS3l3d25teG9PWnFkZDlTcnVCamtPbHl0UjFPaXlVbGlrMm1uWXNXazI1?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VZzU4ekFOa2pORnlGbnMyRUxHQTdaZjB5eFc2TzJidU1VRGpMa051dkFlVXJOSHZJOURLam9kWkV3c1lyaFJ3Qkd2NFpHak4xZXI1NlhBcGRUdkZvTWNmWTVEc9IBaEFVX3lxTE9qb3JDV1FqTmxRbFU5eFlDZU9ITHpkRjVYTWlJVjV2Rm5NYmZxaXVqVDg3QWNhaVlxazVGemJjS3l3d25teG9PWnFkZDlTcnVCamtPbHl0UjFPaXlVbGlrMm1uWXNXazI1?oc=5" data-title="GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/7f12486da9185793.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 12:50</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始 - 財経新聞</h3>
+    <h3>GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に OpenAIはエージェント課金を開始</h3>
     <p class="summary-text">GoogleのGemini Enterprise Agent Platform、企業向けAIガバナンスを前面に O…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・Google・開始｜出典: 財経新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-edfa4c6719d0e484" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rWWRHcEp5SEptVW1FeFRKZW1mbDhPanRxZXRpU2ZwbFR4Qkt6ZnpMci1Wc2VHM2RPaFRsUlJHMjVWbGx6UEVBeFEtdTNWcDZxYXlobA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rWWRHcEp5SEptVW1FeFRKZW1mbDhPanRxZXRpU2ZwbFR4Qkt6ZnpMci1Wc2VHM2RPaFRsUlJHMjVWbGx6UEVBeFEtdTNWcDZxYXlobA?oc=5" data-title="[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞" data-genre="AI">
+<a id="article-edfa4c6719d0e484" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rWWRHcEp5SEptVW1FeFRKZW1mbDhPanRxZXRpU2ZwbFR4Qkt6ZnpMci1Wc2VHM2RPaFRsUlJHMjVWbGx6UEVBeFEtdTNWcDZxYXlobA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5rWWRHcEp5SEptVW1FeFRKZW1mbDhPanRxZXRpU2ZwbFR4Qkt6ZnpMci1Wc2VHM2RPaFRsUlJHMjVWbGx6UEVBeFEtdTNWcDZxYXlobA?oc=5" data-title="[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/b335670727f65b6e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>財経新聞 · 12:50</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた - 財経新聞</h3>
+    <h3>[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた</h3>
     <p class="summary-text">[写真]GPT-5.6 Solのデータ削除事故、OpenAI文書は破壊的動作率6.3倍を事前に示していた 財経新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・事故｜出典: 財経新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -776,17 +821,14 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-3861117b81289485" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOS3ZCMVlvMzkwNmh3bGw5RHNHMWl0Q0lXbjVmcVJVcTRXdDA3WmE5SFczUFp5NW8wNzNDRVJOdVhOTlFXV3pZYTFYZGtlYXREUnlMYXRucDNoYUloYVYyRHNGenV6eE1mbEFCeUNXNFZ1S2lvaDU4dWVySmNxX0haUTJZRGNqUUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AIを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxOS3ZCMVlvMzkwNmh3bGw5RHNHMWl0Q0lXbjVmcVJVcTRXdDA3WmE5SFczUFp5NW8wNzNDRVJOdVhOTlFXV3pZYTFYZGtlYXREUnlMYXRucDNoYUloYVYyRHNGenV6eE1mbEFCeUNXNFZ1S2lvaDU4dWVySmNxX0haUTJZRGNqUUk?oc=5" data-title="GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AI" data-genre="IT業界">
+  <div class="grid"><a id="article-3861117b81289485" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxOS3ZCMVlvMzkwNmh3bGw5RHNHMWl0Q0lXbjVmcVJVcTRXdDA3WmE5SFczUFp5NW8wNzNDRVJOdVhOTlFXV3pZYTFYZGtlYXREUnlMYXRucDNoYUloYVYyRHNGenV6eE1mbEFCeUNXNFZ1S2lvaDU4dWVySmNxX0haUTJZRGNqUUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AIを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxOS3ZCMVlvMzkwNmh3bGw5RHNHMWl0Q0lXbjVmcVJVcTRXdDA3WmE5SFczUFp5NW8wNzNDRVJOdVhOTlFXV3pZYTFYZGtlYXREUnlMYXRucDNoYUloYVYyRHNGenV6eE1mbEFCeUNXNFZ1S2lvaDU4dWVySmNxX0haUTJZRGNqUUk?oc=5" data-title="GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AI" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/b7ea977ebb832d7f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Unite.AI · 09:56</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると - Unite.AI</h3>
+    <h3>GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると</h3>
     <p class="summary-text">GPT-5.6が発見したクリティカルなWordPressの脆弱性、研究者によると Unite.AI</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>脆弱性・AI｜出典: Unite.AI</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>脆弱性・AI</span></p>
   </div>
 </a></div>
 </details>
@@ -795,30 +837,24 @@ dd {
     <h2 id="政治">政治</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-ea567ca0415f79da" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wZjFjMFRPWTFxQTNjRUN0TEY4cjMxbDM4ZVhDUXUyUkdIcjhzOVpXc19weDUxWkF1Y1JkRDdGRTM3UnNKbWVZRkVLQ3N3QklKN3c0WUQyMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wZjFjMFRPWTFxQTNjRUN0TEY4cjMxbDM4ZVhDUXUyUkdIcjhzOVpXc19weDUxWkF1Y1JkRDdGRTM3UnNKbWVZRkVLQ3N3QklKN3c0WUQyMA?oc=5" data-title="【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIG" data-genre="政治">
+  <div class="grid"><a id="article-ea567ca0415f79da" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wZjFjMFRPWTFxQTNjRUN0TEY4cjMxbDM4ZVhDUXUyUkdIcjhzOVpXc19weDUxWkF1Y1JkRDdGRTM3UnNKbWVZRkVLQ3N3QklKN3c0WUQyMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wZjFjMFRPWTFxQTNjRUN0TEY4cjMxbDM4ZVhDUXUyUkdIcjhzOVpXc19weDUxWkF1Y1JkRDdGRTM3UnNKbWVZRkVLQ3N3QklKN3c0WUQyMA?oc=5" data-title="【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIG" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/807e10c1c4602c7b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:52</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感 - TBS NEWS DIG</h3>
+    <h3>【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感</h3>
     <p class="summary-text">【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>【揺らぐ福岡県政】｢信頼を失いかねない」｢統一地方選に影響｣｢早くきれいに全容解明｣県選出の自民･国会議員も危機感｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-2a1bd8d117f529f5" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mclhMWERMRmJjNmZGNGcwTUJlTnhjZFdERVlQOG5KeEpzalVTbXBpRWl2clB3SGVVYzZkNXJVSzRueHF1Z29NWndYUGZYZTBZR3lheVRSVmQxOFBmLVgzZUhpSENEc0E?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mclhMWERMRmJjNmZGNGcwTUJlTnhjZFdERVlQOG5KeEpzalVTbXBpRWl2clB3SGVVYzZkNXJVSzRueHF1Z29NWndYUGZYZTBZR3lheVRSVmQxOFBmLVgzZUhpSENEc0E?oc=5" data-title="国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞" data-genre="政治">
+<a id="article-2a1bd8d117f529f5" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mclhMWERMRmJjNmZGNGcwTUJlTnhjZFdERVlQOG5KeEpzalVTbXBpRWl2clB3SGVVYzZkNXJVSzRueHF1Z29NWndYUGZYZTBZR3lheVRSVmQxOFBmLVgzZUhpSENEc0E?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mclhMWERMRmJjNmZGNGcwTUJlTnhjZFdERVlQOG5KeEpzalVTbXBpRWl2clB3SGVVYzZkNXJVSzRueHF1Z29NWndYUGZYZTBZR3lheVRSVmQxOFBmLVgzZUhpSENEc0E?oc=5" data-title="国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/f64ba4752a478054.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 08:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 - 山陽新聞</h3>
+    <h3>国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定</h3>
     <p class="summary-text">国旗損壊法案３０日に衆院通過へ 委員長職権で採決日程決定 山陽新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 山陽新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -827,43 +863,34 @@ dd {
     <h2 id="社会">社会</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-be10914adb9383d0" class="card tone-civic" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE13Q3UwMFkyTF9GNUtaZmY3SFhZZlhYSUp0OHdCc0lBdEwwLV9mWThpOUptNHA2ZmxRSkhrQ0ExcWJneHBEdWFsdXZ4Z2hQTGczLWQzZHlJdTI4TG04WE4yMk9tRHRicS1TUEp0dkZwUVJtOVNzLVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE13Q3UwMFkyTF9GNUtaZmY3SFhZZlhYSUp0OHdCc0lBdEwwLV9mWThpOUptNHA2ZmxRSkhrQ0ExcWJneHBEdWFsdXZ4Z2hQTGczLWQzZHlJdTI4TG04WE4yMk9tRHRicS1TUEp0dkZwUVJtOVNzLVE?oc=5" data-title="兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュース" data-genre="社会">
+  <div class="grid"><a id="article-be10914adb9383d0" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE13Q3UwMFkyTF9GNUtaZmY3SFhZZlhYSUp0OHdCc0lBdEwwLV9mWThpOUptNHA2ZmxRSkhrQ0ExcWJneHBEdWFsdXZ4Z2hQTGczLWQzZHlJdTI4TG04WE4yMk9tRHRicS1TUEp0dkZwUVJtOVNzLVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE13Q3UwMFkyTF9GNUtaZmY3SFhZZlhYSUp0OHdCc0lBdEwwLV9mWThpOUptNHA2ZmxRSkhrQ0ExcWJneHBEdWFsdXZ4Z2hQTGczLWQzZHlJdTI4TG04WE4yMk9tRHRicS1TUEp0dkZwUVJtOVNzLVE?oc=5" data-title="兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュース" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/3adc4d9c50d31325.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>産経ニュース · 08:41</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か - 産経ニュース</h3>
+    <h3>兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か</h3>
     <p class="summary-text">兵庫・姫路の男性刺殺事件で新たに2人を逮捕 被害者の元上司が殺害を指示か 産経ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: 産経ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-8a3978bc38ab6589" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE92bklBNkFzLWZZZVhEcU1mTk5vSzJqenZhbWowQXdIX0FOYk9CNHBqeEtnb0wtNU5Ta1k5Nzl2cmVLUDFhT09NNFB2ek43cWVOOGNScWNwbnVxOWlzZS1fLURrbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE92bklBNkFzLWZZZVhEcU1mTk5vSzJqenZhbWowQXdIX0FOYk9CNHBqeEtnb0wtNU5Ta1k5Nzl2cmVLUDFhT09NNFB2ek43cWVOOGNScWNwbnVxOWlzZS1fLURrbw?oc=5" data-title="「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコム" data-genre="社会">
+<a id="article-8a3978bc38ab6589" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE92bklBNkFzLWZZZVhEcU1mTk5vSzJqenZhbWowQXdIX0FOYk9CNHBqeEtnb0wtNU5Ta1k5Nzl2cmVLUDFhT09NNFB2ek43cWVOOGNScWNwbnVxOWlzZS1fLURrbw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE92bklBNkFzLWZZZVhEcU1mTk5vSzJqenZhbWowQXdIX0FOYk9CNHBqeEtnb0wtNU5Ta1k5Nzl2cmVLUDFhT09NNFB2ek43cWVOOGNScWNwbnVxOWlzZS1fLURrbw?oc=5" data-title="「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコム" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/b513ce2fb9d6b59d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 11:14</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 - 時事ドットコム</h3>
+    <h3>「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫</h3>
     <p class="summary-text">「代わってあげたかった」 悲痛な胸の内明かす―新名神６人死亡事故の遺族・兵庫 時事ドットコム</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>事故｜出典: 時事ドットコム</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-b1974140f0db24cf" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoTHZhNl9pdDRSNjNUckZNVnZVczQ0LXhDSkRtR3g5dDR0dTdnS08wZ1lwa1p6WkNkc0dhYmhPcTJqdnBndkdZYlAxdzhSY0E3U3NsR0pLQnFjS0ZqTEEw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoTHZhNl9pdDRSNjNUckZNVnZVczQ0LXhDSkRtR3g5dDR0dTdnS08wZ1lwa1p6WkNkc0dhYmhPcTJqdnBndkdZYlAxdzhSY0E3U3NsR0pLQnFjS0ZqTEEw?oc=5" data-title="新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュース" data-genre="社会">
+<a id="article-b1974140f0db24cf" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoTHZhNl9pdDRSNjNUckZNVnZVczQ0LXhDSkRtR3g5dDR0dTdnS08wZ1lwa1p6WkNkc0dhYmhPcTJqdnBndkdZYlAxdzhSY0E3U3NsR0pLQnFjS0ZqTEEw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoTHZhNl9pdDRSNjNUckZNVnZVczQ0LXhDSkRtR3g5dDR0dTdnS08wZ1lwa1p6WkNkc0dhYmhPcTJqdnBndkdZYlAxdzhSY0E3U3NsR0pLQnFjS0ZqTEEw?oc=5" data-title="新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュース" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/7e2d6ce866b14562.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 09:36</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 - NHKニュース</h3>
+    <h3>新名神高速6人死亡事故4か月 遺族「父親を返してほしい」</h3>
     <p class="summary-text">新名神高速6人死亡事故4か月 遺族「父親を返してほしい」 NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>事故｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -872,43 +899,34 @@ dd {
     <h2 id="災害">災害</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-214176ed5f43fd56" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YeFgwVUYySjJkUFpjWF9Idmdmb2pGVVp5ZU0zYkZjMTI4NzRSdnptSk5UTmM2LXFvdmxnTV9xSS16MEJmTlVEX1JRMG9ibnBiM3RGUFBpRGFaUUU4X25n?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YeFgwVUYySjJkUFpjWF9Idmdmb2pGVVp5ZU0zYkZjMTI4NzRSdnptSk5UTmM2LXFvdmxnTV9xSS16MEJmTlVEX1JRMG9ibnBiM3RGUFBpRGFaUUU4X25n?oc=5" data-title="【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIG" data-genre="災害">
+  <div class="grid"><a id="article-214176ed5f43fd56" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YeFgwVUYySjJkUFpjWF9Idmdmb2pGVVp5ZU0zYkZjMTI4NzRSdnptSk5UTmM2LXFvdmxnTV9xSS16MEJmTlVEX1JRMG9ibnBiM3RGUFBpRGFaUUU4X25n?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YeFgwVUYySjJkUFpjWF9Idmdmb2pGVVp5ZU0zYkZjMTI4NzRSdnptSk5UTmM2LXFvdmxnTV9xSS16MEJmTlVEX1JRMG9ibnBiM3RGUFBpRGFaUUU4X25n?oc=5" data-title="【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIG" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/e33d3cab86d524e6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:56</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも - TBS NEWS DIG</h3>
+    <h3>【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも</h3>
     <p class="summary-text">【交通情報】一部高速道路で通行止めの可能性 台風7号などの影響で… 27日(土)以降は東名･新東名などでも TBS…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>台風｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-e925d7c790ad98bd" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TdjNiTzlnZlhKTklJR1VkRTd3WjlRSVNYZEcyWTN4S3RKaUZwYkRsUzVnMExIelFHQXBnd1JYcHRROHBRcTZ4eEpDYTV0Y1pTamtWR3JlblFWcFJjTGhV" rel="noopener noreferrer" target="_blank" aria-label="【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TdjNiTzlnZlhKTklJR1VkRTd3WjlRSVNYZEcyWTN4S3RKaUZwYkRsUzVnMExIelFHQXBnd1JYcHRROHBRcTZ4eEpDYTV0Y1pTamtWR3JlblFWcFJjTGhV" data-title="【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIG" data-genre="災害">
+<a id="article-e925d7c790ad98bd" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TdjNiTzlnZlhKTklJR1VkRTd3WjlRSVNYZEcyWTN4S3RKaUZwYkRsUzVnMExIelFHQXBnd1JYcHRROHBRcTZ4eEpDYTV0Y1pTamtWR3JlblFWcFJjTGhV" rel="noopener noreferrer" target="_blank" aria-label="【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9TdjNiTzlnZlhKTklJR1VkRTd3WjlRSVNYZEcyWTN4S3RKaUZwYkRsUzVnMExIelFHQXBnd1JYcHRROHBRcTZ4eEpDYTV0Y1pTamtWR3JlblFWcFJjTGhV" data-title="【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIG" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/2c799edd06d93498.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:34</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】 - TBS NEWS DIG</h3>
+    <h3>【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影響は？ 10日(金)には沖縄の南へ 進路予想・雨風シミュレーション【気象庁6日12時45分発表】</h3>
     <p class="summary-text">【台風情報】大型で猛烈な「台風9号(バービー)」最大瞬間風速85m/s・中心気圧900hPaまで発達か…日本への影…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>台風・発表｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-4f307733a0a110a7" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtd1JoUWpya1l3QjJVT1BTVnVwNU5ua1R2U09VUFphWGdZdmk1R0xjcUQzejRjaThJS19ONS1Mcnk1Ym1IYTAxblRwY2M3WWR0R285QlAtczhMYkxxdHVwMEZudGhQSFE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtd1JoUWpya1l3QjJVT1BTVnVwNU5ua1R2U09VUFphWGdZdmk1R0xjcUQzejRjaThJS19ONS1Mcnk1Ym1IYTAxblRwY2M3WWR0R285QlAtczhMYkxxdHVwMEZudGhQSFE?oc=5" data-title="【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIG" data-genre="災害">
+<a id="article-4f307733a0a110a7" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtd1JoUWpya1l3QjJVT1BTVnVwNU5ua1R2U09VUFphWGdZdmk1R0xjcUQzejRjaThJS19ONS1Mcnk1Ym1IYTAxblRwY2M3WWR0R285QlAtczhMYkxxdHVwMEZudGhQSFE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtd1JoUWpya1l3QjJVT1BTVnVwNU5ua1R2U09VUFphWGdZdmk1R0xjcUQzejRjaThJS19ONS1Mcnk1Ym1IYTAxblRwY2M3WWR0R285QlAtczhMYkxxdHVwMEZudGhQSFE?oc=5" data-title="【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIG" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/3637ee13ceb7b479.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 09:13</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 - TBS NEWS DIG</h3>
+    <h3>【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出</h3>
     <p class="summary-text">【今週は災害級暑さに】全国的に気温上昇 ４０℃以上「酷暑日」地点も 猛暑日地点続出 TBS NEWS DIG</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>災害｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -917,30 +935,24 @@ dd {
     <h2 id="金融">金融</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-7d0ff89b4c50d347" class="card tone-money" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBGMDlhX0NTczNIVTdDMUtTTVktdFgtYVQtVGJrZnprcEZpTEN3R2JCRTZBMkF6cm53RmwwdXM4STdzYm13TDNXa1RzS2E1UzNfTjh5Zm5adVFXSlByZmlRa3RfTFBsNXBiWFdz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINEを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTFBGMDlhX0NTczNIVTdDMUtTTVktdFgtYVQtVGJrZnprcEZpTEN3R2JCRTZBMkF6cm53RmwwdXM4STdzYm13TDNXa1RzS2E1UzNfTjh5Zm5adVFXSlByZmlRa3RfTFBsNXBiWFdz?oc=5" data-title="フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINE" data-genre="金融">
+  <div class="grid"><a id="article-7d0ff89b4c50d347" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBGMDlhX0NTczNIVTdDMUtTTVktdFgtYVQtVGJrZnprcEZpTEN3R2JCRTZBMkF6cm53RmwwdXM4STdzYm13TDNXa1RzS2E1UzNfTjh5Zm5adVFXSlByZmlRa3RfTFBsNXBiWFdz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINEを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTFBGMDlhX0NTczNIVTdDMUtTTVktdFgtYVQtVGJrZnprcEZpTEN3R2JCRTZBMkF6cm53RmwwdXM4STdzYm13TDNXa1RzS2E1UzNfTjh5Zm5adVFXSlByZmlRa3RfTFBsNXBiWFdz?oc=5" data-title="フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINE" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/1b5b3b7d230c2a1f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GIGAZINE · 14:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 - GIGAZINE</h3>
+    <h3>フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断</h3>
     <p class="summary-text">フランス賭博規制庁が予測市場・Polymarketへのアクセスを遮断 GIGAZINE</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>規制｜出典: GIGAZINE</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-449b5c50927ede49" class="card tone-money" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9yUmkwVmd6VEJrNlRJTTcyb013VTNWdFFIZnpiZ0VXVjRNbVBwWTA2SVNnaFFaamlYLWxoN0p2WEN4a3JOWWFkUmNsQTdXcWxnYy04WmFzd1gxR1o3V0VHc1BLVFE2ckNTSVdMUDVISE1jcFpS" rel="noopener noreferrer" target="_blank" aria-label="仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9yUmkwVmd6VEJrNlRJTTcyb013VTNWdFFIZnpiZ0VXVjRNbVBwWTA2SVNnaFFaamlYLWxoN0p2WEN4a3JOWWFkUmNsQTdXcWxnYy04WmFzd1gxR1o3V0VHc1BLVFE2ckNTSVdMUDVISE1jcFpS" data-title="仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンス" data-genre="金融">
+<a id="article-449b5c50927ede49" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9yUmkwVmd6VEJrNlRJTTcyb013VTNWdFFIZnpiZ0VXVjRNbVBwWTA2SVNnaFFaamlYLWxoN0p2WEN4a3JOWWFkUmNsQTdXcWxnYy04WmFzd1gxR1o3V0VHc1BLVFE2ckNTSVdMUDVISE1jcFpS" rel="noopener noreferrer" target="_blank" aria-label="仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9yUmkwVmd6VEJrNlRJTTcyb013VTNWdFFIZnpiZ0VXVjRNbVBwWTA2SVNnaFFaamlYLWxoN0p2WEN4a3JOWWFkUmNsQTdXcWxnYy04WmFzd1gxR1o3V0VHc1BLVFE2ckNTSVdMUDVISE1jcFpS" data-title="仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンス" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/e09c74a6254e561c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 10:06</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>仮想通貨市場、ECB金利決定と米規制日程に注目集まる - BigGo ファイナンス</h3>
+    <h3>仮想通貨市場、ECB金利決定と米規制日程に注目集まる</h3>
     <p class="summary-text">仮想通貨市場、ECB金利決定と米規制日程に注目集まる BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>規制｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -949,43 +961,34 @@ dd {
     <h2 id="経済">経済</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-f4a9cdc76277e324" class="card tone-money" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ca1U0d3ZWa3NXY1pYSGltZC14Rm8wTk4zdklZWGNyV1l3Rk9ES1ZUdFpHMkpxYnhLSXBYR3V3R2FFc1A5aXdKWFk0S3ZTWUpUcThONWRDT3lONDJ0YU1EX1NVVV9lcG9WcFRsOUVBaDZNaXZ4S0E0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ca1U0d3ZWa3NXY1pYSGltZC14Rm8wTk4zdklZWGNyV1l3Rk9ES1ZUdFpHMkpxYnhLSXBYR3V3R2FFc1A5aXdKWFk0S3ZTWUpUcThONWRDT3lONDJ0YU1EX1NVVV9lcG9WcFRsOUVBaDZNaXZ4S0E0?oc=5" data-title="英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.com" data-genre="経済">
+  <div class="grid"><a id="article-f4a9cdc76277e324" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ca1U0d3ZWa3NXY1pYSGltZC14Rm8wTk4zdklZWGNyV1l3Rk9ES1ZUdFpHMkpxYnhLSXBYR3V3R2FFc1A5aXdKWFk0S3ZTWUpUcThONWRDT3lONDJ0YU1EX1NVVV9lcG9WcFRsOUVBaDZNaXZ4S0E0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE5Ca1U0d3ZWa3NXY1pYSGltZC14Rm8wTk4zdklZWGNyV1l3Rk9ES1ZUdFpHMkpxYnhLSXBYR3V3R2FFc1A5aXdKWFk0S3ZTWUpUcThONWRDT3lONDJ0YU1EX1NVVV9lcG9WcFRsOUVBaDZNaXZ4S0E0?oc=5" data-title="英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.com" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/91b414f22086ebe0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 12:43</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 - Bloomberg.com</h3>
+    <h3>英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目</h3>
     <p class="summary-text">英バーナム新首相、初演説で新たな経済モデル公約－10年で首相7人目 Bloomberg.com</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>英バーナム新首相・初演説で新たな経済モデル公約－10年で首相7人目｜出典: Bloomberg.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-8de74326b35bf590" class="card tone-money" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sT21ra3F3QkpzRXJuMld2Y3ltZlJwbWYwdkhHX1RjU0ozWXkzMlYxcHd1Y1dZVmlSQXhPMkZ1RWhCcmJrMFQzdEZsc3VFQkpjTHdyODdtOA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sT21ra3F3QkpzRXJuMld2Y3ltZlJwbWYwdkhHX1RjU0ozWXkzMlYxcHd1Y1dZVmlSQXhPMkZ1RWhCcmJrMFQzdEZsc3VFQkpjTHdyODdtOA?oc=5" data-title="NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomoo" data-genre="経済">
+<a id="article-8de74326b35bf590" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sT21ra3F3QkpzRXJuMld2Y3ltZlJwbWYwdkhHX1RjU0ozWXkzMlYxcHd1Y1dZVmlSQXhPMkZ1RWhCcmJrMFQzdEZsc3VFQkpjTHdyODdtOA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sT21ra3F3QkpzRXJuMld2Y3ltZlJwbWYwdkhHX1RjU0ozWXkzMlYxcHd1Y1dZVmlSQXhPMkZ1RWhCcmJrMFQzdEZsc3VFQkpjTHdyODdtOA?oc=5" data-title="NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomoo" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/070f9bdce1578bc9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 12:50</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>NY株見通し－今週はメガキャップ決算や原油相場に注目 - Moomoo</h3>
+    <h3>NY株見通し－今週はメガキャップ決算や原油相場に注目</h3>
     <p class="summary-text">NY株見通し－今週はメガキャップ決算や原油相場に注目 Moomoo</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-a5b6a7c0e7a2a9d7" class="card tone-money" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE43cEF0VnhkZGVlM2UtdG9yaGppQmhEQUdQd3Voei1vRE5jdnBZYXlRRl8yRUlQc1ZBV05hY05UclhkUGNVY2xKUWlfVUZCa29tNTNfajRkZEo3X2RjTFllZEpEVkhUMDZteVpVdU80bWxyR3ZU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE43cEF0VnhkZGVlM2UtdG9yaGppQmhEQUdQd3Voei1vRE5jdnBZYXlRRl8yRUlQc1ZBV05hY05UclhkUGNVY2xKUWlfVUZCa29tNTNfajRkZEo3X2RjTFllZEpEVkhUMDZteVpVdU80bWxyR3ZU?oc=5" data-title="アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンス" data-genre="経済">
+<a id="article-a5b6a7c0e7a2a9d7" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE43cEF0VnhkZGVlM2UtdG9yaGppQmhEQUdQd3Voei1vRE5jdnBZYXlRRl8yRUlQc1ZBV05hY05UclhkUGNVY2xKUWlfVUZCa29tNTNfajRkZEo3X2RjTFllZEpEVkhUMDZteVpVdU80bWxyR3ZU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE43cEF0VnhkZGVlM2UtdG9yaGppQmhEQUdQd3Voei1vRE5jdnBZYXlRRl8yRUlQc1ZBV05hY05UclhkUGNVY2xKUWlfVUZCa29tNTNfajRkZEo3X2RjTFllZEpEVkhUMDZteVpVdU80bWxyR3ZU?oc=5" data-title="アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンス" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/92681a50f2b955c0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:25</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 - BigGo ファイナンス</h3>
+    <h3>アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間</h3>
     <p class="summary-text">アルファベットやテスラ決算に警戒感、AI相場の試金石となる1週間 BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・AI｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -994,43 +997,34 @@ dd {
     <h2 id="エンタメ">エンタメ</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-83672390d2ac97df" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTSzJHM0labDc3b0VhQ1BpUHU2eUFsWmRGcXFqS3NFUlFfUWc2UmFhVmFhVDFOS0pHRmNDVFVfOFEzZVdnazZwMzNFQUFoYkpuTDNmZFF6MzRxWThwVlFj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTSzJHM0labDc3b0VhQ1BpUHU2eUFsWmRGcXFqS3NFUlFfUWc2UmFhVmFhVDFOS0pHRmNDVFVfOFEzZVdnazZwMzNFQUFoYkpuTDNmZFF6MzRxWThwVlFj?oc=5" data-title="韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュース" data-genre="エンタメ">
+  <div class="grid"><a id="article-83672390d2ac97df" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTSzJHM0labDc3b0VhQ1BpUHU2eUFsWmRGcXFqS3NFUlFfUWc2UmFhVmFhVDFOS0pHRmNDVFVfOFEzZVdnazZwMzNFQUFoYkpuTDNmZFF6MzRxWThwVlFj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBTSzJHM0labDc3b0VhQ1BpUHU2eUFsWmRGcXFqS3NFUlFfUWc2UmFhVmFhVDFOS0pHRmNDVFVfOFEzZVdnazZwMzNFQUFoYkpuTDNmZFF6MzRxWThwVlFj?oc=5" data-title="韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュース" data-genre="エンタメ">
   <img class="thumb" src="../assets/thumbs/5247700cc85f3666.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>エンタメ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>韓国海洋警察 7月22日に竹島で音楽会開催と発表 - NHKニュース</h3>
+    <h3>韓国海洋警察 7月22日に竹島で音楽会開催と発表</h3>
     <p class="summary-text">韓国海洋警察 7月22日に竹島で音楽会開催と発表 NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>発表｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-dabcfc1f033d4a43" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lYjBtQTR5bjg0NUYxS25CaTVVS09rRWl3VVlOV2JQS0U4dE1pWUlPMDRVN1dlSkVkcjFJUmVlWENiT0U4RjBhcjRCaVVPWFRXbWt6T0hwMkxMZVdXdlMxM1Zya2VxX3BYWXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jpを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lYjBtQTR5bjg0NUYxS25CaTVVS09rRWl3VVlOV2JQS0U4dE1pWUlPMDRVN1dlSkVkcjFJUmVlWENiT0U4RjBhcjRCaVVPWFRXbWt6T0hwMkxMZVdXdlMxM1Zya2VxX3BYWXc?oc=5" data-title="鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jp" data-genre="エンタメ">
+<a id="article-dabcfc1f033d4a43" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lYjBtQTR5bjg0NUYxS25CaTVVS09rRWl3VVlOV2JQS0U4dE1pWUlPMDRVN1dlSkVkcjFJUmVlWENiT0U4RjBhcjRCaVVPWFRXbWt6T0hwMkxMZVdXdlMxM1Zya2VxX3BYWXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jpを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lYjBtQTR5bjg0NUYxS25CaTVVS09rRWl3VVlOV2JQS0U4dE1pWUlPMDRVN1dlSkVkcjFJUmVlWENiT0U4RjBhcjRCaVVPWFRXbWt6T0hwMkxMZVdXdlMxM1Zya2VxX3BYWXc?oc=5" data-title="鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jp" data-genre="エンタメ">
   <img class="thumb" src="../assets/thumbs/92306153be6ed232.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>skream.jp · 09:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表 - skream.jp</h3>
+    <h3>鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベントやアーティスト・マネジメント等、多角的な音楽事業の展開を発表</h3>
     <p class="summary-text">鈴木貴雄（ex-UNISON SQUARE GARDEN）、音楽事務所&quot;MY FLAGMENT&quot;設立。ライヴ・イベ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>発表｜出典: skream.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-904df8ac89ac7734" class="card tone-entertainment" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TQkQxWXRTWUk5SGZfRVBCMGNmNk5kWWE4MnVOdXRYMGJsUktTR1FKMVc3WXM2V04zNW5CNFpTei03bTNOWUxSSEpOS20wbVc4aXZqdUVpb1laQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュースを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TQkQxWXRTWUk5SGZfRVBCMGNmNk5kWWE4MnVOdXRYMGJsUktTR1FKMVc3WXM2V04zNW5CNFpTei03bTNOWUxSSEpOS20wbVc4aXZqdUVpb1laQQ?oc=5" data-title="画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュース" data-genre="エンタメ">
+<a id="article-904df8ac89ac7734" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TQkQxWXRTWUk5SGZfRVBCMGNmNk5kWWE4MnVOdXRYMGJsUktTR1FKMVc3WXM2V04zNW5CNFpTei03bTNOWUxSSEpOS20wbVc4aXZqdUVpb1laQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュースを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TQkQxWXRTWUk5SGZfRVBCMGNmNk5kWWE4MnVOdXRYMGJsUktTR1FKMVc3WXM2V04zNW5CNFpTei03bTNOWUxSSEpOS20wbVc4aXZqdUVpb1laQQ?oc=5" data-title="画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュース" data-genre="エンタメ">
   <img class="thumb" src="../assets/thumbs/facdfa482d7e55f7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>オリコンニュース · 09:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目 - オリコンニュース</h3>
+    <h3>画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ 2枚目</h3>
     <p class="summary-text">画像・写真 | 鈴木貴雄、音楽事務所「MY FLAGMENT」設立発表 マネジメントやクリエイターの発掘・育成へ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>発表｜出典: オリコンニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>

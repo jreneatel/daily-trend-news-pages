@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -745,17 +796,14 @@ dd {
     <h2 id="AI">AI</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-1087b4063e0cbb1b" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1ubm91eGdSdGJWSExXWUdnUTl2VWdUcndyME4wWm9rTEtTZkxxQVJZaWNzaDJMc1duOE8zQXc2NzRhNXF5dlltM0hrclFqM1ZDWVplZEM4VXVzczNXVFZqN01odmRpMXlpOWQ5d0l0dGFIUm1M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE1ubm91eGdSdGJWSExXWUdnUTl2VWdUcndyME4wWm9rTEtTZkxxQVJZaWNzaDJMc1duOE8zQXc2NzRhNXF5dlltM0hrclFqM1ZDWVplZEM4VXVzczNXVFZqN01odmRpMXlpOWQ5d0l0dGFIUm1M?oc=5" data-title="Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンス" data-genre="AI">
+  <div class="grid"><a id="article-1087b4063e0cbb1b" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE1ubm91eGdSdGJWSExXWUdnUTl2VWdUcndyME4wWm9rTEtTZkxxQVJZaWNzaDJMc1duOE8zQXc2NzRhNXF5dlltM0hrclFqM1ZDWVplZEM4VXVzczNXVFZqN01odmRpMXlpOWQ5d0l0dGFIUm1M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE1ubm91eGdSdGJWSExXWUdnUTl2VWdUcndyME4wWm9rTEtTZkxxQVJZaWNzaDJMc1duOE8zQXc2NzRhNXF5dlltM0hrclFqM1ZDWVplZEM4VXVzczNXVFZqN01odmRpMXlpOWQ5d0l0dGFIUm1M?oc=5" data-title="Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンス" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/9a48459acc54abfa.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 08:45</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に - BigGo ファイナンス</h3>
+    <h3>Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に</h3>
     <p class="summary-text">Google VidsがGemini Omni対応、自撮り写真から自分そっくりのAIアバター動画を生成可能に Bi…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・Google｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -764,30 +812,24 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-c113b36384c15e7f" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE91dFdVRzB5SkFkTG9hRE9xdkVROE5JU2F5X19hOXJweHQ1NzhVWldlcktIZkV2VWlGVHltbkUyeXBwZnhFZjBiajFTQlgtalhjWEkzY3BwN3hXWWZvZjF2QmlfV0hJNlhW?oc=5" rel="noopener noreferrer" target="_blank" aria-label="プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE91dFdVRzB5SkFkTG9hRE9xdkVROE5JU2F5X19hOXJweHQ1NzhVWldlcktIZkV2VWlGVHltbkUyeXBwZnhFZjBiajFTQlgtalhjWEkzY3BwN3hXWWZvZjF2QmlfV0hJNlhW?oc=5" data-title="プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュース" data-genre="IT業界">
+  <div class="grid"><a id="article-c113b36384c15e7f" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE91dFdVRzB5SkFkTG9hRE9xdkVROE5JU2F5X19hOXJweHQ1NzhVWldlcktIZkV2VWlGVHltbkUyeXBwZnhFZjBiajFTQlgtalhjWEkzY3BwN3hXWWZvZjF2QmlfV0hJNlhW?oc=5" rel="noopener noreferrer" target="_blank" aria-label="プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE91dFdVRzB5SkFkTG9hRE9xdkVROE5JU2F5X19hOXJweHQ1NzhVWldlcktIZkV2VWlGVHltbkUyeXBwZnhFZjBiajFTQlgtalhjWEkzY3BwN3hXWWZvZjF2QmlfV0hJNlhW?oc=5" data-title="プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/b11404b16ee19542.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 13:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 - ニコニコニュース</h3>
+    <h3>プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催</h3>
     <p class="summary-text">プレス発表 「東北サイバーセキュリティシンポジウム2026」を仙台市で開催 ニコニコニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>セキュリティ・発表｜出典: ニコニコニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-558493cf9a3c5720" class="card tone-tech" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBta1BmVFN2VG1fbkRWRm1ISmIyS3pCZHRrdWpkanNXVmtld0hMaElDVmdmaG9MdXRWN2Q0ZHd4WFUxME1Wa2pJSFJiUDVONWZTanRjd1RTWHRqblNmSmtPOVZ5TXRlWHBka0c0" rel="noopener noreferrer" target="_blank" aria-label="NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTFBta1BmVFN2VG1fbkRWRm1ISmIyS3pCZHRrdWpkanNXVmtld0hMaElDVmdmaG9MdXRWN2Q0ZHd4WFUxME1Wa2pJSFJiUDVONWZTanRjd1RTWHRqblNmSmtPOVZ5TXRlWHBka0c0" data-title="NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコム" data-genre="IT業界">
+<a id="article-558493cf9a3c5720" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBta1BmVFN2VG1fbkRWRm1ISmIyS3pCZHRrdWpkanNXVmtld0hMaElDVmdmaG9MdXRWN2Q0ZHd4WFUxME1Wa2pJSFJiUDVONWZTanRjd1RTWHRqblNmSmtPOVZ5TXRlWHBka0c0" rel="noopener noreferrer" target="_blank" aria-label="NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTFBta1BmVFN2VG1fbkRWRm1ISmIyS3pCZHRrdWpkanNXVmtld0hMaElDVmdmaG9MdXRWN2Q0ZHd4WFUxME1Wa2pJSFJiUDVONWZTanRjd1RTWHRqblNmSmtPOVZ5TXRlWHBka0c0" data-title="NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコム" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/416fb5fbe6c1361d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 14:10</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 - 時事ドットコム</h3>
+    <h3>NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞</h3>
     <p class="summary-text">NEC、次世代サイバーセキュリティサービス「CyIOC」がMM総研大賞2026にて最優秀賞 時事ドットコム</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>セキュリティ｜出典: 時事ドットコム</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -796,30 +838,24 @@ dd {
     <h2 id="政治">政治</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-8b8be0d029edd0a5" class="card tone-civic" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTG9OMVg2TkhXUDlBUFNXMkVmMkhxTFM5Zm95U3lCZTI2VkhXMUxrLU14bUR3bmc1ZUh4RkJ1YkVfX09qZUw1dEl6RmhPUFhFd212ZldGcVhXWll1WmFnNjdJY2JJWV84QjRkYTlrNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正の法案成立等についての会見 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTG9OMVg2TkhXUDlBUFNXMkVmMkhxTFM5Zm95U3lCZTI2VkhXMUxrLU14bUR3bmc1ZUh4RkJ1YkVfX09qZUw1dEl6RmhPUFhFd212ZldGcVhXWll1WmFnNjdJY2JJWV84QjRkYTlrNA?oc=5" data-title="皇室典範改正の法案成立等についての会見 - 首相官邸" data-genre="政治">
+  <div class="grid"><a id="article-8b8be0d029edd0a5" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTG9OMVg2TkhXUDlBUFNXMkVmMkhxTFM5Zm95U3lCZTI2VkhXMUxrLU14bUR3bmc1ZUh4RkJ1YkVfX09qZUw1dEl6RmhPUFhFd212ZldGcVhXWll1WmFnNjdJY2JJWV84QjRkYTlrNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正の法案成立等についての会見 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTG9OMVg2TkhXUDlBUFNXMkVmMkhxTFM5Zm95U3lCZTI2VkhXMUxrLU14bUR3bmc1ZUh4RkJ1YkVfX09qZUw1dEl6RmhPUFhFd212ZldGcVhXWll1WmFnNjdJY2JJWV84QjRkYTlrNA?oc=5" data-title="皇室典範改正の法案成立等についての会見 - 首相官邸" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/e48fdfdadbe2e538.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 14:06</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>制度・政治</span></div>
-    <h3>皇室典範改正の法案成立等についての会見 - 首相官邸</h3>
+    <h3>皇室典範改正の法案成立等についての会見</h3>
     <p class="summary-text">皇室典範改正の法案成立等についての会見 首相官邸</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 首相官邸</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-a80bcae9b52477e2" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSS0JIRkNQUFNzWkZjdzVHR3BMVDQ0M0RTX3JEREYtdWRsTzRvWWl1bkRCcTBtSHdIQkFPSG9OdHZJNVozUVFfakhmUG1nb1pjaVNXUXBiZ19Iak9zQWhqY3cyNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSS0JIRkNQUFNzWkZjdzVHR3BMVDQ0M0RTX3JEREYtdWRsTzRvWWl1bkRCcTBtSHdIQkFPSG9OdHZJNVozUVFfakhmUG1nb1pjaVNXUXBiZ19Iak9zQWhqY3cyNA?oc=5" data-title="国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコム" data-genre="政治">
+<a id="article-a80bcae9b52477e2" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSS0JIRkNQUFNzWkZjdzVHR3BMVDQ0M0RTX3JEREYtdWRsTzRvWWl1bkRCcTBtSHdIQkFPSG9OdHZJNVozUVFfakhmUG1nb1pjaVNXUXBiZ19Iak9zQWhqY3cyNA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSS0JIRkNQUFNzWkZjdzVHR3BMVDQ0M0RTX3JEREYtdWRsTzRvWWl1bkRCcTBtSHdIQkFPSG9OdHZJNVozUVFfakhmUG1nb1pjaVNXUXBiZ19Iak9zQWhqY3cyNA?oc=5" data-title="国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコム" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/3e072d254cd36437.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>時事ドットコム · 10:41</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>国会、２５日まで延長 副首都法案で攻防へ - 時事ドットコム</h3>
+    <h3>国会、２５日まで延長 副首都法案で攻防へ</h3>
     <p class="summary-text">国会、２５日まで延長 副首都法案で攻防へ 時事ドットコム</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 時事ドットコム</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -828,30 +864,24 @@ dd {
     <h2 id="社会">社会</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-3abaf7eb1ecad965" class="card tone-civic" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5JZ0lsbF9hcjdyVVAtVXluaHd2elhxU1FnZmlOUHdma0d0ZUF3T3dsUFVXVjROSlNiamtVTkJQVnBESkhkeXBDWGdtRVdXLVdGcUlqUkNDb3RNSjlzLVlmVDNlZ0xhX3JHNU1zdQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE5JZ0lsbF9hcjdyVVAtVXluaHd2elhxU1FnZmlOUHdma0d0ZUF3T3dsUFVXVjROSlNiamtVTkJQVnBESkhkeXBDWGdtRVdXLVdGcUlqUkNDb3RNSjlzLVlmVDNlZ0xhX3JHNU1zdQ?oc=5" data-title="広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞" data-genre="社会">
+  <div class="grid"><a id="article-3abaf7eb1ecad965" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5JZ0lsbF9hcjdyVVAtVXluaHd2elhxU1FnZmlOUHdma0d0ZUF3T3dsUFVXVjROSlNiamtVTkJQVnBESkhkeXBDWGdtRVdXLVdGcUlqUkNDb3RNSjlzLVlmVDNlZ0xhX3JHNU1zdQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE5JZ0lsbF9hcjdyVVAtVXluaHd2elhxU1FnZmlOUHdma0d0ZUF3T3dsUFVXVjROSlNiamtVTkJQVnBESkhkeXBDWGdtRVdXLVdGcUlqUkNDb3RNSjlzLVlmVDNlZ0xhX3JHNU1zdQ?oc=5" data-title="広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/860cb12921e3ee68.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本経済新聞 · 14:19</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>広島の放火殺人、元従業員の男を再逮捕 容疑を否認 - 日本経済新聞</h3>
+    <h3>広島の放火殺人、元従業員の男を再逮捕 容疑を否認</h3>
     <p class="summary-text">広島の放火殺人、元従業員の男を再逮捕 容疑を否認 日本経済新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: 日本経済新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-346f61e7a7049cd9" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DTGpULWRRbTB6SFlyWkNidVZvcWJrMTh5OFJzNUdQWEZfeUo4Wk5pSFFnd0lMNlpES2pPa1RmQUtFZkFWLVBVQ2pFbEFZa3l5am1id1ZfX3Yyc1hnNjBoNTRtNFFRSVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DTGpULWRRbTB6SFlyWkNidVZvcWJrMTh5OFJzNUdQWEZfeUo4Wk5pSFFnd0lMNlpES2pPa1RmQUtFZkFWLVBVQ2pFbEFZa3l5am1id1ZfX3Yyc1hnNjBoNTRtNFFRSVE?oc=5" data-title="女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞" data-genre="社会">
+<a id="article-346f61e7a7049cd9" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DTGpULWRRbTB6SFlyWkNidVZvcWJrMTh5OFJzNUdQWEZfeUo4Wk5pSFFnd0lMNlpES2pPa1RmQUtFZkFWLVBVQ2pFbEFZa3l5am1id1ZfX3Yyc1hnNjBoNTRtNFFRSVE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DTGpULWRRbTB6SFlyWkNidVZvcWJrMTh5OFJzNUdQWEZfeUo4Wk5pSFFnd0lMNlpES2pPa1RmQUtFZkFWLVBVQ2pFbEFZa3l5am1id1ZfX3Yyc1hnNjBoNTRtNFFRSVE?oc=5" data-title="女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/5cd467f96063ee61.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:04</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 - 朝日新聞</h3>
+    <h3>女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明</h3>
     <p class="summary-text">女性の遺体を遺棄した疑い、奈良の37歳男を逮捕 母と娘が行方不明 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -860,30 +890,24 @@ dd {
     <h2 id="災害">災害</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-191ab2f24d02f54f" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5yX3hqOC1DZDQ4UHZOMlE1VzZYRHk1NVhmS1ZOZTJLQVVjVFNmTlZRMjRGQVQ2U2t5ZW9IVG5pTTZpNkJfT3VPWmJ6RzN3TTJvY2dsT09NMHp4NVhmWVF0RHg0VXR6S0czMXRxQjJwS2dxZkRJVk12RnZ0Q29DNEE" rel="noopener noreferrer" target="_blank" aria-label="【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5yX3hqOC1DZDQ4UHZOMlE1VzZYRHk1NVhmS1ZOZTJLQVVjVFNmTlZRMjRGQVQ2U2t5ZW9IVG5pTTZpNkJfT3VPWmJ6RzN3TTJvY2dsT09NMHp4NVhmWVF0RHg0VXR6S0czMXRxQjJwS2dxZkRJVk12RnZ0Q29DNEE" data-title="【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュース" data-genre="災害">
+  <div class="grid"><a id="article-191ab2f24d02f54f" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5yX3hqOC1DZDQ4UHZOMlE1VzZYRHk1NVhmS1ZOZTJLQVVjVFNmTlZRMjRGQVQ2U2t5ZW9IVG5pTTZpNkJfT3VPWmJ6RzN3TTJvY2dsT09NMHp4NVhmWVF0RHg0VXR6S0czMXRxQjJwS2dxZkRJVk12RnZ0Q29DNEE" rel="noopener noreferrer" target="_blank" aria-label="【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5yX3hqOC1DZDQ4UHZOMlE1VzZYRHk1NVhmS1ZOZTJLQVVjVFNmTlZRMjRGQVQ2U2t5ZW9IVG5pTTZpNkJfT3VPWmJ6RzN3TTJvY2dsT09NMHp4NVhmWVF0RHg0VXR6S0czMXRxQjJwS2dxZkRJVk12RnZ0Q29DNEE" data-title="【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/81c58a40eb1a05ce.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:44</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送） - Yahoo!ニュース</h3>
+    <h3>【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション28日（火）まで/全国各都市の週間予報】「今後の台風情報に注意」（MBC南日本放送）</h3>
     <p class="summary-text">【次は “越境台風”か】3年ぶりに“ハリケーン”が「日付変更線」を超えて来る越境台風の可能性【雨風シミュレーション…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>台風｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-9bb8791d0f8e9642" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEQjZraUFOZ2llMmFOUnhiYjNYRUN0RjZaOWNmYWhlMDBlamFhZWNNMEstM3BtUUNQamppSXhDNWYwbWpxMjdZdGg3RS1OYzVqUk1MVG9WS1BlZnRPWUJz" rel="noopener noreferrer" target="_blank" aria-label="群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEQjZraUFOZ2llMmFOUnhiYjNYRUN0RjZaOWNmYWhlMDBlamFhZWNNMEstM3BtUUNQamppSXhDNWYwbWpxMjdZdGg3RS1OYzVqUk1MVG9WS1BlZnRPWUJz" data-title="群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュース" data-genre="災害">
+<a id="article-9bb8791d0f8e9642" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEQjZraUFOZ2llMmFOUnhiYjNYRUN0RjZaOWNmYWhlMDBlamFhZWNNMEstM3BtUUNQamppSXhDNWYwbWpxMjdZdGg3RS1OYzVqUk1MVG9WS1BlZnRPWUJz" rel="noopener noreferrer" target="_blank" aria-label="群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEQjZraUFOZ2llMmFOUnhiYjNYRUN0RjZaOWNmYWhlMDBlamFhZWNNMEstM3BtUUNQamppSXhDNWYwbWpxMjdZdGg3RS1OYzVqUk1MVG9WS1BlZnRPWUJz" data-title="群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/7043d3ce637b1180.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 13:35</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を - NHKニュース</h3>
+    <h3>群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を</h3>
     <p class="summary-text">群馬 前橋市に土砂災害危険警報を発表 土砂災害に厳重警戒を NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>災害・発表｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -892,30 +916,24 @@ dd {
     <h2 id="金融">金融</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-1dc8b756973fde70" class="card tone-money" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9GYVJuLUp5ck02ZG1uSGdtWTZ3d2RtS3FVdi04WnZvWTVpY0RqWTNNWkRkSnEtaFhJbEVSb1FYWUNZcWFaT09TVElyYW43VGd2a2lnWGJaLW00QVZEQ3doVm9CUUloQVM4U1BsVXNlZkRQS3RhYWlR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE9GYVJuLUp5ck02ZG1uSGdtWTZ3d2RtS3FVdi04WnZvWTVpY0RqWTNNWkRkSnEtaFhJbEVSb1FYWUNZcWFaT09TVElyYW43VGd2a2lnWGJaLW00QVZEQ3doVm9CUUloQVM4U1BsVXNlZkRQS3RhYWlR?oc=5" data-title="高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.com" data-genre="金融">
+  <div class="grid"><a id="article-1dc8b756973fde70" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9GYVJuLUp5ck02ZG1uSGdtWTZ3d2RtS3FVdi04WnZvWTVpY0RqWTNNWkRkSnEtaFhJbEVSb1FYWUNZcWFaT09TVElyYW43VGd2a2lnWGJaLW00QVZEQ3doVm9CUUloQVM4U1BsVXNlZkRQS3RhYWlR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.comを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE9GYVJuLUp5ck02ZG1uSGdtWTZ3d2RtS3FVdi04WnZvWTVpY0RqWTNNWkRkSnEtaFhJbEVSb1FYWUNZcWFaT09TVElyYW43VGd2a2lnWGJaLW00QVZEQ3doVm9CUUloQVM4U1BsVXNlZkRQS3RhYWlR?oc=5" data-title="高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.com" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/ec9d55b2b0d2a6f8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Bloomberg.com · 07:03</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 - Bloomberg.com</h3>
+    <h3>高市首相、GPIFによる日本の金融資産への投資後押しする方策重要</h3>
     <p class="summary-text">高市首相、GPIFによる日本の金融資産への投資後押しする方策重要 Bloomberg.com</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>高市首相・GPIFによる日本の金融資産への投資後押しする方策重要｜出典: Bloomberg.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-142b5624057998a7" class="card tone-money" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XN2QxaHU1TGU1TlcyNDk4a1FjWkhWd2laQ056bGUxSDdsY0NMbGJKQk5vWmhKTEowQVUxQ19MeU16bHctUmxGdHhSWHFYS05PN3RpWHl5MHBLQ21fLVg2R0tveDRZVUk" rel="noopener noreferrer" target="_blank" aria-label="MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステックを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XN2QxaHU1TGU1TlcyNDk4a1FjWkhWd2laQ056bGUxSDdsY0NMbGJKQk5vWmhKTEowQVUxQ19MeU16bHctUmxGdHhSWHFYS05PN3RpWHl5MHBLQ21fLVg2R0tveDRZVUk" data-title="MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック" data-genre="金融">
+<a id="article-142b5624057998a7" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XN2QxaHU1TGU1TlcyNDk4a1FjWkhWd2laQ056bGUxSDdsY0NMbGJKQk5vWmhKTEowQVUxQ19MeU16bHctUmxGdHhSWHFYS05PN3RpWHl5MHBLQ21fLVg2R0tveDRZVUk" rel="noopener noreferrer" target="_blank" aria-label="MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステックを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XN2QxaHU1TGU1TlcyNDk4a1FjWkhWd2laQ056bGUxSDdsY0NMbGJKQk5vWmhKTEowQVUxQ19MeU16bHctUmxGdHhSWHFYS05PN3RpWHl5MHBLQ21fLVg2R0tveDRZVUk" data-title="MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック" data-genre="金融">
   <img class="thumb" src="../assets/thumbs/d6f9337f4f7476d6.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経クロステック · 09:21</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>金融</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う - 日経クロステック</h3>
+    <h3>MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う</h3>
     <p class="summary-text">MUFGがGoogleと戦略的提携 リテール総合金融、AIでSMBCより「先行」狙う 日経クロステック</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・Google｜出典: 日経クロステック</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -924,30 +942,24 @@ dd {
     <h2 id="ライフ">ライフ</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-bf5e2df90f08f172" class="card tone-life" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtaGZTQWtucE1RS0ZUa19obi05UkdfODNFQTRkSUVoNmZQam1kZm9xUy1lZFlYdXVNVC1zcXdjMm9CRS0zck9RNmJCQnNGZWJFUmZGdk5WYw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtaGZTQWtucE1RS0ZUa19obi05UkdfODNFQTRkSUVoNmZQam1kZm9xUy1lZFlYdXVNVC1zcXdjMm9CRS0zck9RNmJCQnNGZWJFUmZGdk5WYw?oc=5" data-title="韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIG" data-genre="ライフ">
+  <div class="grid"><a id="article-bf5e2df90f08f172" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtaGZTQWtucE1RS0ZUa19obi05UkdfODNFQTRkSUVoNmZQam1kZm9xUy1lZFlYdXVNVC1zcXdjMm9CRS0zck9RNmJCQnNGZWJFUmZGdk5WYw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTFAtaGZTQWtucE1RS0ZUa19obi05UkdfODNFQTRkSUVoNmZQam1kZm9xUy1lZFlYdXVNVC1zcXdjMm9CRS0zck9RNmJCQnNGZWJFUmZGdk5WYw?oc=5" data-title="韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIG" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/22fa6cc5e706bc12.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 10:58</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市 - TBS NEWS DIG</h3>
+    <h3>韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩手・盛岡市</h3>
     <p class="summary-text">韓国籍の無職の男（66）生活保護を巡ってトラブルか 対応した市職員を殴った公務執行妨害の疑いで逮捕 容疑認める 岩…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-b0af1be3245209ea" class="card tone-life" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1xNnJJd09pZ3lKZThod3NpUjM3WUxyTUMwVFB4MXR4UXdQQU5ZQ0JOcTgzdktNV2hMb0hJcVNaT3dnbzhUS0hKUVNkdlVrVFAtb3EzSndrTjFRcmtCWW5zQ3VrYXRuSGt3SHB5dTFtUG40eUFCYmlrLVVNUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jpを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE1xNnJJd09pZ3lKZThod3NpUjM3WUxyTUMwVFB4MXR4UXdQQU5ZQ0JOcTgzdktNV2hMb0hJcVNaT3dnbzhUS0hKUVNkdlVrVFAtb3EzSndrTjFRcmtCWW5zQ3VrYXRuSGt3SHB5dTFtUG40eUFCYmlrLVVNUQ?oc=5" data-title="海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jp" data-genre="ライフ">
+<a id="article-b0af1be3245209ea" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1xNnJJd09pZ3lKZThod3NpUjM3WUxyTUMwVFB4MXR4UXdQQU5ZQ0JOcTgzdktNV2hMb0hJcVNaT3dnbzhUS0hKUVNkdlVrVFAtb3EzSndrTjFRcmtCWW5zQ3VrYXRuSGt3SHB5dTFtUG40eUFCYmlrLVVNUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jpを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE1xNnJJd09pZ3lKZThod3NpUjM3WUxyTUMwVFB4MXR4UXdQQU5ZQ0JOcTgzdktNV2hMb0hJcVNaT3dnbzhUS0hKUVNkdlVrVFAtb3EzSndrTjFRcmtCWW5zQ3VrYXRuSGt3SHB5dTFtUG40eUFCYmlrLVVNUQ?oc=5" data-title="海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jp" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/0317f0a1752d7f97.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>data.jma.go.jp · 08:07</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
-    <h3>海洋の健康診断表 北西太平洋の海面水温 - data.jma.go.jp</h3>
+    <h3>海洋の健康診断表 北西太平洋の海面水温</h3>
     <p class="summary-text">海洋の健康診断表 北西太平洋の海面水温 data.jma.go.jp</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>海洋の健康診断表・北西太平洋の海面水温｜出典: data.jma.go.jp</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -956,30 +968,24 @@ dd {
     <h2 id="経済">経済</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-16ee6e75f7cacfb1" class="card tone-money" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1Fb1lWSi1JWnZWSllaTlpLNENLNlpHOHozYkM4S2tXZVRCaGZreFN4YWI5VjhMNTFSY1RFa0c2U1cwckJpR0Fmb0FheElvRnl3SDVwRFRnc3E5cGlPN3dkVnhwUVB4d3JndVpYQjlHT0VKTXQwTy00UGUwbF8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1Fb1lWSi1JWnZWSllaTlpLNENLNlpHOHozYkM4S2tXZVRCaGZreFN4YWI5VjhMNTFSY1RFa0c2U1cwckJpR0Fmb0FheElvRnl3SDVwRFRnc3E5cGlPN3dkVnhwUVB4d3JndVpYQjlHT0VKTXQwTy00UGUwbF8?oc=5" data-title="粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNN" data-genre="経済">
+  <div class="grid"><a id="article-16ee6e75f7cacfb1" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1Fb1lWSi1JWnZWSllaTlpLNENLNlpHOHozYkM4S2tXZVRCaGZreFN4YWI5VjhMNTFSY1RFa0c2U1cwckJpR0Fmb0FheElvRnl3SDVwRFRnc3E5cGlPN3dkVnhwUVB4d3JndVpYQjlHT0VKTXQwTy00UGUwbF8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1Fb1lWSi1JWnZWSllaTlpLNENLNlpHOHozYkM4S2tXZVRCaGZreFN4YWI5VjhMNTFSY1RFa0c2U1cwckJpR0Fmb0FheElvRnl3SDVwRFRnc3E5cGlPN3dkVnhwUVB4d3JndVpYQjlHT0VKTXQwTy00UGUwbF8?oc=5" data-title="粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNN" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/4bb57824db98bdc4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 09:52</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN - 日テレNEWS NNN</h3>
+    <h3>粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）｜日テレNEWS NNN</h3>
     <p class="summary-text">粉飾決算事件 AI開発企業「オルツ」元社長、初公判で起訴内容認める（2026年7月17日掲載）</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・AI｜出典: 日テレNEWS NNN</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-601b3d210ea80813" class="card tone-money" href="https://news.google.com/rss/articles/CBMickFVX3lxTE1LNFhqU290ZmhIOVotZC1HLVRZVG12ODBVSEVLbUlyT0lzbU5TOEMyc0RZaFJUUEFRVUp2MnZhRmZ2Zno5ajMyWXBrRkFlWERMQ2RIZmZzVTlYV0JPVEtYcDhkaFk0c2xKMXZpRXRRUlkwdw" rel="noopener noreferrer" target="_blank" aria-label="AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWSを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE1LNFhqU290ZmhIOVotZC1HLVRZVG12ODBVSEVLbUlyT0lzbU5TOEMyc0RZaFJUUEFRVUp2MnZhRmZ2Zno5ajMyWXBrRkFlWERMQ2RIZmZzVTlYV0JPVEtYcDhkaFk0c2xKMXZpRXRRUlkwdw" data-title="AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWS" data-genre="経済">
+<a id="article-601b3d210ea80813" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTE1LNFhqU290ZmhIOVotZC1HLVRZVG12ODBVSEVLbUlyT0lzbU5TOEMyc0RZaFJUUEFRVUp2MnZhRmZ2Zno5ajMyWXBrRkFlWERMQ2RIZmZzVTlYV0JPVEtYcDhkaFk0c2xKMXZpRXRRUlkwdw" rel="noopener noreferrer" target="_blank" aria-label="AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWSを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE1LNFhqU290ZmhIOVotZC1HLVRZVG12ODBVSEVLbUlyT0lzbU5TOEMyc0RZaFJUUEFRVUp2MnZhRmZ2Zno5ajMyWXBrRkFlWERMQ2RIZmZzVTlYV0JPVEtYcDhkaFk0c2xKMXZpRXRRUlkwdw" data-title="AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWS" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/0eeae4e9c0ff104c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 09:53</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める - テレ朝NEWS</h3>
+    <h3>AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める</h3>
     <p class="summary-text">AI企業「オルツ」粉飾決算事件 前社長が初公判で起訴内容認める テレ朝NEWS</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・AI｜出典: テレ朝NEWS</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -988,17 +994,14 @@ dd {
     <h2 id="国際">国際</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-0cd711255b74f62d" class="card tone-civic" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoMlZVNXplS0FxZzJEUE9vTWZlWXhXd09Kc2JDMWYydzQ4TmM3dWNfNXpMQmZ1NnlDWUpNT0o5ekl3OHFHOXZ3SXlYeU5DYjY3el81MGkyajVNc2Q3VVBmQWRoTXJMMXY1ZE1XSk93ejVBaDRDTFpJMnZ5VGFDSWM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoMlZVNXplS0FxZzJEUE9vTWZlWXhXd09Kc2JDMWYydzQ4TmM3dWNfNXpMQmZ1NnlDWUpNT0o5ekl3OHFHOXZ3SXlYeU5DYjY3el81MGkyajVNc2Q3VVBmQWRoTXJMMXY1ZE1XSk93ejVBaDRDTFpJMnZ5VGFDSWM?oc=5" data-title="フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュース" data-genre="国際">
+  <div class="grid"><a id="article-0cd711255b74f62d" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoMlZVNXplS0FxZzJEUE9vTWZlWXhXd09Kc2JDMWYydzQ4TmM3dWNfNXpMQmZ1NnlDWUpNT0o5ekl3OHFHOXZ3SXlYeU5DYjY3el81MGkyajVNc2Q3VVBmQWRoTXJMMXY1ZE1XSk93ejVBaDRDTFpJMnZ5VGFDSWM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoMlZVNXplS0FxZzJEUE9vTWZlWXhXd09Kc2JDMWYydzQ4TmM3dWNfNXpMQmZ1NnlDWUpNT0o5ekl3OHFHOXZ3SXlYeU5DYjY3el81MGkyajVNc2Q3VVBmQWRoTXJMMXY1ZE1XSk93ejVBaDRDTFpJMnZ5VGFDSWM?oc=5" data-title="フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュース" data-genre="国際">
   <img class="thumb" src="../assets/thumbs/b4d34fe264910260.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 07:49</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） - Yahoo!ニュース</h3>
+    <h3>フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事）</h3>
     <p class="summary-text">フィリピン政府が外交ルート通じ抗議、中国国営メディアの「猿」扱いアニメ（ＡＦＰ＝時事） Yahoo!ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政府｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>

@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -719,7 +770,7 @@ dd {
         <span>2026-07-28</span>
         <span>8ジャンル</span>
         <span>24件の記事</span>
-        <span>更新: 2026-07-29 21:51 JST</span>
+        <span>更新: 2026-07-29 22:20 JST</span>
       </div>
     </section>
     <section class="big-news-picks" aria-labelledby="big-news-heading">
@@ -733,12 +784,9 @@ dd {
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 12:43</span><span class="read-state">未読</span></div>
     <div class="labels"><span class="big-news-label">ビッグニュース</span> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>要注意</span></div>
-    <h3>令和８年熊本地震非常災害対策本部会議 - 首相官邸</h3>
+    <h3>令和８年熊本地震非常災害対策本部会議</h3>
     <p class="summary-text">令和８年熊本地震非常災害対策本部会議 首相官邸</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜注目度 100点｜出典: 首相官邸</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
   </div>
 </a>
 <a id="featured-article-8c5bba6386591fa4" class="card tone-civic is-big-news" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" data-title="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュース" data-genre="国際" data-featured="true">
@@ -746,12 +794,9 @@ dd {
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:22</span><span class="read-state">未読</span></div>
     <div class="labels"><span class="big-news-label">ビッグニュース</span> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュース</h3>
+    <h3>熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞）</h3>
     <p class="summary-text">熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） Yahoo!ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>熊本震度7・海外メディアも速報・訪日客や半導体製造で関心高く（毎日新聞）｜注目度 100点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
   </div>
 </a>
 <a id="featured-article-04b21685e698caa7" class="card tone-civic is-big-news" href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" data-title="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータル" data-genre="社会" data-featured="true">
@@ -759,12 +804,9 @@ dd {
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 12:00</span><span class="read-state">未読</span></div>
     <div class="labels"><span class="big-news-label">ビッグニュース</span> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータル</h3>
+    <h3>「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒</h3>
     <p class="summary-text">「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 au Webポータル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜注目度 100点｜出典: au Webポータル</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
   </div>
 </a></div>
 </section>
@@ -777,11 +819,11 @@ dd {
 </section></div><a class="calendar-more" href="archive.html">すべての日付</a></div><a class="side-archive" href="archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>6件</small></a>
 <a href="#IT業界"><span>IT業界</span><small>5件</small></a>
 <a href="#政治"><span>政治</span><small>1件</small></a>
-<a href="#社会"><span>社会</span><small>1件</small></a>
+<a href="#社会"><span>社会</span><small>2件</small></a>
 <a href="#事件・事故"><span>事件・事故</span><small>6件</small></a>
 <a href="#国際"><span>国際</span><small>2件</small></a>
 <a href="#ゲーム"><span>ゲーム</span><small>1件</small></a>
-<a href="#経済"><span>経済</span><small>2件</small></a></nav>
+<a href="#経済"><span>経済</span><small>1件</small></a></nav>
       </aside>
       <div class="content">
         <details class="genre tone-tech" open>
@@ -789,82 +831,64 @@ dd {
     <h2 id="AI">AI</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-8d3b0f08eb52400e" class="card tone-tech" href="https://news.google.com/rss/articles/CBMickFVX3lxTE1Wcjd0UXhFN1pyTTVsNHJLRGtGcWI4Z1hyVm93X0xBWTdOLWxNQkl3NTh6eVdVSDlzVXZSSDVtd1lBWjV2UU8wakR5bkhKTG9qYnJ3V29QcktsdXdrTS1PdkxkdUtDMnViRVJOUFA2WnllUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ - ITmediaを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE1Wcjd0UXhFN1pyTTVsNHJLRGtGcWI4Z1hyVm93X0xBWTdOLWxNQkl3NTh6eVdVSDlzVXZSSDVtd1lBWjV2UU8wakR5bkhKTG9qYnJ3V29QcktsdXdrTS1PdkxkdUtDMnViRVJOUFA2WnllUQ?oc=5" data-title="Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ - ITmedia" data-genre="AI">
+  <div class="grid"><a id="article-8d3b0f08eb52400e" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTE1Wcjd0UXhFN1pyTTVsNHJLRGtGcWI4Z1hyVm93X0xBWTdOLWxNQkl3NTh6eVdVSDlzVXZSSDVtd1lBWjV2UU8wakR5bkhKTG9qYnJ3V29QcktsdXdrTS1PdkxkdUtDMnViRVJOUFA2WnllUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ - ITmediaを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE1Wcjd0UXhFN1pyTTVsNHJLRGtGcWI4Z1hyVm93X0xBWTdOLWxNQkl3NTh6eVdVSDlzVXZSSDVtd1lBWjV2UU8wakR5bkhKTG9qYnJ3V29QcktsdXdrTS1PdkxkdUtDMnViRVJOUFA2WnllUQ?oc=5" data-title="Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ - ITmedia" data-genre="AI">
   <img class="thumb" src="assets/thumbs/d7a7f4c329a6d06b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ITmedia · 08:35</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ - ITmedia</h3>
+    <h3>Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？</h3>
     <p class="summary-text">Claude、一部チャットがGoogle検索で“丸見え”に 過去には「ChatGPT」でも 漏えいの原因は？ IT…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ChatGPT・Google｜注目度 64点｜出典: ITmedia</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
   </div>
 </a>
-<a id="article-eee6fd141836631f" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE15ai1YdkJQNDVJTTIxWTZVZHdfU2NoWFJIaXA2WFhMUE5GVTNYNy0xTXoySTFjQzRydTIzQldKQy12dm9PekNQdU03Qk9OQzZ2V0h2YzdyRDBFU0dNYTF4a1VQRUtidmZpTTNzTkRydGZQVUpB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE15ai1YdkJQNDVJTTIxWTZVZHdfU2NoWFJIaXA2WFhMUE5GVTNYNy0xTXoySTFjQzRydTIzQldKQy12dm9PekNQdU03Qk9OQzZ2V0h2YzdyRDBFU0dNYTF4a1VQRUtidmZpTTNzTkRydGZQVUpB?oc=5" data-title="生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け - BigGo ファイナンス" data-genre="AI">
+<a id="article-eee6fd141836631f" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE15ai1YdkJQNDVJTTIxWTZVZHdfU2NoWFJIaXA2WFhMUE5GVTNYNy0xTXoySTFjQzRydTIzQldKQy12dm9PekNQdU03Qk9OQzZ2V0h2YzdyRDBFU0dNYTF4a1VQRUtidmZpTTNzTkRydGZQVUpB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE15ai1YdkJQNDVJTTIxWTZVZHdfU2NoWFJIaXA2WFhMUE5GVTNYNy0xTXoySTFjQzRydTIzQldKQy12dm9PekNQdU03Qk9OQzZ2V0h2YzdyRDBFU0dNYTF4a1VQRUtidmZpTTNzTkRydGZQVUpB?oc=5" data-title="生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け - BigGo ファイナンス" data-genre="AI">
   <img class="thumb" src="assets/thumbs/a5872b6a1ab1b33d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:36</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け - BigGo ファイナンス</h3>
+    <h3>生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け</h3>
     <p class="summary-text">生成AIの資本収益率は25～50%に達する可能性、モルガン・スタンレーが試算 推論時代の計算資源投資に強力な裏付け…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜注目度 61点｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-eed5bf44b86951e5" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZbDRTNDk0OTRLR240LTcxN2xpMFRLVk5EWnMxMlQ5NGJJWFZobmdZLXpvU2R1cE9XckxZb2RzOHRCaDdrYVJJSVhRYTk0QkcyQ1M0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ - DXマガジンを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZbDRTNDk0OTRLR240LTcxN2xpMFRLVk5EWnMxMlQ5NGJJWFZobmdZLXpvU2R1cE9XckxZb2RzOHRCaDdrYVJJSVhRYTk0QkcyQ1M0?oc=5" data-title="OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ - DXマガジン" data-genre="AI">
+<a id="article-eed5bf44b86951e5" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZbDRTNDk0OTRLR240LTcxN2xpMFRLVk5EWnMxMlQ5NGJJWFZobmdZLXpvU2R1cE9XckxZb2RzOHRCaDdrYVJJSVhRYTk0QkcyQ1M0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ - DXマガジンを読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ZbDRTNDk0OTRLR240LTcxN2xpMFRLVk5EWnMxMlQ5NGJJWFZobmdZLXpvU2R1cE9XckxZb2RzOHRCaDdrYVJJSVhRYTk0QkcyQ1M0?oc=5" data-title="OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ - DXマガジン" data-genre="AI">
   <img class="thumb" src="assets/thumbs/88b78013e13cbea7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>DXマガジン · 10:54</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ - DXマガジン</h3>
+    <h3>OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？</h3>
     <p class="summary-text">OpenAI新機能「ChatGPT Work」、もう使ってる？ そもそも何ができるの？ DXマガジン</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI｜注目度 61点｜出典: DXマガジン</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-57546abb5e8f0f42" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoTmtvcG5iWUUwYVBwWXowT1Flc2xnaVFaNkh6RE9UVUM1QlZPUjZjZXBUOEdQWENiTVBRaFktZThoRF9GVTNMNnJmWTJNNEhmck1CWk91OXlfSjB1TVNjSkN3OTF2VXpFQ2VXeXAtbU5DeTBycFpzdVJrU2JPd2M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoTmtvcG5iWUUwYVBwWXowT1Flc2xnaVFaNkh6RE9UVUM1QlZPUjZjZXBUOEdQWENiTVBRaFktZThoRF9GVTNMNnJmWTJNNEhmck1CWk91OXlfSjB1TVNjSkN3OTF2VXpFQ2VXeXAtbU5DeTBycFpzdVJrU2JPd2M?oc=5" data-title="営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」 - Yahoo!ニュース" data-genre="AI">
+<a id="article-57546abb5e8f0f42" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoTmtvcG5iWUUwYVBwWXowT1Flc2xnaVFaNkh6RE9UVUM1QlZPUjZjZXBUOEdQWENiTVBRaFktZThoRF9GVTNMNnJmWTJNNEhmck1CWk91OXlfSjB1TVNjSkN3OTF2VXpFQ2VXeXAtbU5DeTBycFpzdVJrU2JPd2M?oc=5" rel="noopener noreferrer" target="_blank" aria-label="営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBoTmtvcG5iWUUwYVBwWXowT1Flc2xnaVFaNkh6RE9UVUM1QlZPUjZjZXBUOEdQWENiTVBRaFktZThoRF9GVTNMNnJmWTJNNEhmck1CWk91OXlfSjB1TVNjSkN3OTF2VXpFQ2VXeXAtbU5DeTBycFpzdVJrU2JPd2M?oc=5" data-title="営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」 - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="assets/thumbs/9bf1828bde686d1e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 10:10</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」 - Yahoo!ニュース</h3>
+    <h3>営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」</h3>
     <p class="summary-text">営業下手でも高単価案件を跳ね上げる「リアル人脈獲得術」と、Claudeを組織化する「最新AIデザイン超効率化計画」…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-172c28db500c4d06" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE8xS0d2ZVhmcEVRX2VLUU9venJqS2VSZ3M3MHliZzIxdFpMazlIZUhwTGxFT0d0Mk9HRHl3M2pyMkh4a0hiVzZzb3l5MzFEcXFXX05MTlNZVGNJVFRIMGZ5M3hSTWl5QkltdkE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ChatGPTで「みずほ銀行」に相談できる時代へ FAQや来店予約に対応するアプリ提供開始 - AppBankを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE8xS0d2ZVhmcEVRX2VLUU9venJqS2VSZ3M3MHliZzIxdFpMazlIZUhwTGxFT0d0Mk9HRHl3M2pyMkh4a0hiVzZzb3l5MzFEcXFXX05MTlNZVGNJVFRIMGZ5M3hSTWl5QkltdkE?oc=5" data-title="ChatGPTで「みずほ銀行」に相談できる時代へ FAQや来店予約に対応するアプリ提供開始 - AppBank" data-genre="AI">
-  <img class="thumb" src="assets/thumbs/274be36844294966.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>AppBank · 09:52</span><span class="read-state">未読</span></div>
-    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>ChatGPTで「みずほ銀行」に相談できる時代へ FAQや来店予約に対応するアプリ提供開始 - AppBank</h3>
-    <p class="summary-text">ChatGPTで「みずほ銀行」に相談できる時代へ FAQや来店予約に対応するアプリ提供開始 AppBank</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ChatGPT・開始｜注目度 61点｜出典: AppBank</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-4b25b7be7cbfe41a" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtT2loMzNRMUpZVkFPQ1pram5PakxrUkc1bXFGUjNXcDVPRzZlLXI1Y05NV1JBbFBFbkJYeWhlb3VKT0xCeWg1dEtxYlFLTDF5Q2VWMXlTZmJCRnk1cUZUWg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 - pronews.comを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtT2loMzNRMUpZVkFPQ1pram5PakxrUkc1bXFGUjNXcDVPRzZlLXI1Y05NV1JBbFBFbkJYeWhlb3VKT0xCeWg1dEtxYlFLTDF5Q2VWMXlTZmJCRnk1cUZUWg?oc=5" data-title="生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 - pronews.com" data-genre="AI">
+<a id="article-4b25b7be7cbfe41a" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtT2loMzNRMUpZVkFPQ1pram5PakxrUkc1bXFGUjNXcDVPRzZlLXI1Y05NV1JBbFBFbkJYeWhlb3VKT0xCeWg1dEtxYlFLTDF5Q2VWMXlTZmJCRnk1cUZUWg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 - pronews.comを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTFAtT2loMzNRMUpZVkFPQ1pram5PakxrUkc1bXFGUjNXcDVPRzZlLXI1Y05NV1JBbFBFbkJYeWhlb3VKT0xCeWg1dEtxYlFLTDF5Q2VWMXlTZmJCRnk1cUZUWg?oc=5" data-title="生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 - pronews.com" data-genre="AI">
   <img class="thumb" src="assets/thumbs/ae69939af4bf4787.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>pronews.com · 08:45</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 - pronews.com</h3>
+    <h3>生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略</h3>
     <p class="summary-text">生成AIを「制作ツール」から「企業の基盤」へ。アドビ「Firefly」のエンタープライズ戦略 pronews.com</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜注目度 61点｜出典: pronews.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-289fc43f91280134" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFAwc09FZG1VSnZWdTNNSFhRalZaVmFNYjJQUDhUZ055c2ZIZU4zOGtVMUJSdjJkQ2F6NGdMbFN0UVYyZVd4RTlhaFkyWkJRTllVZG5lTA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中小企業の生成AI利用率、2年で55%→96%に急上昇 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTFAwc09FZG1VSnZWdTNNSFhRalZaVmFNYjJQUDhUZ055c2ZIZU4zOGtVMUJSdjJkQ2F6NGdMbFN0UVYyZVd4RTlhaFkyWkJRTllVZG5lTA?oc=5" data-title="中小企業の生成AI利用率、2年で55%→96%に急上昇 - ニコニコニュース" data-genre="AI">
+  <img class="thumb" src="assets/thumbs/394011d5aeca5c8a.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ニコニコニュース · 07:15</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <h3>中小企業の生成AI利用率、2年で55%→96%に急上昇</h3>
+    <p class="summary-text">中小企業の生成AI利用率、2年で55%→96%に急上昇 ニコニコニュース</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -873,69 +897,54 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>5 topics</span>
   </summary>
-  <div class="grid"><a id="article-4fe65cca9319296f" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wN0NKbFRqckk1VE9SZUNKbnFqdHlUS3NNLWdib0hna3NEU3ZvRkRCRERTMkVqMUJGdkFGaHRUckNMaGZMcTRDeWxCYkphaXg3Wl81Y0daU1ZMcjRyNU5v?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 - PlusWeb3を読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wN0NKbFRqckk1VE9SZUNKbnFqdHlUS3NNLWdib0hna3NEU3ZvRkRCRERTMkVqMUJGdkFGaHRUckNMaGZMcTRDeWxCYkphaXg3Wl81Y0daU1ZMcjRyNU5v?oc=5" data-title="Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 - PlusWeb3" data-genre="IT業界">
+  <div class="grid"><a id="article-4fe65cca9319296f" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wN0NKbFRqckk1VE9SZUNKbnFqdHlUS3NNLWdib0hna3NEU3ZvRkRCRERTMkVqMUJGdkFGaHRUckNMaGZMcTRDeWxCYkphaXg3Wl81Y0daU1ZMcjRyNU5v?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 - PlusWeb3を読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wN0NKbFRqckk1VE9SZUNKbnFqdHlUS3NNLWdib0hna3NEU3ZvRkRCRERTMkVqMUJGdkFGaHRUckNMaGZMcTRDeWxCYkphaXg3Wl81Y0daU1ZMcjRyNU5v?oc=5" data-title="Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 - PlusWeb3" data-genre="IT業界">
   <img class="thumb" src="assets/thumbs/b11bb905c9bde073.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>PlusWeb3 · 08:13</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 - PlusWeb3</h3>
+    <h3>Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速</h3>
     <p class="summary-text">Microsoft、Mistralと戦略提携を拡大 欧州AI基盤を強化し規制産業向けAI展開を加速 PlusWeb3</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>規制・AI・Microsoft｜注目度 67点｜出典: PlusWeb3</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-c657f94d8ad317ca" class="card tone-tech" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9NMllsMmMydzNpNjJKWmlicXFzakpGUVVCaTc3SnU2bmMzV01aaC1yWXZEMWFJekM4UTBnT2p5ZFFoZUlTLU1IdVZuMURvNjhzcUVjSXhnRTh6REZZTEl4LWlMM1dvSHhtX2xOV1ZEbkZmTHp4eFlj0gF3QVVfeXFMT00yWWwyYzJ3M2k2MkpaaWJxcXNqSkZRVUJpNzdKdTZuYzNXTVpoLXJZdkQxYUl6QzhRMGdPanlkUWhlSVMtTUh1Vm4xRG82OHNxRWNJeGdFOHpERllMSXgtaUwzV29IeG1fbE5XVkRuRmZMenh4WWM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE9NMllsMmMydzNpNjJKWmlicXFzakpGUVVCaTc3SnU2bmMzV01aaC1yWXZEMWFJekM4UTBnT2p5ZFFoZUlTLU1IdVZuMURvNjhzcUVjSXhnRTh6REZZTEl4LWlMM1dvSHhtX2xOV1ZEbkZmTHp4eFlj0gF3QVVfeXFMT00yWWwyYzJ3M2k2MkpaaWJxcXNqSkZRVUJpNzdKdTZuYzNXTVpoLXJZdkQxYUl6QzhRMGdPanlkUWhlSVMtTUh1Vm4xRG82OHNxRWNJeGdFOHpERllMSXgtaUwzV29IeG1fbE5XVkRuRmZMenh4WWM?oc=5" data-title="AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 - ｄメニューニュース" data-genre="IT業界">
+<a id="article-c657f94d8ad317ca" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9NMllsMmMydzNpNjJKWmlicXFzakpGUVVCaTc3SnU2bmMzV01aaC1yWXZEMWFJekM4UTBnT2p5ZFFoZUlTLU1IdVZuMURvNjhzcUVjSXhnRTh6REZZTEl4LWlMM1dvSHhtX2xOV1ZEbkZmTHp4eFlj0gF3QVVfeXFMT00yWWwyYzJ3M2k2MkpaaWJxcXNqSkZRVUJpNzdKdTZuYzNXTVpoLXJZdkQxYUl6QzhRMGdPanlkUWhlSVMtTUh1Vm4xRG82OHNxRWNJeGdFOHpERllMSXgtaUwzV29IeG1fbE5XVkRuRmZMenh4WWM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE9NMllsMmMydzNpNjJKWmlicXFzakpGUVVCaTc3SnU2bmMzV01aaC1yWXZEMWFJekM4UTBnT2p5ZFFoZUlTLU1IdVZuMURvNjhzcUVjSXhnRTh6REZZTEl4LWlMM1dvSHhtX2xOV1ZEbkZmTHp4eFlj0gF3QVVfeXFMT00yWWwyYzJ3M2k2MkpaaWJxcXNqSkZRVUJpNzdKdTZuYzNXTVpoLXJZdkQxYUl6QzhRMGdPanlkUWhlSVMtTUh1Vm4xRG82OHNxRWNJeGdFOHpERllMSXgtaUwzV29IeG1fbE5XVkRuRmZMenh4WWM?oc=5" data-title="AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 - ｄメニューニュース" data-genre="IT業界">
   <img class="thumb" src="assets/thumbs/9cc6637436d7714d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ｄメニューニュース · 14:03</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 - ｄメニューニュース</h3>
+    <h3>AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表</h3>
     <p class="summary-text">AIがホワイトハッカーとなるか Microsoftが新セキュリティーAIを発表 ｄメニューニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>セキュリティ・AI・Microsoft｜注目度 61点｜出典: ｄメニューニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-fbc5dd4a0ca5b047" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EN3E3bGxEWk1JRl9sdkFrd2RsXzhON3JucndkVDN6N192SktiTV9PZjFlcTcta20zTVBubGJEVWZmWG02SmFiMmo1emR6OUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 - ビジネス+ITを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EN3E3bGxEWk1JRl9sdkFrd2RsXzhON3JucndkVDN6N192SktiTV9PZjFlcTcta20zTVBubGJEVWZmWG02SmFiMmo1emR6OUk?oc=5" data-title="【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 - ビジネス+IT" data-genre="IT業界">
+<a id="article-fbc5dd4a0ca5b047" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EN3E3bGxEWk1JRl9sdkFrd2RsXzhON3JucndkVDN6N192SktiTV9PZjFlcTcta20zTVBubGJEVWZmWG02SmFiMmo1emR6OUk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 - ビジネス+ITを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EN3E3bGxEWk1JRl9sdkFrd2RsXzhON3JucndkVDN6N192SktiTV9PZjFlcTcta20zTVBubGJEVWZmWG02SmFiMmo1emR6OUk?oc=5" data-title="【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 - ビジネス+IT" data-genre="IT業界">
   <img class="thumb" src="assets/thumbs/f43989af73645563.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ビジネス+IT · 12:19</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 - ビジネス+IT</h3>
+    <h3>【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身</h3>
     <p class="summary-text">【注目】日清食品グループ「生成AI活用推進」、2年で「延べ受講者1万名」の教育の中身 ビジネス+IT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜注目度 61点｜出典: ビジネス+IT</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-30ad5a1de7a34fea" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5QTmlmS1lDd0V6Um9wVmVKRlhQUzRqOGtfXzhpc19JZEZDN2JPTkJKTVZFdW1nZEdiTnJ2V3JMVHRyZmRCMjI1bWVETHlsZkVCdE40djF2UU1EbGduVVpsMHRIRU1nTEwtakJyUVFBdWdVLTNhYlVEZjRqQjNSSkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5QTmlmS1lDd0V6Um9wVmVKRlhQUzRqOGtfXzhpc19JZEZDN2JPTkJKTVZFdW1nZEdiTnJ2V3JMVHRyZmRCMjI1bWVETHlsZkVCdE40djF2UU1EbGduVVpsMHRIRU1nTEwtakJyUVFBdWdVLTNhYlVEZjRqQjNSSkk?oc=5" data-title="AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） - Yahoo!ニュース" data-genre="IT業界">
+<a id="article-30ad5a1de7a34fea" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5QTmlmS1lDd0V6Um9wVmVKRlhQUzRqOGtfXzhpc19JZEZDN2JPTkJKTVZFdW1nZEdiTnJ2V3JMVHRyZmRCMjI1bWVETHlsZkVCdE40djF2UU1EbGduVVpsMHRIRU1nTEwtakJyUVFBdWdVLTNhYlVEZjRqQjNSSkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE5QTmlmS1lDd0V6Um9wVmVKRlhQUzRqOGtfXzhpc19JZEZDN2JPTkJKTVZFdW1nZEdiTnJ2V3JMVHRyZmRCMjI1bWVETHlsZkVCdE40djF2UU1EbGduVVpsMHRIRU1nTEwtakJyUVFBdWdVLTNhYlVEZjRqQjNSSkk?oc=5" data-title="AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） - Yahoo!ニュース" data-genre="IT業界">
   <img class="thumb" src="assets/thumbs/f691c3f113618606.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 10:43</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） - Yahoo!ニュース</h3>
+    <h3>AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan）</h3>
     <p class="summary-text">AMDとMicrosoft、戦略的パートナーシップ拡大（EE Times Japan） Yahoo!ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Microsoft｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a>
-<a id="article-77b0b3655c74781d" class="card tone-tech" href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5yY2c0Z2Rhb1FuZVhzTVdzdGJFakVFUVg2clkxZEMwdUIxUmEyOXYzMF9tWXVGbEdJUWNTRkVnNHpISWxyZk82RmstSm1DS05ZOThLS21nZDgwcUdIRFZMSEIxOUlhSHhTcjVqLV9DeXQ3NE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ - innovaTopiaを読む" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTE5yY2c0Z2Rhb1FuZVhzTVdzdGJFakVFUVg2clkxZEMwdUIxUmEyOXYzMF9tWXVGbEdJUWNTRkVnNHpISWxyZk82RmstSm1DS05ZOThLS21nZDgwcUdIRFZMSEIxOUlhSHhTcjVqLV9DeXQ3NE0?oc=5" data-title="Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ - innovaTopia" data-genre="IT業界">
+<a id="article-77b0b3655c74781d" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5yY2c0Z2Rhb1FuZVhzTVdzdGJFakVFUVg2clkxZEMwdUIxUmEyOXYzMF9tWXVGbEdJUWNTRkVnNHpISWxyZk82RmstSm1DS05ZOThLS21nZDgwcUdIRFZMSEIxOUlhSHhTcjVqLV9DeXQ3NE0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ - innovaTopiaを読む" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTE5yY2c0Z2Rhb1FuZVhzTVdzdGJFakVFUVg2clkxZEMwdUIxUmEyOXYzMF9tWXVGbEdJUWNTRkVnNHpISWxyZk82RmstSm1DS05ZOThLS21nZDgwcUdIRFZMSEIxOUlhSHhTcjVqLV9DeXQ3NE0?oc=5" data-title="Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ - innovaTopia" data-genre="IT業界">
   <img class="thumb" src="assets/thumbs/59664e9975fc4556.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>innovaTopia · 10:17</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ - innovaTopia</h3>
+    <h3>Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ</h3>
     <p class="summary-text">Microsoft初のサイバーAIモデル、9割を小型で処理し防御コスト半減へ innovaTopia</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・Microsoft｜注目度 61点｜出典: innovaTopia</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
@@ -944,36 +953,40 @@ dd {
     <h2 id="政治">政治</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-1b09f2df0bf58219" class="card tone-civic" href="https://news.google.com/rss/articles/CBMickFVX3lxTFBWMUw4WUNBWXNoVjI1SnYza3ZUbHVhUWRZa09NTFZUUkJpc21pSzVxU0FuSl9KRFJRclFLejc1SjJoRFh4bnRyUWo4TllMYm9hX2dKNlY4Sl8xSlpiclJmWnMzeTlkRXZ2bmExU1RVLWZWZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="令和８年熊本地震非常災害対策本部会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTFBWMUw4WUNBWXNoVjI1SnYza3ZUbHVhUWRZa09NTFZUUkJpc21pSzVxU0FuSl9KRFJRclFLejc1SjJoRFh4bnRyUWo4TllMYm9hX2dKNlY4Sl8xSlpiclJmWnMzeTlkRXZ2bmExU1RVLWZWZw?oc=5" data-title="令和８年熊本地震非常災害対策本部会議 - 首相官邸" data-genre="政治">
+  <div class="grid"><a id="article-1b09f2df0bf58219" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTFBWMUw4WUNBWXNoVjI1SnYza3ZUbHVhUWRZa09NTFZUUkJpc21pSzVxU0FuSl9KRFJRclFLejc1SjJoRFh4bnRyUWo4TllMYm9hX2dKNlY4Sl8xSlpiclJmWnMzeTlkRXZ2bmExU1RVLWZWZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="令和８年熊本地震非常災害対策本部会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTFBWMUw4WUNBWXNoVjI1SnYza3ZUbHVhUWRZa09NTFZUUkJpc21pSzVxU0FuSl9KRFJRclFLejc1SjJoRFh4bnRyUWo4TllMYm9hX2dKNlY4Sl8xSlpiclJmWnMzeTlkRXZ2bmExU1RVLWZWZw?oc=5" data-title="令和８年熊本地震非常災害対策本部会議 - 首相官邸" data-genre="政治">
   <img class="thumb" src="assets/thumbs/f2e009b516fe0bae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>首相官邸 · 12:43</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>一次情報</span> <span>公式発表</span> <span>要注意</span></div>
-    <h3>令和８年熊本地震非常災害対策本部会議 - 首相官邸</h3>
+    <h3>令和８年熊本地震非常災害対策本部会議</h3>
     <p class="summary-text">令和８年熊本地震非常災害対策本部会議 首相官邸</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜注目度 100点｜出典: 首相官邸</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
   </div>
 </a></div>
 </details>
 <details class="genre tone-civic" open>
   <summary class="genre-head">
     <h2 id="社会">社会</h2>
-    <span>1 topics</span>
+    <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-04b21685e698caa7" class="card tone-civic" href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" data-title="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータル" data-genre="社会">
+  <div class="grid"><a id="article-04b21685e698caa7" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTFBtUVVvTV9NNjlMM3FSMkNxQ3pZSHRuQnpKcFVhbWc5S1ZWUy1hV1JXa2VpUkFVOWhJZzMyVGxYcV9UbUNOczNzVlJ1RHBSTHVLckJ5Uk1YZDY4QlRpOWJWbXVsb0o0WXN0R2RmSWpIbzBjaGlpQXhDN18tVQ?oc=5" data-title="「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータル" data-genre="社会">
   <img class="thumb" src="assets/thumbs/c617684ff8391523.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 12:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 - au Webポータル</h3>
+    <h3>「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒</h3>
     <p class="summary-text">「令和8年熊本地震」 夜になっても地震活動は活発 しばらくは強い揺れに警戒 au Webポータル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜注目度 100点｜出典: au Webポータル</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
+  </div>
+</a>
+<a id="article-7955629f1be28122" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IRG1MOHVuZVZyeXl6YXRudkdfRllDbjVWak9ESkJyVGVoQkx3ckNtaXlMVDhkaEEzbVZEWVdWLWM1V1VQZlJld0tGRFE4VGhPcmVDS1JjWEx5MU1mU1JDUmVNckNpUGs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IRG1MOHVuZVZyeXl6YXRudkdfRllDbjVWak9ESkJyVGVoQkx3ckNtaXlMVDhkaEEzbVZEWVdWLWM1V1VQZlJld0tGRFE4VGhPcmVDS1JjWEx5MU1mU1JDUmVNckNpUGs?oc=5" data-title="死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] - 朝日新聞" data-genre="社会">
+  <img class="thumb" src="assets/thumbs/3ae69012145507e4.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>朝日新聞 · 09:32</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県]</h3>
+    <p class="summary-text">死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] 朝日新聞</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a></div>
 </details>
@@ -982,82 +995,64 @@ dd {
     <h2 id="事件・事故">事件・事故</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-be400cb357cc2132" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUWJtbkthQlJFTkZ4anNpS25nNmgyTjhzU2ROcnFTZnF2U1NPZHZxek1IMGN2akdWUkdLSC1NUjB1dm0wMjBkd2paY1BFemhmelNFdzFuSGVCYTJZZERj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUWJtbkthQlJFTkZ4anNpS25nNmgyTjhzU2ROcnFTZnF2U1NPZHZxek1IMGN2akdWUkdLSC1NUjB1dm0wMjBkd2paY1BFemhmelNFdzFuSGVCYTJZZERj?oc=5" data-title="東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 - NHKニュース" data-genre="事件・事故">
+  <div class="grid"><a id="article-be400cb357cc2132" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUWJtbkthQlJFTkZ4anNpS25nNmgyTjhzU2ROcnFTZnF2U1NPZHZxek1IMGN2akdWUkdLSC1NUjB1dm0wMjBkd2paY1BFemhmelNFdzFuSGVCYTJZZERj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE0yUWJtbkthQlJFTkZ4anNpS25nNmgyTjhzU2ROcnFTZnF2U1NPZHZxek1IMGN2akdWUkdLSC1NUjB1dm0wMjBkd2paY1BFemhmelNFdzFuSGVCYTJZZERj?oc=5" data-title="東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 - NHKニュース" data-genre="事件・事故">
   <img class="thumb" src="assets/thumbs/b5dc4237a1184269.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 12:19</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 - NHKニュース</h3>
+    <h3>東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検</h3>
     <p class="summary-text">東京 小金井 小1プール死亡事故で元学童責任者ら4人を書類送検 NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>事故｜注目度 70点｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-3bac7f0f5c847ebf" class="card tone-safety" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPMGZzYWF4eFFjWUd4VGlmNEFmS3czNjRsWUxmcF9sV2gwS1NuSmdyLVlUNnY4eVNoSFBxUnFZLVk1OFVCb19BemJWTFhSeWhTcHljbk9fNmlKSzAzMWlqXzNRX19fWm0tcnZQeUxFOFNpTk9RSzZVSlRfVXk5X0lrdWpBcmVoMms?oc=5" rel="noopener noreferrer" target="_blank" aria-label="北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPMGZzYWF4eFFjWUd4VGlmNEFmS3czNjRsWUxmcF9sV2gwS1NuSmdyLVlUNnY4eVNoSFBxUnFZLVk1OFVCb19BemJWTFhSeWhTcHljbk9fNmlKSzAzMWlqXzNRX19fWm0tcnZQeUxFOFNpTk9RSzZVSlRfVXk5X0lrdWpBcmVoMms?oc=5" data-title="北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN - 日テレNEWS NNN" data-genre="事件・事故">
+<a id="article-3bac7f0f5c847ebf" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPMGZzYWF4eFFjWUd4VGlmNEFmS3czNjRsWUxmcF9sV2gwS1NuSmdyLVlUNnY4eVNoSFBxUnFZLVk1OFVCb19BemJWTFhSeWhTcHljbk9fNmlKSzAzMWlqXzNRX19fWm0tcnZQeUxFOFNpTk9RSzZVSlRfVXk5X0lrdWpBcmVoMms?oc=5" rel="noopener noreferrer" target="_blank" aria-label="北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPMGZzYWF4eFFjWUd4VGlmNEFmS3czNjRsWUxmcF9sV2gwS1NuSmdyLVlUNnY4eVNoSFBxUnFZLVk1OFVCb19BemJWTFhSeWhTcHljbk9fNmlKSzAzMWlqXzNRX19fWm0tcnZQeUxFOFNpTk9RSzZVSlRfVXk5X0lrdWpBcmVoMms?oc=5" data-title="北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN - 日テレNEWS NNN" data-genre="事件・事故">
   <img class="thumb" src="assets/thumbs/6f9cf6f40549bcd5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 11:05</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN - 日テレNEWS NNN</h3>
+    <h3>北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）｜STV NEWS NNN</h3>
     <p class="summary-text">北海道稚内市の海域でナマコ密漁9人目の逮捕者 容疑者の役割などを捜査（2026年7月28日掲載）</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜注目度 70点｜出典: 日テレNEWS NNN</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-7955629f1be28122" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IRG1MOHVuZVZyeXl6YXRudkdfRllDbjVWak9ESkJyVGVoQkx3ckNtaXlMVDhkaEEzbVZEWVdWLWM1V1VQZlJld0tGRFE4VGhPcmVDS1JjWEx5MU1mU1JDUmVNckNpUGs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IRG1MOHVuZVZyeXl6YXRudkdfRllDbjVWak9ESkJyVGVoQkx3ckNtaXlMVDhkaEEzbVZEWVdWLWM1V1VQZlJld0tGRFE4VGhPcmVDS1JjWEx5MU1mU1JDUmVNckNpUGs?oc=5" data-title="死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] - 朝日新聞" data-genre="事件・事故">
-  <img class="thumb" src="assets/thumbs/7c521f0c21eeb53b.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>朝日新聞 · 09:32</span><span class="read-state">未読</span></div>
-    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] - 朝日新聞</h3>
-    <p class="summary-text">死亡ひき逃げ容疑で逮捕 事故前に飲酒？ 「話したくない」と供述 [神奈川県] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜注目度 70点｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-65415ce71af4dea7" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZFlyUl9zc19yQUo0Y2J0SWFhQ2FzQVZudThGTlctWlJTd1NxY1piQTBLaU1pcjdYLUw5SWdKSzBpd2ZGemVTeURiZnVVc1hhWXRTaGUwYldGRmk3Vk9Z?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZFlyUl9zc19yQUo0Y2J0SWFhQ2FzQVZudThGTlctWlJTd1NxY1piQTBLaU1pcjdYLUw5SWdKSzBpd2ZGemVTeURiZnVVc1hhWXRTaGUwYldGRmk3Vk9Z?oc=5" data-title="女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市 - TBS NEWS DIG" data-genre="事件・事故">
+<a id="article-65415ce71af4dea7" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZFlyUl9zc19yQUo0Y2J0SWFhQ2FzQVZudThGTlctWlJTd1NxY1piQTBLaU1pcjdYLUw5SWdKSzBpd2ZGemVTeURiZnVVc1hhWXRTaGUwYldGRmk3Vk9Z?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZFlyUl9zc19yQUo0Y2J0SWFhQ2FzQVZudThGTlctWlJTd1NxY1piQTBLaU1pcjdYLUw5SWdKSzBpd2ZGemVTeURiZnVVc1hhWXRTaGUwYldGRmk3Vk9Z?oc=5" data-title="女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市 - TBS NEWS DIG" data-genre="事件・事故">
   <img class="thumb" src="assets/thumbs/0ff4f1616cefbd4c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 08:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市 - TBS NEWS DIG</h3>
+    <h3>女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無くなる 男は容疑をおおむね認める 青森県弘前市</h3>
     <p class="summary-text">女性が現金の入った手提げかばんを奪われた事件 警察が強盗の疑いで41歳の男を逮捕 捜査でかばん発見 現金は一部が無…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜注目度 70点｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
   </div>
 </a>
-<a id="article-38177051b4b5edc1" class="card tone-safety" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9JeU00eGJNVTFCTVR6eTg0c0tiQzIyR29CUkFDUnlGVC1Oc1IzZDUtUndxalVtVnNfaTdxcU5Rb0xlX19XQ0Y3QVF5UHBKU1laN1lhekJ5YkxnRjJqUEdnTUI3b0xlYjdiTDhKeXRR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 - カナロコを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTE9JeU00eGJNVTFCTVR6eTg0c0tiQzIyR29CUkFDUnlGVC1Oc1IzZDUtUndxalVtVnNfaTdxcU5Rb0xlX19XQ0Y3QVF5UHBKU1laN1lhekJ5YkxnRjJqUEdnTUI3b0xlYjdiTDhKeXRR?oc=5" data-title="静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 - カナロコ" data-genre="事件・事故">
+<a id="article-38177051b4b5edc1" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9JeU00eGJNVTFCTVR6eTg0c0tiQzIyR29CUkFDUnlGVC1Oc1IzZDUtUndxalVtVnNfaTdxcU5Rb0xlX19XQ0Y3QVF5UHBKU1laN1lhekJ5YkxnRjJqUEdnTUI3b0xlYjdiTDhKeXRR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 - カナロコを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTE9JeU00eGJNVTFCTVR6eTg0c0tiQzIyR29CUkFDUnlGVC1Oc1IzZDUtUndxalVtVnNfaTdxcU5Rb0xlX19XQ0Y3QVF5UHBKU1laN1lhekJ5YkxnRjJqUEdnTUI3b0xlYjdiTDhKeXRR?oc=5" data-title="静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 - カナロコ" data-genre="事件・事故">
   <img class="thumb" src="assets/thumbs/c3e4192c0e435e03.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>カナロコ · 12:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 - カナロコ</h3>
+    <h3>静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕</h3>
     <p class="summary-text">静岡・沼津のアパートで覚醒剤所持 合同捜査本部、容疑で男２人を再逮捕 カナロコ</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜注目度 67点｜出典: カナロコ</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a>
-<a id="article-089afccdf4f923b9" class="card tone-safety" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE14UDNYekFWYlI1SlRDdXpmSHMyUVptMWdPV0ljbnFjdHdmZk9naWVCZUpKZDBRYVhZallQT05lZGdPbjVraXlfLWhBaktxWS1JRWVhaEVoZ0VNM2Z2MWlWcTU0VnQ3RlhqWDdFcVNET1AwUEw0NFhjMDU1eWVPVHc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE14UDNYekFWYlI1SlRDdXpmSHMyUVptMWdPV0ljbnFjdHdmZk9naWVCZUpKZDBRYVhZallQT05lZGdPbjVraXlfLWhBaktxWS1JRWVhaEVoZ0VNM2Z2MWlWcTU0VnQ3RlhqWDdFcVNET1AwUEw0NFhjMDU1eWVPVHc?oc=5" data-title="【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - Yahoo!ニュース" data-genre="事件・事故">
+<a id="article-089afccdf4f923b9" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE14UDNYekFWYlI1SlRDdXpmSHMyUVptMWdPV0ljbnFjdHdmZk9naWVCZUpKZDBRYVhZallQT05lZGdPbjVraXlfLWhBaktxWS1JRWVhaEVoZ0VNM2Z2MWlWcTU0VnQ3RlhqWDdFcVNET1AwUEw0NFhjMDU1eWVPVHc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE14UDNYekFWYlI1SlRDdXpmSHMyUVptMWdPV0ljbnFjdHdmZk9naWVCZUpKZDBRYVhZallQT05lZGdPbjVraXlfLWhBaktxWS1JRWVhaEVoZ0VNM2Z2MWlWcTU0VnQ3RlhqWDdFcVNET1AwUEw0NFhjMDU1eWVPVHc?oc=5" data-title="【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - Yahoo!ニュース" data-genre="事件・事故">
   <img class="thumb" src="assets/thumbs/73e7baddf02523fa.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 11:43</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉 - Yahoo!ニュース</h3>
+    <h3>【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5人乗りゴムボート転覆で1人死亡〈北海道稚内市〉</h3>
     <p class="summary-text">【逮捕者は9人に】ナマコ密漁事件で逃走していた自称・自動車販売業の57歳男を逮捕…警察が役割を捜査_事件発覚前に5…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜注目度 67点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-e3ca7bb7b3f13456" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1zb2cwN2xjcTVrSzNibTFGSmlETy1sMXNoS05vQkZyR0dyaTRWTlFzTzJPaVRNYUFMNVU1NmJPRlNFOFhOaGtSVWhpbWltTE9NUmNRVm5jR3BhWi1leWtFc1doY2dXVFpoYUphVlc0eFZSYzNtRVRjZlNlcw" rel="noopener noreferrer" target="_blank" aria-label="神戸市西区の交差点、軽ワゴン車と衝突したバイクの男性死亡 軽ワゴン車運転の男を逮捕|交通事故 - 神戸新聞を読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE1zb2cwN2xjcTVrSzNibTFGSmlETy1sMXNoS05vQkZyR0dyaTRWTlFzTzJPaVRNYUFMNVU1NmJPRlNFOFhOaGtSVWhpbWltTE9NUmNRVm5jR3BhWi1leWtFc1doY2dXVFpoYUphVlc0eFZSYzNtRVRjZlNlcw" data-title="神戸市西区の交差点、軽ワゴン車と衝突したバイクの男性死亡 軽ワゴン車運転の男を逮捕|交通事故 - 神戸新聞" data-genre="事件・事故">
+  <img class="thumb" src="assets/thumbs/fc44f29328725bac.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>神戸新聞 · 11:25</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>神戸市西区の交差点、軽ワゴン車と衝突したバイクの男性死亡 軽ワゴン車運転の男を逮捕|交通事故</h3>
+    <p class="summary-text">神戸市西区の交差点、軽ワゴン車と衝突したバイクの男性死亡 軽ワゴン車運転の男を逮捕</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
   </div>
 </a></div>
 </details>
@@ -1066,30 +1061,24 @@ dd {
     <h2 id="国際">国際</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-8c5bba6386591fa4" class="card tone-civic" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" data-title="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュース" data-genre="国際">
+  <div class="grid"><a id="article-8c5bba6386591fa4" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBSaHAzcDRoajdxQkd3Mkh6a2JyVjVPUWJLeEtXakhLdmFqbjByY3lfZEg4TVlFQk02T244WFpEU0Nqa0JhdGpLdkhLa3N2R2xMODNoYkMyNHU1SUdBcVJsMFUyZkhaU1otQ0ZRV0t0TUdlLTM5eTJRbWRRQkk5dnM?oc=5" data-title="熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュース" data-genre="国際">
   <img class="thumb" src="assets/thumbs/db52d7d9dde8e992.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 12:22</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） - Yahoo!ニュース</h3>
+    <h3>熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞）</h3>
     <p class="summary-text">熊本震度7、海外メディアも速報 訪日客や半導体製造で関心高く（毎日新聞） Yahoo!ニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>熊本震度7・海外メディアも速報・訪日客や半導体製造で関心高く（毎日新聞）｜注目度 100点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
   </div>
 </a>
-<a id="article-8988bee74f480413" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXdkpHZUFJdERZdFhuUi1Nb1l0ZTZKZ2lGT2hyODYtYk1tR29LVVpITkVid21kSTZTWXQ1bFJaU1ZmMlRtWWZiT2JaZXY2SDZtS3NrTHJqODlET1pqQ0dfb0Zn" rel="noopener noreferrer" target="_blank" aria-label="熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に - 読売新聞を読む" data-url="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXdkpHZUFJdERZdFhuUi1Nb1l0ZTZKZ2lGT2hyODYtYk1tR29LVVpITkVid21kSTZTWXQ1bFJaU1ZmMlRtWWZiT2JaZXY2SDZtS3NrTHJqODlET1pqQ0dfb0Zn" data-title="熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に - 読売新聞" data-genre="国際">
+<a id="article-8988bee74f480413" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXdkpHZUFJdERZdFhuUi1Nb1l0ZTZKZ2lGT2hyODYtYk1tR29LVVpITkVid21kSTZTWXQ1bFJaU1ZmMlRtWWZiT2JaZXY2SDZtS3NrTHJqODlET1pqQ0dfb0Zn" rel="noopener noreferrer" target="_blank" aria-label="熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に - 読売新聞を読む" data-url="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXdkpHZUFJdERZdFhuUi1Nb1l0ZTZKZ2lGT2hyODYtYk1tR29LVVpITkVid21kSTZTWXQ1bFJaU1ZmMlRtWWZiT2JaZXY2SDZtS3NrTHJqODlET1pqQ0dfb0Zn" data-title="熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に - 読売新聞" data-genre="国際">
   <img class="thumb" src="assets/thumbs/4e234a5caf78701d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>読売新聞 · 11:17</span><span class="read-state">未読</span></div>
-    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>複数社で確認</span> <span>要注意</span> <span>独立2媒体</span></div>
-    <h3>熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に - 読売新聞</h3>
+    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>複数社で確認</span> <span>要注意</span></div>
+    <h3>熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に</h3>
     <p class="summary-text">熊本地震、海外メディアが一斉に速報…中国のＳＮＳでは「日本地震」が検索ワード１位に 読売新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜独立2媒体｜注目度 95点｜出典: 読売新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 95点</span></p>
   </div>
 </a></div>
 </details>
@@ -1098,49 +1087,30 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-2e9f6cf1a32991ef" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1rNng1Vl9qTFgtTUxSWW1WQUZsV3hsTU9QMUdiWjZmRm41Tkt1YjFTWHZXb3RscW1oYUdJUDhBOHVKUkd3eUdwd1g1eGNZRTJoVlBjQW1lNDFtN2VXVTZGN0RRWklfdk55MHdmdGRXX1dwVVppYldEbGxvS0ptZUE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1rNng1Vl9qTFgtTUxSWW1WQUZsV3hsTU9QMUdiWjZmRm41Tkt1YjFTWHZXb3RscW1oYUdJUDhBOHVKUkd3eUdwd1g1eGNZRTJoVlBjQW1lNDFtN2VXVTZGN0RRWklfdk55MHdmdGRXX1dwVVppYldEbGxvS0ptZUE?oc=5" data-title="「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） - Yahoo!ニュース" data-genre="ゲーム">
+  <div class="grid"><a id="article-2e9f6cf1a32991ef" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1rNng1Vl9qTFgtTUxSWW1WQUZsV3hsTU9QMUdiWjZmRm41Tkt1YjFTWHZXb3RscW1oYUdJUDhBOHVKUkd3eUdwd1g1eGNZRTJoVlBjQW1lNDFtN2VXVTZGN0RRWklfdk55MHdmdGRXX1dwVVppYldEbGxvS0ptZUE?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1rNng1Vl9qTFgtTUxSWW1WQUZsV3hsTU9QMUdiWjZmRm41Tkt1YjFTWHZXb3RscW1oYUdJUDhBOHVKUkd3eUdwd1g1eGNZRTJoVlBjQW1lNDFtN2VXVTZGN0RRWklfdk55MHdmdGRXX1dwVVppYldEbGxvS0ptZUE?oc=5" data-title="「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） - Yahoo!ニュース" data-genre="ゲーム">
   <img class="thumb" src="assets/thumbs/f34e9a0a8d8c2324.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 08:44</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） - Yahoo!ニュース</h3>
+    <h3>「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN）</h3>
     <p class="summary-text">「ゲームの貸し借り」なくなる？中古ソフトも消える？プレステ新作ゲームのディスク生産を終了へ（BCN） Yahoo!…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>終了｜注目度 61点｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>
 <details class="genre tone-money" open>
   <summary class="genre-head">
     <h2 id="経済">経済</h2>
-    <span>2 topics</span>
+    <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-df62782af3fb8460" class="card tone-money" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNDNwelFSNHFhQkRxcHVZR1VnbU4yWXdyNTRYLUVnaFJ5eUdKcVpyekJjMUxTamdYWVEtWG9pRUVzNGpmMm5QaTZudG5RcUxpSF9fZFdyaTRrZURjLVlGRTZuRWV6MTdXVktYSFAtRG9SZG40WWJ2NE5CbW93V2tsR0hFYjZ2YXFPZGRn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="今週は忙しい展開に - 企業決算とFRBの方針転換が焦点 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNDNwelFSNHFhQkRxcHVZR1VnbU4yWXdyNTRYLUVnaFJ5eUdKcVpyekJjMUxTamdYWVEtWG9pRUVzNGpmMm5QaTZudG5RcUxpSF9fZFdyaTRrZURjLVlGRTZuRWV6MTdXVktYSFAtRG9SZG40WWJ2NE5CbW93V2tsR0hFYjZ2YXFPZGRn?oc=5" data-title="今週は忙しい展開に - 企業決算とFRBの方針転換が焦点 - Moomoo" data-genre="経済">
+  <div class="grid"><a id="article-df62782af3fb8460" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNDNwelFSNHFhQkRxcHVZR1VnbU4yWXdyNTRYLUVnaFJ5eUdKcVpyekJjMUxTamdYWVEtWG9pRUVzNGpmMm5QaTZudG5RcUxpSF9fZFdyaTRrZURjLVlGRTZuRWV6MTdXVktYSFAtRG9SZG40WWJ2NE5CbW93V2tsR0hFYjZ2YXFPZGRn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="今週は忙しい展開に - 企業決算とFRBの方針転換が焦点 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNDNwelFSNHFhQkRxcHVZR1VnbU4yWXdyNTRYLUVnaFJ5eUdKcVpyekJjMUxTamdYWVEtWG9pRUVzNGpmMm5QaTZudG5RcUxpSF9fZFdyaTRrZURjLVlGRTZuRWV6MTdXVktYSFAtRG9SZG40WWJ2NE5CbW93V2tsR0hFYjZ2YXFPZGRn?oc=5" data-title="今週は忙しい展開に - 企業決算とFRBの方針転換が焦点 - Moomoo" data-genre="経済">
   <img class="thumb" src="assets/thumbs/82479ce1ec0cf5f0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 10:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>今週は忙しい展開に - 企業決算とFRBの方針転換が焦点 - Moomoo</h3>
+    <h3>今週は忙しい展開に - 企業決算とFRBの方針転換が焦点</h3>
     <p class="summary-text">今週は忙しい展開に</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算｜注目度 61点｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
-  </div>
-</a>
-<a id="article-c9defc321608601f" class="card tone-money" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iamFNV0VqZ2Z6TnA3QW9HTldYQVJQVUtUb3dIUlFXQko4QlJHRlVUaGFnY3FzbDN6bEk3SmhxM3M1TS1zdjVfN0RTbFpLZXdqTXlZbUJn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【本日の注目決算】日東電、ヒューリック、スクリン、カプコン、シマノ、大特鋼―7月28日決算星取表 - QUICK Money Worldを読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iamFNV0VqZ2Z6TnA3QW9HTldYQVJQVUtUb3dIUlFXQko4QlJHRlVUaGFnY3FzbDN6bEk3SmhxM3M1TS1zdjVfN0RTbFpLZXdqTXlZbUJn?oc=5" data-title="【本日の注目決算】日東電、ヒューリック、スクリン、カプコン、シマノ、大特鋼―7月28日決算星取表 - QUICK Money World" data-genre="経済">
-  <img class="thumb" src="assets/thumbs/ef87b1dc6140f45a.svg" alt="" loading="lazy">
-  <div class="card-body">
-    <div class="meta"><span>QUICK Money World · 09:09</span><span class="read-state">未読</span></div>
-    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>【本日の注目決算】日東電、ヒューリック、スクリン、カプコン、シマノ、大特鋼―7月28日決算星取表 - QUICK Money World</h3>
-    <p class="summary-text">【本日の注目決算】日東電、ヒューリック、スクリン、カプコン、シマノ、大特鋼―7月28日決算星取表 QUICK Mo…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算｜注目度 61点｜出典: QUICK Money World</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
   </div>
 </a></div>
 </details>

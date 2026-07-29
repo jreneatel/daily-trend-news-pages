@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -742,69 +793,54 @@ dd {
     <h2 id="AI">AI</h2>
     <span>5 topics</span>
   </summary>
-  <div class="grid"><a id="article-d2ac44853754ebce" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" data-title="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース" data-genre="AI">
+  <div class="grid"><a id="article-d2ac44853754ebce" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTE9ZR09sb3dwUk9ZQ2toMlpjUzFubUktcndYTVMzSWRDQ2h4QWJ3QnU3N3dkRkN6R3VwRVR1MDFieDZNdHNVaEJ6VXZRS2ZFSm1ycV9HbUljZ2I4VFhWUlAwZC1SZTVENkYxbFFFblpGQnhQbVhXRWc?oc=5" data-title="「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/6dba8c7c569af736.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 14:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応 - ニコニコニュース</h3>
+    <h3>「Third AI 生成AIソリューション」、最新のGPT-5.6群に対応</h3>
     <p class="summary-text">「Third AI 生成AIソリューション」、最新のGPT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>生成AI｜出典: ニコニコニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-5df5483e563b302b" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="AI">
+<a id="article-5df5483e563b302b" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/f0ea983ce8068bee.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース</h3>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT）</h3>
     <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋I…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・公開｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-584ef7376b6a1ac1" class="card tone-tech" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース" data-genre="AI">
+<a id="article-584ef7376b6a1ac1" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMijgFBVV95cUxQWjE1SXVmbk1nV0xkVWVfSmxpZnJST09ESmVXeFMtV1ZLbkdfdEpoMElieEtXRzlWdkJId3lVd0FvbHlmYjRGbXpGa3d6RE44TWhHUmNCc3VVb0Y5bWd0Z2U5a290b1BhWE1ubDBvRzNIVkpVWFpFUjBsdHBKNmFOalk0NlEwcG9mVy1qR0Fn?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/86bdbb514e69762b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT) - Yahoo!ニュース</h3>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋IT)</h3>
     <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開 (ビジネス＋…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・公開｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-259dd1a49ec072ed" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" data-title="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース" data-genre="AI">
+<a id="article-259dd1a49ec072ed" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hYVliYUYwdXpDSndyNUE4eVh3SVUtd3dZc2k3dnRaMUt5d09CNHQ1SXJDN3paMWlUWEU5cFZuMXpFUXdiX0Y5b250ZzlpSERPWWE3Ng?oc=5" data-title="ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/4f8c05db25e3c1ef.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 14:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応 - ニコニコニュース</h3>
+    <h3>ナレコムAI Chatbot、OpenAIの最新モデル「GPT-5.6 Sol」「GPT-5.6 Terra」「GPT-5.6 Luna」に対応</h3>
     <p class="summary-text">ナレコムAI Chatbot、OpenAIの最新モデル「GPT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI｜出典: ニコニコニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-621aca2039c7eb9d" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" data-title="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース" data-genre="AI">
+<a id="article-621aca2039c7eb9d" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ka21tODNzTEZ0SzVoZEw0M0d5WlBPSlRBRjFlVF9KRm80OE1wM1NjVF9vTGhGTHM2dFRGdTV1ek9YS2U3dXlsS0tQYS1TNGFzTXRTbG9jNnlPcFh1SWRCLTRzSERCM3lzWVlnVVU2aF9DdTYxZENqcE9BeDZCcnc?oc=5" data-title="「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/bab721dc29c51699.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:05</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） - Yahoo!ニュース</h3>
+    <h3>「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜）</h3>
     <p class="summary-text">「Wireshark 4.6.7」、12件の脆弱性を修正 ～AI支援の脆弱性報告が増加傾向（窓の杜） Yahoo!…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>脆弱性・AI｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -813,43 +849,34 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-86ea29b572d9c4d8" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KILL IT #2 - ABEMAを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" data-title="KILL IT #2 - ABEMA" data-genre="IT業界">
+  <div class="grid"><a id="article-86ea29b572d9c4d8" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KILL IT #2 - ABEMAを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tYm5ramM1czZ5d3poMjFzZm9zUWdvcGwybUZuLXY2am9PWDBVXzNmUlNBMFJjdDBkcDBMOXVXRUZWQUo2T0hQbEFwcWtfR3pHMmRFVS1KY3BkSjhDMnVKbm90NGg?oc=5" data-title="KILL IT #2 - ABEMA" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/6c28511877765af5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ABEMA · 14:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>KILL IT #2 - ABEMA</h3>
+    <h3>KILL IT #2</h3>
     <p class="summary-text">KILL IT #2 ABEMA</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>KILL・IT・#2｜出典: ABEMA</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-5df5483e563b302b" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="IT業界">
+<a id="article-5df5483e563b302b" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE81TWYwVHdhQWJfNF83dWFsMTZyNzlBN2dIenV2T05haTg4UFNNS1FKUU5hTWVvUk4xSlNiYk4wMjBQUkNsd0tCMU50RlZ1X2N1cGdPZGJZOG1YNXo2VE1TN04ybnFyU1dUTGJiSmlLX2w3RzAxVk96ZjhSUno3eDQ?oc=5" data-title="OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/de88203c23e646bf.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:40</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT） - Yahoo!ニュース</h3>
+    <h3>OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋IT）</h3>
     <p class="summary-text">OpenAI、最新モデル「GPT-5.6」と自律型エージェント「ChatGPT Work」を一般公開（ビジネス＋I…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>OpenAI・公開｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-ecedd02ac66ad404" class="card tone-tech" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="IT業界">
+<a id="article-ecedd02ac66ad404" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/70736b9c85687caa.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 14:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</h3>
+    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に</h3>
     <p class="summary-text">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>中国A株「両創板」の時価総額比率が3割超え・テクノロジー投資がバリュー投資の新たな座標軸に｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -858,82 +885,64 @@ dd {
     <h2 id="政治">政治</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-1103f602b6889a33" class="card tone-civic" href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHKを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" data-title="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK" data-genre="政治">
+  <div class="grid"><a id="article-1103f602b6889a33" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHKを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTFA0T290RlJDUnRKUS13bjdZb2ZKMGdBdVZUd2JqTEZMaXFqWnNYUldPc1g3MjNzMmY1Ull1Tzk2eWdMU0ZuQ1hzYXNkZTltR0daQktMT0JPVVdZSy1UV016ekdJWTQtSWxaWmkwVi1qRFVNWDR0b1RZ?oc=5" data-title="英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/42f1b8c54acded27.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHK · 14:56</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」 - NHK</h3>
+    <h3>英 スターマー首相が辞意表明 - ニュースで学ぶ「現代英語」</h3>
     <p class="summary-text">英 スターマー首相が辞意表明</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>スターマー首相が辞意表明・ニュースで学ぶ「現代英語」｜出典: NHK</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-24e3da10286147cc" class="card tone-civic" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" data-title="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治">
+<a id="article-24e3da10286147cc" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" rel="noopener noreferrer" target="_blank" aria-label="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞を読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE4wZE16d180NmY3cDNWalJrdVJfZE9fQXcwUHVoU0JDWnVZLWR0S1oxdkpVcWZPOXhYX3ZkaTIyYUJqZzAwRzN2OGJsN1RES1NnOWY5Q0prTGlZUkFyWjJSazdfWVhteElrNFdoUTAxeHRkdmhDckdLc1MxdnHSAXxBVV95cUxOMGRNendfNDZmN3AzVmpSa3VSX2RPX0F3MFB1aFNCQ1p1WS1kdEtaMXZKVXFmTzl4WF92ZGkyMmFCamcwMEczdjhibDdUREtTZzlmOUNKa0xpWVJBcloyUms3X1lYbXhJazRXaFEwMXh0ZHZoQ3JHS3NTMXZx?oc=5" data-title="韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/94c9666e1710184f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>四国新聞 · 14:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊 - 四国新聞</h3>
+    <h3>韓鶴子総裁に懲役１３年求刑 政治資金事件｜四国新聞WEB朝刊</h3>
     <p class="summary-text">韓鶴子総裁に懲役１３年求刑 政治資金事件</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>韓鶴子総裁に懲役１３年求刑・政治資金事件｜四国新聞WEB朝刊｜出典: 四国新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>四国新聞WEB朝刊</span></p>
   </div>
 </a>
-<a id="article-ca0c32828bc00af2" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 豊田経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" data-title="皇室典範改正案、今国会成立へ - 豊田経済新聞" data-genre="政治">
+<a id="article-ca0c32828bc00af2" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 豊田経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1VSlVxTi1UTU50YkFVVTZZdkRhYTFmOG1rQ1dFc21PaUs0MENmVnltZEl1R0lkNE02OG9LT3NUUV9QdVZRUzBRNFNnUVAxUEswM3o0?oc=5" data-title="皇室典範改正案、今国会成立へ - 豊田経済新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/18ee90aceceda1a4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>豊田経済新聞 · 14:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>皇室典範改正案、今国会成立へ - 豊田経済新聞</h3>
+    <h3>皇室典範改正案、今国会成立へ</h3>
     <p class="summary-text">皇室典範改正案、今国会成立へ 豊田経済新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>皇室典範改正案・今国会成立へ｜出典: 豊田経済新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-d8b9f32d25305e77" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" rel="noopener noreferrer" target="_blank" aria-label="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" data-title="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル" data-genre="政治">
+<a id="article-d8b9f32d25305e77" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" rel="noopener noreferrer" target="_blank" aria-label="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタルを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbE1aY0JhTndTaEVLd3FPS05WamFwSV9FSy1xQkExeG5DTi1jTGlCemxMMkJWeUM1M1FLTmNzYWxWUWJLOEVNcUsxZWpsdEZGYWVDUExHZTZSd1pLVUZxbnFMdWJ0Vng5ZUticXZQYklxQ3Y4LTk1MzkyNXE2T2NjUVN5X0lRSEtm?oc=5" data-title="洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/41a545bbeb41bf47.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>北海道新聞デジタル · 14:25</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 - 北海道新聞デジタル</h3>
+    <h3>洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及</h3>
     <p class="summary-text">洪明甫前監督、国会聴聞会出席へ 韓国サッカー協会、選考経緯追及 北海道新聞デジタル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>洪明甫前監督・国会聴聞会出席へ・韓国サッカー協会｜出典: 北海道新聞デジタル</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-0035f1c52f7f4b05" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 和歌山経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" data-title="皇室典範改正案、今国会成立へ - 和歌山経済新聞" data-genre="政治">
+<a id="article-0035f1c52f7f4b05" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、今国会成立へ - 和歌山経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWUjdqVUdCTzk2Q0lrVGNwMFYtS0ozRHY1czBhSjM5NmRabVB3R3kyLUVPNUpZUmJFaWZHYzZPRXk4UThNZnNsZ2lKTHhFSkpReWZUblpn?oc=5" data-title="皇室典範改正案、今国会成立へ - 和歌山経済新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/ed43ff63aa6638a9.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>和歌山経済新聞 · 14:24</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
-    <h3>皇室典範改正案、今国会成立へ - 和歌山経済新聞</h3>
+    <h3>皇室典範改正案、今国会成立へ</h3>
     <p class="summary-text">皇室典範改正案、今国会成立へ 和歌山経済新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>皇室典範改正案・今国会成立へ｜出典: 和歌山経済新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-f9f5e96d838c6d24" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" data-title="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG" data-genre="政治">
+<a id="article-f9f5e96d838c6d24" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1wMDkyNlNxeWxwR0xKQU1JTWV0UUdGODBETWtWdm5JeEYtb0VxQUpLNk1OQVgzeFA3c1ZjNnFEd3k4RHNQb1BVNjJqWmdIeHBGc3Zpd3dKSQ?oc=5" data-title="中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/0037ed688084bd16.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 14:17</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え - TBS NEWS DIG</h3>
+    <h3>中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え</h3>
     <p class="summary-text">中国の習近平国家主席と北朝鮮首相が会談 「戦略的協力の強化を」習主席が訴え TBS NEWS DIG</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>中国の習近平国家主席と北朝鮮首相が会談・「戦略的協力の強化を」習主席が訴え｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -942,82 +951,64 @@ dd {
     <h2 id="経済">経済</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-b7302c338f232c13" class="card tone-money" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" data-title="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス" data-genre="経済">
+  <div class="grid"><a id="article-b7302c338f232c13" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPVlJiNU1MdlA2VWFMcjZJak9HaFdWLWdVc29qaXlEcjdCeVI3OW14N09rNHk5NlBROFZXZUhjOHdJWU5saEhjX2U1UGN4WHlFdnpVcTQzUjFNLW0ta3hCYUN5RXhMYURvTGM5ZjR4ZWNIbW1pSUtDVmUxZkppNmpuUnRyRG0yc1k?oc=5" data-title="ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/c70202e2d42d6f52.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ファイナンス · 14:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) - Yahoo!ファイナンス</h3>
+    <h3>ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース)</h3>
     <p class="summary-text">ＳＫハイニックスのＡＤＲの気配 １７７ドルに＝米国株個別速報(株探ニュース) Yahoo!ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>ＳＫハイニックスのＡＤＲの気配・１７７ドルに＝米国株個別速報(株探ニュース)｜出典: Yahoo!ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-3b745aa1eb4465e4" class="card tone-money" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" data-title="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo" data-genre="経済">
+<a id="article-3b745aa1eb4465e4" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB6S0NaS3h5X0VoWWJaT1FzLTJ6ckpPdzRfVXhheG0wN0ZTX2h4eTU5WkpfejVXMUN3ZW1qWnV3YUhfcUJUcVB6VjZyQ3E3T3NGNWtaNWIxdnlZMVRfVmNlSlhya0JoWGc?oc=5" data-title="来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/39cf7c112e55ac1f.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 13:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？ - Moomoo</h3>
+    <h3>来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石！AI半導体相場は再加速か？</h3>
     <p class="summary-text">来週の決算･経済カレンダー(7/13~7/17)TSMC・ASML決算、米CPI・ウォーシュFRB議長証言が試金石…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・AI｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-6a3d704c911abab6" class="card tone-money" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" rel="noopener noreferrer" target="_blank" aria-label="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" data-title="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス" data-genre="経済">
+<a id="article-6a3d704c911abab6" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" rel="noopener noreferrer" target="_blank" aria-label="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTFBvakZ0YXZZemRyU0I2MVlTRXEwOVNlODVBWkJ0YmtBTjNfSlQtRHZEX2M0QW0xNzlUc2tqU2t3bDhBNGFzWEE3Z3VDNG9iQndILXgxbHdPeGExd2pRTXItajZ1VEJ2NmZiTjNEd0ZoUFYyQjFF?oc=5" data-title="日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/d01269b915590577.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:36</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか - BigGo ファイナンス</h3>
+    <h3>日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか</h3>
     <p class="summary-text">日銀、経済見通し上方修正・物価予測下方修正へ、7月利上げは見送りか BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>利上げ｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-1c1aba046b923066" class="card tone-money" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【住宅建設許可】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" data-title="加経済指標【住宅建設許可】 - みんかぶ FX/為替" data-genre="経済">
+<a id="article-1c1aba046b923066" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【住宅建設許可】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTE55akxnVTJKTGhRZ1dzQUV4TkhhM3czVVNVOVlMclhFWnRsb2hjN21zWUl1SU03aG5mMUdTX3VrOVJfeXdkTUJaSw?oc=5" data-title="加経済指標【住宅建設許可】 - みんかぶ FX/為替" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/4b56916a23c7aba8.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>みんかぶ FX/為替 · 12:31</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>加経済指標【住宅建設許可】 - みんかぶ FX/為替</h3>
+    <h3>加経済指標【住宅建設許可】</h3>
     <p class="summary-text">加経済指標【住宅建設許可】 みんかぶ FX/為替</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>為替｜出典: みんかぶ FX/為替</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>為替</span></p>
   </div>
 </a>
-<a id="article-86c018ccb0146963" class="card tone-money" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【雇用統計】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" data-title="加経済指標【雇用統計】 - みんかぶ FX/為替" data-genre="経済">
+<a id="article-86c018ccb0146963" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="加経済指標【雇用統計】 - みんかぶ FX/為替を読む" data-url="https://news.google.com/rss/articles/CBMiSEFVX3lxTFBCdnNrZDdDT2REUVowNmJLNmZKUTBWeVVBUEY0Wmd4TjItUk5zWWVCZXd5RDlxSDJxQ2ZqRndlTkRLOEI3eXdsMA?oc=5" data-title="加経済指標【雇用統計】 - みんかぶ FX/為替" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/0d6e4f209e5ab96e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>みんかぶ FX/為替 · 12:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>加経済指標【雇用統計】 - みんかぶ FX/為替</h3>
+    <h3>加経済指標【雇用統計】</h3>
     <p class="summary-text">加経済指標【雇用統計】 みんかぶ FX/為替</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>為替｜出典: みんかぶ FX/為替</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>為替</span></p>
   </div>
 </a>
-<a id="article-2f6bddc780e44657" class="card tone-money" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.comを読む" data-url="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" data-title="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com" data-genre="経済">
+<a id="article-2f6bddc780e44657" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.comを読む" data-url="https://news.google.com/rss/articles/CBMitgFBVV95cUxONzlhMHJPaTR4NFdhNk9NREN2NGNhYXd4MHdRMGUyb3dVd1FsZmEtTUlvMlUzUUhZSlgyVDFzS1M1TkR4ekUxaTZNaC1YODU0T3FLZW85X080ZDZoT0lha0RLeE1sU3VWWFR4TVBFVFh1OHJuTExKakp6OTZrQlN1TFhpcHp3UmFtZFJyQ1dXcXQzbVN5SnZTZU5WOXhZRUdDYTdWY01MWDFtYTdDQ2lmSjRIcmpoUQ?oc=5" data-title="マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/de68e6bf8e96788a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>seikyoonline.com · 12:27</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 - seikyoonline.com</h3>
+    <h3>マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示</h3>
     <p class="summary-text">マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示 seikyoonline.com</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>マレーシアの経済学者アジズ氏を巡って創価大学でセミナーと特別展示｜出典: seikyoonline.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -1026,82 +1017,64 @@ dd {
     <h2 id="ライフ">ライフ</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-955c16a19ffab21b" class="card tone-life" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ">
+  <div class="grid"><a id="article-955c16a19ffab21b" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/6e68a18943827239.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>simplywall.st · 14:52</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？</h3>
     <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>味の素（東証・2802）は・栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？｜出典: simplywall.st</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-955c16a19ffab21b" class="card tone-life" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ">
+<a id="article-955c16a19ffab21b" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/6e68a18943827239.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>simplywall.st · 14:51</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？</h3>
     <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>味の素（東証・2802）は・栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？｜出典: simplywall.st</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-39a68018b30f3caa" class="card tone-life" href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!を読む" data-url="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" data-title="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!" data-genre="ライフ">
+<a id="article-39a68018b30f3caa" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!を読む" data-url="https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGJxNUNvbG5JNzdJSXdRc0dRMGctekh6X3VmaUR1eUxjRW43M045MWNyeWtrSFNUamotdFNaVnhwbi1Ua3ZWSzVTREdYOXdrcDhsNHd3OEcyMjN5Z1pYcncwODNOdFR1WXpXWlA0UXkxblRPUk1LSHJRUHE2MHBGcmFYUzQ?oc=5" data-title="『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/c9e0a6710f81ba06.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>carview! · 14:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー - carview!</h3>
+    <h3>『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー</h3>
     <p class="summary-text">『正に生活の足』 ダイハツ ミライース e:s34さんさんのレビュー carview!</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>『正に生活の足』・ダイハツ・ミライース｜出典: carview!</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-b54abc141ea5705c" class="card tone-life" href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" data-title="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース" data-genre="ライフ">
+<a id="article-b54abc141ea5705c" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュースを読む" data-url="https://news.google.com/rss/articles/CBMidkFVX3lxTFB1NnRWNDBCblJETHNnUXJPcm9NMzZEUjFGQlMtQ2E5WjVsTTBsRHBoTklUM2pPdDEzWWxHNzdXU2lzZlhETi1ralJSWFdmOTQ1SUpjdDVZSlFmU0gxQjZOWnVpc2twME9ONkp6SktuN3VLQ1FtWmc?oc=5" data-title="横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/5f81ef25c3cd52ed.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ニコニコニュース · 14:48</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ - ニコニコニュース</h3>
+    <h3>横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ</h3>
     <p class="summary-text">横浜モアーズ屋上「モアーズBBQビアガーデン」にて、『ビームス ライフ ニコニコニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>横浜モアーズ屋上「モアーズBBQビアガーデン」にて・『ビームス・ライフ｜出典: ニコニコニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-af36061e80042dc9" class="card tone-life" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社を読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" data-title="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社" data-genre="ライフ">
+<a id="article-af36061e80042dc9" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社を読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBqclUwOW1QRS1YX3dZR0QtdkozcllhZDBkLWZXenVYMG1qcEU5NklDSGYtY0ZCQzhlVHdscjlYa2c5UVZRc0lGSGNqLUVjbW5pVVNKcklQVmUtQQ?oc=5" data-title="いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/9ca168aa36eb24ae.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>いわき民報社 · 14:47</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に - いわき民報社</h3>
+    <h3>いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に</h3>
     <p class="summary-text">いわき市 健康づくりの参加者募集 常磐・ゆったり館を会場に いわき民報社</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>いわき市・健康づくりの参加者募集・常磐・ゆったり館を会場に｜出典: いわき民報社</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-01c7b6117caa855b" class="card tone-life" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.netを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" data-title="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net" data-genre="ライフ">
+<a id="article-01c7b6117caa855b" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.netを読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fWUd1TVdrSHVaM09faWhta3FFeVRLNk9DUm1Ecm9pV3F5U3BhYnA5QnAxTGYyUE9WVzZDNUJiLUV4aEV0eFlxNERfNVE4Wkk?oc=5" data-title="「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/06554f472bf3ad46.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nakamura-hiroshi.net · 14:19</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>「地域あんしん健康フェア」を見学しました。 - nakamura-hiroshi.net</h3>
+    <h3>「地域あんしん健康フェア」を見学しました。</h3>
     <p class="summary-text">「地域あんしん健康フェア」を見学しました。</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>「地域あんしん健康フェア」を見学しました。・nakamura｜出典: nakamura-hiroshi.net</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>「地域あんしん健康フェア」を見学しました。・nakamura</span></p>
   </div>
 </a></div>
 </details>
@@ -1110,82 +1083,64 @@ dd {
     <h2 id="科学">科学</h2>
     <span>6 topics</span>
   </summary>
-  <div class="grid"><a id="article-955c16a19ffab21b" class="card tone-science" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学">
+  <div class="grid"><a id="article-955c16a19ffab21b" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMirAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs0gGsAUFVX3lxTE1admFDODAtdVlFbVd6RHZ0MUI1T1h2Qk9lUlFKLVhkOUdkekgxT1ZrcFJoYWF0MVdPSXZUdG9naHpqblRrOUZia29HY2FzNGlSWlhVSE1YcjNGZWs3WGhHM0ZfUV9NVk9BQzJDU0xwOVlkeWZjZjhOWWRsMGVMTnlXVUdrLXBBUW1id3JXUy1aWm1TNG5sVnZmb01RNVgxNU5NUjFVaUtva1NETGw?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/95f1ea40aa537483.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>simplywall.st · 14:52</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？</h3>
     <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>味の素（東証・2802）は・栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？｜出典: simplywall.st</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-42f867215cd618de" class="card tone-science" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報を読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" data-title="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報" data-genre="科学">
+<a id="article-42f867215cd618de" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報を読む" data-url="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1BWk9NNzFrRllKdFNyOUFyQ1U4Znk3STNKakRNY2xrVzhNNDFBNF9aSGlTNGJaYlRSOXVyQ0hUa05fZlJIMXItOVNFbVpjRGc?oc=5" data-title="KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/e822be79f6eb075d.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>美術館・アート情報 · 14:51</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 - 美術館・アート情報</h3>
+    <h3>KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」</h3>
     <p class="summary-text">KIT Miyauchi 02｜篠藤碧空「シノトー・イモータル・センター 死ぬのがこわい！美術研究所」 美術館・ア…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>KIT・Miyauchi・02｜篠藤碧空「シノトー・イモータル・センター｜出典: 美術館・アート情報</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>篠藤碧空「シノトー・イモータル・センター</span></p>
   </div>
 </a>
-<a id="article-955c16a19ffab21b" class="card tone-science" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学">
+<a id="article-955c16a19ffab21b" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.stを読む" data-url="https://news.google.com/rss/articles/CBMipwFBVV95cUxPTGdSMjFxOGp3d1FiaFVoTXlYbjN0bDdRZnFqd3I4RFpUSlVqVDVUMk1nOVR1bDdfMVprNk5qNG1fSkt0Q1dCd2RIaVdhbnllN0o5WGdmR29BbGtYMElGVXZKYVBFU0tnbmZXRFdwLS1MSFhSZVhsdnp2ZC1xbnlWb1prSE5zaWtfZ0hxZ0ZSdDdxX3l3SjBmYlh2MFNoUFM1WVJHUDhlUdIBrAFBVV95cUxNWnZhQzgwLXVZRW1XekR2dDFCNU9YdkJPZVJRSi1YZDlHZHpIMU9Wa3BSaGFhdDFXT0l2VHRvZ2h6am5UazlGYmtvR2NhczRpUlpYVUhNWHIzRmVrN1hoRzNGX1FfTVZPQUMyQ1NMcDlZZHlmY2Y4TllkbDBlTE55V1VHay1wQVFtYndyV1MtWlptUzRubFZ2Zm9NUTVYMTVOTVIxVWlLb2tTRExs?oc=5" data-title="味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/95f1ea40aa537483.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>simplywall.st · 14:51</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ - simplywall.st</h3>
+    <h3>味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？</h3>
     <p class="summary-text">味の素（東証：2802）は、栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？ simply…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>味の素（東証・2802）は・栄養科学を健康志向食品における持続的な競争優位性へと転換しつつあるのか？｜出典: simplywall.st</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象者、医療機関・公的機関の根拠、適用時期と注意事項を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-ecedd02ac66ad404" class="card tone-science" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="科学">
+<a id="article-ecedd02ac66ad404" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9fdTA4UUIyTW9oc0RZdlZCMnAxOVBmY3Y2YUVkS0JmdS1PNFZ4MFowYXJDb3ZlZGlOSkNHT0RDaVBuR1Y1ajFnTFhmc1V0S0lGVm54T1R2YlJMR1RvUUYtUE9GVmJFUXVKRXZEMXYwMzQ3VHlJ?oc=5" data-title="中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/3c707d49d92f6e5c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 14:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に - BigGo ファイナンス</h3>
+    <h3>中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に</h3>
     <p class="summary-text">中国A株「両創板」の時価総額比率が3割超え、テクノロジー投資がバリュー投資の新たな座標軸に BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>中国A株「両創板」の時価総額比率が3割超え・テクノロジー投資がバリュー投資の新たな座標軸に｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-2c2103245009f2d6" class="card tone-science" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" data-title="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ" data-genre="科学">
+<a id="article-2c2103245009f2d6" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE92aVBLcFRTZFRQTEVBS1BZdG1MeWo0VHlZTWVMOFJKZXh2ZVJGYWI3ajZwejZ4LXF3anIyLTEwdkFsSUx6MU9lUlZrOF9JaHk4aGFmbklGVWE4NmxaV0xYVHd2SS1iLUtnV0dv?oc=5" data-title="【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/420e56858c79ebb4.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>アニメイトタイムズ · 14:34</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱 - アニメイトタイムズ</h3>
+    <h3>【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGEST」を熱唱</h3>
     <p class="summary-text">【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン インフィニティ』主題歌「LOVE IS THE STRONGE…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>【アニサマ2026】May&#x27;n『超宇宙刑事ギャバン・インフィニティ』主題歌「LOVE・IS｜出典: アニメイトタイムズ</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-1687e308d8d69cf2" class="card tone-science" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" data-title="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース" data-genre="科学">
+<a id="article-1687e308d8d69cf2" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFBuaXg4MzFCOFluemltNmpFcW01UUlvTDRpYW1jQzdSYklrcWZNSTNiWjNndnpwdldHZkFOUk5veWQ0eXFHV1JiRGxGV3JtblpFM1Vpc0Nkbks3VGpEZk1MOVk2NnNGMlA3UmNLSlBWaVMzaWlFNXg4V0x1NXBjdDQ?oc=5" data-title="「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース" data-genre="科学">
   <img class="thumb" src="../assets/thumbs/1271ec3278f98e53.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 14:21</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>科学</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN） - Yahoo!ニュース</h3>
+    <h3>「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS NNN）</h3>
     <p class="summary-text">「幸福の科学」製作の番組がBPO審議入り KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS N…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>「幸福の科学」製作の番組がBPO審議入り・KBS京都や群馬テレビなど全国の8つのテレビ局が放送（日テレNEWS・NNN）｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>

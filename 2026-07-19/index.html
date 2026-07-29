@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -742,43 +793,34 @@ dd {
     <h2 id="AI">AI</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-ef4b162764aa1eec" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINEを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5" data-title="Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINE" data-genre="AI">
+  <div class="grid"><a id="article-ef4b162764aa1eec" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINEを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2REZOaTV1YWpYSVB4QlFCTFFEMi0wU1BrR1RoOEpCd2NvTjZ2SURtSzB2c0xUdXNzYUttSzNQbHdOaWI1ZGMwT3lIWmNFbzd2eHRqS1dDMmdIdGMxV3cyOVlERXdvZw?oc=5" data-title="Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINE" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/330e3352fa2b4549.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>GIGAZINE · 12:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
-    <h3>Claude Fable 5が一部のサブスクプランで使用可能に - GIGAZINE</h3>
+    <h3>Claude Fable 5が一部のサブスクプランで使用可能に</h3>
     <p class="summary-text">Claude Fable 5が一部のサブスクプランで使用可能に GIGAZINE</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜出典: GIGAZINE</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-031750e3a30853fd" class="card tone-tech" href="https://news.google.com/rss/articles/CBMi-wNBVV95cUxOdzUxY2xiYTZ3aWxReUE4ZVNXTThjektUMXJmelh0VHgwaFgyTVdlYjFiTXd6Q3MwdUk0ZUZUd1ozTVJqRE9rVUhhMUN0WEZEVERNdURCSUtmU1RvVnZfbVZ4Uzh5WVc0bjBuQWQ3eWxTSTY4WHZOMTA4M0l2bXJ1cmFFd05tNm9TWGFUaHNfd2VqRkFmaDlYOWF4bmtIU2pzOXJGbTB3TnpXUjdYelozMHpBb1dFdk9TZDM2YlVWQ3pWWi10dTcwZkpTN0ZaMDB6Zi14UGNGMHYzdmFSMDlGWVE3RXE2RjEwSFN0QXdKd2lrZU1HMVhfQ2k3X0RfSVpzclNFYjRBak5XTk9mT3A2RjZHc0xqcndtdDRpV1p6bk1YaW5qdkk5X1NhTEZDVWZNNnlKNXd1S042N1VrQzF5QlFyUy1fX1gzQmZKWTBWbW4yMkVTNDRHREZ6M25sZlFTb1lZVy1hNzJuR0tVeURCb0dWeHhDNS14ZXBpWFltTkdVb0VjREF0Q2lJMWZTY0dVZ082WC1xNjNfbFdBUFE0dm5adGNNa05OVnFhNHZSTk54Z3hEaWllWVBHQ0tpcEN3SXBzeEJyYTV5VFB2SDhfNHN3ZF9kT1RWSkZHaXN5NTB5clA3enBKRHEwUjdnSDZVWTZSbFNJTWs5Ymc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi-wNBVV95cUxOdzUxY2xiYTZ3aWxReUE4ZVNXTThjektUMXJmelh0VHgwaFgyTVdlYjFiTXd6Q3MwdUk0ZUZUd1ozTVJqRE9rVUhhMUN0WEZEVERNdURCSUtmU1RvVnZfbVZ4Uzh5WVc0bjBuQWQ3eWxTSTY4WHZOMTA4M0l2bXJ1cmFFd05tNm9TWGFUaHNfd2VqRkFmaDlYOWF4bmtIU2pzOXJGbTB3TnpXUjdYelozMHpBb1dFdk9TZDM2YlVWQ3pWWi10dTcwZkpTN0ZaMDB6Zi14UGNGMHYzdmFSMDlGWVE3RXE2RjEwSFN0QXdKd2lrZU1HMVhfQ2k3X0RfSVpzclNFYjRBak5XTk9mT3A2RjZHc0xqcndtdDRpV1p6bk1YaW5qdkk5X1NhTEZDVWZNNnlKNXd1S042N1VrQzF5QlFyUy1fX1gzQmZKWTBWbW4yMkVTNDRHREZ6M25sZlFTb1lZVy1hNzJuR0tVeURCb0dWeHhDNS14ZXBpWFltTkdVb0VjREF0Q2lJMWZTY0dVZ082WC1xNjNfbFdBUFE0dm5adGNNa05OVnFhNHZSTk54Z3hEaWllWVBHQ0tpcEN3SXBzeEJyYTV5VFB2SDhfNHN3ZF9kT1RWSkZHaXN5NTB5clA3enBKRHEwUjdnSDZVWTZSbFNJTWs5Ymc?oc=5" data-title="「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN" data-genre="AI">
+<a id="article-031750e3a30853fd" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMi-wNBVV95cUxOdzUxY2xiYTZ3aWxReUE4ZVNXTThjektUMXJmelh0VHgwaFgyTVdlYjFiTXd6Q3MwdUk0ZUZUd1ozTVJqRE9rVUhhMUN0WEZEVERNdURCSUtmU1RvVnZfbVZ4Uzh5WVc0bjBuQWQ3eWxTSTY4WHZOMTA4M0l2bXJ1cmFFd05tNm9TWGFUaHNfd2VqRkFmaDlYOWF4bmtIU2pzOXJGbTB3TnpXUjdYelozMHpBb1dFdk9TZDM2YlVWQ3pWWi10dTcwZkpTN0ZaMDB6Zi14UGNGMHYzdmFSMDlGWVE3RXE2RjEwSFN0QXdKd2lrZU1HMVhfQ2k3X0RfSVpzclNFYjRBak5XTk9mT3A2RjZHc0xqcndtdDRpV1p6bk1YaW5qdkk5X1NhTEZDVWZNNnlKNXd1S042N1VrQzF5QlFyUy1fX1gzQmZKWTBWbW4yMkVTNDRHREZ6M25sZlFTb1lZVy1hNzJuR0tVeURCb0dWeHhDNS14ZXBpWFltTkdVb0VjREF0Q2lJMWZTY0dVZ082WC1xNjNfbFdBUFE0dm5adGNNa05OVnFhNHZSTk54Z3hEaWllWVBHQ0tpcEN3SXBzeEJyYTV5VFB2SDhfNHN3ZF9kT1RWSkZHaXN5NTB5clA3enBKRHEwUjdnSDZVWTZSbFNJTWs5Ymc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSNを読む" data-url="https://news.google.com/rss/articles/CBMi-wNBVV95cUxOdzUxY2xiYTZ3aWxReUE4ZVNXTThjektUMXJmelh0VHgwaFgyTVdlYjFiTXd6Q3MwdUk0ZUZUd1ozTVJqRE9rVUhhMUN0WEZEVERNdURCSUtmU1RvVnZfbVZ4Uzh5WVc0bjBuQWQ3eWxTSTY4WHZOMTA4M0l2bXJ1cmFFd05tNm9TWGFUaHNfd2VqRkFmaDlYOWF4bmtIU2pzOXJGbTB3TnpXUjdYelozMHpBb1dFdk9TZDM2YlVWQ3pWWi10dTcwZkpTN0ZaMDB6Zi14UGNGMHYzdmFSMDlGWVE3RXE2RjEwSFN0QXdKd2lrZU1HMVhfQ2k3X0RfSVpzclNFYjRBak5XTk9mT3A2RjZHc0xqcndtdDRpV1p6bk1YaW5qdkk5X1NhTEZDVWZNNnlKNXd1S042N1VrQzF5QlFyUy1fX1gzQmZKWTBWbW4yMkVTNDRHREZ6M25sZlFTb1lZVy1hNzJuR0tVeURCb0dWeHhDNS14ZXBpWFltTkdVb0VjREF0Q2lJMWZTY0dVZ082WC1xNjNfbFdBUFE0dm5adGNNa05OVnFhNHZSTk54Z3hEaWllWVBHQ0tpcEN3SXBzeEJyYTV5VFB2SDhfNHN3ZF9kT1RWSkZHaXN5NTB5clA3enBKRHEwUjdnSDZVWTZSbFNJTWs5Ymc?oc=5" data-title="「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/4ab306f0bb6d779c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>MSN · 14:28</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に - MSN</h3>
+    <h3>「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に</h3>
     <p class="summary-text">「機密情報を無断で送信」中国当局がClaude Codeにバックドア疑惑、 アリババは使用禁止に MSN</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Claude｜出典: MSN</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-18b48523a1dc038d" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxLU9LSUctY2NseHNlREoyUmh1VnRIdDd0ZWphWlVZWGVpSlNoMWNhVXhVWTZCQUdDdmgybEZTaXdtOXBQU1VBeXVGZjNKdWsxYmxNbjlIVWI0TWpzNnFJX2QwR25fdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japaneseを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxLU9LSUctY2NseHNlREoyUmh1VnRIdDd0ZWphWlVZWGVpSlNoMWNhVXhVWTZCQUdDdmgybEZTaXdtOXBQU1VBeXVGZjNKdWsxYmxNbjlIVWI0TWpzNnFJX2QwR25fdw?oc=5" data-title="「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese" data-genre="AI">
+<a id="article-18b48523a1dc038d" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxLU9LSUctY2NseHNlREoyUmh1VnRIdDd0ZWphWlVZWGVpSlNoMWNhVXhVWTZCQUdDdmgybEZTaXdtOXBQU1VBeXVGZjNKdWsxYmxNbjlIVWI0TWpzNnFJX2QwR25fdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japaneseを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxLU9LSUctY2NseHNlREoyUmh1VnRIdDd0ZWphWlVZWGVpSlNoMWNhVXhVWTZCQUdDdmgybEZTaXdtOXBQU1VBeXVGZjNKdWsxYmxNbjlIVWI0TWpzNnFJX2QwR25fdw?oc=5" data-title="「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/71ce5c2408e96914.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>CGTN Japanese · 13:08</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
-    <h3>「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 - CGTN Japanese</h3>
+    <h3>「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表</h3>
     <p class="summary-text">「AIエージェントサービスの健全な発展に向けた法の支配に関する10原則」白書が発表 CGTN Japanese</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>AI・発表｜出典: CGTN Japanese</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -787,17 +829,14 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-1931805892baf5cb" class="card tone-tech" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" data-title="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo" data-genre="IT業界">
+  <div class="grid"><a id="article-1931805892baf5cb" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomooを読む" data-url="https://news.google.com/rss/articles/CBMisAFBVV95cUxPZUdYZngydlVmdmxOOFNnSEZLcGphZ0dsUXpRQnZVU2RaV3NUOFU0akdpOHN5bnF2ZW9FeWFLd25oTlY5cVg4ZVhaN19MeTRoS3dJc3Ywclh6QW9GNjZlejZKMS1kOXhEeGdGYW9HSHN2MllUUmcwc2ZXZDR0cmdKY0lxQlVOZWZnTkVOYlBJdnBDdGhBZS1PQVFzZ0VpbHllVVFOaGgyUUNnTnpyTUpMRQ?oc=5" data-title="Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/8de1feaa27c3fb2e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Moomoo · 11:59</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 - Moomoo</h3>
+    <h3>Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用</h3>
     <p class="summary-text">Xpeng、スマートドライビングのグローバル展開に向けGoogle Mapsを採用 Moomoo</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>Google｜出典: Moomoo</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -806,43 +845,34 @@ dd {
     <h2 id="政治">政治</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-eb1f1fd62f331af1" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWN0VsWDl6R09xTDRuMENyZDNrVkhOSHYydEJWRndNbFN1VktudzVKZ0xYZEsyN0ZfR0d5ckpCM3JKZk9aZ1NFQVpOTDJQOGg2LWdqY0VWbVJQNHFQQjJUY1U4bUxKNm8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWN0VsWDl6R09xTDRuMENyZDNrVkhOSHYydEJWRndNbFN1VktudzVKZ0xYZEsyN0ZfR0d5ckpCM3JKZk9aZ1NFQVpOTDJQOGg2LWdqY0VWbVJQNHFQQjJUY1U4bUxKNm8?oc=5" data-title="副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞" data-genre="政治">
+  <div class="grid"><a id="article-eb1f1fd62f331af1" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWN0VsWDl6R09xTDRuMENyZDNrVkhOSHYydEJWRndNbFN1VktudzVKZ0xYZEsyN0ZfR0d5ckpCM3JKZk9aZ1NFQVpOTDJQOGg2LWdqY0VWbVJQNHFQQjJUY1U4bUxKNm8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWN0VsWDl6R09xTDRuMENyZDNrVkhOSHYydEJWRndNbFN1VktudzVKZ0xYZEsyN0ZfR0d5ckpCM3JKZk9aZ1NFQVpOTDJQOGg2LWdqY0VWbVJQNHFQQjJUY1U4bUxKNm8?oc=5" data-title="副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/26a7f5a04918e3b1.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:55</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] - 朝日新聞</h3>
+    <h3>副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党]</h3>
     <p class="summary-text">副首都法案、今国会の成立「不要」60% 大阪府でも5割 朝日世論 [国旗損壊罪 高市早苗総理 自民党] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-f89ef6da713e9da4" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93Qjd0cV9raG5ic1ZQUS11U0JHajAzblNuQktWVEZQeE1nRjlSMnBPWm9CNTFQb0ZiVExhRmgxUFZxMVFDRldXbkcxWTViZ2R1cnR3aEZXWlVpamRsR2FMX2Q2MU9VLXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93Qjd0cV9raG5ic1ZQUS11U0JHajAzblNuQktWVEZQeE1nRjlSMnBPWm9CNTFQb0ZiVExhRmgxUFZxMVFDRldXbkcxWTViZ2R1cnR3aEZXWlVpamRsR2FMX2Q2MU9VLXc?oc=5" data-title="東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞" data-genre="政治">
+<a id="article-f89ef6da713e9da4" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93Qjd0cV9raG5ic1ZQUS11U0JHajAzblNuQktWVEZQeE1nRjlSMnBPWm9CNTFQb0ZiVExhRmgxUFZxMVFDRldXbkcxWTViZ2R1cnR3aEZXWlVpamRsR2FMX2Q2MU9VLXc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93Qjd0cV9raG5ic1ZQUS11U0JHajAzblNuQktWVEZQeE1nRjlSMnBPWm9CNTFQb0ZiVExhRmgxUFZxMVFDRldXbkcxWTViZ2R1cnR3aEZXWlVpamRsR2FMX2Q2MU9VLXc?oc=5" data-title="東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/cc96b8c4b1f32d28.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 13:37</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] - 朝日新聞</h3>
+    <h3>東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都]</h3>
     <p class="summary-text">東京・あきる野市長に臼井氏 市政継承訴え初当選、自民・公明が推薦 [東京都] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>東京・あきる野市長に臼井氏・市政継承訴え初当選・自民・公明が推薦｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-070fbebce460f3e8" class="card tone-civic" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPajZKYjVLdHBxOWNhMy1SdlprYnQyRjF0cnhiMmhVUWlGQldDeW9uSXNUYWNRLTFvSGdMX3pwT2hOSU8yQmxmZ0pjUjZydHE3bGpTV251QnEwVXFSMmUwT0wtZ3J5QUg3Mzd6WndoaUlLRDdNOWJBaEF0ZmRkeTBDVkNXVEtPVEk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPajZKYjVLdHBxOWNhMy1SdlprYnQyRjF0cnhiMmhVUWlGQldDeW9uSXNUYWNRLTFvSGdMX3pwT2hOSU8yQmxmZ0pjUjZydHE3bGpTV251QnEwVXFSMmUwT0wtZ3J5QUg3Mzd6WndoaUlLRDdNOWJBaEF0ZmRkeTBDVkNXVEtPVEk?oc=5" data-title="国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞" data-genre="政治">
+<a id="article-070fbebce460f3e8" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPajZKYjVLdHBxOWNhMy1SdlprYnQyRjF0cnhiMmhVUWlGQldDeW9uSXNUYWNRLTFvSGdMX3pwT2hOSU8yQmxmZ0pjUjZydHE3bGpTV251QnEwVXFSMmUwT0wtZ3J5QUg3Mzd6WndoaUlLRDdNOWJBaEF0ZmRkeTBDVkNXVEtPVEk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxPajZKYjVLdHBxOWNhMy1SdlprYnQyRjF0cnhiMmhVUWlGQldDeW9uSXNUYWNRLTFvSGdMX3pwT2hOSU8yQmxmZ0pjUjZydHE3bGpTV251QnEwVXFSMmUwT0wtZ3J5QUg3Mzd6WndoaUlLRDdNOWJBaEF0ZmRkeTBDVkNXVEtPVEk?oc=5" data-title="国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/57c7411a9dbdca9b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 09:31</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] - 毎日新聞</h3>
+    <h3>国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9]</h3>
     <p class="summary-text">国会前でデモ 改憲の動きなどに抗議の声 [写真特集1/9] 毎日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>国会前でデモ・改憲の動きなどに抗議の声・[写真特集1｜出典: 毎日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -851,43 +881,34 @@ dd {
     <h2 id="社会">社会</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-0c9dbecb998eb00a" class="card tone-civic" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE41VWw0Tnc2cVRxT0FhMWhFRDFiVnI4ZXpmT2dQTlZYeFlfdzU3X1gzQV9CenhHWi1mckVGTHNpUFhEN3BEaU5GMk5sSjFZcUc0bjRrcUFlMEJXbENXTWkyZnZtaS1lVlhYX0V3MTFXYU1NaTZibkV5eWREWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE41VWw0Tnc2cVRxT0FhMWhFRDFiVnI4ZXpmT2dQTlZYeFlfdzU3X1gzQV9CenhHWi1mckVGTHNpUFhEN3BEaU5GMk5sSjFZcUc0bjRrcUFlMEJXbENXTWkyZnZtaS1lVlhYX0V3MTFXYU1NaTZibkV5eWREWQ?oc=5" data-title="栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータル" data-genre="社会">
+  <div class="grid"><a id="article-0c9dbecb998eb00a" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE41VWw0Tnc2cVRxT0FhMWhFRDFiVnI4ZXpmT2dQTlZYeFlfdzU3X1gzQV9CenhHWi1mckVGTHNpUFhEN3BEaU5GMk5sSjFZcUc0bjRrcUFlMEJXbENXTWkyZnZtaS1lVlhYX0V3MTFXYU1NaTZibkV5eWREWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE41VWw0Tnc2cVRxT0FhMWhFRDFiVnI4ZXpmT2dQTlZYeFlfdzU3X1gzQV9CenhHWi1mckVGTHNpUFhEN3BEaU5GMk5sSjFZcUc0bjRrcUFlMEJXbENXTWkyZnZtaS1lVlhYX0V3MTFXYU1NaTZibkV5eWREWQ?oc=5" data-title="栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータル" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/36349f3c61eff125.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 12:16</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 - au Webポータル</h3>
+    <h3>栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認</h3>
     <p class="summary-text">栃木・足利市の土砂崩れ 倒壊した家屋から心肺停止の60代男性発見 その後死亡確認 au Webポータル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>停止・死亡｜出典: au Webポータル</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-5a871772f6fe36da" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WQmFtRG1nUi1oRC14RDZoN0pqekMtN3ZZVVBiZWtFeGhEY2tGWU1vWjJWRkN5ZVVSeVR5YlJHU3A2NXB5UmtRTjBJOWlRTTAyZkx2dmJINk5BUmJoSC1sOVJYS1RaZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANEを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WQmFtRG1nUi1oRC14RDZoN0pqekMtN3ZZVVBiZWtFeGhEY2tGWU1vWjJWRkN5ZVVSeVR5YlJHU3A2NXB5UmtRTjBJOWlRTTAyZkx2dmJINk5BUmJoSC1sOVJYS1RaZw?oc=5" data-title="【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE" data-genre="社会">
+<a id="article-5a871772f6fe36da" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WQmFtRG1nUi1oRC14RDZoN0pqekMtN3ZZVVBiZWtFeGhEY2tGWU1vWjJWRkN5ZVVSeVR5YlJHU3A2NXB5UmtRTjBJOWlRTTAyZkx2dmJINk5BUmJoSC1sOVJYS1RaZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANEを読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WQmFtRG1nUi1oRC14RDZoN0pqekMtN3ZZVVBiZWtFeGhEY2tGWU1vWjJWRkN5ZVVSeVR5YlJHU3A2NXB5UmtRTjBJOWlRTTAyZkx2dmJINk5BUmJoSC1sOVJYS1RaZw?oc=5" data-title="【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/dfa4e166c9ba1672.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>SODANE · 13:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判 - SODANE</h3>
+    <h3>【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯格」の男らの裁判</h3>
     <p class="summary-text">【裁判ルポ②】「やれと言われた」「指示を出していない」食い違う証言 「真実」はどこに？ 江別市大学生暴行死 「主犯…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>裁判｜出典: SODANE</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-e4e996823ba3b16b" class="card tone-civic" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9yVjZZRThscnJzMzJsN0NlY0E2U0JSLW1Ca09mX1FrWk52Wlh2dVVZSWpkRWU3ZTVmU0RTc0dibFVyTU96NVhYc29FZjk3ZlVpdklyZUs3OWhqMHBvN25wM0lxUTZNeE5FQ1N0WkJtM0NZNEJSd2tsTWg3bw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE9yVjZZRThscnJzMzJsN0NlY0E2U0JSLW1Ca09mX1FrWk52Wlh2dVVZSWpkRWU3ZTVmU0RTc0dibFVyTU96NVhYc29FZjk3ZlVpdklyZUs3OWhqMHBvN25wM0lxUTZNeE5FQ1N0WkJtM0NZNEJSd2tsTWg3bw?oc=5" data-title="「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル" data-genre="社会">
+<a id="article-e4e996823ba3b16b" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9yVjZZRThscnJzMzJsN0NlY0E2U0JSLW1Ca09mX1FrWk52Wlh2dVVZSWpkRWU3ZTVmU0RTc0dibFVyTU96NVhYc29FZjk3ZlVpdklyZUs3OWhqMHBvN25wM0lxUTZNeE5FQ1N0WkJtM0NZNEJSd2tsTWg3bw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMie0FVX3lxTE9yVjZZRThscnJzMzJsN0NlY0E2U0JSLW1Ca09mX1FrWk52Wlh2dVVZSWpkRWU3ZTVmU0RTc0dibFVyTU96NVhYc29FZjk3ZlVpdklyZUs3OWhqMHBvN25wM0lxUTZNeE5FQ1N0WkJtM0NZNEJSd2tsTWg3bw?oc=5" data-title="「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/a6942812c5144b45.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>au Webポータル · 07:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か - au Webポータル</h3>
+    <h3>「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か</h3>
     <p class="summary-text">「海の日」は広い範囲で厳しい暑さ 東京都心は今年初の猛暑日か au Webポータル</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>「海の日」は広い範囲で厳しい暑さ・東京都心は今年初の猛暑日か｜出典: au Webポータル</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -896,43 +917,34 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>3 topics</span>
   </summary>
-  <div class="grid"><a id="article-226e9f2e6b0337e8" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNSFJ1QXFDN0h0RUlSZFlXZ081QWV5dFV3YUx3akxuRldPazcxVzVad1NPSFpQVkMxTTVpTDFXU1R3R3RGWnJic2JEb001X0tjSG5HZ3dIYWxJNm9kR0N2Nk5KNDB4d2dxeEpxYzNhbmFNWmJTemduaFFsVmY2NDhsRkRldmdaUQ" rel="noopener noreferrer" target="_blank" aria-label="スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNSFJ1QXFDN0h0RUlSZFlXZ081QWV5dFV3YUx3akxuRldPazcxVzVad1NPSFpQVkMxTTVpTDFXU1R3R3RGWnJic2JEb001X0tjSG5HZ3dIYWxJNm9kR0N2Nk5KNDB4d2dxeEpxYzNhbmFNWmJTemduaFFsVmY2NDhsRkRldmdaUQ" data-title="スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.com" data-genre="ゲーム">
+  <div class="grid"><a id="article-226e9f2e6b0337e8" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNSFJ1QXFDN0h0RUlSZFlXZ081QWV5dFV3YUx3akxuRldPazcxVzVad1NPSFpQVkMxTTVpTDFXU1R3R3RGWnJic2JEb001X0tjSG5HZ3dIYWxJNm9kR0N2Nk5KNDB4d2dxeEpxYzNhbmFNWmJTemduaFFsVmY2NDhsRkRldmdaUQ" rel="noopener noreferrer" target="_blank" aria-label="スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNSFJ1QXFDN0h0RUlSZFlXZ081QWV5dFV3YUx3akxuRldPazcxVzVad1NPSFpQVkMxTTVpTDFXU1R3R3RGWnJic2JEb001X0tjSG5HZ3dIYWxJNm9kR0N2Nk5KNDB4d2dxeEpxYzNhbmFNWmJTemduaFFsVmY2NDhsRkRldmdaUQ" data-title="スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.com" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/a4b7e4c4976b4d71.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 12:16</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
-    <h3>スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。 - nintendo.com</h3>
+    <h3>スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見られるようになりました。</h3>
     <p class="summary-text">スマートフォンアプリ『My Nintendo』がアップデート。Nintendo Switchで最近遊んだ記録が見ら…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>スマートフォンアプリ『My・Nintendo』がアップデート。Nintendo・Switchで最近遊んだ記録が見られるようになりました。｜出典: nintendo.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-26fa362a6e54a904" class="card tone-tech" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRU1YUWdZYlI3cFloRmhTdTlhekc4eHF6eXRTSDc1WFQ3czJpT1JkcW1WZElQUDVpZWtTMENyVXo4ZDc2dEFyeE11Y2wzLWNBTXEwT0hMNGpyQW1LYXZVQS1mTUZHVmRjR1RPZUlUM0llNXpnRVBoa3hIMG5LQkR0dGhVU0k5QQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRU1YUWdZYlI3cFloRmhTdTlhekc4eHF6eXRTSDc1WFQ3czJpT1JkcW1WZElQUDVpZWtTMENyVXo4ZDc2dEFyeE11Y2wzLWNBTXEwT0hMNGpyQW1LYXZVQS1mTUZHVmRjR1RPZUlUM0llNXpnRVBoa3hIMG5LQkR0dGhVU0k5QQ?oc=5" data-title="シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com" data-genre="ゲーム">
+<a id="article-26fa362a6e54a904" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRU1YUWdZYlI3cFloRmhTdTlhekc4eHF6eXRTSDc1WFQ3czJpT1JkcW1WZElQUDVpZWtTMENyVXo4ZDc2dEFyeE11Y2wzLWNBTXEwT0hMNGpyQW1LYXZVQS1mTUZHVmRjR1RPZUlUM0llNXpnRVBoa3hIMG5LQkR0dGhVU0k5QQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.comを読む" data-url="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRU1YUWdZYlI3cFloRmhTdTlhekc4eHF6eXRTSDc1WFQ3czJpT1JkcW1WZElQUDVpZWtTMENyVXo4ZDc2dEFyeE11Y2wzLWNBTXEwT0hMNGpyQW1LYXZVQS1mTUZHVmRjR1RPZUlUM0llNXpnRVBoa3hIMG5LQkR0dGhVU0k5QQ?oc=5" data-title="シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/121f514ef75a571a.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>nintendo.com · 09:16</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>一次情報</span> <span>公式発表</span> <span>動向確認</span></div>
-    <h3>シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 - nintendo.com</h3>
+    <h3>シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。</h3>
     <p class="summary-text">シリーズ最新作『帰ってきた 魔界村』 Nintendo Switchで本日発売。最新の紹介映像も公開。 ninte…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>公開｜出典: nintendo.com</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-3a8bb60e03e6d1d6" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iYWxsTUdsVjhqZkRJYVNNdjhwSlYtQUpMeU1QNkNPRGppU1lvQWFFT3ZZbEo1ZkhuSUFzdzRIbTRXS0dyOC1uSmotSkJWVW1o?oc=5" rel="noopener noreferrer" target="_blank" aria-label="マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLEを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iYWxsTUdsVjhqZkRJYVNNdjhwSlYtQUpMeU1QNkNPRGppU1lvQWFFT3ZZbEo1ZkhuSUFzdzRIbTRXS0dyOC1uSmotSkJWVW1o?oc=5" data-title="マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE" data-genre="ゲーム">
+<a id="article-3a8bb60e03e6d1d6" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iYWxsTUdsVjhqZkRJYVNNdjhwSlYtQUpMeU1QNkNPRGppU1lvQWFFT3ZZbEo1ZkhuSUFzdzRIbTRXS0dyOC1uSmotSkJWVW1o?oc=5" rel="noopener noreferrer" target="_blank" aria-label="マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLEを読む" data-url="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iYWxsTUdsVjhqZkRJYVNNdjhwSlYtQUpMeU1QNkNPRGppU1lvQWFFT3ZZbEo1ZkhuSUFzdzRIbTRXS0dyOC1uSmotSkJWVW1o?oc=5" data-title="マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/9f93a6d201cafc21.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>玩具人 TOY PEOPLE · 12:46</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発 - 玩具人 TOY PEOPLE</h3>
+    <h3>マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワークスが開発</h3>
     <p class="summary-text">マーベル格闘ゲーム『MARVEL Tōkon: Fighting Souls』2026年発売決定！アークシステムワ…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>マーベル格闘ゲーム『MARVEL・Tōkon・Fighting｜出典: 玩具人 TOY PEOPLE</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -941,17 +953,14 @@ dd {
     <h2 id="経済">経済</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-24a518188b83e84f" class="card tone-money" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2dTN2X0ZUR3ZaVWtSUVVOMVR5cnJ2OTIzTkowa19zLTNORmdkdkRJS0UySXpvVmE0TTRJMk9uQ2RhTVVOTmNVR3FpVDZDZFlpeGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2dTN2X0ZUR3ZaVWtSUVVOMVR5cnJ2OTIzTkowa19zLTNORmdkdkRJS0UySXpvVmE0TTRJMk9uQ2RhTVVOTmNVR3FpVDZDZFlpeGc?oc=5" data-title="【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞" data-genre="経済">
+  <div class="grid"><a id="article-24a518188b83e84f" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2dTN2X0ZUR3ZaVWtSUVVOMVR5cnJ2OTIzTkowa19zLTNORmdkdkRJS0UySXpvVmE0TTRJMk9uQ2RhTVVOTmNVR3FpVDZDZFlpeGc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞を読む" data-url="https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2dTN2X0ZUR3ZaVWtSUVVOMVR5cnJ2OTIzTkowa19zLTNORmdkdkRJS0UySXpvVmE0TTRJMk9uQ2RhTVVOTmNVR3FpVDZDZFlpeGc?oc=5" data-title="【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/21df65ad42a59156.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>山陽新聞 · 09:23</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 - 山陽新聞</h3>
+    <h3>【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期</h3>
     <p class="summary-text">【企業決算】青山商事、百十四銀行（５月１２日発表）＝２０２６年３月期 山陽新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算・発表｜出典: 山陽新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>

@@ -410,6 +410,45 @@ a:focus-visible {
   background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
   box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
 }
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
 .card.is-read {
   background: #eef2f4;
   border-color: #b9c6cd;
@@ -472,6 +511,22 @@ a:focus-visible {
   color: var(--accent-strong);
 }
 .summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
 .meta { color: var(--muted); font-size: 13px; margin: 0; }
 .meta span {
   color: var(--muted);
@@ -688,12 +743,8 @@ dd {
     height: 54px;
     border-radius: 8px;
   }
-  .reason-row {
-    border-top-color: #394352;
-  }
-  .reason-row dt {
-    color: var(--accent-strong);
-  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
   .search-cta { align-items:stretch; flex-direction:column; }
   .search-cta a { justify-content:center; text-align:center; }
 }
@@ -745,30 +796,24 @@ dd {
     <h2 id="AI">AI</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-65d46490368236d8" class="card tone-tech" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1lTHhia1o4N2dhdGQ1YXlzSzFuWldLcDFYVE5lR1FweTVDYTh0a3JDaHdsVFpBaHVYdFpkTGJTNU9BXzVkQXZCTk1PZEJsMC0wd0hWNDFaUnI3V3dybTBFNGNheHZoaDNGSkRSamR6MTlaYjdzOW5POWFEYng?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイトを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1lTHhia1o4N2dhdGQ1YXlzSzFuWldLcDFYVE5lR1FweTVDYTh0a3JDaHdsVFpBaHVYdFpkTGJTNU9BXzVkQXZCTk1PZEJsMC0wd0hWNDFaUnI3V3dybTBFNGNheHZoaDNGSkRSamR6MTlaYjdzOW5POWFEYng?oc=5" data-title="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイト" data-genre="AI">
+  <div class="grid"><a id="article-65d46490368236d8" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1lTHhia1o4N2dhdGQ1YXlzSzFuWldLcDFYVE5lR1FweTVDYTh0a3JDaHdsVFpBaHVYdFpkTGJTNU9BXzVkQXZCTk1PZEJsMC0wd0hWNDFaUnI3V3dybTBFNGNheHZoaDNGSkRSamR6MTlaYjdzOW5POWFEYng?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイトを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1lTHhia1o4N2dhdGQ1YXlzSzFuWldLcDFYVE5lR1FweTVDYTh0a3JDaHdsVFpBaHVYdFpkTGJTNU9BXzVkQXZCTk1PZEJsMC0wd0hWNDFaUnI3V3dybTBFNGNheHZoaDNGSkRSamR6MTlaYjdzOW5POWFEYng?oc=5" data-title="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイト" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/cc9f71df7d497c1b.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Excite エキサイト · 10:11</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」 - Excite エキサイト</h3>
+    <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」</h3>
     <p class="summary-text">OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>脆弱性・OpenAI｜出典: Excite エキサイト</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-e56032ad9ff47e36" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1CTDM5MGFhTXFtOU11Y0FlNzI5Skp1bkFfT0ZhSndDSDZjOWMxdS00R3BZaUkxczFzU2RzMnFmeHNBYml5M2cwelMxY3FYOGJOZ1pBSXN3Z1hHandfZ0xMdDZZVExEZjVRLWNGYXhvdExidG82cnpLMnhVaHFWMjQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1CTDM5MGFhTXFtOU11Y0FlNzI5Skp1bkFfT0ZhSndDSDZjOWMxdS00R3BZaUkxczFzU2RzMnFmeHNBYml5M2cwelMxY3FYOGJOZ1pBSXN3Z1hHandfZ0xMdDZZVExEZjVRLWNGYXhvdExidG82cnpLMnhVaHFWMjQ?oc=5" data-title="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュース" data-genre="AI">
+<a id="article-e56032ad9ff47e36" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1CTDM5MGFhTXFtOU11Y0FlNzI5Skp1bkFfT0ZhSndDSDZjOWMxdS00R3BZaUkxczFzU2RzMnFmeHNBYml5M2cwelMxY3FYOGJOZ1pBSXN3Z1hHandfZ0xMdDZZVExEZjVRLWNGYXhvdExidG82cnpLMnhVaHFWMjQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1CTDM5MGFhTXFtOU11Y0FlNzI5Skp1bkFfT0ZhSndDSDZjOWMxdS00R3BZaUkxczFzU2RzMnFmeHNBYml5M2cwelMxY3FYOGJOZ1pBSXN3Z1hHandfZ0xMdDZZVExEZjVRLWNGYXhvdExidG82cnpLMnhVaHFWMjQ?oc=5" data-title="OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュース" data-genre="AI">
   <img class="thumb" src="../assets/thumbs/7f1d5bff40d638e7.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 09:59</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch） - Yahoo!ニュース</h3>
+    <h3>OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT-Red」（Impress Watch）</h3>
     <p class="summary-text">OpenAI、AIの脆弱性を自動検証する内部用モデル「GPT</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>脆弱性・OpenAI｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象製品・バージョン、利用可能時期、影響範囲と必要な対応を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -777,17 +822,14 @@ dd {
     <h2 id="IT業界">IT業界</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-c7f608946f04c713" class="card tone-tech" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE43WkM3dU05MlpLTHZVR1E5TWJtSXI1S0VDVWMxQlhzcXVjTC1oYTRrMHVjOGVNU3ZaUWhOWmk1aXQySjFCTktnSlZtNXE1d2dTV3kwMUdVbXRMUmVhY2phekJWNjl6clJKWUVkWEJPdmZXa1lON2NzZ19NMTVQYm8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE43WkM3dU05MlpLTHZVR1E5TWJtSXI1S0VDVWMxQlhzcXVjTC1oYTRrMHVjOGVNU3ZaUWhOWmk1aXQySjFCTktnSlZtNXE1d2dTV3kwMUdVbXRMUmVhY2phekJWNjl6clJKWUVkWEJPdmZXa1lON2NzZ19NMTVQYm8?oc=5" data-title="介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュース" data-genre="IT業界">
+  <div class="grid"><a id="article-c7f608946f04c713" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE43WkM3dU05MlpLTHZVR1E5TWJtSXI1S0VDVWMxQlhzcXVjTC1oYTRrMHVjOGVNU3ZaUWhOWmk1aXQySjFCTktnSlZtNXE1d2dTV3kwMUdVbXRMUmVhY2phekJWNjl6clJKWUVkWEJPdmZXa1lON2NzZ19NMTVQYm8?oc=5" rel="noopener noreferrer" target="_blank" aria-label="介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE43WkM3dU05MlpLTHZVR1E5TWJtSXI1S0VDVWMxQlhzcXVjTC1oYTRrMHVjOGVNU3ZaUWhOWmk1aXQySjFCTktnSlZtNXE1d2dTV3kwMUdVbXRMUmVhY2phekJWNjl6clJKWUVkWEJPdmZXa1lON2NzZ19NMTVQYm8?oc=5" data-title="介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュース" data-genre="IT業界">
   <img class="thumb" src="../assets/thumbs/851f16696e3909f3.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>Yahoo!ニュース · 10:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送） - Yahoo!ニュース</h3>
+    <h3>介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送）</h3>
     <p class="summary-text">介護従事者の負担を軽減するテクノロジーを紹介する展示会 車いすへの移動を助けるロボットなど【香川】（RSK山陽放送…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>介護従事者の負担を軽減するテクノロジーを紹介する展示会・車いすへの移動を助けるロボットなど【香川】（RSK山陽放送）｜出典: Yahoo!ニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -796,30 +838,24 @@ dd {
     <h2 id="政治">政治</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-58f6c5205bf0690f" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EUTlITFU5UURJVy15dnZOOThRdVZEekFLamk5Ym9iUm03eGYxNnZ3VGVuS2tSQ210TEk0TWVhaXpydUFfU3oxVmNBVmd0N3FUUkQ3UFZnYXVPRDlfVzRkOXcwU0hXaDJU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EUTlITFU5UURJVy15dnZOOThRdVZEekFLamk5Ym9iUm03eGYxNnZ3VGVuS2tSQ210TEk0TWVhaXpydUFfU3oxVmNBVmd0N3FUUkQ3UFZnYXVPRDlfVzRkOXcwU0hXaDJU?oc=5" data-title="皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞" data-genre="政治">
+  <div class="grid"><a id="article-58f6c5205bf0690f" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EUTlITFU5UURJVy15dnZOOThRdVZEekFLamk5Ym9iUm03eGYxNnZ3VGVuS2tSQ210TEk0TWVhaXpydUFfU3oxVmNBVmd0N3FUUkQ3UFZnYXVPRDlfVzRkOXcwU0hXaDJU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EUTlITFU5UURJVy15dnZOOThRdVZEekFLamk5Ym9iUm03eGYxNnZ3VGVuS2tSQ210TEk0TWVhaXpydUFfU3oxVmNBVmd0N3FUUkQ3UFZnYXVPRDlfVzRkOXcwU0hXaDJU?oc=5" data-title="皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/c3514a88947f27d5.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>毎日新聞 · 12:15</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 - 毎日新聞</h3>
+    <h3>皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点</h3>
     <p class="summary-text">皇室典範改正案、17日成立へ 国会は小幅延長、副首都法案が焦点 毎日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>法案｜出典: 毎日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象になる人、決定済みか検討中か、施行日・申請期限を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-d7a517dcffd02895" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wLV9OVTc3aUQ0OF9QVzAyRDJTMXJibWwxTjlsbWxSX0h2SnVQMmt5ai1nSnNXNHV3bHVCX0tCOXNtUEljemcydS1OY3N0eEJHR19ZT2FXNDN3R19DaFVMeDNZOEduSVU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wLV9OVTc3aUQ0OF9QVzAyRDJTMXJibWwxTjlsbWxSX0h2SnVQMmt5ai1nSnNXNHV3bHVCX0tCOXNtUEljemcydS1OY3N0eEJHR19ZT2FXNDN3R19DaFVMeDNZOEduSVU?oc=5" data-title="7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版" data-genre="政治">
+<a id="article-d7a517dcffd02895" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wLV9OVTc3aUQ0OF9QVzAyRDJTMXJibWwxTjlsbWxSX0h2SnVQMmt5ai1nSnNXNHV3bHVCX0tCOXNtUEljemcydS1OY3N0eEJHR19ZT2FXNDN3R19DaFVMeDNZOEduSVU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wLV9OVTc3aUQ0OF9QVzAyRDJTMXJibWwxTjlsbWxSX0h2SnVQMmt5ai1nSnNXNHV3bHVCX0tCOXNtUEljemcydS1OY3N0eEJHR19ZT2FXNDN3R19DaFVMeDNZOEduSVU?oc=5" data-title="7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版" data-genre="政治">
   <img class="thumb" src="../assets/thumbs/c24f78fe2b73c010.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日経ビジネス電子版 · 08:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
-    <h3>7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 - 日経ビジネス電子版</h3>
+    <h3>7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説</h3>
     <p class="summary-text">7/30開催 政府、骨太方針決定へ 「強い経済」への道筋を永濱氏が緊急解説 日経ビジネス電子版</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>政府｜出典: 日経ビジネス電子版</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -828,30 +864,24 @@ dd {
     <h2 id="社会">社会</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-a9dfa9d3c23f79e4" class="card tone-civic" href="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZN21ybHZiTm9FckRZdk5pWGoxM1d0M3VGVV9TUXZlc3VrYkF4OTlpdHdwLWJybzhzZXJyU3YtUjNpak9kRVNrRHpNX08wcDRkQUZoWkJnM1hpVW9IZ0pNR05MSmdvdGRYY2U2bHlYUkJSQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWSを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZN21ybHZiTm9FckRZdk5pWGoxM1d0M3VGVV9TUXZlc3VrYkF4OTlpdHdwLWJybzhzZXJyU3YtUjNpak9kRVNrRHpNX08wcDRkQUZoWkJnM1hpVW9IZ0pNR05MSmdvdGRYY2U2bHlYUkJSQQ?oc=5" data-title="女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWS" data-genre="社会">
+  <div class="grid"><a id="article-a9dfa9d3c23f79e4" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZN21ybHZiTm9FckRZdk5pWGoxM1d0M3VGVV9TUXZlc3VrYkF4OTlpdHdwLWJybzhzZXJyU3YtUjNpak9kRVNrRHpNX08wcDRkQUZoWkJnM1hpVW9IZ0pNR05MSmdvdGRYY2U2bHlYUkJSQQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWSを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZN21ybHZiTm9FckRZdk5pWGoxM1d0M3VGVV9TUXZlc3VrYkF4OTlpdHdwLWJybzhzZXJyU3YtUjNpak9kRVNrRHpNX08wcDRkQUZoWkJnM1hpVW9IZ0pNR05MSmdvdGRYY2U2bHlYUkJSQQ?oc=5" data-title="女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWS" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/c8e70c9bce69cc3c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>テレ朝NEWS · 12:42</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 - テレ朝NEWS</h3>
+    <h3>女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警</h3>
     <p class="summary-text">女子高校生殺害事件で元交際相手の男をストーカー容疑などで再逮捕 神奈川県警 テレ朝NEWS</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: テレ朝NEWS</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-e05fe3b7772886e4" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kRHl0aks0MEwya1NPQjNiVkhsdTlIeVNSRDNta01FUTljUldHWXA3cktpOGE2X1M3OUcwY2V0TjBMVWJRSGVQMUlqVHZ3SHRhU0x4Q1dlamNUZHN0TlRGZEx2a0NKQ2s" rel="noopener noreferrer" target="_blank" aria-label="元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kRHl0aks0MEwya1NPQjNiVkhsdTlIeVNSRDNta01FUTljUldHWXA3cktpOGE2X1M3OUcwY2V0TjBMVWJRSGVQMUlqVHZ3SHRhU0x4Q1dlamNUZHN0TlRGZEx2a0NKQ2s" data-title="元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞" data-genre="社会">
+<a id="article-e05fe3b7772886e4" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kRHl0aks0MEwya1NPQjNiVkhsdTlIeVNSRDNta01FUTljUldHWXA3cktpOGE2X1M3OUcwY2V0TjBMVWJRSGVQMUlqVHZ3SHRhU0x4Q1dlamNUZHN0TlRGZEx2a0NKQ2s" rel="noopener noreferrer" target="_blank" aria-label="元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kRHl0aks0MEwya1NPQjNiVkhsdTlIeVNSRDNta01FUTljUldHWXA3cktpOGE2X1M3OUcwY2V0TjBMVWJRSGVQMUlqVHZ3SHRhU0x4Q1dlamNUZHN0TlRGZEx2a0NKQ2s" data-title="元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞" data-genre="社会">
   <img class="thumb" src="../assets/thumbs/b5131762f441b0ca.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>朝日新聞 · 12:41</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] - 朝日新聞</h3>
+    <h3>元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県]</h3>
     <p class="summary-text">元教え子の女性に強制性交の疑い 埼玉県立高校教諭の男を再逮捕 [埼玉県] 朝日新聞</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>逮捕｜出典: 朝日新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -860,30 +890,24 @@ dd {
     <h2 id="経済">経済</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-32f60c8ee6a4ef6f" class="card tone-money" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNa0hpSHhraTVlbU5KWjdlWW9EajE4QVlYTjc3ZS1lZ2lmc3lqOEZkdjVJQVZNeWhLMHdZVzlQamU0eXQyLUx0ZS11SkVkdHRkNERUV01XSVUtRzN0NFQ4VnZfbUNPbTJSSVJwVkpQT3FHR1pKM2diamtLRjlwYUZQaQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイターを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxNa0hpSHhraTVlbU5KWjdlWW9EajE4QVlYTjc3ZS1lZ2lmc3lqOEZkdjVJQVZNeWhLMHdZVzlQamU0eXQyLUx0ZS11SkVkdHRkNERUV01XSVUtRzN0NFQ4VnZfbUNPbTJSSVJwVkpQT3FHR1pKM2diamtLRjlwYUZQaQ?oc=5" data-title="英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイター" data-genre="経済">
+  <div class="grid"><a id="article-32f60c8ee6a4ef6f" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNa0hpSHhraTVlbU5KWjdlWW9EajE4QVlYTjc3ZS1lZ2lmc3lqOEZkdjVJQVZNeWhLMHdZVzlQamU0eXQyLUx0ZS11SkVkdHRkNERUV01XSVUtRzN0NFQ4VnZfbUNPbTJSSVJwVkpQT3FHR1pKM2diamtLRjlwYUZQaQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイターを読む" data-url="https://news.google.com/rss/articles/CBMigAFBVV95cUxNa0hpSHhraTVlbU5KWjdlWW9EajE4QVlYTjc3ZS1lZ2lmc3lqOEZkdjVJQVZNeWhLMHdZVzlQamU0eXQyLUx0ZS11SkVkdHRkNERUV01XSVUtRzN0NFQ4VnZfbUNPbTJSSVJwVkpQT3FHR1pKM2diamtLRjlwYUZQaQ?oc=5" data-title="英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイター" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/b94db32b5e0537a0.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ロイター · 09:21</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
-    <h3>英経済は軟調、利上げの必要性低い＝英中銀副総裁 - ロイター</h3>
+    <h3>英経済は軟調、利上げの必要性低い＝英中銀副総裁</h3>
     <p class="summary-text">英経済は軟調、利上げの必要性低い＝英中銀副総裁 ロイター</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>利上げ｜出典: ロイター</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>誰に影響するか、いつから変わるか、報道元が示す具体的な根拠を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-27a50afb0cb9b557" class="card tone-money" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBGZGhJQkdJRmtsVnpmcjRuc0NfZHBUSTRpQVJoVEw4d29LYVByV3J0WGI1NnpaUEQyam9NSXo0eFpoczQ2MDdaMTFZZmZXSkVmZ29sUnYzSkhjY2VzZTdveDR2RWZNbHQ0TElaNUN2dzRUQVl1?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTFBGZGhJQkdJRmtsVnpmcjRuc0NfZHBUSTRpQVJoVEw4d29LYVByV3J0WGI1NnpaUEQyam9NSXo0eFpoczQ2MDdaMTFZZmZXSkVmZ29sUnYzSkhjY2VzZTdveDR2RWZNbHQ0TElaNUN2dzRUQVl1?oc=5" data-title="NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンス" data-genre="経済">
+<a id="article-27a50afb0cb9b557" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBGZGhJQkdJRmtsVnpmcjRuc0NfZHBUSTRpQVJoVEw4d29LYVByV3J0WGI1NnpaUEQyam9NSXo0eFpoczQ2MDdaMTFZZmZXSkVmZ29sUnYzSkhjY2VzZTdveDR2RWZNbHQ0TElaNUN2dzRUQVl1?oc=5" rel="noopener noreferrer" target="_blank" aria-label="NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTFBGZGhJQkdJRmtsVnpmcjRuc0NfZHBUSTRpQVJoVEw4d29LYVByV3J0WGI1NnpaUEQyam9NSXo0eFpoczQ2MDdaMTFZZmZXSkVmZ29sUnYzSkhjY2VzZTdveDR2RWZNbHQ0TElaNUN2dzRUQVl1?oc=5" data-title="NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンス" data-genre="経済">
   <img class="thumb" src="../assets/thumbs/82b3acf9b9e06eed.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>BigGo ファイナンス · 12:56</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
-    <h3>NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ - BigGo ファイナンス</h3>
+    <h3>NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ</h3>
     <p class="summary-text">NY株、米小売売上高と主力決算に注目 景気ソフトランディング見極めへ BigGo ファイナンス</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>決算｜出典: BigGo ファイナンス</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象期間、金額・変化率、前回との比較、生活や市場への影響を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -892,30 +916,24 @@ dd {
     <h2 id="災害">災害</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-8b661557bd37cd7e" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdzRLcW0xS3h3Y3RDNEVEVUlTVFZqVjZEVDNpV2F1a3VPVk9ocHVtSTFHVlFzREZxQW5fanRfZ0o1OHJrMU5yYktJWTN1QjVjMUdheFpKeW1rTDZ1b2Y0" rel="noopener noreferrer" target="_blank" aria-label="埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdzRLcW0xS3h3Y3RDNEVEVUlTVFZqVjZEVDNpV2F1a3VPVk9ocHVtSTFHVlFzREZxQW5fanRfZ0o1OHJrMU5yYktJWTN1QjVjMUdheFpKeW1rTDZ1b2Y0" data-title="埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュース" data-genre="災害">
+  <div class="grid"><a id="article-8b661557bd37cd7e" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdzRLcW0xS3h3Y3RDNEVEVUlTVFZqVjZEVDNpV2F1a3VPVk9ocHVtSTFHVlFzREZxQW5fanRfZ0o1OHJrMU5yYktJWTN1QjVjMUdheFpKeW1rTDZ1b2Y0" rel="noopener noreferrer" target="_blank" aria-label="埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdzRLcW0xS3h3Y3RDNEVEVUlTVFZqVjZEVDNpV2F1a3VPVk9ocHVtSTFHVlFzREZxQW5fanRfZ0o1OHJrMU5yYktJWTN1QjVjMUdheFpKeW1rTDZ1b2Y0" data-title="埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュース" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/45d521054c7ead60.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>NHKニュース · 11:47</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え - NHKニュース</h3>
+    <h3>埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え</h3>
     <p class="summary-text">埼玉 深谷のレベル4土砂災害危険警報を注意報に切り替え NHKニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>災害｜出典: NHKニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-57a60185b8a436fb" class="card tone-safety" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamxZY3owd3V1YnZWZGtCa2c2cWY0bGItQWJ3czBDTURPMXU1SjhIVnNMNjMwRzUxcWtKTVdJM25IeWVrenh4dExmaktPSFkzU1NnSGQ4RVhvaVJfZWNfVF84YTJWSjZmNWNDWW5EbUZ1ZEJFMnNhMUNrbHQ5MUd6UGVtY0dzdmdP?oc=5" rel="noopener noreferrer" target="_blank" aria-label="最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamxZY3owd3V1YnZWZGtCa2c2cWY0bGItQWJ3czBDTURPMXU1SjhIVnNMNjMwRzUxcWtKTVdJM25IeWVrenh4dExmaktPSFkzU1NnSGQ4RVhvaVJfZWNfVF84YTJWSjZmNWNDWW5EbUZ1ZEJFMnNhMUNrbHQ5MUd6UGVtY0dzdmdP?oc=5" data-title="最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNN" data-genre="災害">
+<a id="article-57a60185b8a436fb" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamxZY3owd3V1YnZWZGtCa2c2cWY0bGItQWJ3czBDTURPMXU1SjhIVnNMNjMwRzUxcWtKTVdJM25IeWVrenh4dExmaktPSFkzU1NnSGQ4RVhvaVJfZWNfVF84YTJWSjZmNWNDWW5EbUZ1ZEJFMnNhMUNrbHQ5MUd6UGVtY0dzdmdP?oc=5" rel="noopener noreferrer" target="_blank" aria-label="最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQamxZY3owd3V1YnZWZGtCa2c2cWY0bGItQWJ3czBDTURPMXU1SjhIVnNMNjMwRzUxcWtKTVdJM25IeWVrenh4dExmaktPSFkzU1NnSGQ4RVhvaVJfZWNfVF84YTJWSjZmNWNDWW5EbUZ1ZEJFMnNhMUNrbHQ5MUd6UGVtY0dzdmdP?oc=5" data-title="最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNN" data-genre="災害">
   <img class="thumb" src="../assets/thumbs/0918bb37106ddc85.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日テレNEWS NNN · 12:25</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 - 日テレNEWS NNN</h3>
+    <h3>最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》</h3>
     <p class="summary-text">最大震度6強 15人が犠牲「中越沖地震」から19年 タオル使った安否確認訓練も《新潟・柏崎》 日テレNEWS NNN</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜出典: 日テレNEWS NNN</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -924,30 +942,24 @@ dd {
     <h2 id="国際">国際</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-257d1ead81fba26d" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QQm11dGN4SEdPY1hveXlpYWdwcmxidGxDcVlpck1HV0hGMUZ1WFVIa2FodGk1aVRsTHQ0ZzJxbHRoYmFwVDR0MEppcFB1RHB0YmJ5QnVPZFdlbjRaXzVv?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QQm11dGN4SEdPY1hveXlpYWdwcmxidGxDcVlpck1HV0hGMUZ1WFVIa2FodGk1aVRsTHQ0ZzJxbHRoYmFwVDR0MEppcFB1RHB0YmJ5QnVPZFdlbjRaXzVv?oc=5" data-title="中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュース" data-genre="国際">
+  <div class="grid"><a id="article-257d1ead81fba26d" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QQm11dGN4SEdPY1hveXlpYWdwcmxidGxDcVlpck1HV0hGMUZ1WFVIa2FodGk1aVRsTHQ0ZzJxbHRoYmFwVDR0MEppcFB1RHB0YmJ5QnVPZFdlbjRaXzVv?oc=5" rel="noopener noreferrer" target="_blank" aria-label="中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QQm11dGN4SEdPY1hveXlpYWdwcmxidGxDcVlpck1HV0hGMUZ1WFVIa2FodGk1aVRsTHQ0ZzJxbHRoYmFwVDR0MEppcFB1RHB0YmJ5QnVPZFdlbjRaXzVv?oc=5" data-title="中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュース" data-genre="国際">
   <img class="thumb" src="../assets/thumbs/a01f4faca41032da.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライブドアニュース · 14:14</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>中国遼寧省でゴムボート爆発 7人死亡 - ライブドアニュース</h3>
+    <h3>中国遼寧省でゴムボート爆発 7人死亡</h3>
     <p class="summary-text">中国遼寧省でゴムボート爆発 7人死亡 ライブドアニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>死亡｜出典: ライブドアニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-752edd8460fc7741" class="card tone-civic" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsSHFzeWdKYWF1b2VlenY3VS01NE1pMTVhcHJJa2s2OGR2MmZNaWpvZWRxUm84UTZtNllRakhBcDgzMloxTGtORERsS2VUT29DbHhhbE5NWEU5TzB1Umc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsSHFzeWdKYWF1b2VlenY3VS01NE1pMTVhcHJJa2s2OGR2MmZNaWpvZWRxUm84UTZtNllRakhBcDgzMloxTGtORERsS2VUT29DbHhhbE5NWEU5TzB1Umc?oc=5" data-title="睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース" data-genre="国際">
+<a id="article-752edd8460fc7741" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsSHFzeWdKYWF1b2VlenY3VS01NE1pMTVhcHJJa2s2OGR2MmZNaWpvZWRxUm84UTZtNllRakhBcDgzMloxTGtORERsS2VUT29DbHhhbE5NWEU5TzB1Umc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBsSHFzeWdKYWF1b2VlenY3VS01NE1pMTVhcHJJa2s2OGR2MmZNaWpvZWRxUm84UTZtNllRakhBcDgzMloxTGtORERsS2VUT29DbHhhbE5NWEU5TzB1Umc?oc=5" data-title="睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース" data-genre="国際">
   <img class="thumb" src="../assets/thumbs/a294cfcde6fb3c8c.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>ライブドアニュース · 13:00</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) - ライブドアニュース</h3>
+    <h3>睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載)</h3>
     <p class="summary-text">睡眠と死亡リスクの研究「時間の長さ」より「規則性」の方が影響か (2026年7月16日掲載) ライブドアニュース</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>死亡｜出典: ライブドアニュース</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>発生場所と時刻、警察・消防など公的機関の発表、続報で変わった点を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -956,30 +968,24 @@ dd {
     <h2 id="ライフ">ライフ</h2>
     <span>2 topics</span>
   </summary>
-  <div class="grid"><a id="article-2acba2e62cef20fa" class="card tone-life" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UeE1lNXRiMjE2MF9MV2dTSkE4MlQtUi1JbEJWYWtEU0E5dWdXWEpyc3RYNl8xWHRqcjB2Qi0wa1NZTXpQZXZwdDBUZ2JWQXljdmZ6em1QMA" rel="noopener noreferrer" target="_blank" aria-label="「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UeE1lNXRiMjE2MF9MV2dTSkE4MlQtUi1JbEJWYWtEU0E5dWdXWEpyc3RYNl8xWHRqcjB2Qi0wa1NZTXpQZXZwdDBUZ2JWQXljdmZ6em1QMA" data-title="「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIG" data-genre="ライフ">
+  <div class="grid"><a id="article-2acba2e62cef20fa" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UeE1lNXRiMjE2MF9MV2dTSkE4MlQtUi1JbEJWYWtEU0E5dWdXWEpyc3RYNl8xWHRqcjB2Qi0wa1NZTXpQZXZwdDBUZ2JWQXljdmZ6em1QMA" rel="noopener noreferrer" target="_blank" aria-label="「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9UeE1lNXRiMjE2MF9MV2dTSkE4MlQtUi1JbEJWYWtEU0E5dWdXWEpyc3RYNl8xWHRqcjB2Qi0wa1NZTXpQZXZwdDBUZ2JWQXljdmZ6em1QMA" data-title="「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIG" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/5e26ca6b72c087ad.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>TBS NEWS DIG · 12:45</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
-    <h3>「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半 - TBS NEWS DIG</h3>
+    <h3>「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半</h3>
     <p class="summary-text">「エアコンは使わない」善意の“義援金”で生活保護が廃止に 被災者を追い詰める“国のルール” 能登半島地震から2年半…</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜出典: TBS NEWS DIG</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a>
-<a id="article-1ed9ef2162e36fcd" class="card tone-life" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA" rel="noopener noreferrer" target="_blank" aria-label="【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社を読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA" data-title="【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社" data-genre="ライフ">
+<a id="article-1ed9ef2162e36fcd" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA" rel="noopener noreferrer" target="_blank" aria-label="【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社を読む" data-url="https://news.google.com/rss/articles/CBMib0FVX3lxTE5XZW15MEFtQ0laaXF5V2FuS1cxRTFGMlg0elZWdV84OEVhZy1IeHgycWllUUtlc0s1ZnV6LTU0VU83dFg5OHBoc0o5OVJVbG5LX1lfUFNEU2ZPTUV0TmxQMEVqWkRhNHlBU1B1UnVnMA" data-title="【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社" data-genre="ライフ">
   <img class="thumb" src="../assets/thumbs/37ae46f3e30c8c2e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>日本赤十字社 · 11:36</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
-    <h3>【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について - 日本赤十字社</h3>
+    <h3>【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続｜トピックス｜国際活動について</h3>
     <p class="summary-text">【速報７】ベネズエラ地震：避難生活が続く被災地で、赤十字は支援を継続</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>地震｜出典: 日本赤十字社</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
@@ -988,17 +994,14 @@ dd {
     <h2 id="ゲーム">ゲーム</h2>
     <span>1 topics</span>
   </summary>
-  <div class="grid"><a id="article-dc2308575f69750d" class="card tone-tech" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5" data-title="江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞" data-genre="ゲーム">
+  <div class="grid"><a id="article-dc2308575f69750d" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞を読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LYXVTM20xQkhZcnlOTjZLZXdmWUU3V1pGc243b21hdWsxYnRvMk5NQm80MG12ZVZrczBGMVdQcWtQRERCVlhOY1Vvb0pJTTFSMW1nY0VB?oc=5" data-title="江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞" data-genre="ゲーム">
   <img class="thumb" src="../assets/thumbs/3d3adb069faa865e.svg" alt="" loading="lazy">
   <div class="card-body">
     <div class="meta"><span>佐賀新聞 · 09:30</span><span class="read-state">未読</span></div>
     <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
-    <h3>江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース - 佐賀新聞</h3>
+    <h3>江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ | まちの話題 | 佐賀県のニュース</h3>
     <p class="summary-text">江北町役場が“ゲームセンター”に 熱中症避難所を兼ね解放、シニア脳活ゲームで交流楽しむ</p>
-    <dl>
-      <div class="reason-row"><dt>注目ポイント</dt><dd>避難｜出典: 佐賀新聞</dd></div>
-      <div class="verify-row"><dt>見るべきポイント</dt><dd>対象地域、発生・更新時刻、自治体や気象機関の最新情報を確認。</dd></div>
-    </dl>
+    <p class="attention-line"><strong>注目ポイント</strong><span>続報を確認</span></p>
   </div>
 </a></div>
 </details>
