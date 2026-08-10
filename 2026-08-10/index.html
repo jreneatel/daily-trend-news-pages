@@ -1,0 +1,1587 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>共通ニュース | Daily Trend News · 2026-08-10</title>
+  <link rel="stylesheet" href="../design-tokens.css">
+  <style>
+:root {
+  color-scheme: light;
+  --bg:var(--dtn-bg, #f4f7f9);
+  --bar:var(--dtn-nav, #fff);
+  --panel:var(--dtn-surface, #fff);
+  --panel-2:var(--dtn-surface-subtle, #edf2f5);
+  --ink:var(--dtn-ink, #17222b);
+  --muted:var(--dtn-muted, #526570);
+  --faint:#70808a;
+  --line:var(--dtn-line, #cbd8df);
+  --accent:var(--dtn-accent, #08769b);
+  --accent-strong:var(--dtn-accent-strong, #075985);
+  --shadow:var(--dtn-shadow, 0 10px 30px rgb(15 23 42 / 8%));
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+body {
+  margin: 0;
+  font-family: var(--dtn-font, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.skip-link {
+  align-items: center;
+  display: inline-flex;
+  min-height: 44px;
+  position: fixed;
+  left: 12px;
+  top: 8px;
+  z-index: 20;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-140%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 8px max(16px, calc((100vw - 1120px) / 2));
+  background: var(--bar);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 3px 14px rgb(15 23 42 / 5%);
+}
+.brand {
+  align-items: center;
+  color: var(--ink);
+  display: inline-flex;
+  flex: none;
+  font-size: 1.05rem;
+  font-weight: 850;
+  min-height: 44px;
+  text-decoration: none;
+}
+.brand::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: 8px;
+  border: 2px solid var(--muted);
+  border-radius: 2px;
+  vertical-align: -1px;
+  box-shadow: inset 4px 0 0 rgb(8 118 155 / 22%);
+}
+.global-nav {
+  align-items:center;
+  display:flex;
+}
+.desktop-menu,
+.mobile-menu { align-items:center; display:flex; gap:6px; justify-content:flex-end; }
+.global-nav a,
+.mobile-more summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .86rem;
+  font-weight: 720;
+  text-decoration: none;
+}
+.mobile-menu { display:none; }
+.mobile-more { position: relative; }
+.mobile-more summary { cursor: pointer; list-style: none; }
+.mobile-more summary::-webkit-details-marker { display: none; }
+.mobile-more > div {
+  background: var(--bar);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow:0 14px 35px rgb(15 23 42 / 16%);
+  display: grid;
+  min-width: 190px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+}
+.global-nav a:hover,
+.global-nav a:focus-visible,
+.mobile-more summary:hover,
+.mobile-more summary:focus-visible,
+.global-nav a[aria-current="page"] {
+  border-color: var(--line);
+  background: var(--dtn-nav-hover, #edf4f7);
+  color: var(--accent-strong);
+}
+.archive, .back-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+.page {
+  width: min(1210px, 100%);
+  margin: 0 auto;
+  padding: 18px clamp(14px, 4vw, 32px) 64px;
+}
+.hero {
+  padding: 0 0 16px;
+}
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+.badges {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: #fff;
+  background: #1f6f78;
+  font-size: 12px;
+  font-weight: 700;
+}
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+.analytics-export {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 1px solid rgba(79, 209, 197, .45);
+  border-radius: 6px;
+  color: #fff;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.big-news-picks {
+  margin: 0 0 24px;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid #d97706;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff7ed 0%, #fffbeb 48%, #fff 100%);
+  box-shadow: 0 18px 44px rgb(146 64 14 / 15%);
+}
+.big-news-heading {
+  margin-bottom: 14px;
+}
+.big-news-heading h2 {
+  color: #7c2d12;
+  font-size: clamp(24px, 4vw, 34px);
+}
+.big-news-heading p:last-child {
+  margin: 6px 0 0;
+  color: #6b3a1f;
+  font-size: 14px;
+}
+.big-news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.big-news-grid .card:first-child {
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(180px, 32%) minmax(0, 1fr);
+  padding: 18px 50px 18px 18px;
+}
+.big-news-grid .card:first-child .thumb {
+  height: 154px;
+}
+.big-news-grid .card:first-child h3 {
+  font-size: clamp(20px, 3vw, 27px);
+  line-height: 1.38;
+}
+.layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.sidebar {
+  position: sticky;
+  top: 62px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-2);
+  box-shadow: var(--shadow);
+}
+.side-title {
+  padding: 8px 12px;
+  color: var(--ink);
+  background: #e3ebef;
+  font-weight: 800;
+}
+.side-nav {
+  display: grid;
+  padding: 10px 6px;
+}
+.side-calendar {
+  padding: 10px 8px 8px;
+  border-bottom: 1px solid var(--line);
+}
+.side-calendar .calendar {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.side-calendar .calendar-month {
+  padding: 10px;
+  border-color: var(--line);
+  background: var(--panel);
+}
+.side-calendar .calendar-month h2 {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.side-calendar .calendar-grid {
+  gap: 3px;
+}
+.side-calendar .calendar-weekday,
+.side-calendar .calendar-day {
+  min-height: 24px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.calendar-more {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: right;
+}
+.side-archive,
+.side-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+.side-archive {
+  display: none;
+  margin: 10px 6px 0;
+  border-color: rgb(8 118 155 / 35%);
+  background: rgb(8 118 155 / 8%);
+}
+.side-nav a:hover,
+.side-nav a:focus,
+.side-archive:hover,
+.side-archive:focus {
+  border-color: var(--accent);
+  background: var(--dtn-nav-hover, #edf4f7);
+}
+.side-nav small,
+.side-archive small {
+  color: var(--muted);
+  font-weight: 500;
+}
+.content {
+  min-width: 0;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.48;
+  letter-spacing: 0;
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.genre-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+.genre-head::-webkit-details-marker { display: none; }
+.genre-head::before {
+  content: "▾";
+  color: var(--accent);
+  font-weight: 900;
+}
+.genre:not([open]) .genre-head::before {
+  content: "▸";
+}
+.genre-head span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.thumb {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 88px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgb(8 118 155 / 14%), rgb(255 255 255 / 70%));
+  object-fit: cover;
+}
+.genre {
+  --genre:#9ca3af;
+  margin-top: 24px;
+}
+.tone-tech { --genre:#1d4ed8; }
+.tone-safety { --genre:#92400e; }
+.tone-life { --genre:#047857; }
+.tone-money { --genre:#6d28d9; }
+.tone-civic { --genre:#4338ca; }
+.tone-entertainment { --genre:#be185d; }
+.tone-sports { --genre:#0f766e; }
+.tone-science { --genre:#0e7490; }
+.tone-general { --genre:#64748b; }
+.genre:first-child { margin-top: 0; }
+.genre-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 9px;
+}
+.genre-head h2 { color: var(--genre); }
+.grid {
+  display: grid;
+  gap: 7px;
+}
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 12px;
+  min-width: 0;
+  padding: 13px 42px 12px 12px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--genre, #9ca3af);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.card.is-big-news {
+  border: 2px solid #b45309;
+  border-left-width: 8px;
+  background: linear-gradient(135deg, #fff7ed 0%, var(--panel) 58%);
+  box-shadow: 0 12px 30px rgb(180 83 9 / 14%);
+}
+.card.is-compact {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 10px;
+  padding: 9px 34px 9px 9px;
+}
+.card.is-compact .thumb {
+  height: 56px;
+  margin-top: 1px;
+}
+.card.is-compact .meta {
+  font-size: 12px;
+}
+.card.is-compact .labels {
+  gap: 4px;
+  margin-top: 3px;
+}
+.card.is-compact .labels span {
+  padding: 1px 5px;
+  font-size: 10px;
+}
+.card.is-compact h3 {
+  margin: 4px 0 0;
+  font-size: 15px;
+  line-height: 1.38;
+}
+.card.is-compact .summary-text {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card.is-compact .attention-line {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.card.is-read {
+  background: #eef2f4;
+  border-color: #b9c6cd;
+  border-left-color: #64748b;
+}
+.read-state {
+  margin-left: auto;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.labels span {
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: #334155;
+  background: #eef2f6;
+  font-size: 12px;
+  font-weight: 700;
+}
+.labels .big-news-label {
+  color: #fff;
+  background: #9a3412;
+  letter-spacing: .04em;
+}
+.card:hover,
+.card:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 10px 26px rgb(15 23 42 / 12%);
+  transform: translateY(-1px);
+}
+.card::after {
+  content: "↗";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  color: var(--muted);
+  transform: translateY(-50%);
+}
+.card p { margin: 8px 0 0; font-size: 14px; }
+.card .thumb {
+  width: 100%;
+  height: 74px;
+  margin-top: 2px;
+  padding: 0;
+  border-radius: 8px;
+}
+.card-body {
+  min-width: 0;
+}
+.card h3 {
+  color: var(--ink);
+}
+.card:hover h3,
+.card:focus-visible h3 {
+  color: var(--accent-strong);
+}
+.summary-text { color: #405460; }
+.attention-line {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin: 8px 0 0;
+  color: #405460;
+  font-size: 13px;
+}
+.attention-line strong {
+  flex: 0 0 auto;
+  color: var(--accent-strong);
+  font-size: 11px;
+}
+.attention-line span {
+  min-width: 0;
+}
+.meta { color: var(--muted); font-size: 13px; margin: 0; }
+.meta span {
+  color: var(--muted);
+  font-weight: 600;
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+dl { margin: 10px 0 0; display: grid; gap: 8px; }
+dl div {
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+}
+dt {
+  color: var(--faint);
+  font-size: 12px;
+  font-weight: 700;
+}
+dd {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #405460;
+}
+.empty { color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+.archive-page { max-width: 960px; }
+.archive-search,
+.search-cta {
+  margin: 0 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.search-cta { align-items:center; display:flex; gap:18px; justify-content:space-between; }
+.search-cta div { display:grid; gap:3px; }
+.search-cta span { color:var(--muted); font-size:13px; }
+.search-cta a { background:var(--accent); border-radius:8px; color:#fff; flex:none; font-weight:850; min-height:44px; padding:11px 14px; }
+.archive-search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+.archive-search input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid #647b88;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+.search-result {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #f8fafb;
+}
+.search-result span,
+.search-result small {
+  color: var(--muted);
+}
+.weekly-grid {
+  display: grid;
+  gap: 14px;
+}
+.weekly-topics { display:grid; gap:10px; margin-bottom:20px; }
+.weekly-topics > h2 { margin-bottom:2px; }
+.weekly-topic { border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:8px; background:var(--panel); padding:14px; }
+.weekly-topic h2 { font-size:16px; margin:7px 0; }
+.weekly-topic p { color:#405460; margin:0; }
+.topic-status { border-radius:999px; display:inline-flex; font-size:12px; font-weight:850; padding:3px 8px; }
+.status-新規 { background:#164e63; color:#cffafe; }.status-続報 { background:#3b3a14; color:#fef3c7; }.status-決着 { background:#14532d; color:#dcfce7; }
+.topic-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; }
+.topic-links a { color:var(--accent-strong); font-size:13px; font-weight:800; text-decoration:underline; }
+.weekly-genre {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.weekly-genre ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.weekly-genre li {
+  margin: 9px 0;
+}
+.weekly-genre li span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+.calendar-month {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 14px;
+}
+.calendar-month h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+.calendar-weekday,
+.calendar-day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 34px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.calendar-weekday {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+.calendar-day {
+  color: var(--faint);
+  border: 1px solid #e1e8ec;
+}
+.calendar-day.is-empty {
+  border-color: transparent;
+}
+.calendar-day.is-linked {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+.calendar-day.is-linked:hover,
+.calendar-day.is-linked:focus-visible {
+  background: var(--accent-strong);
+}
+.calendar-day.is-latest {
+  box-shadow: 0 0 0 2px #17222b inset;
+}
+@media (max-width: 900px) {
+  .appbar {
+    align-items:center;
+    display:grid;
+    gap:0;
+    min-height:112px;
+    padding-block:6px;
+  }
+  .global-nav { width:100%; }
+  .desktop-menu { display:none; }
+  .mobile-menu { display:flex; flex-wrap:nowrap; justify-content:space-between; width:100%; }
+  .mobile-menu > a,
+  .mobile-more summary { padding-inline:10px; }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+  }
+  .side-calendar {
+    display: none;
+  }
+  .side-archive {
+    display: flex;
+  }
+  .side-nav {
+    display: flex;
+    overflow-x: auto;
+    padding: 8px;
+  }
+  .side-archive {
+    margin: 8px 8px 0;
+  }
+  .side-nav a {
+    flex: 0 0 auto;
+    gap: 16px;
+  }
+}
+@media (max-width: 560px) {
+  .page { padding: 14px 12px 44px; }
+  .hero h1 { font-size: 34px; }
+  .badges { flex-wrap: wrap; }
+  .big-news-picks { padding: 14px; }
+  .big-news-grid { grid-template-columns: 1fr; }
+  .big-news-grid .card:first-child {
+    grid-column: auto;
+    grid-template-columns: 88px minmax(0, 1fr);
+    padding: 14px 32px 14px 12px;
+  }
+  .big-news-grid .card:first-child .thumb { height: 70px; }
+  .big-news-grid .card:first-child h3 { font-size: 18px; }
+  .card { padding-right: 32px; }
+  .card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .card .thumb {
+    width: 100%;
+    height: 54px;
+    border-radius: 8px;
+  }
+  .card.is-compact { grid-template-columns: 64px minmax(0, 1fr); }
+  .card.is-compact .thumb { height: 48px; }
+  .search-cta { align-items:stretch; flex-direction:column; }
+  .search-cta a { justify-content:center; text-align:center; }
+}
+@media (max-width: 390px) {
+  .appbar { padding-inline:12px; }
+  .brand { font-size:.9rem; }
+  .mobile-menu > a,
+  .mobile-more summary { font-size:.73rem; padding-inline:6px; }
+}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="appbar">
+    <a class="brand" href="./" aria-label="Daily Trend News">Daily Trend News</a>
+    <nav class="global-nav" aria-label="共通メニュー"><div class="desktop-menu"><a aria-current="page" href="../">共通ニュース</a><a href="../search/">ニュース検索</a><a href="../archive.html">アーカイブ</a><a href="../weekly.html">週次まとめ</a><a href="../my/">マイニュース</a></div><div class="mobile-menu"><a aria-current="page" href="../">共通ニュース</a><a href="../search/">ニュース検索</a><a href="../archive.html">アーカイブ</a><a href="../weekly.html">週次まとめ</a><details class="mobile-more"><summary>その他</summary><div><a href="../my/">マイニュース</a></div></details></div></nav>
+  </header>
+  <main id="main" class="page">
+    <section class="hero">
+      <p class="eyebrow">Daily Trend News · 2026-08-10 00:00 - 2026-08-10 23:59 JST</p>
+      <h1>共通ニュース</h1>
+      <div class="badges">
+        <span>2026-08-10</span>
+        <span>14ジャンル</span>
+        <span>64件の記事</span>
+        <span>更新: 2026-08-11 06:03 JST</span>
+      </div>
+    </section>
+    <section class="big-news-picks" aria-labelledby="big-news-heading">
+  <div class="big-news-heading">
+    <p class="eyebrow">Today&apos;s Big News</p>
+    <h2 id="big-news-heading">ビッグニュース</h2>
+    <p>今日、特に影響が大きく広く報じられているニュースです。</p>
+  </div>
+  <div class="big-news-grid"><a id="featured-article-1b09f2df0bf58219" class="card tone-safety is-big-news" href="https://news.google.com/rss/articles/CBMickFVX3lxTE9QLWhGd3hZSFRJZ1I1OHU0bkViRUR6bEtnaVlxUWFnSURSTTR5LVRyZFoxM3VSTy1kZ0RRb2lYX0FZNGZfcDVPMW9rNXgzMHVwU2hKb055Z20ydUtrRDQ1ZWp0OVFBNE81NkxhWVlhWWhDdw" rel="noopener noreferrer" target="_blank" aria-label="令和８年熊本地震非常災害対策本部会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE9QLWhGd3hZSFRJZ1I1OHU0bkViRUR6bEtnaVlxUWFnSURSTTR5LVRyZFoxM3VSTy1kZ0RRb2lYX0FZNGZfcDVPMW9rNXgzMHVwU2hKb055Z20ydUtrRDQ1ZWp0OVFBNE81NkxhWVlhWWhDdw" data-title="令和８年熊本地震非常災害対策本部会議 - 首相官邸" data-genre="災害" data-featured="true">
+  <img class="thumb" src="../assets/thumbs/793836f9c028b51b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>首相官邸 · 11:40</span><span class="read-state">未読</span></div>
+    <div class="labels"><span class="big-news-label">ビッグニュース</span> <span>災害</span> <span>一次情報</span> <span>公式発表</span> <span>要注意</span></div>
+    <h3>令和８年熊本地震非常災害対策本部会議</h3>
+    <p class="summary-text">令和８年熊本地震非常災害対策本部会議 首相官邸</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
+  </div>
+</a>
+<a id="featured-article-80b040b657f54252" class="card tone-money is-big-news" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNUl9BNlNrWGxWSTBEV085bnVmQ1ZIdHlDR2lIV3BXdkI1QTJRTkZjUThOYkJEcFZCZWg5andtUXBIQjg3M1RkM3JlWDFfa2lBSnljekNaM21oY2s1NVFaeFN4b3dsVVdUZTVUcDc5dzlacmRpbGxadWhKd212djlfNmlqSU9XOGlqZ3dhWEd3R0ViQQ" rel="noopener noreferrer" target="_blank" aria-label="日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】 - tv-tokyo.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMikgFBVV95cUxNUl9BNlNrWGxWSTBEV085bnVmQ1ZIdHlDR2lIV3BXdkI1QTJRTkZjUThOYkJEcFZCZWg5andtUXBIQjg3M1RkM3JlWDFfa2lBSnljekNaM21oY2s1NVFaeFN4b3dsVVdUZTVUcDc5dzlacmRpbGxadWhKd212djlfNmlqSU9XOGlqZ3dhWEd3R0ViQQ" data-title="日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】 - tv-tokyo.co.jp" data-genre="経済" data-featured="true">
+  <img class="thumb" src="../assets/thumbs/bfda08775498f8e7.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>tv-tokyo.co.jp · 08:35</span><span class="read-state">未読</span></div>
+    <div class="labels"><span class="big-news-label">ビッグニュース</span> <span>経済</span> <span>大手報道</span> <span>複数社で確認</span> <span>市場・企業</span> <span>独立2媒体</span></div>
+    <h3>日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】</h3>
+    <p class="summary-text">日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】 - tv-tokyo.co.jp</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 95点</span></p>
+  </div>
+</a></div>
+</section>
+    <div class="layout">
+      <aside class="sidebar" aria-label="ジャンル">
+        <div class="side-title">ジャンル</div>
+        <div class="side-calendar"><div class="calendar" aria-label="過去日付カレンダー"><section class="calendar-month" aria-labelledby="month-2026-08">
+  <h2 id="month-2026-08">2026年8月</h2>
+  <div class="calendar-grid"><span class="calendar-weekday">日</span><span class="calendar-weekday">月</span><span class="calendar-weekday">火</span><span class="calendar-weekday">水</span><span class="calendar-weekday">木</span><span class="calendar-weekday">金</span><span class="calendar-weekday">土</span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day is-empty" aria-hidden="true"></span><span class="calendar-day" aria-disabled="true">1</span><span class="calendar-day" aria-disabled="true">2</span><span class="calendar-day" aria-disabled="true">3</span><span class="calendar-day" aria-disabled="true">4</span><a class="calendar-day is-linked" href="../2026-08-05/" aria-label="2026-08-05の記事">5</a><a class="calendar-day is-linked" href="../2026-08-06/" aria-label="2026-08-06の記事">6</a><a class="calendar-day is-linked" href="../2026-08-07/" aria-label="2026-08-07の記事">7</a><a class="calendar-day is-linked" href="../2026-08-08/" aria-label="2026-08-08の記事">8</a><a class="calendar-day is-linked" href="../2026-08-09/" aria-label="2026-08-09の記事">9</a><a class="calendar-day is-linked is-latest" href="../2026-08-10/" aria-label="2026-08-10の記事">10</a><span class="calendar-day" aria-disabled="true">11</span><span class="calendar-day" aria-disabled="true">12</span><span class="calendar-day" aria-disabled="true">13</span><span class="calendar-day" aria-disabled="true">14</span><span class="calendar-day" aria-disabled="true">15</span><span class="calendar-day" aria-disabled="true">16</span><span class="calendar-day" aria-disabled="true">17</span><span class="calendar-day" aria-disabled="true">18</span><span class="calendar-day" aria-disabled="true">19</span><span class="calendar-day" aria-disabled="true">20</span><span class="calendar-day" aria-disabled="true">21</span><span class="calendar-day" aria-disabled="true">22</span><span class="calendar-day" aria-disabled="true">23</span><span class="calendar-day" aria-disabled="true">24</span><span class="calendar-day" aria-disabled="true">25</span><span class="calendar-day" aria-disabled="true">26</span><span class="calendar-day" aria-disabled="true">27</span><span class="calendar-day" aria-disabled="true">28</span><span class="calendar-day" aria-disabled="true">29</span><span class="calendar-day" aria-disabled="true">30</span><span class="calendar-day" aria-disabled="true">31</span></div>
+</section></div><a class="calendar-more" href="../archive.html">すべての日付</a></div><a class="side-archive" href="../archive.html"><span>過去日付</span><small>カレンダー</small></a><nav class="side-nav"><a href="#AI"><span>AI</span><small>6件</small></a>
+<a href="#IT業界"><span>IT業界</span><small>6件</small></a>
+<a href="#政治"><span>政治</span><small>6件</small></a>
+<a href="#社会"><span>社会</span><small>6件</small></a>
+<a href="#事件・事故"><span>事件・事故</span><small>6件</small></a>
+<a href="#芸能人の結婚・離婚・交際"><span>芸能人の結婚・離婚・交際</span><small>2件</small></a>
+<a href="#災害"><span>災害</span><small>6件</small></a>
+<a href="#経済"><span>経済</span><small>6件</small></a>
+<a href="#金融"><span>金融</span><small>4件</small></a>
+<a href="#国際"><span>国際</span><small>6件</small></a>
+<a href="#ゲーム"><span>ゲーム</span><small>3件</small></a>
+<a href="#エンタメ"><span>エンタメ</span><small>2件</small></a>
+<a href="#ライフ"><span>ライフ</span><small>4件</small></a>
+<a href="#科学"><span>科学</span><small>1件</small></a></nav>
+      </aside>
+      <div class="content">
+        <details class="genre tone-tech" open>
+  <summary class="genre-head">
+    <h2 id="AI">AI</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-12db7e1684495b91" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBGR3ZCZzJjZVpCOW9mSWVQb1NWSHoyRnlYMmd3TkhwTzVtcDhsRWZSSHVrUmZWRXFCWm55MlFNdjFNbU5oejNYZVI5WlUxd1FqRENGaGUtT2E3em1WV1VYRnE2TlZZWUZiVVp1dVpR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="熊本地震の偽画像がSNSで拡散 毎日新聞の写真をAIで加工か - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTFBGR3ZCZzJjZVpCOW9mSWVQb1NWSHoyRnlYMmd3TkhwTzVtcDhsRWZSSHVrUmZWRXFCWm55MlFNdjFNbU5oejNYZVI5WlUxd1FqRENGaGUtT2E3em1WV1VYRnE2TlZZWUZiVVp1dVpR?oc=5" data-title="熊本地震の偽画像がSNSで拡散 毎日新聞の写真をAIで加工か - au Webポータル" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/e4a669c5b0f1c25f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>au Webポータル · 13:06</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>熊本地震の偽画像がSNSで拡散 毎日新聞の写真をAIで加工か</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-eeb6bd35be786273" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1DdFY1Rkcyd2RSd3k1NnA1NWpnTEtYTXg4Q2lPOGZaT1dzNFNJWm9KZTAyTVpsWFc2N0VDR0RITDRsUlZIdm9rcExjclE3SXRycm1hUWpVd1JHU1lqbE1iMVpVV0g3M2s0RzZZNnBHRVRrRXFaNDdj?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ＦＰＴ、OpenAIの「Select Partner」に認定されAIソリューションの展開を加速する取り組み - ニュースメディアVOIXを読む" data-url="https://news.google.com/rss/articles/CBMid0FVX3lxTE1DdFY1Rkcyd2RSd3k1NnA1NWpnTEtYTXg4Q2lPOGZaT1dzNFNJWm9KZTAyTVpsWFc2N0VDR0RITDRsUlZIdm9rcExjclE3SXRycm1hUWpVd1JHU1lqbE1iMVpVV0g3M2s0RzZZNnBHRVRrRXFaNDdj?oc=5" data-title="ＦＰＴ、OpenAIの「Select Partner」に認定されAIソリューションの展開を加速する取り組み - ニュースメディアVOIX" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/0c214f5d3c2b0ffa.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ニュースメディアVOIX · 09:22</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>複数社で確認</span> <span>仕事で使える</span></div>
+    <h3>ＦＰＴ、OpenAIの「Select Partner」に認定されAIソリューションの展開を加速する取り組み</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 66点</span></p>
+  </div>
+</a>
+<a id="article-bb29d929c749395c" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBYWpoVjY3SkVRa1hPVFV3NzltMlZpY0c0dENJSGMxcms1RjFBTlQzMEswSTNGWW1HaXk3QnJ6dERPRTJXakp0Rm0wYWI3RjV0Tk9taHNJUHpBSTg" rel="noopener noreferrer" target="_blank" aria-label="「AIの回答を鵜呑みにしない！」人工知能研究の第一人者・黒川伊保子の最新作『AIのトリセツ』が7月1日発売！人工知能に翻弄されない付き合い方とは！？ - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBYWpoVjY3SkVRa1hPVFV3NzltMlZpY0c0dENJSGMxcms1RjFBTlQzMEswSTNGWW1HaXk3QnJ6dERPRTJXakp0Rm0wYWI3RjV0Tk9taHNJUHpBSTg" data-title="「AIの回答を鵜呑みにしない！」人工知能研究の第一人者・黒川伊保子の最新作『AIのトリセツ』が7月1日発売！人工知能に翻弄されない付き合い方とは！？ - 朝日新聞" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/5438eecd0ff10aed.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>朝日新聞 · 09:25</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <h3>「AIの回答を鵜呑みにしない！」人工知能研究の第一人者・黒川伊保子の最新作『AIのトリセツ』が7月1日発売！人工知能に翻弄されない付き合い方とは！？</h3>
+    <p class="summary-text">「AIの回答を鵜呑みにしない！」人工知能研究の第一人者・黒川伊保子の最新作『AIのトリセツ』が7月1日発売！人工知…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-478b2e5ab6a8440f" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE02ZWZMWkt6X2ZYa3FEdk5QUkU1RUdza2l5WjNtc3ZIWFNyeURWTmxCVE9zcVJraFh3N0UySmZmd0pHTTdhTnMwT2FKX01xcFVhckZ3b0VPU2pDVC04Y2N4d2hpdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="動画生成AI「MiniMax H3」がApache 2.0ライセンスに移行検討、制限撤廃へ - PC Watchを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE02ZWZMWkt6X2ZYa3FEdk5QUkU1RUdza2l5WjNtc3ZIWFNyeURWTmxCVE9zcVJraFh3N0UySmZmd0pHTTdhTnMwT2FKX01xcFVhckZ3b0VPU2pDVC04Y2N4d2hpdw?oc=5" data-title="動画生成AI「MiniMax H3」がApache 2.0ライセンスに移行検討、制限撤廃へ - PC Watch" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/afce18d616d497a6.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PC Watch · 07:24</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>専門メディア</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <h3>動画生成AI「MiniMax H3」がApache 2.0ライセンスに移行検討、制限撤廃へ</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-a7f9f17c10c70a96" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9MenZOMnFKdFJsYnpRbzlwVFFXMWNobER4a0l2YUJRUnJJalZwZ2MzbkV0WURsNnMzWVItVTZQYWNMb3FRSEg4NHVDOW83TXdQTGgyQmxQbFQ0azE2N3UySUd1WG9hTHdEOTdDSVR3VE5nTEZZemxaMmFORHBaSWc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="Michael Saylor：ChatGPTで1年で150億ドルを荒稼ぎする方法？ - PANewsを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9MenZOMnFKdFJsYnpRbzlwVFFXMWNobER4a0l2YUJRUnJJalZwZ2MzbkV0WURsNnMzWVItVTZQYWNMb3FRSEg4NHVDOW83TXdQTGgyQmxQbFQ0azE2N3UySUd1WG9hTHdEOTdDSVR3VE5nTEZZemxaMmFORHBaSWc?oc=5" data-title="Michael Saylor：ChatGPTで1年で150億ドルを荒稼ぎする方法？ - PANews" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/83ecc4bbf1cae159.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PANews · 14:07</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <h3>Michael Saylor：ChatGPTで1年で150億ドルを荒稼ぎする方法？</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-f7d427f818b65854" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGlxbzhXS2Y4czNsck1PNWZSdHhuRk9HTnRraDRnSGlHX205U25Ba0JEaWJCdk9yRVVYMkdiM3NYRnZuTmNZOTBGQk1mVDB1TVMzdml5ancwQktWOTFoT3d2NE5wbVBJdVY4M2NkUXYxSDFmT2pOcG5oUU84dEU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ついに「部署が丸ごとAI」に…NEC、部門長から社員までAIが担う新部署を設置（ビジネス＋IT） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGlxbzhXS2Y4czNsck1PNWZSdHhuRk9HTnRraDRnSGlHX205U25Ba0JEaWJCdk9yRVVYMkdiM3NYRnZuTmNZOTBGQk1mVDB1TVMzdml5ancwQktWOTFoT3d2NE5wbVBJdVY4M2NkUXYxSDFmT2pOcG5oUU84dEU?oc=5" data-title="ついに「部署が丸ごとAI」に…NEC、部門長から社員までAIが担う新部署を設置（ビジネス＋IT） - Yahoo!ニュース" data-genre="AI">
+  <img class="thumb" src="../assets/thumbs/0ffd93b27015cb7c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 12:40</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>AI</span> <span>配信記事</span> <span>複数社で確認</span> <span>仕事で使える</span></div>
+    <h3>ついに「部署が丸ごとAI」に…NEC、部門長から社員までAIが担う新部署を設置（ビジネス＋IT）</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-tech" open>
+  <summary class="genre-head">
+    <h2 id="IT業界">IT業界</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-7f15582ed73c9cc8" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NWFZLRXJkeUhOUUN2dE1mSkhyMkhQNDU1TnV0b3JNVW9aR3l3OTdybzZfVTA1ampGSHRVRXh5cW9SUHJkbDBlZUdULUhXX0N5LUQwc251VEJFeGNiaDZXVlZ3ZGtWSlN5?oc=5" rel="noopener noreferrer" target="_blank" aria-label="macOSの「画面共有」に認証バイパスの脆弱性、Appleがセキュリティアップデートを実施／すべてのユーザーに適用を推奨 - 窓の杜を読む" data-url="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1NWFZLRXJkeUhOUUN2dE1mSkhyMkhQNDU1TnV0b3JNVW9aR3l3OTdybzZfVTA1ampGSHRVRXh5cW9SUHJkbDBlZUdULUhXX0N5LUQwc251VEJFeGNiaDZXVlZ3ZGtWSlN5?oc=5" data-title="macOSの「画面共有」に認証バイパスの脆弱性、Appleがセキュリティアップデートを実施／すべてのユーザーに適用を推奨 - 窓の杜" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/7cfff88cb3b7cf53.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>窓の杜 · 10:25</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>専門メディア</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>macOSの「画面共有」に認証バイパスの脆弱性、Appleがセキュリティアップデートを実施／すべてのユーザーに適用を推奨</h3>
+    <p class="summary-text">macOSの「画面共有」に認証バイパスの脆弱性、Appleがセキュリティアップデートを実施／すべてのユーザーに適用…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-834bf277f8bcd98e" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5oQndQR08zQTQ1MkNTUVBlWHk0VWc3NG5ycEJEYkFQTHE0RkdWT2xxWll4N01Ob0xsMEtBay1HeURLSF95SEhyUzdOMk1SY2ZCOE95bkJZYXJOWV9ieUVEMXdsSWs?oc=5" rel="noopener noreferrer" target="_blank" aria-label="北朝鮮ハッカーがAIでサイバー攻撃を高度化 - BeInCryptoを読む" data-url="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5oQndQR08zQTQ1MkNTUVBlWHk0VWc3NG5ycEJEYkFQTHE0RkdWT2xxWll4N01Ob0xsMEtBay1HeURLSF95SEhyUzdOMk1SY2ZCOE95bkJZYXJOWV9ieUVEMXdsSWs?oc=5" data-title="北朝鮮ハッカーがAIでサイバー攻撃を高度化 - BeInCrypto" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/53777a8b3aa5dba2.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>BeInCrypto · 11:46</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>北朝鮮ハッカーがAIでサイバー攻撃を高度化</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-2bcabd19fdb62ec2" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE13Qi1LaFc0cHJnRW1NdzVfT0txN0VzeVVPRkNpR1hwc0RTUTNkZnNudl9KNnNFVFFHMkoySVJrUTNjNDBjdzBVTWMxejRVZHlScFU5ZkNFNlI5bDgxQjJCTGZ5eVJQLU9ZNnNZ" rel="noopener noreferrer" target="_blank" aria-label="UAE、エネルギー・航空分野を標的としたサイバー攻撃を阻止 - arabnews.jpを読む" data-url="https://news.google.com/rss/articles/CBMia0FVX3lxTE13Qi1LaFc0cHJnRW1NdzVfT0txN0VzeVVPRkNpR1hwc0RTUTNkZnNudl9KNnNFVFFHMkoySVJrUTNjNDBjdzBVTWMxejRVZHlScFU5ZkNFNlI5bDgxQjJCTGZ5eVJQLU9ZNnNZ" data-title="UAE、エネルギー・航空分野を標的としたサイバー攻撃を阻止 - arabnews.jp" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/0eedb62e0ea8b207.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>arabnews.jp · 10:08</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>UAE、エネルギー・航空分野を標的としたサイバー攻撃を阻止</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-f6e73313dec6b3bb" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9DRTM1bTRIQ1g5VmRaUmVic21heHpoYjBsNC0yQXB6a0hiUHVnVDM5Q2tyZXlRaWYyNFdObHYzYkswejQ5U1VvTl9LaWJLTFZ1T2d2YjhyUEdaQS10ZzNuNkhjZUhfNmR3NHc0Rzk4d21iekFPWHNNQzZlTE5CTE0" rel="noopener noreferrer" target="_blank" aria-label="米国外初の「Google Store 表参道」13日14時開店 限定ノベルティー配布（ITmedia Mobile） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE9DRTM1bTRIQ1g5VmRaUmVic21heHpoYjBsNC0yQXB6a0hiUHVnVDM5Q2tyZXlRaWYyNFdObHYzYkswejQ5U1VvTl9LaWJLTFZ1T2d2YjhyUEdaQS10ZzNuNkhjZUhfNmR3NHc0Rzk4d21iekFPWHNNQzZlTE5CTE0" data-title="米国外初の「Google Store 表参道」13日14時開店 限定ノベルティー配布（ITmedia Mobile） - Yahoo!ニュース" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/e11ff1671dd9446e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 09:59</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>米国外初の「Google Store 表参道」13日14時開店 限定ノベルティー配布（ITmedia Mobile）</h3>
+    <p class="summary-text">米国外初の「Google Store 表参道」13日14時開店 限定ノベルティー配布（ITmedia Mobile…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 66点</span></p>
+  </div>
+</a>
+<a id="article-bd8a8115f65251a9" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMidEFVX3lxTE9kTklWNWtIUmQyX0dGbmdKTXJPWnM5dXVFZDFUaTgyeXpzNlhpUFdqUUVSNXhRQ3NlN3JNTjZzVkxiakZFb0JRc1FYU0hOcjN3YVB0OEpGdUxpdFk5a2lvcHRkQ0E3aGJ1VnE2LTR3TUtsbVVh" rel="noopener noreferrer" target="_blank" aria-label="Apple Watch、史上最大の変革か：アップルが画面なしバンドを検討、AIがスクリーンの役割を終わらせる？ - BigGo ファイナンスを読む" data-url="https://news.google.com/rss/articles/CBMidEFVX3lxTE9kTklWNWtIUmQyX0dGbmdKTXJPWnM5dXVFZDFUaTgyeXpzNlhpUFdqUUVSNXhRQ3NlN3JNTjZzVkxiakZFb0JRc1FYU0hOcjN3YVB0OEpGdUxpdFk5a2lvcHRkQ0E3aGJ1VnE2LTR3TUtsbVVh" data-title="Apple Watch、史上最大の変革か：アップルが画面なしバンドを検討、AIがスクリーンの役割を終わらせる？ - BigGo ファイナンス" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/cdd87c808458e97a.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>BigGo ファイナンス · 13:35</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <h3>Apple Watch、史上最大の変革か：アップルが画面なしバンドを検討、AIがスクリーンの役割を終わらせる？</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-980148204a938ec5" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMif0FVX3lxTE1COXc0a2dGMDNRcTZPZEtkVWZfR0xXaU0tNkVPSGV2eGlFaEtNYUdfamdvRzNjNVQxN3V3OEhzVjh6eHNsTlpubW9ReDVjVGdCUEk2R051b29zT3BmYVU0bm5Fa1JUcXRqU0JhQWhEQ1BwbUxycWtvMkZIWnJJNVk" rel="noopener noreferrer" target="_blank" aria-label="Mrs. GREEN APPLE 藤澤涼架が号泣した“じわじわ”の真相を告白「ゼンジン」ライブ舞台裏（TOKYO FM＋） - Yahoo!ニュースを読む" data-url="https://news.google.com/rss/articles/CBMif0FVX3lxTE1COXc0a2dGMDNRcTZPZEtkVWZfR0xXaU0tNkVPSGV2eGlFaEtNYUdfamdvRzNjNVQxN3V3OEhzVjh6eHNsTlpubW9ReDVjVGdCUEk2R051b29zT3BmYVU0bm5Fa1JUcXRqU0JhQWhEQ1BwbUxycWtvMkZIWnJJNVk" data-title="Mrs. GREEN APPLE 藤澤涼架が号泣した“じわじわ”の真相を告白「ゼンジン」ライブ舞台裏（TOKYO FM＋） - Yahoo!ニュース" data-genre="IT業界">
+  <img class="thumb" src="../assets/thumbs/81a06c0bf97a6a1c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Yahoo!ニュース · 12:10</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>IT業界</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>Mrs. GREEN APPLE 藤澤涼架が号泣した“じわじわ”の真相を告白「ゼンジン」ライブ舞台裏（TOKYO FM＋）</h3>
+    <p class="summary-text">Mrs. GREEN APPLE 藤澤涼架が号泣した“じわじわ”の真相を告白「ゼンジン」ライブ舞台裏（TOKYO…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-civic" open>
+  <summary class="genre-head">
+    <h2 id="政治">政治</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-8efd40cd4183caf3" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9fakNZLVhwX0NxYjFDUVNTaEFDYnhXcE90enEzOG5ZcC1YOGlQT3J6ZVU0WW1WdlFoUTBpQ0dIR09uME9zblNjWWhtRms0Tk41TXItVVZiTEFRaDBrQnRYTUg4UmdsS1U1Y3VxcQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="熊本地震、住宅再建に最大300万円支給 政府が知事から要望聞き取り - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE9fakNZLVhwX0NxYjFDUVNTaEFDYnhXcE90enEzOG5ZcC1YOGlQT3J6ZVU0WW1WdlFoUTBpQ0dIR09uME9zblNjWWhtRms0Tk41TXItVVZiTEFRaDBrQnRYTUg4UmdsS1U1Y3VxcQ?oc=5" data-title="熊本地震、住宅再建に最大300万円支給 政府が知事から要望聞き取り - 日本経済新聞" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/7bb24e97c13789f5.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日本経済新聞 · 09:50</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>熊本地震、住宅再建に最大300万円支給 政府が知事から要望聞き取り</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-5a10c7356932afa3" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSUnNrazdFdjJ1Y3lqYU9qTUdVakVoUkJyNGI3VVJZVDlIR05kNVdlUmhrY1dOcktjRzRISTQ4UDFqdldVa1VFVmluRG5JX3piVHM5XzFmbHF6ZjRqMnhBMkx4MA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相、夏の外遊見送り 熊本地震対応を優先 - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSUnNrazdFdjJ1Y3lqYU9qTUdVakVoUkJyNGI3VVJZVDlIR05kNVdlUmhrY1dOcktjRzRISTQ4UDFqdldVa1VFVmluRG5JX3piVHM5XzFmbHF6ZjRqMnhBMkx4MA?oc=5" data-title="高市首相、夏の外遊見送り 熊本地震対応を優先 - 時事ドットコム" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/503e76961d69269f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>時事ドットコム · 09:12</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>高市首相、夏の外遊見送り 熊本地震対応を優先</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-cd77fd9f6a72080a" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fZUI5QndjaWc0cEwwTk40Q2xKbHR0MkpBX3BYS21DcGNINk5nVzJkUXNDRUYtX0YxX3N4a1RScEtjVjlwTVhGMUVEcm9Vc2I2QV9RdW02UQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="国会議事堂 - 衆院比例復活、基準厳格化 議員定数削減には触れず - 写真・画像(1/1) - 西日本新聞meを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1fZUI5QndjaWc0cEwwTk40Q2xKbHR0MkpBX3BYS21DcGNINk5nVzJkUXNDRUYtX0YxX3N4a1RScEtjVjlwTVhGMUVEcm9Vc2I2QV9RdW02UQ?oc=5" data-title="国会議事堂 - 衆院比例復活、基準厳格化 議員定数削減には触れず - 写真・画像(1/1) - 西日本新聞me" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/1458cf17c8b2d77c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>西日本新聞me · 09:11</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>複数社で確認</span> <span>制度・政治</span></div>
+    <h3>国会議事堂 - 衆院比例復活、基準厳格化 議員定数削減には触れず - 写真・画像(1/1)</h3>
+    <p class="summary-text">国会議事堂 - 衆院比例復活、基準厳格化 議員定数削減には触れず</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-0af92528d533e862" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9yQVVRdTVIUk5RdjFSbUNnWWo5ZVVvTS1SR3FQYnhlOWg3eVNlUFBsMzFLQ1lfbTFrVy1CNVNDYjhkRHZ5dEpIdkNSdFo3OWU1RUZXbkNINGdkWkhfOFlhT2FfWlYzdXNlQjlWWA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="10日の高市首相の動静 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE9yQVVRdTVIUk5RdjFSbUNnWWo5ZVVvTS1SR3FQYnhlOWg3eVNlUFBsMzFLQ1lfbTFrVy1CNVNDYjhkRHZ5dEpIdkNSdFo3OWU1RUZXbkNINGdkWkhfOFlhT2FfWlYzdXNlQjlWWA?oc=5" data-title="10日の高市首相の動静 - 日本経済新聞" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/9231f6ad965d3668.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日本経済新聞 · 13:40</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <h3>10日の高市首相の動静</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-f35b3ab501d50b08" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE44V3ZyREZ5ZXhHQXo5N3d2M2hldC1BZWNnVHNoM3NKOURkYVdFSzB5cXVyZFY0U0RBQ3dSYnJLTUp6YzM4dmVXNS1hdzd6Zw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="元国会議員の男が銃で県の男性幹部を殺害 車に向け複数発砲 長年の知人同士で金銭トラブルか 犯行後に報道機関に声明 タイ - FNNプライムオンラインを読む" data-url="https://news.google.com/rss/articles/CBMiTkFVX3lxTE44V3ZyREZ5ZXhHQXo5N3d2M2hldC1BZWNnVHNoM3NKOURkYVdFSzB5cXVyZFY0U0RBQ3dSYnJLTUp6YzM4dmVXNS1hdzd6Zw?oc=5" data-title="元国会議員の男が銃で県の男性幹部を殺害 車に向け複数発砲 長年の知人同士で金銭トラブルか 犯行後に報道機関に声明 タイ - FNNプライムオンライン" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/5fd83e24dd2922d8.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>FNNプライムオンライン · 12:46</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <h3>元国会議員の男が銃で県の男性幹部を殺害 車に向け複数発砲 長年の知人同士で金銭トラブルか 犯行後に報道機関に声明 タイ</h3>
+    <p class="summary-text">元国会議員の男が銃で県の男性幹部を殺害 車に向け複数発砲 長年の知人同士で金銭トラブルか 犯行後に報道機関に声明…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-a81b2c20609b5a3a" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSMWhMZmxYSFZUSTlhRXZwTUhfV0lRQklpemxjeVBsZ1ZkcldLUHhrbHVUYkppVDl5M1pOZTdiVU1TalVrM3NpUzhCaW9fRm10Y19fajk1ZzFKZDRPNjl6ZGgta1MtbWc" rel="noopener noreferrer" target="_blank" aria-label="首相、オマーン国王と電話協議 ホルムズ海峡「自由な航行回復を」 [高市早苗首相 自民党総裁] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSMWhMZmxYSFZUSTlhRXZwTUhfV0lRQklpemxjeVBsZ1ZkcldLUHhrbHVUYkppVDl5M1pOZTdiVU1TalVrM3NpUzhCaW9fRm10Y19fajk1ZzFKZDRPNjl6ZGgta1MtbWc" data-title="首相、オマーン国王と電話協議 ホルムズ海峡「自由な航行回復を」 [高市早苗首相 自民党総裁] - 朝日新聞" data-genre="政治">
+  <img class="thumb" src="../assets/thumbs/e8b1e3be4cbfc7fa.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>朝日新聞 · 10:54</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>政治</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <h3>首相、オマーン国王と電話協議 ホルムズ海峡「自由な航行回復を」 [高市早苗首相 自民党総裁]</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-civic" open>
+  <summary class="genre-head">
+    <h2 id="社会">社会</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-b28ee97954f76b9d" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9jNGhlVHB4Um1vRmpVWUoyYmlFOVBpa3pnTXpoNWNjZmljVm9yZTFaZklCVTBQbVZaQzM0cHY0T0YzeG4wRnB1NlRhWU9Qb1Z4YWs4azczdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="各地で水難事故 秋田・北秋田市ではアユ釣りの70歳男性が川で転倒し流され死亡 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9jNGhlVHB4Um1vRmpVWUoyYmlFOVBpa3pnTXpoNWNjZmljVm9yZTFaZklCVTBQbVZaQzM0cHY0T0YzeG4wRnB1NlRhWU9Qb1Z4YWs4azczdw?oc=5" data-title="各地で水難事故 秋田・北秋田市ではアユ釣りの70歳男性が川で転倒し流され死亡 - TBS NEWS DIG" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/680938717599a418.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TBS NEWS DIG · 14:40</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>各地で水難事故 秋田・北秋田市ではアユ釣りの70歳男性が川で転倒し流され死亡</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-e640d97242e1a13c" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1PT1JCSkdQYkdlOG0wNHhqRUpIdGlndWgtbVhnc0dhN0M5cU5ySkNKTU9IYUoxSWlsS0ZDUTk1NVFEUldaeGRVTlloMC1oNndoUE54QkhrUllqcW9mM09LeUxmekc0MXg2UlduXy1ST04tVWZKT3NONG9rTmc?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高齢女性遺体発見から2年…54歳の娘逮捕 親子に何が 千葉・いすみ市（2026年8月10日掲載）｜日テレNEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMifEFVX3lxTE1PT1JCSkdQYkdlOG0wNHhqRUpIdGlndWgtbVhnc0dhN0M5cU5ySkNKTU9IYUoxSWlsS0ZDUTk1NVFEUldaeGRVTlloMC1oNndoUE54QkhrUllqcW9mM09LeUxmekc0MXg2UlduXy1ST04tVWZKT3NONG9rTmc?oc=5" data-title="高齢女性遺体発見から2年…54歳の娘逮捕 親子に何が 千葉・いすみ市（2026年8月10日掲載）｜日テレNEWS NNN - 日テレNEWS NNN" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/8d1115f631fb09fc.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日テレNEWS NNN · 12:25</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <h3>高齢女性遺体発見から2年…54歳の娘逮捕 親子に何が 千葉・いすみ市（2026年8月10日掲載）｜日テレNEWS NNN</h3>
+    <p class="summary-text">高齢女性遺体発見から2年…54歳の娘逮捕 親子に何が 千葉・いすみ市（2026年8月10日掲載）</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-1ce7105fcec43f86" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE95dEZCRTBOWG1DY21jQ3dIUVI1NGNNY2xVOXQtUEREYWNrUGZBc0s0RnRmOVlGdmRDRWVJaTJMZkdRTXFGbmktTjFEOEF0aGJXOXlNWQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="静岡県磐田市の強盗致傷事件で容疑の男3人を逮捕 「トクリュウ」の実行役か - 中日新聞Webを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE95dEZCRTBOWG1DY21jQ3dIUVI1NGNNY2xVOXQtUEREYWNrUGZBc0s0RnRmOVlGdmRDRWVJaTJMZkdRTXFGbmktTjFEOEF0aGJXOXlNWQ?oc=5" data-title="静岡県磐田市の強盗致傷事件で容疑の男3人を逮捕 「トクリュウ」の実行役か - 中日新聞Web" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/c564fe3f59fa1eaf.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>中日新聞Web · 11:46</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <h3>静岡県磐田市の強盗致傷事件で容疑の男3人を逮捕 「トクリュウ」の実行役か</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-002cd0cd2ab2d713" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qdnBYd2VyQzQ2YVMyWlI0N011S1JIYlgyOHVRYS14ZFg0WVhSTXU5by1mQjE5U0RYOTdEYUJKNVg5R0k4VFR4LThIYUlmcHctWW1yVHlybURrd3BlVWQxdURQNGEwZEE" rel="noopener noreferrer" target="_blank" aria-label="施設で父が殺され同室の男性逮捕、でも「認知症」と…何があったのか [石川県] - 朝日新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qdnBYd2VyQzQ2YVMyWlI0N011S1JIYlgyOHVRYS14ZFg0WVhSTXU5by1mQjE5U0RYOTdEYUJKNVg5R0k4VFR4LThIYUlmcHctWW1yVHlybURrd3BlVWQxdURQNGEwZEE" data-title="施設で父が殺され同室の男性逮捕、でも「認知症」と…何があったのか [石川県] - 朝日新聞" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/d0a04bc55f5871e6.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>朝日新聞 · 11:22</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <h3>施設で父が殺され同室の男性逮捕、でも「認知症」と…何があったのか [石川県]</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-6988c0882979ef40" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBLUlRHX0tfdVhsYi1qWHRMN1JtcWlIZUZZWTFadUxiTkFvLXlWenRoQm5laklNQ2VKNW9fYUtnZ0dTbnN4NGtPUXlwU0hJdw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【海難事故】「波が強く戻れないのかと…」中1姉(13)と小3弟(8)が死亡 遊具が波に煽られて親子3人落水 新潟市の角田浜海水浴場 - FNNプライムオンラインを読む" data-url="https://news.google.com/rss/articles/CBMiTkFVX3lxTFBLUlRHX0tfdVhsYi1qWHRMN1JtcWlIZUZZWTFadUxiTkFvLXlWenRoQm5laklNQ2VKNW9fYUtnZ0dTbnN4NGtPUXlwU0hJdw?oc=5" data-title="【海難事故】「波が強く戻れないのかと…」中1姉(13)と小3弟(8)が死亡 遊具が波に煽られて親子3人落水 新潟市の角田浜海水浴場 - FNNプライムオンライン" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/372e388e1e63d5f0.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>FNNプライムオンライン · 11:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>【海難事故】「波が強く戻れないのかと…」中1姉(13)と小3弟(8)が死亡 遊具が波に煽られて親子3人落水 新潟市の角田浜海水浴場</h3>
+    <p class="summary-text">【海難事故】「波が強く戻れないのかと…」中1姉(13)と小3弟(8)が死亡 遊具が波に煽られて親子3人落水 新潟市…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-00b4e20e141e9a6d" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tR1NUSnE4bVRPT2pNaWhybVlnX1lnaEtzNDR0V2dBb3dKbmxmZXJfR1RwQzlJSTZFSWsxLXEzODNoSDJIRUgxOGx5bVVaYk41WDdfWlNXeFNWQ2RjVTBoUnNtMkNUUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="２年前の高齢女性殺害事件、殺人容疑で５４歳娘を逮捕…「母を殺害していない」と否認 - 読売新聞を読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tR1NUSnE4bVRPT2pNaWhybVlnX1lnaEtzNDR0V2dBb3dKbmxmZXJfR1RwQzlJSTZFSWsxLXEzODNoSDJIRUgxOGx5bVVaYk41WDdfWlNXeFNWQ2RjVTBoUnNtMkNUUQ?oc=5" data-title="２年前の高齢女性殺害事件、殺人容疑で５４歳娘を逮捕…「母を殺害していない」と否認 - 読売新聞" data-genre="社会">
+  <img class="thumb" src="../assets/thumbs/624850ebdfe8c449.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>読売新聞 · 08:26</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>社会</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <h3>２年前の高齢女性殺害事件、殺人容疑で５４歳娘を逮捕…「母を殺害していない」と否認</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-safety" open>
+  <summary class="genre-head">
+    <h2 id="事件・事故">事件・事故</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-370df2c6433bbf4a" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1qWUwxUFJ6SmEtZW1aSXd0cVJ5alRJQXN2UzJENjJqTjZ6VzZZaF8wRml0MXdEbWZpdFpVeGFZd1RETXNNR1NWaExTR2d3dw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【死亡事故】帰省ラッシュピークの一方…新潟県内“交通事故”相次ぎ3日間で5人死亡 県警は交通指導・取り締まり強化 - FNNプライムオンラインを読む" data-url="https://news.google.com/rss/articles/CBMiTkFVX3lxTE1qWUwxUFJ6SmEtZW1aSXd0cVJ5alRJQXN2UzJENjJqTjZ6VzZZaF8wRml0MXdEbWZpdFpVeGFZd1RETXNNR1NWaExTR2d3dw?oc=5" data-title="【死亡事故】帰省ラッシュピークの一方…新潟県内“交通事故”相次ぎ3日間で5人死亡 県警は交通指導・取り締まり強化 - FNNプライムオンライン" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/768c014f127fb0aa.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>FNNプライムオンライン · 13:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>【死亡事故】帰省ラッシュピークの一方…新潟県内“交通事故”相次ぎ3日間で5人死亡 県警は交通指導・取り締まり強化</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-05e623879540b90b" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxaGU2VmtESF9qSTl3RHFjb0JLS21aakxJZS1LdU9PLU9CblhfeDNVTUdfN1lEelJrTGl6RjE1S3Fidk11ZENvYXVGMjZqd3AwOE5nVjhR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="木刀で殴り、けが負わせた疑い 傷害容疑で福岡市早良区の男逮捕 - 西日本新聞meを読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxaGU2VmtESF9qSTl3RHFjb0JLS21aakxJZS1LdU9PLU9CblhfeDNVTUdfN1lEelJrTGl6RjE1S3Fidk11ZENvYXVGMjZqd3AwOE5nVjhR?oc=5" data-title="木刀で殴り、けが負わせた疑い 傷害容疑で福岡市早良区の男逮捕 - 西日本新聞me" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/767bc111d2fd1587.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>西日本新聞me · 07:37</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>木刀で殴り、けが負わせた疑い 傷害容疑で福岡市早良区の男逮捕</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-e7ce24546ac80a24" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XMEZXaTMwVEg5YlpxUVhZbm1NcWptS1BtZmhKaUlrN3Z0WW5mbWNrMmZ0akh1TXNOYmJmdl82SXdFWE5BbkJ2dG1kS2s0NXI4U3E1emdB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="関越道で車に追突し逃走か バス運転手の男逮捕 高校生らを乗せたバスで… 群馬県警 - KSBニュースを読む" data-url="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5XMEZXaTMwVEg5YlpxUVhZbm1NcWptS1BtZmhKaUlrN3Z0WW5mbWNrMmZ0akh1TXNOYmJmdl82SXdFWE5BbkJ2dG1kS2s0NXI4U3E1emdB?oc=5" data-title="関越道で車に追突し逃走か バス運転手の男逮捕 高校生らを乗せたバスで… 群馬県警 - KSBニュース" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/3c9c35f3de12e859.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>KSBニュース · 12:27</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>関越道で車に追突し逃走か バス運転手の男逮捕 高校生らを乗せたバスで… 群馬県警</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-1d2fc6d2ab35ad06" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9SV2ZzSkRLOXh6U013ZDZIb0FSUEVEek9XMDVYNEdVSGNOdndWa3NjRnVic2ZvQVo3eUl3ZEI2R3lLWmRNYmRXS0Jva1UwRU16dExKMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="千葉・いすみ市の女性殺害事件 長女を逮捕 - ABEMA TIMESを読む" data-url="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9SV2ZzSkRLOXh6U013ZDZIb0FSUEVEek9XMDVYNEdVSGNOdndWa3NjRnVic2ZvQVo3eUl3ZEI2R3lLWmRNYmRXS0Jva1UwRU16dExKMA?oc=5" data-title="千葉・いすみ市の女性殺害事件 長女を逮捕 - ABEMA TIMES" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/9604bd43de21991c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ABEMA TIMES · 10:55</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>千葉・いすみ市の女性殺害事件 長女を逮捕</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-870ea1259eae4160" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTFBBbE9qVkdZSVhSN1RYN3MtallBd2NwR052bGFBeHJFcHpBcmFVR3NmbUs2dlF6X09nS1pBZDRQeXFhZFNCOEphbkZGUnZXWEpENmg5S3ZpTDdWangxZjl4Y2Jsd2cwTnRqekxRTHNFQThxUdIBckFVX3lxTFBBbE9qVkdZSVhSN1RYN3MtallBd2NwR052bGFBeHJFcHpBcmFVR3NmbUs2dlF6X09nS1pBZDRQeXFhZFNCOEphbkZGUnZXWEpENmg5S3ZpTDdWangxZjl4Y2Jsd2cwTnRqekxRTHNFQThxUQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="住宅から腕時計や商品券など620万円相当盗む “トクリュウ”の犯行か…３人を再逮捕 札幌市 - Infoseekを読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTFBBbE9qVkdZSVhSN1RYN3MtallBd2NwR052bGFBeHJFcHpBcmFVR3NmbUs2dlF6X09nS1pBZDRQeXFhZFNCOEphbkZGUnZXWEpENmg5S3ZpTDdWangxZjl4Y2Jsd2cwTnRqekxRTHNFQThxUdIBckFVX3lxTFBBbE9qVkdZSVhSN1RYN3MtallBd2NwR052bGFBeHJFcHpBcmFVR3NmbUs2dlF6X09nS1pBZDRQeXFhZFNCOEphbkZGUnZXWEpENmg5S3ZpTDdWangxZjl4Y2Jsd2cwTnRqekxRTHNFQThxUQ?oc=5" data-title="住宅から腕時計や商品券など620万円相当盗む “トクリュウ”の犯行か…３人を再逮捕 札幌市 - Infoseek" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/6912cb4765e36fee.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Infoseek · 10:50</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>住宅から腕時計や商品券など620万円相当盗む “トクリュウ”の犯行か…３人を再逮捕 札幌市</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-8e465ddc892b0e2b" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fcmtzYW5GbW1oYjNRajRVY0lOa3NuUFdUZm8zR0lzNWZFdEhKTHBGOVNsblU2bi0zWjJmM2hzSFA5Tndybnc1RUJzeS10ZzVBMmRQU0VtdzA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【詳報】８９歳女性絞殺、長女逮捕 発生２年、容疑否認 いすみ署捜査本部 - 千葉日報オンラインを読む" data-url="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fcmtzYW5GbW1oYjNRajRVY0lOa3NuUFdUZm8zR0lzNWZFdEhKTHBGOVNsblU2bi0zWjJmM2hzSFA5Tndybnc1RUJzeS10ZzVBMmRQU0VtdzA?oc=5" data-title="【詳報】８９歳女性絞殺、長女逮捕 発生２年、容疑否認 いすみ署捜査本部 - 千葉日報オンライン" data-genre="事件・事故">
+  <img class="thumb" src="../assets/thumbs/1b39371b175242f0.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>千葉日報オンライン · 10:27</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>事件・事故</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>【詳報】８９歳女性絞殺、長女逮捕 発生２年、容疑否認 いすみ署捜査本部</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-entertainment" open>
+  <summary class="genre-head">
+    <h2 id="芸能人の結婚・離婚・交際">芸能人の結婚・離婚・交際</h2>
+    <span>2 topics</span>
+  </summary>
+  <div class="grid"><a id="article-93b8397c92c8f7dd" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzV6THJHVTlCaVU2NEpWZlBwcEhpMEZaeDA0UjY2dmc5cmlDZkowLXJnQlRmcXRUOG1hX3lCdDlMQTBCQ0YxNXIta0dlTFg4SFl1SXl0bmZHVGZ5Ymg0LWtfaTltY05FYzUxUXlFSXFUNmRwTlpPbjM4Z0lVWWowa2x6dTA5enhD0gGIAUFVX3lxTE1LNXpMckdVOUJpVTY0SlZmUHBwSGkwRlp4MDRSNjZ2ZzlyaUNmSjAtcmdCVGZxdFQ4bWFfeUJ0OUxBMEJDRjE1ci1rR2VMWDhIWXVJeXRuZkdUZnliaDQta19pOW1jTkVjNTFReUVJcVQ2ZHBOWk9uMzhnSVVZajBrbHp1MDl6eEM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="サッカー日本代表・佐野海舟との結婚公表で話題 27歳モデル妻の私服姿に反響「cute」「スーパーパーフェクト」 - ｄメニューニュースを読む" data-url="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSzV6THJHVTlCaVU2NEpWZlBwcEhpMEZaeDA0UjY2dmc5cmlDZkowLXJnQlRmcXRUOG1hX3lCdDlMQTBCQ0YxNXIta0dlTFg4SFl1SXl0bmZHVGZ5Ymg0LWtfaTltY05FYzUxUXlFSXFUNmRwTlpPbjM4Z0lVWWowa2x6dTA5enhD0gGIAUFVX3lxTE1LNXpMckdVOUJpVTY0SlZmUHBwSGkwRlp4MDRSNjZ2ZzlyaUNmSjAtcmdCVGZxdFQ4bWFfeUJ0OUxBMEJDRjE1ci1rR2VMWDhIWXVJeXRuZkdUZnliaDQta19pOW1jTkVjNTFReUVJcVQ2ZHBOWk9uMzhnSVVZajBrbHp1MDl6eEM?oc=5" data-title="サッカー日本代表・佐野海舟との結婚公表で話題 27歳モデル妻の私服姿に反響「cute」「スーパーパーフェクト」 - ｄメニューニュース" data-genre="芸能人の結婚・離婚・交際">
+  <img class="thumb" src="../assets/thumbs/57ca196a8b97d43e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ｄメニューニュース · 10:51</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
+    <h3>サッカー日本代表・佐野海舟との結婚公表で話題 27歳モデル妻の私服姿に反響「cute」「スーパーパーフェクト」</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-c491aa4e6d2fd4e3" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE8waV9aeXFPVWp4UXNkeXJDMGR0RVJpbS1ieThYamVVOV9zZ2dXM0pCcjlMQ0xPRTh1akJwQkZZeFctdVF6c0VZMHFUTGYtLThXTGZmYXdjNUZUdmhUdFVpc1M1Qk8xaWVJUGhPZksxM2w3QWlUVm4xQQ" rel="noopener noreferrer" target="_blank" aria-label="【戸塚純貴が結婚発表】有名芸能人の結婚相次ぐ2026年 川口春奈＆板倉滉選手・田中みな実＆亀梨和也・新木優子＆中島裕翔ほか - au Webポータルを読む" data-url="https://news.google.com/rss/articles/CBMieEFVX3lxTE8waV9aeXFPVWp4UXNkeXJDMGR0RVJpbS1ieThYamVVOV9zZ2dXM0pCcjlMQ0xPRTh1akJwQkZZeFctdVF6c0VZMHFUTGYtLThXTGZmYXdjNUZUdmhUdFVpc1M1Qk8xaWVJUGhPZksxM2w3QWlUVm4xQQ" data-title="【戸塚純貴が結婚発表】有名芸能人の結婚相次ぐ2026年 川口春奈＆板倉滉選手・田中みな実＆亀梨和也・新木優子＆中島裕翔ほか - au Webポータル" data-genre="芸能人の結婚・離婚・交際">
+  <img class="thumb" src="../assets/thumbs/b5eade074d0605be.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>au Webポータル · 08:27</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>芸能人の結婚・離婚・交際</span> <span>配信記事</span> <span>本人・事務所発表</span> <span>動向確認</span></div>
+    <h3>【戸塚純貴が結婚発表】有名芸能人の結婚相次ぐ2026年 川口春奈＆板倉滉選手・田中みな実＆亀梨和也・新木優子＆中島裕翔ほか</h3>
+    <p class="summary-text">【戸塚純貴が結婚発表】有名芸能人の結婚相次ぐ2026年 川口春奈＆板倉滉選手・田中みな実＆亀梨和也・新木優子＆中島…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-safety" open>
+  <summary class="genre-head">
+    <h2 id="災害">災害</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-1b09f2df0bf58219" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMickFVX3lxTE9QLWhGd3hZSFRJZ1I1OHU0bkViRUR6bEtnaVlxUWFnSURSTTR5LVRyZFoxM3VSTy1kZ0RRb2lYX0FZNGZfcDVPMW9rNXgzMHVwU2hKb055Z20ydUtrRDQ1ZWp0OVFBNE81NkxhWVlhWWhDdw" rel="noopener noreferrer" target="_blank" aria-label="令和８年熊本地震非常災害対策本部会議 - 首相官邸を読む" data-url="https://news.google.com/rss/articles/CBMickFVX3lxTE9QLWhGd3hZSFRJZ1I1OHU0bkViRUR6bEtnaVlxUWFnSURSTTR5LVRyZFoxM3VSTy1kZ0RRb2lYX0FZNGZfcDVPMW9rNXgzMHVwU2hKb055Z20ydUtrRDQ1ZWp0OVFBNE81NkxhWVlhWWhDdw" data-title="令和８年熊本地震非常災害対策本部会議 - 首相官邸" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/793836f9c028b51b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>首相官邸 · 11:40</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>一次情報</span> <span>公式発表</span> <span>要注意</span></div>
+    <h3>令和８年熊本地震非常災害対策本部会議</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 100点</span></p>
+  </div>
+</a>
+<a id="article-b3e37d88d29ccad2" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9TTC1GX1RWQkpHRkt0Q3VBMHM2ZnkxeEhnd3lqd2pISlAtNkRRZEhGWkFvc2VRVWpRRDFtZlM2MTk4RjBWd2hBeXQtT2EwTFVTdzRDeHVKNXpnSXJZemJpbU9RcnIwYXBrQ09qdFRuSE91aTZaTWRKLWVR?oc=5" rel="noopener noreferrer" target="_blank" aria-label="南米コロンビアでM7.4の地震 これまでに20人死亡 建物倒壊や空港閉鎖の情報も - テレ朝NEWSを読む" data-url="https://news.google.com/rss/articles/CBMiekFVX3lxTE9TTC1GX1RWQkpHRkt0Q3VBMHM2ZnkxeEhnd3lqd2pISlAtNkRRZEhGWkFvc2VRVWpRRDFtZlM2MTk4RjBWd2hBeXQtT2EwTFVTdzRDeHVKNXpnSXJZemJpbU9RcnIwYXBrQ09qdFRuSE91aTZaTWRKLWVR?oc=5" data-title="南米コロンビアでM7.4の地震 これまでに20人死亡 建物倒壊や空港閉鎖の情報も - テレ朝NEWS" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/f23909621af89fea.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>テレ朝NEWS · 14:59</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>南米コロンビアでM7.4の地震 これまでに20人死亡 建物倒壊や空港閉鎖の情報も</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-a94efd59d93f83a3" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JRkNPOXZvTkd2dXczYWhMZktnSjhlUnBUMUMtaGJHR1lqQzdEZnpST2hPY2s1VDNaY0I4RUhzWTFxUkhydE5TdGh4eGhLMVZHZ0wzdHBzclMwVG5qUUtuY0VB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="コロンビアでＭ７・４の地震、少なくとも２０人死亡…複数の建物倒壊し被害拡大する可能性 - 読売新聞を読む" data-url="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JRkNPOXZvTkd2dXczYWhMZktnSjhlUnBUMUMtaGJHR1lqQzdEZnpST2hPY2s1VDNaY0I4RUhzWTFxUkhydE5TdGh4eGhLMVZHZ0wzdHBzclMwVG5qUUtuY0VB?oc=5" data-title="コロンビアでＭ７・４の地震、少なくとも２０人死亡…複数の建物倒壊し被害拡大する可能性 - 読売新聞" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/dcdc1d4fe08d8812.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>読売新聞 · 14:32</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>コロンビアでＭ７・４の地震、少なくとも２０人死亡…複数の建物倒壊し被害拡大する可能性</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-e7bf94a5f8877555" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QVGEybzVoenhMVTF4VHdfeklRUE5RdVJYN3FUMXJMVmtoQ1AyQ1ZSWVNnMWFZUzExVTlpb1E2S0g1SFhpZUVCN0tyc21ZbTB3a09XMDFWemNPVTBJWGtveHlVMA?oc=5" rel="noopener noreferrer" target="_blank" aria-label="南米コロンビアでＭ７．４の地震 建物被害、負傷者も - 時事ドットコムを読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9QVGEybzVoenhMVTF4VHdfeklRUE5RdVJYN3FUMXJMVmtoQ1AyQ1ZSWVNnMWFZUzExVTlpb1E2S0g1SFhpZUVCN0tyc21ZbTB3a09XMDFWemNPVTBJWGtveHlVMA?oc=5" data-title="南米コロンビアでＭ７．４の地震 建物被害、負傷者も - 時事ドットコム" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/f46701b585c76a4b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>時事ドットコム · 14:28</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>南米コロンビアでＭ７．４の地震 建物被害、負傷者も</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-a98b0ca2185e586a" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNQVVOU1FkV2hTOHJOVG1QdmNiNFZHUnd0VC1YbHd5blEzTzJTajBKNFZzd1JGYTJ6bTZGLWswUElJSkZTaTFtSnM5WkJEYmludndKV1JuU2p4OEplUU9BZmdXZkhTZjRKQzVLeGk1YVpuU1VYNVlkUnloRnNGVkFlWEFtWmFFaVU?oc=5" rel="noopener noreferrer" target="_blank" aria-label="台風１５号 県内最接近はあす夜～あさって午前 土砂災害に警戒を 富山県（2026年8月10日掲載）｜KNB NEWS NNN - 日テレNEWS NNNを読む" data-url="https://news.google.com/rss/articles/CBMihwFBVV95cUxNQVVOU1FkV2hTOHJOVG1QdmNiNFZHUnd0VC1YbHd5blEzTzJTajBKNFZzd1JGYTJ6bTZGLWswUElJSkZTaTFtSnM5WkJEYmludndKV1JuU2p4OEplUU9BZmdXZkhTZjRKQzVLeGk1YVpuU1VYNVlkUnloRnNGVkFlWEFtWmFFaVU?oc=5" data-title="台風１５号 県内最接近はあす夜～あさって午前 土砂災害に警戒を 富山県（2026年8月10日掲載）｜KNB NEWS NNN - 日テレNEWS NNN" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/de8b69f398082248.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日テレNEWS NNN · 11:02</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>大手報道</span> <span>報道確認</span> <span>要注意</span></div>
+    <h3>台風１５号 県内最接近はあす夜～あさって午前 土砂災害に警戒を 富山県（2026年8月10日掲載）｜KNB NEWS NNN</h3>
+    <p class="summary-text">台風１５号 県内最接近はあす夜～あさって午前 土砂災害に警戒を 富山県（2026年8月10日掲載）</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 70点</span></p>
+  </div>
+</a>
+<a id="article-4e0363b609cefaee" class="card tone-safety is-compact" href="https://news.google.com/rss/articles/CBMic0FVX3lxTE05SEstUnd5QzctanNYcUlUdDgwMlF6b0lIY0k5YkRza0tORlgweE85X0JVTkhNcnA0RlRoRW1VMHJuVUlvY3EyNHA0dzZ2bVYyNmdldVNueEVvRkljdzlHaVd2NGdrdExvOGdPQVBfMlpxTGM" rel="noopener noreferrer" target="_blank" aria-label="【第５報】令和８年熊本地震にかかる日本赤十字社の対応等について｜災害救護速報（国内）｜おしらせ・最新情報 - 日本赤十字社を読む" data-url="https://news.google.com/rss/articles/CBMic0FVX3lxTE05SEstUnd5QzctanNYcUlUdDgwMlF6b0lIY0k5YkRza0tORlgweE85X0JVTkhNcnA0RlRoRW1VMHJuVUlvY3EyNHA0dzZ2bVYyNmdldVNueEVvRkljdzlHaVd2NGdrdExvOGdPQVBfMlpxTGM" data-title="【第５報】令和８年熊本地震にかかる日本赤十字社の対応等について｜災害救護速報（国内）｜おしらせ・最新情報 - 日本赤十字社" data-genre="災害">
+  <img class="thumb" src="../assets/thumbs/7f0c1d2e7f26be61.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日本赤十字社 · 13:47</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>災害</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>【第５報】令和８年熊本地震にかかる日本赤十字社の対応等について｜災害救護速報（国内）｜おしらせ・最新情報</h3>
+    <p class="summary-text">【第５報】令和８年熊本地震にかかる日本赤十字社の対応等について｜災害救護速報（国内）</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-money" open>
+  <summary class="genre-head">
+    <h2 id="経済">経済</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-80b040b657f54252" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNUl9BNlNrWGxWSTBEV085bnVmQ1ZIdHlDR2lIV3BXdkI1QTJRTkZjUThOYkJEcFZCZWg5andtUXBIQjg3M1RkM3JlWDFfa2lBSnljekNaM21oY2s1NVFaeFN4b3dsVVdUZTVUcDc5dzlacmRpbGxadWhKd212djlfNmlqSU9XOGlqZ3dhWEd3R0ViQQ" rel="noopener noreferrer" target="_blank" aria-label="日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】 - tv-tokyo.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMikgFBVV95cUxNUl9BNlNrWGxWSTBEV085bnVmQ1ZIdHlDR2lIV3BXdkI1QTJRTkZjUThOYkJEcFZCZWg5andtUXBIQjg3M1RkM3JlWDFfa2lBSnljekNaM21oY2s1NVFaeFN4b3dsVVdUZTVUcDc5dzlacmRpbGxadWhKd212djlfNmlqSU9XOGlqZ3dhWEd3R0ViQQ" data-title="日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】 - tv-tokyo.co.jp" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/bfda08775498f8e7.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>tv-tokyo.co.jp · 08:35</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>複数社で確認</span> <span>市場・企業</span></div>
+    <h3>日経NEXT 【企業決算を徹底分析／日経平均終値1363円高・米利上げ観測後退で】</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 95点</span></p>
+  </div>
+</a>
+<a id="article-103085e0c085cb9b" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE00b0d2M045bjh5OXdMMW1CcEx1UzVmZWthRDBlNy1FMUU0cm4zazdUbjFReHV0OFhPOU9zbFZ6Ty05WDVXQXdfanJFYmtIWUJzZGpsa3ZpSEpQZDY0bUpJNVV3SEdIMlNpajZYWA" rel="noopener noreferrer" target="_blank" aria-label="決算:上場企業の稼ぐ力、円安・AI投資が追い風 4〜6月期の純利益7割増 - 日本経済新聞を読む" data-url="https://news.google.com/rss/articles/CBMibEFVX3lxTE00b0d2M045bjh5OXdMMW1CcEx1UzVmZWthRDBlNy1FMUU0cm4zazdUbjFReHV0OFhPOU9zbFZ6Ty05WDVXQXdfanJFYmtIWUJzZGpsa3ZpSEpQZDY0bUpJNVV3SEdIMlNpajZYWA" data-title="決算:上場企業の稼ぐ力、円安・AI投資が追い風 4〜6月期の純利益7割増 - 日本経済新聞" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/37835b45b61d4000.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>日本経済新聞 · 09:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>大手報道</span> <span>報道確認</span> <span>仕事で使える</span></div>
+    <h3>決算:上場企業の稼ぐ力、円安・AI投資が追い風 4〜6月期の純利益7割増</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-984f25e4522705bf" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qSHkxRlFvbldPc25UR2kydTdyY0RSbGxaWUdvbVpYSUhwR0xNSmFoM0RoUWwtaEV2NXBJMko5NUhYVWY0dHpOYV8tOHQ3NXM4TGdvdGY3WVhEbnMzRThfaQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="売上高6.4％増 センコン物流＜四半期決算東北（8月10日）＞ - 河北新報オンラインを読む" data-url="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qSHkxRlFvbldPc25UR2kydTdyY0RSbGxaWUdvbVpYSUhwR0xNSmFoM0RoUWwtaEV2NXBJMko5NUhYVWY0dHpOYV8tOHQ3NXM4TGdvdGY3WVhEbnMzRThfaQ?oc=5" data-title="売上高6.4％増 センコン物流＜四半期決算東北（8月10日）＞ - 河北新報オンライン" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/e4265cfb0f35afbc.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>河北新報オンライン · 11:38</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>売上高6.4％増 センコン物流＜四半期決算東北（8月10日）＞</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-87fcde1b3bede8d1" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBWNE9zMnNrMEtTeGFKYVY1bW1KTEo1Mk1qVGZuRXhGRU9lQTFXZ1hDSFZqalUyVjNTREFZajBCWDdPTlNHY29uVV95d29OQmNlOWdYZWhaV3lfSTZGN1I2V0N0RUMza05ZbTViUGpjTlI?oc=5" rel="noopener noreferrer" target="_blank" aria-label="ダウ・ナスダック・S&amp;P500週間展望：インフレ指標と決算発表に注目 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュースを読む" data-url="https://news.google.com/rss/articles/CBMicEFVX3lxTFBWNE9zMnNrMEtTeGFKYVY1bW1KTEo1Mk1qVGZuRXhGRU9lQTFXZ1hDSFZqalUyVjNTREFZajBCWDdPTlNHY29uVV95d29OQmNlOWdYZWhaV3lfSTZGN1I2V0N0RUMza05ZbTViUGpjTlI?oc=5" data-title="ダウ・ナスダック・S&amp;P500週間展望：インフレ指標と決算発表に注目 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/97c79e4cc07de411.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース · 10:05</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>ダウ・ナスダック・S&amp;P500週間展望：インフレ指標と決算発表に注目 執筆</h3>
+    <p class="summary-text">Investing.com - FX…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-c58978b6b4ef5a55" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTFA4dklmc0hDTXk1WTlHR0VBb0F3X3h2UUlRS1pzWE5wdFpVa1JkelJ6X044RWxIZUk1WGZyWnRqMnBDQ0JLa0tqWXM4WkRTejE4eWNNbkRpSHlaR0lob1VPVjJ3T054RW85YlE" rel="noopener noreferrer" target="_blank" aria-label="2026年12月期 第2四半期決算説明動画および書き起こし記事公開のお知らせ - PR TIMESを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTFA4dklmc0hDTXk1WTlHR0VBb0F3X3h2UUlRS1pzWE5wdFpVa1JkelJ6X044RWxIZUk1WGZyWnRqMnBDQ0JLa0tqWXM4WkRTejE4eWNNbkRpSHlaR0lob1VPVjJ3T054RW85YlE" data-title="2026年12月期 第2四半期決算説明動画および書き起こし記事公開のお知らせ - PR TIMES" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/8907b0483e4c522f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PR TIMES · 07:32</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>2026年12月期 第2四半期決算説明動画および書き起こし記事公開のお知らせ</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-af798f16cceccdea" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBOUkRYVHdKZTdJaDNNTGo4bEFfVlNHRVdyY0lDUlRWcV9jaXpTUFp1aFVDUTBTbTlNV1Zzem5uSGxfdHQtSzJBUkZIaGgxQ2hEWE1yVzVwQW1yajBqQXZlSDBoc2FTb1Mxb2c?oc=5" rel="noopener noreferrer" target="_blank" aria-label="株式会社トーア紡コーポレーション、令和８年12月期 第２四半期（中間期）の決算を発表 - PR TIMESを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTFBOUkRYVHdKZTdJaDNNTGo4bEFfVlNHRVdyY0lDUlRWcV9jaXpTUFp1aFVDUTBTbTlNV1Zzem5uSGxfdHQtSzJBUkZIaGgxQ2hEWE1yVzVwQW1yajBqQXZlSDBoc2FTb1Mxb2c?oc=5" data-title="株式会社トーア紡コーポレーション、令和８年12月期 第２四半期（中間期）の決算を発表 - PR TIMES" data-genre="経済">
+  <img class="thumb" src="../assets/thumbs/8d611a2d02028c31.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>PR TIMES · 07:30</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>経済</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>株式会社トーア紡コーポレーション、令和８年12月期 第２四半期（中間期）の決算を発表</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-money" open>
+  <summary class="genre-head">
+    <h2 id="金融">金融</h2>
+    <span>4 topics</span>
+  </summary>
+  <div class="grid"><a id="article-dbd63b1b58e5aebb" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aUUs2cWpRaGt4SXdhczNDbXE2NmdKWV91el9EbDBhbzFwbWlsejAtOUJPbXlhWUNVQUpMM3VESl9fQjhzSEIyVmM3ZXJtY2RhQmpzLWdjenFXazQz?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【今日の仮想通貨ニュース】米クラリティ法案に慎重論──ビットコインは上昇再開を探る展開 - JinaCoinを読む" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aUUs2cWpRaGt4SXdhczNDbXE2NmdKWV91el9EbDBhbzFwbWlsejAtOUJPbXlhWUNVQUpMM3VESl9fQjhzSEIyVmM3ZXJtY2RhQmpzLWdjenFXazQz?oc=5" data-title="【今日の仮想通貨ニュース】米クラリティ法案に慎重論──ビットコインは上昇再開を探る展開 - JinaCoin" data-genre="金融">
+  <img class="thumb" src="../assets/thumbs/8229cde462350631.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>JinaCoin · 11:05</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <h3>【今日の仮想通貨ニュース】米クラリティ法案に慎重論──ビットコインは上昇再開を探る展開</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-7cc2e3d46223f566" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFA5dXlZVjZyWmdQUHpqNGx1TXFnUS04aG00amJvMTJLbE5QMGVGMjUwZzJKSXlDbWw3aXJNLVpBeHN2QjhJbTFXamZXbjFMYjVUOG41Q1pCVF93bWpndHVN?oc=5" rel="noopener noreferrer" target="_blank" aria-label="協調為替介入を受け利上げペースは加速するか 高市政権から9月利上げ容認メッセージが出るかに注目 野村證券・宍戸知暁 - nomura.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFA5dXlZVjZyWmdQUHpqNGx1TXFnUS04aG00amJvMTJLbE5QMGVGMjUwZzJKSXlDbWw3aXJNLVpBeHN2QjhJbTFXamZXbjFMYjVUOG41Q1pCVF93bWpndHVN?oc=5" data-title="協調為替介入を受け利上げペースは加速するか 高市政権から9月利上げ容認メッセージが出るかに注目 野村證券・宍戸知暁 - nomura.co.jp" data-genre="金融">
+  <img class="thumb" src="../assets/thumbs/7ba5f32e3892df9b.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>nomura.co.jp · 09:58</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>協調為替介入を受け利上げペースは加速するか 高市政権から9月利上げ容認メッセージが出るかに注目 野村證券・宍戸知暁</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-2dd44da9a86b1f8d" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rcm1PUWdhMkx2WDktSG9nVGZuR09FSHZ3WGtkQjRlVlRySWIwX0dzajF5NXFaSFFPNV9RMktLc3BXSFhhZktydzVYWXY5cDB2dWhoMnR1dC1UWm5D" rel="noopener noreferrer" target="_blank" aria-label="2026年8月10日 暗号資産週間レポート（2026.8.2~2026.8.8）地政学リスク後退・利上げ観測後退でBTCに底堅さ、CLARITY法案採決は9月15日へ｜暗号資産（仮想通貨）・電子決済手段の取引所 - SBI VCトレードを読む" data-url="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5rcm1PUWdhMkx2WDktSG9nVGZuR09FSHZ3WGtkQjRlVlRySWIwX0dzajF5NXFaSFFPNV9RMktLc3BXSFhhZktydzVYWXY5cDB2dWhoMnR1dC1UWm5D" data-title="2026年8月10日 暗号資産週間レポート（2026.8.2~2026.8.8）地政学リスク後退・利上げ観測後退でBTCに底堅さ、CLARITY法案採決は9月15日へ｜暗号資産（仮想通貨）・電子決済手段の取引所 - SBI VCトレード" data-genre="金融">
+  <img class="thumb" src="../assets/thumbs/433e485fb27943f8.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>SBI VCトレード · 09:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>制度・政治</span></div>
+    <h3>2026年8月10日 暗号資産週間レポート（2026.8.2~2026.8.8）地政学リスク後退・利上げ観測後退でBTCに底堅さ、CLARITY法案採決は9月15日へ｜暗号資産（仮想通貨）・電子決済手段の取引所</h3>
+    <p class="summary-text">2026年8月10日 暗号資産週間レポート（2026.8.2~2026.8.8）地政学リスク後退・利上げ観測後退で…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-6e9b65cb48cb9d1e" class="card tone-money is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBFRmdVMnUxSVFUSEgwTlRScllIaHVveXhEQ09rVmpzQlg2X2JCRlFEY090ZXk2ZktQbUlIWXJvcHNpbGRGdGx4TTQ3V3FFcHNEd25xMllxblVadXpGV0pz" rel="noopener noreferrer" target="_blank" aria-label="日米が協調為替介入、円安抑止には3つの当局対応か 追加介入、日銀利上げ加速、債券市場安定化策 野村證券・後藤祐二朗 - nomura.co.jpを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBFRmdVMnUxSVFUSEgwTlRScllIaHVveXhEQ09rVmpzQlg2X2JCRlFEY090ZXk2ZktQbUlIWXJvcHNpbGRGdGx4TTQ3V3FFcHNEd25xMllxblVadXpGV0pz" data-title="日米が協調為替介入、円安抑止には3つの当局対応か 追加介入、日銀利上げ加速、債券市場安定化策 野村證券・後藤祐二朗 - nomura.co.jp" data-genre="金融">
+  <img class="thumb" src="../assets/thumbs/ef6de4ebef821c15.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>nomura.co.jp · 09:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>金融</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>市場・企業</span></div>
+    <h3>日米が協調為替介入、円安抑止には3つの当局対応か 追加介入、日銀利上げ加速、債券市場安定化策 野村證券・後藤祐二朗</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-civic" open>
+  <summary class="genre-head">
+    <h2 id="国際">国際</h2>
+    <span>6 topics</span>
+  </summary>
+  <div class="grid"><a id="article-9bb66d3580c5ac22" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE55ZWdKZXFSTW1SMjFhUHYwSTFoX2R6S1h4M1g3bDdhT0pMQjc5YzVxYm0wRld2cWh3YVJRcURFSW03V1VmY2V2Y0EyQTN4VDBsM1JoVFpKRVAzMEk?oc=5" rel="noopener noreferrer" target="_blank" aria-label="【令和8年熊本地震】林佳龍・外交部長：台湾からの義援金は2億台湾元超 - rti.org.twを読む" data-url="https://news.google.com/rss/articles/CBMiW0FVX3lxTE55ZWdKZXFSTW1SMjFhUHYwSTFoX2R6S1h4M1g3bDdhT0pMQjc5YzVxYm0wRld2cWh3YVJRcURFSW03V1VmY2V2Y0EyQTN4VDBsM1JoVFpKRVAzMEk?oc=5" data-title="【令和8年熊本地震】林佳龍・外交部長：台湾からの義援金は2億台湾元超 - rti.org.tw" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/2bbdf475eb456e22.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>rti.org.tw · 12:40</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>【令和8年熊本地震】林佳龍・外交部長：台湾からの義援金は2億台湾元超</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-c289a24b0652edaa" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ISnQtOEhINnEwbmZnd0doQ25aWWk2RzJzQWVMNGRDNWkxLTdHWWJKX1pTbDdEOVZpRHZMLUN3dW5scllMejZ6Q01LT2NJS1V3MzVtUFN4MXJDOVpmSUVF?oc=5" rel="noopener noreferrer" target="_blank" aria-label="高市首相 オマーン国王と電話会談“国際社会とも協議を” - NHKニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ISnQtOEhINnEwbmZnd0doQ25aWWk2RzJzQWVMNGRDNWkxLTdHWWJKX1pTbDdEOVZpRHZMLUN3dW5scllMejZ6Q01LT2NJS1V3MzVtUFN4MXJDOVpmSUVF?oc=5" data-title="高市首相 オマーン国王と電話会談“国際社会とも協議を” - NHKニュース" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/1a1b33d86fe1dc3e.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>NHKニュース · 11:26</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>大手報道</span> <span>報道確認</span> <span>制度・政治</span></div>
+    <h3>高市首相 オマーン国王と電話会談“国際社会とも協議を”</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-d716485f6d05d867" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBHaFdvOVBwalQwNU9sZjRQTE5BSEwtTjZHeWk0anZuWVVrNTVFQzMtVWFQd1FMSzNrQ29wanlENlB2Ujl1TWFCX3ZYT3ctSExONkJVMVd2VXhsMGVjMDBZ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="世界で1～7月に発表された新型車の過半数が中国発―独メディア - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBHaFdvOVBwalQwNU9sZjRQTE5BSEwtTjZHeWk0anZuWVVrNTVFQzMtVWFQd1FMSzNrQ29wanlENlB2Ujl1TWFCX3ZYT3ctSExONkJVMVd2VXhsMGVjMDBZ?oc=5" data-title="世界で1～7月に発表された新型車の過半数が中国発―独メディア - ライブドアニュース" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/2eaf4c0113014d58.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ライブドアニュース · 12:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>世界で1～7月に発表された新型車の過半数が中国発―独メディア</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-2a1c87922d876729" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE9nQ1ZpS0l5YTFZVWhsQ1kyWXpNYXJaNENadWJORlYzdDRqc2gtT2NPR3dFS2lrSmZZWkQ0d19XOW5SUVZlVU5qdE5oZUw" rel="noopener noreferrer" target="_blank" aria-label="セラミックのApple Watchは復活するのか？ 「今年か来年」とGurman氏が報道、最後は2019年のEdition Series 5【海外ニュース】 - Smart Watch Lifeを読む" data-url="https://news.google.com/rss/articles/CBMiTEFVX3lxTE9nQ1ZpS0l5YTFZVWhsQ1kyWXpNYXJaNENadWJORlYzdDRqc2gtT2NPR3dFS2lrSmZZWkQ0d19XOW5SUVZlVU5qdE5oZUw" data-title="セラミックのApple Watchは復活するのか？ 「今年か来年」とGurman氏が報道、最後は2019年のEdition Series 5【海外ニュース】 - Smart Watch Life" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/c34e2746ce260d7f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Smart Watch Life · 11:42</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>セラミックのApple Watchは復活するのか？ 「今年か来年」とGurman氏が報道、最後は2019年のEdition Series 5【海外ニュース】</h3>
+    <p class="summary-text">セラミックのApple Watchは復活するのか？ 「今年か来年」とGurman氏が報道、最後は2019年のEdi…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-14ae58cd7103aefd" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1COGxOcmNkc3NSVUxTakZjVnlyeEVtaTlHeVBMaG5jWVAtMFZYZkdESktOS2dETlV3WEpsYWdkeGEzODk0LWliMW1lVTU2MURsQWpVb2VVcTRDeVlTZ3c?oc=5" rel="noopener noreferrer" target="_blank" aria-label="東方に集い、未来を約す 中国の首脳外交に見る大国の気風 (2026年8月10日掲載) - ライブドアニュースを読む" data-url="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1COGxOcmNkc3NSVUxTakZjVnlyeEVtaTlHeVBMaG5jWVAtMFZYZkdESktOS2dETlV3WEpsYWdkeGEzODk0LWliMW1lVTU2MURsQWpVb2VVcTRDeVlTZ3c?oc=5" data-title="東方に集い、未来を約す 中国の首脳外交に見る大国の気風 (2026年8月10日掲載) - ライブドアニュース" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/e5f0594704a0c98f.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ライブドアニュース · 11:37</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>東方に集い、未来を約す 中国の首脳外交に見る大国の気風 (2026年8月10日掲載)</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-1e7a729d7a92204b" class="card tone-civic is-compact" href="https://news.google.com/rss/articles/CBMiTEFVX3lxTE4tOUpNLWZ5b3dfQTJxaG54NUtmaExsWVRMUDlBYW9tV2lYRlo3eDNMeHdldW5HclFoYXc2M19YRXlGUUwtVmk5dEtkUUI?oc=5" rel="noopener noreferrer" target="_blank" aria-label="オセアニア6か国のジャーナリスト6名を招聘、外交部がその成果を発表 - Taiwan Todayを読む" data-url="https://news.google.com/rss/articles/CBMiTEFVX3lxTE4tOUpNLWZ5b3dfQTJxaG54NUtmaExsWVRMUDlBYW9tV2lYRlo3eDNMeHdldW5HclFoYXc2M19YRXlGUUwtVmk5dEtkUUI?oc=5" data-title="オセアニア6か国のジャーナリスト6名を招聘、外交部がその成果を発表 - Taiwan Today" data-genre="国際">
+  <img class="thumb" src="../assets/thumbs/566c398c18f9052c.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>Taiwan Today · 09:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>国際</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <h3>オセアニア6か国のジャーナリスト6名を招聘、外交部がその成果を発表</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>AI・発表｜注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-tech" open>
+  <summary class="genre-head">
+    <h2 id="ゲーム">ゲーム</h2>
+    <span>3 topics</span>
+  </summary>
+  <div class="grid"><a id="article-e7301a85a0f08388" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE00cEp3SnhfdGZMeU5ZNzJranVrRnNRLXVGS3dub3UtOEU5dWVwQlZYeXI3M21tdC1sYnFMYkNlTjcydm0wMDd4Q1BfLWFNSmpPQ1Fvdk4wWldFcmEyOFN3Z2hwZHROZw" rel="noopener noreferrer" target="_blank" aria-label="任天堂、熊本地震を受け被災者の製品修理は無償対応（災害救助法適用地域） 義援金5000万円寄付 - 福井新聞社を読む" data-url="https://news.google.com/rss/articles/CBMiZkFVX3lxTE00cEp3SnhfdGZMeU5ZNzJranVrRnNRLXVGS3dub3UtOEU5dWVwQlZYeXI3M21tdC1sYnFMYkNlTjcydm0wMDd4Q1BfLWFNSmpPQ1Fvdk4wWldFcmEyOFN3Z2hwZHROZw" data-title="任天堂、熊本地震を受け被災者の製品修理は無償対応（災害救助法適用地域） 義援金5000万円寄付 - 福井新聞社" data-genre="ゲーム">
+  <img class="thumb" src="../assets/thumbs/84ea683bfb175a62.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>福井新聞社 · 10:49</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>任天堂、熊本地震を受け被災者の製品修理は無償対応（災害救助法適用地域） 義援金5000万円寄付</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-357fe3d8c5d42106" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMieEFVX3lxTFBrTEZfa1ExcEx4OHV6Yjh0eS1VNi1fR1RnNXhTZUpJTUtjaFB1WUN4SWVhcVZWOTBiaVpydll6RkdpTnR0VDJuQlNPU0wxNnc2d1ZUcVpzeHhkSWxxY3BNaDRiNDN6QWlfNjg4Nk9rOGRSdWIybFRWMg" rel="noopener noreferrer" target="_blank" aria-label="ゲームストップ、イーベイ買収提案撤回を検討 提携・合弁模索か＝報道 - ロイターを読む" data-url="https://news.google.com/rss/articles/CBMieEFVX3lxTFBrTEZfa1ExcEx4OHV6Yjh0eS1VNi1fR1RnNXhTZUpJTUtjaFB1WUN4SWVhcVZWOTBiaVpydll6RkdpTnR0VDJuQlNPU0wxNnc2d1ZUcVpzeHhkSWxxY3BNaDRiNDN6QWlfNjg4Nk9rOGRSdWIybFRWMg" data-title="ゲームストップ、イーベイ買収提案撤回を検討 提携・合弁模索か＝報道 - ロイター" data-genre="ゲーム">
+  <img class="thumb" src="../assets/thumbs/17c9f2c8cb59ff82.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>ロイター · 14:21</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>大手報道</span> <span>報道確認</span> <span>動向確認</span></div>
+    <h3>ゲームストップ、イーベイ買収提案撤回を検討 提携・合弁模索か＝報道</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-364b43f22e1e1f6e" class="card tone-tech is-compact" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9RNVhvdlpqNkdLNEJiS09QVE1QelJrc3Z5WFYwZF9EemQ3dkRvbzZXSU5kd1BSQWxMRFFrR3ZZZGdncHU4Y3gycjlrSnJWRWdtTVdTSmdWQ0h6MEFnVFBDaHFfX25iQlBXdkE" rel="noopener noreferrer" target="_blank" aria-label="GRAPHT、PlayStation™公式ライセンスポップアップストアをJR池袋駅で開催中 夏アパレルやBloodborne新作アイテムが登場 - AppBankを読む" data-url="https://news.google.com/rss/articles/CBMiakFVX3lxTE9RNVhvdlpqNkdLNEJiS09QVE1QelJrc3Z5WFYwZF9EemQ3dkRvbzZXSU5kd1BSQWxMRFFrR3ZZZGdncHU4Y3gycjlrSnJWRWdtTVdTSmdWQ0h6MEFnVFBDaHFfX25iQlBXdkE" data-title="GRAPHT、PlayStation™公式ライセンスポップアップストアをJR池袋駅で開催中 夏アパレルやBloodborne新作アイテムが登場 - AppBank" data-genre="ゲーム">
+  <img class="thumb" src="../assets/thumbs/613ec3ef0c5ba51a.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>AppBank · 09:54</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ゲーム</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>GRAPHT、PlayStation™公式ライセンスポップアップストアをJR池袋駅で開催中 夏アパレルやBloodborne新作アイテムが登場</h3>
+    <p class="summary-text">GRAPHT、PlayStation™公式ライセンスポップアップストアをJR池袋駅で開催中 夏アパレルやBlood…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-entertainment" open>
+  <summary class="genre-head">
+    <h2 id="エンタメ">エンタメ</h2>
+    <span>2 topics</span>
+  </summary>
+  <div class="grid"><a id="article-7c5d68341bec2023" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiTEFVX3lxTFA0eUhWYTlxMVpQVXJkRVM4ekhySDJZWGc0Z2VvRG5lak5qWk1PNWlLYy05ZWVsMXd3dTRwQWlOZDEtZEtmdlI1OGpyT2fSAUhBVV95cUxOcjNpanpxZ3pfWGRHZzhSdElwcTJxdy1fSmNiMmJkVmlVZ3NGX1Q0d2hsUlVIUXNhRmxBU1pRUjZwZC10QTVVSEM?oc=5" rel="noopener noreferrer" target="_blank" aria-label="音楽フェス「LuckyFes」台風15号接近により4日目開催中止「会場内のフレンズ（来場者）の安全確保が困難と判断」 - モデルプレスを読む" data-url="https://news.google.com/rss/articles/CBMiTEFVX3lxTFA0eUhWYTlxMVpQVXJkRVM4ekhySDJZWGc0Z2VvRG5lak5qWk1PNWlLYy05ZWVsMXd3dTRwQWlOZDEtZEtmdlI1OGpyT2fSAUhBVV95cUxOcjNpanpxZ3pfWGRHZzhSdElwcTJxdy1fSmNiMmJkVmlVZ3NGX1Q0d2hsUlVIUXNhRmxBU1pRUjZwZC10QTVVSEM?oc=5" data-title="音楽フェス「LuckyFes」台風15号接近により4日目開催中止「会場内のフレンズ（来場者）の安全確保が困難と判断」 - モデルプレス" data-genre="エンタメ">
+  <img class="thumb" src="../assets/thumbs/72fff30e8a49b9b1.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>モデルプレス · 12:09</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>要注意</span></div>
+    <h3>音楽フェス「LuckyFes」台風15号接近により4日目開催中止「会場内のフレンズ（来場者）の安全確保が困難と判断」</h3>
+    <p class="summary-text">音楽フェス「LuckyFes」台風15号接近により4日目開催中止「会場内のフレンズ（来場者）の安全確保が困難と判断…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 67点</span></p>
+  </div>
+</a>
+<a id="article-c67c28215b561f34" class="card tone-entertainment is-compact" href="https://news.google.com/rss/articles/CBMiSkFVX3lxTE91SlZ3WnlUNTMtVEdwSFctWW0yd1Jxa2dWR0FqZVNxdlFjVUxjZElwS3FQbWNhQnkxNmt0bnpaRnlXTUpNbkxLejZB?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「映画ちいかわ」原作者・ナガノのロングインタビュー公開！映画の制作エピソードやキャラクター誕生秘話も語る : 映画ニュース - eiga.comを読む" data-url="https://news.google.com/rss/articles/CBMiSkFVX3lxTE91SlZ3WnlUNTMtVEdwSFctWW0yd1Jxa2dWR0FqZVNxdlFjVUxjZElwS3FQbWNhQnkxNmt0bnpaRnlXTUpNbkxLejZB?oc=5" data-title="「映画ちいかわ」原作者・ナガノのロングインタビュー公開！映画の制作エピソードやキャラクター誕生秘話も語る : 映画ニュース - eiga.com" data-genre="エンタメ">
+  <img class="thumb" src="../assets/thumbs/0ee5d44129ed0c22.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>eiga.com · 11:00</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>エンタメ</span> <span>配信記事</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>「映画ちいかわ」原作者・ナガノのロングインタビュー公開！映画の制作エピソードやキャラクター誕生秘話も語る : 映画ニュース</h3>
+    <p class="summary-text">「映画ちいかわ」原作者・ナガノのロングインタビュー公開！映画の制作エピソードやキャラクター誕生秘話も語る : 映画…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立3媒体｜注目度 65点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-life" open>
+  <summary class="genre-head">
+    <h2 id="ライフ">ライフ</h2>
+    <span>4 topics</span>
+  </summary>
+  <div class="grid"><a id="article-23bda38d77c8a6cb" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9qRFhQcWZNUkNkZVd1MkptWVF4Qy0yeGZmVnJtRmlxS043RURMLV9mVXZUeW51X0FQbDdldHd4WS1teW5sZkhVVlA1enhjc3pldTBwRzNFSQ?oc=5" rel="noopener noreferrer" target="_blank" aria-label="「被災者生活再建支援法を熊本県全域に適用見込み」高市総理が明らかに 支援金最大300万円を支給へ 罹災証明書が必要 - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiV0FVX3lxTE9qRFhQcWZNUkNkZVd1MkptWVF4Qy0yeGZmVnJtRmlxS043RURMLV9mVXZUeW51X0FQbDdldHd4WS1teW5sZkhVVlA1enhjc3pldTBwRzNFSQ?oc=5" data-title="「被災者生活再建支援法を熊本県全域に適用見込み」高市総理が明らかに 支援金最大300万円を支給へ 罹災証明書が必要 - TBS NEWS DIG" data-genre="ライフ">
+  <img class="thumb" src="../assets/thumbs/ba153eb66b40fa73.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TBS NEWS DIG · 08:41</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ライフ</span> <span>大手報道</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>「被災者生活再建支援法を熊本県全域に適用見込み」高市総理が明らかに 支援金最大300万円を支給へ 罹災証明書が必要</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 64点</span></p>
+  </div>
+</a>
+<a id="article-97983796604a91de" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9uaWNHSnBHWERXT0taZjlxQzhSeTRiMFJ0VW9mVVZYUklDQ2JCbXZGb2tvMDFhMkVRemw4Nmc2VjJfNnFCZU5aYVlZaW9QRjBNb0FiaHdPZG9XbWJUM0EtckJSQzlidjJ1dVdkdGZn" rel="noopener noreferrer" target="_blank" aria-label="最高裁判決を踏まえた生活保護費の追加給付について - town.nagaizumi.lg.jpを読む" data-url="https://news.google.com/rss/articles/CBMibkFVX3lxTE9uaWNHSnBHWERXT0taZjlxQzhSeTRiMFJ0VW9mVVZYUklDQ2JCbXZGb2tvMDFhMkVRemw4Nmc2VjJfNnFCZU5aYVlZaW9QRjBNb0FiaHdPZG9XbWJUM0EtckJSQzlidjJ1dVdkdGZn" data-title="最高裁判決を踏まえた生活保護費の追加給付について - town.nagaizumi.lg.jp" data-genre="ライフ">
+  <img class="thumb" src="../assets/thumbs/c1fcb3b60fda222d.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>town.nagaizumi.lg.jp · 09:29</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>仕事で使える</span></div>
+    <h3>最高裁判決を踏まえた生活保護費の追加給付について</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>AI・裁判｜注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-d38afa3b913cef06" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9UdkMtTnNadFB0SEFab3NEYkptWEo5R3FVZUh3bTdPM2VNME9WVlBuWnVpYTZlUEFIQTFia1V3dXJjY0RnNFNfNmpJYUdHSHp1QmE3Q0FkUjlDLUpRSlRfY3Vwcw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="地域生活圏形成に取り組む「民間の地域経営主体」の認定を開始（国土交通省） - 商工会議所を読む" data-url="https://news.google.com/rss/articles/CBMiY0FVX3lxTE9UdkMtTnNadFB0SEFab3NEYkptWEo5R3FVZUh3bTdPM2VNME9WVlBuWnVpYTZlUEFIQTFia1V3dXJjY0RnNFNfNmpJYUdHSHp1QmE3Q0FkUjlDLUpRSlRfY3Vwcw?oc=5" data-title="地域生活圏形成に取り組む「民間の地域経営主体」の認定を開始（国土交通省） - 商工会議所" data-genre="ライフ">
+  <img class="thumb" src="../assets/thumbs/263e31a9d0293bfd.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>商工会議所 · 09:16</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>地域生活圏形成に取り組む「民間の地域経営主体」の認定を開始（国土交通省）</h3>
+    
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a>
+<a id="article-b00b979a7d6d3732" class="card tone-life is-compact" href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5aRlRwNHJaOVp5c09lZGRBRFBCaGpYSTdtNHdhNEZaelk3a25tbU1oeS03azJHbjd1Wk8xc0w0X2hVV1I3T3VSdDVuVVp2YjkzZkN2emtLUXB4UGR6d3J0aGhhcnpaMjd3X0FYRVJ1OVp1RmhZNzNCNw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="鍵盤生活50周年を迎えた日本を代表するキーボード奏者難波弘之。その記念となるコンピレーション盤『難波弘之アンソロジー』CDを8月26日にキングレコードとソニーミュージックより同時発売!! - 大人のための音楽を読む" data-url="https://news.google.com/rss/articles/CBMieEFVX3lxTE5aRlRwNHJaOVp5c09lZGRBRFBCaGpYSTdtNHdhNEZaelk3a25tbU1oeS03azJHbjd1Wk8xc0w0X2hVV1I3T3VSdDVuVVp2YjkzZkN2emtLUXB4UGR6d3J0aGhhcnpaMjd3X0FYRVJ1OVp1RmhZNzNCNw?oc=5" data-title="鍵盤生活50周年を迎えた日本を代表するキーボード奏者難波弘之。その記念となるコンピレーション盤『難波弘之アンソロジー』CDを8月26日にキングレコードとソニーミュージックより同時発売!! - 大人のための音楽" data-genre="ライフ">
+  <img class="thumb" src="../assets/thumbs/36d6ffef3d349808.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>大人のための音楽 · 09:02</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>ライフ</span> <span>配信記事</span> <span>速報・続報待ち</span> <span>動向確認</span></div>
+    <h3>鍵盤生活50周年を迎えた日本を代表するキーボード奏者難波弘之。その記念となるコンピレーション盤『難波弘之アンソロジー』CDを8月26日にキングレコードとソニーミュージックより同時発売!!</h3>
+    <p class="summary-text">鍵盤生活50周年を迎えた日本を代表するキーボード奏者難波弘之。その記念となるコンピレーション盤『難波弘之アンソロジ…</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>注目度 61点</span></p>
+  </div>
+</a></div>
+</details>
+<details class="genre tone-science" open>
+  <summary class="genre-head">
+    <h2 id="科学">科学</h2>
+    <span>1 topics</span>
+  </summary>
+  <div class="grid"><a id="article-20be2cb2dcd9c840" class="card tone-science is-compact" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aaGRFX2lFZGNjMDdoZWhYbHRCMXpTZzRUMzRvM2JsNGRqVGdNSXJ0aDYyVTBRN2VGS1ltb0UwYTZOc2F2bUdIMEtjSE5mNWdIakJONmlIYXRNZw?oc=5" rel="noopener noreferrer" target="_blank" aria-label="夏休みの自由研究に 科学捜査体験イベント | 愛媛のニュース - Nスタえひめ｜あいテレビは6チャンネル - TBS NEWS DIGを読む" data-url="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aaGRFX2lFZGNjMDdoZWhYbHRCMXpTZzRUMzRvM2JsNGRqVGdNSXJ0aDYyVTBRN2VGS1ltb0UwYTZOc2F2bUdIMEtjSE5mNWdIakJONmlIYXRNZw?oc=5" data-title="夏休みの自由研究に 科学捜査体験イベント | 愛媛のニュース - Nスタえひめ｜あいテレビは6チャンネル - TBS NEWS DIG" data-genre="科学">
+  <img class="thumb" src="../assets/thumbs/41ab74504e5dfa8d.svg" alt="" loading="lazy">
+  <div class="card-body">
+    <div class="meta"><span>TBS NEWS DIG · 10:03</span><span class="read-state">未読</span></div>
+    <div class="labels"> <span>科学</span> <span>大手報道</span> <span>複数社で確認</span> <span>動向確認</span></div>
+    <h3>夏休みの自由研究に 科学捜査体験イベント | 愛媛のニュース - Nスタえひめ｜あいテレビは6チャンネル</h3>
+    <p class="summary-text">夏休みの自由研究に 科学捜査体験イベント | 愛媛のニュース - Nスタえひめ</p>
+    <p class="attention-line"><strong>注目ポイント</strong><span>独立2媒体｜注目度 64点</span></p>
+  </div>
+</a></div>
+</details>
+      </div>
+    </div>
+  </main>
+  <script>
+(() => {
+  const readKey = "daily-trend-news:read";
+  const clickKey = "daily-trend-news:clicks";
+  const parseJson = (value, fallback) => {
+    try { return JSON.parse(value || ""); } catch (_error) { return fallback; }
+  };
+  const read = new Set(parseJson(localStorage.getItem(readKey), []));
+  const clicks = parseJson(localStorage.getItem(clickKey), {});
+  const saveRead = () => localStorage.setItem(readKey, JSON.stringify([...read]));
+  const saveClicks = () => localStorage.setItem(clickKey, JSON.stringify(clicks));
+  const setReadState = (card, isRead) => {
+    card.classList.toggle("is-read", isRead);
+    const state = card.querySelector(".read-state");
+    if (state) state.textContent = isRead ? "既読" : "未読";
+  };
+  document.querySelectorAll(".card[data-url]").forEach((card) => {
+    const url = card.dataset.url;
+    setReadState(card, read.has(url));
+    card.addEventListener("click", () => {
+      read.add(url);
+      clicks[url] = {
+        title: card.dataset.title || "",
+        genre: card.dataset.genre || "",
+        count: (clicks[url]?.count || 0) + 1,
+        lastClickedAt: new Date().toISOString()
+      };
+      setReadState(card, true);
+      saveRead();
+      saveClicks();
+    });
+  });
+})();
+</script>
+</body>
+</html>
